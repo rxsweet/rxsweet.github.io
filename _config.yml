@@ -11,6 +11,8 @@ brief-intro: this is my blog,this is my world!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rxsweet.github.io" # the base hostname & protocol for your site
 
+excerpt_separator: "<!--more-->"
+
 permalink: /:year/:month/:day/:title/
 
 # other links
