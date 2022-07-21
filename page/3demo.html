@@ -1,31 +1,38 @@
 ---
-layout: demo
-title: Demo
-permalink: /demo/
+layout: vip
+title: vip
+permalink: /vip/
 icon: play
 type: page
 ---
+<script>
+function checkPsw()
+{
+	var testV = 0;//计数器，记录密码错误次数
+	var psw;
+	while(testV < 1)//可以输入的次数
+	{
+		psw = prompt("input: ","");
+		if(!psw)
+			history.go(-1);
+		if(psw == "886")//密码
+		{
+			location.href = "/xxx";//跳转网站
+			break;
+		}
+		testV+=1;
+		alert("you aren't VIP!");
+		window.opener=null;//关闭网页1
+		window.close();//关闭网页2
+	}
+}
+checkPsw();
+</script>
 
+# test
 
+## Welcome VIP
 
-<div class="grid">
-    <!-- <div class="grid-item">
-        <a href="http://gaohaoyang.github.io/ghost-button-css3/">
-            <img src="http://7q5cdt.com1.z0.glb.clouddn.com/DemoGhost-Button.png">
-        </a>
-        <h3 class="demo-title">
-            <a href="http://gaohaoyang.github.io/ghost-button-css3/">Ghost Button 幽灵按钮</a>
-        </h3>
-        <p>主要技术：CSS3</p>
-        <p>使用 CSS3 中的旋转、缩放、过渡、动画等效果，制作出很酷的按钮效果。
-            <a href="https://github.com/Gaohaoyang/ghost-button-css3">源代码 <i class="fa fa-code" aria-hidden="true"></i></a>
-        </p>
-    </div> -->
-</div>
+## but Nothing
 
-<script src="{{ " /js/masonry.pkgd.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ " /js/waterfall.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-
-
-<!-- <h2 id="comments">Comments</h2> -->
-{% include comments.html %}
+### hello,welcome to RX's world!
