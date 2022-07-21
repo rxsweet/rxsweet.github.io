@@ -15,12 +15,13 @@ type: page
 
 ## 联系我
 
-/ * GitHub：[Gaohaoyang](https://github.com/Gaohaoyang)
-/ * email：gaohaoyang126@126.com
-/ * [Weibo](http://weibo.com/3115521wh)
-/ * [知乎](https://www.zhihu.com/people/gaohaoyang)
-/ * [豆瓣](https://www.douban.com/people/42525035/)
-
+<!-- 
+* GitHub：[Gaohaoyang](https://github.com/Gaohaoyang)
+* email：gaohaoyang126@126.com
+* [Weibo](http://weibo.com/3115521wh)
+* [知乎](https://www.zhihu.com/people/gaohaoyang)
+* [豆瓣](https://www.douban.com/people/42525035/)
+-->
 
 ## 友情链接
 
