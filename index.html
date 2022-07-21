@@ -32,11 +32,7 @@ layout: default
                     <div class="label-card">
                     {% include tag.html %}
                     </div>
-                    
-                    <div class="label-card">
-                    {% include search.html %}
-                    </div>
-                
+            
                 </div>
                 <div class="excerpt">
                    {{ post.excerpt}}
@@ -148,7 +144,27 @@ layout: default
                     {% endfor %}
                 </div>
             </div>
+<!--添加搜索框-->
+<br/>
+<!-- HTML elements for search -->
+<input type="text" id="search-input" placeholder="搜索-标题/相关内容.." style="width:100px;"/>
+<ul id="results-container"></ul>
 
+<!-- script pointing to jekyll-search.js -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<script>
+SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: '没有搜索到文章',
+    limit: 20,
+    fuzzy: false
+  })
+</script>
+<br/>
             <!-- <div class="side">
                 <div>
                     <i class="fa fa-external-link"></i>
