@@ -10,8 +10,7 @@ img:
 * content
 {:toc}
 
-# Jekyll个人博客实现搜索功能
-
+## Jekyll个人博客实现搜索功能
 
 本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。
 
@@ -21,7 +20,9 @@ img:
 
 # 初步介绍思路
 
-首先我是参考的Github上的一个开源库[Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)，通过这个库的README可以知道，是可以实现搜索功能的，所以，我们就用这个库来实现吧。
+首先我是参考的Github上的一个开源库[Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+
+通过这个库的README可以知道，是可以实现搜索功能的，所以，我们就用这个库来实现吧。
 
 先下载这个仓库到本地
 
@@ -33,7 +34,7 @@ https://github.com/christian-fei/Simple-Jekyll-Search
 
 在个人博客的根目录下创建一个`search.json`的文件，然后打开下载的文件夹目录`Simple-Jekyll-Search/example/`，复制里面的`search.json`的代码到这个文件。
 
-下面的search.json文件内容：
+下面是search.json文件内容(可以直接新建`search.json`复制下面内容)：
 
 ```
 {% raw %}
@@ -58,29 +59,55 @@ layout: none
 
 打开之前下载的`Simple-Jekyll-Search/example/js/`目录，发现会有两个js文件，一个是`simple-jekyll-search.js`和`simple-jekyll-search.min.js`。先别管这两个文件是什么内容了，直接复制到自己博客根目录下的`/js/`下。
 
-# Step 3. 在布局文件中添加搜索功能
+# Step 3. 在主页和菜单栏分别添加搜索功能
 
-这里我在导航栏添加搜索一栏
-
-## 在导航栏上是如何添加的搜索功能的?
-
-### 1. 在导航栏添加搜索一栏
-
-修改`_includes/sidebar.html`内容，添加一行。
-
+## 主页添加
+在`index.html`文件里找到自己想添加的位置，粘贴下面代码:
 ```
-<li class="menu-items"><a class="menu-links" href="{{site.baseurl}}/search/">search</a></li>
+<!--添加搜索框开始-->
+<div class="side">
+   <div>
+   <i class="fa fa-tags"></i>
+   Search
+   </div>
+<div class="tags-cloud">
+<br/>
+<!-- HTML elements for search -->
+<input type="text" id="search-input" placeholder="搜索-标题/相关内容.." style="width:230px;"/>
+<ul id="results-container"></ul>
+
+<!-- script pointing to jekyll-search.js -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<script>
+SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: '没有搜索到文章',
+    limit: 20,
+    fuzzy: false
+  })
+</script>
+<br/>
+</div>
+<!--添加搜索框结束-->  
 ```
 
-### 2. 在根目录下添加search.html文件
+## 菜单栏添加
 
-在根目录下添加`search.html`文件，并复制如下代码到该文件。
+### (1). 在菜单栏添加search
+
+在page目录下添加`search.html`文件，并复制如下代码到该文件。
 
 ```
 ---
-layout: post
+layout: page
 title: search
 permalink: /search/
+icon: search
+type: page
 ---
 
 
@@ -102,13 +129,21 @@ SimpleJekyllSearch({
     fuzzy: false
   })
 </script>
+
 ```
 
-### 3. search功能添加完成
+### (2).下面是老版jekyll我在菜单栏添加搜索一栏
 
-这部分也就是搜索的主要核心代码了。到此，搜索功能也就完成了。下面来看看如何在Targs页面去实现搜索功能。
+修改`_includes/sidebar.html`内容，添加一行。
+```
+<li class="menu-items"><a class="menu-links" href="{{site.baseurl}}/search/">search</a></li>
+```
 
-P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用{% raw %}and{% endraw %}包起Markdown语法。
+### (3). search功能添加完成
+
+这部分也就是搜索的主要核心代码了。到此，搜索功能也就完成了。
+
+P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用`{% raw %} and {% endraw %}`包起Markdown语法。
 
 ---
 
