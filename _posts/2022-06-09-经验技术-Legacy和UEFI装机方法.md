@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 经验技术 - Legacy和UEFI装机方法
 date:   2022-06-09 
