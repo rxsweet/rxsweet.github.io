@@ -72,7 +72,7 @@ layout: none
 	</div>
 	<div class="tags-cloud">
 		<!-- HTML elements for search 搜索元素-->
-		<input type="text" id="search-input" placeholder="搜索-标题/相关内容.." style="width:230px;"/>
+		<input type="text" id="search-input" placeholder="搜索-标题/Tags..." style="width:230px;"/>
 		<ul id="results-container"></ul>
 
 		<!-- script pointing to jekyll-search.js -->
@@ -111,7 +111,7 @@ type: page
 
 
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="搜索博客 - 输入标题/相关内容/日期/Tags.." style="width:380px;"/>
+<input type="text" id="search-input" placeholder="搜索博客 - 输入标题/日期/Tags.." style="width:380px;"/>
 <ul id="results-container"></ul>
 
 <!-- script pointing to jekyll-search.js -->
