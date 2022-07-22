@@ -58,7 +58,7 @@ tag_dir: tag/
 
 # paginate
 gems: [jekyll-paginate]
-paginate: 10
+paginate: 5
 
 plugins:
   - jekyll-paginate
