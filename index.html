@@ -69,37 +69,34 @@ layout: default
     </div>
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
     <div class="right">
-        <div class="wrap">
+        <div class="wrap">         
 <!--添加搜索框开始-->
 <div class="side">
-   <div>
-   <i class="fa fa-tags"></i>
-   Search
-   </div>
-<div class="tags-cloud">
-<br/>
-<!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="搜索-标题/相关内容.." style="width:230px;"/>
-<ul id="results-container"></ul>
+	<div>
+		<i class="fa fa-tags"></i>
+		Search
+	</div>
+	<div class="tags-cloud">
+		<input type="text" id="search-input" placeholder="搜索-标题/相关内容.." style="width:230px;"/>
+		<ul id="results-container"></ul>
 
-<!-- script pointing to jekyll-search.js -->
-<script src="/js/simple-jekyll-search.min.js"></script>
+		<!-- script pointing to jekyll-search.js -->
+		<script src="/js/simple-jekyll-search.min.js"></script>
 
-<script>
-SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-    noResultsText: '没有搜索到文章',
-    limit: 20,
-    fuzzy: false
-  })
-</script>
-<br/>
+		<script>
+		SimpleJekyllSearch({
+		searchInput: document.getElementById('search-input'),
+		resultsContainer: document.getElementById('results-container'),
+		json: '/search.json',
+		searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+		noResultsText: '没有搜索到文章',
+		limit: 20,
+		fuzzy: false
+		})
+		</script>
+	</div>
 </div>
-<!--添加搜索框结束-->            
-            
+<!--添加搜索框结束-->              
             <div class="side">
                 <div>
                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
