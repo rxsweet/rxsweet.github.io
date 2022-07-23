@@ -19,8 +19,14 @@ img:
 ---
 ## **GOOD WEB Proxy**
 
+- https://oracleusa.ml/		用全球顶级VPS提供商之一的甲骨文做的反向直连项目，开发者未知，简单来说就是免梯子访问外网
+
+- https://hyperbeam.com/app/room/8qFBAzNyQMWeWXmtT15QpQ		- 推荐 在线chrome浏览器免梯子
+
 - http://theinternetpics.com/freeweb/        - 速度不错
 - https://go.zerousd.com/a-proxy-website    - 教程和WEB代理记录
+- http://free-proxy.cz/zh/proxylist/country/all/socks5/ping/all
+
 
 * * *
 
