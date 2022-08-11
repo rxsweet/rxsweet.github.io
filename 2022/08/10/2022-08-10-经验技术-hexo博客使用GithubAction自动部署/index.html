@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/image-20201122003418494.png">
 <meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/image-20201122003452614.png">
 <meta property="article:published_time" content="2022-08-10T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-08-11T10:25:32.614Z">
+<meta property="article:modified_time" content="2022-08-11T10:27:22.844Z">
 <meta property="article:author" content="Sweet RX">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -233,7 +233,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-08-11 10:25:32" itemprop="dateModified" datetime="2022-08-11T10:25:32+00:00">2022-08-11</time>
+                <time title="Modified: 2022-08-11 10:27:22" itemprop="dateModified" datetime="2022-08-11T10:27:22+00:00">2022-08-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -265,11 +265,17 @@
 <span id="more"></span>
 
 <h3 id="使用Github令牌部署hexo博客"><a href="#使用Github令牌部署hexo博客" class="headerlink" title="使用Github令牌部署hexo博客"></a>使用Github令牌部署hexo博客</h3><pre><code>- 登陆`GitHub`，右上角`Settings`,
+
 设置界面左下`Developer settings -- Personal access tokens -- Generate new token`,
+
 创建一个全权限的`token`,名称随意,
+
 记录好此token。
+
 ![](https://pic.heson10.com/img/image-20200727124017855.png)
+
 - 更改根目录配置deploy的仓库地址
+
 在Hexo博客根目录下打开`_config.yml`找到
 </code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br></pre></td></tr></table></figure>
@@ -277,17 +283,26 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: https://令牌@github.com/rxsweet/rxsweet.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
 <h3 id="Github新建一个私有仓库，并上传hexo博客源码"><a href="#Github新建一个私有仓库，并上传hexo博客源码" class="headerlink" title="Github新建一个私有仓库，并上传hexo博客源码"></a>Github新建一个私有仓库，并上传hexo博客源码</h3><pre><code>- 下载个人使用的Hexo博客源码[源码链接 1](https://raw.githubusercontents.com/rxsweet/all/main/blog/blogHexo源码.zip)
+
 [源码链接 2](https://raw.gitfast.tk/rxsweet/all/main/blog/blogHexo源码.zip)
+
 - 创建私有库
+
 ![](https://picup.heson10.com/img/upyun/2020/11/image-20201122000503211.png)
+
 - 上传hexo博客源码,在博客源码中删除`.git`文件夹(隐藏文件夹)，删除`themes`里面主题目录`.git`文件夹
+
 ![](https://picup.heson10.com/img/upyun/2020/11/image-20201122001847923.png)
+
 提交完毕后，仓库代码如上图
 </code></pre>
 <h3 id="配置Github-Action实现自动化部署"><a href="#配置Github-Action实现自动化部署" class="headerlink" title="配置Github Action实现自动化部署"></a>配置Github Action实现自动化部署</h3><h4 id="新建workflow"><a href="#新建workflow" class="headerlink" title="新建workflow"></a>新建workflow</h4><pre><code>点击博客源码仓库的Action
 </code></pre>
 <h4 id="配置action，代码如下（记得修改自己的地址）："><a href="#配置action，代码如下（记得修改自己的地址）：" class="headerlink" title="配置action，代码如下（记得修改自己的地址）："></a>配置action，代码如下（记得修改自己的地址）：</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">name: blogDeploy # 部署</span><br><span class="line"> </span><br><span class="line">on: # 触发条件</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - main # 推送到 main 分支（这里的分支名很重要，不要弄错了,这里main指的是Hexo源库的branch）</span><br><span class="line"> </span><br><span class="line">  release:</span><br><span class="line">    types:</span><br><span class="line">      - published # 推送新版本号</span><br><span class="line"> </span><br><span class="line">  workflow_dispatch: # 手动触发</span><br><span class="line"> </span><br><span class="line">jobs:</span><br><span class="line">  build:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line"> </span><br><span class="line">    steps:</span><br><span class="line">    - name: Checkout # Checkout 仓库</span><br><span class="line">      uses: actions/checkout@v2</span><br><span class="line">      with:</span><br><span class="line">        ref: main</span><br><span class="line"> </span><br><span class="line">    - name: Setup Node # 安装 Node.js</span><br><span class="line">      uses: actions/setup-node@v1</span><br><span class="line">      with:</span><br><span class="line">        node-version: &quot;12.x&quot;</span><br><span class="line"> </span><br><span class="line">    - name: Install Hexo # 安装 Hexo</span><br><span class="line">      run: |</span><br><span class="line">        npm install hexo-cli -g</span><br><span class="line">    - name: Cache Modules # 缓存 Node 插件</span><br><span class="line">      uses: actions/cache@v1</span><br><span class="line">      id: cache-modules</span><br><span class="line">      with:</span><br><span class="line">        path: node_modules</span><br><span class="line">        key: $&#123;&#123;runner.OS&#125;&#125;-$&#123;&#123;hashFiles(&#x27;**/package-lock.json&#x27;)&#125;&#125;</span><br><span class="line"> </span><br><span class="line">    - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件</span><br><span class="line">      if: steps.cache-modules.outputs.cache-hit != &#x27;true&#x27;</span><br><span class="line">      run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**</span><br><span class="line">        npm ci</span><br><span class="line">    - name: Generate # 生成</span><br><span class="line">      run: |</span><br><span class="line">        hexo clean</span><br><span class="line">        hexo generate</span><br><span class="line">    - name: Deploy # 部署</span><br><span class="line">      run: |</span><br><span class="line">        git config --global user.name &quot;rxsweet&quot;</span><br><span class="line">        git config --global user.email &quot;sweetrx@pm.me&quot;</span><br><span class="line">        git clone https://github.com/rxsweet/rxsweet.github.io.git .deploy_git</span><br><span class="line">        export TZ=&#x27;Asia/Shanghai&#x27;</span><br><span class="line">        hexo deploy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h4><p>点击action即可看到部署状态<br><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003418494.png"><br><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003452614.png"><br>这样就代表自动部署成功了。</p>
+<h4 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h4><p>点击action即可看到部署状态</p>
+<p><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003418494.png"></p>
+<p><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003452614.png"></p>
+<p>这样就代表自动部署成功了。</p>
 <h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h3 id="branch-master"><a href="#branch-master" class="headerlink" title="branch: master"></a>branch: master</h3><p>自己部署的时候创建的<code>xxx.github.io</code>目录默认<code>branch: main</code>,要自己创建一个<code>branch: master</code>设为默认，<br>或者等自动部署完成后，把<code>master</code>设为默认，删除<code>main</code></p>
 <h3 id="Github-Actions里面的-触发条件-后面的main"><a href="#Github-Actions里面的-触发条件-后面的main" class="headerlink" title="Github Actions里面的# 触发条件 后面的main"></a>Github Actions里面的<code># 触发条件 后面的main</code></h3><pre><code>Github Actions里面的`# 触发条件 后面的main（这里的分支名很重要，不要弄错了,这里main指的是Hexo源库的branch）`
 </code></pre>
