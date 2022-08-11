@@ -933,7 +933,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#116;&#114;&#120;&#64;&#x70;&#109;&#46;&#x6d;&#x65;">&#115;&#x77;&#x65;&#101;&#116;&#114;&#120;&#64;&#x70;&#109;&#46;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#x65;&#x74;&#x72;&#120;&#64;&#112;&#109;&#46;&#109;&#101;">&#115;&#x77;&#101;&#x65;&#x74;&#x72;&#120;&#64;&#112;&#109;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>win</category>
@@ -2486,6 +2486,127 @@ https://raw.gitfast.tk/FreeDTV/FreeD/master/mobile
         <tag>软件</tag>
         <tag>apk</tag>
         <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<code>hexo博客使用Github Action自动部署</code>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
+</code></pre>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
+
+OK,大功告成！
+</code></pre>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - hexo博客使用Github Action自动部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="hexo博客使用Github-Action自动部署"><a href="#hexo博客使用Github-Action自动部署" class="headerlink" title="hexo博客使用Github Action自动部署"></a>hexo博客使用Github Action自动部署</h1><h2 id="Hexo-博客的Github-Action自动化部署是什么？"><a href="#Hexo-博客的Github-Action自动化部署是什么？" class="headerlink" title="Hexo 博客的Github Action自动化部署是什么？"></a>Hexo 博客的Github Action自动化部署是什么？</h2><p>简单说，就是把hexo博客的源代码上传到github代码仓库，github在代码发生变动的时候，自动通过安装一系列nodejs环境和相关依赖，生成html页面到github pages仓库。</p>
+<p>再简单点说，就是把本地生成博客的工作，全部交给github执行。</p>
+<h2 id="总体步骤："><a href="#总体步骤：" class="headerlink" title="总体步骤："></a>总体步骤：</h2><pre><code>1. 使用Github令牌部署hexo博客
+2. Github新建一个私有仓库，并上传hexo博客源码
+3. 配置Github Action实现自动化部署
+</code></pre>
+<h3 id="1-使用Github令牌部署hexo博客"><a href="#1-使用Github令牌部署hexo博客" class="headerlink" title="1. 使用Github令牌部署hexo博客"></a>1. 使用Github令牌部署hexo博客</h3><pre><code>- (1)登陆`GitHub`，右上角`Settings`,
+设置界面左下`Developer settings -- Personal access tokens -- Generate new token`,
+创建一个全权限的`token`,名称随意,
+记录好此token。
+![](https://pic.heson10.com/img/image-20200727124017855.png)
+- (2)更改根目录配置deploy的仓库地址
+在Hexo博客根目录下打开`_config.yml`找到
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br></pre></td></tr></table></figure>
+<p>修改成</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: https://令牌@github.com/rxsweet/rxsweet.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-Github新建一个私有仓库，并上传hexo博客源码"><a href="#2-Github新建一个私有仓库，并上传hexo博客源码" class="headerlink" title="2. Github新建一个私有仓库，并上传hexo博客源码"></a>2. Github新建一个私有仓库，并上传hexo博客源码</h3><pre><code>-下载个人使用的Hexo博客源码[源码链接 1](https://raw.githubusercontents.com/rxsweet/all/main/blog/blogHexo源码.zip)
+[源码链接 2](https://raw.gitfast.tk/rxsweet/all/main/blog/blogHexo源码.zip)
+- (1)创建私有库
+![](https://picup.heson10.com/img/upyun/2020/11/image-20201122000503211.png)
+- (2)上传hexo博客源码,在博客源码中删除`.git`文件夹(隐藏文件夹)，删除`themes`里面主题目录`.git`文件夹
+![](https://picup.heson10.com/img/upyun/2020/11/image-20201122001847923.png)
+提交完毕后，仓库代码如上图
+</code></pre>
+<h3 id="3-配置Github-Action实现自动化部署"><a href="#3-配置Github-Action实现自动化部署" class="headerlink" title="3. 配置Github Action实现自动化部署"></a>3. 配置Github Action实现自动化部署</h3><h4 id="1-新建workflow"><a href="#1-新建workflow" class="headerlink" title="(1)新建workflow"></a>(1)新建workflow</h4><pre><code>点击博客源码仓库的Action
+</code></pre>
+<h4 id="2-配置action，代码如下（记得修改自己的地址）："><a href="#2-配置action，代码如下（记得修改自己的地址）：" class="headerlink" title="(2)配置action，代码如下（记得修改自己的地址）："></a>(2)配置action，代码如下（记得修改自己的地址）：</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name: blogDeploy # 部署</span><br><span class="line"> </span><br><span class="line">on: # 触发条件</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - master # 推送到 main 分支（这里的分支名很重要，不要弄错了）</span><br><span class="line"> </span><br><span class="line">  release:</span><br><span class="line">    types:</span><br><span class="line">      - published # 推送新版本号</span><br><span class="line"> </span><br><span class="line">  workflow_dispatch: # 手动触发</span><br><span class="line"> </span><br><span class="line">jobs:</span><br><span class="line">  build:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line"> </span><br><span class="line">    steps:</span><br><span class="line">    - name: Checkout # Checkout 仓库</span><br><span class="line">      uses: actions/checkout@v2</span><br><span class="line">      with:</span><br><span class="line">        ref: main</span><br><span class="line"> </span><br><span class="line">    - name: Setup Node # 安装 Node.js</span><br><span class="line">      uses: actions/setup-node@v1</span><br><span class="line">      with:</span><br><span class="line">        node-version: &quot;12.x&quot;</span><br><span class="line"> </span><br><span class="line">    - name: Install Hexo # 安装 Hexo</span><br><span class="line">      run: |</span><br><span class="line">        npm install hexo-cli -g</span><br><span class="line">    - name: Cache Modules # 缓存 Node 插件</span><br><span class="line">      uses: actions/cache@v1</span><br><span class="line">      id: cache-modules</span><br><span class="line">      with:</span><br><span class="line">        path: node_modules</span><br><span class="line">        key: $&#123;&#123;runner.OS&#125;&#125;-$&#123;&#123;hashFiles(&#x27;**/package-lock.json&#x27;)&#125;&#125;</span><br><span class="line"> </span><br><span class="line">    - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件</span><br><span class="line">      if: steps.cache-modules.outputs.cache-hit != &#x27;true&#x27;</span><br><span class="line">      run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**</span><br><span class="line">        npm ci</span><br><span class="line">    - name: Generate # 生成</span><br><span class="line">      run: |</span><br><span class="line">        hexo clean</span><br><span class="line">        hexo generate</span><br><span class="line">    - name: Deploy # 部署</span><br><span class="line">      run: |</span><br><span class="line">        git config --global user.name &quot;rxsweet&quot;</span><br><span class="line">        git config --global user.email &quot;sweetrx@pm.me&quot;</span><br><span class="line">        git clone https://github.com/rxsweet/rxsweet.github.io.git .deploy_git</span><br><span class="line">        export TZ=&#x27;Asia/Shanghai&#x27;</span><br><span class="line">        hexo deploy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="3-查看状态"><a href="#3-查看状态" class="headerlink" title="(3)查看状态"></a>(3)查看状态</h4><p>点击action即可看到部署状态<br><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003418494.png"><br><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003452614.png"><br>这样就代表自动部署成功了。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h3 id="1-branch-master"><a href="#1-branch-master" class="headerlink" title="1. branch: master"></a>1. branch: master</h3><p>自己部署的时候创建的<code>xxx.github.io</code>目录默认<code>branch: main</code>,要自己创建一个<code>branch: master</code>设为默认，<br>或者等自动部署完成后，把<code>master</code>设为默认，删除<code>main</code></p>
+<h3 id="2-缺少package-lock-json"><a href="#2-缺少package-lock-json" class="headerlink" title="2.缺少package-lock.json"></a>2.缺少<code>package-lock.json</code></h3><p>package-lock.json作用：</p>
+<p><em>主要解决问题场景：</em><br><em>前景：</em><br>比如你的packgae.json的依赖是”react”: “^17.0.2”，因为有标识符^，所以如果react模块有在17大版本下更新的小版本17.0.3，npm install时候会自动安装17下的最新版本17.0.3<br><em>现象：</em><br>在前景情况下，你本地是”react”: “^17.0.2”，如果这时候react更新”react”: “^17.0.3”，别人npm install的时候，安装就是”react”: “^17.0.3”。这样导致你们版本不一致，可能引起一些相关错误。<br><em>解决：</em><br>package-lock.json：简单来说就是锁定安装模块的版本号。<br>就是在npm install的时候，记录各个模块的版本信息和下载路径，这样别人拉项目npm install时候， 就会依据packgae-lock.json去安装”react”: “^17.0.2”，保证大家依赖一致并且安装模块速度也能提高。<br><em>注意点:</em><br>1.npm安装，没有package-lock.json文件，如果npm版本是5+，会自动生成package-lock.json。有的话会默认依据该文件进行安装而不是package.json。cnpm不支持（忽略）依据package-lock.json文件安装模块，默认依赖package.json进行安装。<br>2.需要更新版本，得去更新package.json里的模块版本，然后npm install，才能同步更新到package-lock.json<br>3.该功能基于npm5+</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了heson大佬的文章和方法<a href="https://www.heson10.com/posts/61031.html">黑石博客 - 利用Github Action实现hexo博客的自动部署</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo添加分类及标签（在Next主题下）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签</p>
+<h1 id="一-配置分类"><a href="#一-配置分类" class="headerlink" title="一.配置分类"></a>一.配置分类</h1><h2 id="1-在主题里配置好分类"><a href="#1-在主题里配置好分类" class="headerlink" title="1. 在主题里配置好分类"></a>1. 在主题里配置好分类</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<p>去掉<code>categories</code>前<code>#</code>注释标</p>
+<h2 id="2-创建分类目录文件"><a href="#2-创建分类目录文件" class="headerlink" title="2. 创建分类目录文件"></a>2. 创建分类目录文件</h2><p>在Hexoblog主目录下创建<code>/source/categories/index.md</code></p>
+<h2 id="3-编辑页面让主题识别页面为分类页面"><a href="#3-编辑页面让主题识别页面为分类页面" class="headerlink" title="3. 编辑页面让主题识别页面为分类页面"></a>3. 编辑页面让主题识别页面为分类页面</h2><p>编辑<code>index.md</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类 - post category</span><br><span class="line">date: 2021-01-25 22:37:25</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这就完成了整个分类页面的配置了。</p>
+<h1 id="二-配置标签"><a href="#二-配置标签" class="headerlink" title="二.配置标签"></a>二.配置标签</h1><h2 id="1-在主题里配置好标签"><a href="#1-在主题里配置好标签" class="headerlink" title="1. 在主题里配置好标签"></a>1. 在主题里配置好标签</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<p>去掉<code>tags</code>前<code>#</code>注释标</p>
+<h2 id="2-创建标签目录文件"><a href="#2-创建标签目录文件" class="headerlink" title="2. 创建标签目录文件"></a>2. 创建标签目录文件</h2><p>在Hexoblog主目录下创建<code>/source/tags/index.md</code></p>
+<h2 id="3-编辑页面让主题识别页面为标签页面"><a href="#3-编辑页面让主题识别页面为标签页面" class="headerlink" title="3. 编辑页面让主题识别页面为标签页面"></a>3. 编辑页面让主题识别页面为标签页面</h2><p>编辑index.md</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签 - tags</span><br><span class="line">date: 2021-01-25 22:54:58</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这就完成了整个标签页面的配置了。</p>
+<h1 id="三-结语"><a href="#三-结语" class="headerlink" title="三.结语"></a>三.结语</h1><p>这样我们就完成了分类和标签的配置，可以看出分类和标签的配置流程基本一样。</p>
+<p>关于Next的更多配置请查看官方文档 <a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></p>
+<h1 id="四-延伸"><a href="#四-延伸" class="headerlink" title="四.延伸"></a>四.延伸</h1><p>在上面我们配置对文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域，名称为 <code>Front-matter</code></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
+<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
+<p>然后还需要对对应对文章进行设置，有两种方法</p>
+<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
+<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
