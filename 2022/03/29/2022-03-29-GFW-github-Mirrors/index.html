@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="学习大佬的方法，不错 Google And Github Mirrors  https:&#x2F;&#x2F;progcz.com&#x2F;posts&#x2F;use-cf-workers-build-google-and-github-mirrors 对于 Google 来说，虽然大部分时间都能够在科学环境中网上冲浪，但是难免有需要在普通环境中使用 Google 的情况，而对于 GitHub 来说，虽然目前可以无障碍访问，但是在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GFW - 使用 Cloudflare Workers 搭建 Google 和 GitHub 镜像网站">
+<meta property="og:url" content="http://yoursite.com/2022/03/29/2022-03-29-GFW-github-Mirrors/index.html">
+<meta property="og:site_name" content="Sweet RX">
+<meta property="og:description" content="学习大佬的方法，不错 Google And Github Mirrors  https:&#x2F;&#x2F;progcz.com&#x2F;posts&#x2F;use-cf-workers-build-google-and-github-mirrors 对于 Google 来说，虽然大部分时间都能够在科学环境中网上冲浪，但是难免有需要在普通环境中使用 Google 的情况，而对于 GitHub 来说，虽然目前可以无障碍访问，但是在">
+<meta property="og:locale">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/06.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/07.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/08.png">
+<meta property="article:published_time" content="2022-03-29T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-08-11T05:02:18.004Z">
+<meta property="article:author" content="Sweet RX">
+<meta property="article:tag" content="GFW">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="google">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/06.png">
+
+<link rel="canonical" href="http://yoursite.com/2022/03/29/2022-03-29-GFW-github-Mirrors/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'default'
+  };
+</script>
+
+  <title>GFW - 使用 Cloudflare Workers 搭建 Google 和 GitHub 镜像网站 | Sweet RX</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Sweet RX</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-bookmarks">
+
+    <a href="/bookmarks/" rel="section"><i class="fa fa-bookmark fa-fw"></i>bookmarks</a>
+
+  </li>
+        <li class="menu-item menu-item-vip">
+
+    <a href="/vip/" rel="section"><i class="fa fa-user fa-fw"></i>vip</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/03/29/2022-03-29-GFW-github-Mirrors/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sweet RX">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sweet RX">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          GFW - 使用 Cloudflare Workers 搭建 Google 和 GitHub 镜像网站
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-03-29 00:00:00" itemprop="dateCreated datePublished" datetime="2022-03-29T00:00:00+00:00">2022-03-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-08-11 05:02:18" itemprop="dateModified" datetime="2022-08-11T05:02:18+00:00">2022-08-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/GFW/" itemprop="url" rel="index"><span itemprop="name">GFW</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>学习大佬的方法，不错</p>
+<p>Google And Github Mirrors </p>
+<p><a target="_blank" rel="noopener" href="https://progcz.com/posts/use-cf-workers-build-google-and-github-mirrors">https://progcz.com/posts/use-cf-workers-build-google-and-github-mirrors</a></p>
+<p>对于 Google 来说，虽然大部分时间都能够在科学环境中网上冲浪，但是难免有需要在普通环境中使用 Google 的情况，而对于 GitHub 来说，虽然目前可以无障碍访问，但是在普通环境中下载某些 Release（比如科学工具的客户端）的速度实在太慢。</p>
+<p>如果你也有和我一样的困扰，那么可以考虑使用 Cloudflare Workers 搭建属于自己的镜像网站，在普通环境中备用。</p>
+<span id="more"></span>
+
+<ol start="0">
+<li>写在前面 如果你只是在寻找临时的解决方案，而又不想费劲的话，那么可以直接使用我已经搭建好的镜像网站。</li>
+</ol>
+<p>但是，请你务必遵守以下约定：</p>
+<p> *不滥用服务。因为每个 Cloudflare 账户每天只有 100,000 次请求的额度。</p>
+<p> *不登录自己的任何账号。虽然我保证不拦截你的数据，但是防人之心不可无。</p>
+<p> *不违反大陆的法律法规。虽然你需要科学，但是请保持理性。</p>
+<p>Google 镜像网站：<a target="_blank" rel="noopener" href="https://google.progcz.workers.dev/">https://google.progcz.workers.dev/</a></p>
+<p>GitHub 镜像网站：<a target="_blank" rel="noopener" href="https://google.progcz.workers.dev/">https://github.progcz.workers.dev/</a></p>
+<ol>
+<li>注册并登录 Cloudflare 账号 <a target="_blank" rel="noopener" href="https://www.cloudflare.com/">https://www.cloudflare.com</a>这没啥好说的，前往 Cloudflare 官网自行注册并登录，然后点击「Workers」。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/06.png" alt="注册"></li>
+<li>创建新的 Worker 应用 进入 Workers 页面之后，新用户需要设置用户名（比如 progcz），然后点击「创建 Worker」。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/07.png" alt="创建"></li>
+<li>部署 Worker 应用 自行修改应用名（比如 test），将 <a target="_blank" rel="noopener" href="https://github.com/cszszs/GoogleAndGithubMirrors/blob/main/index.js">index.js</a> 中的代码拷贝至脚本中，点击「保存并部署」，然后就可以通过 <a target="_blank" rel="noopener" href="https://test.progcz.workers.dev/%EF%BC%88%E6%B3%A8%E6%84%8F%E6%9B%BF%E6%8D%A2%E5%BA%94%E7%94%A8%E5%90%8D">https://test.progcz.workers.dev/（注意替换应用名</a> test 和用户名 progcz）访问 Google 的镜像网站了。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/08.png" alt="部署"></li>
+<li>自定义 index.js 脚本 上文的 index.js 其实来自于 Berkeley-Reject&#x2F;Workers-Proxy 仓库，但是代码中设置了对于国内访问的屏蔽，所以为了避免误用，我就在自行修改之后保存了一份。</li>
+</ol>
+<p>可以通过修改以下部分来搭建不同的镜像网站：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// Website you intended to retrieve for users. const upstream = &#x27;www.google.com&#x27;</span><br><span class="line">// Custom pathname for the upstream website. const upstream_path = &#x27;/&#x27;</span><br><span class="line">// Website you intended to retrieve for users using mobile devices. const upstream_mobile = &#x27;www.google.com&#x27;</span><br><span class="line">// Countries and regions where you wish to suspend your service. const blocked_region = [&#x27;KP&#x27;, &#x27;SY&#x27;, &#x27;PK&#x27;, &#x27;CU&#x27;]</span><br><span class="line">// IP addresses which you wish to block from using your service. const blocked_ip_address = [&#x27;0.0.0.0&#x27;, &#x27;127.0.0.1&#x27;]</span><br><span class="line">// Whether to use HTTPS protocol for upstream address. const https = true</span><br><span class="line">// Whether to disable cache. const disable_cache = false</span><br><span class="line">// Replace texts. const replace_dict = &#123; &#x27;$upstream&#x27;: &#x27;$custom_domain&#x27;, &#x27;//google.com&#x27;: &#x27;&#x27; &#125; </span><br></pre></td></tr></table></figure>
+
+<p><strong>需要注意的是，上述代码只是 index.js 的一小部分。</strong></p>
+<p>比如，对于 GitHub 来说，我们只需要将 **upstream、upstream_mobile 和 replace_dict 中的 google.com 修改为 github.com **即可。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/GFW/" rel="tag"># GFW</a>
+              <a href="/tags/github/" rel="tag"># github</a>
+              <a href="/tags/google/" rel="tag"># google</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/29/2022-03-29-GFW-%E7%9F%AD%E4%BF%A1%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0/" rel="prev" title="GFW - 短信接码平台">
+      <i class="fa fa-chevron-left"></i> GFW - 短信接码平台
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/" rel="next" title="GFW - Github连接访问的几种方法">
+      GFW - Github连接访问的几种方法 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Sweet RX"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Sweet RX</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/rxsweet" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;rxsweet" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sweet RX</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
