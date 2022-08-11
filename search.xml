@@ -933,7 +933,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#101;&#116;&#114;&#120;&#64;&#112;&#x6d;&#x2e;&#109;&#101;">&#115;&#119;&#x65;&#101;&#116;&#114;&#120;&#64;&#112;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#101;&#x74;&#114;&#120;&#x40;&#112;&#x6d;&#x2e;&#109;&#101;">&#115;&#119;&#x65;&#101;&#x74;&#114;&#120;&#x40;&#112;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>win</category>
@@ -2520,6 +2520,8 @@ OK,大功告成！
     <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</url>
     <content><![CDATA[<h1 id="hexo博客使用Github-Action自动部署"><a href="#hexo博客使用Github-Action自动部署" class="headerlink" title="hexo博客使用Github Action自动部署"></a>hexo博客使用Github Action自动部署</h1><h2 id="Hexo-博客的Github-Action自动化部署是什么？"><a href="#Hexo-博客的Github-Action自动化部署是什么？" class="headerlink" title="Hexo 博客的Github Action自动化部署是什么？"></a>Hexo 博客的Github Action自动化部署是什么？</h2><p>简单说，就是把hexo博客的源代码上传到github代码仓库，github在代码发生变动的时候，自动通过安装一系列nodejs环境和相关依赖，生成html页面到github pages仓库。</p>
 <p>再简单点说，就是把本地生成博客的工作，全部交给github执行。</p>
+<span id="more"></span>
+
 <h2 id="总体步骤："><a href="#总体步骤：" class="headerlink" title="总体步骤："></a>总体步骤：</h2><pre><code>1. 使用Github令牌部署hexo博客
 2. Github新建一个私有仓库，并上传hexo博客源码
 3. 配置Github Action实现自动化部署

@@ -221,7 +221,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-08-11 00:00:00 / Modified: 10:07:20" itemprop="dateCreated datePublished" datetime="2022-08-11T00:00:00+00:00">2022-08-11</time>
+              <time title="Created: 2022-08-11 00:00:00 / Modified: 10:07:42" itemprop="dateCreated datePublished" datetime="2022-08-11T00:00:00+00:00">2022-08-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -306,7 +306,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-08-11 00:00:00 / Modified: 10:07:20" itemprop="dateCreated datePublished" datetime="2022-08-11T00:00:00+00:00">2022-08-11</time>
+              <time title="Created: 2022-08-11 00:00:00 / Modified: 10:07:42" itemprop="dateCreated datePublished" datetime="2022-08-11T00:00:00+00:00">2022-08-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -389,7 +389,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-08-11 10:07:20" itemprop="dateModified" datetime="2022-08-11T10:07:20+00:00">2022-08-11</time>
+                <time title="Modified: 2022-08-11 10:07:42" itemprop="dateModified" datetime="2022-08-11T10:07:42+00:00">2022-08-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -474,7 +474,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-08-11 10:07:20" itemprop="dateModified" datetime="2022-08-11T10:07:20+00:00">2022-08-11</time>
+                <time title="Modified: 2022-08-11 10:07:42" itemprop="dateModified" datetime="2022-08-11T10:07:42+00:00">2022-08-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -499,39 +499,14 @@
       
           <h1 id="hexo博客使用Github-Action自动部署"><a href="#hexo博客使用Github-Action自动部署" class="headerlink" title="hexo博客使用Github Action自动部署"></a>hexo博客使用Github Action自动部署</h1><h2 id="Hexo-博客的Github-Action自动化部署是什么？"><a href="#Hexo-博客的Github-Action自动化部署是什么？" class="headerlink" title="Hexo 博客的Github Action自动化部署是什么？"></a>Hexo 博客的Github Action自动化部署是什么？</h2><p>简单说，就是把hexo博客的源代码上传到github代码仓库，github在代码发生变动的时候，自动通过安装一系列nodejs环境和相关依赖，生成html页面到github pages仓库。</p>
 <p>再简单点说，就是把本地生成博客的工作，全部交给github执行。</p>
-<h2 id="总体步骤："><a href="#总体步骤：" class="headerlink" title="总体步骤："></a>总体步骤：</h2><pre><code>1. 使用Github令牌部署hexo博客
-2. Github新建一个私有仓库，并上传hexo博客源码
-3. 配置Github Action实现自动化部署
-</code></pre>
-<h3 id="1-使用Github令牌部署hexo博客"><a href="#1-使用Github令牌部署hexo博客" class="headerlink" title="1. 使用Github令牌部署hexo博客"></a>1. 使用Github令牌部署hexo博客</h3><pre><code>- (1)登陆`GitHub`，右上角`Settings`,
-设置界面左下`Developer settings -- Personal access tokens -- Generate new token`,
-创建一个全权限的`token`,名称随意,
-记录好此token。
-![](https://pic.heson10.com/img/image-20200727124017855.png)
-- (2)更改根目录配置deploy的仓库地址
-在Hexo博客根目录下打开`_config.yml`找到
-</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br></pre></td></tr></table></figure>
-<p>修改成</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: https://令牌@github.com/rxsweet/rxsweet.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-Github新建一个私有仓库，并上传hexo博客源码"><a href="#2-Github新建一个私有仓库，并上传hexo博客源码" class="headerlink" title="2. Github新建一个私有仓库，并上传hexo博客源码"></a>2. Github新建一个私有仓库，并上传hexo博客源码</h3><pre><code>-下载个人使用的Hexo博客源码[源码链接 1](https://raw.githubusercontents.com/rxsweet/all/main/blog/blogHexo源码.zip)
-[源码链接 2](https://raw.gitfast.tk/rxsweet/all/main/blog/blogHexo源码.zip)
-- (1)创建私有库
-![](https://picup.heson10.com/img/upyun/2020/11/image-20201122000503211.png)
-- (2)上传hexo博客源码,在博客源码中删除`.git`文件夹(隐藏文件夹)，删除`themes`里面主题目录`.git`文件夹
-![](https://picup.heson10.com/img/upyun/2020/11/image-20201122001847923.png)
-提交完毕后，仓库代码如上图
-</code></pre>
-<h3 id="3-配置Github-Action实现自动化部署"><a href="#3-配置Github-Action实现自动化部署" class="headerlink" title="3. 配置Github Action实现自动化部署"></a>3. 配置Github Action实现自动化部署</h3><h4 id="1-新建workflow"><a href="#1-新建workflow" class="headerlink" title="(1)新建workflow"></a>(1)新建workflow</h4><pre><code>点击博客源码仓库的Action
-</code></pre>
-<h4 id="2-配置action，代码如下（记得修改自己的地址）："><a href="#2-配置action，代码如下（记得修改自己的地址）：" class="headerlink" title="(2)配置action，代码如下（记得修改自己的地址）："></a>(2)配置action，代码如下（记得修改自己的地址）：</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">name: blogDeploy # 部署</span><br><span class="line"> </span><br><span class="line">on: # 触发条件</span><br><span class="line">  push:</span><br><span class="line">    branches:</span><br><span class="line">      - master # 推送到 main 分支（这里的分支名很重要，不要弄错了）</span><br><span class="line"> </span><br><span class="line">  release:</span><br><span class="line">    types:</span><br><span class="line">      - published # 推送新版本号</span><br><span class="line"> </span><br><span class="line">  workflow_dispatch: # 手动触发</span><br><span class="line"> </span><br><span class="line">jobs:</span><br><span class="line">  build:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line"> </span><br><span class="line">    steps:</span><br><span class="line">    - name: Checkout # Checkout 仓库</span><br><span class="line">      uses: actions/checkout@v2</span><br><span class="line">      with:</span><br><span class="line">        ref: main</span><br><span class="line"> </span><br><span class="line">    - name: Setup Node # 安装 Node.js</span><br><span class="line">      uses: actions/setup-node@v1</span><br><span class="line">      with:</span><br><span class="line">        node-version: &quot;12.x&quot;</span><br><span class="line"> </span><br><span class="line">    - name: Install Hexo # 安装 Hexo</span><br><span class="line">      run: |</span><br><span class="line">        npm install hexo-cli -g</span><br><span class="line">    - name: Cache Modules # 缓存 Node 插件</span><br><span class="line">      uses: actions/cache@v1</span><br><span class="line">      id: cache-modules</span><br><span class="line">      with:</span><br><span class="line">        path: node_modules</span><br><span class="line">        key: $&#123;&#123;runner.OS&#125;&#125;-$&#123;&#123;hashFiles(&#x27;**/package-lock.json&#x27;)&#125;&#125;</span><br><span class="line"> </span><br><span class="line">    - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件</span><br><span class="line">      if: steps.cache-modules.outputs.cache-hit != &#x27;true&#x27;</span><br><span class="line">      run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**</span><br><span class="line">        npm ci</span><br><span class="line">    - name: Generate # 生成</span><br><span class="line">      run: |</span><br><span class="line">        hexo clean</span><br><span class="line">        hexo generate</span><br><span class="line">    - name: Deploy # 部署</span><br><span class="line">      run: |</span><br><span class="line">        git config --global user.name &quot;rxsweet&quot;</span><br><span class="line">        git config --global user.email &quot;sweetrx@pm.me&quot;</span><br><span class="line">        git clone https://github.com/rxsweet/rxsweet.github.io.git .deploy_git</span><br><span class="line">        export TZ=&#x27;Asia/Shanghai&#x27;</span><br><span class="line">        hexo deploy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="3-查看状态"><a href="#3-查看状态" class="headerlink" title="(3)查看状态"></a>(3)查看状态</h4><p>点击action即可看到部署状态<br><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003418494.png"><br><img src="https://picup.heson10.com/img/upyun/2020/11/image-20201122003452614.png"><br>这样就代表自动部署成功了。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><h3 id="1-branch-master"><a href="#1-branch-master" class="headerlink" title="1. branch: master"></a>1. branch: master</h3><p>自己部署的时候创建的<code>xxx.github.io</code>目录默认<code>branch: main</code>,要自己创建一个<code>branch: master</code>设为默认，<br>或者等自动部署完成后，把<code>master</code>设为默认，删除<code>main</code></p>
-<h3 id="2-缺少package-lock-json"><a href="#2-缺少package-lock-json" class="headerlink" title="2.缺少package-lock.json"></a>2.缺少<code>package-lock.json</code></h3><p>package-lock.json作用：</p>
-<p><em>主要解决问题场景：</em><br><em>前景：</em><br>比如你的packgae.json的依赖是”react”: “^17.0.2”，因为有标识符^，所以如果react模块有在17大版本下更新的小版本17.0.3，npm install时候会自动安装17下的最新版本17.0.3<br><em>现象：</em><br>在前景情况下，你本地是”react”: “^17.0.2”，如果这时候react更新”react”: “^17.0.3”，别人npm install的时候，安装就是”react”: “^17.0.3”。这样导致你们版本不一致，可能引起一些相关错误。<br><em>解决：</em><br>package-lock.json：简单来说就是锁定安装模块的版本号。<br>就是在npm install的时候，记录各个模块的版本信息和下载路径，这样别人拉项目npm install时候， 就会依据packgae-lock.json去安装”react”: “^17.0.2”，保证大家依赖一致并且安装模块速度也能提高。<br><em>注意点:</em><br>1.npm安装，没有package-lock.json文件，如果npm版本是5+，会自动生成package-lock.json。有的话会默认依据该文件进行安装而不是package.json。cnpm不支持（忽略）依据package-lock.json文件安装模块，默认依赖package.json进行安装。<br>2.需要更新版本，得去更新package.json里的模块版本，然后npm install，才能同步更新到package-lock.json<br>3.该功能基于npm5+</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了heson大佬的文章和方法<a target="_blank" rel="noopener" href="https://www.heson10.com/posts/61031.html">黑石博客 - 利用Github Action实现hexo博客的自动部署</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -581,7 +556,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-08-11 10:07:20" itemprop="dateModified" datetime="2022-08-11T10:07:20+00:00">2022-08-11</time>
+                <time title="Modified: 2022-08-11 10:07:42" itemprop="dateModified" datetime="2022-08-11T10:07:42+00:00">2022-08-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
