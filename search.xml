@@ -933,7 +933,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#x65;&#x74;&#114;&#x78;&#x40;&#112;&#109;&#46;&#109;&#x65;">&#x73;&#x77;&#101;&#x65;&#x74;&#114;&#x78;&#x40;&#112;&#109;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#x74;&#x72;&#x78;&#x40;&#x70;&#109;&#46;&#x6d;&#x65;">&#115;&#x77;&#x65;&#101;&#x74;&#x72;&#x78;&#x40;&#x70;&#109;&#46;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>win</category>
@@ -2597,6 +2597,8 @@ OK,大功告成！
     <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
     <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
+<span id="more"></span>
+
 <h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
 <p>然后还需要对对应对文章进行设置，有两种方法</p>
