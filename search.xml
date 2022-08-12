@@ -933,7 +933,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#x65;&#116;&#x72;&#x78;&#x40;&#112;&#109;&#x2e;&#109;&#101;">&#x73;&#119;&#101;&#x65;&#116;&#x72;&#x78;&#x40;&#112;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#101;&#116;&#114;&#120;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#101;">&#115;&#x77;&#101;&#101;&#116;&#114;&#120;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>win</category>
@@ -2586,37 +2586,6 @@ OK,大功告成！
 <h3 id="缺少package-lock-json"><a href="#缺少package-lock-json" class="headerlink" title="缺少package-lock.json"></a>缺少<code>package-lock.json</code></h3><p>package-lock.json作用：</p>
 <p><em>主要解决问题场景：</em><br><em>前景：</em><br>比如你的packgae.json的依赖是”react”: “^17.0.2”，因为有标识符^，所以如果react模块有在17大版本下更新的小版本17.0.3，npm install时候会自动安装17下的最新版本17.0.3<br><em>现象：</em><br>在前景情况下，你本地是”react”: “^17.0.2”，如果这时候react更新”react”: “^17.0.3”，别人npm install的时候，安装就是”react”: “^17.0.3”。这样导致你们版本不一致，可能引起一些相关错误。<br><em>解决：</em><br>package-lock.json：简单来说就是锁定安装模块的版本号。<br>就是在npm install的时候，记录各个模块的版本信息和下载路径，这样别人拉项目npm install时候， 就会依据packgae-lock.json去安装”react”: “^17.0.2”，保证大家依赖一致并且安装模块速度也能提高。<br><em>注意点:</em><br>1.npm安装，没有package-lock.json文件，如果npm版本是5+，会自动生成package-lock.json。有的话会默认依据该文件进行安装而不是package.json。cnpm不支持（忽略）依据package-lock.json文件安装模块，默认依赖package.json进行安装。<br>2.需要更新版本，得去更新package.json里的模块版本，然后npm install，才能同步更新到package-lock.json<br>3.该功能基于npm5+</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了heson大佬的文章和方法<a href="https://www.heson10.com/posts/61031.html">黑石博客 - 利用Github Action实现hexo博客的自动部署</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo添加分类及标签（在Next主题下）</title>
-    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签</p>
-<span id="more"></span>
-
-<h1 id="一-配置分类"><a href="#一-配置分类" class="headerlink" title="一.配置分类"></a>一.配置分类</h1><h2 id="1-在主题里配置好分类"><a href="#1-在主题里配置好分类" class="headerlink" title="1. 在主题里配置好分类"></a>1. 在主题里配置好分类</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
-<p>去掉<code>categories</code>前<code>#</code>注释标</p>
-<h2 id="2-创建分类目录文件"><a href="#2-创建分类目录文件" class="headerlink" title="2. 创建分类目录文件"></a>2. 创建分类目录文件</h2><p>在Hexoblog主目录下创建<code>/source/categories/index.md</code></p>
-<h2 id="3-编辑页面让主题识别页面为分类页面"><a href="#3-编辑页面让主题识别页面为分类页面" class="headerlink" title="3. 编辑页面让主题识别页面为分类页面"></a>3. 编辑页面让主题识别页面为分类页面</h2><p>编辑<code>index.md</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类 - post category</span><br><span class="line">date: 2021-01-25 22:37:25</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这就完成了整个分类页面的配置了。</p>
-<h1 id="二-配置标签"><a href="#二-配置标签" class="headerlink" title="二.配置标签"></a>二.配置标签</h1><h2 id="1-在主题里配置好标签"><a href="#1-在主题里配置好标签" class="headerlink" title="1. 在主题里配置好标签"></a>1. 在主题里配置好标签</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
-<p>去掉<code>tags</code>前<code>#</code>注释标</p>
-<h2 id="2-创建标签目录文件"><a href="#2-创建标签目录文件" class="headerlink" title="2. 创建标签目录文件"></a>2. 创建标签目录文件</h2><p>在Hexoblog主目录下创建<code>/source/tags/index.md</code></p>
-<h2 id="3-编辑页面让主题识别页面为标签页面"><a href="#3-编辑页面让主题识别页面为标签页面" class="headerlink" title="3. 编辑页面让主题识别页面为标签页面"></a>3. 编辑页面让主题识别页面为标签页面</h2><p>编辑index.md</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签 - tags</span><br><span class="line">date: 2021-01-25 22:54:58</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这就完成了整个标签页面的配置了。</p>
-<h1 id="三-结语"><a href="#三-结语" class="headerlink" title="三.结语"></a>三.结语</h1><p>这样我们就完成了分类和标签的配置，可以看出分类和标签的配置流程基本一样。</p>
-<p>关于Next的更多配置请查看官方文档 <a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></p>
-<h1 id="四-延伸"><a href="#四-延伸" class="headerlink" title="四.延伸"></a>四.延伸</h1><p>在上面我们配置对文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域，名称为 <code>Front-matter</code></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
