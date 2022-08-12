@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/image-20201122003418494.png">
 <meta property="og:image" content="https://picup.heson10.com/img/upyun/2020/11/image-20201122003452614.png">
 <meta property="article:published_time" content="2022-08-10T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-08-11T10:27:22.844Z">
+<meta property="article:modified_time" content="2022-08-12T01:37:30.893Z">
 <meta property="article:author" content="Sweet RX">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -233,7 +233,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-08-11 10:27:22" itemprop="dateModified" datetime="2022-08-11T10:27:22+00:00">2022-08-11</time>
+                <time title="Modified: 2022-08-12 01:37:30" itemprop="dateModified" datetime="2022-08-12T01:37:30+00:00">2022-08-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -264,7 +264,7 @@
 </code></pre>
 <span id="more"></span>
 
-<h3 id="使用Github令牌部署hexo博客"><a href="#使用Github令牌部署hexo博客" class="headerlink" title="使用Github令牌部署hexo博客"></a>使用Github令牌部署hexo博客</h3><pre><code>- 登陆`GitHub`，右上角`Settings`,
+<h3 id="使用Github令牌部署hexo博客"><a href="#使用Github令牌部署hexo博客" class="headerlink" title="使用Github令牌部署hexo博客"></a>使用Github令牌部署hexo博客</h3><pre><code>登陆`GitHub`，右上角`Settings`,
 
 设置界面左下`Developer settings -- Personal access tokens -- Generate new token`,
 
@@ -274,7 +274,7 @@
 
 ![](https://pic.heson10.com/img/image-20200727124017855.png)
 
-- 更改根目录配置deploy的仓库地址
+更改根目录配置deploy的仓库地址
 
 在Hexo博客根目录下打开`_config.yml`找到
 </code></pre>
@@ -282,15 +282,15 @@
 <p>修改成</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: https://令牌@github.com/rxsweet/rxsweet.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<h3 id="Github新建一个私有仓库，并上传hexo博客源码"><a href="#Github新建一个私有仓库，并上传hexo博客源码" class="headerlink" title="Github新建一个私有仓库，并上传hexo博客源码"></a>Github新建一个私有仓库，并上传hexo博客源码</h3><pre><code>- 下载个人使用的Hexo博客源码[源码链接 1](https://raw.githubusercontents.com/rxsweet/all/main/blog/blogHexo源码.zip)
+<h3 id="Github新建一个私有仓库，并上传hexo博客源码"><a href="#Github新建一个私有仓库，并上传hexo博客源码" class="headerlink" title="Github新建一个私有仓库，并上传hexo博客源码"></a>Github新建一个私有仓库，并上传hexo博客源码</h3><pre><code>下载个人使用的Hexo博客源码[源码链接 1](https://raw.githubusercontents.com/rxsweet/all/main/blog/blogHexo源码.zip)
 
 [源码链接 2](https://raw.gitfast.tk/rxsweet/all/main/blog/blogHexo源码.zip)
 
-- 创建私有库
+创建私有库
 
 ![](https://picup.heson10.com/img/upyun/2020/11/image-20201122000503211.png)
 
-- 上传hexo博客源码,在博客源码中删除`.git`文件夹(隐藏文件夹)，删除`themes`里面主题目录`.git`文件夹
+上传hexo博客源码,在博客源码中删除`.git`文件夹(隐藏文件夹)，删除`themes`里面主题目录`.git`文件夹
 
 ![](https://picup.heson10.com/img/upyun/2020/11/image-20201122001847923.png)
 
