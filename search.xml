@@ -925,7 +925,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#x65;&#x74;&#114;&#x78;&#64;&#x70;&#x6d;&#46;&#x6d;&#101;">&#x73;&#119;&#x65;&#x65;&#x74;&#114;&#x78;&#64;&#x70;&#x6d;&#46;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#x65;&#x74;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#x65;">&#x73;&#119;&#x65;&#x65;&#x74;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>win</category>
@@ -2643,6 +2643,32 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - Alist 网盘整合加载</title>
+    <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
+    <content><![CDATA[<h3 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h3><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
+<p><a href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
+<h2 id="1-downloads"><a href="#1-downloads" class="headerlink" title="1.downloads"></a>1.downloads</h2><p>自己测试哪个线路快</p>
+<p><a href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
+<span id="more"></span>
+
+<h2 id="2-open-alist-windows-4-0-amd64-exe"><a href="#2-open-alist-windows-4-0-amd64-exe" class="headerlink" title="2. open alist-windows-4.0-amd64.exe"></a>2. open <code>alist-windows-4.0-amd64.exe</code></h2><p><code>Initial password: 后面是密码</code></p>
+<p><code>start server @ 0.0.0.0:5244</code>加载成功</p>
+<h2 id="3-登录alist"><a href="#3-登录alist" class="headerlink" title="3.登录alist"></a>3.登录alist</h2><p>打开<code>127.0.0.1:5244</code>,输入密码登录(登录进来后，在设置 - 后端 - 密码，可以修改密码)</p>
+<p>dxwk h0sy 92b8 ud39</p>
+<h2 id="4-配置网盘"><a href="#4-配置网盘" class="headerlink" title="4.配置网盘"></a>4.配置网盘</h2><p>在管理界面点<code>账号</code>，添加，根据需求添加即可.</p>
+<h2 id="5-个人使用的WebDev-Koofr-eu"><a href="#5-个人使用的WebDev-Koofr-eu" class="headerlink" title="5.个人使用的WebDev - Koofr.eu"></a>5.个人使用的WebDev - Koofr.eu</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webdav root url ：https://app.koofr.net/dav/</span><br><span class="line">用户名: sweetrx@pm</span><br><span class="line">密码： </span><br></pre></td></tr></table></figure>
+
+<h1 id="Windows电脑中挂载为虚拟磁盘"><a href="#Windows电脑中挂载为虚拟磁盘" class="headerlink" title="Windows电脑中挂载为虚拟磁盘"></a>Windows电脑中挂载为虚拟磁盘</h1><p>打开 Windows 资源管理器（例如，通过右键单击”开始”按钮） ，或者直接双击<code>计算机</code><br>左上角导航窗格中的<code>计算机 - 映射网络驱动器</code><br>在”驱动器”下拉列表下选择一个空闲驱动器号<br>在”文件夹”字段中输入文件夹的 WebDAV URL<br>选中使用其他凭据连接复选框<br>输入您的登录名和密码登录</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>win</tag>
+        <tag>网盘</tag>
       </tags>
   </entry>
 </search>
