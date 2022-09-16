@@ -101,8 +101,17 @@
 <p><a href="https://raw.fastgit.org/">https://raw.fastgit.org/</a> + 用户库</p>
 <p><a href="https://ghproxy.com/">https://ghproxy.com/</a> + 完整地址</p>
 <span id="more"></span>
+<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><p>freeAirport</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<p>fetchProxy</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/rxClash.yml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/rxClash.yml</span><br><span class="line"></span><br><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/nocheckClash.ymlml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/nocheckClash.yml</span><br></pre></td></tr></table></figure>
+<p>getAirport</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/miningClash.yml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/miningClash.yml</span><br><span class="line"></span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/check/rxClash.yml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/check/rxClash.yml</span><br></pre></td></tr></table></figure>
 
-<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/rx</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/rx</span><br><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/rx64</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/rx64</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/check/rx</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/check/rx</span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/check/rx64</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/check/rx64</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#https://v2ray.mom/  #qq邮箱，不限量，限速512KB，可用1年半 </span><br><span class="line">https://cdn.jsdelivr.net/gh/rxsweet/getAirport@main/sub/free/v2board/v2ray.mom</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/free/v2board/v2ray.mom</span><br><span class="line">#https://jsmao.org/              #30G，5天，多线路</span><br><span class="line">https://cdn.jsdelivr.net/gh/rxsweet/getAirport@main/sub/free/sspanel/jsmao.org</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/free/sspanel/jsmao.org</span><br><span class="line">#https://www.mxyssr.fun/         #10G，1天，多线路</span><br><span class="line">https://cdn.jsdelivr.net/gh/rxsweet/getAirport@main/sub/free/sspanel/www.mxyssr.fun</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/free/sspanel/www.mxyssr.fun</span><br><span class="line">#https://shan-cloud.xyz/         #5G，1天，多线路</span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/free/v2board/shan-cloud.xyz</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/free/v2board/shan-cloud.xyz</span><br><span class="line">#https://kakayun.xyz/            #2G，2天，多线路</span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/free/sspanel/kakayun.xyz</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/free/sspanel/kakayun.xyz</span><br></pre></td></tr></table></figure>
+<p>优先使用上面代理</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/rx</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/rx</span><br><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/rx64</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/rx64</span><br><span class="line"></span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/check/rx</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/check/rx</span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/check/rx64</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/check/rx64</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>openit WinXray输入会丢失末尾‘s’ - 每天更新<br><code>https://openit.daycat.space/long</code></p>
@@ -139,37 +148,19 @@
 <hr>
 <h3 id="Clash-sub"><a href="#Clash-sub" class="headerlink" title="- Clash sub"></a>- Clash sub</h3><p>  –理论上所有clash订阅Winxray都可用，但有的地址Winxray读不出来</p>
 <ul>
-<li><p>RXsweet<br>fetchProxy</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/rxClash.yml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/rxClash.yml</span><br><span class="line"></span><br><span class="line">https://raw.fastgit.org/rxsweet/fetchProxy/main/sub/nocheckClash.ymlml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/fetchProxy/main/sub/nocheckClash.yml</span><br></pre></td></tr></table></figure>
-<p>getAirport</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/miningClash.yml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/miningClash.yml</span><br><span class="line"></span><br><span class="line">https://raw.fastgit.org/rxsweet/getAirport/main/sub/check/rxClash.yml</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/getAirport/main/sub/check/rxClash.yml</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>筋斗云VIP <a href="https://v2ray.neocities.org/">https://v2ray.neocities.org</a> -每天更新<br><code>https://tt.vg/freeclash</code></p>
-</li>
-<li><p>openit 每天更新<br><code>https://openit.daycat.space/Clash.yaml</code></p>
-</li>
-<li><p>anaer精简(自用)每天更新 完整版后缀是yaml<br><code>https://raw.fastgit.org/anaer/Sub/main/clash.yml</code></p>
-</li>
-<li><p>长风分享 每天更新<br><code>https://raw.fastgit.org/chfchf0306/clash/main/clash</code></p>
-</li>
-<li><p>GreenFishYYDS链接中的dllx可替换为dllc dlli dllo dllv<br><code>https://dllx.tk/GreenFishYYDS-Clash</code></p>
-</li>
-<li><p>skywolf627更新速度不快<br><code>https://raw.fastgit.org/skywolf627/VmessActions/main/subscribe/clash-mirror.yml</code></p>
-</li>
-<li><p>ssrsub&#x2F;V2Ray&#x2F;-clash是合集 - 更新慢了<br><code>https://cdn.jsdelivr.net/gh/ssrsub/ssr@master/Clash.yml</code></p>
-</li>
-<li><p>池：free886<br><code>https://free886.herokuapp.com/clash/config</code>                        </p>
-</li>
-<li><p>池：wxshi.top<br><code>http://wxshi.top:9090/clash/config</code></p>
-</li>
-<li><p>池：sspool<br><code>https://sspool.herokuapp.com/clash/config</code></p>
-</li>
-<li><p>池：hellopool<br><code>https://hellopool.herokuapp.com/clash/config</code></p>
-</li>
-<li><p>oslook每天更新<br><code>https://raw.fastgit.org/oslook/clash-freenode/main/clash.yaml</code></p>
-</li>
-<li><p>learnhard.cn每天更新<br><code>https://raw.githubusercontents.com/learnhard-cn/free_proxy_ss/main/clash/config.yaml</code></p>
-</li>
+<li>筋斗云VIP <a href="https://v2ray.neocities.org/">https://v2ray.neocities.org</a> -每天更新<br><code>https://tt.vg/freeclash</code></li>
+<li>openit 每天更新<br><code>https://openit.daycat.space/Clash.yaml</code></li>
+<li>anaer精简(自用)每天更新 完整版后缀是yaml<br><code>https://raw.fastgit.org/anaer/Sub/main/clash.yml</code></li>
+<li>长风分享 每天更新<br><code>https://raw.fastgit.org/chfchf0306/clash/main/clash</code></li>
+<li>GreenFishYYDS链接中的dllx可替换为dllc dlli dllo dllv<br><code>https://dllx.tk/GreenFishYYDS-Clash</code></li>
+<li>skywolf627更新速度不快<br><code>https://raw.fastgit.org/skywolf627/VmessActions/main/subscribe/clash-mirror.yml</code></li>
+<li>ssrsub&#x2F;V2Ray&#x2F;-clash是合集 - 更新慢了<br><code>https://cdn.jsdelivr.net/gh/ssrsub/ssr@master/Clash.yml</code></li>
+<li>池：free886<br><code>https://free886.herokuapp.com/clash/config</code>                        </li>
+<li>池：wxshi.top<br><code>http://wxshi.top:9090/clash/config</code></li>
+<li>池：sspool<br><code>https://sspool.herokuapp.com/clash/config</code></li>
+<li>池：hellopool<br><code>https://hellopool.herokuapp.com/clash/config</code></li>
+<li>oslook每天更新<br><code>https://raw.fastgit.org/oslook/clash-freenode/main/clash.yaml</code></li>
+<li>learnhard.cn每天更新<br><code>https://raw.githubusercontents.com/learnhard-cn/free_proxy_ss/main/clash/config.yaml</code></li>
 </ul>
 <h3 id="VIP-sub"><a href="#VIP-sub" class="headerlink" title="- VIP sub"></a>- VIP sub</h3><p><a href="https://v2ray.neocities.org/">https://v2ray.neocities.org/</a></p>
 <p><a href="https://tt.vg/freev2">https://tt.vg/freev2</a>  - 打开网站，复制粘贴到winXray</p>
@@ -939,7 +930,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#x65;&#116;&#x72;&#120;&#x40;&#x70;&#x6d;&#x2e;&#109;&#101;">&#x73;&#x77;&#101;&#x65;&#116;&#x72;&#120;&#x40;&#x70;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#101;&#x74;&#114;&#120;&#64;&#x70;&#109;&#x2e;&#109;&#101;">&#115;&#119;&#x65;&#101;&#x74;&#114;&#120;&#64;&#x70;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>win</category>
