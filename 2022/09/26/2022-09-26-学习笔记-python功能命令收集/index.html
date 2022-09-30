@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="导航12345678910111213141516171819202122232425262728293031323334python功能命令收集├── 系统相关操作│   ├── 时间│   ├── 检查使用的系统│   ├── 获取文件相对路径、绝对路径│   └── 获取当前路径地址├── 文件操作│   ├── 创建文件夹│   ├── 删除文件夹│   ├── 打开文件，读取方式│">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习笔记 - python功能命令收集">
+<meta property="og:url" content="http://yoursite.com/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/index.html">
+<meta property="og:site_name" content="Sweet RX&#39;s blog">
+<meta property="og:description" content="导航12345678910111213141516171819202122232425262728293031323334python功能命令收集├── 系统相关操作│   ├── 时间│   ├── 检查使用的系统│   ├── 获取文件相对路径、绝对路径│   └── 获取当前路径地址├── 文件操作│   ├── 创建文件夹│   ├── 删除文件夹│   ├── 打开文件，读取方式│">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-09-26T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-30T09:17:37.833Z">
+<meta property="article:author" content="Sweet RX">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'default'
+  };
+</script>
+
+  <title>学习笔记 - python功能命令收集 | Sweet RX's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Sweet RX's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">人生在勤 不索何获</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-bookmarks">
+
+    <a href="/bookmarks/" rel="section"><i class="fa fa-bookmark fa-fw"></i>bookmarks</a>
+
+  </li>
+        <li class="menu-item menu-item-vip">
+
+    <a href="/vip/" rel="section"><i class="fa fa-user fa-fw"></i>vip</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sweet RX">
+      <meta itemprop="description" content="This is my internet world!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sweet RX's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          学习笔记 - python功能命令收集
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-26T00:00:00+00:00">2022-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-30 09:17:37" itemprop="dateModified" datetime="2022-09-30T09:17:37+00:00">2022-09-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">python功能命令收集</span><br><span class="line">├── 系统相关操作</span><br><span class="line">│   ├── 时间</span><br><span class="line">│   ├── 检查使用的系统</span><br><span class="line">│   ├── 获取文件相对路径、绝对路径</span><br><span class="line">│   └── 获取当前路径地址</span><br><span class="line">├── 文件操作</span><br><span class="line">│   ├── 创建文件夹</span><br><span class="line">│   ├── 删除文件夹</span><br><span class="line">│   ├── 打开文件，读取方式</span><br><span class="line">│   ├── 写入文件</span><br><span class="line">│   ├── 下载文件</span><br><span class="line">│   └── 获取文件内容行数</span><br><span class="line">├── 数据处理</span><br><span class="line">│   └── 列表</span><br><span class="line">│       ├── 列表增加 </span><br><span class="line">│       ├── 将文件每行内容读取成列表</span><br><span class="line">│       ├── 将列表内容，以行写入字符串</span><br><span class="line">│       ├── findall查找内容写入列表</span><br><span class="line">│       ├── 列表循环读取</span><br><span class="line">│       ├── 列表去重  </span><br><span class="line">│       └── 列表进度条  </span><br><span class="line">├── 检测网站是否可用</span><br><span class="line">├── 多线程</span><br><span class="line">├── 进度条</span><br><span class="line">├── Linux系统</span><br><span class="line">│   └── .sh 操作</span><br><span class="line">└── github Actions workflows</span><br><span class="line">    ├── 触发条件</span><br><span class="line">    ├── 基本系统配置</span><br><span class="line">    ├── 安装依赖</span><br><span class="line">    ├── 安装工具</span><br><span class="line">    └── 提交</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h1 id="系统相关操作"><a href="#系统相关操作" class="headerlink" title="系统相关操作"></a>系统相关操作</h1><h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">## 获取日期字符串</span><br><span class="line">today = datetime.datetime.today()</span><br><span class="line">path_year = sub_path+&#x27;/&#x27;+str(today.year)</span><br><span class="line">path_mon  = path_year+&#x27;/&#x27;+str(today.month)</span><br><span class="line">path_yaml = path_mon+&#x27;/&#x27;+str(today.month)+&#x27;-&#x27;+str(today.day)+&#x27;.yaml&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="检查使用的系统"><a href="#检查使用的系统" class="headerlink" title="检查使用的系统"></a>检查使用的系统</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import platform</span><br><span class="line">def checkenv():</span><br><span class="line">    operating_system = str(platform.platform())</span><br><span class="line">	</span><br><span class="line">    if operating_system.startswith(&#x27;macOS&#x27;):</span><br><span class="line">        if &#x27;arm64&#x27; in operating_system:</span><br><span class="line">            clashname=&#x27;./clash-darwinarm64&#x27;</span><br><span class="line">        else:</span><br><span class="line">            clashname=&#x27;./clash-darwinamd64&#x27;</span><br><span class="line">    elif operating_system.startswith(&#x27;Linux&#x27;):</span><br><span class="line">        clashname=&#x27;./clash-linuxamd64&#x27;</span><br><span class="line">    elif operating_system.startswith(&#x27;Windows&#x27;):</span><br><span class="line">        clashname=&#x27;clash-windowsamd64.exe&#x27;</span><br><span class="line">    else:</span><br><span class="line">        print(&#x27;Unsupported Platform&#x27;)</span><br><span class="line">        exit(1)</span><br><span class="line">    print(&#x27;Running on &#x27;+ operating_system)</span><br><span class="line">    return clashname, operating_system   </span><br></pre></td></tr></table></figure>
+
+<h2 id="获取文件相对路径、绝对路径"><a href="#获取文件相对路径、绝对路径" class="headerlink" title="获取文件相对路径、绝对路径"></a>获取文件相对路径、绝对路径</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line"></span><br><span class="line">print(__file__)                     # 获取当前文件的相对路径</span><br><span class="line">print(os.path.dirname(__file__))    # 获取当前文件所在目录的相对路径</span><br><span class="line">print(os.path.abspath(__file__))    # 获取当前文件的绝对路径</span><br><span class="line">print(os.path.dirname(os.path.abspath(__file__)))    # 获取当前文件的所在目录的绝对路径</span><br></pre></td></tr></table></figure>
+
+<h2 id="获取当前路径地址"><a href="#获取当前路径地址" class="headerlink" title="获取当前路径地址"></a>获取当前路径地址</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from pathlib import Path  # Path包含在此处</span><br><span class="line"></span><br><span class="line">    home = str(Path.home())</span><br><span class="line">    mmdbfl = home + &#x27;/.config/clash/Country.mmdb&#x27;</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+
+<h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><h2 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">today = datetime.datetime.today()	#获取日期</span><br><span class="line">path_year = str(today.year)	# 将日期的year转成str</span><br><span class="line"></span><br><span class="line">   folder = os.path.exists(path_year)</span><br><span class="line">   if not folder:                   #判断是否存在文件夹如果不存在则创建为文件夹</span><br><span class="line">       os.makedirs(path_year) #创建文件夹</span><br><span class="line"></span><br><span class="line">   folder = os.path.exists(path_mon)</span><br><span class="line">   if not folder:                   #判断是否存在文件夹如果不存在则创建为文件夹</span><br><span class="line">       os.makedirs(path_mon)  #创建文件夹</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import shutil</span><br><span class="line"></span><br><span class="line">	shutil.rmtree(&#x27;./temp&#x27;) # 删除整个文件夹  </span><br></pre></td></tr></table></figure>
+
+<h2 id="打开文件，读取方式"><a href="#打开文件，读取方式" class="headerlink" title="打开文件，读取方式"></a>打开文件，读取方式</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">f=open(&#x27;f.txt&#x27;,&#x27;w&#x27;)    # r只读，w可写，a追加</span><br><span class="line">for i in range(0,10):</span><br><span class="line">    f.write(str(i)+&#x27;\n&#x27;)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">#下面是详细说明</span><br><span class="line">#https://www.cnblogs.com/hls-code/p/15324191.html 	Python之文件的读取、创建、追加、删除、清空、替换</span><br><span class="line">#https://www.zky.name/article/57.html				Python3 open() 函数详解 读取文件写入文件</span><br><span class="line">r	以只读方式打开文件</span><br><span class="line">rb	以二进制只读方式打开一个文件</span><br><span class="line">r+	以读写方式打开一个文件</span><br><span class="line">rb+	以二进制读写方式打开一个文件</span><br><span class="line">w	以写入方式打开文件</span><br><span class="line">wb	以二进制写入方式打开一个文件</span><br><span class="line">w+	以读写方式打开一个文件</span><br><span class="line">wb+	以二进制读写方式打开一个文件</span><br><span class="line">a	以追加方式打开一个文件</span><br><span class="line">ab	以二进制追加方式打开一个文件</span><br><span class="line">a+	以读写追加方式打开一个文件</span><br><span class="line">ab+	以二进制读写追加方式打开一个文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="写入文件"><a href="#写入文件" class="headerlink" title="写入文件"></a>写入文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 写入文件模块</span><br><span class="line">def write_file(file,content):</span><br><span class="line">    file = open(output_file, &#x27;w&#x27;, encoding= &#x27;utf-8&#x27;)</span><br><span class="line">    file.write(content)</span><br><span class="line">    file.close()</span><br></pre></td></tr></table></figure>
+
+<h2 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">from urllib import request          # Urllib是python内置的HTTP请求库,urllib.request获取URL的Python模块</span><br><span class="line"></span><br><span class="line">geoip_url = &#x27;https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb&#x27;</span><br><span class="line"></span><br><span class="line">    def geoip_update(url):                  # 更新IP位置数据库存放到  `./utils/Country.mmdb`</span><br><span class="line">        print(&#x27;Downloading Country.mmdb...&#x27;)</span><br><span class="line">        try:</span><br><span class="line">            request.urlretrieve(url, &#x27;./utils/Country.mmdb&#x27;)	# url下载地址，&#x27;./utils/Country.mmdb&#x27;保存路径</span><br><span class="line">            print(&#x27;Downloading Country.mmdb Success!\n&#x27;)</span><br><span class="line">        except Exception:</span><br><span class="line">            print(&#x27;Downloading Country.mmdb Failed!\n&#x27;)</span><br><span class="line">            pass</span><br><span class="line"></span><br><span class="line">if __name__ == &#x27;__main__&#x27;:</span><br><span class="line"></span><br><span class="line">    geoip_update(geoip_url)                           # 更新IP位置数据库&#x27;./utils/Country.mmdb&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="获取文件内容行数"><a href="#获取文件内容行数" class="headerlink" title="获取文件内容行数"></a>获取文件内容行数</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">with open(file, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;) as f:</span><br><span class="line">	total_amount = len(f.readlines())</span><br><span class="line">	f.close()  </span><br></pre></td></tr></table></figure>
+<h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="列表增加"><a href="#列表增加" class="headerlink" title="列表增加"></a>列表增加</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">output_list.append(proxy)</span><br></pre></td></tr></table></figure>
+
+<h3 id="将文件每行内容读取成列表"><a href="#将文件每行内容读取成列表" class="headerlink" title="将文件每行内容读取成列表"></a>将文件每行内容读取成列表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lines = re.split(r&#x27;\n+&#x27;,urllist_content)</span><br></pre></td></tr></table></figure>
+
+<h3 id="将列表内容，以行写入字符串"><a href="#将列表内容，以行写入字符串" class="headerlink" title="将列表内容，以行写入字符串"></a>将列表内容，以行写入字符串</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ownallProxy = &#x27;\n&#x27;.join(allProxy) </span><br></pre></td></tr></table></figure>
+
+<h3 id="findall查找内容写入列表"><a href="#findall查找内容写入列表" class="headerlink" title="findall查找内容写入列表"></a>findall查找内容写入列表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">url_list=re.findall(&quot;https?://[-A-Za-z0-9+&amp;@#/%?=~_|!:,.;]+[-A-Za-z0-9+&amp;@#/%=~_|]&quot;,data)#使用正则表达式查找订阅链接并创建列表</span><br></pre></td></tr></table></figure>
+
+<h3 id="列表循环读取"><a href="#列表循环读取" class="headerlink" title="列表循环读取"></a>列表循环读取</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">for index in url:</span><br><span class="line">    try:</span><br><span class="line">        resp = s.get(index, timeout=2)                    # 超时时间为2s</span><br><span class="line">        status = resp.status_code                       # 状态码赋值200？</span><br><span class="line">    except Exception:</span><br><span class="line">        status = 404</span><br><span class="line">    if status == 200:</span><br><span class="line">        print(&#x27;url host use ==&#x27;+index+&#x27;\n&#x27;)</span><br><span class="line">        return index</span><br><span class="line">    else:</span><br><span class="line">        print(&#x27;\n&#x27;+index+&#x27;  :url host is bad,please use new url!...\n&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="列表去重"><a href="#列表去重" class="headerlink" title="列表去重"></a>列表去重</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">def list_rm(url_list):  #列表去重</span><br><span class="line">    begin = 0</span><br><span class="line">    length = len(url_list)</span><br><span class="line">    print(f&#x27;\n-----去重开始-----\n&#x27;)</span><br><span class="line">    while begin &lt; length:</span><br><span class="line">        proxy_compared = url_list[begin]</span><br><span class="line">        begin_2 = begin + 1</span><br><span class="line">        while begin_2 &lt;= (length - 1):</span><br><span class="line">            if proxy_compared == url_list[begin_2]:</span><br><span class="line">                url_list.pop(begin_2)</span><br><span class="line">                length -= 1</span><br><span class="line">            begin_2 += 1</span><br><span class="line">        begin += 1</span><br><span class="line">    print(f&#x27;\n-----去重结束-----\n&#x27;)</span><br><span class="line">    return url_list</span><br></pre></td></tr></table></figure>
+
+<h3 id="列表进度条"><a href="#列表进度条" class="headerlink" title="列表进度条"></a>列表进度条</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">#需要支持库安装tqdm</span><br><span class="line">#requirements.txt</span><br><span class="line">#tqdm == 4.64.0</span><br><span class="line"></span><br><span class="line">from tqdm import tqdm   #进度条库</span><br><span class="line"></span><br><span class="line">def urlListToSub(urllistfile):</span><br><span class="line">    file_urllist = open(urllistfile, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;)</span><br><span class="line">    urllist_content = file_urllist.read()</span><br><span class="line">    file_urllist.close()</span><br><span class="line">    </span><br><span class="line">    lines = re.split(r&#x27;\n+&#x27;,urllist_content)</span><br><span class="line">    allProxy = []</span><br><span class="line">    </span><br><span class="line">    #tqdm进度条方式显示fetch节点列表进度</span><br><span class="line">    for index in tqdm(range(int(len(lines))), desc=&quot;Fetch:&quot;):</span><br><span class="line">        if &#x27;http&#x27; in lines[index]:</span><br><span class="line">            subContent =sub_convert.convert_remote(lines[index],&#x27;url&#x27;,&#x27;http://127.0.0.1:25500&#x27;)</span><br><span class="line">            allProxy.append(subContent)</span><br><span class="line">    ownallProxy = &#x27;\n&#x27;.join(allProxy)</span><br></pre></td></tr></table></figure>
+
+<h1 id="检测网站是否可用"><a href="#检测网站是否可用" class="headerlink" title="检测网站是否可用"></a>检测网站是否可用</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">#单地址检测：</span><br><span class="line">import requests</span><br><span class="line">from requests.adapters import HTTPAdapter</span><br><span class="line"></span><br><span class="line">def url_updated(url):                                   # 判断远程远程链接是否已经更新</span><br><span class="line">    s = requests.Session()                              # 用requests.session()创建session对象，相当于创建了一个空的会话框，准备保持cookies。</span><br><span class="line">    s.mount(&#x27;http://&#x27;, HTTPAdapter(max_retries=2))      # 重试次数为2</span><br><span class="line">    s.mount(&#x27;https://&#x27;, HTTPAdapter(max_retries=2))     # 重试次数为2</span><br><span class="line">    try:</span><br><span class="line">        resp = s.get(url, timeout=2)                    # 超时时间为2s</span><br><span class="line">        status = resp.status_code                       # 状态码赋值200？</span><br><span class="line">    except Exception:</span><br><span class="line">        status = 404</span><br><span class="line">    if status == 200:</span><br><span class="line">        url_updated = True</span><br><span class="line">    else:</span><br><span class="line">        url_updated = False</span><br><span class="line">    return url_updated</span><br><span class="line"></span><br><span class="line">#URL 列表检测</span><br><span class="line">    # 检测URLhost是否可用</span><br><span class="line">    # 要转换的地址必须是网络订阅才可用使用网络URLhost，本地订阅文件获取不到数据</span><br><span class="line">    def use_urlhost(url=url_host):</span><br><span class="line">        s = requests.Session()                              # 用requests.session()创建session对象，相当于创建了一个空的会话框，准备保持cookies。</span><br><span class="line">        s.mount(&#x27;http://&#x27;, HTTPAdapter(max_retries=2))      # 重试次数为2</span><br><span class="line">        s.mount(&#x27;https://&#x27;, HTTPAdapter(max_retries=2))     # 重试次数为2</span><br><span class="line">        for index in url:</span><br><span class="line">            try:</span><br><span class="line">                resp = s.get(index, timeout=2)                    # 超时时间为2s</span><br><span class="line">                status = resp.status_code                       # 状态码赋值200？</span><br><span class="line">            except Exception:</span><br><span class="line">                status = 404</span><br><span class="line">            if status == 200:</span><br><span class="line">                print(&#x27;url host use ==&#x27;+index+&#x27;\n&#x27;)</span><br><span class="line">                return index</span><br><span class="line">            else:</span><br><span class="line">                print(&#x27;\n&#x27;+index+&#x27;  :url host is bad,please use new url!...\n&#x27;)</span><br><span class="line">            </span><br><span class="line">        print(&#x27;oh,my god ,all url host are bad,sorry no work!...\n&#x27;)</span><br><span class="line">        return &#x27;bad url Host&#x27;</span><br></pre></td></tr></table></figure>
+
+<h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">import threading	#线程库https://www.runoob.com/python/python-multithreading.html</span><br><span class="line"></span><br><span class="line">def sub_to_url(url,bar,allProxy):   #将url订阅内容append到allProxy列表，并完成进度bar</span><br><span class="line">    if &#x27;http&#x27; in url:</span><br><span class="line">        subContent =sub_convert.convert_remote(url,&#x27;url&#x27;,&#x27;http://127.0.0.1:25500&#x27;)        </span><br><span class="line">        allProxy.append(subContent)</span><br><span class="line">    bar.update(1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def urlListToSub(urllistfile):  #将url订阅列表内容转换成url,base64,clash文件保存</span><br><span class="line">    </span><br><span class="line">    #打开url列表文件</span><br><span class="line">    file_urllist = open(urllistfile, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;)</span><br><span class="line">    urllist_content = file_urllist.read()</span><br><span class="line">    file_urllist.close()</span><br><span class="line">    </span><br><span class="line">    #打开url列表文件内容，以行为单位存放到line列表</span><br><span class="line">    lines = re.split(r&#x27;\n+&#x27;,urllist_content)</span><br><span class="line">    allProxy = []</span><br><span class="line">    </span><br><span class="line">    #计算打印url总数</span><br><span class="line">    lenlines =len(lines)</span><br><span class="line">    print(&#x27;airport total == &#x27;+str(lenlines)+&#x27;\n&#x27;)</span><br><span class="line">    </span><br><span class="line">    #Semaphore 是用于控制进入数量的锁，控制同时进行的线程，内部是基于Condition来进行实现的</span><br><span class="line">    #https://www.cnblogs.com/callyblog/p/11147456.html</span><br><span class="line">    #文件， 读、写， 写一般只是用于一个线程写，读可以允许有多个</span><br><span class="line">    thread_max_num =threading.Semaphore(lenlines)</span><br><span class="line">    </span><br><span class="line">    #进度条添加</span><br><span class="line">    bar = tqdm(total=lenlines, desc=&#x27;订阅获取：&#x27;)</span><br><span class="line">    thread_list = []</span><br><span class="line">    </span><br><span class="line">    for line in lines:</span><br><span class="line">        #为每个新URL创建线程</span><br><span class="line">        t = threading.Thread(target=sub_to_url, args=(line,bar,allProxy))</span><br><span class="line">        #加入线程池</span><br><span class="line">        thread_list.append(t)</span><br><span class="line">        #setDaemon()线程守护，配合下面的一组for...t.join(),实现所有线程执行结束后，才开始执行下面代码</span><br><span class="line">        t.setDaemon(True)	#python多线程之t.setDaemon(True) 和 t.join()  https://www.cnblogs.com/my8100/p/7366567.html</span><br><span class="line">		#启动</span><br><span class="line">        t.start()</span><br><span class="line">        </span><br><span class="line">    #等待所有线程完成，配合上面的t.setDaemon(True)</span><br><span class="line">    for t in thread_list:</span><br><span class="line">        t.join()</span><br><span class="line">    bar.close() #进度条结束</span><br><span class="line"></span><br><span class="line">    # 将列表内容，以行写入字符串？</span><br><span class="line">    ownallProxy = &#x27;\n&#x27;.join(allProxy)   </span><br><span class="line"></span><br><span class="line">    # 写入url 订阅文件</span><br><span class="line">    print(&#x27;write miningUrl content!&#x27;)</span><br><span class="line">    file = open(outputUrlSub_path, &#x27;w&#x27;, encoding= &#x27;utf-8&#x27;)</span><br><span class="line">    file.write(ownallProxy)</span><br><span class="line">    file.close()</span><br></pre></td></tr></table></figure>
+
+<h1 id="进度条"><a href="#进度条" class="headerlink" title="进度条"></a>进度条</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#需要支持库安装tqdm</span><br><span class="line">#requirements.txt</span><br><span class="line">#tqdm == 4.64.0</span><br><span class="line"></span><br><span class="line">from tqdm import tqdm   #进度条库</span><br><span class="line"></span><br><span class="line">    #计算打印url总数</span><br><span class="line">    lenlines =len(lines)</span><br><span class="line">    </span><br><span class="line">    #进度条添加</span><br><span class="line">	#开始</span><br><span class="line">    bar = tqdm(total=lenlines, desc=&#x27;订阅获取：&#x27;)</span><br><span class="line">	#进度加1</span><br><span class="line">	bar.update(1)</span><br><span class="line">	#进度完成</span><br><span class="line">	bar.close()</span><br><span class="line">	</span><br><span class="line">e.g.:</span><br><span class="line"></span><br><span class="line">def urlListToSub(urllistfile):</span><br><span class="line">    file_urllist = open(urllistfile, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;)</span><br><span class="line">    urllist_content = file_urllist.read()</span><br><span class="line">    file_urllist.close()</span><br><span class="line">    </span><br><span class="line">    lines = re.split(r&#x27;\n+&#x27;,urllist_content)	#读取为列表</span><br><span class="line">    allProxy = []</span><br><span class="line">    #tqdm进度条方式显示fetch节点列表进度</span><br><span class="line">    for index in tqdm(range(int(len(lines))), desc=&quot;Fetch:&quot;):	#简化tqdm进度条</span><br><span class="line">        if &#x27;http&#x27; in lines[index]:</span><br><span class="line">            subContent =sub_convert.convert_remote(lines[index],&#x27;url&#x27;,&#x27;http://127.0.0.1:25500&#x27;)</span><br><span class="line">            allProxy.append(subContent)</span><br><span class="line">    ownallProxy = &#x27;\n&#x27;.join(allProxy)	#将列表转为字符串</span><br></pre></td></tr></table></figure>
+
+<h1 id="Linux系统"><a href="#Linux系统" class="headerlink" title="Linux系统"></a>Linux系统</h1><h2 id="sh-操作"><a href="#sh-操作" class="headerlink" title=".sh 操作"></a>.sh 操作</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">currentdate=$(date +%Y%m%d)  </span><br><span class="line">currentmonth=$(date +%Y%m)</span><br><span class="line">currentmonths=$(date +%m)</span><br><span class="line">currentyears=$(date +%Y)</span><br><span class="line"></span><br><span class="line">subscribeclash=&quot;https://api.tsutsu.one/sub?target=clash&amp;url=地址&quot;</span><br><span class="line">poolsubclash=&quot;https://api.tsutsu.one/sub?target=clash&amp;url=地址&quot;</span><br><span class="line"></span><br><span class="line">cd `dirname $0`</span><br><span class="line"></span><br><span class="line">echo delete old subscribes</span><br><span class="line">if [ ! -f &quot;./sub_v2rayshare.txt&quot; ];then</span><br><span class="line"> rm ./sub_v2rayshare.txt</span><br><span class="line">fi</span><br><span class="line">if [ ! -f &quot;./sub_v2rayshare.yaml&quot; ];then</span><br><span class="line"> rm ./sub_v2rayshare.txt</span><br><span class="line">fi</span><br><span class="line">if [ ! -f &quot;./allmysub.yaml&quot; ];then</span><br><span class="line"> rm ./allmysub.yaml</span><br><span class="line">fi</span><br><span class="line">if [ ! -f &quot;./allmysub.txt&quot; ];then</span><br><span class="line"> rm ./allmysub.txt</span><br><span class="line">fi</span><br><span class="line">if [ ! -f &quot;./poolsub.yaml&quot; ];then</span><br><span class="line"> rm ./poolsub.yaml</span><br><span class="line">fi</span><br><span class="line">if [ ! -f &quot;./poolsub.txt&quot; ];then</span><br><span class="line"> rm ./poolsub.txt</span><br><span class="line">fi</span><br><span class="line">if [ ! -f &quot;./openit.txt&quot; ];then</span><br><span class="line"> rm ./openit.txt</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">echo get subscribe</span><br><span class="line">wget https://v2rayshare.com/wp-content/uploads/$currentyears/$currentmonths/$currentdate.txt</span><br><span class="line">wget https://v2rayshare.com/wp-content/uploads/$currentyears/$currentmonths/$currentdate.yaml</span><br><span class="line"></span><br><span class="line">echo move subscribe</span><br><span class="line">mv $currentdate.txt sub.txt</span><br><span class="line">mv $currentdate.yaml sub.yaml</span><br><span class="line"></span><br><span class="line">echo down subscribe</span><br><span class="line">wget $subscribeclash -O ./allmysub.yaml</span><br><span class="line">wget $poolsubclash -O ./poolsub.yaml</span><br><span class="line"></span><br><span class="line">echo hope you have a good day~</span><br><span class="line">echo bye~</span><br></pre></td></tr></table></figure>
+
+<h1 id="github-Actions-workflows"><a href="#github-Actions-workflows" class="headerlink" title="github Actions workflows"></a>github Actions workflows</h1><h2 id="触发条件"><a href="#触发条件" class="headerlink" title="触发条件"></a>触发条件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">on:</span><br><span class="line">  workflow_dispatch:</span><br><span class="line">  </span><br><span class="line">  # 运行条件&quot;fetch proxy &amp;&amp; check&quot;运行完成后，开始运行</span><br><span class="line">  workflow_run:</span><br><span class="line">    workflows: [&quot;fetch proxy &amp;&amp; check&quot;]</span><br><span class="line">    types: [completed]</span><br><span class="line">  schedule:</span><br><span class="line">  #表达式生成  https://crontab.guru/ </span><br><span class="line">    - cron: &#x27;10 0,6,12,18 * * *&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="基本系统配置"><a href="#基本系统配置" class="headerlink" title="基本系统配置"></a>基本系统配置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#基本系统配置</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    steps:</span><br><span class="line">    - name: 迁出代码</span><br><span class="line">      uses: actions/checkout@v2</span><br><span class="line">    - name: 安装Python</span><br><span class="line">      uses: actions/setup-python@v2</span><br><span class="line">      with:</span><br><span class="line">        python-version: &#x27;3.x&#x27;</span><br><span class="line">    - name: 加载缓存</span><br><span class="line">      uses: actions/cache@v2</span><br><span class="line">      with:</span><br><span class="line">        path: ~/.cache/pip</span><br><span class="line">        key: $&#123;&#123; runner.os &#125;&#125;-pip-$&#123;&#123; hashFiles(&#x27;**/run_in_Actions/requirements.txt&#x27;) &#125;&#125;</span><br><span class="line">        restore-keys: |</span><br><span class="line">          $&#123;&#123; runner.os &#125;&#125;-pip-</span><br><span class="line">    - name: 设置时区</span><br><span class="line">      run: sudo timedatectl set-timezone &#x27;Asia/Shanghai&#x27;</span><br></pre></td></tr></table></figure>
+<h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- name: 安装依赖</span><br><span class="line">  run: |</span><br><span class="line">    pip install -r ./utils/requirements.txt</span><br><span class="line">    pip install -r ./utils/checkclash/requirements.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">- name: 安装订阅转换工具-subconverter</span><br><span class="line">  run: |</span><br><span class="line">    wget -O subconverter.tar.gz https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz</span><br><span class="line">    tar -zxvf subconverter.tar.gz -C ./</span><br><span class="line">    chmod +x ./subconverter/subconverter &amp;&amp; nohup ./subconverter/subconverter &gt;./subconverter.log 2&gt;&amp;1 &amp;</span><br><span class="line">		</span><br><span class="line">- name: 安装测速工具-clash</span><br><span class="line">  run: |</span><br><span class="line">    wget -O clash-linuxamd64.gz https://github.com/Dreamacro/clash/releases/download/v1.11.4/clash-linux-amd64-v1.11.4.gz</span><br><span class="line">    gunzip clash-linuxamd64.gz</span><br><span class="line">    chmod +x ./clash-linuxamd64 &amp;&amp; ./clash-linuxamd64 &amp;</span><br></pre></td></tr></table></figure>
+<h2 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- name: 提交更改</span><br><span class="line">  run: |                 </span><br><span class="line">    git config --local user.email &quot;actions@github.com&quot;</span><br><span class="line">    git config --local user.name &quot;GitHub Actions&quot;</span><br><span class="line">    git pull origin main</span><br><span class="line">    git add ./sub</span><br><span class="line">    git add README.md</span><br><span class="line">    git commit -m &quot;$(date &#x27;+%Y-%m-%d %H:%M:%S&#x27;) 节点获取成功 &quot;</span><br><span class="line">- name: 推送更改</span><br><span class="line">  uses:  ad-m/github-push-action@master</span><br><span class="line">  with:</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag"># 学习笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/" rel="prev" title="软件 - win - Alist 网盘整合加载">
+      <i class="fa fa-chevron-left"></i> 软件 - win - Alist 网盘整合加载
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/" rel="next" title="软件 - win笔记软件mybase">
+      软件 - win笔记软件mybase <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%BC%E8%88%AA"><span class="nav-number">1.</span> <span class="nav-text">导航</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">系统相关操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%B6%E9%97%B4"><span class="nav-number">2.1.</span> <span class="nav-text">时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A3%80%E6%9F%A5%E4%BD%BF%E7%94%A8%E7%9A%84%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.2.</span> <span class="nav-text">检查使用的系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E3%80%81%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-number">2.3.</span> <span class="nav-text">获取文件相对路径、绝对路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84%E5%9C%B0%E5%9D%80"><span class="nav-number">2.4.</span> <span class="nav-text">获取当前路径地址</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">3.1.</span> <span class="nav-text">创建文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">3.2.</span> <span class="nav-text">删除文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%EF%BC%8C%E8%AF%BB%E5%8F%96%E6%96%B9%E5%BC%8F"><span class="nav-number">3.3.</span> <span class="nav-text">打开文件，读取方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6"><span class="nav-number">3.4.</span> <span class="nav-text">写入文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6"><span class="nav-number">3.5.</span> <span class="nav-text">下载文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E8%A1%8C%E6%95%B0"><span class="nav-number">3.6.</span> <span class="nav-text">获取文件内容行数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86"><span class="nav-number">4.</span> <span class="nav-text">数据处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">4.1.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E5%A2%9E%E5%8A%A0"><span class="nav-number">4.1.1.</span> <span class="nav-text">列表增加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%86%E6%96%87%E4%BB%B6%E6%AF%8F%E8%A1%8C%E5%86%85%E5%AE%B9%E8%AF%BB%E5%8F%96%E6%88%90%E5%88%97%E8%A1%A8"><span class="nav-number">4.1.2.</span> <span class="nav-text">将文件每行内容读取成列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%86%E5%88%97%E8%A1%A8%E5%86%85%E5%AE%B9%EF%BC%8C%E4%BB%A5%E8%A1%8C%E5%86%99%E5%85%A5%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">4.1.3.</span> <span class="nav-text">将列表内容，以行写入字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#findall%E6%9F%A5%E6%89%BE%E5%86%85%E5%AE%B9%E5%86%99%E5%85%A5%E5%88%97%E8%A1%A8"><span class="nav-number">4.1.4.</span> <span class="nav-text">findall查找内容写入列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E5%BE%AA%E7%8E%AF%E8%AF%BB%E5%8F%96"><span class="nav-number">4.1.5.</span> <span class="nav-text">列表循环读取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E5%8E%BB%E9%87%8D"><span class="nav-number">4.1.6.</span> <span class="nav-text">列表去重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E8%BF%9B%E5%BA%A6%E6%9D%A1"><span class="nav-number">4.1.7.</span> <span class="nav-text">列表进度条</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A3%80%E6%B5%8B%E7%BD%91%E7%AB%99%E6%98%AF%E5%90%A6%E5%8F%AF%E7%94%A8"><span class="nav-number">5.</span> <span class="nav-text">检测网站是否可用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="nav-number">6.</span> <span class="nav-text">多线程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E5%BA%A6%E6%9D%A1"><span class="nav-number">7.</span> <span class="nav-text">进度条</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux%E7%B3%BB%E7%BB%9F"><span class="nav-number">8.</span> <span class="nav-text">Linux系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#sh-%E6%93%8D%E4%BD%9C"><span class="nav-number">8.1.</span> <span class="nav-text">.sh 操作</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github-Actions-workflows"><span class="nav-number">9.</span> <span class="nav-text">github Actions workflows</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6"><span class="nav-number">9.1.</span> <span class="nav-text">触发条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE"><span class="nav-number">9.2.</span> <span class="nav-text">基本系统配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="nav-number">9.3.</span> <span class="nav-text">安装依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%B7%A5%E5%85%B7"><span class="nav-number">9.4.</span> <span class="nav-text">安装工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4"><span class="nav-number">9.5.</span> <span class="nav-text">提交</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Sweet RX"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Sweet RX</p>
+  <div class="site-description" itemprop="description">This is my internet world!</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/rxsweet" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;rxsweet" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sweet RX</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

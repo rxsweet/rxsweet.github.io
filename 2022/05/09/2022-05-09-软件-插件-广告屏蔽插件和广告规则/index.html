@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="广告屏蔽App和广告规则 1.广告屏蔽App 1.uBlock Origin  Chrome插件  - ☆现用  2.AdGuard 广告拦截器  3.Adblock Plus - 免费的广告拦截器   2. 广告规则 自己现在使用的uBlock Origin https:&#x2F;&#x2F;halflife.coding.net&#x2F;p&#x2F;list&#x2F;d&#x2F;list&#x2F;git&#x2F;raw&#x2F;master&#x2F;ad-pc.txt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件-插件-广告屏蔽插件和广告规则">
+<meta property="og:url" content="http://yoursite.com/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/index.html">
+<meta property="og:site_name" content="Sweet RX&#39;s blog">
+<meta property="og:description" content="广告屏蔽App和广告规则 1.广告屏蔽App 1.uBlock Origin  Chrome插件  - ☆现用  2.AdGuard 广告拦截器  3.Adblock Plus - 免费的广告拦截器   2. 广告规则 自己现在使用的uBlock Origin https:&#x2F;&#x2F;halflife.coding.net&#x2F;p&#x2F;list&#x2F;d&#x2F;list&#x2F;git&#x2F;raw&#x2F;master&#x2F;ad-pc.txt">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-05-09T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-30T09:17:37.829Z">
+<meta property="article:author" content="Sweet RX">
+<meta property="article:tag" content="chrome">
+<meta property="article:tag" content="插件">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'default'
+  };
+</script>
+
+  <title>软件-插件-广告屏蔽插件和广告规则 | Sweet RX's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Sweet RX's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">人生在勤 不索何获</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-bookmarks">
+
+    <a href="/bookmarks/" rel="section"><i class="fa fa-bookmark fa-fw"></i>bookmarks</a>
+
+  </li>
+        <li class="menu-item menu-item-vip">
+
+    <a href="/vip/" rel="section"><i class="fa fa-user fa-fw"></i>vip</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sweet RX">
+      <meta itemprop="description" content="This is my internet world!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sweet RX's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          软件-插件-广告屏蔽插件和广告规则
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-05-09 00:00:00" itemprop="dateCreated datePublished" datetime="2022-05-09T00:00:00+00:00">2022-05-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-09-30 09:17:37" itemprop="dateModified" datetime="2022-09-30T09:17:37+00:00">2022-09-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">软件</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>广告屏蔽App和广告规则</p>
+<h2 id="1-广告屏蔽App"><a href="#1-广告屏蔽App" class="headerlink" title="1.广告屏蔽App"></a>1.广告屏蔽App</h2><ul>
+<li><p>1.<a target="_blank" rel="noopener" href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin  Chrome插件  - ☆现用</a></p>
+</li>
+<li><p>2.<a target="_blank" rel="noopener" href="https://www.crxsoso.com/webstore/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard 广告拦截器</a></p>
+</li>
+<li><p>3.<a target="_blank" rel="noopener" href="https://www.crxsoso.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">Adblock Plus - 免费的广告拦截器</a></p>
+</li>
+</ul>
+<h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
+<p>自己现在使用的uBlock Origin</p>
+<p><a target="_blank" rel="noopener" href="https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt">https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt</a></p>
+<hr>
+<span id="more"></span>
+
+<p>规则记录网站  </p>
+<p><a target="_blank" rel="noopener" href="https://github.com/o0HalfLife0o/list">https://github.com/o0HalfLife0o/list</a>        - github 半生</p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/halflife/list/issues/I1CV06">https://gitee.com/halflife/list/issues/I1CV06</a>    - gitee 半生订阅导航</p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/cjx82630/cjxlist">https://gitee.com/cjx82630/cjxlist</a>        - CJX国内</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a>        - CJX国外</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/xinggsf/Adblock-Plus-Rule">https://github.com/xinggsf/Adblock-Plus-Rule</a>    - 乘风</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/banbendalao/ADgk">https://github.com/banbendalao/ADgk</a></p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/ADList/NoADList">https://gitee.com/ADList/NoADList</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/z44499783/NoADList">https://github.com/z44499783/NoADList</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.5iux.cn/4897.html">https://blog.5iux.cn/4897.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/Rohn/p/13735191.html">https://www.cnblogs.com/Rohn/p/13735191.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.xbext.com/docs/bookmark/the-most-popular-ad-blocking-rules/index.html">https://www.xbext.com/docs/bookmark/the-most-popular-ad-blocking-rules/index.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://easylist.to/">https://easylist.to/</a>    英文网站</p>
+<hr>
+<p>广告过滤规则Adblock plus（ABP）大陆IP的默认列表是EasyList China+EasyList，但因拦截视频广告在国内变得明显不合法，ABP默认列表会被替换成EasyList China+EasyList (compliance)不过滤视频广告版本。 如需过滤国内视频广告，请删除默认列表，分开订阅EasyList China与EasyList</p>
+<p>EasyList    - 去除国际网页中大多数广告，包括不需要的框架、图像和对象</p>
+<p><a target="_blank" rel="noopener" href="https://easylist-downloads.adblockplus.org/easylist.txt">https://easylist-downloads.adblockplus.org/easylist.txt</a></p>
+<hr>
+<p>Easylist China：- ABP官方维护的的适合国内使用的规则，更新频繁</p>
+<p><a target="_blank" rel="noopener" href="https://easylist-downloads.adblockplus.org/easylistchina.txt">https://easylist-downloads.adblockplus.org/easylistchina.txt</a></p>
+<hr>
+<p>EasyPrivacy    -是隐私保护，不被跟踪。– 从网络上上完全删除所有形式的跟踪，包括Web错误、跟踪脚本和信息收集，从而保护您的个人数据</p>
+<p><a target="_blank" rel="noopener" href="https://easylist-downloads.adblockplus.org/easyprivacy.txt">https://easylist-downloads.adblockplus.org/easyprivacy.txt</a></p>
+<hr>
+<p>乘风广告过滤规则 + 视频过滤规则，乘风规则更新详情</p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt">https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt">https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt</a></p>
+<hr>
+<p>CJX’s Annoyance List：- EasyList China+EasyList &amp; EasyPrivacy的补充过滤烦人的自我推广,并补充EasyPrivacy隐私规则</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt">https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt</a></p>
+<p>Annoyance List - (去自推列表)</p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/cjx82630/cjxlist/raw/master/cjx-annoyance.txt">https://gitee.com/cjx82630/cjxlist/raw/master/cjx-annoyance.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/cjx82630/cjxlist@master/cjx-annoyance.txt">https://cdn.jsdelivr.net/gh/cjx82630/cjxlist@master/cjx-annoyance.txt</a></p>
+<p>uBlocklist - </p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt">https://gitee.com/cjx82630/cjxlist/raw/master/cjx-ublock.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/cjx82630/cjxlist@master/cjx-ublock.txt">https://cdn.jsdelivr.net/gh/cjx82630/cjxlist@master/cjx-ublock.txt</a></p>
+<hr>
+<p>adt-chinalist-easylist：广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护</p>
+<p><a target="_blank" rel="noopener" href="http://sub.adtchrome.com/adt-chinalist-easylist.txt">http://sub.adtchrome.com/adt-chinalist-easylist.txt</a></p>
+<p>广告终结者自带规则</p>
+<p><a target="_blank" rel="noopener" href="http://sub.adtchrome.com/adt-chinalist-easylist360.txt">http://sub.adtchrome.com/adt-chinalist-easylist360.txt</a></p>
+<hr>
+<p>Anti-AD<br>目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护<br>屏蔽广告域名、电视盒子广告、APP内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt">https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt">https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt</a></p>
+<hr>
+<p>HalfLife：规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则（几乎每天更新)</p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/halflife/list/raw/master/ad.txt">https://gitee.com/halflife/list/raw/master/ad.txt</a></p>
+<hr>
+<p>I don’t care about cookies : 我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告。</p>
+<p><a target="_blank" rel="noopener" href="https://www.i-dont-care-about-cookies.eu/abp/">https://www.i-dont-care-about-cookies.eu/abp/</a></p>
+<hr>
+<p>EasyList Cookie List<br>阻止Cookie标语，GDPR覆盖窗口和其他与隐私相关的通知</p>
+<p><a target="_blank" rel="noopener" href="https://easylist-downloads.adblockplus.org/easylist-cookie.txt">https://easylist-downloads.adblockplus.org/easylist-cookie.txt</a></p>
+<hr>
+<p>Adbyby</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/adbyby/xwhyc-rules@master/lazy.txt">https://cdn.jsdelivr.net/gh/adbyby/xwhyc-rules@master/lazy.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/adbyby/xwhyc-rules@master/video.txt">https://cdn.jsdelivr.net/gh/adbyby/xwhyc-rules@master/video.txt</a></p>
+<hr>
+<p>ChinaList2.0（广告净化器内置规则备份）</p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/ADList/ChinaList2.0/raw/master/ChinaList2.0.txt">https://gitee.com/ADList/ChinaList2.0/raw/master/ChinaList2.0.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt">https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt</a></p>
+<hr>
+<p>知乎过滤器<br>去除开屏、时间轴、首页推荐、回答列表、回答底部及评论区广告，个人中心VIP横幅<br>去除知乎会员推荐的内容（严格版）<br>标准版<br><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt">https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/zsakvo/AdGuard-Custom-Rule@master/rule/zhihu.txt">https://cdn.jsdelivr.net/gh/zsakvo/AdGuard-Custom-Rule@master/rule/zhihu.txt</a></p>
+<p>严格版<br><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt">https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt</a></p>
+<p><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/zsakvo/AdGuard-Custom-Rule@master/rule/zhihu-strict.txt">https://cdn.jsdelivr.net/gh/zsakvo/AdGuard-Custom-Rule@master/rule/zhihu-strict.txt</a></p>
+<hr>
+<p>其他广告拦截资源汇总 -海外</p>
+<p>easylist -包括EasyList, EasyPrivacy, EasyList Cookie, Fanboy’s Social&#x2F;Annoyances&#x2F;Notifications Blocking List等</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
+<hr>
+<p>fanboy国外规则</p>
+<p><a target="_blank" rel="noopener" href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
+<hr>
+<p>uBlockOrigin 相关资源汇总</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
+<hr>
+<p>Adgurad 拦截规则资源分类汇总</p>
+<p><a target="_blank" rel="noopener" href="https://kb.adguard.com/en/general/adguard-ad-filters">https://kb.adguard.com/en/general/adguard-ad-filters</a></p>
+<hr>
+<p>来自海外用户整理的规则源<br>Annoyances</p>
+<p><a target="_blank" rel="noopener" href="https://filters.adtidy.org/extension/chromium/filters/14.txt">https://filters.adtidy.org/extension/chromium/filters/14.txt</a></p>
+<hr>
+<p>Simplified Domain Names</p>
+<p><a target="_blank" rel="noopener" href="https://filters.adtidy.org/extension/chromium/filters/15.txt">https://filters.adtidy.org/extension/chromium/filters/15.txt</a></p>
+<hr>
+<p>Fanboy’s Social Blocking List</p>
+<p><a target="_blank" rel="noopener" href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
+<hr>
+<p>Fanboy’s Annoyances List</p>
+<p><a target="_blank" rel="noopener" href="https://easylist.to/easylist/fanboy-annoyance.txt">https://easylist.to/easylist/fanboy-annoyance.txt</a></p>
+<hr>
+<p>Fanboy’s Enhanced Tracking List</p>
+<p><a target="_blank" rel="noopener" href="https://fanboy.co.nz/enhancedstats.txt">https://fanboy.co.nz/enhancedstats.txt</a></p>
+<hr>
+<p>Adblock Warning Removal List</p>
+<p><a target="_blank" rel="noopener" href="https://easylist-downloads.adblockplus.org/antiadblockfilters.txt">https://easylist-downloads.adblockplus.org/antiadblockfilters.txt</a></p>
+<hr>
+<p>Anti-Adblock Killer | Reek</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt">https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt</a></p>
+<hr>
+<p>Malware Domains</p>
+<p><a target="_blank" rel="noopener" href="https://easylist-downloads.adblockplus.org/malwaredomains_full.txt">https://easylist-downloads.adblockplus.org/malwaredomains_full.txt</a></p>
+<hr>
+<p>Peter Lowe’s List</p>
+<p><a target="_blank" rel="noopener" href="http://pgl.yoyo.org/adservers/serverlist.php%3Fhostformat%3Dadblockplus%26mimetype%3Dplaintext">http://pgl.yoyo.org/adservers/serverlist.php%3Fhostformat%3Dadblockplus%26mimetype%3Dplaintext</a></p>
+<hr>
+<p>Prebake</p>
+<p><a target="_blank" rel="noopener" href="https://raw.github.com/liamja/Prebake/master/obtrusive.txt">https://raw.github.com/liamja/Prebake/master/obtrusive.txt</a></p>
+<p>Spam 404</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt">https://raw.githubusercontent.com/Dawsey21/Lists/master/adblock-list.txt</a></p>
+<hr>
+<p>BarbBlock</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/paulgb/BarbBlock/master/blacklists/adblock-plus.txt">https://raw.githubusercontent.com/paulgb/BarbBlock/master/blacklists/adblock-plus.txt</a></p>
+<hr>
+<p>NoCoin Adblock list</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt">https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt</a></p>
+<hr>
+<p>ADgk - Andriod</p>
+<p>一个专门为安卓版adguard写的规则,适合在手机浏览器中使用的拦截规则。</p>
+<p>适用于 AdGuard for Android 的去广告规则（不保证在其他软件使用的效果）</p>
+<ul>
+<li>去除大部分软件的开屏广告</li>
+<li>拦截大部分广告联盟的广告<br>主规则订阅地址 </li>
+<li><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a></li>
+</ul>
+<p>主规则coding镜像 </p>
+<p><a target="_blank" rel="noopener" href="https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt">https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt</a></p>
+<p>百度搜索结果内屏蔽百家号 </p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt</a></p>
+<p>百度搜索结果内屏蔽百家号coding镜像 </p>
+<p><a target="_blank" rel="noopener" href="https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/kill-baidu-ad.txt">https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/kill-baidu-ad.txt</a></p>
+<hr>
+<h2 id="Hosts过滤器"><a href="#Hosts过滤器" class="headerlink" title="Hosts过滤器"></a>Hosts过滤器</h2><p>大圣净化 - 大圣净化开发者维护的 Hosts，主要针对国内视频网站</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts">https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts</a></p>
+<p>1024_hosts - 1024网站及澳门皇家赌场及恶意广告主机列表,你懂得</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts">https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts</a></p>
+<p>yhosts -国内维护。-相当老牌的去广告的Hosts -yhosts是国内比较知名的host维护列表，原作者目前已经停止维护,目前由VeleSila接手更新。</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/vokins/yhosts/master/hosts">https://raw.githubusercontent.com/vokins/yhosts/master/hosts</a></p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt">https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt</a></p>
+<p>neoHosts - 国内屏蔽挖矿统计JS&amp;360&amp;百度&amp;、、、国内屏蔽挖矿统计JS&#x2F;常见下载劫持&#x2F;百度全家桶的全天候定位记录等等</p>
+<p><a target="_blank" rel="noopener" href="https://hosts.nfz.moe/full/hosts">https://hosts.nfz.moe/full/hosts</a></p>
+<p>Hblock -综合多种源集合体屏蔽广告跟踪和恶意软件<br>Hblock是一个脚本程序，他会自动提取来自很多规则源的恶意广告主机列表，比如 EasyList,AdGuard,uBlock ,disconnect.me 等数十个规则源，下面的链接是由该脚本生成的主机列表。</p>
+<p><a target="_blank" rel="noopener" href="https://hblock.molinero.dev/hosts">https://hblock.molinero.dev/hosts</a></p>
+<p>Google hosts - 提高网站访问速度</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a></p>
+<p>Mvps - 屏蔽美欧地区英文网站相关的广告</p>
+<p><a target="_blank" rel="noopener" href="http://winhelp2002.mvps.org/hosts.txt">http://winhelp2002.mvps.org/hosts.txt</a></p>
+<p>StevenBlack - 屏蔽国外网站广告-国外维护<br>国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件. github上获得15k+ Start 可以通过脚本生成你自己的hosts文件。</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</a></p>
+<p>YousList - 屏蔽韩国网站广告</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/yous/YousList/master/hosts.txt">https://raw.githubusercontent.com/yous/YousList/master/hosts.txt</a></p>
+<p>有海外维护针对移动网站的广告主机列表</p>
+<p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt">https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt</a></p>
+<p>hmirror来自海外西班牙用户整理的各种主机拦截资源汇总，包括来adguard,easylist,ublock的主机资源. 下面是主机资源汇总页面</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/hectorm/hmirror/">https://github.com/hectorm/hmirror/</a></p>
+<hr>
+<p>路由端屏蔽规则<br>Koolproxy<br><a target="_blank" rel="noopener" href="https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt">https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt</a><br>Adbyby（xwhyc-rules）<br>[lazy] <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br>[lazy] <a target="_blank" rel="noopener" href="https://opt.cn2qq.com/opt-file/lazy.txt">https://opt.cn2qq.com/opt-file/lazy.txt</a><br>[video] <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a><br>[video] <a target="_blank" rel="noopener" href="https://opt.cn2qq.com/opt-file/video.txt">https://opt.cn2qq.com/opt-file/video.txt</a></p>
+<hr>
+<p>去广告效果检测网站<br><a target="_blank" rel="noopener" href="https://checkadblock.ru/">https://checkadblock.ru/</a></p>
+<p><a target="_blank" rel="noopener" href="https://blockads.fivefilters.org/">https://blockads.fivefilters.org/</a></p>
+<p><a target="_blank" rel="noopener" href="https://canyoublockit.com/extreme-test/">https://canyoublockit.com/extreme-test/</a></p>
+<p><a target="_blank" rel="noopener" href="https://ads-blocker.com/testing/">https://ads-blocker.com/testing/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.detectadblock.com/">https://www.detectadblock.com/</a></p>
+<p><a target="_blank" rel="noopener" href="http://simple-adblock.com/faq/testing-your-adblocker/">http://simple-adblock.com/faq/testing-your-adblocker/</a></p>
+<hr>
+<p>参考资料<br><a target="_blank" rel="noopener" href="https://gitee.com/halflife/list/">https://gitee.com/halflife/list/</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/otobtc/ADhosts">https://github.com/otobtc/ADhosts</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/hectorm/hblock">https://github.com/hectorm/hblock</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/vokins/yhosts">https://github.com/vokins/yhosts</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/StevenBlack/hosts">https://github.com/StevenBlack/hosts</a></p>
+<p><a target="_blank" rel="noopener" href="https://ublock.org/">https://ublock.org/</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/privacy-protection-tools/anti-AD">https://github.com/privacy-protection-tools/anti-AD</a></p>
+<p><a target="_blank" rel="noopener" href="https://easylist.to/">https://easylist.to/</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/chrome/" rel="tag"># chrome</a>
+              <a href="/tags/%E6%8F%92%E4%BB%B6/" rel="tag"># 插件</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/" rel="prev" title="软件-win-Chrome浏览器下载和自用插件">
+      <i class="fa fa-chevron-left"></i> 软件-win-Chrome浏览器下载和自用插件
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/10/2022-05-10-%E8%BD%AF%E4%BB%B6-win-BT%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E5%92%8CTracker%E5%88%97%E8%A1%A8%E5%90%88%E9%9B%86/" rel="next" title="软件-win-BT下载软件和Tracker列表合集">
+      软件-win-BT下载软件和Tracker列表合集 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BDApp"><span class="nav-number">1.</span> <span class="nav-text">1.广告屏蔽App</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99"><span class="nav-number">2.</span> <span class="nav-text">2. 广告规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hosts%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text">Hosts过滤器</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Sweet RX"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Sweet RX</p>
+  <div class="site-description" itemprop="description">This is my internet world!</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/rxsweet" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;rxsweet" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sweet RX</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
