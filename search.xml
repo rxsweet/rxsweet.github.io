@@ -871,7 +871,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#116;&#x72;&#x78;&#x40;&#x70;&#109;&#46;&#109;&#101;">&#115;&#x77;&#x65;&#x65;&#116;&#x72;&#x78;&#x40;&#x70;&#109;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#101;&#x74;&#114;&#120;&#x40;&#112;&#109;&#x2e;&#x6d;&#101;">&#115;&#x77;&#101;&#101;&#x74;&#114;&#120;&#x40;&#112;&#109;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2661,6 +2661,35 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 域名注册并绑定vercel博客</title>
+    <url>/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="域名注册并绑定vercel博客"><a href="#域名注册并绑定vercel博客" class="headerlink" title="域名注册并绑定vercel博客"></a>域名注册并绑定vercel博客</h1><h2 id="先注册域名"><a href="#先注册域名" class="headerlink" title="先注册域名"></a>先注册域名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitelutions多种可解析免费二级域名注册，</span><br><span class="line">至少已经运行十几年了，现在依然可用。</span><br><span class="line">里面可以注册二十几种后缀的免费二级域名，</span><br><span class="line">其中有几个提供既短又好记的二级域名</span><br></pre></td></tr></table></figure>
+<p>注册网址：<a href="https://www.sitelutions.com/">https://www.sitelutions.com/</a></p>
+<p>注册教程：<a href="https://www.freeaday.com/2023/01/sitelutions/">https://www.freeaday.com/2023/01/sitelutions/</a></p>
+<p>步骤：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击右上角的红色 free sign up 来注册。注册只需邮箱即可，但是过程有些麻烦。</span><br><span class="line">2.登录成功之后，依次选择account &gt; url and dns &gt; add subdomain，然后选择一个自己想要的二级域名，点击add host。</span><br><span class="line">3.选择二级域名后面的[Advanced Config &amp; DDNS]字样，来添加记录，</span><br><span class="line">**发现无法添加任何记录，提示已经在2014年10月停止了免费的解析功能**</span><br><span class="line">4.往下拉，找到 ns records，点击click here，原来可以使用第三方ns(nameservers)</span><br><span class="line">5.添加的是he.net的地址（注意：每一条都要以一个点结尾）</span><br><span class="line">6.等待生效之后便可使用，即使添加、修改记录也不用每次登录sitelutions了。</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h2 id="注册he-net-美国老牌免费dns域名解析服务"><a href="#注册he-net-美国老牌免费dns域名解析服务" class="headerlink" title="注册he.net 美国老牌免费dns域名解析服务"></a>注册he.net 美国老牌免费dns域名解析服务</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hurricane Electric 老牌免费的域名解析服务已经运行了许多年，一直很好用，国内也可以正常使用。</span><br><span class="line">支持A、AAAA、ALIAS、CNAME、CAA、MX、NS、TXT、SRV、SSHFP、SPF、RP、NAPTR、HINFO、LOC 和 PTR 等类型的记录。</span><br></pre></td></tr></table></figure>
+<p>注册教程：<a href="https://www.freeaday.com/2022/09/he-net/">he.net 美国老牌免费dns域名解析服务</a></p>
+<p>注册网址：<a href="https://dns.he.net/">https://dns.he.net/</a></p>
+<p>步骤：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击蓝色的register按钮注册。无需验证手机号，红色星号项目必填，注册会收到激活邮件。仅需验证邮箱，不用其它隐私信息。</span><br><span class="line">2.登录支持点击左侧的 Add a new domain 添加域名。每个账号可以添加50个域名，一级域名、二级域名均可。</span><br></pre></td></tr></table></figure>
+<p>记得去注册商把域名ns设置成：<br>ns1.he.net<br>ns2.he.net<br>ns3.he.net<br>ns4.he.net<br>ns5.he.net</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">3.he.net添加记录值,点击域名左侧的编辑按钮，再点击上面的一行按钮来添加相应的记录值。可以支持ipv4和ipv6</span><br></pre></td></tr></table></figure>
+<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**如果首次使用按钮上方出现红字，那就是域名ns还没生效，一般要等不超过24小时。可以点击Check Delegation按钮检查生效缓存。</p>
+<h2 id="绑定vercel过程"><a href="#绑定vercel过程" class="headerlink" title="绑定vercel过程"></a>绑定vercel过程</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.先进入cercel-domain-填入域名`sweetrx.rr.nu`</span><br><span class="line">2.在sitelutions注册的域名里面的NS records设置里面将`ns1.he.net`的5条添加进去,还要添加一条`ns1.vercel-dns.com.`vercel验证好像要用</span><br><span class="line">3.进入he,编辑里面,添加了:一条A记录&#x27;无name:IP76.76.21.21&#x27;,一条NS&#x27;无name: NSname: ns1.vercel-dns.com.&#x27;,注意最后面的.</span><br></pre></td></tr></table></figure>
+
+<p>账号pm.me密码Pp5300</p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>thanks，<a href="https://www.freeaday.com/">https://www.freeaday.com/</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
