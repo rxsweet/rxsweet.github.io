@@ -107,20 +107,11 @@
 <h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.rr.nu/sub/rx.yaml</span><br><span class="line">https://rxsub.rr.nu/sub/srx.yaml</span><br><span class="line">https://rxsub.rr.nu/sub/mining.yaml</span><br><span class="line">https://rxsub.rr.nu/sub/goodfree.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>备用<br><code>https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
 <h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line"></span><br><span class="line">https://rxsub.rr.nu/sub/rx64</span><br><span class="line">https://rxsub.rr.nu/sub/srx64</span><br><span class="line">https://rxsub.rr.nu/sub/mining64</span><br><span class="line">https://rxsub.rr.nu/sub/goodfree64</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.rr.nu/sub/sources/sublist_free</span><br><span class="line">https://rxsub.rr.nu/sub/sources/subList_dynamic</span><br></pre></td></tr></table></figure>
-<h3 id="winXray-sub"><a href="#winXray-sub" class="headerlink" title="- winXray sub"></a>- winXray sub</h3><ul>
-<li><p>freefq - 每天更新<br><code>https://ghproxy.com/https://raw.githubusercontent.com/freefq/free/master/v2</code></p>
-</li>
-<li><p>proxypool</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”,”.yml”,”.yaml”</p>
+
+<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p><a href="https://proxy.yugogo.xyz/">https://proxy.yugogo.xyz/</a>    - 挂代理</p>
-</li>
-<li><p><a href="https://proxypool.laowang.me/">https://proxypool.laowang.me/</a></p>
-</li>
-<li><p><a href="https://klausvpn.posyao.com/">https://klausvpn.posyao.com/</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure></li>
+<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
 <li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
@@ -846,7 +837,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#x74;&#x72;&#120;&#x40;&#112;&#x6d;&#46;&#109;&#x65;">&#115;&#x77;&#x65;&#x65;&#x74;&#x72;&#120;&#x40;&#112;&#x6d;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;">&#115;&#119;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
