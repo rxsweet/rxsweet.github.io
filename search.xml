@@ -68,19 +68,28 @@
 <li>Clash Core (<a href="https://github.com/Dreamacro/clash/releases">https://github.com/Dreamacro/clash/releases</a>)</li>
 </ul>
 </li>
-<li><p>WinXray<br>修改版（现在流行）<a href="https://github.com/TheMRLL/winxray/releases">https://github.com/TheMRLL/winxray/releases</a>或者<a href="https://winxray.com/">https://winxray.com/</a></p>
+<li><p>WinXray</p>
+<ul>
+<li><p>修改版（现在流行）<a href="https://github.com/TheMRLL/winxray/releases">https://github.com/TheMRLL/winxray/releases</a>或者<a href="https://winxray.com/">https://winxray.com/</a></p>
+</li>
+<li><p>原版（现用）	<a href="https://github.com/woohong666/win-xray">https://github.com/woohong666/win-xray</a> </p>
+</li>
+<li><p>Xray-coce	<a href="https://github.com/XTLS/Xray-core/releases">https://github.com/XTLS/Xray-core/releases</a></p>
 </li>
 </ul>
-<p>原版（现用）	<a href="https://github.com/woohong666/win-xray">https://github.com/woohong666/win-xray</a> </p>
-<p>Xray-coce	<a href="https://github.com/XTLS/Xray-core/releases">https://github.com/XTLS/Xray-core/releases</a></p>
+</li>
+<li><p>V2rayN</p>
 <ul>
-<li>V2rayN<br>github地址：<a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></li>
+<li><p>github地址：<a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></p>
+</li>
+<li><p>github加速地址：<a href="https://hub.nuaa.cf/2dust/v2rayN/releases">https://hub.nuaa.cf/2dust/v2rayN/releases</a> 或 <a href="https://hub.yzuu.cf/2dust/v2rayN/releases">https://hub.yzuu.cf/2dust/v2rayN/releases</a></p>
+</li>
 </ul>
-<p>github加速地址：<a href="https://hub.nuaa.cf/2dust/v2rayN/releases">https://hub.nuaa.cf/2dust/v2rayN/releases</a> 或 <a href="https://hub.yzuu.cf/2dust/v2rayN/releases">https://hub.yzuu.cf/2dust/v2rayN/releases</a></p>
-<p><strong>注意：</strong><br>设置ping和测速地址在<code>guiConfigs</code>-<code>guiNConfig.json</code>中</p>
-<p>ping地址：<br><strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br>测速地址：<br><strong><a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
+<p> <strong>注意：</strong><br> 设置ping和测速地址在<code>guiConfigs</code>-<code>guiNConfig.json</code>中</p>
+<p> ping地址：<br> <strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br> 测速地址：<br> <strong><a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
+</li>
+<li><p>其他下载工具合集</p>
 <ul>
-<li>其他下载工具合集<ul>
 <li><a href="https://www.v2rayssr.com/vpn-client.html">https://www.v2rayssr.com/vpn-client.html</a></li>
 <li><a href="https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/">https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/</a></li>
 <li><a href="https://suwav2ray.com/super_tools/">https://suwav2ray.com/super_tools&#x2F;</a></li>
@@ -861,7 +870,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#101;&#x74;&#114;&#x78;&#64;&#112;&#109;&#46;&#109;&#x65;">&#x73;&#x77;&#101;&#101;&#x74;&#114;&#x78;&#64;&#112;&#109;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#x65;&#116;&#114;&#120;&#x40;&#112;&#x6d;&#46;&#x6d;&#101;">&#x73;&#x77;&#101;&#x65;&#116;&#114;&#120;&#x40;&#112;&#x6d;&#46;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
