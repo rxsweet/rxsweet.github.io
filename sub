@@ -1,0 +1,30 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: replit_xray_vmess, server: test.rxsweet.repl.co, port: 443, type: vmess, uuid: 49b2cb63-0d53-400f-afe6-6e21f88d0da2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /49b2cb63-0d53-400f-afe6-6e21f88d0da2-vm, headers: {Host: test.rxsweet.repl.co}}, udp: true}
+proxy-groups:
+  - name: 手动切换
+    type: select
+    proxies:
+      - replit_xray_vmess
+  - name: 自动选择
+    type: url-test
+    url: https://www.google.com/favicon.ico
+    interval: 300
+    tolerance: 50
+    proxies:
+      - replit_xray_vmess
+  - name: 负载均衡
+    type: load-balance
+    strategy: consistent-hashing
+    url: https://www.google.com/favicon.ico
+    interval: 300
+    tolerance: 50
+    proxies:
+      - replit_xray_vmess
+rules:
+ - MATCH,手动切换
