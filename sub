@@ -8,6 +8,22 @@ proxies:
   - {name: replit_xray_vmess, server: test.rxsweet.repl.co, port: 443, type: vmess, uuid: 49b2cb63-0d53-400f-afe6-6e21f88d0da2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /49b2cb63-0d53-400f-afe6-6e21f88d0da2-vm, headers: {Host: test.rxsweet.repl.co}}, udp: true}
   - {name: no.aries.ovh, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
   - {name: NO.ARIES.OVH, server: NO.ARIES.OVH, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: GCORE-TR.cloudflare.quest}}, udp: true}
+  - {name: _GCORE, server: NO.ARIES.OVH, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-in.cloudflare.quest}}, udp: true}
+  - {name: _GCORE 2, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-jp.cloudflare.quest}}, udp: true}
+  - {name: _GCORE 3, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-hk.cloudflare.quest}}, udp: true}
+  - {name: _GCORE 4, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: gcore-us.cloudflare.quest}}, udp: true}
+  - {name: _Scaleway, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
+  - {name: _Scaleway 2, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: france.cloudflare.quest}}, udp: true}
+  - {name: _Scaleway 3, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: netherlands.cloudflare.quest}}, udp: true}
+  - {name: _Scaleway-WARP, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
+  - {name: _Scaleway-WARP 2, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw.cloudflare.quest}}, udp: true}
+  - {name: _OVH-NAT, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: uk.cloudflare.quest}}, udp: true}
+  - {name: _OVH-WARP, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: _TMNET-伪家宽, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: tm.cloudflare.quest}}, udp: true}
+  - {name: _pilw-伪家宽, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
+  - {name: _VNPT-伪家宽, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}, udp: true}
+  - {name: _Hostmaze, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ro.cloudflare.quest}}, udp: true}
+  - {name: _FriendHosting, server: no.aries.ovh, port: 2052, type: vmess, uuid: c6f7bae0-36d9-41a6-9962-e79156c899c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: lv.cloudflare.quest}}, udp: true}
 proxy-groups:
   - name: 手动切换
     type: select
@@ -15,6 +31,22 @@ proxy-groups:
       - replit_xray_vmess
       - no.aries.ovh
       - NO.ARIES.OVH
+      - _GCORE
+      - _GCORE 2
+      - _GCORE 3
+      - _GCORE 4
+      - _Scaleway
+      - _Scaleway 2
+      - _Scaleway 3
+      - _Scaleway-WARP
+      - _Scaleway-WARP 2
+      - _OVH-NAT
+      - _OVH-WARP
+      - _TMNET-伪家宽
+      - _pilw-伪家宽
+      - _VNPT-伪家宽
+      - _Hostmaze
+      - _FriendHosting
   - name: 自动选择
     type: url-test
     url: https://www.google.com/favicon.ico
@@ -24,6 +56,22 @@ proxy-groups:
       - replit_xray_vmess
       - no.aries.ovh
       - NO.ARIES.OVH
+      - _GCORE
+      - _GCORE 2
+      - _GCORE 3
+      - _GCORE 4
+      - _Scaleway
+      - _Scaleway 2
+      - _Scaleway 3
+      - _Scaleway-WARP
+      - _Scaleway-WARP 2
+      - _OVH-NAT
+      - _OVH-WARP
+      - _TMNET-伪家宽
+      - _pilw-伪家宽
+      - _VNPT-伪家宽
+      - _Hostmaze
+      - _FriendHosting
   - name: 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -34,5 +82,21 @@ proxy-groups:
       - replit_xray_vmess
       - no.aries.ovh
       - NO.ARIES.OVH
+      - _GCORE
+      - _GCORE 2
+      - _GCORE 3
+      - _GCORE 4
+      - _Scaleway
+      - _Scaleway 2
+      - _Scaleway 3
+      - _Scaleway-WARP
+      - _Scaleway-WARP 2
+      - _OVH-NAT
+      - _OVH-WARP
+      - _TMNET-伪家宽
+      - _pilw-伪家宽
+      - _VNPT-伪家宽
+      - _Hostmaze
+      - _FriendHosting
 rules:
  - MATCH,手动切换
