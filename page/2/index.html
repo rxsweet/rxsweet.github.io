@@ -196,6 +196,87 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sweet RX">
+      <meta itemprop="description" content="This is my internet world!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sweet RX's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/" class="post-title-link" itemprop="url">学习笔记 - python功能命令收集</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-26T00:00:00+00:00">2022-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">python功能命令收集</span><br><span class="line">├── 系统相关操作</span><br><span class="line">│   ├── 时间</span><br><span class="line">│   ├── 检查使用的系统</span><br><span class="line">│   ├── 获取文件相对路径、绝对路径</span><br><span class="line">│   └── 获取当前路径地址</span><br><span class="line">├── 文件操作</span><br><span class="line">│   ├── 创建文件夹</span><br><span class="line">│   ├── 删除文件夹</span><br><span class="line">│   ├── 打开文件，读取方式</span><br><span class="line">│   ├── 写入文件</span><br><span class="line">│   ├── 下载文件</span><br><span class="line">│   └── 获取文件内容行数</span><br><span class="line">├── 数据处理</span><br><span class="line">│   └── 列表</span><br><span class="line">│       ├── 列表增加 </span><br><span class="line">│       ├── 将文件每行内容读取成列表</span><br><span class="line">│       ├── 将列表内容，以行写入字符串</span><br><span class="line">│       ├── findall查找内容写入列表</span><br><span class="line">│       ├── 列表循环读取</span><br><span class="line">│       ├── 列表去重  </span><br><span class="line">│       └── 列表进度条  </span><br><span class="line">├── 检测网站是否可用</span><br><span class="line">├── 多线程</span><br><span class="line">├── 进度条</span><br><span class="line">├── Linux系统</span><br><span class="line">│   └── .sh 操作</span><br><span class="line">└── github Actions workflows</span><br><span class="line">    ├── 触发条件</span><br><span class="line">    ├── 基本系统配置</span><br><span class="line">    ├── 安装依赖</span><br><span class="line">    ├── 安装工具</span><br><span class="line">    └── 提交</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -227,7 +308,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -311,7 +392,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -392,7 +473,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -473,7 +554,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -504,92 +585,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sweet RX">
-      <meta itemprop="description" content="This is my internet world!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sweet RX's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/" class="post-title-link" itemprop="url">经验技术 - hexo博客使用Github Action自动部署</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-08-10 00:00:00" itemprop="dateCreated datePublished" datetime="2022-08-10T00:00:00+00:00">2022-08-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">经验技术</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="hexo博客使用Github-Action自动部署"><a href="#hexo博客使用Github-Action自动部署" class="headerlink" title="hexo博客使用Github Action自动部署"></a>hexo博客使用Github Action自动部署</h1><h2 id="Hexo-博客的Github-Action自动化部署是什么？"><a href="#Hexo-博客的Github-Action自动化部署是什么？" class="headerlink" title="Hexo 博客的Github Action自动化部署是什么？"></a>Hexo 博客的Github Action自动化部署是什么？</h2><p>简单说，就是把hexo博客的源代码上传到github代码仓库，github在代码发生变动的时候，自动通过安装一系列nodejs环境和相关依赖，生成html页面到github pages仓库。</p>
-<p>再简单点说，就是把本地生成博客的工作，全部交给github执行。</p>
-<h2 id="总体步骤："><a href="#总体步骤：" class="headerlink" title="总体步骤："></a>总体步骤：</h2><pre><code>1. 使用Github令牌部署hexo博客
-2. Github新建一个私有仓库，并上传hexo博客源码
-3. 配置Github Action实现自动化部署
-</code></pre>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -680,7 +675,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-count">55</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

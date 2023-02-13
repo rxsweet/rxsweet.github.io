@@ -196,6 +196,144 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/02/13/updateFileTime/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sweet RX">
+      <meta itemprop="description" content="This is my internet world!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sweet RX's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/13/updateFileTime/" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-02-13 03:25:10" itemprop="dateCreated datePublished" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          #!/usr/bin/env node
+/*
+批量更新修改时间
+博客自动更新文章的修改时间
+*/
+
+console.log('脚本开始运行..');
+var fs = require("fs"); //请求文件系统
+var file = "./txt"; //设置读取和写入的文件，当前目录下的test文件
+var RegExp=/(updated:\s*)((\d{2}(([02468][048])|([13579][26]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|([1-2][0-9])))))|(\d{2}(([02468][1235679])|([13579][01345789]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|(1[0-9])|(2[0-8]))))))(\s((([0-1][0-9])|(2?[0-3]))\:([0-5]?[0-9])((\s)|(\:([0-5]?[0-9])))))/g;
+
+fs.readdir("./",function(err,files){
+	var len=files.length;
+	var file=null;
+	for(var i=0;i<len;i++){
+		file=files[i];
+		//console.log("读取文件：",file);
+		if(file.indexOf(".md")>-1){
+			console.log("正在处理文件：",file);
+			writeFileTime(file,fs);
+		}
+	}
+});
+
+/*
+file:读取时间的文件以及写入内容的文件
+fs: 文件系统
+*/
+function writeFileTime(file,fs){
+	fs.readFile(file, 'utf8',function(err, data) { //读取文件内容
+		if (err) return console.log("读取文件内容错误：",err);
+		//console.log("文件"+file+"的内容：",data);
+		if(RegExp.test(data)){ //如果匹配到`updated`字段
+			fs.stat(file,function(err, stats) { //读取文件信息，创建时间等
+				if (err) return console.log("读取文件信息错误：",err);
+				var updateds=data.match(RegExp);
+				//console.log("updated数组:",updateds);
+				if(updateds.length>1) console.log("文件"+file+"匹配到多处update字段");
+				var updated=updateds[0].replace("updated: ","").replace(/-/g,"/");  //时间格式化为2018/01/29 21:33:30
+				//console.log("updated:",updated);
+				if(new Date(stats.mtime).getTime()-new Date(Date.parse(updated))>1000*60*5){ // 只要修改时间和文章内updated时间差大于1000毫秒*60*5=5分钟就触发更新
+					var result= data.replace(RegExp,"updated: "+getFormatDate(stats.mtime)); //替换更新时间
+					fs.writeFile(file, result, 'utf8',function(err) { //写入新的文件内容
+						if (err) return console.log("写文件错误：",err);
+						fs.utimes(file,new Date(stats.atime),new Date(stats.mtime),function(err){  //还原访问时间和修改时间
+							if (err) return console.log("修改时间失败：",err);
+							console.log(file,"成功更新时间");
+						});
+					});
+				}
+			});
+		}	
+	});
+}
+
+/*
+ timeStr:时间，格式可为："September 16,2016 14:15:05、
+ "September 16,2016"、"2016/09/16 14:15:05"、"2016/09/16"、
+ '2014-04-23T18:55:49'和毫秒
+ dateSeparator：年、月、日之间的分隔符，默认为"-"，
+ timeSeparator：时、分、秒之间的分隔符，默认为":"
+ */
+function getFormatDate(timeStr, dateSeparator, timeSeparator) {
+    dateSeparator = dateSeparator ? dateSeparator : "-";
+    timeSeparator = timeSeparator ? timeSeparator : ":";
+    var date = new Date(timeStr),
+            year = date.getFullYear(),// 获取完整的年份(4位,1970)
+            month = date.getMonth(),// 获取月份(0-11,0代表1月,用的时候记得加上1)
+            day = date.getDate(),// 获取日(1-31)
+            hour = date.getHours(),// 获取小时数(0-23)
+            minute = date.getMinutes(),// 获取分钟数(0-59)
+            seconds = date.getSeconds(),// 获取秒数(0-59)
+            Y = year + dateSeparator,
+            M = ((month + 1) > 9 ? (month + 1) : ('0' + (month + 1))) + dateSeparator,
+            D = (day > 9 ? day : ('0' + day)) + ' ',
+            h = (hour > 9 ? hour : ('0' + hour)) + timeSeparator,
+            m = (minute > 9 ? minute : ('0' + minute)) + timeSeparator,
+            s = (seconds > 9 ? seconds : ('0' + seconds)),
+            formatDate = Y + M + D + h + m + s;
+    return formatDate;
+}
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/02/13/writeupdatetime/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -220,7 +358,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-02-13 03:16:28" itemprop="dateCreated datePublished" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+              <time title="Created: 2023-02-13 03:25:10" itemprop="dateCreated datePublished" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
             </span>
 
           
@@ -357,7 +495,7 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -442,7 +580,7 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -527,7 +665,7 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 03:25:10" itemprop="dateModified" datetime="2023-02-13T03:25:10+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -558,87 +696,6 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sweet RX">
-      <meta itemprop="description" content="This is my internet world!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sweet RX's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/" class="post-title-link" itemprop="url">学习笔记 - python功能命令收集</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-26T00:00:00+00:00">2022-09-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 03:16:28" itemprop="dateModified" datetime="2023-02-13T03:16:28+00:00">2023-02-13</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">python功能命令收集</span><br><span class="line">├── 系统相关操作</span><br><span class="line">│   ├── 时间</span><br><span class="line">│   ├── 检查使用的系统</span><br><span class="line">│   ├── 获取文件相对路径、绝对路径</span><br><span class="line">│   └── 获取当前路径地址</span><br><span class="line">├── 文件操作</span><br><span class="line">│   ├── 创建文件夹</span><br><span class="line">│   ├── 删除文件夹</span><br><span class="line">│   ├── 打开文件，读取方式</span><br><span class="line">│   ├── 写入文件</span><br><span class="line">│   ├── 下载文件</span><br><span class="line">│   └── 获取文件内容行数</span><br><span class="line">├── 数据处理</span><br><span class="line">│   └── 列表</span><br><span class="line">│       ├── 列表增加 </span><br><span class="line">│       ├── 将文件每行内容读取成列表</span><br><span class="line">│       ├── 将列表内容，以行写入字符串</span><br><span class="line">│       ├── findall查找内容写入列表</span><br><span class="line">│       ├── 列表循环读取</span><br><span class="line">│       ├── 列表去重  </span><br><span class="line">│       └── 列表进度条  </span><br><span class="line">├── 检测网站是否可用</span><br><span class="line">├── 多线程</span><br><span class="line">├── 进度条</span><br><span class="line">├── Linux系统</span><br><span class="line">│   └── .sh 操作</span><br><span class="line">└── github Actions workflows</span><br><span class="line">    ├── 触发条件</span><br><span class="line">    ├── 基本系统配置</span><br><span class="line">    ├── 安装依赖</span><br><span class="line">    ├── 安装工具</span><br><span class="line">    └── 提交</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -729,7 +786,7 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-count">55</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
