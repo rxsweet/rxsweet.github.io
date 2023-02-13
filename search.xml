@@ -671,7 +671,7 @@
 </ul>
 <h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
 <p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-11 12:17:01categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 13:28:41categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
 <p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
@@ -873,7 +873,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#x65;&#101;&#116;&#114;&#120;&#x40;&#112;&#109;&#46;&#x6d;&#x65;">&#x73;&#x77;&#x65;&#101;&#116;&#114;&#120;&#x40;&#112;&#109;&#46;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#101;&#x65;&#116;&#114;&#120;&#64;&#112;&#109;&#46;&#109;&#x65;">&#115;&#119;&#101;&#x65;&#116;&#114;&#120;&#64;&#112;&#109;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2502,14 +2502,14 @@ OK,大功告成！
 <span id="more"></span>
 
 <h1 id="一-添加分类"><a href="#一-添加分类" class="headerlink" title="一.添加分类"></a>一.添加分类</h1><h2 id="1-在主题里配置好分类"><a href="#1-在主题里配置好分类" class="headerlink" title="1. 在主题里配置好分类"></a>1. 在主题里配置好分类</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-11 12:17:01categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 13:28:41categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
 <p>去掉<code>categories</code>前<code>#</code>注释标</p>
 <h2 id="2-创建分类目录文件"><a href="#2-创建分类目录文件" class="headerlink" title="2. 创建分类目录文件"></a>2. 创建分类目录文件</h2><p>在Hexoblog主目录下创建<code>/source/categories/index.md</code></p>
 <h2 id="3-编辑页面让主题识别页面为分类页面"><a href="#3-编辑页面让主题识别页面为分类页面" class="headerlink" title="3. 编辑页面让主题识别页面为分类页面"></a>3. 编辑页面让主题识别页面为分类页面</h2><p>编辑<code>index.md</code></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类 - post category</span><br><span class="line">date: 2021-01-25 22:37:25</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>这就完成了整个分类页面的配置了。</p>
 <h1 id="二-添加标签"><a href="#二-添加标签" class="headerlink" title="二.添加标签"></a>二.添加标签</h1><h2 id="1-在主题里配置好标签"><a href="#1-在主题里配置好标签" class="headerlink" title="1. 在主题里配置好标签"></a>1. 在主题里配置好标签</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-11 12:17:01categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 13:28:41categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
 <p>去掉<code>tags</code>前<code>#</code>注释标</p>
 <h2 id="2-创建标签目录文件"><a href="#2-创建标签目录文件" class="headerlink" title="2. 创建标签目录文件"></a>2. 创建标签目录文件</h2><p>在Hexoblog主目录下创建<code>/source/tags/index.md</code></p>
 <h2 id="3-编辑页面让主题识别页面为标签页面"><a href="#3-编辑页面让主题识别页面为标签页面" class="headerlink" title="3. 编辑页面让主题识别页面为标签页面"></a>3. 编辑页面让主题识别页面为标签页面</h2><p>编辑index.md</p>
@@ -2541,7 +2541,7 @@ OK,大功告成！
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
 <p>然后还需要对对应对文章进行设置，有两种方法</p>
 <h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-11 12:17:01categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 13:28:41categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
 <h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
