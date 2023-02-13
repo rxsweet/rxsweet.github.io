@@ -28,7 +28,7 @@
 <meta property="og:description" content="前言使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-08-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-02-13T05:33:04.000Z">
+<meta property="article:modified_time" content="2023-02-13T05:36:27.000Z">
 <meta property="article:author" content="Sweet RX">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -230,7 +230,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 13:33:04" itemprop="dateModified" datetime="2023-02-13T13:33:04+08:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 13:36:27" itemprop="dateModified" datetime="2023-02-13T13:36:27+08:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -260,7 +260,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
 <p>然后还需要对对应对文章进行设置，有两种方法</p>
 <h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 13:33:04categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 13:36:27categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
 <h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
