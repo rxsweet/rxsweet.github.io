@@ -196,144 +196,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/02/13/updateFileTime/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sweet RX">
-      <meta itemprop="description" content="This is my internet world!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sweet RX's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/02/13/updateFileTime/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-02-13 13:46:44" itemprop="dateCreated datePublished" datetime="2023-02-13T13:46:44+08:00">2023-02-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          #!/usr/bin/env node
-/*
-批量更新修改时间
-博客自动更新文章的修改时间
-*/
-
-console.log('脚本开始运行..');
-var fs = require("fs"); //请求文件系统
-var file = "./txt"; //设置读取和写入的文件，当前目录下的test文件
-var RegExp=/(updated:\s*)((\d{2}(([02468][048])|([13579][26]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|([1-2][0-9])))))|(\d{2}(([02468][1235679])|([13579][01345789]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|(1[0-9])|(2[0-8]))))))(\s((([0-1][0-9])|(2?[0-3]))\:([0-5]?[0-9])((\s)|(\:([0-5]?[0-9])))))/g;
-
-fs.readdir("./",function(err,files){
-	var len=files.length;
-	var file=null;
-	for(var i=0;i<len;i++){
-		file=files[i];
-		//console.log("读取文件：",file);
-		if(file.indexOf(".md")>-1){
-			console.log("正在处理文件：",file);
-			writeFileTime(file,fs);
-		}
-	}
-});
-
-/*
-file:读取时间的文件以及写入内容的文件
-fs: 文件系统
-*/
-function writeFileTime(file,fs){
-	fs.readFile(file, 'utf8',function(err, data) { //读取文件内容
-		if (err) return console.log("读取文件内容错误：",err);
-		//console.log("文件"+file+"的内容：",data);
-		if(RegExp.test(data)){ //如果匹配到`updated`字段
-			fs.stat(file,function(err, stats) { //读取文件信息，创建时间等
-				if (err) return console.log("读取文件信息错误：",err);
-				var updateds=data.match(RegExp);
-				//console.log("updated数组:",updateds);
-				if(updateds.length>1) console.log("文件"+file+"匹配到多处update字段");
-				var updated=updateds[0].replace("updated: ","").replace(/-/g,"/");  //时间格式化为2018/01/29 21:33:30
-				//console.log("updated:",updated);
-				if(new Date(stats.mtime).getTime()-new Date(Date.parse(updated))>1000*60*5){ // 只要修改时间和文章内updated时间差大于1000毫秒*60*5=5分钟就触发更新
-					var result= data.replace(RegExp,"updated: "+getFormatDate(stats.mtime)); //替换更新时间
-					fs.writeFile(file, result, 'utf8',function(err) { //写入新的文件内容
-						if (err) return console.log("写文件错误：",err);
-						fs.utimes(file,new Date(stats.atime),new Date(stats.mtime),function(err){  //还原访问时间和修改时间
-							if (err) return console.log("修改时间失败：",err);
-							console.log(file,"成功更新时间");
-						});
-					});
-				}
-			});
-		}	
-	});
-}
-
-/*
- timeStr:时间，格式可为："September 16,2016 14:15:05、
- "September 16,2016"、"2016/09/16 14:15:05"、"2016/09/16"、
- '2014-04-23T18:55:49'和毫秒
- dateSeparator：年、月、日之间的分隔符，默认为"-"，
- timeSeparator：时、分、秒之间的分隔符，默认为":"
- */
-function getFormatDate(timeStr, dateSeparator, timeSeparator) {
-    dateSeparator = dateSeparator ? dateSeparator : "-";
-    timeSeparator = timeSeparator ? timeSeparator : ":";
-    var date = new Date(timeStr),
-            year = date.getFullYear(),// 获取完整的年份(4位,1970)
-            month = date.getMonth(),// 获取月份(0-11,0代表1月,用的时候记得加上1)
-            day = date.getDate(),// 获取日(1-31)
-            hour = date.getHours(),// 获取小时数(0-23)
-            minute = date.getMinutes(),// 获取分钟数(0-59)
-            seconds = date.getSeconds(),// 获取秒数(0-59)
-            Y = year + dateSeparator,
-            M = ((month + 1) > 9 ? (month + 1) : ('0' + (month + 1))) + dateSeparator,
-            D = (day > 9 ? day : ('0' + day)) + ' ',
-            h = (hour > 9 ? hour : ('0' + hour)) + timeSeparator,
-            m = (minute > 9 ? minute : ('0' + minute)) + timeSeparator,
-            s = (seconds > 9 ? seconds : ('0' + seconds)),
-            formatDate = Y + M + D + h + m + s;
-    return formatDate;
-}
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -358,14 +220,14 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-01-30 00:00:00" itemprop="dateCreated datePublished" datetime="2023-01-30T00:00:00+08:00">2023-01-30</time>
+              <time title="Created: 2023-01-30 00:00:00" itemprop="dateCreated datePublished" datetime="2023-01-30T00:00:00+00:00">2023-01-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-11 12:17:01" itemprop="dateModified" datetime="2023-02-11T12:17:01+08:00">2023-02-11</time>
+                <time title="Modified: 2023-02-11 12:17:01" itemprop="dateModified" datetime="2023-02-11T12:17:01+00:00">2023-02-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -443,14 +305,14 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-09-28 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-28T00:00:00+08:00">2022-09-28</time>
+              <time title="Created: 2022-09-28 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-28T00:00:00+00:00">2022-09-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-11 12:17:01" itemprop="dateModified" datetime="2023-02-11T12:17:01+08:00">2023-02-11</time>
+                <time title="Modified: 2023-02-13 14:24:21" itemprop="dateModified" datetime="2023-02-13T14:24:21+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -528,14 +390,14 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-09-28 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-28T00:00:00+08:00">2022-09-28</time>
+              <time title="Created: 2022-09-28 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-28T00:00:00+00:00">2022-09-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 13:46:44" itemprop="dateModified" datetime="2023-02-13T13:46:44+08:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 14:18:05" itemprop="dateModified" datetime="2023-02-13T14:18:05+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -613,14 +475,14 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-26T00:00:00+08:00">2022-09-26</time>
+              <time title="Created: 2022-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-26T00:00:00+00:00">2022-09-26</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-13 13:46:44" itemprop="dateModified" datetime="2023-02-13T13:46:44+08:00">2023-02-13</time>
+                <time title="Modified: 2023-02-13 14:24:21" itemprop="dateModified" datetime="2023-02-13T14:24:21+00:00">2023-02-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -647,6 +509,90 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sweet RX">
+      <meta itemprop="description" content="This is my internet world!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sweet RX's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/" class="post-title-link" itemprop="url">软件 - win - Alist 网盘整合加载</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-08-17 00:00:00" itemprop="dateCreated datePublished" datetime="2022-08-17T00:00:00+00:00">2022-08-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-02-11 12:17:01" itemprop="dateModified" datetime="2023-02-11T12:17:01+00:00">2023-02-11</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">软件</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a target="_blank" rel="noopener" href="https://github.com/alist-org/alist">Alist官网</a></p>
+<p><a target="_blank" rel="noopener" href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
+<h2 id="downloads"><a href="#downloads" class="headerlink" title="downloads"></a>downloads</h2><p>自己测试哪个线路快</p>
+<p><a target="_blank" rel="noopener" href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a target="_blank" rel="noopener" href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a target="_blank" rel="noopener" href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a target="_blank" rel="noopener" href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -737,7 +683,7 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-count">53</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
