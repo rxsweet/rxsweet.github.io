@@ -670,7 +670,7 @@
 </ul>
 <h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
 <p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 13:36:27categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 13:44:08categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
 <p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
@@ -872,7 +872,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#101;&#116;&#114;&#x78;&#x40;&#x70;&#x6d;&#x2e;&#109;&#x65;">&#115;&#x77;&#101;&#101;&#116;&#114;&#x78;&#x40;&#x70;&#x6d;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#x65;&#116;&#114;&#x78;&#x40;&#x70;&#x6d;&#46;&#109;&#x65;">&#x73;&#x77;&#101;&#x65;&#116;&#114;&#x78;&#x40;&#x70;&#x6d;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1982,6 +1982,56 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 空调选择</title>
+    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
+<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
+<span id="more"></span>
+
+<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
+<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
+<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
+<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
+<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
+<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
+<p>1、冷凝器（热交换器）</p>
+<p>铜管数量：关注格力机型单双排铜管。</p>
+<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
+<p>一般来说，</p>
+<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
+<p>所以，咱们要具体问题具体分析。</p>
+<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
+<p>格力C型换热器<br>2、外机重量和尺寸</p>
+<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
+<p>就看外机净重！</p>
+<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
+<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
+<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
+<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
+<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
+<p>3、压缩机</p>
+<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
+<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
+<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
+<p>4、节流装置</p>
+<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
+<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
+<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
+<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
+<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
+<p>5、是否是冷酷外机</p>
+<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
+<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生活 - 保险选择</title>
     <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E4%BF%9D%E9%99%A9%E9%80%89%E6%8B%A9/</url>
     <content><![CDATA[<h1 id="给爸妈买保险"><a href="#给爸妈买保险" class="headerlink" title="给爸妈买保险"></a>给爸妈买保险</h1><hr>
@@ -2135,56 +2185,6 @@
 <p><a href="https://zhuanlan.zhihu.com/p/344706528">https://zhuanlan.zhihu.com/p/344706528</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/528892439">https://zhuanlan.zhihu.com/p/528892439</a></p>
 <p><a href="https://fsoufsou.com/search?q=2022%E5%B9%B4%E8%80%81%E5%B9%B4%E4%BA%BA%E4%B9%B0%E4%BB%80%E4%B9%88%E4%BF%9D%E9%99%A9%E4%BA%A7%E5%93%81%E6%AF%94%E8%BE%83%E5%A5%BD&tbn=all">F 搜</a></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 空调选择</title>
-    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
-<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
-<span id="more"></span>
-
-<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
-<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
-<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
-<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
-<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
-<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
-<p>1、冷凝器（热交换器）</p>
-<p>铜管数量：关注格力机型单双排铜管。</p>
-<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
-<p>一般来说，</p>
-<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
-<p>所以，咱们要具体问题具体分析。</p>
-<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
-<p>格力C型换热器<br>2、外机重量和尺寸</p>
-<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
-<p>就看外机净重！</p>
-<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
-<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
-<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
-<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
-<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
-<p>3、压缩机</p>
-<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
-<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
-<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
-<p>4、节流装置</p>
-<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
-<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
-<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
-<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
-<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
-<p>5、是否是冷酷外机</p>
-<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
-<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -2501,14 +2501,14 @@ OK,大功告成！
 <span id="more"></span>
 
 <h1 id="一-添加分类"><a href="#一-添加分类" class="headerlink" title="一.添加分类"></a>一.添加分类</h1><h2 id="1-在主题里配置好分类"><a href="#1-在主题里配置好分类" class="headerlink" title="1. 在主题里配置好分类"></a>1. 在主题里配置好分类</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 13:36:27categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 13:44:08categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
 <p>去掉<code>categories</code>前<code>#</code>注释标</p>
 <h2 id="2-创建分类目录文件"><a href="#2-创建分类目录文件" class="headerlink" title="2. 创建分类目录文件"></a>2. 创建分类目录文件</h2><p>在Hexoblog主目录下创建<code>/source/categories/index.md</code></p>
 <h2 id="3-编辑页面让主题识别页面为分类页面"><a href="#3-编辑页面让主题识别页面为分类页面" class="headerlink" title="3. 编辑页面让主题识别页面为分类页面"></a>3. 编辑页面让主题识别页面为分类页面</h2><p>编辑<code>index.md</code></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类 - post category</span><br><span class="line">date: 2021-01-25 22:37:25</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>这就完成了整个分类页面的配置了。</p>
 <h1 id="二-添加标签"><a href="#二-添加标签" class="headerlink" title="二.添加标签"></a>二.添加标签</h1><h2 id="1-在主题里配置好标签"><a href="#1-在主题里配置好标签" class="headerlink" title="1. 在主题里配置好标签"></a>1. 在主题里配置好标签</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 13:36:27categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 13:44:08categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
 <p>去掉<code>tags</code>前<code>#</code>注释标</p>
 <h2 id="2-创建标签目录文件"><a href="#2-创建标签目录文件" class="headerlink" title="2. 创建标签目录文件"></a>2. 创建标签目录文件</h2><p>在Hexoblog主目录下创建<code>/source/tags/index.md</code></p>
 <h2 id="3-编辑页面让主题识别页面为标签页面"><a href="#3-编辑页面让主题识别页面为标签页面" class="headerlink" title="3. 编辑页面让主题识别页面为标签页面"></a>3. 编辑页面让主题识别页面为标签页面</h2><p>编辑index.md</p>
@@ -2540,7 +2540,7 @@ OK,大功告成！
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
 <p>然后还需要对对应对文章进行设置，有两种方法</p>
 <h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 13:36:27categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 13:44:08categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
 <h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
@@ -2822,82 +2822,5 @@ function getFormatDate(timeStr, dateSeparator, timeSeparator) {
     return formatDate;
 }
 ]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/02/13/writeupdatetime/</url>
-    <content><![CDATA[#!/usr/bin/env node
-/*
-批量添加修改时间
-用于bolg初始化修改时间
-*/
-
-console.log('脚本开始运行..');
-var fs = require("fs"); //请求文件系统
-var file = "./txt"; //设置读取和写入的文件，当前目录下的test文件
-var RegExp=/(updated:\s*)((\d{2}(([02468][048])|([13579][26]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|([1-2][0-9])))))|(\d{2}(([02468][1235679])|([13579][01345789]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|(1[0-9])|(2[0-8]))))))(\s((([0-1][0-9])|(2?[0-3]))\:([0-5]?[0-9])((\s)|(\:([0-5]?[0-9])))))\r/g;
-
-fs.readdir("./",function(err,files){
-	var len=files.length;
-	var file=null;
-	for(var i=0;i<len;i++){
-		file=files[i];
-		//console.log("读取文件：",file);
-		if(file.indexOf(".md")>-1){
-			console.log("正在处理文件：",file);
-			writeFileTime(file,fs);
-		}
-	}
-    console.log("运行完毕！");
-});
-/*
-file:读取时间的文件以及写入内容的文件
-fs: 文件系统
-*/
-function writeFileTime(file,fs){
-	fs.readFile(file, 'utf8',function(err, data) { //读取文件内容
-		if (err) return console.log("读取文件内容错误：",err);
-		//console.log("文件"+file+"的内容：",data);
-		fs.stat(file,function(err, stats) { //读取文件信息，创建时间等
-		   if (err) return console.log("读取文件信息错误：",err);
-			//console.log("文件"+file+"的信息：",stats);  //打印文件的信息
-			//console.log("创建时间是：",stats.mtime);
-			//console.log("文件的创建时间是：",getFormatDate(stats.mtime));
-            var result= data.replace(RegExp,""); //替换更新时间
-			result = result.replace(/categories:/g, "updated: "+getFormatDate(stats.mtime)+"\r"+"categories:");//data:替换为标准化日期
-			//console.log("修改后文件内容为：",result);
-			fs.writeFile(file, result, 'utf8',function(err) { //写入新的文件内容
-				if (err) return console.log("写文件错误：",err);
-			});
-		});
-	});
-}
-
-/*
- timeStr:时间，格式可为："September 16,2016 14:15:05、
- "September 16,2016"、"2016/09/16 14:15:05"、"2016/09/16"、
- '2014-04-23T18:55:49'和毫秒
- dateSeparator：年、月、日之间的分隔符，默认为"-"，
- timeSeparator：时、分、秒之间的分隔符，默认为":"
- */
-function getFormatDate(timeStr, dateSeparator, timeSeparator) {
-    dateSeparator = dateSeparator ? dateSeparator : "-";
-    timeSeparator = timeSeparator ? timeSeparator : ":";
-    var date = new Date(timeStr),
-            year = date.getFullYear(),// 获取完整的年份(4位,1970)
-            month = date.getMonth(),// 获取月份(0-11,0代表1月,用的时候记得加上1)
-            day = date.getDate(),// 获取日(1-31)
-            hour = date.getHours(),// 获取小时数(0-23)
-            minute = date.getMinutes(),// 获取分钟数(0-59)
-            seconds = date.getSeconds(),// 获取秒数(0-59)
-            Y = year + dateSeparator,
-            M = ((month + 1) > 9 ? (month + 1) : ('0' + (month + 1))) + dateSeparator,
-            D = (day > 9 ? day : ('0' + day)) + ' ',
-            h = (hour > 9 ? hour : ('0' + hour)) + timeSeparator,
-            m = (minute > 9 ? minute : ('0' + minute)) + timeSeparator,
-            s = (seconds > 9 ? seconds : ('0' + seconds)),
-            formatDate = Y + M + D + h + m + s;
-    return formatDate;
-}]]></content>
   </entry>
 </search>
