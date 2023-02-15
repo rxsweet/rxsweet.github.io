@@ -872,7 +872,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#112;&#109;&#x2e;&#109;&#x65;">&#x73;&#119;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#112;&#109;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#x65;&#101;&#116;&#114;&#x78;&#64;&#112;&#109;&#46;&#x6d;&#x65;">&#x73;&#x77;&#x65;&#101;&#116;&#114;&#x78;&#64;&#112;&#109;&#46;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2617,112 +2617,119 @@ OK,大功告成！
 </li>
 </ul>
 <h3 id="TVbox源"><a href="#TVbox源" class="headerlink" title="TVbox源"></a>TVbox源</h3><ul>
-<li>接口合集：<a href="https://www.yydsys.top/box/api/">https://www.yydsys.top/box/api/</a></li>
+<li>接口合集：<a href="https://www.yydsys.top/box/api/">https://www.yydsys.top/box/api/</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">骚零在线配置地址(jar)：https://dxawi.github.io/0/0.json</span><br><span class="line">UndCover在线配置地址(python)：https://raw.githubusercontent.com/UndCover/PyramidStore/main/py.json</span><br><span class="line">lm317379829在线配置地址(python)：https://raw.iqiq.io/lm317379829/PyramidStore/pyramid/py.json</span><br><span class="line">Leezn在线配置地址(python)：https://leezn.github.io/TVBox/py.json</span><br><span class="line">Leezn在线配置地址(drpy2)：https://leezn.github.io/TVBox/js.json</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p>骚零在线配置地址(jar)：<a href="https://dxawi.github.io/0/0.json">https://dxawi.github.io/0/0.json</a><br>UndCover在线配置地址(python)：<a href="https://raw.githubusercontent.com/UndCover/PyramidStore/main/py.json">https://raw.githubusercontent.com/UndCover/PyramidStore/main/py.json</a><br>lm317379829在线配置地址(python)：<a href="https://raw.iqiq.io/lm317379829/PyramidStore/pyramid/py.json">https://raw.iqiq.io/lm317379829/PyramidStore/pyramid/py.json</a><br>Leezn在线配置地址(python)：<a href="https://leezn.github.io/TVBox/py.json">https://leezn.github.io/TVBox/py.json</a><br>Leezn在线配置地址(drpy2)：<a href="https://leezn.github.io/TVBox/js.json">https://leezn.github.io/TVBox/js.json</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ anear大佬提供的数据源：</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/anaer/Sub/main/meow/meow.json</span><br><span class="line">+ shiran588/TVBox大佬的资源: maotv2,meow,meowcf,含18+[maotv1,maotv3,meow2,meowcf2]</span><br><span class="line">https://raw.githubusercontents.com/shiran588/TVBox/main/maotv2.txt</span><br><span class="line">https://raw.githubusercontents.com/shiran588/TVBox/main/meow.json</span><br><span class="line">+ liu673cn大佬的资源</span><br><span class="line">https://raw.liucn.cc/box/m.json</span><br><span class="line">+ 其他源：</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">+ EGP源 - 直播源？</span><br><span class="line">http://epg.51zmt.top:8000/e.xml</span><br><span class="line">https://epg.112114.xyz/pp.xml</span><br></pre></td></tr></table></figure>
-<p>未测试源</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">更新时间：2023.02.15</span><br><span class="line"></span><br><span class="line">1	http://肥猫.love	持续维护	肥猫</span><br><span class="line">2	http://饭太硬.ga/x/o.json	🤪神器推送	饭太硬</span><br><span class="line">3	https://tvbox.cainisi.cf	持续维护	菜妮丝xBPQ</span><br><span class="line">4	https://yydsys.top/duo/v.json	多多家庭接口	站长大聪明</span><br><span class="line">5	https://raw.liucn.cc/box/m.json	老刘备	liucn	</span><br><span class="line">6	https://maoyingshi.cc/tvbox/云星日记/1.m3u8	云星家庭版接口	云星日记</span><br><span class="line">7	http://home.jundie.top:81/top98.json	俊佬接口	于俊</span><br><span class="line">8	http://pandown.pro/tvbox/tvbox.json		持续维护 巧儿	备用：https://agit.ai/relax/adcc/raw/branch/master/tvbox.json</span><br><span class="line">9	http://101.34.67.237/config/3	持续维护	小雅JS 备用：http://drpy.site/js1</span><br><span class="line">10	http://shagua888168.3vdo.club	持续维护	蓝魔</span><br><span class="line">11	https://download.kstore.space/download/2863/01.txt	持续维护	潇洒</span><br><span class="line">12	https://download.kstore.space/download/2883/m3u8/dsj/guochan/mp1/1.m3u8	蚂蚁论坛	D大</span><br><span class="line">13	https://agit.ai/n/b/raw/branch/a/b/c.json	abc线路	未知主人</span><br><span class="line">14	https://agit.ai/nbwzlyd/xiaopingguo/raw/branch/master/xiaopingguo/xiaopingguo.json	小苹果TV	小苹果</span><br><span class="line">15	https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json	终南干货群	南风</span><br><span class="line">16	https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json	持续维护	FongMi台湾活雷锋</span><br><span class="line">17	https://ghproxy.com/https://raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json	持续维护	霜辉月明</span><br><span class="line">18	https://ghproxy.com/https://kebedd69/TVbox-interface/main/甜蜜.json	持续维护	dlgt7</span><br><span class="line">19	https://ghproxy.com/https://raw.githubusercontent.com/dxawi/0/main/0.json	持续维护	dxawi/github️</span><br><span class="line">20	http://52bsj.vip:81/api/v3/file/get/29899/box2.json?sign=3cVyKZQr3lFAwdB3HK-A7h33e0MnmG6lLB9oWlvSNnM%3D%3A0		月光宝盒</span><br><span class="line">https://leezn.github.io/TVBox/py.json</span><br><span class="line">https://leezn.github.io/TVBox/js.json</span><br><span class="line">https://leezn.github.io/TVBox/js0.json</span><br><span class="line">https://leezn.github.io/TVBox/js1.json</span><br><span class="line">http://byyds.top/w.txt	分享君〔多条线路〕</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/chengxueli818913/maoTV/main/44.txt</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/zhanghong1983/TVBOXZY/main/tvbox.json</span><br><span class="line">http://52bsj.vip:98/wuai	吾爱线路</span><br><span class="line">http://8.210.220.114:8888/down/c9s9YQVDdqYw.json	星辰线路</span><br><span class="line">https://cnvip.x10.mx/wp/xsvip/wp-content/uploads/sites/2/2022/10/01.txt	潇洒线路</span><br><span class="line">http://111.67.196.181/mtv/meow.txt	太阳线路</span><br><span class="line">https://app.easybox.vip/dy	easybox线路</span><br><span class="line">https://神器每日推送.tk/pz.json	</span><br><span class="line">http://刚刚.live/猫	刚刚线路</span><br><span class="line">https://gitlab.com/hztv/ros/-/raw/master/js.json	幸福接口〔多条线路〕</span><br><span class="line">http://www.yunwp.cn/api/v3/file/get/1093/1007.json?sign=kJ5EJJLNzf63QKB1ykTZwbbW9vnMfi-2Wjumk-wtL-E%3D%3A0	小马接口〔多条线路</span><br><span class="line">http://9xi4o.tk/0725.json	4K云盘〔多条线路〕</span><br><span class="line">http://js.134584.xyz/json/pp87.json	白嫖线路</span><br><span class="line"></span><br><span class="line">http://www.dmtv.ml/mao/single.json	乱世</span><br><span class="line"></span><br><span class="line">bad</span><br><span class="line">https://hutool.ml/tang	持续维护	唐三	bad</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ EGP源 - 直播源？</span><br><span class="line">http://epg.51zmt.top:8000/e.xml</span><br><span class="line">https://epg.112114.xyz/pp.xml</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">更新时间：2023.02.15</span><br><span class="line"></span><br><span class="line">1	http://肥猫.love	持续维护	肥猫</span><br><span class="line">2	http://饭太硬.ga/x/o.json	🤪神器推送	饭太硬</span><br><span class="line">3	https://tvbox.cainisi.cf	持续维护	菜妮丝xBPQ</span><br><span class="line">4	http://home.jundie.top:81/top98.json	俊佬接口	于俊</span><br><span class="line">5	http://pandown.pro/tvbox/tvbox.json		持续维护 巧技	备用：https://agit.ai/relax/adcc/raw/branch/master/tvbox.json</span><br><span class="line">6	https://hutool.ml/tang	持续维护	唐三</span><br><span class="line">7	http://drpy.site/js1	持续维护	小雅JS 备用：http://101.34.67.237/config/3	</span><br><span class="line">8	https://maoyingshi.cc/tvbox/云星日记/1.m3u8	云星家庭版接口	云星日记</span><br><span class="line">9	https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json	终南干货群	南风</span><br><span class="line">10	https://raw.iqiq.io/2hacc/TVBox/main/tvbox	二哈</span><br><span class="line">11	https://ghproxy.com/https://raw.githubusercontent.com/chengxueli818913/maoTV/main/44.txt	佰欣园</span><br><span class="line">12	https://raw.liucn.cc/box/m.json	老刘备	liucn</span><br><span class="line">13	https://agit.ai/66666/mao/raw/branch/master/00/000.m3u8		agit.ai/66666线路</span><br><span class="line">14	https://agit.ai/nbwzlyd/xiaopingguo/raw/branch/master/xiaopingguo/xiaopingguo.json	小苹果TV	小苹果</span><br><span class="line">15	http://52bsj.vip:81/api/v3/file/get/29899/box2.json?sign=3cVyKZQr3lFAwdB3HK-A7h33e0MnmG6lLB9oWlvSNnM%3D%3A0		月光宝盒</span><br><span class="line">16	https://yydsys.top/duo/v.json	多多家庭接口	站长大聪明</span><br><span class="line">17	https://download.kstore.space/download/2863/01.txt	持续维护	潇洒</span><br><span class="line">18	http://byyds.top/w.txt	分享君〔多条线路〕</span><br><span class="line">19	https://agit.ai/n/b/raw/branch/a/b/c.json	agit.ai/n/b</span><br><span class="line">20	https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json	持续维护	FongMi台湾活雷锋</span><br><span class="line">21	https://ghproxy.com/https://raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json	持续维护	霜辉月明</span><br><span class="line">22	https://ghproxy.com/https://raw.githubusercontent.com/kebedd69/TVbox-interface/main/甜蜜.json	持续维护	dlgt7</span><br><span class="line">23	https://ghproxy.com/https://raw.githubusercontent.com/dxawi/0/main/0.json	持续维护	dxawi/github️</span><br><span class="line">24	http://刚刚.live/猫		刚刚线路</span><br><span class="line">25	http://52bsj.vip:98/wuai	吾爱线路</span><br><span class="line">26	http://111.67.196.181/mtv/meow.txt	太阳线路</span><br><span class="line">27	https://app.easybox.vip/dy	easybox线路</span><br><span class="line">28	https://gitlab.com/hztv/ros/-/raw/master/js.json	幸福接口〔多条线路〕</span><br><span class="line">29	http://www.dmtv.ml/mao/single.json	乱世</span><br><span class="line">30	https://ghproxy.com/https://raw.githubusercontent.com/anaer/Sub/main/meow/meow.json		github/anaer</span><br><span class="line">31	https://ghproxy.com/https://raw.githubusercontents.com/shiran588/TVBox/main/maotv1.txt	github/shiran588</span><br><span class="line"></span><br><span class="line">32	https://download.kstore.space/download/2883/m3u8/dsj/guochan/mp1/1.m3u8	蚂蚁论坛	D大 带18</span><br><span class="line">33	https://ghproxy.com/https://raw.githubusercontent.com/zhanghong1983/TVBOXZY/main/tvbox.json		张弘持续维护 带18</span><br><span class="line">34	https://ghproxy.com/https://raw.githubusercontents.com/shiran588/TVBox/main/maotv3.txt	github/shiran588</span><br><span class="line">35	https://ghproxy.com/https://raw.githubusercontents.com/shiran588/TVBox/main/cr.json		github/shiran588</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">仓库：</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/zhanghong1983/TVBOXZY/main/1		张弘收集的仓库合集</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/zhanghong1983/TVBOXZY/main/2		接口合集</span><br><span class="line">https://agit.ai/00/0/raw/branch/0/0/0	日后①号仓</span><br><span class="line">https://agit.ai/00/0/raw/branch/0/0/00	日后②号仓</span><br><span class="line">https://agit.ai/leevi/apps/raw/branch/main/1.txt	多多极速仓</span><br><span class="line">https://agit.ai/leevi/apps/raw/branch/main/2.txt	多多缓冲仓</span><br><span class="line">https://agit.ai/leevi/apps/raw/branch/main/3.txt	多多大佬仓</span><br><span class="line">https://maoyingshi.cc/可视TV/云星日记/仓库/api.json	云星在线仓</span><br></pre></td></tr></table></figure>
+<pre><code>仓库：
+https://ghproxy.com/https://raw.githubusercontent.com/zhanghong1983/TVBOXZY/main/1		张弘收集的仓库合集
+https://ghproxy.com/https://raw.githubusercontent.com/zhanghong1983/TVBOXZY/main/2		接口合集
+https://agit.ai/00/0/raw/branch/0/0/0	日后①号仓
+https://agit.ai/00/0/raw/branch/0/0/00	日后②号仓
+https://agit.ai/leevi/apps/raw/branch/main/1.txt	多多极速仓
+https://agit.ai/leevi/apps/raw/branch/main/2.txt	多多缓冲仓
+https://agit.ai/leevi/apps/raw/branch/main/3.txt	多多大佬仓
+https://maoyingshi.cc/可视TV/云星日记/仓库/api.json	云星在线仓
 
 
-<p><a href="https://pan.quark.cn/s/8dfaa56d53c4#/list/share">https://pan.quark.cn/s/8dfaa56d53c4#/list/share</a></p>
-<p>源码：<a href="https://github.com/q215613905/TVBoxOS">https://github.com/q215613905/TVBoxOS</a><br><a href="https://github.com/takagen99/Box">https://github.com/takagen99/Box</a><br>构建记录：<a href="https://github.com/o0HalfLife0o/TVBoxOSC">https://github.com/o0HalfLife0o/TVBoxOSC</a></p>
-<h3 id="本地协议clan"><a href="#本地协议clan" class="headerlink" title="本地协议clan"></a>本地协议clan</h3><pre><code>+ [YuanHsing大佬本地协议clan懒人包 - 包里有使用说明](https://github.com/YuanHsing/freed/tree/master/TVBox/本地协议clan懒人包)
-+ [shiran588大佬本地协议clan懒人包](https://github.com/shiran588/TVBox/tree/main/本地协议clan懒人包)
-</code></pre>
-<h2 id="3-Biubiu影院"><a href="#3-Biubiu影院" class="headerlink" title="3.Biubiu影院"></a>3.<a href="https://github.com/YuanHsing/freed/tree/master/BiuBiu">Biubiu影院</a></h2><ul>
-<li><p>接口简易设定流程：</p>
-</li>
-<li><p>自行找到主程式并安装: BiuBiu影院999.apk</p>
-<ul>
-<li><a href="https://pan.lanzoup.com/b0c43qpkb">https://pan.lanzoup.com/b0c43qpkb</a></li>
-<li><a href="https://raw.fastgit.org/rxsweet/all/main/App/Biubiu%E5%BD%B1%E9%99%A2999.apk">https://raw.fastgit.org//rxsweet/all/main/App/Biubiu影院999.apk</a></li>
-</ul>
-</li>
-<li><p>执行主程式 –&gt; 设置 –&gt; 全局接口 –&gt; 编辑 –&gt; 全局接口设置 –&gt; 复制并黏贴 –&gt; 确定 –&gt; 躺平</p>
-</li>
-<li><p>接口列表(18+ : bb2,bbcr,cr.txt)：<br>  <code>https://freed.yuanhsing.cf/BiuBiu/bb.json</code><br>  <code>https://freed.yuanhsing.cf/BiuBiu/bb2.json</code><br>  <code>https://raw.githubusercontents.com/shiran588/biubiu/main/bb.json</code><br>  <code>https://raw.gitfast.tk/shiran588/biubiu/main/bbcr.json</code><br>  <code>https://freed.yuanhsing.cf/BiuBiu/bb测试版.txt</code><br>  <code>https://raw.gitfast.tk/shiran588/m3u/blob/main/cr.txt</code></p>
-</li>
-<li><p>更新接口：</p>
-<ul>
-<li>设置 –&gt; 全局接口 –&gt; 刷新</li>
-</ul>
-</li>
-<li><p>相较于猫影视TV，少了爬虫源</p>
-</li>
-<li><p>猫影视TV的XB源，全部可以在主页的”自定义”找到</p>
-</li>
-<li><p>进设置后会卡顿的，建议可以清理 “自定义接口(zidingyi)”，把不常用、无法正常运作的 自定义接口 通通删除。</p>
-</li>
-<li><p>除接口有问题外，其它的问题请自行百度或google！</p>
-</li>
-<li><p>建议</p>
-</li>
-<li><p>复活版、魔改版的猫影视 建议就不要再使用了，就目前看到的版本：</p>
-<ul>
-<li>内置XX版：打开只有内置三个采集网站，无法自定义配置接口。</li>
-<li>XX自定义版(旧版)：依版本号来看，大概是10个月以前的猫影视TV，可以自定义配置接口，但只有采集网站(type1)能用，还不如用BiuBiu。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="4-ZY-Player-PC"><a href="#4-ZY-Player-PC" class="headerlink" title="4. ZY-Player-PC"></a>4. <a href="https://github.com/YuanHsing/freed/tree/master/ZY-Player">ZY-Player-PC</a></h2><ul>
-<li><p>ZY-Player-PC｜APP</p>
-<p><a href="https://github.com/cuiocean/ZY-Player">https://github.com/cuiocean/ZY-Player</a></p>
-</li>
-<li><p>ZY-Player-Android｜APP</p>
-<p><a href="https://github.com/cuiocean/ZY-Player-APP">https://github.com/cuiocean/ZY-Player-APP</a></p>
-</li>
-<li><p>设置 &gt; 编辑源 &gt; 导入</p>
-</li>
-</ul>
-<hr>
-<h2 id="5-FreeDTV"><a href="#5-FreeDTV" class="headerlink" title="5. FreeDTV"></a>5. <a href="https://github.com/YuanHsing/freed/tree/master/tv">FreeDTV</a></h2><ul>
-<li><p>FreeDTV｜APP</p>
-<ul>
-<li><a href="https://github.com/FreeDTV/FreeD">https://github.com/FreeDTV/FreeD</a></li>
-<li><a href="https://wwi.lanzoui.com/b025mpw7e">APP载点</a></li>
-<li><a href="https://mp.weixin.qq.com/s/C5uZtKdXFyPbBDEFjO6P-A">最新整合资源涵盖教程【限时删】</a></li>
-<li><a href="https://mp.weixin.qq.com/s/m_edUfPP5VuWSdVzaSdO8A">TV版本1.2.3开放自定义解析</a></li>
-<li><a href="https://mp.weixin.qq.com/s/C2NCGvk0LUxDGa_ocilOtA">TV1.2.2搜索以及定制导航支持某类json格式接口</a></li>
-</ul>
-</li>
-<li><p>FreeDTV｜TV自建接口：( 自建接口 &gt; 贴上 &gt; 确定 &gt; 重启APP )</p>
-<pre><code>https://freed.yuanhsing.cf/tv/
-https://raw.gitfast.tk/YuanHsing/freed/tree/master/tv
-https://raw.gitfast.tk/shiran588/freed/tree/master/tv
-</code></pre>
-</li>
-<li><p>FreeDTV｜手机自建接口：</p>
-<pre><code>https://raw.githubusercontents.com/shiran588/freed/master/mobile/
-https://github.com/FreeDTV/FreeD/raw/master/mobile/
-https://raw.gitfast.tk/FreeDTV/FreeD/master/mobile
-</code></pre>
-</li>
-</ul>
-<h2 id="6-猫影视TV"><a href="#6-猫影视TV" class="headerlink" title="6.猫影视TV"></a><del>6.<a href="https://github.com/YuanHsing/freed/tree/master/%E7%8C%AB%E5%BD%B1%E8%A7%86TV%20%5B%E5%B7%B2%E5%81%9C%E7%94%A8%5D">猫影视TV</a></del></h2><p>[20220621 官方TG已公告，停止使用，停止维护]</p>
-<p>建议改用<a href="https://github.com/YuanHsing/freed/tree/master/TVBox">TV’Box</a> 或 <a href="https://github.com/YuanHsing/freed/tree/master/BiuBiu">BiuBiu影院</a></p>
-<p><img src="https://raw.githubusercontent.com/YuanHsing/freed/master/%E7%8C%AB%E5%BD%B1%E8%A7%86TV%20%5B%E5%B7%B2%E5%81%9C%E7%94%A8%5D/maotv20220621.png" alt="MaoTV" title="MaoTV"></p>
-<s>
+https://pan.quark.cn/s/8dfaa56d53c4#/list/share
+
+源码：https://github.com/q215613905/TVBoxOS
+https://github.com/takagen99/Box
+构建记录：https://github.com/o0HalfLife0o/TVBoxOSC
+
+### 本地协议clan
+    + [YuanHsing大佬本地协议clan懒人包 - 包里有使用说明](https://github.com/YuanHsing/freed/tree/master/TVBox/本地协议clan懒人包)
+    + [shiran588大佬本地协议clan懒人包](https://github.com/shiran588/TVBox/tree/main/本地协议clan懒人包)
+
+
+## 3.[Biubiu影院](https://github.com/YuanHsing/freed/tree/master/BiuBiu)
+
+* 接口简易设定流程：
+* 自行找到主程式并安装: BiuBiu影院999.apk
+    + [https://pan.lanzoup.com/b0c43qpkb](https://pan.lanzoup.com/b0c43qpkb)
+    + [https://raw.fastgit.org//rxsweet/all/main/App/Biubiu影院999.apk](https://raw.fastgit.org/rxsweet/all/main/App/Biubiu影院999.apk)
+* 执行主程式 --&gt; 设置 --&gt; 全局接口 --&gt; 编辑 --&gt; 全局接口设置 --&gt; 复制并黏贴 --&gt; 确定 --&gt; 躺平
+* 接口列表(18+ : bb2,bbcr,cr.txt)：
+    `https://freed.yuanhsing.cf/BiuBiu/bb.json`
+    `https://freed.yuanhsing.cf/BiuBiu/bb2.json`
+    `https://raw.githubusercontents.com/shiran588/biubiu/main/bb.json`
+    `https://raw.gitfast.tk/shiran588/biubiu/main/bbcr.json`
+    `https://freed.yuanhsing.cf/BiuBiu/bb测试版.txt`
+    `https://raw.gitfast.tk/shiran588/m3u/blob/main/cr.txt`
+     	 
+* 更新接口：
+    * 设置 --&gt; 全局接口 --&gt; 刷新
+* 相较于猫影视TV，少了爬虫源
+* 猫影视TV的XB源，全部可以在主页的&quot;自定义&quot;找到
+* 进设置后会卡顿的，建议可以清理 &quot;自定义接口(zidingyi)&quot;，把不常用、无法正常运作的 自定义接口 通通删除。
+* 除接口有问题外，其它的问题请自行百度或google！
+
+* 建议
+* 复活版、魔改版的猫影视 建议就不要再使用了，就目前看到的版本：
+    * 内置XX版：打开只有内置三个采集网站，无法自定义配置接口。
+    * XX自定义版(旧版)：依版本号来看，大概是10个月以前的猫影视TV，可以自定义配置接口，但只有采集网站(type1)能用，还不如用BiuBiu。
+
+---
+
+## 4. [ZY-Player-PC](https://github.com/YuanHsing/freed/tree/master/ZY-Player)
+* ZY-Player-PC｜APP
+
+  [https://github.com/cuiocean/ZY-Player](https://github.com/cuiocean/ZY-Player)
+* ZY-Player-Android｜APP
+
+  [https://github.com/cuiocean/ZY-Player-APP](https://github.com/cuiocean/ZY-Player-APP)
+* 设置 &gt; 编辑源 &gt; 导入
+
+---
+
+## 5. [FreeDTV](https://github.com/YuanHsing/freed/tree/master/tv)
+* FreeDTV｜APP
+  + [https://github.com/FreeDTV/FreeD](https://github.com/FreeDTV/FreeD)
+  + [APP载点](https://wwi.lanzoui.com/b025mpw7e)
+  + [最新整合资源涵盖教程【限时删】](https://mp.weixin.qq.com/s/C5uZtKdXFyPbBDEFjO6P-A)
+  + [TV版本1.2.3开放自定义解析](https://mp.weixin.qq.com/s/m_edUfPP5VuWSdVzaSdO8A)
+  + [TV1.2.2搜索以及定制导航支持某类json格式接口](https://mp.weixin.qq.com/s/C2NCGvk0LUxDGa_ocilOtA)
+* FreeDTV｜TV自建接口：( 自建接口 &gt; 贴上 &gt; 确定 &gt; 重启APP )
+
+      https://freed.yuanhsing.cf/tv/
+      https://raw.gitfast.tk/YuanHsing/freed/tree/master/tv
+      https://raw.gitfast.tk/shiran588/freed/tree/master/tv
+      
+* FreeDTV｜手机自建接口：
+
+      https://raw.githubusercontents.com/shiran588/freed/master/mobile/
+      https://github.com/FreeDTV/FreeD/raw/master/mobile/
+      https://raw.gitfast.tk/FreeDTV/FreeD/master/mobile
+
+
+
+## ~~6.[猫影视TV](https://github.com/YuanHsing/freed/tree/master/猫影视TV%20%5B已停用%5D)~~
+[20220621 官方TG已公告，停止使用，停止维护]
+
+建议改用[TV&#39;Box](https://github.com/YuanHsing/freed/tree/master/TVBox) 或 [BiuBiu影院](https://github.com/YuanHsing/freed/tree/master/BiuBiu)
+
+![MaoTV](https://raw.githubusercontent.com/YuanHsing/freed/master/猫影视TV%20%5B已停用%5D/maotv20220621.png &quot;MaoTV&quot;)
+
+&lt;s&gt;
 * 猫影视TV｜APP
   + https://github.com/catvod/CatVodTVSpider
 * 猫影视TV｜接口
-  + 设置 > 当前配置接口
+  + 设置 &gt; 当前配置接口
 * 猫影视TV｜接口相关
   + https://github.com/catvod/CatVodTVSpider/tree/master/jar
   + https://github.com/catvod/CatVodTVSpider/blob/master/XPath.md
   + https://catvod.github.io/CatVodTVJsonEditor/
- </s>
+ &lt;/s&gt;
 
 
-<h2 id="参考原贴地址"><a href="#参考原贴地址" class="headerlink" title="参考原贴地址 :"></a>参考原贴地址 :</h2><ul>
-<li>[liu673cn分享 - <a href="https://github.com/liu673cn">https://github.com/liu673cn</a></li>
-<li><a href="https://github.com/YuanHsing/freed">YuanHsing分享 - https://github.com/YuanHsing/freed</a> </li>
-<li><a href="https://github.com/shiran588/freed">shiran588分享 - 有18+ - https://github.com/shiran588/freed</a></li>
-<li><a href="https://github.com/anaer/">anear分享</a></li>
-</ul>
+## 参考原贴地址 : 
+ + [liu673cn分享 - [https://github.com/liu673cn](https://github.com/liu673cn)
+ + [YuanHsing分享 - https://github.com/YuanHsing/freed](https://github.com/YuanHsing/freed) 
+ + [shiran588分享 - 有18+ - https://github.com/shiran588/freed](https://github.com/shiran588/freed)
+ + [anear分享](https://github.com/anaer/)
+</code></pre>
 ]]></content>
       <categories>
         <category>软件</category>
