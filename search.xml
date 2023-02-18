@@ -727,6 +727,45 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 4.Jekyll的search免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-4-Jekyll%E7%9A%84search%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="Jekyll个人博客实现搜索功能"><a href="#Jekyll个人博客实现搜索功能" class="headerlink" title="Jekyll个人博客实现搜索功能"></a>Jekyll个人博客实现搜索功能</h2><p>本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。</p>
+<p>到网上一搜，发现资料还是挺少的，而且都还不一定能实现，这搜索结果还是挺让人失望的。下面就来看看我是如何实现在jekyll个人博客的基础上来现实搜索功能吧。</p>
+<span id="more"></span>
+
+<h1 id="初步介绍思路"><a href="#初步介绍思路" class="headerlink" title="初步介绍思路"></a>初步介绍思路</h1><p>首先我是参考的Github上的一个开源库<a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple-Jekyll-Search</a></p>
+<p>通过这个库的README可以知道，是可以实现搜索功能的，所以，我们就用这个库来实现吧。</p>
+<p>先下载这个仓库到本地</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/christian-fei/Simple-Jekyll-Search  </span><br></pre></td></tr></table></figure>
+
+<h1 id="Step-1-创建search-json文件"><a href="#Step-1-创建search-json文件" class="headerlink" title="Step 1. 创建search.json文件"></a>Step 1. 创建search.json文件</h1><p>在个人博客的根目录下创建一个<code>search.json</code>的文件，然后打开下载的文件夹目录<code>Simple-Jekyll-Search/example/</code>，复制里面的<code>search.json</code>的代码到这个文件。</p>
+<p>下面是search.json文件内容(可以直接新建<code>search.json</code>复制下面内容)：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: none</span><br><span class="line">---</span><br><span class="line">[</span><br><span class="line">  &#123;% for post in site.posts %&#125;</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;title&quot;    : &quot;&#123;&#123; post.title | escape &#125;&#125;&quot;,</span><br><span class="line">      &quot;category&quot; : &quot;&#123;&#123; post.category &#125;&#125;&quot;,</span><br><span class="line">      &quot;tags&quot;     : &quot;&#123;&#123; post.tags | join: &#x27;, &#x27; &#125;&#125;&quot;,</span><br><span class="line">      &quot;url&quot;      : &quot;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; post.url &#125;&#125;&quot;,</span><br><span class="line">      &quot;date&quot;     : &quot;&#123;&#123; post.date &#125;&#125;&quot;</span><br><span class="line">    &#125; &#123;% unless forloop.last %&#125;,&#123;% endunless %&#125;</span><br><span class="line">  &#123;% endfor %&#125;</span><br><span class="line">]</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Step-2-复制js文件到js目录下"><a href="#Step-2-复制js文件到js目录下" class="headerlink" title="Step 2. 复制js文件到js目录下"></a>Step 2. 复制js文件到js目录下</h1><p>打开之前下载的<code>Simple-Jekyll-Search/example/js/</code>目录，发现会有两个js文件，一个是<code>simple-jekyll-search.js</code>和<code>simple-jekyll-search.min.js</code>。先别管这两个文件是什么内容了，直接复制到自己博客根目录下的<code>/js/</code>下。</p>
+<h1 id="Step-3-在主页和菜单栏分别添加搜索功能"><a href="#Step-3-在主页和菜单栏分别添加搜索功能" class="headerlink" title="Step 3. 在主页和菜单栏分别添加搜索功能"></a>Step 3. 在主页和菜单栏分别添加搜索功能</h1><h2 id="主页添加搜索功能"><a href="#主页添加搜索功能" class="headerlink" title="主页添加搜索功能"></a>主页添加搜索功能</h2><p>在<code>index.html</code>文件里找到自己想添加的位置，粘贴下面代码:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--添加搜索框开始--&gt;</span><br><span class="line">&lt;div class=&quot;side&quot;&gt;</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">		&lt;i class=&quot;fa fa-tags&quot;&gt;&lt;/i&gt;</span><br><span class="line">		Search</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;tags-cloud&quot;&gt;</span><br><span class="line">		&lt;!-- HTML elements for search 搜索元素--&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索 - 标题/Tags...&quot; style=&quot;width:230px;&quot;/&gt;</span><br><span class="line">		&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">		&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">		&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">		&lt;script&gt;</span><br><span class="line">		SimpleJekyllSearch(&#123;</span><br><span class="line">		searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">		resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">		json: &#x27;/search.json&#x27;,</span><br><span class="line">		searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">		noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">		limit: 20,</span><br><span class="line">		fuzzy: false</span><br><span class="line">		&#125;)</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--添加搜索框结束--&gt;  </span><br></pre></td></tr></table></figure>
+
+<h2 id="菜单栏添加搜索功能"><a href="#菜单栏添加搜索功能" class="headerlink" title="菜单栏添加搜索功能"></a>菜单栏添加搜索功能</h2><h3 id="1-在菜单栏添加search"><a href="#1-在菜单栏添加search" class="headerlink" title="(1). 在菜单栏添加search"></a>(1). 在菜单栏添加search</h3><p>在page目录下添加<code>search.html</code>文件，并复制如下代码到该文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">title: search</span><br><span class="line">permalink: /search/</span><br><span class="line">icon: search</span><br><span class="line">type: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- HTML elements for search --&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索博客 - 输入标题/日期/Tags..&quot; style=&quot;width:380px;&quot;/&gt;</span><br><span class="line">&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">SimpleJekyllSearch(&#123;</span><br><span class="line">    searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">    resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">    json: &#x27;/search.json&#x27;,</span><br><span class="line">    searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">    noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">    limit: 20,</span><br><span class="line">    fuzzy: false</span><br><span class="line">  &#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-下面是老版jekyll我在菜单栏添加搜索一栏"><a href="#2-下面是老版jekyll我在菜单栏添加搜索一栏" class="headerlink" title="(2).下面是老版jekyll我在菜单栏添加搜索一栏"></a>(2).下面是老版jekyll我在菜单栏添加搜索一栏</h3><p>修改<code>_includes/sidebar.html</code>内容，添加一行。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;menu-items&quot;&gt;&lt;a class=&quot;menu-links&quot; href=&quot;&#123;&#123;site.baseurl&#125;&#125;/search/&quot;&gt;search&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-search功能添加完成"><a href="#3-search功能添加完成" class="headerlink" title="(3). search功能添加完成"></a>(3). search功能添加完成</h3><p>这部分也就是搜索的主要核心代码了。到此，搜索功能也就完成了。</p>
+<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用<code> and </code>包起Markdown语法。</p>
+<hr>
+<p>原文作者地址：<br><a href="https://zoharandroid.github.io/2019-08-01-jekyll%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">https://zoharandroid.github.io/2019-08-01-jekyll个人博客实现搜索功能/</a></p>
+<p><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 5.Jekyll的tags免插件使用</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>Jekyll的tags免插件使用</p>
@@ -775,45 +814,6 @@
 <p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
 <hr>
 <p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 4.Jekyll的search免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-4-Jekyll%E7%9A%84search%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="Jekyll个人博客实现搜索功能"><a href="#Jekyll个人博客实现搜索功能" class="headerlink" title="Jekyll个人博客实现搜索功能"></a>Jekyll个人博客实现搜索功能</h2><p>本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。</p>
-<p>到网上一搜，发现资料还是挺少的，而且都还不一定能实现，这搜索结果还是挺让人失望的。下面就来看看我是如何实现在jekyll个人博客的基础上来现实搜索功能吧。</p>
-<span id="more"></span>
-
-<h1 id="初步介绍思路"><a href="#初步介绍思路" class="headerlink" title="初步介绍思路"></a>初步介绍思路</h1><p>首先我是参考的Github上的一个开源库<a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple-Jekyll-Search</a></p>
-<p>通过这个库的README可以知道，是可以实现搜索功能的，所以，我们就用这个库来实现吧。</p>
-<p>先下载这个仓库到本地</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/christian-fei/Simple-Jekyll-Search  </span><br></pre></td></tr></table></figure>
-
-<h1 id="Step-1-创建search-json文件"><a href="#Step-1-创建search-json文件" class="headerlink" title="Step 1. 创建search.json文件"></a>Step 1. 创建search.json文件</h1><p>在个人博客的根目录下创建一个<code>search.json</code>的文件，然后打开下载的文件夹目录<code>Simple-Jekyll-Search/example/</code>，复制里面的<code>search.json</code>的代码到这个文件。</p>
-<p>下面是search.json文件内容(可以直接新建<code>search.json</code>复制下面内容)：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: none</span><br><span class="line">---</span><br><span class="line">[</span><br><span class="line">  &#123;% for post in site.posts %&#125;</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;title&quot;    : &quot;&#123;&#123; post.title | escape &#125;&#125;&quot;,</span><br><span class="line">      &quot;category&quot; : &quot;&#123;&#123; post.category &#125;&#125;&quot;,</span><br><span class="line">      &quot;tags&quot;     : &quot;&#123;&#123; post.tags | join: &#x27;, &#x27; &#125;&#125;&quot;,</span><br><span class="line">      &quot;url&quot;      : &quot;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; post.url &#125;&#125;&quot;,</span><br><span class="line">      &quot;date&quot;     : &quot;&#123;&#123; post.date &#125;&#125;&quot;</span><br><span class="line">    &#125; &#123;% unless forloop.last %&#125;,&#123;% endunless %&#125;</span><br><span class="line">  &#123;% endfor %&#125;</span><br><span class="line">]</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Step-2-复制js文件到js目录下"><a href="#Step-2-复制js文件到js目录下" class="headerlink" title="Step 2. 复制js文件到js目录下"></a>Step 2. 复制js文件到js目录下</h1><p>打开之前下载的<code>Simple-Jekyll-Search/example/js/</code>目录，发现会有两个js文件，一个是<code>simple-jekyll-search.js</code>和<code>simple-jekyll-search.min.js</code>。先别管这两个文件是什么内容了，直接复制到自己博客根目录下的<code>/js/</code>下。</p>
-<h1 id="Step-3-在主页和菜单栏分别添加搜索功能"><a href="#Step-3-在主页和菜单栏分别添加搜索功能" class="headerlink" title="Step 3. 在主页和菜单栏分别添加搜索功能"></a>Step 3. 在主页和菜单栏分别添加搜索功能</h1><h2 id="主页添加搜索功能"><a href="#主页添加搜索功能" class="headerlink" title="主页添加搜索功能"></a>主页添加搜索功能</h2><p>在<code>index.html</code>文件里找到自己想添加的位置，粘贴下面代码:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--添加搜索框开始--&gt;</span><br><span class="line">&lt;div class=&quot;side&quot;&gt;</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">		&lt;i class=&quot;fa fa-tags&quot;&gt;&lt;/i&gt;</span><br><span class="line">		Search</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;tags-cloud&quot;&gt;</span><br><span class="line">		&lt;!-- HTML elements for search 搜索元素--&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索 - 标题/Tags...&quot; style=&quot;width:230px;&quot;/&gt;</span><br><span class="line">		&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">		&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">		&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">		&lt;script&gt;</span><br><span class="line">		SimpleJekyllSearch(&#123;</span><br><span class="line">		searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">		resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">		json: &#x27;/search.json&#x27;,</span><br><span class="line">		searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">		noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">		limit: 20,</span><br><span class="line">		fuzzy: false</span><br><span class="line">		&#125;)</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--添加搜索框结束--&gt;  </span><br></pre></td></tr></table></figure>
-
-<h2 id="菜单栏添加搜索功能"><a href="#菜单栏添加搜索功能" class="headerlink" title="菜单栏添加搜索功能"></a>菜单栏添加搜索功能</h2><h3 id="1-在菜单栏添加search"><a href="#1-在菜单栏添加search" class="headerlink" title="(1). 在菜单栏添加search"></a>(1). 在菜单栏添加search</h3><p>在page目录下添加<code>search.html</code>文件，并复制如下代码到该文件。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">title: search</span><br><span class="line">permalink: /search/</span><br><span class="line">icon: search</span><br><span class="line">type: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- HTML elements for search --&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索博客 - 输入标题/日期/Tags..&quot; style=&quot;width:380px;&quot;/&gt;</span><br><span class="line">&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">SimpleJekyllSearch(&#123;</span><br><span class="line">    searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">    resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">    json: &#x27;/search.json&#x27;,</span><br><span class="line">    searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">    noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">    limit: 20,</span><br><span class="line">    fuzzy: false</span><br><span class="line">  &#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-下面是老版jekyll我在菜单栏添加搜索一栏"><a href="#2-下面是老版jekyll我在菜单栏添加搜索一栏" class="headerlink" title="(2).下面是老版jekyll我在菜单栏添加搜索一栏"></a>(2).下面是老版jekyll我在菜单栏添加搜索一栏</h3><p>修改<code>_includes/sidebar.html</code>内容，添加一行。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;menu-items&quot;&gt;&lt;a class=&quot;menu-links&quot; href=&quot;&#123;&#123;site.baseurl&#125;&#125;/search/&quot;&gt;search&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-search功能添加完成"><a href="#3-search功能添加完成" class="headerlink" title="(3). search功能添加完成"></a>(3). search功能添加完成</h3><p>这部分也就是搜索的主要核心代码了。到此，搜索功能也就完成了。</p>
-<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用<code> and </code>包起Markdown语法。</p>
-<hr>
-<p>原文作者地址：<br><a href="https://zoharandroid.github.io/2019-08-01-jekyll%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">https://zoharandroid.github.io/2019-08-01-jekyll个人博客实现搜索功能/</a></p>
-<p><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -872,7 +872,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#x74;&#114;&#120;&#x40;&#112;&#x6d;&#x2e;&#109;&#x65;">&#115;&#x77;&#x65;&#101;&#x74;&#114;&#120;&#x40;&#112;&#x6d;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#x65;&#x74;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#101;">&#x73;&#119;&#x65;&#x65;&#x74;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2548,9 +2548,6 @@ OK,大功告成！
     <content><![CDATA[<ul>
 <li>1.<a href="#1-%E6%B5%B7%E9%98%94%E8%A7%86%E7%95%8C">海阔视界</a></li>
 <li>2.<a href="#2-tvbox">TV’Box</a></li>
-<li>3.<a href="#3-biubiu%E5%BD%B1%E9%99%A2">Biubiu影院</a></li>
-<li>4.<a href="#4-zy-player-pc">ZY-Player-PC</a></li>
-<li>5.<a href="#5-freedtv">FreeDTV</a></li>
 </ul>
 <span id="more"></span>
 
@@ -2620,91 +2617,6 @@ OK,大功告成！
 <h3 id="本地协议clan"><a href="#本地协议clan" class="headerlink" title="本地协议clan"></a>本地协议clan</h3><pre><code>+ [YuanHsing大佬本地协议clan懒人包 - 包里有使用说明](https://github.com/YuanHsing/freed/tree/master/TVBox/本地协议clan懒人包)
 + [shiran588大佬本地协议clan懒人包](https://github.com/shiran588/TVBox/tree/main/本地协议clan懒人包)
 </code></pre>
-<h2 id="3-Biubiu影院"><a href="#3-Biubiu影院" class="headerlink" title="3.Biubiu影院"></a>3.<a href="https://github.com/YuanHsing/freed/tree/master/BiuBiu">Biubiu影院</a></h2><ul>
-<li><p>接口简易设定流程：</p>
-</li>
-<li><p>自行找到主程式并安装: BiuBiu影院999.apk</p>
-<ul>
-<li><a href="https://pan.lanzoup.com/b0c43qpkb">https://pan.lanzoup.com/b0c43qpkb</a></li>
-<li><a href="https://raw.fastgit.org/rxsweet/all/main/App/Biubiu%E5%BD%B1%E9%99%A2999.apk">https://raw.fastgit.org//rxsweet/all/main/App/Biubiu影院999.apk</a></li>
-</ul>
-</li>
-<li><p>执行主程式 –&gt; 设置 –&gt; 全局接口 –&gt; 编辑 –&gt; 全局接口设置 –&gt; 复制并黏贴 –&gt; 确定 –&gt; 躺平</p>
-</li>
-<li><p>接口列表(18+ : bb2,bbcr,cr.txt)：<br>  <code>https://freed.yuanhsing.cf/BiuBiu/bb.json</code><br>  <code>https://freed.yuanhsing.cf/BiuBiu/bb2.json</code><br>  <code>https://raw.githubusercontents.com/shiran588/biubiu/main/bb.json</code><br>  <code>https://raw.gitfast.tk/shiran588/biubiu/main/bbcr.json</code><br>  <code>https://freed.yuanhsing.cf/BiuBiu/bb测试版.txt</code><br>  <code>https://raw.gitfast.tk/shiran588/m3u/blob/main/cr.txt</code></p>
-</li>
-<li><p>更新接口：</p>
-<ul>
-<li>设置 –&gt; 全局接口 –&gt; 刷新</li>
-</ul>
-</li>
-<li><p>相较于猫影视TV，少了爬虫源</p>
-</li>
-<li><p>猫影视TV的XB源，全部可以在主页的”自定义”找到</p>
-</li>
-<li><p>进设置后会卡顿的，建议可以清理 “自定义接口(zidingyi)”，把不常用、无法正常运作的 自定义接口 通通删除。</p>
-</li>
-<li><p>除接口有问题外，其它的问题请自行百度或google！</p>
-</li>
-<li><p>建议</p>
-</li>
-<li><p>复活版、魔改版的猫影视 建议就不要再使用了，就目前看到的版本：</p>
-<ul>
-<li>内置XX版：打开只有内置三个采集网站，无法自定义配置接口。</li>
-<li>XX自定义版(旧版)：依版本号来看，大概是10个月以前的猫影视TV，可以自定义配置接口，但只有采集网站(type1)能用，还不如用BiuBiu。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="4-ZY-Player-PC"><a href="#4-ZY-Player-PC" class="headerlink" title="4. ZY-Player-PC"></a>4. <a href="https://github.com/YuanHsing/freed/tree/master/ZY-Player">ZY-Player-PC</a></h2><ul>
-<li><p>ZY-Player-PC｜APP</p>
-<p><a href="https://github.com/cuiocean/ZY-Player">https://github.com/cuiocean/ZY-Player</a></p>
-</li>
-<li><p>ZY-Player-Android｜APP</p>
-<p><a href="https://github.com/cuiocean/ZY-Player-APP">https://github.com/cuiocean/ZY-Player-APP</a></p>
-</li>
-<li><p>设置 &gt; 编辑源 &gt; 导入</p>
-</li>
-</ul>
-<hr>
-<h2 id="5-FreeDTV"><a href="#5-FreeDTV" class="headerlink" title="5. FreeDTV"></a>5. <a href="https://github.com/YuanHsing/freed/tree/master/tv">FreeDTV</a></h2><ul>
-<li><p>FreeDTV｜APP</p>
-<ul>
-<li><a href="https://github.com/FreeDTV/FreeD">https://github.com/FreeDTV/FreeD</a></li>
-<li><a href="https://wwi.lanzoui.com/b025mpw7e">APP载点</a></li>
-<li><a href="https://mp.weixin.qq.com/s/C5uZtKdXFyPbBDEFjO6P-A">最新整合资源涵盖教程【限时删】</a></li>
-<li><a href="https://mp.weixin.qq.com/s/m_edUfPP5VuWSdVzaSdO8A">TV版本1.2.3开放自定义解析</a></li>
-<li><a href="https://mp.weixin.qq.com/s/C2NCGvk0LUxDGa_ocilOtA">TV1.2.2搜索以及定制导航支持某类json格式接口</a></li>
-</ul>
-</li>
-<li><p>FreeDTV｜TV自建接口：( 自建接口 &gt; 贴上 &gt; 确定 &gt; 重启APP )</p>
-<pre><code>https://freed.yuanhsing.cf/tv/
-https://raw.gitfast.tk/YuanHsing/freed/tree/master/tv
-https://raw.gitfast.tk/shiran588/freed/tree/master/tv
-</code></pre>
-</li>
-<li><p>FreeDTV｜手机自建接口：</p>
-<pre><code>https://raw.githubusercontents.com/shiran588/freed/master/mobile/
-https://github.com/FreeDTV/FreeD/raw/master/mobile/
-https://raw.gitfast.tk/FreeDTV/FreeD/master/mobile
-</code></pre>
-</li>
-</ul>
-<h2 id="6-猫影视TV"><a href="#6-猫影视TV" class="headerlink" title="6.猫影视TV"></a><del>6.<a href="https://github.com/YuanHsing/freed/tree/master/%E7%8C%AB%E5%BD%B1%E8%A7%86TV%20%5B%E5%B7%B2%E5%81%9C%E7%94%A8%5D">猫影视TV</a></del></h2><p>[20220621 官方TG已公告，停止使用，停止维护]</p>
-<p>建议改用<a href="https://github.com/YuanHsing/freed/tree/master/TVBox">TV’Box</a> 或 <a href="https://github.com/YuanHsing/freed/tree/master/BiuBiu">BiuBiu影院</a></p>
-<p><img src="https://raw.githubusercontent.com/YuanHsing/freed/master/%E7%8C%AB%E5%BD%B1%E8%A7%86TV%20%5B%E5%B7%B2%E5%81%9C%E7%94%A8%5D/maotv20220621.png" alt="MaoTV" title="MaoTV"></p>
-<s>
-* 猫影视TV｜APP
-  + https://github.com/catvod/CatVodTVSpider
-* 猫影视TV｜接口
-  + 设置 > 当前配置接口
-* 猫影视TV｜接口相关
-  + https://github.com/catvod/CatVodTVSpider/tree/master/jar
-  + https://github.com/catvod/CatVodTVSpider/blob/master/XPath.md
-  + https://catvod.github.io/CatVodTVJsonEditor/
- </s>
-
-
 <h2 id="参考原贴地址"><a href="#参考原贴地址" class="headerlink" title="参考原贴地址 :"></a>参考原贴地址 :</h2><ul>
 <li>[liu673cn分享 - <a href="https://github.com/liu673cn">https://github.com/liu673cn</a></li>
 <li><a href="https://github.com/YuanHsing/freed">YuanHsing分享 - https://github.com/YuanHsing/freed</a> </li>
