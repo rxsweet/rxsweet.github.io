@@ -196,6 +196,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/03/02/2023-03-02-GFW-%E5%88%A9%E7%94%A8Vercel%E5%8F%8D%E4%BB%A3github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Sweet RX">
+      <meta itemprop="description" content="This is my internet world!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sweet RX's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/03/02/2023-03-02-GFW-%E5%88%A9%E7%94%A8Vercel%E5%8F%8D%E4%BB%A3github/" class="post-title-link" itemprop="url">GFW - 利用Vercel反代github</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-03-02 00:00:00 / Modified: 15:31:09" itemprop="dateCreated datePublished" datetime="2023-03-02T00:00:00+00:00">2023-03-02</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/GFW-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">GFW,经验技术</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="利用Vercel反代github"><a href="#利用Vercel反代github" class="headerlink" title="利用Vercel反代github"></a>利用Vercel反代github</h1><p>首先，你得有一个终端环境。推荐bash或zsh</p>
+<h2 id="一、安装npm"><a href="#一、安装npm" class="headerlink" title="一、安装npm"></a>一、安装npm</h2><p>通过Debian系的sudo apt install npm或CentOS系的sudo yum install npm安装npm包管理器。</p>
+<h2 id="二、安装Vercel"><a href="#二、安装Vercel" class="headerlink" title="二、安装Vercel"></a>二、安装Vercel</h2><p>1.安装<code>npm i -g vercel</code><br>2.登录<code>vercel login</code><br>3.新建一个<code>github.json</code>,内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;testGithub&quot;,</span><br><span class="line">  &quot;version&quot;: 2,</span><br><span class="line">  &quot;routes&quot;: [</span><br><span class="line">    &#123;&quot;src&quot;: &quot;/(.*)&quot;,&quot;dest&quot;: &quot;https://github.com/$1&quot;&#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong><br>反带其他网站要修改两处，一处是testGithub随便填，另一处是<a target="_blank" rel="noopener" href="https://github.com,改成你要反代的网站链接/">https://github.com，改成你要反代的网站链接</a></p>
+<p>4.部署<code>vercel -A github.json --prod</code></p>
+<h2 id="三、绑定域名"><a href="#三、绑定域名" class="headerlink" title="三、绑定域名"></a>三、绑定域名</h2><p>参照自己博客绑定vercel的方法</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://luotianyi.vc/4801.html">https://luotianyi.vc/4801.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.moraxyc.com/post/ab0987cd/">https://blog.moraxyc.com/post/ab0987cd/</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-gif%E5%8A%A9%E6%89%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -472,81 +550,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Sweet RX">
-      <meta itemprop="description" content="This is my internet world!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sweet RX's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/" class="post-title-link" itemprop="url">软件 - apk - 免费企业查询app</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2023-02-25 00:00:00 / Modified: 10:00:09" itemprop="dateCreated datePublished" datetime="2023-02-25T00:00:00+00:00">2023-02-25</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">软件</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a target="_blank" rel="noopener" href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -618,14 +621,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">58</span>
+          <span class="site-state-item-count">59</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
