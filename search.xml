@@ -822,7 +822,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#116;&#114;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;">&#115;&#x77;&#x65;&#101;&#116;&#114;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#112;&#x6d;&#x2e;&#x6d;&#101;">&#x73;&#x77;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#112;&#x6d;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2727,7 +2727,7 @@ OK,大功告成！
   </entry>
   <entry>
     <title>经验技术 - 查看端口被占用、杀进程</title>
-    <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8%E3%80%81%E6%9D%80%E8%BF%9B%E7%A8%8B/</url>
+    <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<h1 id="查看端口被占用、杀进程"><a href="#查看端口被占用、杀进程" class="headerlink" title="查看端口被占用、杀进程"></a>查看端口被占用、杀进程</h1><h2 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h2><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
 <h3 id="端口被哪个应用占用"><a href="#端口被哪个应用占用" class="headerlink" title="端口被哪个应用占用"></a>端口被哪个应用占用</h3><p>netstat -aon|findstr “50016”	</p>
 <h3 id="通过id查找对应的进程名称"><a href="#通过id查找对应的进程名称" class="headerlink" title="通过id查找对应的进程名称"></a>通过id查找对应的进程名称</h3><p>tasklist |findstr “进程id号”</p>
