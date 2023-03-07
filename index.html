@@ -247,7 +247,8 @@
           <h3 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h3><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
 <h3 id="端口被哪个应用占用"><a href="#端口被哪个应用占用" class="headerlink" title="端口被哪个应用占用"></a>端口被哪个应用占用</h3><p>netstat -aon|findstr “50016”	</p>
 <h3 id="通过id查找对应的进程名称"><a href="#通过id查找对应的进程名称" class="headerlink" title="通过id查找对应的进程名称"></a>通过id查找对应的进程名称</h3><p>tasklist |findstr “进程id号”</p>
-<h3 id="自己现用关闭’svchost-exe’的方法"><a href="#自己现用关闭’svchost-exe’的方法" class="headerlink" title="自己现用关闭’svchost.exe’的方法"></a>自己现用关闭’svchost.exe’的方法</h3><p>1.打开任务管理器<br>2.详细信息-找到PID -右键-转到服务-停止</p>
+<h3 id="自己现用关闭’svchost-exe’的方法"><a href="#自己现用关闭’svchost-exe’的方法" class="headerlink" title="自己现用关闭’svchost.exe’的方法"></a>自己现用关闭’svchost.exe’的方法</h3><p>1.打开任务管理器</p>
+<p>2.详细信息-找到PID -右键-转到服务-停止</p>
 <h3 id="根据进程的名称杀掉进程"><a href="#根据进程的名称杀掉进程" class="headerlink" title="根据进程的名称杀掉进程"></a>根据进程的名称杀掉进程</h3><p>taskkill &#x2F;f &#x2F;t &#x2F;im “进程id或者进程名称”</p>
 <h3 id="系统当前所有的端口使用情况"><a href="#系统当前所有的端口使用情况" class="headerlink" title="系统当前所有的端口使用情况"></a>系统当前所有的端口使用情况</h3><p>输入netstat -ano然后回车，就可以看到系统当前所有的端口使用情况</p>
 
