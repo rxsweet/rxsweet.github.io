@@ -426,6 +426,62 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 搭建个人博客</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
+<p>Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费。</p>
+<p>而Github Pages是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。</p>
+<p>我们就是利用Github Pages服务来搭建自己的博客。</p>
+<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>Jekyll则是为了方便我们调试、预览博客效果的本地环境。</p>
+<span id="more"></span>
+
+<h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h4><p>这一部分不需要详细说明了。先注册<a href="https://github.com/">Github</a>，开启一个新的Repository，取名和你的用户名一致，如<code>你的用户名.github.io</code>，只有这样，Github才会给你的repository以jekyll结构建立模板。</p>
+<p>在设定处，可以选择模板。</p>
+<p>在<a href="https://github.com/jekyll/jekyll/wiki/sites">Jekyll的wiki项目</a>有很多参考模板。你可以查看源码，FORK一份，直接改成自己的用户名来使用。</p>
+<p>当然，涉及很多项目都要相应修改。需要仔细阅读每个文档。</p>
+<h5 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h5><p>你也可以先发表一个test文章，使你的博客生效，公布出来。你就可以通过<code>https://你的用户名.github.io</code>访问了。</p>
+<p>如果你有独立域名，也可以绑定上述地址，具体自行咨询管理商或者Google吧。</p>
+<p>现在，你的博客就已经搭建起来。</p>
+<h4 id="Git-clone-本地化"><a href="#Git-clone-本地化" class="headerlink" title="Git clone 本地化####"></a>Git clone 本地化####</h4><p>使用Windows系统的同学就直接使用Github Desktop来管理吧，十分方便。在Windows下还用<code>Git CMD</code>就真的无法言说了，何必呢？</p>
+<p>简单说说Linux下（以Ubuntu为例）如何管理博客。</p>
+<p>其实原理很简单。就是把repository克隆到本地，在本地写作、修改，再推送差异部分到线上。而调试部分，我们使用了jekyll来预览。</p>
+<ol>
+<li><p>安装Ruby；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ruby-full ruby-bundler</span><br><span class="line">ruby -v #查看ruby版本</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装Jekyll；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gem install jekyll </span><br><span class="line">gem install jekyll-paginate #可能也要sudo</span><br><span class="line">jekyll -v #查看版本</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>搭建博客 如果前面只是开启了博客，未published，这里可以Jekyll新建网站：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jekyll new mySite</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Git Clone博客</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br></pre></td></tr></table></figure>
+
+<p>当然，SSH方式是最快捷的。先建SSH密钥：<code>ssh-keygen -t rsa -C&quot;&#123;name@site.com&#125;&quot;</code>，引号间换成你的内容。生成了私钥<strong>id_rsa</strong>和公钥<strong>id_rsa.pub</strong>，然后到<a href="https://github.com/">Github.com</a>设定SSH密钥，把<strong>id_rsa.pub</strong>的内容全部粘贴到Github上。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:你的用户名/你的仓库名.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地写作 文章在_posts文件夹内。文件名必须按照规范：年-月-日-单词-单词-单词.后缀。</p>
+</li>
+<li><p>预览 前面我们安装了jekyll就可以进行预览了。进入克隆回来的仓库文件夹，运行<code>jekyll serve</code>即可在127.0.0.1:4000浏览器内预览。</p>
+</li>
+<li><p>推送线上 使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .       #注意这个点</span><br><span class="line">git commit -m &quot;你要说的话&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>收工</p>
+</li>
+</ol>
+<hr>
+<p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 0.自用更新博客 - Mardown语法和软件</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-0-Mardown%E8%AF%AD%E6%B3%95%E5%92%8C%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="1-软件"><a href="#1-软件" class="headerlink" title="1.软件"></a>1.软件</h1><p><a href="https://github.com/marktext/marktext">1. MarkText - 个人使用</a></p>
@@ -534,62 +590,6 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=&#123;&#123; include.id &#125;&#125;&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>上述是网易云生成的外链，不过要把<code>width</code>和<code>height</code>的值，用引号包起来，才能被kramdown解析。</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 搭建个人博客</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
-<p>Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费。</p>
-<p>而Github Pages是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。</p>
-<p>我们就是利用Github Pages服务来搭建自己的博客。</p>
-<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>Jekyll则是为了方便我们调试、预览博客效果的本地环境。</p>
-<span id="more"></span>
-
-<h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h4><p>这一部分不需要详细说明了。先注册<a href="https://github.com/">Github</a>，开启一个新的Repository，取名和你的用户名一致，如<code>你的用户名.github.io</code>，只有这样，Github才会给你的repository以jekyll结构建立模板。</p>
-<p>在设定处，可以选择模板。</p>
-<p>在<a href="https://github.com/jekyll/jekyll/wiki/sites">Jekyll的wiki项目</a>有很多参考模板。你可以查看源码，FORK一份，直接改成自己的用户名来使用。</p>
-<p>当然，涉及很多项目都要相应修改。需要仔细阅读每个文档。</p>
-<h5 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h5><p>你也可以先发表一个test文章，使你的博客生效，公布出来。你就可以通过<code>https://你的用户名.github.io</code>访问了。</p>
-<p>如果你有独立域名，也可以绑定上述地址，具体自行咨询管理商或者Google吧。</p>
-<p>现在，你的博客就已经搭建起来。</p>
-<h4 id="Git-clone-本地化"><a href="#Git-clone-本地化" class="headerlink" title="Git clone 本地化####"></a>Git clone 本地化####</h4><p>使用Windows系统的同学就直接使用Github Desktop来管理吧，十分方便。在Windows下还用<code>Git CMD</code>就真的无法言说了，何必呢？</p>
-<p>简单说说Linux下（以Ubuntu为例）如何管理博客。</p>
-<p>其实原理很简单。就是把repository克隆到本地，在本地写作、修改，再推送差异部分到线上。而调试部分，我们使用了jekyll来预览。</p>
-<ol>
-<li><p>安装Ruby；</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ruby-full ruby-bundler</span><br><span class="line">ruby -v #查看ruby版本</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装Jekyll；</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gem install jekyll </span><br><span class="line">gem install jekyll-paginate #可能也要sudo</span><br><span class="line">jekyll -v #查看版本</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>搭建博客 如果前面只是开启了博客，未published，这里可以Jekyll新建网站：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jekyll new mySite</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Git Clone博客</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br></pre></td></tr></table></figure>
-
-<p>当然，SSH方式是最快捷的。先建SSH密钥：<code>ssh-keygen -t rsa -C&quot;&#123;name@site.com&#125;&quot;</code>，引号间换成你的内容。生成了私钥<strong>id_rsa</strong>和公钥<strong>id_rsa.pub</strong>，然后到<a href="https://github.com/">Github.com</a>设定SSH密钥，把<strong>id_rsa.pub</strong>的内容全部粘贴到Github上。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:你的用户名/你的仓库名.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地写作 文章在_posts文件夹内。文件名必须按照规范：年-月-日-单词-单词-单词.后缀。</p>
-</li>
-<li><p>预览 前面我们安装了jekyll就可以进行预览了。进入克隆回来的仓库文件夹，运行<code>jekyll serve</code>即可在127.0.0.1:4000浏览器内预览。</p>
-</li>
-<li><p>推送线上 使用以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .       #注意这个点</span><br><span class="line">git commit -m &quot;你要说的话&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>收工</p>
-</li>
-</ol>
-<hr>
-<p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -835,7 +835,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#x74;&#114;&#x78;&#x40;&#x70;&#x6d;&#x2e;&#109;&#x65;">&#115;&#x77;&#x65;&#101;&#x74;&#114;&#x78;&#x40;&#x70;&#x6d;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#101;&#116;&#114;&#x78;&#x40;&#112;&#109;&#46;&#x6d;&#101;">&#115;&#119;&#x65;&#101;&#116;&#114;&#x78;&#x40;&#112;&#109;&#46;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
