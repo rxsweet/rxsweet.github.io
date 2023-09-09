@@ -301,44 +301,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW - 使用 Cloudflare Workers 搭建 Google 和 GitHub 镜像网站</title>
-    <url>/2022/03/29/2022-03-29-GFW-github-Mirrors/</url>
-    <content><![CDATA[<p>学习大佬的方法，不错</p>
-<p>Google And Github Mirrors </p>
-<p><a href="https://progcz.com/posts/use-cf-workers-build-google-and-github-mirrors">https://progcz.com/posts/use-cf-workers-build-google-and-github-mirrors</a></p>
-<p>对于 Google 来说，虽然大部分时间都能够在科学环境中网上冲浪，但是难免有需要在普通环境中使用 Google 的情况，而对于 GitHub 来说，虽然目前可以无障碍访问，但是在普通环境中下载某些 Release（比如科学工具的客户端）的速度实在太慢。</p>
-<p>如果你也有和我一样的困扰，那么可以考虑使用 Cloudflare Workers 搭建属于自己的镜像网站，在普通环境中备用。</p>
-<span id="more"></span>
-
-<ol start="0">
-<li>写在前面 如果你只是在寻找临时的解决方案，而又不想费劲的话，那么可以直接使用我已经搭建好的镜像网站。</li>
-</ol>
-<p>但是，请你务必遵守以下约定：</p>
-<p> *不滥用服务。因为每个 Cloudflare 账户每天只有 100,000 次请求的额度。</p>
-<p> *不登录自己的任何账号。虽然我保证不拦截你的数据，但是防人之心不可无。</p>
-<p> *不违反大陆的法律法规。虽然你需要科学，但是请保持理性。</p>
-<p>Google 镜像网站：<a href="https://google.progcz.workers.dev/">https://google.progcz.workers.dev/</a></p>
-<p>GitHub 镜像网站：<a href="https://google.progcz.workers.dev/">https://github.progcz.workers.dev/</a></p>
-<ol>
-<li>注册并登录 Cloudflare 账号 <a href="https://www.cloudflare.com/">https://www.cloudflare.com</a>这没啥好说的，前往 Cloudflare 官网自行注册并登录，然后点击「Workers」。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/06.png" alt="注册"></li>
-<li>创建新的 Worker 应用 进入 Workers 页面之后，新用户需要设置用户名（比如 progcz），然后点击「创建 Worker」。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/07.png" alt="创建"></li>
-<li>部署 Worker 应用 自行修改应用名（比如 test），将 <a href="https://github.com/cszszs/GoogleAndGithubMirrors/blob/main/index.js">index.js</a> 中的代码拷贝至脚本中，点击「保存并部署」，然后就可以通过 <a href="https://test.progcz.workers.dev/%EF%BC%88%E6%B3%A8%E6%84%8F%E6%9B%BF%E6%8D%A2%E5%BA%94%E7%94%A8%E5%90%8D">https://test.progcz.workers.dev/（注意替换应用名</a> test 和用户名 progcz）访问 Google 的镜像网站了。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/08.png" alt="部署"></li>
-<li>自定义 index.js 脚本 上文的 index.js 其实来自于 Berkeley-Reject&#x2F;Workers-Proxy 仓库，但是代码中设置了对于国内访问的屏蔽，所以为了避免误用，我就在自行修改之后保存了一份。</li>
-</ol>
-<p>可以通过修改以下部分来搭建不同的镜像网站：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Website you intended to retrieve for users. const upstream = &#x27;www.google.com&#x27;</span><br><span class="line">// Custom pathname for the upstream website. const upstream_path = &#x27;/&#x27;</span><br><span class="line">// Website you intended to retrieve for users using mobile devices. const upstream_mobile = &#x27;www.google.com&#x27;</span><br><span class="line">// Countries and regions where you wish to suspend your service. const blocked_region = [&#x27;KP&#x27;, &#x27;SY&#x27;, &#x27;PK&#x27;, &#x27;CU&#x27;]</span><br><span class="line">// IP addresses which you wish to block from using your service. const blocked_ip_address = [&#x27;0.0.0.0&#x27;, &#x27;127.0.0.1&#x27;]</span><br><span class="line">// Whether to use HTTPS protocol for upstream address. const https = true</span><br><span class="line">// Whether to disable cache. const disable_cache = false</span><br><span class="line">// Replace texts. const replace_dict = &#123; &#x27;$upstream&#x27;: &#x27;$custom_domain&#x27;, &#x27;//google.com&#x27;: &#x27;&#x27; &#125; </span><br></pre></td></tr></table></figure>
-
-<p><strong>需要注意的是，上述代码只是 index.js 的一小部分。</strong></p>
-<p>比如，对于 GitHub 来说，我们只需要将 **upstream、upstream_mobile 和 replace_dict 中的 google.com 修改为 github.com **即可。</p>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GFW - 短信接码平台</title>
     <url>/2022/03/29/2022-03-29-GFW-%E7%9F%AD%E4%BF%A1%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0/</url>
     <content><![CDATA[<h1 id="短信接码平台"><a href="#短信接码平台" class="headerlink" title="短信接码平台"></a>短信接码平台</h1><p><a href="https://sms24.me/">https://sms24.me/</a> </p>
@@ -426,6 +388,44 @@
         <tag>GFW</tag>
         <tag>sms</tag>
         <tag>接码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GFW - 使用 Cloudflare Workers 搭建 Google 和 GitHub 镜像网站</title>
+    <url>/2022/03/29/2022-03-29-GFW-github-Mirrors/</url>
+    <content><![CDATA[<p>学习大佬的方法，不错</p>
+<p>Google And Github Mirrors </p>
+<p><a href="https://progcz.com/posts/use-cf-workers-build-google-and-github-mirrors">https://progcz.com/posts/use-cf-workers-build-google-and-github-mirrors</a></p>
+<p>对于 Google 来说，虽然大部分时间都能够在科学环境中网上冲浪，但是难免有需要在普通环境中使用 Google 的情况，而对于 GitHub 来说，虽然目前可以无障碍访问，但是在普通环境中下载某些 Release（比如科学工具的客户端）的速度实在太慢。</p>
+<p>如果你也有和我一样的困扰，那么可以考虑使用 Cloudflare Workers 搭建属于自己的镜像网站，在普通环境中备用。</p>
+<span id="more"></span>
+
+<ol start="0">
+<li>写在前面 如果你只是在寻找临时的解决方案，而又不想费劲的话，那么可以直接使用我已经搭建好的镜像网站。</li>
+</ol>
+<p>但是，请你务必遵守以下约定：</p>
+<p> *不滥用服务。因为每个 Cloudflare 账户每天只有 100,000 次请求的额度。</p>
+<p> *不登录自己的任何账号。虽然我保证不拦截你的数据，但是防人之心不可无。</p>
+<p> *不违反大陆的法律法规。虽然你需要科学，但是请保持理性。</p>
+<p>Google 镜像网站：<a href="https://google.progcz.workers.dev/">https://google.progcz.workers.dev/</a></p>
+<p>GitHub 镜像网站：<a href="https://google.progcz.workers.dev/">https://github.progcz.workers.dev/</a></p>
+<ol>
+<li>注册并登录 Cloudflare 账号 <a href="https://www.cloudflare.com/">https://www.cloudflare.com</a>这没啥好说的，前往 Cloudflare 官网自行注册并登录，然后点击「Workers」。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/06.png" alt="注册"></li>
+<li>创建新的 Worker 应用 进入 Workers 页面之后，新用户需要设置用户名（比如 progcz），然后点击「创建 Worker」。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/07.png" alt="创建"></li>
+<li>部署 Worker 应用 自行修改应用名（比如 test），将 <a href="https://github.com/cszszs/GoogleAndGithubMirrors/blob/main/index.js">index.js</a> 中的代码拷贝至脚本中，点击「保存并部署」，然后就可以通过 <a href="https://test.progcz.workers.dev/%EF%BC%88%E6%B3%A8%E6%84%8F%E6%9B%BF%E6%8D%A2%E5%BA%94%E7%94%A8%E5%90%8D">https://test.progcz.workers.dev/（注意替换应用名</a> test 和用户名 progcz）访问 Google 的镜像网站了。<br><img src="https://cdn.jsdelivr.net/gh/ProgCZ/image-cloud-a@master/2020/05/08.png" alt="部署"></li>
+<li>自定义 index.js 脚本 上文的 index.js 其实来自于 Berkeley-Reject&#x2F;Workers-Proxy 仓库，但是代码中设置了对于国内访问的屏蔽，所以为了避免误用，我就在自行修改之后保存了一份。</li>
+</ol>
+<p>可以通过修改以下部分来搭建不同的镜像网站：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Website you intended to retrieve for users. const upstream = &#x27;www.google.com&#x27;</span><br><span class="line">// Custom pathname for the upstream website. const upstream_path = &#x27;/&#x27;</span><br><span class="line">// Website you intended to retrieve for users using mobile devices. const upstream_mobile = &#x27;www.google.com&#x27;</span><br><span class="line">// Countries and regions where you wish to suspend your service. const blocked_region = [&#x27;KP&#x27;, &#x27;SY&#x27;, &#x27;PK&#x27;, &#x27;CU&#x27;]</span><br><span class="line">// IP addresses which you wish to block from using your service. const blocked_ip_address = [&#x27;0.0.0.0&#x27;, &#x27;127.0.0.1&#x27;]</span><br><span class="line">// Whether to use HTTPS protocol for upstream address. const https = true</span><br><span class="line">// Whether to disable cache. const disable_cache = false</span><br><span class="line">// Replace texts. const replace_dict = &#123; &#x27;$upstream&#x27;: &#x27;$custom_domain&#x27;, &#x27;//google.com&#x27;: &#x27;&#x27; &#125; </span><br></pre></td></tr></table></figure>
+
+<p><strong>需要注意的是，上述代码只是 index.js 的一小部分。</strong></p>
+<p>比如，对于 GitHub 来说，我们只需要将 **upstream、upstream_mobile 和 replace_dict 中的 google.com 修改为 github.com **即可。</p>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
       </tags>
   </entry>
   <entry>
@@ -838,7 +838,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#101;&#116;&#114;&#x78;&#64;&#112;&#x6d;&#46;&#109;&#101;">&#x73;&#119;&#x65;&#101;&#116;&#114;&#x78;&#64;&#112;&#x6d;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#x65;&#x65;&#x74;&#x72;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#101;">&#x73;&#x77;&#x65;&#x65;&#x74;&#x72;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
