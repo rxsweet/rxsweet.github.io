@@ -838,7 +838,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#101;&#116;&#x72;&#x78;&#64;&#x70;&#109;&#46;&#x6d;&#x65;">&#115;&#x77;&#101;&#101;&#116;&#x72;&#x78;&#64;&#x70;&#109;&#46;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#101;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#x6d;&#46;&#109;&#x65;">&#115;&#119;&#101;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#x6d;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2727,22 +2727,18 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>GFW - 利用Vercel反代github</title>
+    <title>GFW - 利用Vercel反代github,google</title>
     <url>/2023/03/02/2023-03-02-GFW-%E5%88%A9%E7%94%A8Vercel%E5%8F%8D%E4%BB%A3github/</url>
-    <content><![CDATA[<h1 id="利用Vercel反代github"><a href="#利用Vercel反代github" class="headerlink" title="利用Vercel反代github"></a>利用Vercel反代github</h1><p>首先，你得有一个终端环境。推荐bash或zsh</p>
+    <content><![CDATA[<h1 id="利用Vercel反代github-google"><a href="#利用Vercel反代github-google" class="headerlink" title="利用Vercel反代github,google"></a>利用Vercel反代github,google</h1><p>自己测试，现用的2种方法：<br>1.直接添加<code>vercel.json</code>法<br>2.fork <code>souying/vercel-api-proxy</code> 大佬的万能代理</p>
 <span id="more"></span>
-<h2 id="一、安装npm"><a href="#一、安装npm" class="headerlink" title="一、安装npm"></a>一、安装npm</h2><p>通过Debian系的sudo apt install npm或CentOS系的sudo yum install npm安装npm包管理器。</p>
-<h2 id="二、安装Vercel"><a href="#二、安装Vercel" class="headerlink" title="二、安装Vercel"></a>二、安装Vercel</h2><p>1.安装<code>npm i -g vercel</code><br>2.登录<code>vercel login</code><br>3.新建一个<code>github.json</code>,内容如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;testGithub&quot;,</span><br><span class="line">  &quot;version&quot;: 2,</span><br><span class="line">  &quot;routes&quot;: [</span><br><span class="line">    &#123;&quot;src&quot;: &quot;/(.*)&quot;,&quot;dest&quot;: &quot;https://github.com/$1&quot;&#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意：</strong><br>反带其他网站要修改两处，一处是testGithub随便填，另一处是<a href="https://github.com,改成你要反代的网站链接/">https://github.com，改成你要反代的网站链接</a></p>
-<p>4.部署<code>vercel -A github.json --prod</code></p>
-<p><strong>注意：</strong><br>前两个可以直接回车，n代表没有同名项目，新建项目，github是新建项目名<br>等待一会就完成了</p>
-<h2 id="三、绑定域名"><a href="#三、绑定域名" class="headerlink" title="三、绑定域名"></a>三、绑定域名</h2><p>参照自己博客绑定vercel的方法</p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
-<li><a href="https://luotianyi.vc/4801.html">https://luotianyi.vc/4801.html</a></li>
-<li><a href="https://blog.moraxyc.com/post/ab0987cd/">https://blog.moraxyc.com/post/ab0987cd/</a></li>
-<li><a href="https://blog.csdn.net/qq_39010320/article/details/119923538">https://blog.csdn.net/qq_39010320/article/details/119923538</a></li>
+<h2 id="一、直接添加vercel-json法"><a href="#一、直接添加vercel-json法" class="headerlink" title="一、直接添加vercel.json法"></a>一、直接添加<code>vercel.json</code>法</h2><p>1.github仓库vercel-gh项目，新建一个<code>vercel.json</code>,内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;testgh&quot;,</span><br><span class="line">  &quot;version&quot;: 2,</span><br><span class="line">  &quot;routes&quot;: [</span><br><span class="line">    &#123;&quot;src&quot;: &quot;/(.*)&quot;,&quot;dest&quot;: &quot;https://github.com/$1&quot;&#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.登录<code>vercel</code>，链接vercel-gh项目，运行<br>3.绑定域名(绑定域名后不用翻墙)<br>4.完成</p>
+<p><strong>注意：</strong><br>反带其他网站要修改两处，一处是testgh随便填，另一处是<a href="https://github.com,改成你要反代的网站链接/">https://github.com，改成你要反代的网站链接</a><br>绑定完域名后，一般要多等一段时间才能生效(自己测试：隔天后访问，域名不会变回github)。</p>
+<h2 id="二、fork-souying-vercel-api-proxy-大佬的万能代理"><a href="#二、fork-souying-vercel-api-proxy-大佬的万能代理" class="headerlink" title="二、fork souying/vercel-api-proxy 大佬的万能代理"></a>二、fork <code>souying/vercel-api-proxy</code> 大佬的万能代理</h2><p>1.fork 大佬项目<br>2.登录<code>vercel</code>，链接vercel-gh项目，运行<br>3.绑定域名(绑定域名后不用翻墙)<br>4.完成</p>
+<p><strong>注意：</strong><br>生成的主页里直接复制填你要访问的github,google地址也行,或者下面的例子<br><code>例1:访问https://你的域名/https/github.com/souying/serverMmon/ 实际上会替换为https://github.com/souying/serverMmon/</code><br><code>例2访问https://你的域名/https/www.google.com/search?q=vercel-api-proxy 实际上会替换为https://www.google.com/search?q=vercel-api-proxy</code></p>
+<h3 id="参照自己博客绑定vercel的方法"><a href="#参照自己博客绑定vercel的方法" class="headerlink" title="参照自己博客绑定vercel的方法"></a>参照自己博客绑定vercel的方法</h3><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://github.com/souying/vercel-api-proxy">https://github.com/souying/vercel-api-proxy</a></li>
 </ul>
 ]]></content>
       <categories>
