@@ -838,7 +838,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#x74;&#x72;&#120;&#64;&#112;&#109;&#46;&#109;&#x65;">&#115;&#x77;&#x65;&#x65;&#x74;&#x72;&#120;&#64;&#112;&#109;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#x65;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#x6d;&#x2e;&#109;&#x65;">&#x73;&#x77;&#x65;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#x6d;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2732,17 +2732,23 @@ OK,大功告成！
     <content><![CDATA[<h1 id="反代github和google"><a href="#反代github和google" class="headerlink" title="反代github和google"></a>反代github和google</h1><p>1.利用Vercel反代<br>2.利用netlify反代</p>
 <span id="more"></span>
 
-<h2 id="利用Vercel反代github-google"><a href="#利用Vercel反代github-google" class="headerlink" title="利用Vercel反代github,google"></a>利用Vercel反代github,google</h2><p>自己测试，现用的2种方法：<br>1.直接添加<code>vercel.json</code>法<br>2.fork <code>souying/vercel-api-proxy</code> 大佬的万能代理</p>
+<h2 id="利用Vercel反代"><a href="#利用Vercel反代" class="headerlink" title="利用Vercel反代"></a>利用Vercel反代</h2><p>自己测试，现用的2种方法：<br>1.直接添加<code>vercel.json</code>法<br>2.fork <code>souying/vercel-api-proxy</code> 大佬的万能代理</p>
 <h3 id="一、直接添加vercel-json法"><a href="#一、直接添加vercel-json法" class="headerlink" title="一、直接添加vercel.json法"></a>一、直接添加<code>vercel.json</code>法</h3><p>1.github仓库vercel-gh项目，新建一个<code>vercel.json</code>,内容如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;testgh&quot;,</span><br><span class="line">  &quot;version&quot;: 2,</span><br><span class="line">  &quot;routes&quot;: [</span><br><span class="line">    &#123;&quot;src&quot;: &quot;/(.*)&quot;,&quot;dest&quot;: &quot;https://github.com/$1&quot;&#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>2.登录<code>vercel</code>，链接vercel-gh项目，运行<br>3.绑定域名(绑定域名后不用翻墙)<br>4.完成</p>
 <p><strong>注意：</strong><br>反带其他网站要修改两处，一处是testgh随便填，另一处是<a href="https://github.com,改成你要反代的网站链接/">https://github.com，改成你要反代的网站链接</a><br>绑定完域名后，一般要多等一段时间才能生效(自己测试：隔天后访问，域名不会变回github)。</p>
 <h3 id="二、fork-souying-vercel-api-proxy-大佬的万能代理"><a href="#二、fork-souying-vercel-api-proxy-大佬的万能代理" class="headerlink" title="二、fork souying/vercel-api-proxy 大佬的万能代理"></a>二、fork <code>souying/vercel-api-proxy</code> 大佬的万能代理</h3><p>1.fork 大佬项目<br>2.登录<code>vercel</code>，链接vercel-gh项目，运行<br>3.绑定域名(绑定域名后不用翻墙)<br>4.完成</p>
 <p><strong>注意：</strong><br>生成的主页里直接复制填你要访问的github,google地址也行,或者下面的例子<br><code>例1:访问https://你的域名/https/github.com/souying/serverMmon/ 实际上会替换为https://github.com/souying/serverMmon/</code><br><code>例2访问https://你的域名/https/www.google.com/search?q=vercel-api-proxy 实际上会替换为https://www.google.com/search?q=vercel-api-proxy</code></p>
-<h2 id="利用netlify反代github-google"><a href="#利用netlify反代github-google" class="headerlink" title="利用netlify反代github,google"></a>利用netlify反代github,google</h2><h3 id="zsokami-x2F-ghraw-大佬提供的方法"><a href="#zsokami-x2F-ghraw-大佬提供的方法" class="headerlink" title="zsokami&#x2F;ghraw 大佬提供的方法"></a>zsokami&#x2F;ghraw 大佬提供的方法</h3><p>1.github仓库netlify-gg项目，新建一个<code>netlify.toml</code>,内容如下：</p>
+<h2 id="利用netlify反代"><a href="#利用netlify反代" class="headerlink" title="利用netlify反代"></a>利用netlify反代</h2><h3 id="zsokami-x2F-ghraw-大佬提供的方法"><a href="#zsokami-x2F-ghraw-大佬提供的方法" class="headerlink" title="zsokami&#x2F;ghraw 大佬提供的方法"></a>zsokami&#x2F;ghraw 大佬提供的方法</h3><p>1.github仓库netlify-gg项目，新建一个<code>netlify.toml</code>,内容如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[[redirects]]</span><br><span class="line">  from = &quot;/*&quot;</span><br><span class="line">  to = &quot;https://www.google.com/:splat&quot;</span><br><span class="line">  status = 200</span><br></pre></td></tr></table></figure>
 <p>2.登录<code>netlify</code>，链接vercel-gg项目，运行<br>3.绑定域名(绑定域名后不用翻墙)<br>4.完成</p>
 <p><strong>注意：</strong><br>netlify方法，代理google, github-raw好用， 对于github暂时不行(跳原域名：github.com)</p>
+<h1 id="个人使用"><a href="#个人使用" class="headerlink" title="个人使用"></a>个人使用</h1><ul>
+<li><a href="https://p.sweetrx.ir/">https://p.sweetrx.ir</a></li>
+<li><a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a></li>
+<li><a href="https://gg.sweetrx.ir/">https://gg.sweetrx.ir</a></li>
+<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
+</ul>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
 <li><a href="https://github.com/souying/vercel-api-proxy">https://github.com/souying/vercel-api-proxy</a></li>
 <li><a href="https://github.com/zsokami/ghraw">https://github.com/zsokami/ghraw</a></li>
