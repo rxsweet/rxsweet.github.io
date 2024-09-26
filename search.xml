@@ -143,6 +143,82 @@
       </tags>
   </entry>
   <entry>
+    <title>GFW - Github连接访问的几种方法</title>
+    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
+<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
+<span id="more"></span>
+
+<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
+<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
+</li>
+<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
+</li>
+<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
+</li>
+</ol>
+<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
+<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
+<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
+<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
+<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
+<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
+<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
+</ol>
+<hr>
+<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
+<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
+</li>
+<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
+</li>
+<li></li>
+</ul>
+<ol>
+<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
+<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
+<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
+<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
+<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
+</ol>
+<hr>
+<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
+<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
+</ul>
+<ol>
+<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
+</li>
+<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
+</li>
+<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
+</li>
+</ol>
+<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
+<hr>
+<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
+<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
+</ul>
+<hr>
+<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
+<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
+<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
+<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
+<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
+<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
+<hr>
+<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
     <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
     <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
@@ -234,138 +310,6 @@
       </categories>
       <tags>
         <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GFW - Github连接访问的几种方法</title>
-    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
-<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
-<span id="more"></span>
-
-<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
-<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
-</li>
-<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
-</li>
-<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
-</li>
-</ol>
-<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
-<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
-<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
-<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
-<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
-<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
-<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
-</ol>
-<hr>
-<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
-<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
-</li>
-<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
-</li>
-<li></li>
-</ul>
-<ol>
-<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
-<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
-<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
-<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
-<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
-</ol>
-<hr>
-<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
-<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
-</ul>
-<ol>
-<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
-</li>
-<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
-</li>
-<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
-</li>
-</ol>
-<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
-<hr>
-<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
-<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
-</ul>
-<hr>
-<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
-<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
-<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
-<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
-<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
-<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
-<hr>
-<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 搭建个人博客</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
-<p>Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费。</p>
-<p>而Github Pages是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。</p>
-<p>我们就是利用Github Pages服务来搭建自己的博客。</p>
-<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>Jekyll则是为了方便我们调试、预览博客效果的本地环境。</p>
-<span id="more"></span>
-
-<h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h4><p>这一部分不需要详细说明了。先注册<a href="https://github.com/">Github</a>，开启一个新的Repository，取名和你的用户名一致，如<code>你的用户名.github.io</code>，只有这样，Github才会给你的repository以jekyll结构建立模板。</p>
-<p>在设定处，可以选择模板。</p>
-<p>在<a href="https://github.com/jekyll/jekyll/wiki/sites">Jekyll的wiki项目</a>有很多参考模板。你可以查看源码，FORK一份，直接改成自己的用户名来使用。</p>
-<p>当然，涉及很多项目都要相应修改。需要仔细阅读每个文档。</p>
-<h5 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h5><p>你也可以先发表一个test文章，使你的博客生效，公布出来。你就可以通过<code>https://你的用户名.github.io</code>访问了。</p>
-<p>如果你有独立域名，也可以绑定上述地址，具体自行咨询管理商或者Google吧。</p>
-<p>现在，你的博客就已经搭建起来。</p>
-<h4 id="Git-clone-本地化"><a href="#Git-clone-本地化" class="headerlink" title="Git clone 本地化####"></a>Git clone 本地化####</h4><p>使用Windows系统的同学就直接使用Github Desktop来管理吧，十分方便。在Windows下还用<code>Git CMD</code>就真的无法言说了，何必呢？</p>
-<p>简单说说Linux下（以Ubuntu为例）如何管理博客。</p>
-<p>其实原理很简单。就是把repository克隆到本地，在本地写作、修改，再推送差异部分到线上。而调试部分，我们使用了jekyll来预览。</p>
-<ol>
-<li><p>安装Ruby；</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ruby-full ruby-bundler</span><br><span class="line">ruby -v #查看ruby版本</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装Jekyll；</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gem install jekyll </span><br><span class="line">gem install jekyll-paginate #可能也要sudo</span><br><span class="line">jekyll -v #查看版本</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>搭建博客 如果前面只是开启了博客，未published，这里可以Jekyll新建网站：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jekyll new mySite</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Git Clone博客</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br></pre></td></tr></table></figure>
-
-<p>当然，SSH方式是最快捷的。先建SSH密钥：<code>ssh-keygen -t rsa -C&quot;&#123;name@site.com&#125;&quot;</code>，引号间换成你的内容。生成了私钥<strong>id_rsa</strong>和公钥<strong>id_rsa.pub</strong>，然后到<a href="https://github.com/">Github.com</a>设定SSH密钥，把<strong>id_rsa.pub</strong>的内容全部粘贴到Github上。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:你的用户名/你的仓库名.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地写作 文章在_posts文件夹内。文件名必须按照规范：年-月-日-单词-单词-单词.后缀。</p>
-</li>
-<li><p>预览 前面我们安装了jekyll就可以进行预览了。进入克隆回来的仓库文件夹，运行<code>jekyll serve</code>即可在127.0.0.1:4000浏览器内预览。</p>
-</li>
-<li><p>推送线上 使用以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .       #注意这个点</span><br><span class="line">git commit -m &quot;你要说的话&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>收工</p>
-</li>
-</ol>
-<hr>
-<p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -576,6 +520,62 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 搭建个人博客</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
+<p>Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费。</p>
+<p>而Github Pages是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。</p>
+<p>我们就是利用Github Pages服务来搭建自己的博客。</p>
+<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>Jekyll则是为了方便我们调试、预览博客效果的本地环境。</p>
+<span id="more"></span>
+
+<h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h4><p>这一部分不需要详细说明了。先注册<a href="https://github.com/">Github</a>，开启一个新的Repository，取名和你的用户名一致，如<code>你的用户名.github.io</code>，只有这样，Github才会给你的repository以jekyll结构建立模板。</p>
+<p>在设定处，可以选择模板。</p>
+<p>在<a href="https://github.com/jekyll/jekyll/wiki/sites">Jekyll的wiki项目</a>有很多参考模板。你可以查看源码，FORK一份，直接改成自己的用户名来使用。</p>
+<p>当然，涉及很多项目都要相应修改。需要仔细阅读每个文档。</p>
+<h5 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h5><p>你也可以先发表一个test文章，使你的博客生效，公布出来。你就可以通过<code>https://你的用户名.github.io</code>访问了。</p>
+<p>如果你有独立域名，也可以绑定上述地址，具体自行咨询管理商或者Google吧。</p>
+<p>现在，你的博客就已经搭建起来。</p>
+<h4 id="Git-clone-本地化"><a href="#Git-clone-本地化" class="headerlink" title="Git clone 本地化####"></a>Git clone 本地化####</h4><p>使用Windows系统的同学就直接使用Github Desktop来管理吧，十分方便。在Windows下还用<code>Git CMD</code>就真的无法言说了，何必呢？</p>
+<p>简单说说Linux下（以Ubuntu为例）如何管理博客。</p>
+<p>其实原理很简单。就是把repository克隆到本地，在本地写作、修改，再推送差异部分到线上。而调试部分，我们使用了jekyll来预览。</p>
+<ol>
+<li><p>安装Ruby；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ruby-full ruby-bundler</span><br><span class="line">ruby -v #查看ruby版本</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装Jekyll；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gem install jekyll </span><br><span class="line">gem install jekyll-paginate #可能也要sudo</span><br><span class="line">jekyll -v #查看版本</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>搭建博客 如果前面只是开启了博客，未published，这里可以Jekyll新建网站：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jekyll new mySite</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Git Clone博客</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br></pre></td></tr></table></figure>
+
+<p>当然，SSH方式是最快捷的。先建SSH密钥：<code>ssh-keygen -t rsa -C&quot;&#123;name@site.com&#125;&quot;</code>，引号间换成你的内容。生成了私钥<strong>id_rsa</strong>和公钥<strong>id_rsa.pub</strong>，然后到<a href="https://github.com/">Github.com</a>设定SSH密钥，把<strong>id_rsa.pub</strong>的内容全部粘贴到Github上。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:你的用户名/你的仓库名.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地写作 文章在_posts文件夹内。文件名必须按照规范：年-月-日-单词-单词-单词.后缀。</p>
+</li>
+<li><p>预览 前面我们安装了jekyll就可以进行预览了。进入克隆回来的仓库文件夹，运行<code>jekyll serve</code>即可在127.0.0.1:4000浏览器内预览。</p>
+</li>
+<li><p>推送线上 使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .       #注意这个点</span><br><span class="line">git commit -m &quot;你要说的话&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>收工</p>
+</li>
+</ol>
+<hr>
+<p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 2.jekyll博客的若干手记</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
@@ -621,40 +621,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 3.Jekyll的archives免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-3-Jekyll%E7%9A%84archives%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>Jekyll的archives免插件使用</p>
-<h2 id="Post-Archives"><a href="#Post-Archives" class="headerlink" title="Post Archives"></a>Post Archives</h2><p>按照站点选择的方式或主题不同而各有异同。</p>
-<span id="more"></span>
-
-<p>主要的语法是：</p>
-<h3 id="archives-html-文件"><a href="#archives-html-文件" class="headerlink" title="archives.html 文件"></a>archives.html 文件</h3><p>通常<code>archives.html</code>文件会放在站点根目录下方便访问和放置。它的主要内容是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% for post in site.posts %&#125;</span><br><span class="line">  &#123;% capture month %&#125;&#123;&#123; post.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">    &#123;% capture nmonth %&#125;&#123;&#123; post.next.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">        &#123;% if month != nmonth %&#125;</span><br><span class="line">              &#123;% if forloop.index != 1 %&#125;&lt;/ul&gt;&#123;% endif %&#125;</span><br><span class="line">                    &lt;h5&gt;&#123;&#123; post.date | date: &#x27;%B %Y&#x27; &#125;&#125;&lt;/h5&gt;&lt;ul&gt;</span><br><span class="line">                        &#123;% endif %&#125;</span><br><span class="line">                          &lt;li&gt;&lt;span class=&quot;time&quot;&gt;&#123;&#123; post.date | date: &quot;%d/%m/%Y&quot; &#125;&#125;&lt;/span&gt;    &lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">                          &#123;% endfor %&#125;</span><br><span class="line">                          </span><br><span class="line">&#123;% endraw %&#125;                     </span><br></pre></td></tr></table></figure>
-
-<p><code>archives.html</code>中包含YAML头信息格式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">title: </span><br><span class="line">author: RXsweet</span><br><span class="line">comments: false</span><br><span class="line">published: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>或使用个人使用YAML头信息格式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: archives</span><br><span class="line">permalink: /archives/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>文件的作用就是按时间为分类list post。那么，我们需要在某个或某些页面放置一个链接，方便访问。以本站点为例，这个链接放置在侧栏中：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;sidebar-nav-item&quot;&gt;&lt;a href=&quot;&#123;&#123; site.baseurl &#125;&#125;/archives/&quot;&gt;Posts Archives&lt;/a&gt;&lt;/li&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>或者，有时你需要在主页上放置一个链接，例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if page.archives %&#125; &lt;a href=&#x27;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; page.archives &#125;&#125;&#x27;&gt; Posts&lt;/a&gt;&#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>根据站点的实际情况进行修改即可。</p>
-<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/22/website-note/">https://soyee.me/2018/03/22/website-note/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 4.Jekyll的search免插件使用</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-4-Jekyll%E7%9A%84search%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="Jekyll个人博客实现搜索功能"><a href="#Jekyll个人博客实现搜索功能" class="headerlink" title="Jekyll个人博客实现搜索功能"></a>Jekyll个人博客实现搜索功能</h2><p>本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。</p>
@@ -685,6 +651,40 @@
 <hr>
 <p>原文作者地址：<br><a href="https://zoharandroid.github.io/2019-08-01-jekyll%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">https://zoharandroid.github.io/2019-08-01-jekyll个人博客实现搜索功能/</a></p>
 <p><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 3.Jekyll的archives免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-3-Jekyll%E7%9A%84archives%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>Jekyll的archives免插件使用</p>
+<h2 id="Post-Archives"><a href="#Post-Archives" class="headerlink" title="Post Archives"></a>Post Archives</h2><p>按照站点选择的方式或主题不同而各有异同。</p>
+<span id="more"></span>
+
+<p>主要的语法是：</p>
+<h3 id="archives-html-文件"><a href="#archives-html-文件" class="headerlink" title="archives.html 文件"></a>archives.html 文件</h3><p>通常<code>archives.html</code>文件会放在站点根目录下方便访问和放置。它的主要内容是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% for post in site.posts %&#125;</span><br><span class="line">  &#123;% capture month %&#125;&#123;&#123; post.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">    &#123;% capture nmonth %&#125;&#123;&#123; post.next.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">        &#123;% if month != nmonth %&#125;</span><br><span class="line">              &#123;% if forloop.index != 1 %&#125;&lt;/ul&gt;&#123;% endif %&#125;</span><br><span class="line">                    &lt;h5&gt;&#123;&#123; post.date | date: &#x27;%B %Y&#x27; &#125;&#125;&lt;/h5&gt;&lt;ul&gt;</span><br><span class="line">                        &#123;% endif %&#125;</span><br><span class="line">                          &lt;li&gt;&lt;span class=&quot;time&quot;&gt;&#123;&#123; post.date | date: &quot;%d/%m/%Y&quot; &#125;&#125;&lt;/span&gt;    &lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">                          &#123;% endfor %&#125;</span><br><span class="line">                          </span><br><span class="line">&#123;% endraw %&#125;                     </span><br></pre></td></tr></table></figure>
+
+<p><code>archives.html</code>中包含YAML头信息格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">title: </span><br><span class="line">author: RXsweet</span><br><span class="line">comments: false</span><br><span class="line">published: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>或使用个人使用YAML头信息格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: archives</span><br><span class="line">permalink: /archives/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>文件的作用就是按时间为分类list post。那么，我们需要在某个或某些页面放置一个链接，方便访问。以本站点为例，这个链接放置在侧栏中：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;sidebar-nav-item&quot;&gt;&lt;a href=&quot;&#123;&#123; site.baseurl &#125;&#125;/archives/&quot;&gt;Posts Archives&lt;/a&gt;&lt;/li&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>或者，有时你需要在主页上放置一个链接，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if page.archives %&#125; &lt;a href=&#x27;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; page.archives &#125;&#125;&#x27;&gt; Posts&lt;/a&gt;&#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>根据站点的实际情况进行修改即可。</p>
+<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/22/website-note/">https://soyee.me/2018/03/22/website-note/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#101;&#116;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#101;">&#x73;&#119;&#101;&#101;&#116;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#x65;&#x74;&#x72;&#x78;&#64;&#x70;&#x6d;&#46;&#109;&#101;">&#x73;&#119;&#101;&#x65;&#x74;&#x72;&#x78;&#64;&#x70;&#x6d;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1192,13 +1192,19 @@
     <content><![CDATA[<h1 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h1><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://github.com/gedoor/legado/releases/latest">Release · gedoor&#x2F;legado · GitHub</a></p>
 <p><a href="https://miaogongzi.lanzout.com/b01rgkhhe">miaogongzi - 蓝奏 - 更新快</a></p>
 <p><a href="https://yxzhi.lanzoub.com/b03qejqyd">鸭先知 - 蓝奏 - 更新快</a></p>
-<h3 id="订阅源"><a href="#订阅源" class="headerlink" title="订阅源"></a>订阅源</h3><h3 id="miaogongzi-net书源分享-包含下面所有资源"><a href="#miaogongzi-net书源分享-包含下面所有资源" class="headerlink" title="miaogongzi.net书源分享 - 包含下面所有资源"></a><a href="http://yuedu.miaogongzi.net/gx.html">miaogongzi.net书源分享 - 包含下面所有资源</a></h3><h3 id="源仓库-书源网站"><a href="#源仓库-书源网站" class="headerlink" title="源仓库 - 书源网站"></a><a href="http://www.yckceo.com/">源仓库 - 书源网站</a></h3><h3 id="Yiove-书源仓库"><a href="#Yiove-书源仓库" class="headerlink" title="Yiove 书源仓库"></a><a href="https://shuyuan.yiove.com/">Yiove 书源仓库</a></h3><h3 id="一程-x2F-阅读｜书源分享-gitlink"><a href="#一程-x2F-阅读｜书源分享-gitlink" class="headerlink" title="一程&#x2F;阅读｜书源分享 - gitlink"></a><a href="https://www.gitlink.org.cn/yi-c/yd">一程&#x2F;阅读｜书源分享 - gitlink</a></h3><span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json</span><br><span class="line"></span><br><span class="line">https://ghp.ci/https://raw.githubusercontent.com/XIU2/Yuedu/master/shuyuan</span><br><span class="line"></span><br><span class="line">https://yuedu.xiu2.xyz</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>书源:<a href="yuedu://booksource/importonline?src=https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/sy.json?ref=master&access_token=92edf695d430562349cbfac4009fda6ad36817dd">点击此处导入</a></p>
-<p> <code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/sy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
-<p>订阅:</p>
-<p> <code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/dy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
+<h3 id="订阅源"><a href="#订阅源" class="headerlink" title="订阅源"></a>订阅源</h3><ul>
+<li><a href="http://yuedu.miaogongzi.net/gx.html">miaogongzi.net书源分享</a></li>
+<li><a href="http://www.yckceo.com/">源仓库 - 书源网站</a></li>
+<li><a href="https://shuyuan.yiove.com/">Yiove 书源仓库</a></li>
+<li><a href="https://www.gitlink.org.cn/yi-c/yd">一程&#x2F;阅读｜书源分享 - gitlink</a><span id="more"></span>
+注意：可以直接从上面几个书源分享网站找最新的也可以</li>
+</ul>
+<p>现用书源地址：</p>
+<p>XIU2<br><code>https://yuedu.xiu2.xyz/shuyuan</code></p>
+<p><code>https://ghp.ci/https://raw.githubusercontent.com/XIU2/Yuedu/master/shuyuan</code></p>
+<p>大灰狼<br><code>https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json</code></p>
+<p>一程<br><code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/sy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
+<p>订阅:<br>一程<br> <code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/dy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
 <hr>
 <h1 id="关于TTS引擎"><a href="#关于TTS引擎" class="headerlink" title="关于TTS引擎"></a>关于TTS引擎</h1><p>使用方法</p>
 <p>1.看书界面点开【朗读】</p>
@@ -2139,33 +2145,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
-    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
-<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
-</code></pre>
-<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
-</code></pre>
-<span id="more"></span>
-<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
-选择单个repository权限,
-完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
-在下一步`Deploy`,
-完成，部署成功。
-</code></pre>
-<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
-
-OK,大功告成！
-</code></pre>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - hexo博客使用Github Action自动部署</title>
     <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</url>
     <content><![CDATA[<h1 id="hexo博客使用Github-Action自动部署"><a href="#hexo博客使用Github-Action自动部署" class="headerlink" title="hexo博客使用Github Action自动部署"></a>hexo博客使用Github Action自动部署</h1><h2 id="Hexo-博客的Github-Action自动化部署是什么？"><a href="#Hexo-博客的Github-Action自动化部署是什么？" class="headerlink" title="Hexo 博客的Github Action自动化部署是什么？"></a>Hexo 博客的Github Action自动化部署是什么？</h2><p>简单说，就是把hexo博客的源代码上传到github代码仓库，github在代码发生变动的时候，自动通过安装一系列nodejs环境和相关依赖，生成html页面到github pages仓库。</p>
@@ -2208,6 +2187,33 @@ OK,大功告成！
 <h3 id="缺少package-lock-json"><a href="#缺少package-lock-json" class="headerlink" title="缺少package-lock.json"></a>缺少<code>package-lock.json</code></h3><p>package-lock.json作用：</p>
 <p><em>主要解决问题场景：</em><br><em>前景：</em><br>比如你的packgae.json的依赖是”react”: “^17.0.2”，因为有标识符^，所以如果react模块有在17大版本下更新的小版本17.0.3，npm install时候会自动安装17下的最新版本17.0.3<br><em>现象：</em><br>在前景情况下，你本地是”react”: “^17.0.2”，如果这时候react更新”react”: “^17.0.3”，别人npm install的时候，安装就是”react”: “^17.0.3”。这样导致你们版本不一致，可能引起一些相关错误。<br><em>解决：</em><br>package-lock.json：简单来说就是锁定安装模块的版本号。<br>就是在npm install的时候，记录各个模块的版本信息和下载路径，这样别人拉项目npm install时候， 就会依据packgae-lock.json去安装”react”: “^17.0.2”，保证大家依赖一致并且安装模块速度也能提高。<br><em>注意点:</em><br>1.npm安装，没有package-lock.json文件，如果npm版本是5+，会自动生成package-lock.json。有的话会默认依据该文件进行安装而不是package.json。cnpm不支持（忽略）依据package-lock.json文件安装模块，默认依赖package.json进行安装。<br>2.需要更新版本，得去更新package.json里的模块版本，然后npm install，才能同步更新到package-lock.json<br>3.该功能基于npm5+</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了heson大佬的文章和方法<a href="https://www.heson10.com/posts/61031.html">黑石博客 - 利用Github Action实现hexo博客的自动部署</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
+</code></pre>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<span id="more"></span>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
+
+OK,大功告成！
+</code></pre>
 ]]></content>
       <categories>
         <category>经验技术</category>
