@@ -313,93 +313,59 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW - 短信接码平台</title>
-    <url>/2022/03/29/2022-03-29-GFW-%E7%9F%AD%E4%BF%A1%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0/</url>
-    <content><![CDATA[<h1 id="短信接码平台"><a href="#短信接码平台" class="headerlink" title="短信接码平台"></a>短信接码平台</h1><p><a href="https://sms24.me/">https://sms24.me/</a> </p>
-<p><a href="https://receive-sms.cc/">https://receive-sms.cc</a></p>
-<p><a href="https://receive-sms-online.com/">https://receive-sms-online.com</a></p>
-<p><a href="https://getfreesmsnumber.com/">https://getfreesmsnumber.com</a></p>
-<p><a href="http://7sim.net/">http://7sim.net</a></p>
-<p><a href="https://receive-sms-free.net/">https://receive-sms-free.net</a></p>
-<p><a href="http://sms.sellaite.com/">http://sms.sellaite.com</a></p>
+    <title>经验技术 - 搭建个人博客</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
+<p>Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费。</p>
+<p>而Github Pages是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。</p>
+<p>我们就是利用Github Pages服务来搭建自己的博客。</p>
+<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>Jekyll则是为了方便我们调试、预览博客效果的本地环境。</p>
 <span id="more"></span>
 
-<p><a href="https://ch.freephonenum.com/">https://ch.freephonenum.com</a></p>
-<p><a href="https://smsreceivefree.com/">https://smsreceivefree.com</a></p>
-<p><a href="https://zh.mytrashmobile.com/">https://zh.mytrashmobile.com</a></p>
-<p><a href="https://www.receive-sms-online.info/">https://www.receive-sms-online.info</a></p>
-<p><a href="https://receiveasms.com/">https://receiveasms.com</a></p>
-<p><a href="https://sms-online.co/receive-free-sms">https://sms-online.co/receive-free-sms</a></p>
-<p><a href="https://receive-sms.com/">https://receive-sms.com</a></p>
-<p><a href="http://receivefreesms.com/">http://receivefreesms.com/</a></p>
-<p><a href="https://www.receivesmsonline.net/">https://www.receivesmsonline.net/</a></p>
-<p><a href="https://www.freeonlinephone.org/">https://www.freeonlinephone.org/</a></p>
-<p><a href="https://us-phone-number.com/">https://us-phone-number.com</a></p>
-<p><a href="https://temporary-phone-number.com/">https://temporary-phone-number.com</a></p>
-<p><a href="https://www.receivesms.co/">https://www.receivesms.co/</a></p>
-<p><a href="https://www.smstibo.com/">https://www.smstibo.com/</a></p>
-<p><a href="https://pingme.tel/receive-sms-online-cn/">https://pingme.tel/receive-sms-online-cn/</a></p>
-<p><a href="http://receivefreesms.net/">http://receivefreesms.net/</a></p>
-<p><a href="http://receivesmsonline.in/">http://receivesmsonline.in/</a></p>
-<p><a href="https://sms-receive.net/">https://sms-receive.net/</a></p>
-<p><a href="https://www.receivesms.net/">https://www.receivesms.net/</a></p>
-<p>国内免费接码平台 超级云短信：<a href="http://www.bfkdim.com/">http://www.bfkdim.com/</a> </p>
-<p>隐私短信：<a href="https://www.yinsiduanxin.com/">https://www.yinsiduanxin.com</a> </p>
-<p>云短信： <a href="https://www.materialtools.com/">https://www.materialtools.com</a></p>
-<p>在线短信：<a href="http://www.smszk.com/">http://www.smszk.com/</a> </p>
-<p>游客短信：<a href="https://www.visitorsms.com/cn">https://www.visitorsms.com/cn</a> </p>
-<p>免费接码：<a href="https://www.becmd.com/">https://www.becmd.com/</a> </p>
-<p>接码平台：<a href="http://www.114sim.com/">http://www.114sim.com/</a> <a href="http://zg.114sim.com/">http://zg.114sim.com/</a> </p>
-<p>云短信：<a href="https://www.materialtools.com/">https://www.materialtools.com</a> </p>
-<p>免费接码：<a href="http://z-sms.com/">http://z-sms.com/</a> </p>
-<p>云短信：<a href="https://www.zusms.com/">https://www.zusms.com</a> </p>
-<p>免费接码：<a href="https://www.shejiinn.com/">https://www.shejiinn.com/</a> </p>
-<p>云接码：<a href="https://yunjiema.net/">https://yunjiema.net</a> </p>
-<p>云验证码：<a href="https://www.cnwml.com/">https://www.cnwml.com</a> </p>
-<p>免费接码：<a href="https://www.mffac.com/">https://www.mffac.com</a> </p>
-<p>接码科技免费平台：<a href="https://f4.work/">https://f4.work/</a> </p>
-<p>主站<a href="http://jiema.tech/">http://jiema.tech/</a> </p>
-<p>接码号：<a href="https://jiemahao.com/">https://jiemahao.com</a> </p>
-<p>免费接码： <a href="https://mianfeijiema.com/">https://mianfeijiema.com/</a> </p>
-<p>小鸟接码平台： <a href="http://www.xnsms.com/">http://www.xnsms.com/</a> </p>
-<p>zero接码平台： <a href="https://xinghai.party/">https://xinghai.party/</a> </p>
-<p>LotHelper： <a href="https://www.lothelper.com/cn">https://www.lothelper.com/cn</a> </p>
-<p>免费接码平台： <a href="http://www.zsrq.net/">http://www.zsrq.net/</a> </p>
-<p>免费接收短信验证码：<a href="https://www.we39.cn/">https://www.we39.cn</a> </p>
-<p>KaKa接码平台：<a href="http://www.kakasms.com/">http://www.kakasms.com</a></p>
-<p>随用随弃：<a href="https://www.suiyongsuiqi.com/">https://www.suiyongsuiqi.com</a></p>
+<h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h4><p>这一部分不需要详细说明了。先注册<a href="https://github.com/">Github</a>，开启一个新的Repository，取名和你的用户名一致，如<code>你的用户名.github.io</code>，只有这样，Github才会给你的repository以jekyll结构建立模板。</p>
+<p>在设定处，可以选择模板。</p>
+<p>在<a href="https://github.com/jekyll/jekyll/wiki/sites">Jekyll的wiki项目</a>有很多参考模板。你可以查看源码，FORK一份，直接改成自己的用户名来使用。</p>
+<p>当然，涉及很多项目都要相应修改。需要仔细阅读每个文档。</p>
+<h5 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h5><p>你也可以先发表一个test文章，使你的博客生效，公布出来。你就可以通过<code>https://你的用户名.github.io</code>访问了。</p>
+<p>如果你有独立域名，也可以绑定上述地址，具体自行咨询管理商或者Google吧。</p>
+<p>现在，你的博客就已经搭建起来。</p>
+<h4 id="Git-clone-本地化"><a href="#Git-clone-本地化" class="headerlink" title="Git clone 本地化####"></a>Git clone 本地化####</h4><p>使用Windows系统的同学就直接使用Github Desktop来管理吧，十分方便。在Windows下还用<code>Git CMD</code>就真的无法言说了，何必呢？</p>
+<p>简单说说Linux下（以Ubuntu为例）如何管理博客。</p>
+<p>其实原理很简单。就是把repository克隆到本地，在本地写作、修改，再推送差异部分到线上。而调试部分，我们使用了jekyll来预览。</p>
+<ol>
+<li><p>安装Ruby；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ruby-full ruby-bundler</span><br><span class="line">ruby -v #查看ruby版本</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装Jekyll；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gem install jekyll </span><br><span class="line">gem install jekyll-paginate #可能也要sudo</span><br><span class="line">jekyll -v #查看版本</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>搭建博客 如果前面只是开启了博客，未published，这里可以Jekyll新建网站：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jekyll new mySite</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Git Clone博客</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br></pre></td></tr></table></figure>
+
+<p>当然，SSH方式是最快捷的。先建SSH密钥：<code>ssh-keygen -t rsa -C&quot;&#123;name@site.com&#125;&quot;</code>，引号间换成你的内容。生成了私钥<strong>id_rsa</strong>和公钥<strong>id_rsa.pub</strong>，然后到<a href="https://github.com/">Github.com</a>设定SSH密钥，把<strong>id_rsa.pub</strong>的内容全部粘贴到Github上。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:你的用户名/你的仓库名.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地写作 文章在_posts文件夹内。文件名必须按照规范：年-月-日-单词-单词-单词.后缀。</p>
+</li>
+<li><p>预览 前面我们安装了jekyll就可以进行预览了。进入克隆回来的仓库文件夹，运行<code>jekyll serve</code>即可在127.0.0.1:4000浏览器内预览。</p>
+</li>
+<li><p>推送线上 使用以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .       #注意这个点</span><br><span class="line">git commit -m &quot;你要说的话&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>收工</p>
+</li>
+</ol>
 <hr>
-<p>接码平台2  SMS：</p>
-<p><a href="https://www.oncesms.com/">https://www.oncesms.com/</a></p>
-<p><a href="https://www.tesms.net/">https://www.tesms.net/</a> </p>
-<p><a href="https://smscodeonline.com/">https://smscodeonline.com/</a> </p>
-<p><a href="https://bestsms.xyz/">https://bestsms.xyz/</a> </p>
-<p>无敌云短信：<a href="https://clearcode.cn/">https://clearcode.cn/</a> </p>
-<p>云际云短信：<a href="https://yunjisms.xyz/">https://yunjisms.xyz/</a> </p>
-<p>云短信：<a href="https://www.storytrain.info/">https://www.storytrain.info/</a></p>
-<p><a href="https://k8s1.com/messages/2394893562">https://k8s1.com/messages/2394893562</a></p>
-<p><a href="https://k8s1.com/#"><strong>极速接码平台</strong></a><a href="https://k8s1.com/">https://k8s1.com/</a></p>
-<p><a href="https://jiema.pub/">https://jiema.pub/</a></p>
-<p><a href="https://www.free-sms-receive.com/">https://www.free-sms-receive.com/</a></p>
-<p>“Telegram code” site:k8s1.com</p>
-<hr>
-<p>小技巧</p>
-<ul>
-<li>关键词“Receive+SMS”</li>
-</ul>
-<p>搜索免费接码平台 <a href="https://www.google.com/search?q=Receive+SMS">https://www.google.com/search?q=Receive+SMS</a></p>
-<ul>
-<li>短信提示搜索：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Yandex Vash kod podtverzhdeniya</span><br><span class="line">-------------------------------</span><br><span class="line">Telegram code</span><br><span class="line">telegram code  receive sms</span><br><span class="line">Telegram code: </span><br><span class="line">You can also tap on this link to log in: https://t.me/login/</span><br><span class="line">-------------------------------</span><br><span class="line">https://mianfeijiema.com/sms/34604385313</span><br><span class="line">https://sms24.info/ru/numbers/79917360586/</span><br><span class="line">https://receive-sms-free.cc/Free-Russia-Phone-Number/79017707294/</span><br><span class="line">https://receive-sms-free.cc/Free-Russia-Phone-Number/79633407920/</span><br></pre></td></tr></table></figure>
+<p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
 ]]></content>
       <categories>
-        <category>GFW</category>
+        <category>经验技术</category>
       </categories>
       <tags>
-        <tag>GFW</tag>
-        <tag>sms</tag>
-        <tag>接码</tag>
+        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -520,59 +486,93 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 搭建个人博客</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
-<p>Github是全球知名的使用Git系统的一个免费远程仓库（Repository），倡导开源理念，若要将自己的代码仓库私有则需付费。</p>
-<p>而Github Pages是Github提供给托管项目的开发者一个更个性化展示自己项目的方法，使用GitHub Pages服务可以编写同样是托管在Github上的静态网页。</p>
-<p>我们就是利用Github Pages服务来搭建自己的博客。</p>
-<h3 id="Jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</h3><p>Jekyll则是为了方便我们调试、预览博客效果的本地环境。</p>
+    <title>GFW - 短信接码平台</title>
+    <url>/2022/03/29/2022-03-29-GFW-%E7%9F%AD%E4%BF%A1%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0/</url>
+    <content><![CDATA[<h1 id="短信接码平台"><a href="#短信接码平台" class="headerlink" title="短信接码平台"></a>短信接码平台</h1><p><a href="https://sms24.me/">https://sms24.me/</a> </p>
+<p><a href="https://receive-sms.cc/">https://receive-sms.cc</a></p>
+<p><a href="https://receive-sms-online.com/">https://receive-sms-online.com</a></p>
+<p><a href="https://getfreesmsnumber.com/">https://getfreesmsnumber.com</a></p>
+<p><a href="http://7sim.net/">http://7sim.net</a></p>
+<p><a href="https://receive-sms-free.net/">https://receive-sms-free.net</a></p>
+<p><a href="http://sms.sellaite.com/">http://sms.sellaite.com</a></p>
 <span id="more"></span>
 
-<h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h4><p>这一部分不需要详细说明了。先注册<a href="https://github.com/">Github</a>，开启一个新的Repository，取名和你的用户名一致，如<code>你的用户名.github.io</code>，只有这样，Github才会给你的repository以jekyll结构建立模板。</p>
-<p>在设定处，可以选择模板。</p>
-<p>在<a href="https://github.com/jekyll/jekyll/wiki/sites">Jekyll的wiki项目</a>有很多参考模板。你可以查看源码，FORK一份，直接改成自己的用户名来使用。</p>
-<p>当然，涉及很多项目都要相应修改。需要仔细阅读每个文档。</p>
-<h5 id="开启博客"><a href="#开启博客" class="headerlink" title="开启博客"></a>开启博客</h5><p>你也可以先发表一个test文章，使你的博客生效，公布出来。你就可以通过<code>https://你的用户名.github.io</code>访问了。</p>
-<p>如果你有独立域名，也可以绑定上述地址，具体自行咨询管理商或者Google吧。</p>
-<p>现在，你的博客就已经搭建起来。</p>
-<h4 id="Git-clone-本地化"><a href="#Git-clone-本地化" class="headerlink" title="Git clone 本地化####"></a>Git clone 本地化####</h4><p>使用Windows系统的同学就直接使用Github Desktop来管理吧，十分方便。在Windows下还用<code>Git CMD</code>就真的无法言说了，何必呢？</p>
-<p>简单说说Linux下（以Ubuntu为例）如何管理博客。</p>
-<p>其实原理很简单。就是把repository克隆到本地，在本地写作、修改，再推送差异部分到线上。而调试部分，我们使用了jekyll来预览。</p>
-<ol>
-<li><p>安装Ruby；</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install ruby-full ruby-bundler</span><br><span class="line">ruby -v #查看ruby版本</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装Jekyll；</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gem install jekyll </span><br><span class="line">gem install jekyll-paginate #可能也要sudo</span><br><span class="line">jekyll -v #查看版本</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>搭建博客 如果前面只是开启了博客，未published，这里可以Jekyll新建网站：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jekyll new mySite</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Git Clone博客</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</span><br></pre></td></tr></table></figure>
-
-<p>当然，SSH方式是最快捷的。先建SSH密钥：<code>ssh-keygen -t rsa -C&quot;&#123;name@site.com&#125;&quot;</code>，引号间换成你的内容。生成了私钥<strong>id_rsa</strong>和公钥<strong>id_rsa.pub</strong>，然后到<a href="https://github.com/">Github.com</a>设定SSH密钥，把<strong>id_rsa.pub</strong>的内容全部粘贴到Github上。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:你的用户名/你的仓库名.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地写作 文章在_posts文件夹内。文件名必须按照规范：年-月-日-单词-单词-单词.后缀。</p>
-</li>
-<li><p>预览 前面我们安装了jekyll就可以进行预览了。进入克隆回来的仓库文件夹，运行<code>jekyll serve</code>即可在127.0.0.1:4000浏览器内预览。</p>
-</li>
-<li><p>推送线上 使用以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .       #注意这个点</span><br><span class="line">git commit -m &quot;你要说的话&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>收工</p>
-</li>
-</ol>
+<p><a href="https://ch.freephonenum.com/">https://ch.freephonenum.com</a></p>
+<p><a href="https://smsreceivefree.com/">https://smsreceivefree.com</a></p>
+<p><a href="https://zh.mytrashmobile.com/">https://zh.mytrashmobile.com</a></p>
+<p><a href="https://www.receive-sms-online.info/">https://www.receive-sms-online.info</a></p>
+<p><a href="https://receiveasms.com/">https://receiveasms.com</a></p>
+<p><a href="https://sms-online.co/receive-free-sms">https://sms-online.co/receive-free-sms</a></p>
+<p><a href="https://receive-sms.com/">https://receive-sms.com</a></p>
+<p><a href="http://receivefreesms.com/">http://receivefreesms.com/</a></p>
+<p><a href="https://www.receivesmsonline.net/">https://www.receivesmsonline.net/</a></p>
+<p><a href="https://www.freeonlinephone.org/">https://www.freeonlinephone.org/</a></p>
+<p><a href="https://us-phone-number.com/">https://us-phone-number.com</a></p>
+<p><a href="https://temporary-phone-number.com/">https://temporary-phone-number.com</a></p>
+<p><a href="https://www.receivesms.co/">https://www.receivesms.co/</a></p>
+<p><a href="https://www.smstibo.com/">https://www.smstibo.com/</a></p>
+<p><a href="https://pingme.tel/receive-sms-online-cn/">https://pingme.tel/receive-sms-online-cn/</a></p>
+<p><a href="http://receivefreesms.net/">http://receivefreesms.net/</a></p>
+<p><a href="http://receivesmsonline.in/">http://receivesmsonline.in/</a></p>
+<p><a href="https://sms-receive.net/">https://sms-receive.net/</a></p>
+<p><a href="https://www.receivesms.net/">https://www.receivesms.net/</a></p>
+<p>国内免费接码平台 超级云短信：<a href="http://www.bfkdim.com/">http://www.bfkdim.com/</a> </p>
+<p>隐私短信：<a href="https://www.yinsiduanxin.com/">https://www.yinsiduanxin.com</a> </p>
+<p>云短信： <a href="https://www.materialtools.com/">https://www.materialtools.com</a></p>
+<p>在线短信：<a href="http://www.smszk.com/">http://www.smszk.com/</a> </p>
+<p>游客短信：<a href="https://www.visitorsms.com/cn">https://www.visitorsms.com/cn</a> </p>
+<p>免费接码：<a href="https://www.becmd.com/">https://www.becmd.com/</a> </p>
+<p>接码平台：<a href="http://www.114sim.com/">http://www.114sim.com/</a> <a href="http://zg.114sim.com/">http://zg.114sim.com/</a> </p>
+<p>云短信：<a href="https://www.materialtools.com/">https://www.materialtools.com</a> </p>
+<p>免费接码：<a href="http://z-sms.com/">http://z-sms.com/</a> </p>
+<p>云短信：<a href="https://www.zusms.com/">https://www.zusms.com</a> </p>
+<p>免费接码：<a href="https://www.shejiinn.com/">https://www.shejiinn.com/</a> </p>
+<p>云接码：<a href="https://yunjiema.net/">https://yunjiema.net</a> </p>
+<p>云验证码：<a href="https://www.cnwml.com/">https://www.cnwml.com</a> </p>
+<p>免费接码：<a href="https://www.mffac.com/">https://www.mffac.com</a> </p>
+<p>接码科技免费平台：<a href="https://f4.work/">https://f4.work/</a> </p>
+<p>主站<a href="http://jiema.tech/">http://jiema.tech/</a> </p>
+<p>接码号：<a href="https://jiemahao.com/">https://jiemahao.com</a> </p>
+<p>免费接码： <a href="https://mianfeijiema.com/">https://mianfeijiema.com/</a> </p>
+<p>小鸟接码平台： <a href="http://www.xnsms.com/">http://www.xnsms.com/</a> </p>
+<p>zero接码平台： <a href="https://xinghai.party/">https://xinghai.party/</a> </p>
+<p>LotHelper： <a href="https://www.lothelper.com/cn">https://www.lothelper.com/cn</a> </p>
+<p>免费接码平台： <a href="http://www.zsrq.net/">http://www.zsrq.net/</a> </p>
+<p>免费接收短信验证码：<a href="https://www.we39.cn/">https://www.we39.cn</a> </p>
+<p>KaKa接码平台：<a href="http://www.kakasms.com/">http://www.kakasms.com</a></p>
+<p>随用随弃：<a href="https://www.suiyongsuiqi.com/">https://www.suiyongsuiqi.com</a></p>
 <hr>
-<p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
+<p>接码平台2  SMS：</p>
+<p><a href="https://www.oncesms.com/">https://www.oncesms.com/</a></p>
+<p><a href="https://www.tesms.net/">https://www.tesms.net/</a> </p>
+<p><a href="https://smscodeonline.com/">https://smscodeonline.com/</a> </p>
+<p><a href="https://bestsms.xyz/">https://bestsms.xyz/</a> </p>
+<p>无敌云短信：<a href="https://clearcode.cn/">https://clearcode.cn/</a> </p>
+<p>云际云短信：<a href="https://yunjisms.xyz/">https://yunjisms.xyz/</a> </p>
+<p>云短信：<a href="https://www.storytrain.info/">https://www.storytrain.info/</a></p>
+<p><a href="https://k8s1.com/messages/2394893562">https://k8s1.com/messages/2394893562</a></p>
+<p><a href="https://k8s1.com/#"><strong>极速接码平台</strong></a><a href="https://k8s1.com/">https://k8s1.com/</a></p>
+<p><a href="https://jiema.pub/">https://jiema.pub/</a></p>
+<p><a href="https://www.free-sms-receive.com/">https://www.free-sms-receive.com/</a></p>
+<p>“Telegram code” site:k8s1.com</p>
+<hr>
+<p>小技巧</p>
+<ul>
+<li>关键词“Receive+SMS”</li>
+</ul>
+<p>搜索免费接码平台 <a href="https://www.google.com/search?q=Receive+SMS">https://www.google.com/search?q=Receive+SMS</a></p>
+<ul>
+<li>短信提示搜索：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Yandex Vash kod podtverzhdeniya</span><br><span class="line">-------------------------------</span><br><span class="line">Telegram code</span><br><span class="line">telegram code  receive sms</span><br><span class="line">Telegram code: </span><br><span class="line">You can also tap on this link to log in: https://t.me/login/</span><br><span class="line">-------------------------------</span><br><span class="line">https://mianfeijiema.com/sms/34604385313</span><br><span class="line">https://sms24.info/ru/numbers/79917360586/</span><br><span class="line">https://receive-sms-free.cc/Free-Russia-Phone-Number/79017707294/</span><br><span class="line">https://receive-sms-free.cc/Free-Russia-Phone-Number/79633407920/</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>经验技术</category>
+        <category>GFW</category>
       </categories>
       <tags>
-        <tag>经验技术</tag>
+        <tag>GFW</tag>
+        <tag>sms</tag>
+        <tag>接码</tag>
       </tags>
   </entry>
   <entry>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#x65;&#116;&#114;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;">&#x73;&#119;&#x65;&#x65;&#116;&#114;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#101;&#116;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#101;">&#x73;&#119;&#101;&#101;&#116;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1190,20 +1190,15 @@
     <title>软件-apk-阅读3.0</title>
     <url>/2022/05/11/2022-05-11-%E8%BD%AF%E4%BB%B6-apk-%E9%98%85%E8%AF%BB3.0/</url>
     <content><![CDATA[<h1 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h1><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://github.com/gedoor/legado/releases/latest">Release · gedoor&#x2F;legado · GitHub</a></p>
-<p><a href="https://www.coolapk.com/apk/io.legado.app.release">阅读 - 酷安</a></p>
-<p><a href="https://kunfei.lanzoui.com/b0f810h4b">阅读3.0 - 蓝奏</a></p>
 <p><a href="https://miaogongzi.lanzout.com/b01rgkhhe">miaogongzi - 蓝奏 - 更新快</a></p>
 <p><a href="https://yxzhi.lanzoub.com/b03qejqyd">鸭先知 - 蓝奏 - 更新快</a></p>
-<h3 id="订阅源"><a href="#订阅源" class="headerlink" title="订阅源"></a>订阅源</h3><h3 id="miaogongzi-net书源分享-包含下面所有资源"><a href="#miaogongzi-net书源分享-包含下面所有资源" class="headerlink" title="miaogongzi.net书源分享 - 包含下面所有资源"></a><a href="http://yuedu.miaogongzi.net/gx.html">miaogongzi.net书源分享 - 包含下面所有资源</a></h3><h3 id="源仓库-书源网站"><a href="#源仓库-书源网站" class="headerlink" title="源仓库 - 书源网站"></a><a href="http://www.yckceo.com/">源仓库 - 书源网站</a></h3><h3 id="Yiove-书源仓库"><a href="#Yiove-书源仓库" class="headerlink" title="Yiove 书源仓库"></a><a href="https://shuyuan.yiove.com/">Yiove 书源仓库</a></h3><span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://www.gitlink.org.cn/yi-c/yd</span><br><span class="line"></span><br><span class="line">http://mirror.ghproxy.com/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json</span><br><span class="line"></span><br><span class="line">https://ghp.ci/https://raw.githubusercontent.com/XIU2/Yuedu/master/shuyuan</span><br><span class="line"></span><br><span class="line">https://yuedu.xiu2.xyz</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="订阅源"><a href="#订阅源" class="headerlink" title="订阅源"></a>订阅源</h3><h3 id="miaogongzi-net书源分享-包含下面所有资源"><a href="#miaogongzi-net书源分享-包含下面所有资源" class="headerlink" title="miaogongzi.net书源分享 - 包含下面所有资源"></a><a href="http://yuedu.miaogongzi.net/gx.html">miaogongzi.net书源分享 - 包含下面所有资源</a></h3><h3 id="源仓库-书源网站"><a href="#源仓库-书源网站" class="headerlink" title="源仓库 - 书源网站"></a><a href="http://www.yckceo.com/">源仓库 - 书源网站</a></h3><h3 id="Yiove-书源仓库"><a href="#Yiove-书源仓库" class="headerlink" title="Yiove 书源仓库"></a><a href="https://shuyuan.yiove.com/">Yiove 书源仓库</a></h3><h3 id="一程-x2F-阅读｜书源分享-gitlink"><a href="#一程-x2F-阅读｜书源分享-gitlink" class="headerlink" title="一程&#x2F;阅读｜书源分享 - gitlink"></a><a href="https://www.gitlink.org.cn/yi-c/yd">一程&#x2F;阅读｜书源分享 - gitlink</a></h3><span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json</span><br><span class="line"></span><br><span class="line">https://ghp.ci/https://raw.githubusercontent.com/XIU2/Yuedu/master/shuyuan</span><br><span class="line"></span><br><span class="line">https://yuedu.xiu2.xyz</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h4 id="1-一程-大佬"><a href="#1-一程-大佬" class="headerlink" title="1. 一程(大佬)"></a>1. 一程(大佬)</h4><p>书源:<a href="legado://import/bookSource?src=https://code.gitlink.org.cn/yi-c/yd/raw/branch/master/sy.json">点击此处导入</a></p>
-<p> <code>https://code.gitlink.org.cn/yi-c/yd/raw/branch/master/sy.json</code></p>
-<p>订阅:<a href="legado://import/rssSource?src=https://code.gitlink.org.cn/yi-c/yd/raw/branch/master/dy.json">点击此处导入</a></p>
-<p> <code>https://code.gitlink.org.cn/yi-c/yd/raw/branch/master/dy.json</code></p>
-<p>发布地址：<a href="https://www.gitlink.org.cn/yi-c/yd/tree/master/README.md">README.md · 一程&#x2F;阅读｜书源分享 - gitlink</a></p>
-<hr>
-<h2 id="收集书源的大佬"><a href="#收集书源的大佬" class="headerlink" title="收集书源的大佬"></a>收集书源的大佬</h2><p><a href="https://www.hztdst.com/4789.html">好人卡资源网 - 烈日下的男人 - 收集书源的大佬</a></p>
+<p>书源:<a href="yuedu://booksource/importonline?src=https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/sy.json?ref=master&access_token=92edf695d430562349cbfac4009fda6ad36817dd">点击此处导入</a></p>
+<p> <code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/sy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
+<p>订阅:</p>
+<p> <code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/dy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
 <hr>
 <h1 id="关于TTS引擎"><a href="#关于TTS引擎" class="headerlink" title="关于TTS引擎"></a>关于TTS引擎</h1><p>使用方法</p>
 <p>1.看书界面点开【朗读】</p>
@@ -1426,24 +1421,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
-    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
-<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
-<span id="more"></span>
-
-<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk - 背景去除器 - 抠图</title>
     <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%A0%E5%9B%BE/</url>
     <content><![CDATA[<h1 id="背景去除器-抠图"><a href="#背景去除器-抠图" class="headerlink" title="背景去除器 - 抠图"></a>背景去除器 - 抠图</h1><p><a href="https://apphot.cc/33162.html">https://apphot.cc/33162.html</a></p>
@@ -1458,6 +1435,24 @@
 <h5 id="2-抠图换背景"><a href="#2-抠图换背景" class="headerlink" title="2.抠图换背景"></a>2.抠图换背景</h5><p>| 软件功能<br>1、智能抠图：运用最新的AI技术，精确的识别功能，帮你轻松实现抠图，生成透明背景图换背景<br>2、证件照：多种尺寸选择，随时随地都可以进行拍摄证件照，让你足不出户就拿到美美的证件照<br>3、老照片修复：珍贵的老照片却由于时间久远变得模糊不清，使用照片修复功能，就可以自动修复照片使其清晰度提高，完美还原其本来面貌<br>4、图片编辑：支持对图片进行裁剪、压缩、修改尺寸和格式转换。使用编辑功能，简单的几步操作，轻松满足你的照片编辑需求</p>
 <p>| 软件特色<br>1、万能抠图消除神器&amp;趣味特效功能<br>2、视频换脸一张照片变身视频主角<br>3、智能抠图，发丝级精准抠图，一键换背景<br>4、高级消除笔，快速擦除各类照片水印<br>5、趣味特效，卡通头像、年龄性别变化、动漫化<br>6、新增抠图，自定义添加各类贴纸</p>
 <h5 id="3-PhotoRoom"><a href="#3-PhotoRoom" class="headerlink" title="3.PhotoRoom"></a>3.PhotoRoom</h5><h5 id="4-Background-Eraser-Remove-BG-v2-102-26-Pro-图像背景擦除工具"><a href="#4-Background-Eraser-Remove-BG-v2-102-26-Pro-图像背景擦除工具" class="headerlink" title="4.Background Eraser - Remove BG v2.102.26 Pro(图像背景擦除工具)"></a>4.Background Eraser - Remove BG v2.102.26 Pro(图像背景擦除工具)</h5><h5 id="5-PickU-Photo-Editor-Background-Changer-amp-Collage-v3-6-1-b224-Premium-一键抠图"><a href="#5-PickU-Photo-Editor-Background-Changer-amp-Collage-v3-6-1-b224-Premium-一键抠图" class="headerlink" title="5. PickU - Photo Editor Background Changer &amp; Collage v3.6.1 b224 Premium - 一键抠图"></a>5. PickU - Photo Editor Background Changer &amp; Collage v3.6.1 b224 Premium - 一键抠图</h5>]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
+    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
+<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
+<span id="more"></span>
+
+<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
       <categories>
         <category>软件</category>
       </categories>
