@@ -143,82 +143,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW - Github连接访问的几种方法</title>
-    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
-<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
-<span id="more"></span>
-
-<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
-<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
-</li>
-<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
-</li>
-<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
-</li>
-</ol>
-<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
-<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
-<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
-<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
-<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
-<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
-<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
-</ol>
-<hr>
-<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
-<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
-</li>
-<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
-</li>
-<li></li>
-</ul>
-<ol>
-<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
-<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
-<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
-<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
-<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
-</ol>
-<hr>
-<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
-<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
-</ul>
-<ol>
-<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
-</li>
-<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
-</li>
-<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
-</li>
-</ol>
-<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
-<hr>
-<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
-<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
-</ul>
-<hr>
-<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
-<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
-<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
-<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
-<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
-<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
-<hr>
-<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
     <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
     <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
@@ -304,6 +228,82 @@
 <li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a>      - 多个API</li>
 </ul>
 <hr>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GFW - Github连接访问的几种方法</title>
+    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
+<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
+<span id="more"></span>
+
+<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
+<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
+</li>
+<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
+</li>
+<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
+</li>
+</ol>
+<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
+<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
+<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
+<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
+<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
+<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
+<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
+</ol>
+<hr>
+<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
+<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
+</li>
+<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
+</li>
+<li></li>
+</ul>
+<ol>
+<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
+<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
+<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
+<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
+<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
+</ol>
+<hr>
+<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
+<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
+</ul>
+<ol>
+<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
+</li>
+<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
+</li>
+<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
+</li>
+</ol>
+<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
+<hr>
+<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
+<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
+</ul>
+<hr>
+<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
+<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
+<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
+<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
+<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
+<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
+<hr>
+<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
 ]]></content>
       <categories>
         <category>GFW</category>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#101;&#116;&#114;&#120;&#x40;&#x70;&#109;&#46;&#109;&#101;">&#x73;&#x77;&#101;&#101;&#116;&#114;&#120;&#x40;&#x70;&#109;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#101;&#116;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#101;">&#x73;&#119;&#x65;&#101;&#116;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1367,9 +1367,7 @@
 <p><a href="https://www.ghxi.com/?s=wps">https://www.ghxi.com/?s=wps</a></p>
 <p><a href="https://yoyodadada.lanzouw.com/b07pspuf">yoyodadada大佬 蓝凑云</a></p>
 <p>WPS Office移动专业版通用激活密钥：</p>
-<p>YA63N-2KPNK-FETLY-MKR89-TPJRE</p>
-<p>GL9QG-DNC62-6LCMG-DRQTL-QR9HD</p>
-<p>RPJCF-8Q8BP-YA2X2-R29VC-JY3JC</p>
+<p>RPJCF-8Q8BP-YA2X2-R29VC-JY3JC  - 现用</p>
 <p>WUYPK-9FXD2-GYBGB-39CCW-GXXYH</p>
 <p>R8R8P-MTT6F-KLRPM-J7CAB-PJM8C</p>
 <p>7LR67-WTXPA-KLUHV-GEK2E-QW4CK</p>
@@ -1730,30 +1728,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
-<span id="more"></span>
-
-<p>分享地址</p>
-<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
-<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
-<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
-<p>下载地址</p>
-<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
-<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
-<hr>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 电脑优化清理</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>电脑优化清理工具</p>
@@ -1773,6 +1747,30 @@
 <p>分享页：<br><a href="https://www.ghxi.com/processlasso.html">https://www.ghxi.com/processlasso.html</a></p>
 <p>下载地址：</p>
 <p>已高速(如有密码：3519)<a href="http://ct.ghpym.com/d/7369060-41220817-7cf748">http://ct.ghpym.com/d/7369060-41220817-7cf748</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
+<span id="more"></span>
+
+<p>分享地址</p>
+<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
+<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
+<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
+<p>下载地址</p>
+<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
+<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
+<hr>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2117,33 +2115,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
-    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
-<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
-</code></pre>
-<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
-</code></pre>
-<span id="more"></span>
-<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
-选择单个repository权限,
-完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
-在下一步`Deploy`,
-完成，部署成功。
-</code></pre>
-<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
-
-OK,大功告成！
-</code></pre>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 博客从Jekyll更换到Hexo</title>
     <url>/2022/08/09/2022-08-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E4%BB%8EJekyll%E6%9B%B4%E6%8D%A2%E5%88%B0Hexo/</url>
     <content><![CDATA[<h1 id="博客从Jekyll更换到Hexo"><a href="#博客从Jekyll更换到Hexo" class="headerlink" title="博客从Jekyll更换到Hexo"></a>博客从Jekyll更换到Hexo</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>更换原因：1.电脑系统升级了，Win10x64<br>          2.Vercel对Jekyll不友好，不支持<code>Liquid</code>模板语言来处理模板<br>          3.Hexo主题的好多问题search可以解决</p>
@@ -2163,6 +2134,33 @@ OK,大功告成！
 
 <h3 id="NexT主题设置"><a href="#NexT主题设置" class="headerlink" title="NexT主题设置"></a>NexT主题设置</h3><p>在<code>themes\next\</code>里面找到<code>_config.yml主题配置文件</code>,<br>    1.修改<code>Schemes</code>,自己使用的是<code>scheme: Gemini</code><br>    2.在<code>menu:</code>下面根据自己需要修改<br>    3.在<code>avatar:</code>下面修改博主图片<br>    4.在<code>favicon:</code>下面修改站点图标<br>    5.更多修改在<code>主题配置文件</code>自己探索</p>
 <h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><p>后面根据Github Actions + Vercel 实现自动部署 + 双线网站；</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
+</code></pre>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<span id="more"></span>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
+
+OK,大功告成！
+</code></pre>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2498,10 +2496,15 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- wifi万能钥匙</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
-    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
-<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
+    <title>软件 - apk- gif助手</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-gif%E5%8A%A9%E6%89%8B/</url>
+    <content><![CDATA[<h1 id="gif助手"><a href="#gif助手" class="headerlink" title="gif助手"></a>gif助手</h1><p>一款非常好用的GIF工具，常用来在手机上制作GIF动图。</p>
+<p>支持图片合成、视频合成、直接拍摄、录屏转GIF。</p>
+<p>也可以一帧一帧的对GIF进行修改。</p>
+<p>以及反向操作，比如把GIF转换成视频，总之是非常强大，功能超棒。</p>
+<p>此版本已解锁高级版，纯净无广告。</p>
+<p>下载地址：<a href="https://wwd.lanzout.com/b02plrrcf">https://wwd.lanzout.com/b02plrrcf</a></p>
+<p>原文地址：<a href="https://www.iapps.me/archives/5736">https://www.iapps.me/archives/5736</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2512,15 +2515,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- gif助手</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-gif%E5%8A%A9%E6%89%8B/</url>
-    <content><![CDATA[<h1 id="gif助手"><a href="#gif助手" class="headerlink" title="gif助手"></a>gif助手</h1><p>一款非常好用的GIF工具，常用来在手机上制作GIF动图。</p>
-<p>支持图片合成、视频合成、直接拍摄、录屏转GIF。</p>
-<p>也可以一帧一帧的对GIF进行修改。</p>
-<p>以及反向操作，比如把GIF转换成视频，总之是非常强大，功能超棒。</p>
-<p>此版本已解锁高级版，纯净无广告。</p>
-<p>下载地址：<a href="https://wwd.lanzout.com/b02plrrcf">https://wwd.lanzout.com/b02plrrcf</a></p>
-<p>原文地址：<a href="https://www.iapps.me/archives/5736">https://www.iapps.me/archives/5736</a></p>
+    <title>软件 - apk- wifi万能钥匙</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
+    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
+<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
