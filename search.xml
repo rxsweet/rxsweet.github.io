@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#101;&#x65;&#116;&#x72;&#120;&#64;&#x70;&#x6d;&#46;&#109;&#x65;">&#115;&#119;&#101;&#x65;&#116;&#x72;&#120;&#64;&#x70;&#x6d;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#101;&#x74;&#114;&#120;&#64;&#112;&#109;&#x2e;&#x6d;&#101;">&#x73;&#119;&#101;&#101;&#x74;&#114;&#120;&#64;&#112;&#109;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2259,6 +2259,29 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
+<span id="more"></span>
+
+<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
+<p>然后还需要对对应对文章进行设置，有两种方法</p>
+<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
+<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - Alist 网盘整合加载</title>
     <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
@@ -2283,29 +2306,6 @@ OK,大功告成！
         <tag>软件</tag>
         <tag>win</tag>
         <tag>网盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
-    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
-<span id="more"></span>
-
-<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
-<p>然后还需要对对应对文章进行设置，有两种方法</p>
-<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
-<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -2468,10 +2468,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 音乐剪辑</title>
-    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
-    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
-<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
+    <title>软件 - apk - 免费企业查询app</title>
+    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
+    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
+<span id="more"></span>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2483,10 +2483,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 免费企业查询app</title>
-    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
-    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
-<span id="more"></span>
+    <title>软件 - apk - 音乐剪辑</title>
+    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
+    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
+<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2646,6 +2646,8 @@ OK,大功告成！
 </ul>
 <ul>
 <li>海阔视界｜小程序：<ul>
+<li><p>设置 &gt; 小程序订阅 &gt; 添加 &gt; 输入下面网址(只输入网址就行) &gt; ok (优先使用这个方法)</p>
+</li>
 <li><p>设置 &gt; 剪贴板口令导入 &gt; 贴上 &gt; ok</p>
 </li>
 <li><p>更新合集 -或者复制下面代码修改后打开软件：<br><code>￥home_rule_url￥https://rxsub.eu.org/hiker/rx.json</code></p>
