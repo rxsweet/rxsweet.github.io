@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GFW-1-Tools</title>
+    <url>/2022/03/29/2022-03-29-GFW-1-Tools/</url>
+    <content><![CDATA[<p>这位大佬详细介绍过使用<br><a href="https://merlinblog.xyz/wiki/cfw.html">https://merlinblog.xyz/wiki/cfw.html</a></p>
+<p>个人使用的 WinXray，Clash。</p>
+<span id="more"></span>
+<h1 id="clash-and-winxray"><a href="#clash-and-winxray" class="headerlink" title="clash and winxray"></a>clash and winxray</h1><ul>
+<li><p>Clash 家族</p>
+<p> Clash for Android 终于更新了支持 SSR 的新内核!!<br> 至此三大平台的 Clash 客户端都支持了 SSR，可喜可贺 🎉🎉🎉</p>
+<ul>
+<li><p>下载地址：</p>
+</li>
+<li><p>Clash for Windows (<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg&#x2F;releases</a>)</p>
+</li>
+<li><p>Clash for Android (<a href="https://github.com/Kr328/ClashForAndroid/releases">https://github.com/Kr328/ClashForAndroid/releases</a>)</p>
+<ul>
+<li>自用地址<a href="https://download.kstore.space/download/4901/Clash_Android.apk">Clash_for_Android</a>,<a href="https://download.kstore.space/download/4901/ClashMeta_Android.apk">ClashMeta_Android</a></li>
+</ul>
+</li>
+<li><p>ClashX (<a href="https://github.com/yichengchen/clashX/releases">https://github.com/yichengchen/clashX/releases</a>)</p>
+</li>
+<li><p>Clash Core (<a href="https://github.com/Dreamacro/clash/releases">https://github.com/Dreamacro/clash/releases</a>)</p>
+<ul>
+<li>Clash Meta(支持的协议多，支持最新的协议)<ul>
+<li>Clash Meta for Windows (<a href="https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases</a>)</li>
+<li>Clash Meta for Android (<a href="https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases</a>)<br>  <code>https://hub.yzuu.cf/MetaCubeX/ClashX.Meta/releases</code><br>  <code>https://hub.njuu.cf/MetaCubeX/ClashX.Meta/releases</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>WinXray</p>
+<ul>
+<li><p>修改版（现在流行）<a href="https://github.com/TheMRLL/winxray/releases">https://github.com/TheMRLL/winxray/releases</a>或者<a href="https://winxray.com/">https://winxray.com/</a></p>
+</li>
+<li><p>原版（现用）	<a href="https://github.com/woohong666/win-xray">https://github.com/woohong666/win-xray</a> </p>
+</li>
+<li><p>Xray-coce	<a href="https://github.com/XTLS/Xray-core/releases">https://github.com/XTLS/Xray-core/releases</a></p>
+</li>
+</ul>
+</li>
+<li><p>V2rayN</p>
+<ul>
+<li><p>github地址：<a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></p>
+</li>
+<li><p>github加速地址：<a href="https://hub.nuaa.cf/2dust/v2rayN/releases">https://hub.nuaa.cf/2dust/v2rayN/releases</a> 或 <a href="https://hub.yzuu.cf/2dust/v2rayN/releases">https://hub.yzuu.cf/2dust/v2rayN/releases</a></p>
+</li>
+</ul>
+<p> <strong>注意：</strong><br> 设置ping和测速地址在<code>guiConfigs</code>-<code>guiNConfig.json</code>中</p>
+<p> ping地址：<br> <strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br> 测速地址：<br> <strong><a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
+</li>
+<li><p>其他下载工具合集</p>
+<ul>
+<li><a href="https://www.v2rayssr.com/vpn-client.html">https://www.v2rayssr.com/vpn-client.html</a></li>
+<li><a href="https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/">https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/</a></li>
+<li><a href="https://suwav2ray.com/super_tools/">https://suwav2ray.com/super_tools&#x2F;</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><p>下载地址：<br><a href="https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><a href="https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><a href="https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><a href="https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><strong>注意：</strong><br>在文件<code>nodeConfig.json</code>中设置ping和测速地址</p>
+<p>ping地址：<br><strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br>测速地址：<br><strong>现用<a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
+<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GFW-2-Sub</title>
     <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
     <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
@@ -736,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#116;&#x72;&#x78;&#x40;&#x70;&#109;&#x2e;&#109;&#101;">&#115;&#x77;&#x65;&#101;&#116;&#x72;&#x78;&#x40;&#x70;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#116;&#x72;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;">&#115;&#x77;&#x65;&#101;&#116;&#x72;&#120;&#x40;&#x70;&#109;&#x2e;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2683,82 +2759,6 @@ OK,大功告成！
         <tag>win</tag>
         <tag>apk</tag>
         <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GFW-1-Tools</title>
-    <url>/2022/03/29/2022-03-29-GFW-1-Tools/</url>
-    <content><![CDATA[<p>这位大佬详细介绍过使用<br><a href="https://merlinblog.xyz/wiki/cfw.html">https://merlinblog.xyz/wiki/cfw.html</a></p>
-<p>个人使用的 WinXray，Clash。</p>
-<span id="more"></span>
-<h1 id="clash-and-winxray"><a href="#clash-and-winxray" class="headerlink" title="clash and winxray"></a>clash and winxray</h1><ul>
-<li><p>Clash 家族</p>
-<p> Clash for Android 终于更新了支持 SSR 的新内核!!<br> 至此三大平台的 Clash 客户端都支持了 SSR，可喜可贺 🎉🎉🎉</p>
-<ul>
-<li><p>下载地址：</p>
-</li>
-<li><p>Clash for Windows (<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg&#x2F;releases</a>)</p>
-</li>
-<li><p>Clash for Android (<a href="https://github.com/Kr328/ClashForAndroid/releases">https://github.com/Kr328/ClashForAndroid/releases</a>)</p>
-<ul>
-<li>自用地址<a href="https://download.kstore.space/download/4901/Clash_Android.apk">Clash_for_Android</a>,<a href="https://download.kstore.space/download/4901/ClashMeta_Android.apk">ClashMeta_Android</a></li>
-</ul>
-</li>
-<li><p>ClashX (<a href="https://github.com/yichengchen/clashX/releases">https://github.com/yichengchen/clashX/releases</a>)</p>
-</li>
-<li><p>Clash Core (<a href="https://github.com/Dreamacro/clash/releases">https://github.com/Dreamacro/clash/releases</a>)</p>
-<ul>
-<li>Clash Meta(支持的协议多，支持最新的协议)<ul>
-<li>Clash Meta for Windows (<a href="https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases</a>)</li>
-<li>Clash Meta for Android (<a href="https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases</a>)<br>  <code>https://hub.yzuu.cf/MetaCubeX/ClashX.Meta/releases</code><br>  <code>https://hub.njuu.cf/MetaCubeX/ClashX.Meta/releases</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>WinXray</p>
-<ul>
-<li><p>修改版（现在流行）<a href="https://github.com/TheMRLL/winxray/releases">https://github.com/TheMRLL/winxray/releases</a>或者<a href="https://winxray.com/">https://winxray.com/</a></p>
-</li>
-<li><p>原版（现用）	<a href="https://github.com/woohong666/win-xray">https://github.com/woohong666/win-xray</a> </p>
-</li>
-<li><p>Xray-coce	<a href="https://github.com/XTLS/Xray-core/releases">https://github.com/XTLS/Xray-core/releases</a></p>
-</li>
-</ul>
-</li>
-<li><p>V2rayN</p>
-<ul>
-<li><p>github地址：<a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></p>
-</li>
-<li><p>github加速地址：<a href="https://hub.nuaa.cf/2dust/v2rayN/releases">https://hub.nuaa.cf/2dust/v2rayN/releases</a> 或 <a href="https://hub.yzuu.cf/2dust/v2rayN/releases">https://hub.yzuu.cf/2dust/v2rayN/releases</a></p>
-</li>
-</ul>
-<p> <strong>注意：</strong><br> 设置ping和测速地址在<code>guiConfigs</code>-<code>guiNConfig.json</code>中</p>
-<p> ping地址：<br> <strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br> 测速地址：<br> <strong><a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
-</li>
-<li><p>其他下载工具合集</p>
-<ul>
-<li><a href="https://www.v2rayssr.com/vpn-client.html">https://www.v2rayssr.com/vpn-client.html</a></li>
-<li><a href="https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/">https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/</a></li>
-<li><a href="https://suwav2ray.com/super_tools/">https://suwav2ray.com/super_tools&#x2F;</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><p>下载地址：<br><a href="https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><a href="https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><a href="https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><a href="https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><strong>注意：</strong><br>在文件<code>nodeConfig.json</code>中设置ping和测速地址</p>
-<p>ping地址：<br><strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br>测速地址：<br><strong>现用<a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
-<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
       </tags>
   </entry>
 </search>
