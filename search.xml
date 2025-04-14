@@ -621,6 +621,40 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 3.Jekyll的archives免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-3-Jekyll%E7%9A%84archives%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>Jekyll的archives免插件使用</p>
+<h2 id="Post-Archives"><a href="#Post-Archives" class="headerlink" title="Post Archives"></a>Post Archives</h2><p>按照站点选择的方式或主题不同而各有异同。</p>
+<span id="more"></span>
+
+<p>主要的语法是：</p>
+<h3 id="archives-html-文件"><a href="#archives-html-文件" class="headerlink" title="archives.html 文件"></a>archives.html 文件</h3><p>通常<code>archives.html</code>文件会放在站点根目录下方便访问和放置。它的主要内容是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% for post in site.posts %&#125;</span><br><span class="line">  &#123;% capture month %&#125;&#123;&#123; post.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">    &#123;% capture nmonth %&#125;&#123;&#123; post.next.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">        &#123;% if month != nmonth %&#125;</span><br><span class="line">              &#123;% if forloop.index != 1 %&#125;&lt;/ul&gt;&#123;% endif %&#125;</span><br><span class="line">                    &lt;h5&gt;&#123;&#123; post.date | date: &#x27;%B %Y&#x27; &#125;&#125;&lt;/h5&gt;&lt;ul&gt;</span><br><span class="line">                        &#123;% endif %&#125;</span><br><span class="line">                          &lt;li&gt;&lt;span class=&quot;time&quot;&gt;&#123;&#123; post.date | date: &quot;%d/%m/%Y&quot; &#125;&#125;&lt;/span&gt;    &lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">                          &#123;% endfor %&#125;</span><br><span class="line">                          </span><br><span class="line">&#123;% endraw %&#125;                     </span><br></pre></td></tr></table></figure>
+
+<p><code>archives.html</code>中包含YAML头信息格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">title: </span><br><span class="line">author: RXsweet</span><br><span class="line">comments: false</span><br><span class="line">published: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>或使用个人使用YAML头信息格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: archives</span><br><span class="line">permalink: /archives/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>文件的作用就是按时间为分类list post。那么，我们需要在某个或某些页面放置一个链接，方便访问。以本站点为例，这个链接放置在侧栏中：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;sidebar-nav-item&quot;&gt;&lt;a href=&quot;&#123;&#123; site.baseurl &#125;&#125;/archives/&quot;&gt;Posts Archives&lt;/a&gt;&lt;/li&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>或者，有时你需要在主页上放置一个链接，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if page.archives %&#125; &lt;a href=&#x27;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; page.archives &#125;&#125;&#x27;&gt; Posts&lt;/a&gt;&#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>根据站点的实际情况进行修改即可。</p>
+<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/22/website-note/">https://soyee.me/2018/03/22/website-note/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 4.Jekyll的search免插件使用</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-4-Jekyll%E7%9A%84search%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="Jekyll个人博客实现搜索功能"><a href="#Jekyll个人博客实现搜索功能" class="headerlink" title="Jekyll个人博客实现搜索功能"></a>Jekyll个人博客实现搜索功能</h2><p>本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。</p>
@@ -660,31 +694,54 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 3.Jekyll的archives免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-3-Jekyll%E7%9A%84archives%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>Jekyll的archives免插件使用</p>
-<h2 id="Post-Archives"><a href="#Post-Archives" class="headerlink" title="Post Archives"></a>Post Archives</h2><p>按照站点选择的方式或主题不同而各有异同。</p>
+    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
+<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
+<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
 <span id="more"></span>
 
-<p>主要的语法是：</p>
-<h3 id="archives-html-文件"><a href="#archives-html-文件" class="headerlink" title="archives.html 文件"></a>archives.html 文件</h3><p>通常<code>archives.html</code>文件会放在站点根目录下方便访问和放置。它的主要内容是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% for post in site.posts %&#125;</span><br><span class="line">  &#123;% capture month %&#125;&#123;&#123; post.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">    &#123;% capture nmonth %&#125;&#123;&#123; post.next.date | date: &#x27;%m%Y&#x27; &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">        &#123;% if month != nmonth %&#125;</span><br><span class="line">              &#123;% if forloop.index != 1 %&#125;&lt;/ul&gt;&#123;% endif %&#125;</span><br><span class="line">                    &lt;h5&gt;&#123;&#123; post.date | date: &#x27;%B %Y&#x27; &#125;&#125;&lt;/h5&gt;&lt;ul&gt;</span><br><span class="line">                        &#123;% endif %&#125;</span><br><span class="line">                          &lt;li&gt;&lt;span class=&quot;time&quot;&gt;&#123;&#123; post.date | date: &quot;%d/%m/%Y&quot; &#125;&#125;&lt;/span&gt;    &lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">                          &#123;% endfor %&#125;</span><br><span class="line">                          </span><br><span class="line">&#123;% endraw %&#125;                     </span><br></pre></td></tr></table></figure>
+<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
+<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
-<p><code>archives.html</code>中包含YAML头信息格式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">title: </span><br><span class="line">author: RXsweet</span><br><span class="line">comments: false</span><br><span class="line">published: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>或使用个人使用YAML头信息格式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: archives</span><br><span class="line">permalink: /archives/</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
+<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
 
-<p>文件的作用就是按时间为分类list post。那么，我们需要在某个或某些页面放置一个链接，方便访问。以本站点为例，这个链接放置在侧栏中：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;sidebar-nav-item&quot;&gt;&lt;a href=&quot;&#123;&#123; site.baseurl &#125;&#125;/archives/&quot;&gt;Posts Archives&lt;/a&gt;&lt;/li&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>这个文件的作用，就是建立起站点的tags list.</p>
+<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
+<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
 
-<p>或者，有时你需要在主页上放置一个链接，例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if page.archives %&#125; &lt;a href=&#x27;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; page.archives &#125;&#125;&#x27;&gt; Posts&lt;/a&gt;&#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
+<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
+<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
-<p>根据站点的实际情况进行修改即可。</p>
-<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</p>
+<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
+<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
+<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
+<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>语法可以随意按照你希望的样子进行调整。</p>
+<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
+<p>:bowtie:</p>
+<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
 <hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/22/website-note/">https://soyee.me/2018/03/22/website-note/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -755,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#116;&#x72;&#x78;&#64;&#x70;&#109;&#46;&#x6d;&#101;">&#115;&#x77;&#x65;&#101;&#116;&#x72;&#x78;&#64;&#x70;&#109;&#46;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#101;&#116;&#x72;&#x78;&#64;&#x70;&#109;&#x2e;&#x6d;&#101;">&#x73;&#119;&#x65;&#101;&#116;&#x72;&#x78;&#64;&#x70;&#109;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -764,63 +821,6 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>chrome</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
-<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
-<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
-<span id="more"></span>
-
-<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
-<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
-<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个文件的作用，就是建立起站点的tags list.</p>
-<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
-<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
-<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
-<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
-<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
-<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
-<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>语法可以随意按照你希望的样子进行调整。</p>
-<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
-<p>:bowtie:</p>
-<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1816,38 +1816,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 输入法</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%BE%93%E5%85%A5%E6%B3%95/</url>
-    <content><![CDATA[<h3 id="搜狗输入法"><a href="#搜狗输入法" class="headerlink" title="搜狗输入法"></a>搜狗输入法</h3><p>特点描述</p>
-<p>√ 去广告，精简优化，彻底屏蔽升级、删除阻止广告弹窗！</p>
-<p>√ 纯净无广告，无干扰提示，默认无不必要程序驻留进程！</p>
-<span id="more"></span>
-
-<p>√ 完全有效阻止下载释放广告程序收集相关信息推送广告行为！</p>
-<p>√ 可选：云计算候选、词库同步及账户配置同步、工具箱扩展管理器组件</p>
-<p>√ 删除：所有搜狗广告程序（广告获取模块、搜狐新闻弹窗、勋章推荐弹窗）</p>
-<p>√ 删除：搜索提示, 颜文字, 修复器, 核心服务, 网络更新, 辅助工具, 崩溃反馈等组件</p>
-<p>√ 移除：智能输入助手, 图片表情, 皮肤盒子&#x2F;推荐&#x2F;flash皮肤等（可在扩展管理器安装）</p>
-<p>√ 优化：搜索候选, 体验计划,账户提醒, 皮肤推荐, 检测升级, 活跃天数等各种干扰提示</p>
-<p>√ 安装程序：可选自定义组件、支持 windows 10 Metro 模式，支持检测可覆盖安装</p>
-<p>√ 特别处理：即使安装了账户同步及扩展下载等联网组件 , 无需防火墙阻止也永不升级</p>
-<p>分享页：<br><a href="https://www.qilebb.com/3622.html">https://www.qilebb.com/3622.html</a></p>
-<p><a href="https://apphot.cc/17463.html">https://apphot.cc/17463.html</a></p>
-<p>下载地址：</p>
-<p>yoyodadada-andriod 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07psrli">https://yoyodadada.lanzouw.com/b07psrli</a></p>
-<p>yoyodadada-PC版 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07pv5xg">https://yoyodadada.lanzouw.com/b07pv5xg</a></p>
-<p><a href="https://pan.lanzouj.com/b01dj5eud">https://pan.lanzouj.com/b01dj5eud</a></p>
-<p><a href="https://lanzoui.com/b04al7aeh">https://lanzoui.com/b04al7aeh</a> 提取码：9h39</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - Legacy和UEFI装机方法</title>
     <url>/2022/06/09/2022-06-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Legacy%E5%92%8CUEFI%E8%A3%85%E6%9C%BA%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="Legacy和UEFI装机方法"><a href="#Legacy和UEFI装机方法" class="headerlink" title="Legacy和UEFI装机方法"></a>Legacy和UEFI装机方法</h1><hr>
@@ -1913,6 +1881,38 @@
       </categories>
       <tags>
         <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 输入法</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%BE%93%E5%85%A5%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="搜狗输入法"><a href="#搜狗输入法" class="headerlink" title="搜狗输入法"></a>搜狗输入法</h3><p>特点描述</p>
+<p>√ 去广告，精简优化，彻底屏蔽升级、删除阻止广告弹窗！</p>
+<p>√ 纯净无广告，无干扰提示，默认无不必要程序驻留进程！</p>
+<span id="more"></span>
+
+<p>√ 完全有效阻止下载释放广告程序收集相关信息推送广告行为！</p>
+<p>√ 可选：云计算候选、词库同步及账户配置同步、工具箱扩展管理器组件</p>
+<p>√ 删除：所有搜狗广告程序（广告获取模块、搜狐新闻弹窗、勋章推荐弹窗）</p>
+<p>√ 删除：搜索提示, 颜文字, 修复器, 核心服务, 网络更新, 辅助工具, 崩溃反馈等组件</p>
+<p>√ 移除：智能输入助手, 图片表情, 皮肤盒子&#x2F;推荐&#x2F;flash皮肤等（可在扩展管理器安装）</p>
+<p>√ 优化：搜索候选, 体验计划,账户提醒, 皮肤推荐, 检测升级, 活跃天数等各种干扰提示</p>
+<p>√ 安装程序：可选自定义组件、支持 windows 10 Metro 模式，支持检测可覆盖安装</p>
+<p>√ 特别处理：即使安装了账户同步及扩展下载等联网组件 , 无需防火墙阻止也永不升级</p>
+<p>分享页：<br><a href="https://www.qilebb.com/3622.html">https://www.qilebb.com/3622.html</a></p>
+<p><a href="https://apphot.cc/17463.html">https://apphot.cc/17463.html</a></p>
+<p>下载地址：</p>
+<p>yoyodadada-andriod 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07psrli">https://yoyodadada.lanzouw.com/b07psrli</a></p>
+<p>yoyodadada-PC版 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07pv5xg">https://yoyodadada.lanzouw.com/b07pv5xg</a></p>
+<p><a href="https://pan.lanzouj.com/b01dj5eud">https://pan.lanzouj.com/b01dj5eud</a></p>
+<p><a href="https://lanzoui.com/b04al7aeh">https://lanzoui.com/b04al7aeh</a> 提取码：9h39</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
       </tags>
   </entry>
   <entry>
@@ -2234,6 +2234,29 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
+<span id="more"></span>
+
+<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
+<p>然后还需要对对应对文章进行设置，有两种方法</p>
+<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
+<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - Hexo添加分类,标签,搜索（在Next主题下）</title>
     <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E6%B7%BB%E5%8A%A0-%E5%88%86%E7%B1%BB-%E6%A0%87%E7%AD%BE-%E6%90%9C%E7%B4%A2/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自建的博客怎么能没有分类，标签，搜索呢，所以我就去查了一下怎么去配置分类和标签,搜索</p>
@@ -2261,29 +2284,6 @@ OK,大功告成！
 <h1 id="四-结语"><a href="#四-结语" class="headerlink" title="四.结语"></a>四.结语</h1><p>这样我们就完成了分类和标签的配置，可以看出分类和标签的配置流程基本一样。</p>
 <p>关于Next的更多配置请查看官方文档 <a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></p>
 <h1 id="五-延伸"><a href="#五-延伸" class="headerlink" title="五.延伸"></a>五.延伸</h1><p>在上面我们配置对文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域，名称为 <code>Front-matter</code></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
-    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
-<span id="more"></span>
-
-<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
-<p>然后还需要对对应对文章进行设置，有两种方法</p>
-<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
-<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2723,7 +2723,7 @@ OK,大功告成！
 <p><a href="https://musicfree.catcat.work/">MusicFree官网</a><br><a href="https://github.com/maotoumao/MusicFree">MusicFree官方Github</a></p>
 <p><a href="https://musicfree.catcat.work/">MusicFree官网下载1：</a><br><a href="https://gh.sixyin.com/https://github.com/maotoumao/MusicFree/releases/download/v0.3.0/MusicFree-0.3.0.apk">MusicFree下载地址2：</a><br><a href="https://www.123pan.com/s/grz2jv-JPkAA.html">MusicFree下载地址3：</a></p>
 <p>[自用 plugins 接口：]</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> 音乐 : https://rxsub.eu.org/music/musicFree/my/rx.json</span><br><span class="line">&lt;音乐&gt;: https://rxsub.eu.org/music/musicFree/Huibq/rx.json</span><br><span class="line">-音乐-: https://rxsub.eu.org/music/musicFree/ikun0014/rx.json</span><br><span class="line">[音乐]: https://rxsub.eu.org/music/musicFree/musicDownloader/rx.json</span><br><span class="line">=音乐=: https://rxsub.eu.org/music/musicFree/fish/rx.json</span><br><span class="line">1音乐1: https://rxsub.eu.org/music/musicFree/lxchina/rx.json</span><br><span class="line">大神音源</span><br><span class="line">https://mf.ikunshare.com/plugins.json</span><br><span class="line">https://ghraw.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://raw.rxsub.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://rxraw.rxsub.rr.nu/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line"></span><br><span class="line">网易云可用</span><br><span class="line">https://rxsub.eu.org/music/musicFree/Fxxeng/wy.js</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"> 音乐 : https://rxsub.eu.org/music/musicFree/my/rx.json</span><br><span class="line">&lt;音乐&gt;: https://rxsub.eu.org/music/musicFree/Huibq/rx.json</span><br><span class="line">-音乐-: https://rxsub.eu.org/music/musicFree/ikun0014/rx.json</span><br><span class="line">[音乐]: https://rxsub.eu.org/music/musicFree/musicDownloader/rx.json</span><br><span class="line">=音乐=: https://rxsub.eu.org/music/musicFree/fish/rx.json</span><br><span class="line">1音乐1: https://rxsub.eu.org/music/musicFree/lxchina/rx.json</span><br><span class="line">2音乐2: https://rxsub.eu.org/music/musicFree/yuanli/rx.json</span><br><span class="line">大神音源</span><br><span class="line">https://mf.ikunshare.com/plugins.json</span><br><span class="line">https://ghraw.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://raw.rxsub.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://rxraw.rxsub.rr.nu/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line"></span><br><span class="line">网易云可用</span><br><span class="line">https://rxsub.eu.org/music/musicFree/Fxxeng/wy.js</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-LX-Music-落雪音乐助手"><a href="#2-LX-Music-落雪音乐助手" class="headerlink" title="2.LX Music - 落雪音乐助手"></a>2.LX Music - 落雪音乐助手</h3><span id="more"></span>
 <p>一个免费&amp;开源的音乐查找工具</p>
