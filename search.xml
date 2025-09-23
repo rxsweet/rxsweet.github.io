@@ -77,72 +77,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW-2-Sub</title>
-    <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
-    <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
-<p>GitHub鏡像站</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://hub.nuaa.cf/sweetrx</span><br><span class="line">https://hub.yzuu.cf/sweetrx</span><br><span class="line">https://gh.sweetrx.eu.org/sweetrx</span><br><span class="line">https://hub.sweetrx.eu.org/sweetrx</span><br></pre></td></tr></table></figure>
-<p>加速下载站</p>
-<p>自己使用<br><code>https://raw.rxsub.onflashdrive.app/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://ghraw.eu.org/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://p.sweetrx.eu.org</code></p>
-<p>韩国: <code>https://ghproxy.com/</code> + 完整地址</p>
-<p>香港: <code>https://raw.iqiq.io/rxsweet/proxies/main/sub/rx.yaml</code></p>
-<p>新加坡: <code>https://raw.kgithub.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
-<span id="more"></span>
-<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>备用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://rxsub.3d.tc/sub/free.yaml</span><br><span class="line">https://rxsub.app.tc/sub/free.yaml</span><br><span class="line">https://rxsub.coms.hk/sub/free.yaml</span><br><span class="line">https://sub.rxsub.rr.nu/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free64.txt</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/sublist_mining.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/subList_dynamic.txt</span><br></pre></td></tr></table></figure>
-
-<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
-<ul>
-<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
-<li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
-<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
-<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a></li>
-<li><a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></li>
-<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
-<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
-<li><a href="https://id9.cc/">https://id9.cc/</a></li>
-<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
-<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
-<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a></li>
-<li><a href="https://sub.90.ms/">https://sub.90.ms/</a> </li>
-<li><a href="https://sub-web.netlify.app/">https://sub-web.netlify.app/</a> </li>
-<li><a href="https://subcon.dlj.tf/">https://subcon.dlj.tf/</a></li>
-</ul>
-<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.rxsub.onflashdrive.app/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.rr.nu/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.coms.hk/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br></pre></td></tr></table></figure>
-<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
-
-<h1 id="ip匿名检测"><a href="#ip匿名检测" class="headerlink" title="ip匿名检测"></a>ip匿名检测</h1><ul>
-<li><a href="https://ip.voidsec.com/">https://ip.voidsec.com/</a></li>
-<li><a href="https://ipinfo.io/">https://ipinfo.io/</a></li>
-<li><a href="https://ipleak.com/">https://ipleak.com/</a></li>
-<li><a href="https://ipleak.net/">https://ipleak.net/</a></li>
-<li><a href="https://ipleak.org/">https://ipleak.org/</a></li>
-<li><a href="https://ipx.ac/run">https://ipx.ac/run</a></li>
-<li><a href="https://nstool.netease.com/">https://nstool.netease.com/</a></li>
-<li><a href="https://test-ipv6.com/">https://test-ipv6.com/</a></li>
-<li><a href="https://www.deviceinfo.me/">https://www.deviceinfo.me/</a></li>
-<li><a href="https://www.dnsleaktest.com/">https://www.dnsleaktest.com/</a></li>
-<li><a href="https://ip.skk.moe/">https://ip.skk.moe</a></li>
-<li><a href="https://www.whatismyip.com.tw/">https://www.whatismyip.com.tw</a></li>
-<li><a href="https://myip.ms/">https://myip.ms</a></li>
-<li><a href="https://ifconfig.me/">https://ifconfig.me</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
     <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
     <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
@@ -400,6 +334,72 @@
         <tag>GFW</tag>
         <tag>sms</tag>
         <tag>接码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GFW-2-Sub</title>
+    <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
+    <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
+<p>GitHub鏡像站</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://hub.nuaa.cf/sweetrx</span><br><span class="line">https://hub.yzuu.cf/sweetrx</span><br><span class="line">https://gh.sweetrx.eu.org/sweetrx</span><br><span class="line">https://hub.sweetrx.eu.org/sweetrx</span><br></pre></td></tr></table></figure>
+<p>加速下载站</p>
+<p>自己使用<br><code>https://raw.rxsub.onflashdrive.app/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://ghraw.eu.org/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://p.sweetrx.eu.org</code></p>
+<p>韩国: <code>https://ghproxy.com/</code> + 完整地址</p>
+<p>香港: <code>https://raw.iqiq.io/rxsweet/proxies/main/sub/rx.yaml</code></p>
+<p>新加坡: <code>https://raw.kgithub.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
+<span id="more"></span>
+<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>备用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://rxsub.3d.tc/sub/free.yaml</span><br><span class="line">https://rxsub.app.tc/sub/free.yaml</span><br><span class="line">https://rxsub.coms.hk/sub/free.yaml</span><br><span class="line">https://sub.rxsub.rr.nu/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free64.txt</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/sublist_mining.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/subList_dynamic.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
+<ul>
+<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
+<li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
+<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
+<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a></li>
+<li><a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></li>
+<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
+<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
+<li><a href="https://id9.cc/">https://id9.cc/</a></li>
+<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
+<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
+<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a></li>
+<li><a href="https://sub.90.ms/">https://sub.90.ms/</a> </li>
+<li><a href="https://sub-web.netlify.app/">https://sub-web.netlify.app/</a> </li>
+<li><a href="https://subcon.dlj.tf/">https://subcon.dlj.tf/</a></li>
+</ul>
+<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.rxsub.onflashdrive.app/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.rr.nu/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.coms.hk/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br></pre></td></tr></table></figure>
+<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
+
+<h1 id="ip匿名检测"><a href="#ip匿名检测" class="headerlink" title="ip匿名检测"></a>ip匿名检测</h1><ul>
+<li><a href="https://ip.voidsec.com/">https://ip.voidsec.com/</a></li>
+<li><a href="https://ipinfo.io/">https://ipinfo.io/</a></li>
+<li><a href="https://ipleak.com/">https://ipleak.com/</a></li>
+<li><a href="https://ipleak.net/">https://ipleak.net/</a></li>
+<li><a href="https://ipleak.org/">https://ipleak.org/</a></li>
+<li><a href="https://ipx.ac/run">https://ipx.ac/run</a></li>
+<li><a href="https://nstool.netease.com/">https://nstool.netease.com/</a></li>
+<li><a href="https://test-ipv6.com/">https://test-ipv6.com/</a></li>
+<li><a href="https://www.deviceinfo.me/">https://www.deviceinfo.me/</a></li>
+<li><a href="https://www.dnsleaktest.com/">https://www.dnsleaktest.com/</a></li>
+<li><a href="https://ip.skk.moe/">https://ip.skk.moe</a></li>
+<li><a href="https://www.whatismyip.com.tw/">https://www.whatismyip.com.tw</a></li>
+<li><a href="https://myip.ms/">https://myip.ms</a></li>
+<li><a href="https://ifconfig.me/">https://ifconfig.me</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
       </tags>
   </entry>
   <entry>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#101;&#101;&#116;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#109;&#x65;">&#115;&#119;&#101;&#101;&#116;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#101;&#116;&#x72;&#x78;&#x40;&#112;&#x6d;&#46;&#109;&#101;">&#115;&#119;&#x65;&#101;&#116;&#x72;&#x78;&#x40;&#112;&#x6d;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1248,10 +1248,13 @@
   <entry>
     <title>软件 - apk - 直播合集</title>
     <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
-<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
+    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
+<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
+<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
 <span id="more"></span>
 
+<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
+<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
 <h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
 <p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
 <p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
@@ -1468,29 +1471,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 驱动</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
-<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
-<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
-<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
-<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
-<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
-<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>驱动</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk - 自动跳过APP启动广告</title>
     <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E8%87%AA%E5%8A%A8%E8%B7%B3%E8%BF%87APP%E5%90%AF%E5%8A%A8%E5%B9%BF%E5%91%8A/</url>
     <content><![CDATA[<h1 id="GKD"><a href="#GKD" class="headerlink" title="GKD"></a>GKD</h1><p>GKD（又称搞快点，详情请戳 作者项目地址 <a href="https://github.com/gkd-kit/gkd">https://github.com/gkd-kit/gkd</a> ）<br>是一款免费开源简洁多规则的自动跳过广告的软件。<br>简而言之，基于预设的定时更新订阅规则+快照功能，<br>实现识别并自动点击跳过任何开屏广告及点击关闭应用内部任何弹窗广告，<br>如关闭某些APP开屏和内含推荐广告位（主流的基本上已支持）。</p>
@@ -1558,6 +1538,29 @@
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 驱动</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
+<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
+<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
+<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
+<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
+<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
+<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>驱动</tag>
       </tags>
   </entry>
   <entry>
@@ -1686,6 +1689,26 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 截图 - FastStone Capture</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
+    <content><![CDATA[<p>自己使用的截图工具</p>
+<span id="more"></span>
+
+<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
+<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
+<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 图片去水印工具</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%9B%BE%E7%89%87%E5%8E%BB%E6%B0%B4%E5%8D%B0%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>图片去水印工具: windows版 和 android版 ，还有在线工具</p>
@@ -1718,50 +1741,6 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 截图 - FastStone Capture</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
-    <content><![CDATA[<p>自己使用的截图工具</p>
-<span id="more"></span>
-
-<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
-<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
-<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
-<span id="more"></span>
-
-<p>分享地址</p>
-<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
-<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
-<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
-<p>下载地址</p>
-<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
-<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
-<hr>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
       </tags>
   </entry>
   <entry>
@@ -1806,6 +1785,30 @@
 <p><a href="https://wwa.lanzoui.com/b04ayt73i">https://wwa.lanzoui.com/b04ayt73i</a> 提取码：5wv7</p>
 <h2 id="MPC-BE（Media-Player-Classic-Black-Edition）-现用"><a href="#MPC-BE（Media-Player-Classic-Black-Edition）-现用" class="headerlink" title="MPC-BE（Media Player Classic Black Edition） - 现用"></a>MPC-BE（Media Player Classic Black Edition） - 现用</h2><p>MPC-BE，免费经典全能影音播放器。这是款经典本地播放器，<br>更新也非常勤快，软件纯净无广告，<br>启动速度非常快，支持解码播放各种视频格式，播放流畅不卡顿，<br>低配电脑播放超清视频流畅无压力</p>
 <p><a href="https://423down.lanzouo.com/b0f2moqte">https://423down.lanzouo.com/b0f2moqte</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
+<span id="more"></span>
+
+<p>分享地址</p>
+<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
+<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
+<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
+<p>下载地址</p>
+<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
+<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
+<hr>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2270,6 +2273,29 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
+<span id="more"></span>
+
+<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
+<p>然后还需要对对应对文章进行设置，有两种方法</p>
+<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
+<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - Alist 网盘整合加载</title>
     <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
@@ -2294,29 +2320,6 @@ OK,大功告成！
         <tag>软件</tag>
         <tag>win</tag>
         <tag>网盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
-    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
-<span id="more"></span>
-
-<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
-<p>然后还需要对对应对文章进行设置，有两种方法</p>
-<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
-<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -2380,47 +2383,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win快速启动软件lily和lucy</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
-<p>lily功能丰富，有截屏，停止更新了</p>
-<p>Lucy现在还在更新</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
-<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
-</li>
-<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
-</li>
-<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
-</li>
-<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
-</li>
-</ul>
-<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
-<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
-<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
-<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
-<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
-<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 笔记软件mybase</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2479,6 +2441,47 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - win快速启动软件lily和lucy</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
+<p>lily功能丰富，有截屏，停止更新了</p>
+<p>Lucy现在还在更新</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
+<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
+</li>
+<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
+</li>
+<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
+</li>
+<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
+</li>
+</ul>
+<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
+<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
+<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
+<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
+<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
+<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - apk - 免费企业查询app</title>
     <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
     <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
@@ -2528,20 +2531,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- wifi万能钥匙</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
-    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
-<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk- 抖音</title>
     <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
     <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
@@ -2569,26 +2558,6 @@ OK,大功告成！
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 查看端口被占用、杀进程</title>
-    <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8/</url>
-    <content><![CDATA[<h3 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h3><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
-<span id="more"></span>
-
-<h3 id="端口被哪个应用占用"><a href="#端口被哪个应用占用" class="headerlink" title="端口被哪个应用占用"></a>端口被哪个应用占用</h3><p>netstat -aon|findstr “50016”	</p>
-<h3 id="通过id查找对应的进程名称"><a href="#通过id查找对应的进程名称" class="headerlink" title="通过id查找对应的进程名称"></a>通过id查找对应的进程名称</h3><p>tasklist |findstr “进程id号”</p>
-<h3 id="自己现用关闭’svchost-exe’的方法"><a href="#自己现用关闭’svchost-exe’的方法" class="headerlink" title="自己现用关闭’svchost.exe’的方法"></a>自己现用关闭’svchost.exe’的方法</h3><p>1.打开任务管理器</p>
-<p>2.详细信息-找到PID -右键-转到服务-停止</p>
-<h3 id="根据进程的名称杀掉进程"><a href="#根据进程的名称杀掉进程" class="headerlink" title="根据进程的名称杀掉进程"></a>根据进程的名称杀掉进程</h3><p>taskkill &#x2F;f &#x2F;t &#x2F;im “进程id或者进程名称”</p>
-<h3 id="系统当前所有的端口使用情况"><a href="#系统当前所有的端口使用情况" class="headerlink" title="系统当前所有的端口使用情况"></a>系统当前所有的端口使用情况</h3><p>输入netstat -ano然后回车，就可以看到系统当前所有的端口使用情况</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -2630,6 +2599,40 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>GFW</tag>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk- wifi万能钥匙</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
+    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
+<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 查看端口被占用、杀进程</title>
+    <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8/</url>
+    <content><![CDATA[<h3 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h3><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
+<span id="more"></span>
+
+<h3 id="端口被哪个应用占用"><a href="#端口被哪个应用占用" class="headerlink" title="端口被哪个应用占用"></a>端口被哪个应用占用</h3><p>netstat -aon|findstr “50016”	</p>
+<h3 id="通过id查找对应的进程名称"><a href="#通过id查找对应的进程名称" class="headerlink" title="通过id查找对应的进程名称"></a>通过id查找对应的进程名称</h3><p>tasklist |findstr “进程id号”</p>
+<h3 id="自己现用关闭’svchost-exe’的方法"><a href="#自己现用关闭’svchost-exe’的方法" class="headerlink" title="自己现用关闭’svchost.exe’的方法"></a>自己现用关闭’svchost.exe’的方法</h3><p>1.打开任务管理器</p>
+<p>2.详细信息-找到PID -右键-转到服务-停止</p>
+<h3 id="根据进程的名称杀掉进程"><a href="#根据进程的名称杀掉进程" class="headerlink" title="根据进程的名称杀掉进程"></a>根据进程的名称杀掉进程</h3><p>taskkill &#x2F;f &#x2F;t &#x2F;im “进程id或者进程名称”</p>
+<h3 id="系统当前所有的端口使用情况"><a href="#系统当前所有的端口使用情况" class="headerlink" title="系统当前所有的端口使用情况"></a>系统当前所有的端口使用情况</h3><p>输入netstat -ano然后回车，就可以看到系统当前所有的端口使用情况</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
         <tag>经验技术</tag>
       </tags>
   </entry>
