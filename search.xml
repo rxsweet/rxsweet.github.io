@@ -77,6 +77,72 @@
       </tags>
   </entry>
   <entry>
+    <title>GFW-2-Sub</title>
+    <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
+    <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
+<p>GitHub鏡像站</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://hub.nuaa.cf/sweetrx</span><br><span class="line">https://hub.yzuu.cf/sweetrx</span><br><span class="line">https://gh.sweetrx.eu.org/sweetrx</span><br><span class="line">https://hub.sweetrx.eu.org/sweetrx</span><br></pre></td></tr></table></figure>
+<p>加速下载站</p>
+<p>自己使用<br><code>https://raw.rxsub.onflashdrive.app/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://ghraw.eu.org/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://p.sweetrx.eu.org</code></p>
+<p>韩国: <code>https://ghproxy.com/</code> + 完整地址</p>
+<p>香港: <code>https://raw.iqiq.io/rxsweet/proxies/main/sub/rx.yaml</code></p>
+<p>新加坡: <code>https://raw.kgithub.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
+<span id="more"></span>
+<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>备用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://rxsub.3d.tc/sub/free.yaml</span><br><span class="line">https://rxsub.app.tc/sub/free.yaml</span><br><span class="line">https://rxsub.coms.hk/sub/free.yaml</span><br><span class="line">https://sub.rxsub.rr.nu/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free64.txt</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/sublist_mining.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/subList_dynamic.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
+<ul>
+<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
+<li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
+<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
+<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a></li>
+<li><a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></li>
+<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
+<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
+<li><a href="https://id9.cc/">https://id9.cc/</a></li>
+<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
+<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
+<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a></li>
+<li><a href="https://sub.90.ms/">https://sub.90.ms/</a> </li>
+<li><a href="https://sub-web.netlify.app/">https://sub-web.netlify.app/</a> </li>
+<li><a href="https://subcon.dlj.tf/">https://subcon.dlj.tf/</a></li>
+</ul>
+<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.rxsub.onflashdrive.app/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.rr.nu/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.coms.hk/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br></pre></td></tr></table></figure>
+<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
+
+<h1 id="ip匿名检测"><a href="#ip匿名检测" class="headerlink" title="ip匿名检测"></a>ip匿名检测</h1><ul>
+<li><a href="https://ip.voidsec.com/">https://ip.voidsec.com/</a></li>
+<li><a href="https://ipinfo.io/">https://ipinfo.io/</a></li>
+<li><a href="https://ipleak.com/">https://ipleak.com/</a></li>
+<li><a href="https://ipleak.net/">https://ipleak.net/</a></li>
+<li><a href="https://ipleak.org/">https://ipleak.org/</a></li>
+<li><a href="https://ipx.ac/run">https://ipx.ac/run</a></li>
+<li><a href="https://nstool.netease.com/">https://nstool.netease.com/</a></li>
+<li><a href="https://test-ipv6.com/">https://test-ipv6.com/</a></li>
+<li><a href="https://www.deviceinfo.me/">https://www.deviceinfo.me/</a></li>
+<li><a href="https://www.dnsleaktest.com/">https://www.dnsleaktest.com/</a></li>
+<li><a href="https://ip.skk.moe/">https://ip.skk.moe</a></li>
+<li><a href="https://www.whatismyip.com.tw/">https://www.whatismyip.com.tw</a></li>
+<li><a href="https://myip.ms/">https://myip.ms</a></li>
+<li><a href="https://ifconfig.me/">https://ifconfig.me</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
     <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
     <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
@@ -337,72 +403,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW-2-Sub</title>
-    <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
-    <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
-<p>GitHub鏡像站</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://hub.nuaa.cf/sweetrx</span><br><span class="line">https://hub.yzuu.cf/sweetrx</span><br><span class="line">https://gh.sweetrx.eu.org/sweetrx</span><br><span class="line">https://hub.sweetrx.eu.org/sweetrx</span><br></pre></td></tr></table></figure>
-<p>加速下载站</p>
-<p>自己使用<br><code>https://raw.rxsub.onflashdrive.app/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://ghraw.eu.org/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://p.sweetrx.eu.org</code></p>
-<p>韩国: <code>https://ghproxy.com/</code> + 完整地址</p>
-<p>香港: <code>https://raw.iqiq.io/rxsweet/proxies/main/sub/rx.yaml</code></p>
-<p>新加坡: <code>https://raw.kgithub.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
-<span id="more"></span>
-<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>备用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://rxsub.3d.tc/sub/free.yaml</span><br><span class="line">https://rxsub.app.tc/sub/free.yaml</span><br><span class="line">https://rxsub.coms.hk/sub/free.yaml</span><br><span class="line">https://sub.rxsub.rr.nu/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free64.txt</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/sublist_mining.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/subList_dynamic.txt</span><br></pre></td></tr></table></figure>
-
-<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
-<ul>
-<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
-<li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
-<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
-<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a></li>
-<li><a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></li>
-<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
-<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
-<li><a href="https://id9.cc/">https://id9.cc/</a></li>
-<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
-<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
-<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a></li>
-<li><a href="https://sub.90.ms/">https://sub.90.ms/</a> </li>
-<li><a href="https://sub-web.netlify.app/">https://sub-web.netlify.app/</a> </li>
-<li><a href="https://subcon.dlj.tf/">https://subcon.dlj.tf/</a></li>
-</ul>
-<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.rxsub.onflashdrive.app/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.rr.nu/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.coms.hk/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br></pre></td></tr></table></figure>
-<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
-
-<h1 id="ip匿名检测"><a href="#ip匿名检测" class="headerlink" title="ip匿名检测"></a>ip匿名检测</h1><ul>
-<li><a href="https://ip.voidsec.com/">https://ip.voidsec.com/</a></li>
-<li><a href="https://ipinfo.io/">https://ipinfo.io/</a></li>
-<li><a href="https://ipleak.com/">https://ipleak.com/</a></li>
-<li><a href="https://ipleak.net/">https://ipleak.net/</a></li>
-<li><a href="https://ipleak.org/">https://ipleak.org/</a></li>
-<li><a href="https://ipx.ac/run">https://ipx.ac/run</a></li>
-<li><a href="https://nstool.netease.com/">https://nstool.netease.com/</a></li>
-<li><a href="https://test-ipv6.com/">https://test-ipv6.com/</a></li>
-<li><a href="https://www.deviceinfo.me/">https://www.deviceinfo.me/</a></li>
-<li><a href="https://www.dnsleaktest.com/">https://www.dnsleaktest.com/</a></li>
-<li><a href="https://ip.skk.moe/">https://ip.skk.moe</a></li>
-<li><a href="https://www.whatismyip.com.tw/">https://www.whatismyip.com.tw</a></li>
-<li><a href="https://myip.ms/">https://myip.ms</a></li>
-<li><a href="https://ifconfig.me/">https://ifconfig.me</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 0.自用更新博客 - Mardown语法和软件</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-0-Mardown%E8%AF%AD%E6%B3%95%E5%92%8C%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="1-软件"><a href="#1-软件" class="headerlink" title="1.软件"></a>1.软件</h1><p><a href="https://github.com/marktext/marktext">1. MarkText - 个人使用</a></p>
@@ -655,6 +655,45 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 4.Jekyll的search免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-4-Jekyll%E7%9A%84search%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="Jekyll个人博客实现搜索功能"><a href="#Jekyll个人博客实现搜索功能" class="headerlink" title="Jekyll个人博客实现搜索功能"></a>Jekyll个人博客实现搜索功能</h2><p>本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。</p>
+<p>到网上一搜，发现资料还是挺少的，而且都还不一定能实现，这搜索结果还是挺让人失望的。下面就来看看我是如何实现在jekyll个人博客的基础上来现实搜索功能吧。</p>
+<span id="more"></span>
+
+<h1 id="初步介绍思路"><a href="#初步介绍思路" class="headerlink" title="初步介绍思路"></a>初步介绍思路</h1><p>首先我是参考的Github上的一个开源库<a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple-Jekyll-Search</a></p>
+<p>通过这个库的README可以知道，是可以实现搜索功能的，所以，我们就用这个库来实现吧。</p>
+<p>先下载这个仓库到本地</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/christian-fei/Simple-Jekyll-Search  </span><br></pre></td></tr></table></figure>
+
+<h1 id="Step-1-创建search-json文件"><a href="#Step-1-创建search-json文件" class="headerlink" title="Step 1. 创建search.json文件"></a>Step 1. 创建search.json文件</h1><p>在个人博客的根目录下创建一个<code>search.json</code>的文件，然后打开下载的文件夹目录<code>Simple-Jekyll-Search/example/</code>，复制里面的<code>search.json</code>的代码到这个文件。</p>
+<p>下面是search.json文件内容(可以直接新建<code>search.json</code>复制下面内容)：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: none</span><br><span class="line">---</span><br><span class="line">[</span><br><span class="line">  &#123;% for post in site.posts %&#125;</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;title&quot;    : &quot;&#123;&#123; post.title | escape &#125;&#125;&quot;,</span><br><span class="line">      &quot;category&quot; : &quot;&#123;&#123; post.category &#125;&#125;&quot;,</span><br><span class="line">      &quot;tags&quot;     : &quot;&#123;&#123; post.tags | join: &#x27;, &#x27; &#125;&#125;&quot;,</span><br><span class="line">      &quot;url&quot;      : &quot;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; post.url &#125;&#125;&quot;,</span><br><span class="line">      &quot;date&quot;     : &quot;&#123;&#123; post.date &#125;&#125;&quot;</span><br><span class="line">    &#125; &#123;% unless forloop.last %&#125;,&#123;% endunless %&#125;</span><br><span class="line">  &#123;% endfor %&#125;</span><br><span class="line">]</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Step-2-复制js文件到js目录下"><a href="#Step-2-复制js文件到js目录下" class="headerlink" title="Step 2. 复制js文件到js目录下"></a>Step 2. 复制js文件到js目录下</h1><p>打开之前下载的<code>Simple-Jekyll-Search/example/js/</code>目录，发现会有两个js文件，一个是<code>simple-jekyll-search.js</code>和<code>simple-jekyll-search.min.js</code>。先别管这两个文件是什么内容了，直接复制到自己博客根目录下的<code>/js/</code>下。</p>
+<h1 id="Step-3-在主页和菜单栏分别添加搜索功能"><a href="#Step-3-在主页和菜单栏分别添加搜索功能" class="headerlink" title="Step 3. 在主页和菜单栏分别添加搜索功能"></a>Step 3. 在主页和菜单栏分别添加搜索功能</h1><h2 id="主页添加搜索功能"><a href="#主页添加搜索功能" class="headerlink" title="主页添加搜索功能"></a>主页添加搜索功能</h2><p>在<code>index.html</code>文件里找到自己想添加的位置，粘贴下面代码:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--添加搜索框开始--&gt;</span><br><span class="line">&lt;div class=&quot;side&quot;&gt;</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">		&lt;i class=&quot;fa fa-tags&quot;&gt;&lt;/i&gt;</span><br><span class="line">		Search</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;tags-cloud&quot;&gt;</span><br><span class="line">		&lt;!-- HTML elements for search 搜索元素--&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索 - 标题/Tags...&quot; style=&quot;width:230px;&quot;/&gt;</span><br><span class="line">		&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">		&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">		&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">		&lt;script&gt;</span><br><span class="line">		SimpleJekyllSearch(&#123;</span><br><span class="line">		searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">		resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">		json: &#x27;/search.json&#x27;,</span><br><span class="line">		searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">		noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">		limit: 20,</span><br><span class="line">		fuzzy: false</span><br><span class="line">		&#125;)</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--添加搜索框结束--&gt;  </span><br></pre></td></tr></table></figure>
+
+<h2 id="菜单栏添加搜索功能"><a href="#菜单栏添加搜索功能" class="headerlink" title="菜单栏添加搜索功能"></a>菜单栏添加搜索功能</h2><h3 id="1-在菜单栏添加search"><a href="#1-在菜单栏添加search" class="headerlink" title="(1). 在菜单栏添加search"></a>(1). 在菜单栏添加search</h3><p>在page目录下添加<code>search.html</code>文件，并复制如下代码到该文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">title: search</span><br><span class="line">permalink: /search/</span><br><span class="line">icon: search</span><br><span class="line">type: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- HTML elements for search --&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索博客 - 输入标题/日期/Tags..&quot; style=&quot;width:380px;&quot;/&gt;</span><br><span class="line">&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">SimpleJekyllSearch(&#123;</span><br><span class="line">    searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">    resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">    json: &#x27;/search.json&#x27;,</span><br><span class="line">    searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">    noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">    limit: 20,</span><br><span class="line">    fuzzy: false</span><br><span class="line">  &#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-下面是老版jekyll我在菜单栏添加搜索一栏"><a href="#2-下面是老版jekyll我在菜单栏添加搜索一栏" class="headerlink" title="(2).下面是老版jekyll我在菜单栏添加搜索一栏"></a>(2).下面是老版jekyll我在菜单栏添加搜索一栏</h3><p>修改<code>_includes/sidebar.html</code>内容，添加一行。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;menu-items&quot;&gt;&lt;a class=&quot;menu-links&quot; href=&quot;&#123;&#123;site.baseurl&#125;&#125;/search/&quot;&gt;search&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-search功能添加完成"><a href="#3-search功能添加完成" class="headerlink" title="(3). search功能添加完成"></a>(3). search功能添加完成</h3><p>这部分也就是搜索的主要核心代码了。到此，搜索功能也就完成了。</p>
+<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用<code> and </code>包起Markdown语法。</p>
+<hr>
+<p>原文作者地址：<br><a href="https://zoharandroid.github.io/2019-08-01-jekyll%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">https://zoharandroid.github.io/2019-08-01-jekyll个人博客实现搜索功能/</a></p>
+<p><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 5.Jekyll的tags免插件使用</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>Jekyll的tags免插件使用</p>
@@ -703,45 +742,6 @@
 <p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
 <hr>
 <p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 4.Jekyll的search免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-4-Jekyll%E7%9A%84search%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="Jekyll个人博客实现搜索功能"><a href="#Jekyll个人博客实现搜索功能" class="headerlink" title="Jekyll个人博客实现搜索功能"></a>Jekyll个人博客实现搜索功能</h2><p>本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。</p>
-<p>到网上一搜，发现资料还是挺少的，而且都还不一定能实现，这搜索结果还是挺让人失望的。下面就来看看我是如何实现在jekyll个人博客的基础上来现实搜索功能吧。</p>
-<span id="more"></span>
-
-<h1 id="初步介绍思路"><a href="#初步介绍思路" class="headerlink" title="初步介绍思路"></a>初步介绍思路</h1><p>首先我是参考的Github上的一个开源库<a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple-Jekyll-Search</a></p>
-<p>通过这个库的README可以知道，是可以实现搜索功能的，所以，我们就用这个库来实现吧。</p>
-<p>先下载这个仓库到本地</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/christian-fei/Simple-Jekyll-Search  </span><br></pre></td></tr></table></figure>
-
-<h1 id="Step-1-创建search-json文件"><a href="#Step-1-创建search-json文件" class="headerlink" title="Step 1. 创建search.json文件"></a>Step 1. 创建search.json文件</h1><p>在个人博客的根目录下创建一个<code>search.json</code>的文件，然后打开下载的文件夹目录<code>Simple-Jekyll-Search/example/</code>，复制里面的<code>search.json</code>的代码到这个文件。</p>
-<p>下面是search.json文件内容(可以直接新建<code>search.json</code>复制下面内容)：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: none</span><br><span class="line">---</span><br><span class="line">[</span><br><span class="line">  &#123;% for post in site.posts %&#125;</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;title&quot;    : &quot;&#123;&#123; post.title | escape &#125;&#125;&quot;,</span><br><span class="line">      &quot;category&quot; : &quot;&#123;&#123; post.category &#125;&#125;&quot;,</span><br><span class="line">      &quot;tags&quot;     : &quot;&#123;&#123; post.tags | join: &#x27;, &#x27; &#125;&#125;&quot;,</span><br><span class="line">      &quot;url&quot;      : &quot;&#123;&#123; site.baseurl &#125;&#125;&#123;&#123; post.url &#125;&#125;&quot;,</span><br><span class="line">      &quot;date&quot;     : &quot;&#123;&#123; post.date &#125;&#125;&quot;</span><br><span class="line">    &#125; &#123;% unless forloop.last %&#125;,&#123;% endunless %&#125;</span><br><span class="line">  &#123;% endfor %&#125;</span><br><span class="line">]</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Step-2-复制js文件到js目录下"><a href="#Step-2-复制js文件到js目录下" class="headerlink" title="Step 2. 复制js文件到js目录下"></a>Step 2. 复制js文件到js目录下</h1><p>打开之前下载的<code>Simple-Jekyll-Search/example/js/</code>目录，发现会有两个js文件，一个是<code>simple-jekyll-search.js</code>和<code>simple-jekyll-search.min.js</code>。先别管这两个文件是什么内容了，直接复制到自己博客根目录下的<code>/js/</code>下。</p>
-<h1 id="Step-3-在主页和菜单栏分别添加搜索功能"><a href="#Step-3-在主页和菜单栏分别添加搜索功能" class="headerlink" title="Step 3. 在主页和菜单栏分别添加搜索功能"></a>Step 3. 在主页和菜单栏分别添加搜索功能</h1><h2 id="主页添加搜索功能"><a href="#主页添加搜索功能" class="headerlink" title="主页添加搜索功能"></a>主页添加搜索功能</h2><p>在<code>index.html</code>文件里找到自己想添加的位置，粘贴下面代码:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--添加搜索框开始--&gt;</span><br><span class="line">&lt;div class=&quot;side&quot;&gt;</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">		&lt;i class=&quot;fa fa-tags&quot;&gt;&lt;/i&gt;</span><br><span class="line">		Search</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;div class=&quot;tags-cloud&quot;&gt;</span><br><span class="line">		&lt;!-- HTML elements for search 搜索元素--&gt;</span><br><span class="line">		&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索 - 标题/Tags...&quot; style=&quot;width:230px;&quot;/&gt;</span><br><span class="line">		&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">		&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">		&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">		&lt;script&gt;</span><br><span class="line">		SimpleJekyllSearch(&#123;</span><br><span class="line">		searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">		resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">		json: &#x27;/search.json&#x27;,</span><br><span class="line">		searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">		noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">		limit: 20,</span><br><span class="line">		fuzzy: false</span><br><span class="line">		&#125;)</span><br><span class="line">		&lt;/script&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--添加搜索框结束--&gt;  </span><br></pre></td></tr></table></figure>
-
-<h2 id="菜单栏添加搜索功能"><a href="#菜单栏添加搜索功能" class="headerlink" title="菜单栏添加搜索功能"></a>菜单栏添加搜索功能</h2><h3 id="1-在菜单栏添加search"><a href="#1-在菜单栏添加search" class="headerlink" title="(1). 在菜单栏添加search"></a>(1). 在菜单栏添加search</h3><p>在page目录下添加<code>search.html</code>文件，并复制如下代码到该文件。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">title: search</span><br><span class="line">permalink: /search/</span><br><span class="line">icon: search</span><br><span class="line">type: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- HTML elements for search --&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; id=&quot;search-input&quot; placeholder=&quot;搜索博客 - 输入标题/日期/Tags..&quot; style=&quot;width:380px;&quot;/&gt;</span><br><span class="line">&lt;ul id=&quot;results-container&quot;&gt;&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- script pointing to jekyll-search.js --&gt;</span><br><span class="line">&lt;script src=&quot;/js/simple-jekyll-search.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">SimpleJekyllSearch(&#123;</span><br><span class="line">    searchInput: document.getElementById(&#x27;search-input&#x27;),</span><br><span class="line">    resultsContainer: document.getElementById(&#x27;results-container&#x27;),</span><br><span class="line">    json: &#x27;/search.json&#x27;,</span><br><span class="line">    searchResultTemplate: &#x27;&lt;li&gt;&lt;a href=&quot;&#123;url&#125;&quot; title=&quot;&#123;desc&#125;&quot;&gt;&#123;title&#125;&lt;/a&gt;&lt;/li&gt;&#x27;,</span><br><span class="line">    noResultsText: &#x27;没有搜索到文章&#x27;,</span><br><span class="line">    limit: 20,</span><br><span class="line">    fuzzy: false</span><br><span class="line">  &#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-下面是老版jekyll我在菜单栏添加搜索一栏"><a href="#2-下面是老版jekyll我在菜单栏添加搜索一栏" class="headerlink" title="(2).下面是老版jekyll我在菜单栏添加搜索一栏"></a>(2).下面是老版jekyll我在菜单栏添加搜索一栏</h3><p>修改<code>_includes/sidebar.html</code>内容，添加一行。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;li class=&quot;menu-items&quot;&gt;&lt;a class=&quot;menu-links&quot; href=&quot;&#123;&#123;site.baseurl&#125;&#125;/search/&quot;&gt;search&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-search功能添加完成"><a href="#3-search功能添加完成" class="headerlink" title="(3). search功能添加完成"></a>(3). search功能添加完成</h3><p>这部分也就是搜索的主要核心代码了。到此，搜索功能也就完成了。</p>
-<p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用<code> and </code>包起Markdown语法。</p>
-<hr>
-<p>原文作者地址：<br><a href="https://zoharandroid.github.io/2019-08-01-jekyll%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">https://zoharandroid.github.io/2019-08-01-jekyll个人博客实现搜索功能/</a></p>
-<p><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#101;&#116;&#x72;&#x78;&#x40;&#112;&#x6d;&#46;&#109;&#101;">&#115;&#119;&#x65;&#101;&#116;&#x72;&#x78;&#x40;&#112;&#x6d;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#101;&#x74;&#114;&#x78;&#x40;&#112;&#109;&#x2e;&#x6d;&#101;">&#x73;&#119;&#101;&#101;&#x74;&#114;&#x78;&#x40;&#112;&#109;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1689,26 +1689,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 截图 - FastStone Capture</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
-    <content><![CDATA[<p>自己使用的截图工具</p>
-<span id="more"></span>
-
-<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
-<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
-<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 图片去水印工具</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%9B%BE%E7%89%87%E5%8E%BB%E6%B0%B4%E5%8D%B0%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>图片去水印工具: windows版 和 android版 ，还有在线工具</p>
@@ -1744,6 +1724,26 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 截图 - FastStone Capture</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
+    <content><![CDATA[<p>自己使用的截图工具</p>
+<span id="more"></span>
+
+<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
+<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
+<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 电脑优化清理</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>电脑优化清理工具</p>
@@ -1773,28 +1773,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 视频播放器</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<p>几款好用的视频播放器</p>
-<span id="more"></span>
-
-<h2 id="影音播放器-GOM-Player-Plus"><a href="#影音播放器-GOM-Player-Plus" class="headerlink" title="影音播放器 GOM Player Plus"></a>影音播放器 GOM Player Plus</h2><p>GOM Player是全球最受欢迎的影音播放器之一</p>
-<p><a href="https://wwi.lanzoup.com/b04cpom6j">https://wwi.lanzoup.com/b04cpom6j</a> 提取码：8csi</p>
-<h2 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h2><p>PotPlayer播放器是KMPlayer的制作者姜龙喜先生进入Daum公司后的新一代作品，目前主窗口在全力开发中。<br>PotPlayer的优势在于强大的内置解码器；而KMPlayer 的优势在于强大的定制能力和个性化功能。</p>
-<p><a href="https://lanzoui.com/b0i38vsd">https://lanzoui.com/b0i38vsd</a></p>
-<p><a href="https://wwa.lanzoui.com/b04ayt73i">https://wwa.lanzoui.com/b04ayt73i</a> 提取码：5wv7</p>
-<h2 id="MPC-BE（Media-Player-Classic-Black-Edition）-现用"><a href="#MPC-BE（Media-Player-Classic-Black-Edition）-现用" class="headerlink" title="MPC-BE（Media Player Classic Black Edition） - 现用"></a>MPC-BE（Media Player Classic Black Edition） - 现用</h2><p>MPC-BE，免费经典全能影音播放器。这是款经典本地播放器，<br>更新也非常勤快，软件纯净无广告，<br>启动速度非常快，支持解码播放各种视频格式，播放流畅不卡顿，<br>低配电脑播放超清视频流畅无压力</p>
-<p><a href="https://423down.lanzouo.com/b0f2moqte">https://423down.lanzouo.com/b0f2moqte</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
@@ -1809,6 +1787,28 @@
 <p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
 <p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
 <hr>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 视频播放器</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/</url>
+    <content><![CDATA[<p>几款好用的视频播放器</p>
+<span id="more"></span>
+
+<h2 id="影音播放器-GOM-Player-Plus"><a href="#影音播放器-GOM-Player-Plus" class="headerlink" title="影音播放器 GOM Player Plus"></a>影音播放器 GOM Player Plus</h2><p>GOM Player是全球最受欢迎的影音播放器之一</p>
+<p><a href="https://wwi.lanzoup.com/b04cpom6j">https://wwi.lanzoup.com/b04cpom6j</a> 提取码：8csi</p>
+<h2 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h2><p>PotPlayer播放器是KMPlayer的制作者姜龙喜先生进入Daum公司后的新一代作品，目前主窗口在全力开发中。<br>PotPlayer的优势在于强大的内置解码器；而KMPlayer 的优势在于强大的定制能力和个性化功能。</p>
+<p><a href="https://lanzoui.com/b0i38vsd">https://lanzoui.com/b0i38vsd</a></p>
+<p><a href="https://wwa.lanzoui.com/b04ayt73i">https://wwa.lanzoui.com/b04ayt73i</a> 提取码：5wv7</p>
+<h2 id="MPC-BE（Media-Player-Classic-Black-Edition）-现用"><a href="#MPC-BE（Media-Player-Classic-Black-Edition）-现用" class="headerlink" title="MPC-BE（Media Player Classic Black Edition） - 现用"></a>MPC-BE（Media Player Classic Black Edition） - 现用</h2><p>MPC-BE，免费经典全能影音播放器。这是款经典本地播放器，<br>更新也非常勤快，软件纯净无广告，<br>启动速度非常快，支持解码播放各种视频格式，播放流畅不卡顿，<br>低配电脑播放超清视频流畅无压力</p>
+<p><a href="https://423down.lanzouo.com/b0f2moqte">https://423down.lanzouo.com/b0f2moqte</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2383,6 +2383,47 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - win快速启动软件lily和lucy</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
+<p>lily功能丰富，有截屏，停止更新了</p>
+<p>Lucy现在还在更新</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
+<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
+</li>
+<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
+</li>
+<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
+</li>
+<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
+</li>
+</ul>
+<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
+<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
+<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
+<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
+<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
+<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 笔记软件mybase</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2441,47 +2482,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win快速启动软件lily和lucy</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
-<p>lily功能丰富，有截屏，停止更新了</p>
-<p>Lucy现在还在更新</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
-<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
-</li>
-<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
-</li>
-<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
-</li>
-<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
-</li>
-</ul>
-<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
-<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
-<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
-<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
-<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
-<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk - 免费企业查询app</title>
     <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
     <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
@@ -2521,6 +2521,20 @@ OK,大功告成！
 <p>此版本已解锁高级版，纯净无广告。</p>
 <p>下载地址：<a href="https://wwd.lanzout.com/b02plrrcf">https://wwd.lanzout.com/b02plrrcf</a></p>
 <p>原文地址：<a href="https://www.iapps.me/archives/5736">https://www.iapps.me/archives/5736</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk- wifi万能钥匙</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
+    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
+<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2600,20 +2614,6 @@ OK,大功告成！
       <tags>
         <tag>GFW</tag>
         <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk- wifi万能钥匙</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
-    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
-<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
       </tags>
   </entry>
   <entry>
