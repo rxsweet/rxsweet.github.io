@@ -67,6 +67,82 @@
       </tags>
   </entry>
   <entry>
+    <title>GFW-1-Tools</title>
+    <url>/2022/03/29/2022-03-29-GFW-1-Tools/</url>
+    <content><![CDATA[<p>这位大佬详细介绍过使用<br><a href="https://merlinblog.xyz/wiki/cfw.html">https://merlinblog.xyz/wiki/cfw.html</a></p>
+<p>个人使用的 WinXray，Clash。</p>
+<span id="more"></span>
+<h1 id="clash-and-winxray"><a href="#clash-and-winxray" class="headerlink" title="clash and winxray"></a>clash and winxray</h1><ul>
+<li><p>Clash 家族</p>
+<p> Clash for Android 终于更新了支持 SSR 的新内核!!<br> 至此三大平台的 Clash 客户端都支持了 SSR，可喜可贺 🎉🎉🎉</p>
+<ul>
+<li><p>下载地址：</p>
+</li>
+<li><p>Clash for Windows (<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg&#x2F;releases</a>)</p>
+</li>
+<li><p>Clash for Android (<a href="https://github.com/Kr328/ClashForAndroid/releases">https://github.com/Kr328/ClashForAndroid/releases</a>)</p>
+<ul>
+<li>自用地址<a href="https://download.kstore.space/download/4901/Clash_Android.apk">Clash_for_Android</a>,<a href="https://download.kstore.space/download/4901/ClashMeta_Android.apk">ClashMeta_Android</a></li>
+</ul>
+</li>
+<li><p>ClashX (<a href="https://github.com/yichengchen/clashX/releases">https://github.com/yichengchen/clashX/releases</a>)</p>
+</li>
+<li><p>Clash Core (<a href="https://github.com/Dreamacro/clash/releases">https://github.com/Dreamacro/clash/releases</a>)</p>
+<ul>
+<li>Clash Meta(支持的协议多，支持最新的协议)<ul>
+<li>Clash Meta for Windows (<a href="https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases</a>)</li>
+<li>Clash Meta for Android (<a href="https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases</a>)<br>  <code>https://hub.yzuu.cf/MetaCubeX/ClashX.Meta/releases</code><br>  <code>https://hub.njuu.cf/MetaCubeX/ClashX.Meta/releases</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>WinXray</p>
+<ul>
+<li><p>修改版（现在流行）<a href="https://github.com/TheMRLL/winxray/releases">https://github.com/TheMRLL/winxray/releases</a>或者<a href="https://winxray.com/">https://winxray.com/</a></p>
+</li>
+<li><p>原版（现用）	<a href="https://github.com/woohong666/win-xray">https://github.com/woohong666/win-xray</a> </p>
+</li>
+<li><p>Xray-coce	<a href="https://github.com/XTLS/Xray-core/releases">https://github.com/XTLS/Xray-core/releases</a></p>
+</li>
+</ul>
+</li>
+<li><p>V2rayN</p>
+<ul>
+<li><p>github地址：<a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></p>
+</li>
+<li><p>github加速地址：<a href="https://hub.nuaa.cf/2dust/v2rayN/releases">https://hub.nuaa.cf/2dust/v2rayN/releases</a> 或 <a href="https://hub.yzuu.cf/2dust/v2rayN/releases">https://hub.yzuu.cf/2dust/v2rayN/releases</a></p>
+</li>
+</ul>
+<p> <strong>注意：</strong><br> 设置ping和测速地址在<code>guiConfigs</code>-<code>guiNConfig.json</code>中</p>
+<p> ping地址：<br> <strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br> 测速地址：<br> <strong><a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
+</li>
+<li><p>其他下载工具合集</p>
+<ul>
+<li><a href="https://www.v2rayssr.com/vpn-client.html">https://www.v2rayssr.com/vpn-client.html</a></li>
+<li><a href="https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/">https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/</a></li>
+<li><a href="https://suwav2ray.com/super_tools/">https://suwav2ray.com/super_tools&#x2F;</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><p>下载地址：<br><a href="https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><a href="https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><a href="https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><a href="https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
+<p><strong>注意：</strong><br>在文件<code>nodeConfig.json</code>中设置ping和测速地址</p>
+<p>ping地址：<br><strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br>测速地址：<br><strong>现用<a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
+<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
     <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
     <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
@@ -152,82 +228,6 @@
 <li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a>      - 多个API</li>
 </ul>
 <hr>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GFW-1-Tools</title>
-    <url>/2022/03/29/2022-03-29-GFW-1-Tools/</url>
-    <content><![CDATA[<p>这位大佬详细介绍过使用<br><a href="https://merlinblog.xyz/wiki/cfw.html">https://merlinblog.xyz/wiki/cfw.html</a></p>
-<p>个人使用的 WinXray，Clash。</p>
-<span id="more"></span>
-<h1 id="clash-and-winxray"><a href="#clash-and-winxray" class="headerlink" title="clash and winxray"></a>clash and winxray</h1><ul>
-<li><p>Clash 家族</p>
-<p> Clash for Android 终于更新了支持 SSR 的新内核!!<br> 至此三大平台的 Clash 客户端都支持了 SSR，可喜可贺 🎉🎉🎉</p>
-<ul>
-<li><p>下载地址：</p>
-</li>
-<li><p>Clash for Windows (<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg&#x2F;releases</a>)</p>
-</li>
-<li><p>Clash for Android (<a href="https://github.com/Kr328/ClashForAndroid/releases">https://github.com/Kr328/ClashForAndroid/releases</a>)</p>
-<ul>
-<li>自用地址<a href="https://download.kstore.space/download/4901/Clash_Android.apk">Clash_for_Android</a>,<a href="https://download.kstore.space/download/4901/ClashMeta_Android.apk">ClashMeta_Android</a></li>
-</ul>
-</li>
-<li><p>ClashX (<a href="https://github.com/yichengchen/clashX/releases">https://github.com/yichengchen/clashX/releases</a>)</p>
-</li>
-<li><p>Clash Core (<a href="https://github.com/Dreamacro/clash/releases">https://github.com/Dreamacro/clash/releases</a>)</p>
-<ul>
-<li>Clash Meta(支持的协议多，支持最新的协议)<ul>
-<li>Clash Meta for Windows (<a href="https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashX.Meta/releases</a>)</li>
-<li>Clash Meta for Android (<a href="https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases">地址1：https://hub.nuaa.cf/MetaCubeX/ClashMetaForAndroid/releases</a>)<br>  <code>https://hub.yzuu.cf/MetaCubeX/ClashX.Meta/releases</code><br>  <code>https://hub.njuu.cf/MetaCubeX/ClashX.Meta/releases</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>WinXray</p>
-<ul>
-<li><p>修改版（现在流行）<a href="https://github.com/TheMRLL/winxray/releases">https://github.com/TheMRLL/winxray/releases</a>或者<a href="https://winxray.com/">https://winxray.com/</a></p>
-</li>
-<li><p>原版（现用）	<a href="https://github.com/woohong666/win-xray">https://github.com/woohong666/win-xray</a> </p>
-</li>
-<li><p>Xray-coce	<a href="https://github.com/XTLS/Xray-core/releases">https://github.com/XTLS/Xray-core/releases</a></p>
-</li>
-</ul>
-</li>
-<li><p>V2rayN</p>
-<ul>
-<li><p>github地址：<a href="https://github.com/2dust/v2rayN/releases">https://github.com/2dust/v2rayN/releases</a></p>
-</li>
-<li><p>github加速地址：<a href="https://hub.nuaa.cf/2dust/v2rayN/releases">https://hub.nuaa.cf/2dust/v2rayN/releases</a> 或 <a href="https://hub.yzuu.cf/2dust/v2rayN/releases">https://hub.yzuu.cf/2dust/v2rayN/releases</a></p>
-</li>
-</ul>
-<p> <strong>注意：</strong><br> 设置ping和测速地址在<code>guiConfigs</code>-<code>guiNConfig.json</code>中</p>
-<p> ping地址：<br> <strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br> 测速地址：<br> <strong><a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
-</li>
-<li><p>其他下载工具合集</p>
-<ul>
-<li><a href="https://www.v2rayssr.com/vpn-client.html">https://www.v2rayssr.com/vpn-client.html</a></li>
-<li><a href="https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/">https://www.evernote.com/l/AaEjINPvkytF64cYYwwLSwiCApEwlJmBbKQ/</a></li>
-<li><a href="https://suwav2ray.com/super_tools/">https://suwav2ray.com/super_tools&#x2F;</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><p>下载地址：<br><a href="https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.sweetrx.ir/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><a href="https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><a href="https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><a href="https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</a></p>
-<p><strong>注意：</strong><br>在文件<code>nodeConfig.json</code>中设置ping和测速地址</p>
-<p>ping地址：<br><strong><a href="https://www.google.com/favicon.ico">https://www.google.com/favicon.ico</a></strong><br>测速地址：<br><strong>现用<a href="http://cachefly.cachefly.net/10mb.test">http://cachefly.cachefly.net/10mb.test</a></strong></p>
-<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>GFW</category>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#109;&#101;">&#115;&#x77;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#x6d;&#101;">&#x73;&#x77;&#101;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1541,29 +1541,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 驱动</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
-<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
-<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
-<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
-<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
-<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
-<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>驱动</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk - 手机优化清理 - 雪豹速清、清浊</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-apk-%E6%89%8B%E6%9C%BA%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>手机优化清理 - 雪豹速清、清浊</p>
@@ -1588,6 +1565,29 @@
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 驱动</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
+<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
+<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
+<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
+<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
+<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
+<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>驱动</tag>
       </tags>
   </entry>
   <entry>
@@ -2323,47 +2323,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win快速启动软件lily和lucy</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
-<p>lily功能丰富，有截屏，停止更新了</p>
-<p>Lucy现在还在更新</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
-<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
-</li>
-<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
-</li>
-<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
-</li>
-<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
-</li>
-</ul>
-<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
-<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
-<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
-<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
-<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
-<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记 - python功能命令收集</title>
     <url>/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/</url>
     <content><![CDATA[<h1 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python功能命令收集</span><br><span class="line">├── 系统相关操作</span><br><span class="line">│   ├── 时间</span><br><span class="line">│   ├── 检查使用的系统</span><br><span class="line">│   ├── 获取文件相对路径、绝对路径</span><br><span class="line">│   └── 获取当前路径地址</span><br><span class="line">├── 文件操作</span><br><span class="line">│   ├── 创建文件夹</span><br><span class="line">│   ├── 删除文件夹</span><br><span class="line">│   ├── 打开文件，读取方式</span><br><span class="line">│   ├── 写入文件</span><br><span class="line">│   ├── 下载文件</span><br><span class="line">│   └── 获取文件内容行数</span><br><span class="line">├── 数据处理</span><br><span class="line">│   └── 列表</span><br><span class="line">│       ├── 列表增加 </span><br><span class="line">│       ├── 将文件每行内容读取成列表</span><br><span class="line">│       ├── 将列表内容，以行写入字符串</span><br><span class="line">│       ├── findall查找内容写入列表</span><br><span class="line">│       ├── 列表循环读取</span><br><span class="line">│       ├── 列表去重  </span><br><span class="line">│       └── 列表进度条  </span><br><span class="line">├── 检测网站是否可用</span><br><span class="line">├── 多线程</span><br><span class="line">├── 进度条</span><br><span class="line">├── Linux系统</span><br><span class="line">│   └── .sh 操作</span><br><span class="line">└── github Actions workflows</span><br><span class="line">    ├── 触发条件</span><br><span class="line">    ├── 基本系统配置</span><br><span class="line">    ├── 安装依赖</span><br><span class="line">    ├── 安装工具</span><br><span class="line">    └── 提交</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -2421,6 +2380,47 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win快速启动软件lily和lucy</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
+<p>lily功能丰富，有截屏，停止更新了</p>
+<p>Lucy现在还在更新</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
+<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
+</li>
+<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
+</li>
+<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
+</li>
+<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
+</li>
+</ul>
+<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
+<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
+<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
+<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
+<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
+<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
       </tags>
   </entry>
   <entry>
@@ -2665,14 +2665,14 @@ OK,大功告成！
 </li>
 <li><p>2.easybox - <a href="http://www.easybox.pro/">www.easybox.pro</a></p>
 <ul>
-<li><p>🔰下载地址1:<a href="https://easybox-app.lanzouq.com/b00wm3t6la">https://easybox-app.lanzouq.com/b00wm3t6la</a>　</p>
+<li>🔰下载地址1:<a href="https://easybox-app.lanzouq.com/b00wm3t6la">https://easybox-app.lanzouq.com/b00wm3t6la</a>　</li>
+<li>🔰下载地址2:<a href="https://www.easybox.pro/">https://www.easybox.pro</a></li>
+</ul>
 </li>
-<li><p>🔰下载地址2:<a href="https://www.easybox.pro/">https://www.easybox.pro</a></p>
-</li>
-<li><p>🔰🔰🔰<a href="http://a.qiqiv.cn/tvbox.php">TVbox软件合集-奇奇分享</a>🔰🔰🔰</p>
-</li>
-<li><p>🔰🔰🔰<a href="https://wws.lanzouv.com/b03j4ulyh#999">takagen99和q215613905最新版 密码:999</a>🔰🔰🔰</p>
-</li>
+<li><p>3.其他大佬版</p>
+<ul>
+<li>🔰🔰🔰<a href="http://a.qiqiv.cn/tvbox.php">TVbox软件合集-奇奇分享</a>🔰🔰🔰</li>
+<li>🔰🔰🔰<a href="https://wws.lanzouv.com/b03j4ulyh#999">takagen99和q215613905最新版 密码:999</a>🔰🔰🔰</li>
 </ul>
 </li>
 </ul>
