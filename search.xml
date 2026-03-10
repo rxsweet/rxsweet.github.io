@@ -77,72 +77,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW-2-Sub</title>
-    <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
-    <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
-<p>GitHub鏡像站</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://hub.nuaa.cf/sweetrx</span><br><span class="line">https://hub.yzuu.cf/sweetrx</span><br><span class="line">https://gh.sweetrx.eu.org/sweetrx</span><br><span class="line">https://hub.sweetrx.eu.org/sweetrx</span><br></pre></td></tr></table></figure>
-<p>加速下载站</p>
-<p>自己使用<br><code>https://raw.rxsub.onflashdrive.app/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://ghraw.eu.org/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://p.sweetrx.eu.org</code></p>
-<p>韩国: <code>https://ghproxy.com/</code> + 完整地址</p>
-<p>香港: <code>https://raw.iqiq.io/rxsweet/proxies/main/sub/rx.yaml</code></p>
-<p>新加坡: <code>https://raw.kgithub.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
-<span id="more"></span>
-<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>备用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://rxsub.3d.tc/sub/free.yaml</span><br><span class="line">https://rxsub.app.tc/sub/free.yaml</span><br><span class="line">https://rxsub.coms.hk/sub/free.yaml</span><br><span class="line">https://sub.rxsub.rr.nu/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free64.txt</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/sublist_mining.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/subList_dynamic.txt</span><br></pre></td></tr></table></figure>
-
-<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
-<ul>
-<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
-<li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
-<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
-<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a></li>
-<li><a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></li>
-<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
-<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
-<li><a href="https://id9.cc/">https://id9.cc/</a></li>
-<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
-<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
-<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a></li>
-<li><a href="https://sub.90.ms/">https://sub.90.ms/</a> </li>
-<li><a href="https://sub-web.netlify.app/">https://sub-web.netlify.app/</a> </li>
-<li><a href="https://subcon.dlj.tf/">https://subcon.dlj.tf/</a></li>
-</ul>
-<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.rxsub.onflashdrive.app/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.rr.nu/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.coms.hk/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br></pre></td></tr></table></figure>
-<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
-
-<h1 id="ip匿名检测"><a href="#ip匿名检测" class="headerlink" title="ip匿名检测"></a>ip匿名检测</h1><ul>
-<li><a href="https://ip.voidsec.com/">https://ip.voidsec.com/</a></li>
-<li><a href="https://ipinfo.io/">https://ipinfo.io/</a></li>
-<li><a href="https://ipleak.com/">https://ipleak.com/</a></li>
-<li><a href="https://ipleak.net/">https://ipleak.net/</a></li>
-<li><a href="https://ipleak.org/">https://ipleak.org/</a></li>
-<li><a href="https://ipx.ac/run">https://ipx.ac/run</a></li>
-<li><a href="https://nstool.netease.com/">https://nstool.netease.com/</a></li>
-<li><a href="https://test-ipv6.com/">https://test-ipv6.com/</a></li>
-<li><a href="https://www.deviceinfo.me/">https://www.deviceinfo.me/</a></li>
-<li><a href="https://www.dnsleaktest.com/">https://www.dnsleaktest.com/</a></li>
-<li><a href="https://ip.skk.moe/">https://ip.skk.moe</a></li>
-<li><a href="https://www.whatismyip.com.tw/">https://www.whatismyip.com.tw</a></li>
-<li><a href="https://myip.ms/">https://myip.ms</a></li>
-<li><a href="https://ifconfig.me/">https://ifconfig.me</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
     <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
     <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
@@ -228,6 +162,72 @@
 <li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a>      - 多个API</li>
 </ul>
 <hr>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GFW-2-Sub</title>
+    <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
+    <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
+<p>GitHub鏡像站</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://hub.nuaa.cf/sweetrx</span><br><span class="line">https://hub.yzuu.cf/sweetrx</span><br><span class="line">https://gh.sweetrx.eu.org/sweetrx</span><br><span class="line">https://hub.sweetrx.eu.org/sweetrx</span><br></pre></td></tr></table></figure>
+<p>加速下载站</p>
+<p>自己使用<br><code>https://raw.rxsub.onflashdrive.app/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://ghraw.eu.org/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://p.sweetrx.eu.org</code></p>
+<p>韩国: <code>https://ghproxy.com/</code> + 完整地址</p>
+<p>香港: <code>https://raw.iqiq.io/rxsweet/proxies/main/sub/rx.yaml</code></p>
+<p>新加坡: <code>https://raw.kgithub.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
+<span id="more"></span>
+<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>备用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://rxsub.3d.tc/sub/free.yaml</span><br><span class="line">https://rxsub.app.tc/sub/free.yaml</span><br><span class="line">https://rxsub.coms.hk/sub/free.yaml</span><br><span class="line">https://sub.rxsub.rr.nu/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free64.txt</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/sublist_mining.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/subList_dynamic.txt</span><br></pre></td></tr></table></figure>
+
+<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
+<ul>
+<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
+<li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
+<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
+<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a></li>
+<li><a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></li>
+<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
+<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
+<li><a href="https://id9.cc/">https://id9.cc/</a></li>
+<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
+<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
+<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a></li>
+<li><a href="https://sub.90.ms/">https://sub.90.ms/</a> </li>
+<li><a href="https://sub-web.netlify.app/">https://sub-web.netlify.app/</a> </li>
+<li><a href="https://subcon.dlj.tf/">https://subcon.dlj.tf/</a></li>
+</ul>
+<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.rxsub.onflashdrive.app/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.rr.nu/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.coms.hk/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br></pre></td></tr></table></figure>
+<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
+
+<h1 id="ip匿名检测"><a href="#ip匿名检测" class="headerlink" title="ip匿名检测"></a>ip匿名检测</h1><ul>
+<li><a href="https://ip.voidsec.com/">https://ip.voidsec.com/</a></li>
+<li><a href="https://ipinfo.io/">https://ipinfo.io/</a></li>
+<li><a href="https://ipleak.com/">https://ipleak.com/</a></li>
+<li><a href="https://ipleak.net/">https://ipleak.net/</a></li>
+<li><a href="https://ipleak.org/">https://ipleak.org/</a></li>
+<li><a href="https://ipx.ac/run">https://ipx.ac/run</a></li>
+<li><a href="https://nstool.netease.com/">https://nstool.netease.com/</a></li>
+<li><a href="https://test-ipv6.com/">https://test-ipv6.com/</a></li>
+<li><a href="https://www.deviceinfo.me/">https://www.deviceinfo.me/</a></li>
+<li><a href="https://www.dnsleaktest.com/">https://www.dnsleaktest.com/</a></li>
+<li><a href="https://ip.skk.moe/">https://ip.skk.moe</a></li>
+<li><a href="https://www.whatismyip.com.tw/">https://www.whatismyip.com.tw</a></li>
+<li><a href="https://myip.ms/">https://myip.ms</a></li>
+<li><a href="https://ifconfig.me/">https://ifconfig.me</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>GFW</category>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#112;&#x6d;&#46;&#109;&#x65;">&#x73;&#x77;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#112;&#x6d;&#46;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#101;&#101;&#x74;&#114;&#120;&#x40;&#112;&#x6d;&#46;&#x6d;&#x65;">&#115;&#119;&#101;&#101;&#x74;&#114;&#120;&#x40;&#112;&#x6d;&#46;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -837,6 +837,7 @@
 </ul>
 <h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
 <p>自己现在使用的uBlock Origin</p>
+<p><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts</a></p>
 <p><a href="http://sbc.io/hosts/alternates/fakenews-gambling-porn-social/hosts">http://sbc.io/hosts/alternates/fakenews-gambling-porn-social/hosts</a></p>
 <p>HalfLife电脑端 - <a href="https://ghproxy.com/https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt">https://ghproxy.com/https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt</a></p>
 <p>HalfLife移动端 - <a href="https://ghproxy.com/https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt">https://ghproxy.com/https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt</a></p>
@@ -1565,6 +1566,33 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk - 手机优化清理 - 雪豹速清、清浊</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-apk-%E6%89%8B%E6%9C%BA%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
+    <content><![CDATA[<p>手机优化清理 - 雪豹速清、清浊</p>
+<h3 id="雪豹速清"><a href="#雪豹速清" class="headerlink" title="雪豹速清"></a>雪豹速清</h3><p>评分很高的一款免费安卓垃圾清理工具，<br>特色功能自动扫全盘，扫描速度超快，智能文件分类，一建清理垃圾，<br>支持安卓13&#x2F;Android&#x2F;data目录访问、文件复制、缓存垃圾扫描、文件管理等操作。</p>
+<span id="more"></span>
+
+<p>分享页：<br><a href="https://www.qilebb.com/4305.html">https://www.qilebb.com/4305.html</a></p>
+<p><a href="https://www.423down.com/11817.html">https://www.423down.com/11817.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://pan.lanzouj.com/b01dkd0ad">https://pan.lanzouj.com/b01dkd0ad</a></p>
+<p><a href="https://423down.lanzouh.com/b0f1944od">https://423down.lanzouh.com/b0f1944od</a></p>
+<h3 id="清浊-解锁高级版"><a href="#清浊-解锁高级版" class="headerlink" title="清浊 - 解锁高级版"></a>清浊 - 解锁高级版</h3><p>清浊一个简洁但功能毫不逊色的清理工具 ，<br>界面清爽，功能强大，有非常多的专门清理功能，<br>并且还提供ROOT清理的功能。</p>
+<p>分享页：<br><a href="https://www.qilebb.com/3006.html">https://www.qilebb.com/3006.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://pan.lanzouj.com/b01dhsyqf">https://pan.lanzouj.com/b01dhsyqf</a></p>
+<p><a href="https://423down.lanzouh.com/b0f1944od">https://423down.lanzouh.com/b0f1944od</a></p>
+<p><a href="https://lanzoui.com/b04alkefa">https://lanzoui.com/b04alkefa</a>  提取码：4xim </p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - OCR合集 - 图片识别、截图识别、剪切图片识别</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-OCR%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<p>OCR合集 - 图片识别、截图识别、剪切图片识别</p>
@@ -1590,33 +1618,6 @@
         <tag>win</tag>
         <tag>apk</tag>
         <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 手机优化清理 - 雪豹速清、清浊</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-apk-%E6%89%8B%E6%9C%BA%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
-    <content><![CDATA[<p>手机优化清理 - 雪豹速清、清浊</p>
-<h3 id="雪豹速清"><a href="#雪豹速清" class="headerlink" title="雪豹速清"></a>雪豹速清</h3><p>评分很高的一款免费安卓垃圾清理工具，<br>特色功能自动扫全盘，扫描速度超快，智能文件分类，一建清理垃圾，<br>支持安卓13&#x2F;Android&#x2F;data目录访问、文件复制、缓存垃圾扫描、文件管理等操作。</p>
-<span id="more"></span>
-
-<p>分享页：<br><a href="https://www.qilebb.com/4305.html">https://www.qilebb.com/4305.html</a></p>
-<p><a href="https://www.423down.com/11817.html">https://www.423down.com/11817.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://pan.lanzouj.com/b01dkd0ad">https://pan.lanzouj.com/b01dkd0ad</a></p>
-<p><a href="https://423down.lanzouh.com/b0f1944od">https://423down.lanzouh.com/b0f1944od</a></p>
-<h3 id="清浊-解锁高级版"><a href="#清浊-解锁高级版" class="headerlink" title="清浊 - 解锁高级版"></a>清浊 - 解锁高级版</h3><p>清浊一个简洁但功能毫不逊色的清理工具 ，<br>界面清爽，功能强大，有非常多的专门清理功能，<br>并且还提供ROOT清理的功能。</p>
-<p>分享页：<br><a href="https://www.qilebb.com/3006.html">https://www.qilebb.com/3006.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://pan.lanzouj.com/b01dhsyqf">https://pan.lanzouj.com/b01dhsyqf</a></p>
-<p><a href="https://423down.lanzouh.com/b0f1944od">https://423down.lanzouh.com/b0f1944od</a></p>
-<p><a href="https://lanzoui.com/b04alkefa">https://lanzoui.com/b04alkefa</a>  提取码：4xim </p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
       </tags>
   </entry>
   <entry>
@@ -1647,6 +1648,26 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 卸载工具</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>软件卸载工具</p>
+<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
+<p>卸载利器 IObit Uninstaller Pro </p>
+<p>卸载删除 Total Uninstall - 软件是64位</p>
+<p>Geek Uninstaller 卸载工具</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
+<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - WinRAR and 7-Zip</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
     <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
@@ -1660,26 +1681,6 @@
 <p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
 <h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
 <p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 卸载工具</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>软件卸载工具</p>
-<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
-<p>卸载利器 IObit Uninstaller Pro </p>
-<p>卸载删除 Total Uninstall - 软件是64位</p>
-<p>Geek Uninstaller 卸载工具</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
-<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2187,42 +2188,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - Hexo添加分类,标签,搜索（在Next主题下）</title>
-    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E6%B7%BB%E5%8A%A0-%E5%88%86%E7%B1%BB-%E6%A0%87%E7%AD%BE-%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自建的博客怎么能没有分类，标签，搜索呢，所以我就去查了一下怎么去配置分类和标签,搜索</p>
-<span id="more"></span>
-
-<h1 id="一-添加分类"><a href="#一-添加分类" class="headerlink" title="一.添加分类"></a>一.添加分类</h1><h2 id="1-在主题里配置好分类"><a href="#1-在主题里配置好分类" class="headerlink" title="1. 在主题里配置好分类"></a>1. 在主题里配置好分类</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 15:31:09categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
-<p>去掉<code>categories</code>前<code>#</code>注释标</p>
-<h2 id="2-创建分类目录文件"><a href="#2-创建分类目录文件" class="headerlink" title="2. 创建分类目录文件"></a>2. 创建分类目录文件</h2><p>在Hexoblog主目录下创建<code>/source/categories/index.md</code></p>
-<h2 id="3-编辑页面让主题识别页面为分类页面"><a href="#3-编辑页面让主题识别页面为分类页面" class="headerlink" title="3. 编辑页面让主题识别页面为分类页面"></a>3. 编辑页面让主题识别页面为分类页面</h2><p>编辑<code>index.md</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类 - post category</span><br><span class="line">date: 2021-01-25 22:37:25</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这就完成了整个分类页面的配置了。</p>
-<h1 id="二-添加标签"><a href="#二-添加标签" class="headerlink" title="二.添加标签"></a>二.添加标签</h1><h2 id="1-在主题里配置好标签"><a href="#1-在主题里配置好标签" class="headerlink" title="1. 在主题里配置好标签"></a>1. 在主题里配置好标签</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 15:31:09categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
-<p>去掉<code>tags</code>前<code>#</code>注释标</p>
-<h2 id="2-创建标签目录文件"><a href="#2-创建标签目录文件" class="headerlink" title="2. 创建标签目录文件"></a>2. 创建标签目录文件</h2><p>在Hexoblog主目录下创建<code>/source/tags/index.md</code></p>
-<h2 id="3-编辑页面让主题识别页面为标签页面"><a href="#3-编辑页面让主题识别页面为标签页面" class="headerlink" title="3. 编辑页面让主题识别页面为标签页面"></a>3. 编辑页面让主题识别页面为标签页面</h2><p>编辑index.md</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签 - tags</span><br><span class="line">date: 2021-01-25 22:54:58</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这就完成了整个标签页面的配置了。</p>
-<h1 id="三-添加搜索Search"><a href="#三-添加搜索Search" class="headerlink" title="三.添加搜索Search"></a>三.添加搜索Search</h1><p>首先安装 <code>node</code> 插件： <code>hexo-generator-searchdb</code>，在博客根目录执行：</p>
-<p><code>npm install hexo-generator-searchdb --save</code></p>
-<p>然后修改博客站点配置文件（~&#x2F;hexo&#x2F;_config.yml），添加以下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
-<p>最后在主题配置文件<code>themes/next/_config.yml</code>找到 <code>local_search</code> 改为<code>true</code>，其他项目自选：</p>
-<h1 id="四-结语"><a href="#四-结语" class="headerlink" title="四.结语"></a>四.结语</h1><p>这样我们就完成了分类和标签的配置，可以看出分类和标签的配置流程基本一样。</p>
-<p>关于Next的更多配置请查看官方文档 <a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></p>
-<h1 id="五-延伸"><a href="#五-延伸" class="headerlink" title="五.延伸"></a>五.延伸</h1><p>在上面我们配置对文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域，名称为 <code>Front-matter</code></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - hexo博客使用Github Action自动部署</title>
     <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</url>
     <content><![CDATA[<h1 id="hexo博客使用Github-Action自动部署"><a href="#hexo博客使用Github-Action自动部署" class="headerlink" title="hexo博客使用Github Action自动部署"></a>hexo博客使用Github Action自动部署</h1><h2 id="Hexo-博客的Github-Action自动化部署是什么？"><a href="#Hexo-博客的Github-Action自动化部署是什么？" class="headerlink" title="Hexo 博客的Github Action自动化部署是什么？"></a>Hexo 博客的Github Action自动化部署是什么？</h2><p>简单说，就是把hexo博客的源代码上传到github代码仓库，github在代码发生变动的时候，自动通过安装一系列nodejs环境和相关依赖，生成html页面到github pages仓库。</p>
@@ -2265,6 +2230,42 @@ OK,大功告成！
 <h3 id="缺少package-lock-json"><a href="#缺少package-lock-json" class="headerlink" title="缺少package-lock.json"></a>缺少<code>package-lock.json</code></h3><p>package-lock.json作用：</p>
 <p><em>主要解决问题场景：</em><br><em>前景：</em><br>比如你的packgae.json的依赖是”react”: “^17.0.2”，因为有标识符^，所以如果react模块有在17大版本下更新的小版本17.0.3，npm install时候会自动安装17下的最新版本17.0.3<br><em>现象：</em><br>在前景情况下，你本地是”react”: “^17.0.2”，如果这时候react更新”react”: “^17.0.3”，别人npm install的时候，安装就是”react”: “^17.0.3”。这样导致你们版本不一致，可能引起一些相关错误。<br><em>解决：</em><br>package-lock.json：简单来说就是锁定安装模块的版本号。<br>就是在npm install的时候，记录各个模块的版本信息和下载路径，这样别人拉项目npm install时候， 就会依据packgae-lock.json去安装”react”: “^17.0.2”，保证大家依赖一致并且安装模块速度也能提高。<br><em>注意点:</em><br>1.npm安装，没有package-lock.json文件，如果npm版本是5+，会自动生成package-lock.json。有的话会默认依据该文件进行安装而不是package.json。cnpm不支持（忽略）依据package-lock.json文件安装模块，默认依赖package.json进行安装。<br>2.需要更新版本，得去更新package.json里的模块版本，然后npm install，才能同步更新到package-lock.json<br>3.该功能基于npm5+</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了heson大佬的文章和方法<a href="https://www.heson10.com/posts/61031.html">黑石博客 - 利用Github Action实现hexo博客的自动部署</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo添加分类,标签,搜索（在Next主题下）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E6%B7%BB%E5%8A%A0-%E5%88%86%E7%B1%BB-%E6%A0%87%E7%AD%BE-%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自建的博客怎么能没有分类，标签，搜索呢，所以我就去查了一下怎么去配置分类和标签,搜索</p>
+<span id="more"></span>
+
+<h1 id="一-添加分类"><a href="#一-添加分类" class="headerlink" title="一.添加分类"></a>一.添加分类</h1><h2 id="1-在主题里配置好分类"><a href="#1-在主题里配置好分类" class="headerlink" title="1. 在主题里配置好分类"></a>1. 在主题里配置好分类</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 15:31:09categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<p>去掉<code>categories</code>前<code>#</code>注释标</p>
+<h2 id="2-创建分类目录文件"><a href="#2-创建分类目录文件" class="headerlink" title="2. 创建分类目录文件"></a>2. 创建分类目录文件</h2><p>在Hexoblog主目录下创建<code>/source/categories/index.md</code></p>
+<h2 id="3-编辑页面让主题识别页面为分类页面"><a href="#3-编辑页面让主题识别页面为分类页面" class="headerlink" title="3. 编辑页面让主题识别页面为分类页面"></a>3. 编辑页面让主题识别页面为分类页面</h2><p>编辑<code>index.md</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类 - post category</span><br><span class="line">date: 2021-01-25 22:37:25</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这就完成了整个分类页面的配置了。</p>
+<h1 id="二-添加标签"><a href="#二-添加标签" class="headerlink" title="二.添加标签"></a>二.添加标签</h1><h2 id="1-在主题里配置好标签"><a href="#1-在主题里配置好标签" class="headerlink" title="1. 在主题里配置好标签"></a>1. 在主题里配置好标签</h2><p>首先找到Next主题的<code>_config.yam</code>,位置<code>\themes\next\_config.yml</code><br>在配置中找到下面代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  # about: /about/ || fa fa-user</span><br><span class="line">  # tags: /tags/ || fa fa-tags</span><br><span class="line">  # updated: 2023-02-13 15:31:09categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  ...</span><br></pre></td></tr></table></figure>
+<p>去掉<code>tags</code>前<code>#</code>注释标</p>
+<h2 id="2-创建标签目录文件"><a href="#2-创建标签目录文件" class="headerlink" title="2. 创建标签目录文件"></a>2. 创建标签目录文件</h2><p>在Hexoblog主目录下创建<code>/source/tags/index.md</code></p>
+<h2 id="3-编辑页面让主题识别页面为标签页面"><a href="#3-编辑页面让主题识别页面为标签页面" class="headerlink" title="3. 编辑页面让主题识别页面为标签页面"></a>3. 编辑页面让主题识别页面为标签页面</h2><p>编辑index.md</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签 - tags</span><br><span class="line">date: 2021-01-25 22:54:58</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这就完成了整个标签页面的配置了。</p>
+<h1 id="三-添加搜索Search"><a href="#三-添加搜索Search" class="headerlink" title="三.添加搜索Search"></a>三.添加搜索Search</h1><p>首先安装 <code>node</code> 插件： <code>hexo-generator-searchdb</code>，在博客根目录执行：</p>
+<p><code>npm install hexo-generator-searchdb --save</code></p>
+<p>然后修改博客站点配置文件（~&#x2F;hexo&#x2F;_config.yml），添加以下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+<p>最后在主题配置文件<code>themes/next/_config.yml</code>找到 <code>local_search</code> 改为<code>true</code>，其他项目自选：</p>
+<h1 id="四-结语"><a href="#四-结语" class="headerlink" title="四.结语"></a>四.结语</h1><p>这样我们就完成了分类和标签的配置，可以看出分类和标签的配置流程基本一样。</p>
+<p>关于Next的更多配置请查看官方文档 <a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></p>
+<h1 id="五-延伸"><a href="#五-延伸" class="headerlink" title="五.延伸"></a>五.延伸</h1><p>在上面我们配置对文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域，名称为 <code>Front-matter</code></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2321,47 +2322,6 @@ OK,大功告成！
         <tag>软件</tag>
         <tag>win</tag>
         <tag>网盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win快速启动软件lily和lucy</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
-<p>lily功能丰富，有截屏，停止更新了</p>
-<p>Lucy现在还在更新</p>
-</blockquote>
-<span id="more"></span>
-<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
-<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
-</li>
-<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
-</li>
-<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
-</li>
-<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
-</li>
-</ul>
-<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
-<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
-<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
-<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
-<p>下载地址：</p>
-<ul>
-<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
-<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
-<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
       </tags>
   </entry>
   <entry>
@@ -2425,6 +2385,47 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - win快速启动软件lily和lucy</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>lily和Lucy  这2款快速启动软件都非常优秀</p>
+<p>lily功能丰富，有截屏，停止更新了</p>
+<p>Lucy现在还在更新</p>
+</blockquote>
+<span id="more"></span>
+<h1 id="Lily-快捷启动工具-v5-0"><a href="#Lily-快捷启动工具-v5-0" class="headerlink" title="Lily(快捷启动工具)v5.0"></a>Lily(快捷启动工具)v5.0</h1><p>Lily是一款类似音速启动和Rolan的快捷方式启动软件，<br>软件集成了很多功能，比如说截图，贴图，OCR，屏幕尺子等功能。<br>能够说最大的好处就是免费，功能多吧，<br>其实界面并不是那么的好看，不过相信多功能能够帮助到你。<br>软件独有的多分组功能，还是在启动类软件独树一帜，<br>软件的截图功能也比较强大，不过这个功能是sharex开源的功能。<br>采用 .net 4.7.2 框架开发，如需使用请确保本机装有 .net4.7.2 或更高版本</p>
+<p>分享地址 – 果核：<a href="https://www.ghxi.com/lily.html">https://www.ghxi.com/lily.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><p><a href="https://aichunjing.lanzoui.com/b970435">https://aichunjing.lanzoui.com/b970435</a></p>
+</li>
+<li><p><a href="https://www.lanzoui.com/i67hfvg">https://www.lanzoui.com/i67hfvg</a></p>
+</li>
+<li><p><a href="https://iplaysoft.lanzoup.com/i8TkQjd8a1g">https://iplaysoft.lanzoup.com/i8TkQjd8a1g</a></p>
+</li>
+<li><p><a href="https://ghboke.ctfile.com/dir/7369060-30706150-4f8280">https://ghboke.ctfile.com/dir/7369060-30706150-4f8280</a></p>
+</li>
+</ul>
+<h1 id="Lucy"><a href="#Lucy" class="headerlink" title="Lucy"></a>Lucy</h1><p>lucy是一个开发者觉得Lily用的不太顺手，所以就又重新开发了一个。</p>
+<p>用过音速启动、Lily等启动工具，都是很好的软件<br>但每个软件都不可能适应所有人的需求，于是自己又造了一个轮子（小作坊出品，连个漂亮图标都不给）<br>使用Lily时习惯吧名字改为Lucy，于是轮子的名字依然叫Lucy了<br>软件最大特色就是简洁，只为快速启动，简洁到该有不该有的都没有<br>不联网，不写注册表，甚至不开机启动(可在设置页面选择开机启动)<br>软件使用C++编写，界面库使用网易云信NIM_Duilib，数据存储使用sqlite3本地数据库。</p>
+<p>添加文件直接拖入界面即可<br>添加网址需要手动添加或拖入url快捷方式(如果在icons\url下有对应一级域名图标会自动加载)<br>快捷方式可以拖动排序！<br>PS：软件主要自用，风格极简，不会添加绚丽特效或复杂功能，以实用为主，会酌情考虑坛友提出的建议进行更新，遇到BUG请留言。</p>
+<p>分享地址 – 官网：<a href="https://www.yuque.com/lucy/lucy/record">https://www.yuque.com/lucy/lucy/record</a><br>分享地址 – 果核：<a href="https://www.ghxi.com/lucy.html">https://www.ghxi.com/lucy.html</a></p>
+<p>下载地址：</p>
+<ul>
+<li><a href="https://lucy.lanzouw.com/b015ebrti">https://lucy.lanzouw.com/b015ebrti</a></li>
+<li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
+<li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 笔记软件mybase</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2483,10 +2484,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 免费企业查询app</title>
-    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
-    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
-<span id="more"></span>
+    <title>软件 - apk - 音乐剪辑</title>
+    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
+    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
+<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2498,10 +2499,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 音乐剪辑</title>
-    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
-    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
-<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
+    <title>软件 - apk - 免费企业查询app</title>
+    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
+    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
+<span id="more"></span>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2618,6 +2619,19 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 获取github文件夹里文件API的方法</title>
+    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 查看端口被占用、杀进程</title>
     <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<h3 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h3><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
@@ -2629,19 +2643,6 @@ OK,大功告成！
 <p>2.详细信息-找到PID -右键-转到服务-停止</p>
 <h3 id="根据进程的名称杀掉进程"><a href="#根据进程的名称杀掉进程" class="headerlink" title="根据进程的名称杀掉进程"></a>根据进程的名称杀掉进程</h3><p>taskkill &#x2F;f &#x2F;t &#x2F;im “进程id或者进程名称”</p>
 <h3 id="系统当前所有的端口使用情况"><a href="#系统当前所有的端口使用情况" class="headerlink" title="系统当前所有的端口使用情况"></a>系统当前所有的端口使用情况</h3><p>输入netstat -ano然后回车，就可以看到系统当前所有的端口使用情况</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 获取github文件夹里文件API的方法</title>
-    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>经验技术</category>
