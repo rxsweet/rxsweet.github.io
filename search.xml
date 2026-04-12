@@ -143,6 +143,82 @@
       </tags>
   </entry>
   <entry>
+    <title>GFW - Github连接访问的几种方法</title>
+    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
+<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
+<span id="more"></span>
+
+<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
+<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
+</li>
+<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
+</li>
+<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
+</li>
+</ol>
+<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
+<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
+<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
+<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
+<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
+<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
+<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
+</ol>
+<hr>
+<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
+<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
+</li>
+<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
+</li>
+<li></li>
+</ul>
+<ol>
+<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
+<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
+<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
+<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
+<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
+</ol>
+<hr>
+<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
+<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
+</ul>
+<ol>
+<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
+</li>
+<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
+</li>
+<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
+</li>
+</ol>
+<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
+<hr>
+<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
+<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
+</ul>
+<hr>
+<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
+<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
+<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
+<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
+<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
+<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
+<hr>
+<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
     <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
     <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
@@ -324,82 +400,6 @@
         <tag>GFW</tag>
         <tag>sms</tag>
         <tag>接码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GFW - Github连接访问的几种方法</title>
-    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
-<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
-<span id="more"></span>
-
-<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
-<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
-</li>
-<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
-</li>
-<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
-</li>
-</ol>
-<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
-<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
-<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
-<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
-<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
-<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
-<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
-</ol>
-<hr>
-<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
-<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
-</li>
-<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
-</li>
-<li></li>
-</ul>
-<ol>
-<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
-<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
-<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
-<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
-<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
-</ol>
-<hr>
-<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
-<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
-</ul>
-<ol>
-<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
-</li>
-<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
-</li>
-<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
-</li>
-</ol>
-<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
-<hr>
-<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
-<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
-</ul>
-<hr>
-<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
-<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
-<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
-<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
-<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
-<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
-<hr>
-<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
       </tags>
   </entry>
   <entry>
@@ -694,63 +694,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
-<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
-<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
-<span id="more"></span>
-
-<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
-<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
-<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个文件的作用，就是建立起站点的tags list.</p>
-<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
-<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
-<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
-<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
-<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
-<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
-<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>语法可以随意按照你希望的样子进行调整。</p>
-<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
-<p>:bowtie:</p>
-<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-win-Chrome浏览器下载和自用插件</title>
     <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>更新于2022-05-09</p>
@@ -812,7 +755,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#101;&#101;&#x74;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#101;">&#115;&#119;&#101;&#101;&#x74;&#x72;&#120;&#x40;&#112;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#101;&#116;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#101;">&#115;&#x77;&#101;&#101;&#116;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -821,6 +764,63 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>chrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
+<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
+<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
+<span id="more"></span>
+
+<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
+<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
+<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个文件的作用，就是建立起站点的tags list.</p>
+<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
+<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
+<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
+<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
+<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
+<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
+<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>语法可以随意按照你希望的样子进行调整。</p>
+<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
+<p>:bowtie:</p>
+<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1216,32 +1216,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 扫描全能王</title>
-    <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-apk-%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B/</url>
-    <content><![CDATA[<p>几款好用的扫描软件apk</p>
-<p>扫描全能王,扫描君(扫描王全能宝)</p>
-<span id="more"></span>
-
-<h1 id="1-扫描全能王"><a href="#1-扫描全能王" class="headerlink" title="1.扫描全能王"></a>1.扫描全能王</h1><p>大神分享：</p>
-<p><a href="https://apphot.cc/9186.html">https://apphot.cc/9186.html</a></p>
-<p><a href="https://www.423down.com/8129.html">https://www.423down.com/8129.html</a></p>
-<p><a href="https://www.ghxi.com/camscanner.html">https://www.ghxi.com/camscanner.html</a></p>
-<p>下载地址：</p>
-<p>yoyodadada蓝凑云 - 推荐：<a href="https://yoyodadada.lanzouw.com/b07pt10h">https://yoyodadada.lanzouw.com/b07pt10h</a></p>
-<p>烈火百度盘: <a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
-<h1 id="2-扫描君-扫描王全能宝"><a href="#2-扫描君-扫描王全能宝" class="headerlink" title="2.扫描君(扫描王全能宝)"></a>2.扫描君(扫描王全能宝)</h1><p><a href="https://423down.lanzouo.com/b0f1aq5sb">https://423down.lanzouo.com/b0f1aq5sb</a></p>
-<p><a href="https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F">https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F</a></p>
-<p>烈火分享 - 资源目录里面的同类APP下：<br><a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - WPS office</title>
     <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-win-WPS/</url>
     <content><![CDATA[<p>WPS office  - Windows版,Android版,国际版</p>
@@ -1280,6 +1254,32 @@
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 扫描全能王</title>
+    <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-apk-%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B/</url>
+    <content><![CDATA[<p>几款好用的扫描软件apk</p>
+<p>扫描全能王,扫描君(扫描王全能宝)</p>
+<span id="more"></span>
+
+<h1 id="1-扫描全能王"><a href="#1-扫描全能王" class="headerlink" title="1.扫描全能王"></a>1.扫描全能王</h1><p>大神分享：</p>
+<p><a href="https://apphot.cc/9186.html">https://apphot.cc/9186.html</a></p>
+<p><a href="https://www.423down.com/8129.html">https://www.423down.com/8129.html</a></p>
+<p><a href="https://www.ghxi.com/camscanner.html">https://www.ghxi.com/camscanner.html</a></p>
+<p>下载地址：</p>
+<p>yoyodadada蓝凑云 - 推荐：<a href="https://yoyodadada.lanzouw.com/b07pt10h">https://yoyodadada.lanzouw.com/b07pt10h</a></p>
+<p>烈火百度盘: <a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
+<h1 id="2-扫描君-扫描王全能宝"><a href="#2-扫描君-扫描王全能宝" class="headerlink" title="2.扫描君(扫描王全能宝)"></a>2.扫描君(扫描王全能宝)</h1><p><a href="https://423down.lanzouo.com/b0f1aq5sb">https://423down.lanzouo.com/b0f1aq5sb</a></p>
+<p><a href="https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F">https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F</a></p>
+<p>烈火分享 - 资源目录里面的同类APP下：<br><a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
         <tag>apk</tag>
       </tags>
   </entry>
@@ -1511,29 +1511,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - WinRAR and 7-Zip</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
-    <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
-<span id="more"></span>
-
-<p>WinRAR 简体中文汉化版</p>
-<p>网盘下载</p>
-<p><a href="https://lanzoui.com/b04ako9dg">https://lanzoui.com/b04ako9dg</a> 提取码：3zq8</p>
-<p><a href="https://423down.lanzouo.com/b105455">https://423down.lanzouo.com/b105455</a></p>
-<p><a href="https://ghpym.lanzoui.com/b010ja45a">https://ghpym.lanzoui.com/b010ja45a</a>   密码:fd15</p>
-<p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
-<h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
-<p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - PDF - 编辑、修改、转换</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-PDF/</url>
     <content><![CDATA[<h1 id="1-PDF-Windows"><a href="#1-PDF-Windows" class="headerlink" title="1.PDF - Windows"></a>1.PDF - Windows</h1><p>福昕高级PDF编辑器专业版</p>
@@ -1551,6 +1528,29 @@
 <p>下载地址：</p>
 <p><a href="https://wwa.lanzoui.com/b04azn4he">https://wwa.lanzoui.com/b04azn4he</a> 提取码：35rk</p>
 <p><a href="https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge">https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge</a> 密码：24ge</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - WinRAR and 7-Zip</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
+    <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
+<span id="more"></span>
+
+<p>WinRAR 简体中文汉化版</p>
+<p>网盘下载</p>
+<p><a href="https://lanzoui.com/b04ako9dg">https://lanzoui.com/b04ako9dg</a> 提取码：3zq8</p>
+<p><a href="https://423down.lanzouo.com/b105455">https://423down.lanzouo.com/b105455</a></p>
+<p><a href="https://ghpym.lanzoui.com/b010ja45a">https://ghpym.lanzoui.com/b010ja45a</a>   密码:fd15</p>
+<p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
+<h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
+<p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1689,28 +1689,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 视频播放器</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<p>几款好用的视频播放器</p>
-<span id="more"></span>
-
-<h2 id="影音播放器-GOM-Player-Plus"><a href="#影音播放器-GOM-Player-Plus" class="headerlink" title="影音播放器 GOM Player Plus"></a>影音播放器 GOM Player Plus</h2><p>GOM Player是全球最受欢迎的影音播放器之一</p>
-<p><a href="https://wwi.lanzoup.com/b04cpom6j">https://wwi.lanzoup.com/b04cpom6j</a> 提取码：8csi</p>
-<h2 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h2><p>PotPlayer播放器是KMPlayer的制作者姜龙喜先生进入Daum公司后的新一代作品，目前主窗口在全力开发中。<br>PotPlayer的优势在于强大的内置解码器；而KMPlayer 的优势在于强大的定制能力和个性化功能。</p>
-<p><a href="https://lanzoui.com/b0i38vsd">https://lanzoui.com/b0i38vsd</a></p>
-<p><a href="https://wwa.lanzoui.com/b04ayt73i">https://wwa.lanzoui.com/b04ayt73i</a> 提取码：5wv7</p>
-<h2 id="MPC-BE（Media-Player-Classic-Black-Edition）-现用"><a href="#MPC-BE（Media-Player-Classic-Black-Edition）-现用" class="headerlink" title="MPC-BE（Media Player Classic Black Edition） - 现用"></a>MPC-BE（Media Player Classic Black Edition） - 现用</h2><p>MPC-BE，免费经典全能影音播放器。这是款经典本地播放器，<br>更新也非常勤快，软件纯净无广告，<br>启动速度非常快，支持解码播放各种视频格式，播放流畅不卡顿，<br>低配电脑播放超清视频流畅无压力</p>
-<p><a href="https://423down.lanzouo.com/b0f2moqte">https://423down.lanzouo.com/b0f2moqte</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 输入法</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%BE%93%E5%85%A5%E6%B3%95/</url>
     <content><![CDATA[<h3 id="搜狗输入法"><a href="#搜狗输入法" class="headerlink" title="搜狗输入法"></a>搜狗输入法</h3><p>特点描述</p>
@@ -1733,6 +1711,28 @@
 <p>yoyodadada-PC版 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07pv5xg">https://yoyodadada.lanzouw.com/b07pv5xg</a></p>
 <p><a href="https://pan.lanzouj.com/b01dj5eud">https://pan.lanzouj.com/b01dj5eud</a></p>
 <p><a href="https://lanzoui.com/b04al7aeh">https://lanzoui.com/b04al7aeh</a> 提取码：9h39</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 视频播放器</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/</url>
+    <content><![CDATA[<p>几款好用的视频播放器</p>
+<span id="more"></span>
+
+<h2 id="影音播放器-GOM-Player-Plus"><a href="#影音播放器-GOM-Player-Plus" class="headerlink" title="影音播放器 GOM Player Plus"></a>影音播放器 GOM Player Plus</h2><p>GOM Player是全球最受欢迎的影音播放器之一</p>
+<p><a href="https://wwi.lanzoup.com/b04cpom6j">https://wwi.lanzoup.com/b04cpom6j</a> 提取码：8csi</p>
+<h2 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h2><p>PotPlayer播放器是KMPlayer的制作者姜龙喜先生进入Daum公司后的新一代作品，目前主窗口在全力开发中。<br>PotPlayer的优势在于强大的内置解码器；而KMPlayer 的优势在于强大的定制能力和个性化功能。</p>
+<p><a href="https://lanzoui.com/b0i38vsd">https://lanzoui.com/b0i38vsd</a></p>
+<p><a href="https://wwa.lanzoui.com/b04ayt73i">https://wwa.lanzoui.com/b04ayt73i</a> 提取码：5wv7</p>
+<h2 id="MPC-BE（Media-Player-Classic-Black-Edition）-现用"><a href="#MPC-BE（Media-Player-Classic-Black-Edition）-现用" class="headerlink" title="MPC-BE（Media Player Classic Black Edition） - 现用"></a>MPC-BE（Media Player Classic Black Edition） - 现用</h2><p>MPC-BE，免费经典全能影音播放器。这是款经典本地播放器，<br>更新也非常勤快，软件纯净无广告，<br>启动速度非常快，支持解码播放各种视频格式，播放流畅不卡顿，<br>低配电脑播放超清视频流畅无压力</p>
+<p><a href="https://423down.lanzouo.com/b0f2moqte">https://423down.lanzouo.com/b0f2moqte</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1808,6 +1808,56 @@
       </categories>
       <tags>
         <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 空调选择</title>
+    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
+<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
+<span id="more"></span>
+
+<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
+<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
+<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
+<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
+<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
+<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
+<p>1、冷凝器（热交换器）</p>
+<p>铜管数量：关注格力机型单双排铜管。</p>
+<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
+<p>一般来说，</p>
+<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
+<p>所以，咱们要具体问题具体分析。</p>
+<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
+<p>格力C型换热器<br>2、外机重量和尺寸</p>
+<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
+<p>就看外机净重！</p>
+<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
+<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
+<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
+<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
+<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
+<p>3、压缩机</p>
+<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
+<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
+<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
+<p>4、节流装置</p>
+<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
+<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
+<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
+<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
+<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
+<p>5、是否是冷酷外机</p>
+<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
+<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1964,56 +2014,6 @@
 <p><a href="https://zhuanlan.zhihu.com/p/344706528">https://zhuanlan.zhihu.com/p/344706528</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/528892439">https://zhuanlan.zhihu.com/p/528892439</a></p>
 <p><a href="https://fsoufsou.com/search?q=2022%E5%B9%B4%E8%80%81%E5%B9%B4%E4%BA%BA%E4%B9%B0%E4%BB%80%E4%B9%88%E4%BF%9D%E9%99%A9%E4%BA%A7%E5%93%81%E6%AF%94%E8%BE%83%E5%A5%BD&tbn=all">F 搜</a></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 空调选择</title>
-    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
-<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
-<span id="more"></span>
-
-<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
-<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
-<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
-<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
-<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
-<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
-<p>1、冷凝器（热交换器）</p>
-<p>铜管数量：关注格力机型单双排铜管。</p>
-<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
-<p>一般来说，</p>
-<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
-<p>所以，咱们要具体问题具体分析。</p>
-<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
-<p>格力C型换热器<br>2、外机重量和尺寸</p>
-<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
-<p>就看外机净重！</p>
-<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
-<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
-<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
-<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
-<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
-<p>3、压缩机</p>
-<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
-<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
-<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
-<p>4、节流装置</p>
-<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
-<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
-<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
-<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
-<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
-<p>5、是否是冷酷外机</p>
-<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
-<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -2344,36 +2344,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 域名注册并绑定vercel博客</title>
-    <url>/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="域名注册并绑定vercel博客"><a href="#域名注册并绑定vercel博客" class="headerlink" title="域名注册并绑定vercel博客"></a>域名注册并绑定vercel博客</h1><h2 id="先注册域名"><a href="#先注册域名" class="headerlink" title="先注册域名"></a>先注册域名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitelutions多种可解析免费二级域名注册，</span><br><span class="line">至少已经运行十几年了，现在依然可用。</span><br><span class="line">里面可以注册二十几种后缀的免费二级域名，</span><br><span class="line">其中有几个提供既短又好记的二级域名</span><br></pre></td></tr></table></figure>
-<p>注册网址：<a href="https://www.sitelutions.com/">https://www.sitelutions.com/</a></p>
-<p>注册教程：<a href="https://www.freeaday.com/2023/01/sitelutions/">https://www.freeaday.com/2023/01/sitelutions/</a></p>
-<p>步骤：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击右上角的红色 free sign up 来注册。注册只需邮箱即可，但是过程有些麻烦。</span><br><span class="line">2.登录成功之后，依次选择account &gt; url and dns &gt; add subdomain，然后选择一个自己想要的二级域名，点击add host。</span><br><span class="line">3.选择二级域名后面的[Advanced Config &amp; DDNS]字样，来添加记录，</span><br><span class="line">**发现无法添加任何记录，提示已经在2014年10月停止了免费的解析功能**</span><br><span class="line">4.往下拉，找到 ns records，点击click here，原来可以使用第三方ns(nameservers)</span><br><span class="line">5.vercel可以直接添加&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;，最后在vercel里添加注册的域名。</span><br><span class="line">6.vercel绑定到此已完成。</span><br><span class="line">7.其它网站也可以添加使用第三方ns(nameservers)：&#x27;he.net&#x27;的地址（注意：每一条都要以一个点结尾）</span><br><span class="line">8.等待生效之后便可使用，即使添加、修改记录也不用每次登录sitelutions了,直接在he.net操作。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<h2 id="绑定vercel过程"><a href="#绑定vercel过程" class="headerlink" title="绑定vercel过程"></a>绑定vercel过程</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.在sitelutions注册的域名里面的NS records设置里面将&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;添加进去，vercel验证好像要用</span><br><span class="line">2.先进入cercel-domain-填入域名`sweetrx.rr.nu`,就可以直接访问了</span><br></pre></td></tr></table></figure>
-<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**访问过的话，好像需要清理浏览器缓存，或者隔天才可用访问。</p>
-<p>账号pm.me密码Pp5300</p>
-<h2 id="第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务"><a href="#第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务" class="headerlink" title="第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务"></a>第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务</h2><h3 id="注册he-net"><a href="#注册he-net" class="headerlink" title="注册he.net"></a>注册he.net</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hurricane Electric 老牌免费的域名解析服务已经运行了许多年，一直很好用，国内也可以正常使用。</span><br><span class="line">支持A、AAAA、ALIAS、CNAME、CAA、MX、NS、TXT、SRV、SSHFP、SPF、RP、NAPTR、HINFO、LOC 和 PTR 等类型的记录。</span><br></pre></td></tr></table></figure>
-<p>注册教程：<a href="https://www.freeaday.com/2022/09/he-net/">he.net 美国老牌免费dns域名解析服务</a></p>
-<p>注册网址：<a href="https://dns.he.net/">https://dns.he.net/</a></p>
-<p>步骤：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击蓝色的register按钮注册。无需验证手机号，红色星号项目必填，注册会收到激活邮件。仅需验证邮箱，不用其它隐私信息。</span><br><span class="line">2.登录支持点击左侧的 Add a new domain 添加域名。每个账号可以添加50个域名，一级域名、二级域名均可。</span><br></pre></td></tr></table></figure>
-<p>记得去注册商把域名ns设置成：<br>ns1.he.net<br>ns2.he.net<br>ns3.he.net<br>ns4.he.net<br>ns5.he.net</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">3.he.net添加记录值,点击域名左侧的编辑按钮，再点击上面的一行按钮来添加相应的记录值。可以支持ipv4和ipv6</span><br></pre></td></tr></table></figure>
-<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**如果首次使用按钮上方出现红字，那就是域名ns还没生效，一般要等不超过24小时。可以点击Check Delegation按钮检查生效缓存。</p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>thanks，<a href="https://www.freeaday.com/">https://www.freeaday.com/</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk - 免费企业查询app</title>
     <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
     <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
@@ -2401,6 +2371,36 @@ OK,大功告成！
         <tag>软件</tag>
         <tag>apk</tag>
         <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 域名注册并绑定vercel博客</title>
+    <url>/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="域名注册并绑定vercel博客"><a href="#域名注册并绑定vercel博客" class="headerlink" title="域名注册并绑定vercel博客"></a>域名注册并绑定vercel博客</h1><h2 id="先注册域名"><a href="#先注册域名" class="headerlink" title="先注册域名"></a>先注册域名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitelutions多种可解析免费二级域名注册，</span><br><span class="line">至少已经运行十几年了，现在依然可用。</span><br><span class="line">里面可以注册二十几种后缀的免费二级域名，</span><br><span class="line">其中有几个提供既短又好记的二级域名</span><br></pre></td></tr></table></figure>
+<p>注册网址：<a href="https://www.sitelutions.com/">https://www.sitelutions.com/</a></p>
+<p>注册教程：<a href="https://www.freeaday.com/2023/01/sitelutions/">https://www.freeaday.com/2023/01/sitelutions/</a></p>
+<p>步骤：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击右上角的红色 free sign up 来注册。注册只需邮箱即可，但是过程有些麻烦。</span><br><span class="line">2.登录成功之后，依次选择account &gt; url and dns &gt; add subdomain，然后选择一个自己想要的二级域名，点击add host。</span><br><span class="line">3.选择二级域名后面的[Advanced Config &amp; DDNS]字样，来添加记录，</span><br><span class="line">**发现无法添加任何记录，提示已经在2014年10月停止了免费的解析功能**</span><br><span class="line">4.往下拉，找到 ns records，点击click here，原来可以使用第三方ns(nameservers)</span><br><span class="line">5.vercel可以直接添加&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;，最后在vercel里添加注册的域名。</span><br><span class="line">6.vercel绑定到此已完成。</span><br><span class="line">7.其它网站也可以添加使用第三方ns(nameservers)：&#x27;he.net&#x27;的地址（注意：每一条都要以一个点结尾）</span><br><span class="line">8.等待生效之后便可使用，即使添加、修改记录也不用每次登录sitelutions了,直接在he.net操作。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h2 id="绑定vercel过程"><a href="#绑定vercel过程" class="headerlink" title="绑定vercel过程"></a>绑定vercel过程</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.在sitelutions注册的域名里面的NS records设置里面将&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;添加进去，vercel验证好像要用</span><br><span class="line">2.先进入cercel-domain-填入域名`sweetrx.rr.nu`,就可以直接访问了</span><br></pre></td></tr></table></figure>
+<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**访问过的话，好像需要清理浏览器缓存，或者隔天才可用访问。</p>
+<p>账号pm.me密码Pp5300</p>
+<h2 id="第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务"><a href="#第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务" class="headerlink" title="第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务"></a>第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务</h2><h3 id="注册he-net"><a href="#注册he-net" class="headerlink" title="注册he.net"></a>注册he.net</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hurricane Electric 老牌免费的域名解析服务已经运行了许多年，一直很好用，国内也可以正常使用。</span><br><span class="line">支持A、AAAA、ALIAS、CNAME、CAA、MX、NS、TXT、SRV、SSHFP、SPF、RP、NAPTR、HINFO、LOC 和 PTR 等类型的记录。</span><br></pre></td></tr></table></figure>
+<p>注册教程：<a href="https://www.freeaday.com/2022/09/he-net/">he.net 美国老牌免费dns域名解析服务</a></p>
+<p>注册网址：<a href="https://dns.he.net/">https://dns.he.net/</a></p>
+<p>步骤：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击蓝色的register按钮注册。无需验证手机号，红色星号项目必填，注册会收到激活邮件。仅需验证邮箱，不用其它隐私信息。</span><br><span class="line">2.登录支持点击左侧的 Add a new domain 添加域名。每个账号可以添加50个域名，一级域名、二级域名均可。</span><br></pre></td></tr></table></figure>
+<p>记得去注册商把域名ns设置成：<br>ns1.he.net<br>ns2.he.net<br>ns3.he.net<br>ns4.he.net<br>ns5.he.net</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">3.he.net添加记录值,点击域名左侧的编辑按钮，再点击上面的一行按钮来添加相应的记录值。可以支持ipv4和ipv6</span><br></pre></td></tr></table></figure>
+<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**如果首次使用按钮上方出现红字，那就是域名ns还没生效，一般要等不超过24小时。可以点击Check Delegation按钮检查生效缓存。</p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>thanks，<a href="https://www.freeaday.com/">https://www.freeaday.com/</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
