@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#x65;&#116;&#x72;&#x78;&#x40;&#x70;&#109;&#x2e;&#109;&#x65;">&#x73;&#119;&#101;&#x65;&#116;&#x72;&#x78;&#x40;&#x70;&#109;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#x77;&#101;&#x65;&#116;&#x72;&#120;&#x40;&#x70;&#109;&#x2e;&#109;&#101;">&#x73;&#x77;&#101;&#x65;&#116;&#x72;&#120;&#x40;&#x70;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -821,6 +821,88 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>chrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-插件-广告屏蔽插件和广告规则</title>
+    <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<p>广告屏蔽App和广告规则</p>
+<h2 id="1-广告屏蔽App"><a href="#1-广告屏蔽App" class="headerlink" title="1.广告屏蔽App"></a>1.广告屏蔽App</h2><ul>
+<li><p>1.<a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin  Chrome插件  - ☆现用</a></p>
+</li>
+<li><p>2.<a href="https://www.crxsoso.com/webstore/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard 广告拦截器</a></p>
+</li>
+<li><p>3.<a href="https://www.crxsoso.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">Adblock Plus - 免费的广告拦截器</a></p>
+</li>
+</ul>
+<h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
+<p>自己现在使用的uBlock Origin<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a></p>
+<hr>
+<span id="more"></span>
+
+<p>规则记录网站  </p>
+<p><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a>        - github 半生<br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a>        - CJX国外<br><a href="https://github.com/xinggsf/Adblock-Plus-Rule">https://github.com/xinggsf/Adblock-Plus-Rule</a>    - 乘风<br><a href="https://github.com/TG-Twilight/AWAvenue-Ads-Rule/">https://github.com/TG-Twilight/AWAvenue-Ads-Rule/</a>   - 秋风广告规则<br><a href="https://github.com/z44499783/NoADList">https://github.com/z44499783/NoADList</a><br><a href="https://easylist.to/">https://easylist.to/</a>    英文网站</p>
+<hr>
+<hr>
+<p>HalfLife：规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则（几乎每天更新)</p>
+<p>ad-pc.txt：[推荐桌面端]合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance，以及补充的一些规则；<br>ad-mo.txt：合并自Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance；<br>ad.txt：[推荐移动端]合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance，以及补充的一些规则；<br>ad2.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance；<br>ad3.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance、EasyPrivacy；<br>ad-edentw.txt：合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters。<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt</a></p>
+<hr>
+<p>广告过滤规则Adblock plus（ABP）<br>大陆IP的默认列表是EasyList China+EasyList，<br>但因拦截视频广告在国内变得明显不合法，<br>ABP默认列表会被替换成EasyList China+EasyList (compliance)不过滤视频广告版本。<br>如需过滤国内视频广告，请删除默认列表，分开订阅EasyList China与EasyList</p>
+<hr>
+<p>EasyList    - 去除国际网页中大多数广告，包括不需要的框架、图像和对象<br><a href="https://easylist-downloads.adblockplus.org/easylist.txt">https://easylist-downloads.adblockplus.org/easylist.txt</a></p>
+<hr>
+<p>Easylist China：- ABP官方维护的的适合国内使用的规则，更新频繁<br><a href="https://easylist-downloads.adblockplus.org/easylistchina.txt">https://easylist-downloads.adblockplus.org/easylistchina.txt</a></p>
+<hr>
+<p>EasyPrivacy    -是隐私保护，不被跟踪。– 从网络上上完全删除所有形式的跟踪，包括Web错误、跟踪脚本和信息收集，从而保护您的个人数据<br><a href="https://easylist-downloads.adblockplus.org/easyprivacy.txt">https://easylist-downloads.adblockplus.org/easyprivacy.txt</a></p>
+<hr>
+<p>CJX’s Annoyance List：- EasyList China+EasyList &amp; EasyPrivacy的补充过滤烦人的自我推广,并补充EasyPrivacy隐私规则<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt</a></p>
+<hr>
+<p>uBlocklist<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt</a></p>
+<hr>
+<p>乘风广告过滤规则 + 视频过滤规则，乘风规则更新详情<br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt</a><br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt</a></p>
+<hr>
+<p>adt-chinalist-easylist：广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist.txt">http://sub.adtchrome.com/adt-chinalist-easylist.txt</a><br>广告终结者自带规则<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist360.txt">http://sub.adtchrome.com/adt-chinalist-easylist360.txt</a></p>
+<hr>
+<p>Anti-AD<br>目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护<br>屏蔽广告域名、电视盒子广告、APP内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传<br><a href="https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt">https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt</a></p>
+<hr>
+<p>I don’t care about cookies : 我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告。<br><a href="https://www.i-dont-care-about-cookies.eu/abp/">https://www.i-dont-care-about-cookies.eu/abp/</a></p>
+<hr>
+<p>EasyList Cookie List<br>阻止Cookie标语，GDPR覆盖窗口和其他与隐私相关的通知<br><a href="https://easylist-downloads.adblockplus.org/easylist-cookie.txt">https://easylist-downloads.adblockplus.org/easylist-cookie.txt</a></p>
+<hr>
+<p>Adbyby<br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a></p>
+<hr>
+<p>ChinaList2.0（广告净化器内置规则备份）<br><a href="https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt">https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt</a></p>
+<hr>
+<p>其他广告拦截资源汇总 -海外<br>easylist -包括EasyList, EasyPrivacy, EasyList Cookie, Fanboy’s Social&#x2F;Annoyances&#x2F;Notifications Blocking List等<br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
+<hr>
+<p>fanboy国外规则<br><a href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
+<hr>
+<p>uBlockOrigin 相关资源汇总<br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
+<hr>
+<p>Adgurad 拦截规则资源分类汇总<br><a href="https://kb.adguard.com/en/general/adguard-ad-filters">https://kb.adguard.com/en/general/adguard-ad-filters</a></p>
+<hr>
+<hr>
+<p>ADgk - Andriod<br>一个专门为安卓版adguard写的规则,适合在手机浏览器中使用的拦截规则。<br>适用于 AdGuard for Android 的去广告规则（不保证在其他软件使用的效果）</p>
+<ul>
+<li>去除大部分软件的开屏广告</li>
+<li>拦截大部分广告联盟的广告<br>主规则订阅地址 </li>
+<li><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a><br>百度搜索结果内屏蔽百家号<br><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt</a></li>
+</ul>
+<hr>
+<h2 id="Hosts过滤器"><a href="#Hosts过滤器" class="headerlink" title="Hosts过滤器"></a>Hosts过滤器</h2><p>大圣净化 - 大圣净化开发者维护的 Hosts，主要针对国内视频网站<br><a href="https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts">https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts</a><br>1024_hosts - 1024网站及澳门皇家赌场及恶意广告主机列表,你懂得<br><a href="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts">https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts</a><br>yhosts -国内维护。-相当老牌的去广告的Hosts -yhosts是国内比较知名的host维护列表，原作者目前已经停止维护,目前由VeleSila接手更新。<br><a href="https://raw.githubusercontent.com/vokins/yhosts/master/hosts">https://raw.githubusercontent.com/vokins/yhosts/master/hosts</a><br><a href="https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt">https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt</a><br>neoHosts - 国内屏蔽挖矿统计JS&amp;360&amp;百度&amp;、、、国内屏蔽挖矿统计JS&#x2F;常见下载劫持&#x2F;百度全家桶的全天候定位记录等等<br><a href="https://hosts.nfz.moe/full/hosts">https://hosts.nfz.moe/full/hosts</a><br>Hblock -综合多种源集合体屏蔽广告跟踪和恶意软件<br>Hblock是一个脚本程序，他会自动提取来自很多规则源的恶意广告主机列表，比如 EasyList,AdGuard,uBlock ,disconnect.me 等数十个规则源，下面的链接是由该脚本生成的主机列表。<br><a href="https://hblock.molinero.dev/hosts">https://hblock.molinero.dev/hosts</a><br>Google hosts - 提高网站访问速度<br><a href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a><br>Mvps - 屏蔽美欧地区英文网站相关的广告<br><a href="http://winhelp2002.mvps.org/hosts.txt">http://winhelp2002.mvps.org/hosts.txt</a><br>StevenBlack - 屏蔽国外网站广告-国外维护<br>国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件. github上获得15k+ Start 可以通过脚本生成你自己的hosts文件。<br><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</a><br>YousList - 屏蔽韩国网站广告<br><a href="https://raw.githubusercontent.com/yous/YousList/master/hosts.txt">https://raw.githubusercontent.com/yous/YousList/master/hosts.txt</a><br>有海外维护针对移动网站的广告主机列表<br><a href="https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt">https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt</a><br>hmirror来自海外西班牙用户整理的各种主机拦截资源汇总，包括来adguard,easylist,ublock的主机资源. 下面是主机资源汇总页面<br><a href="https://github.com/hectorm/hmirror/">https://github.com/hectorm/hmirror/</a></p>
+<hr>
+<p>路由端屏蔽规则<br>Koolproxy<br><a href="https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt">https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt</a><br>Adbyby（xwhyc-rules）<br>[lazy] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br>[lazy] <a href="https://opt.cn2qq.com/opt-file/lazy.txt">https://opt.cn2qq.com/opt-file/lazy.txt</a><br>[video] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a><br>[video] <a href="https://opt.cn2qq.com/opt-file/video.txt">https://opt.cn2qq.com/opt-file/video.txt</a></p>
+<hr>
+<p>去广告效果检测网站<br><a href="https://checkadblock.ru/">https://checkadblock.ru/</a><br><a href="https://blockads.fivefilters.org/">https://blockads.fivefilters.org/</a><br><a href="https://canyoublockit.com/extreme-test/">https://canyoublockit.com/extreme-test/</a><br><a href="https://ads-blocker.com/testing/">https://ads-blocker.com/testing/</a><br><a href="https://www.detectadblock.com/">https://www.detectadblock.com/</a><br><a href="http://simple-adblock.com/faq/testing-your-adblocker/">http://simple-adblock.com/faq/testing-your-adblocker/</a></p>
+<hr>
+<p>参考资料<br><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a><br><a href="https://github.com/otobtc/ADhosts">https://github.com/otobtc/ADhosts</a><br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a><br><a href="https://github.com/hectorm/hblock">https://github.com/hectorm/hblock</a><br><a href="https://github.com/vokins/yhosts">https://github.com/vokins/yhosts</a><br><a href="https://github.com/StevenBlack/hosts">https://github.com/StevenBlack/hosts</a><br><a href="https://ublock.org/">https://ublock.org/</a><br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a><br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a><br><a href="https://github.com/privacy-protection-tools/anti-AD">https://github.com/privacy-protection-tools/anti-AD</a><br><a href="https://easylist.to/">https://easylist.to/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
+        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -994,88 +1076,6 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>BT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-插件-广告屏蔽插件和广告规则</title>
-    <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
-    <content><![CDATA[<p>广告屏蔽App和广告规则</p>
-<h2 id="1-广告屏蔽App"><a href="#1-广告屏蔽App" class="headerlink" title="1.广告屏蔽App"></a>1.广告屏蔽App</h2><ul>
-<li><p>1.<a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin  Chrome插件  - ☆现用</a></p>
-</li>
-<li><p>2.<a href="https://www.crxsoso.com/webstore/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard 广告拦截器</a></p>
-</li>
-<li><p>3.<a href="https://www.crxsoso.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">Adblock Plus - 免费的广告拦截器</a></p>
-</li>
-</ul>
-<h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
-<p>自己现在使用的uBlock Origin<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a></p>
-<hr>
-<span id="more"></span>
-
-<p>规则记录网站  </p>
-<p><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a>        - github 半生<br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a>        - CJX国外<br><a href="https://github.com/xinggsf/Adblock-Plus-Rule">https://github.com/xinggsf/Adblock-Plus-Rule</a>    - 乘风<br><a href="https://github.com/TG-Twilight/AWAvenue-Ads-Rule/">https://github.com/TG-Twilight/AWAvenue-Ads-Rule/</a>   - 秋风广告规则<br><a href="https://github.com/z44499783/NoADList">https://github.com/z44499783/NoADList</a><br><a href="https://easylist.to/">https://easylist.to/</a>    英文网站</p>
-<hr>
-<hr>
-<p>HalfLife：规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则（几乎每天更新)</p>
-<p>ad-pc.txt：[推荐桌面端]合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance，以及补充的一些规则；<br>ad-mo.txt：合并自Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance；<br>ad.txt：[推荐移动端]合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance，以及补充的一些规则；<br>ad2.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance；<br>ad3.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance、EasyPrivacy；<br>ad-edentw.txt：合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters。<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt</a></p>
-<hr>
-<p>广告过滤规则Adblock plus（ABP）<br>大陆IP的默认列表是EasyList China+EasyList，<br>但因拦截视频广告在国内变得明显不合法，<br>ABP默认列表会被替换成EasyList China+EasyList (compliance)不过滤视频广告版本。<br>如需过滤国内视频广告，请删除默认列表，分开订阅EasyList China与EasyList</p>
-<hr>
-<p>EasyList    - 去除国际网页中大多数广告，包括不需要的框架、图像和对象<br><a href="https://easylist-downloads.adblockplus.org/easylist.txt">https://easylist-downloads.adblockplus.org/easylist.txt</a></p>
-<hr>
-<p>Easylist China：- ABP官方维护的的适合国内使用的规则，更新频繁<br><a href="https://easylist-downloads.adblockplus.org/easylistchina.txt">https://easylist-downloads.adblockplus.org/easylistchina.txt</a></p>
-<hr>
-<p>EasyPrivacy    -是隐私保护，不被跟踪。– 从网络上上完全删除所有形式的跟踪，包括Web错误、跟踪脚本和信息收集，从而保护您的个人数据<br><a href="https://easylist-downloads.adblockplus.org/easyprivacy.txt">https://easylist-downloads.adblockplus.org/easyprivacy.txt</a></p>
-<hr>
-<p>CJX’s Annoyance List：- EasyList China+EasyList &amp; EasyPrivacy的补充过滤烦人的自我推广,并补充EasyPrivacy隐私规则<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt</a></p>
-<hr>
-<p>uBlocklist<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt</a></p>
-<hr>
-<p>乘风广告过滤规则 + 视频过滤规则，乘风规则更新详情<br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt</a><br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt</a></p>
-<hr>
-<p>adt-chinalist-easylist：广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist.txt">http://sub.adtchrome.com/adt-chinalist-easylist.txt</a><br>广告终结者自带规则<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist360.txt">http://sub.adtchrome.com/adt-chinalist-easylist360.txt</a></p>
-<hr>
-<p>Anti-AD<br>目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护<br>屏蔽广告域名、电视盒子广告、APP内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传<br><a href="https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt">https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt</a></p>
-<hr>
-<p>I don’t care about cookies : 我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告。<br><a href="https://www.i-dont-care-about-cookies.eu/abp/">https://www.i-dont-care-about-cookies.eu/abp/</a></p>
-<hr>
-<p>EasyList Cookie List<br>阻止Cookie标语，GDPR覆盖窗口和其他与隐私相关的通知<br><a href="https://easylist-downloads.adblockplus.org/easylist-cookie.txt">https://easylist-downloads.adblockplus.org/easylist-cookie.txt</a></p>
-<hr>
-<p>Adbyby<br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a></p>
-<hr>
-<p>ChinaList2.0（广告净化器内置规则备份）<br><a href="https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt">https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt</a></p>
-<hr>
-<p>其他广告拦截资源汇总 -海外<br>easylist -包括EasyList, EasyPrivacy, EasyList Cookie, Fanboy’s Social&#x2F;Annoyances&#x2F;Notifications Blocking List等<br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
-<hr>
-<p>fanboy国外规则<br><a href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
-<hr>
-<p>uBlockOrigin 相关资源汇总<br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
-<hr>
-<p>Adgurad 拦截规则资源分类汇总<br><a href="https://kb.adguard.com/en/general/adguard-ad-filters">https://kb.adguard.com/en/general/adguard-ad-filters</a></p>
-<hr>
-<hr>
-<p>ADgk - Andriod<br>一个专门为安卓版adguard写的规则,适合在手机浏览器中使用的拦截规则。<br>适用于 AdGuard for Android 的去广告规则（不保证在其他软件使用的效果）</p>
-<ul>
-<li>去除大部分软件的开屏广告</li>
-<li>拦截大部分广告联盟的广告<br>主规则订阅地址 </li>
-<li><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a><br>百度搜索结果内屏蔽百家号<br><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt</a></li>
-</ul>
-<hr>
-<h2 id="Hosts过滤器"><a href="#Hosts过滤器" class="headerlink" title="Hosts过滤器"></a>Hosts过滤器</h2><p>大圣净化 - 大圣净化开发者维护的 Hosts，主要针对国内视频网站<br><a href="https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts">https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts</a><br>1024_hosts - 1024网站及澳门皇家赌场及恶意广告主机列表,你懂得<br><a href="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts">https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts</a><br>yhosts -国内维护。-相当老牌的去广告的Hosts -yhosts是国内比较知名的host维护列表，原作者目前已经停止维护,目前由VeleSila接手更新。<br><a href="https://raw.githubusercontent.com/vokins/yhosts/master/hosts">https://raw.githubusercontent.com/vokins/yhosts/master/hosts</a><br><a href="https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt">https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt</a><br>neoHosts - 国内屏蔽挖矿统计JS&amp;360&amp;百度&amp;、、、国内屏蔽挖矿统计JS&#x2F;常见下载劫持&#x2F;百度全家桶的全天候定位记录等等<br><a href="https://hosts.nfz.moe/full/hosts">https://hosts.nfz.moe/full/hosts</a><br>Hblock -综合多种源集合体屏蔽广告跟踪和恶意软件<br>Hblock是一个脚本程序，他会自动提取来自很多规则源的恶意广告主机列表，比如 EasyList,AdGuard,uBlock ,disconnect.me 等数十个规则源，下面的链接是由该脚本生成的主机列表。<br><a href="https://hblock.molinero.dev/hosts">https://hblock.molinero.dev/hosts</a><br>Google hosts - 提高网站访问速度<br><a href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a><br>Mvps - 屏蔽美欧地区英文网站相关的广告<br><a href="http://winhelp2002.mvps.org/hosts.txt">http://winhelp2002.mvps.org/hosts.txt</a><br>StevenBlack - 屏蔽国外网站广告-国外维护<br>国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件. github上获得15k+ Start 可以通过脚本生成你自己的hosts文件。<br><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</a><br>YousList - 屏蔽韩国网站广告<br><a href="https://raw.githubusercontent.com/yous/YousList/master/hosts.txt">https://raw.githubusercontent.com/yous/YousList/master/hosts.txt</a><br>有海外维护针对移动网站的广告主机列表<br><a href="https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt">https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt</a><br>hmirror来自海外西班牙用户整理的各种主机拦截资源汇总，包括来adguard,easylist,ublock的主机资源. 下面是主机资源汇总页面<br><a href="https://github.com/hectorm/hmirror/">https://github.com/hectorm/hmirror/</a></p>
-<hr>
-<p>路由端屏蔽规则<br>Koolproxy<br><a href="https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt">https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt</a><br>Adbyby（xwhyc-rules）<br>[lazy] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br>[lazy] <a href="https://opt.cn2qq.com/opt-file/lazy.txt">https://opt.cn2qq.com/opt-file/lazy.txt</a><br>[video] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a><br>[video] <a href="https://opt.cn2qq.com/opt-file/video.txt">https://opt.cn2qq.com/opt-file/video.txt</a></p>
-<hr>
-<p>去广告效果检测网站<br><a href="https://checkadblock.ru/">https://checkadblock.ru/</a><br><a href="https://blockads.fivefilters.org/">https://blockads.fivefilters.org/</a><br><a href="https://canyoublockit.com/extreme-test/">https://canyoublockit.com/extreme-test/</a><br><a href="https://ads-blocker.com/testing/">https://ads-blocker.com/testing/</a><br><a href="https://www.detectadblock.com/">https://www.detectadblock.com/</a><br><a href="http://simple-adblock.com/faq/testing-your-adblocker/">http://simple-adblock.com/faq/testing-your-adblocker/</a></p>
-<hr>
-<p>参考资料<br><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a><br><a href="https://github.com/otobtc/ADhosts">https://github.com/otobtc/ADhosts</a><br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a><br><a href="https://github.com/hectorm/hblock">https://github.com/hectorm/hblock</a><br><a href="https://github.com/vokins/yhosts">https://github.com/vokins/yhosts</a><br><a href="https://github.com/StevenBlack/hosts">https://github.com/StevenBlack/hosts</a><br><a href="https://ublock.org/">https://ublock.org/</a><br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a><br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a><br><a href="https://github.com/privacy-protection-tools/anti-AD">https://github.com/privacy-protection-tools/anti-AD</a><br><a href="https://easylist.to/">https://easylist.to/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>chrome</tag>
-        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -1536,6 +1536,26 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 卸载工具</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>软件卸载工具</p>
+<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
+<p>卸载利器 IObit Uninstaller Pro </p>
+<p>卸载删除 Total Uninstall - 软件是64位</p>
+<p>Geek Uninstaller 卸载工具</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
+<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - WinRAR and 7-Zip</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
     <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
@@ -1549,26 +1569,6 @@
 <p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
 <h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
 <p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 卸载工具</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>软件卸载工具</p>
-<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
-<p>卸载利器 IObit Uninstaller Pro </p>
-<p>卸载删除 Total Uninstall - 软件是64位</p>
-<p>Geek Uninstaller 卸载工具</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
-<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2620,17 +2620,42 @@ OK,大功告成！
 <p>备份：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;音乐&gt;: https://rxsub.eu.org/music/musicFree/Huibq/rx.json</span><br><span class="line">-音乐-: https://rxsub.eu.org/music/musicFree/ikun0014/rx.json</span><br><span class="line">[音乐]: https://rxsub.eu.org/music/musicFree/musicDownloader/rx.json</span><br><span class="line">=音乐=: https://rxsub.eu.org/music/musicFree/fish/rx.json</span><br><span class="line">1音乐1: https://rxsub.eu.org/music/musicFree/lxchina/rx.json</span><br><span class="line">2音乐2: https://rxsub.eu.org/music/musicFree/yuanli/rx.json</span><br></pre></td></tr></table></figure>
 <ul>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(%E6%8E%A8%E8%8D%90)%E5%85%A8%E8%B1%86%E8%A6%81-%E8%81%9A%E5%90%88%E9%9F%B3%E6%BA%90%20v4.1.js.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(推荐)全豆要-聚合音源%20v4.1.js.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(%E6%8E%A8%E8%8D%90)%E5%BF%B5%E5%BF%83%E9%9F%B3%E6%BA%90%20v1.0.1.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(推荐)念心音源%20v1.0.1.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(%E6%8E%A8%E8%8D%90)%E9%95%BF%E9%9D%92SVIP%E9%9F%B3%E6%BA%90%20v1.2.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(推荐)长青SVIP音源%20v1.2.0.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/ikun%E9%9F%B3%E6%BA%90[%E5%85%AC%E7%9B%8A]%20v25.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/ikun音源[公益]%20v25.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E6%98%9F%E6%B5%B7%E9%9F%B3%E4%B9%90%E6%BA%90%20v2.3.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/星海音乐源%20v2.3.0.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E6%B4%9B%E9%9B%AA%E7%A7%91%E6%8A%80[%E7%8B%AC%E5%AE%B6%E9%9F%B3%E6%BA%90]%20v4%20%E5%8E%9F%E7%89%88%20%E5%8A%A0%E5%AF%86%E6%B7%B7%E6%B7%86%E7%89%88.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/洛雪科技[独家音源]%20v4%20原版%20加密混淆版.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E6%BA%90%201.0.0%20v2-fix.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/洛雪音乐源%201.0.0%20v2-fix.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E8%81%86%E6%BE%9C%E9%9F%B3%E6%BA%90(%E5%85%AC%E7%9B%8A%E7%89%88)%20v7.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/聆澜音源(公益版)%20v7.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E8%81%9A%E5%90%88API%E6%8E%A5%E5%8F%A3%20v3.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/聚合API接口%20v3.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E9%85%B7%E6%88%91%E6%89%8B%E6%9C%BA%E7%A0%B4%E8%A7%A3%E7%89%88%E6%8E%A5%E5%8F%A3%20v1.0.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/酷我手机破解版接口%20v1.0.0.js</a></li>
-<li><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E9%85%B7%E6%88%91%E8%BD%A6%E6%9C%BA%E7%A0%B4%E8%A7%A3%E7%89%88%E6%8E%A5%E5%8F%A3%20v1.0.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/酷我车机破解版接口%20v1.0.0.js</a></li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(%E6%8E%A8%E8%8D%90)%E5%85%A8%E8%B1%86%E8%A6%81-%E8%81%9A%E5%90%88%E9%9F%B3%E6%BA%90%20v4.1.js.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(推荐)全豆要-聚合音源%20v4.1.js.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(%E6%8E%A8%E8%8D%90)%E5%BF%B5%E5%BF%83%E9%9F%B3%E6%BA%90%20v1.0.1.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(推荐)念心音源%20v1.0.1.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(%E6%8E%A8%E8%8D%90)%E9%95%BF%E9%9D%92SVIP%E9%9F%B3%E6%BA%90%20v1.2.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/(推荐)长青SVIP音源%20v1.2.0.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/ikun%E9%9F%B3%E6%BA%90[%E5%85%AC%E7%9B%8A]%20v25.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/ikun音源[公益]%20v25.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E6%98%9F%E6%B5%B7%E9%9F%B3%E4%B9%90%E6%BA%90%20v2.3.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/星海音乐源%20v2.3.0.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E6%B4%9B%E9%9B%AA%E7%A7%91%E6%8A%80[%E7%8B%AC%E5%AE%B6%E9%9F%B3%E6%BA%90]%20v4%20%E5%8E%9F%E7%89%88%20%E5%8A%A0%E5%AF%86%E6%B7%B7%E6%B7%86%E7%89%88.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/洛雪科技[独家音源]%20v4%20原版%20加密混淆版.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E6%B4%9B%E9%9B%AA%E9%9F%B3%E4%B9%90%E6%BA%90%201.0.0%20v2-fix.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/洛雪音乐源%201.0.0%20v2-fix.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E8%81%86%E6%BE%9C%E9%9F%B3%E6%BA%90(%E5%85%AC%E7%9B%8A%E7%89%88)%20v7.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/聆澜音源(公益版)%20v7.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E8%81%9A%E5%90%88API%E6%8E%A5%E5%8F%A3%20v3.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/聚合API接口%20v3.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E9%85%B7%E6%88%91%E6%89%8B%E6%9C%BA%E7%A0%B4%E8%A7%A3%E7%89%88%E6%8E%A5%E5%8F%A3%20v1.0.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/酷我手机破解版接口%20v1.0.0.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/%E9%85%B7%E6%88%91%E8%BD%A6%E6%9C%BA%E7%A0%B4%E8%A7%A3%E7%89%88%E6%8E%A5%E5%8F%A3%20v1.0.0.js">https://ghraw.eu.org/TZB679/USEFUL-LX-MUSIC-SOURCES/refs/heads/main/%E3%80%8E%E7%9B%B4%E6%8E%A5%E5%8F%AF%E7%94%A8%E7%9A%84%E9%9F%B3%E6%BA%90%E3%80%8F/酷我车机破解版接口%20v1.0.0.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/pdone/lx-music-source/main/sixyin/latest.js">https://ghraw.eu.org/pdone/lx-music-source/main/sixyin/latest.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/pdone/lx-music-source/main/flower/latest.js">https://ghraw.eu.org/pdone/lx-music-source/main/flower/latest.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/pdone/lx-music-source/main/lx/latest.js">https://ghraw.eu.org/pdone/lx-music-source/main/lx/latest.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/pdone/lx-music-source/main/ikun/latest.js">https://ghraw.eu.org/pdone/lx-music-source/main/ikun/latest.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/pdone/lx-music-source/main/grass/latest.js">https://ghraw.eu.org/pdone/lx-music-source/main/grass/latest.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/pdone/lx-music-source/main/juhe/latest.js">https://ghraw.eu.org/pdone/lx-music-source/main/juhe/latest.js</a></p>
+</li>
+<li><p><a href="https://ghraw.eu.org/LuoXiaohei-2025/LX-music-collection/refs/heads/main/Source%20of%20music/SVIP%E9%9F%B3%E6%BA%90.js">https://ghraw.eu.org/LuoXiaohei-2025/LX-music-collection/refs/heads/main/Source%20of%20music/SVIP%E9%9F%B3%E6%BA%90.js</a></p>
+</li>
 </ul>
 <h3 id="2-LX-Music-落雪音乐助手"><a href="#2-LX-Music-落雪音乐助手" class="headerlink" title="2.LX Music - 落雪音乐助手"></a>2.LX Music - 落雪音乐助手</h3><span id="more"></span>
 <p>一个免费&amp;开源的音乐查找工具</p>
