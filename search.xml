@@ -143,6 +143,100 @@
       </tags>
   </entry>
   <entry>
+    <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
+    <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
+    <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
+<p>搜索下面代码<br><code>api/v1/client/subscribe?token=</code></p>
+<hr>
+<h2 id="GOOD-WEB-Proxy"><a href="#GOOD-WEB-Proxy" class="headerlink" title="GOOD WEB Proxy"></a><strong>GOOD WEB Proxy</strong></h2><ul>
+<li><p><a href="https://oracleusa.ml/">https://oracleusa.ml/</a>		用全球顶级VPS提供商之一的甲骨文做的反向直连项目，开发者未知，简单来说就是免梯子访问外网</p>
+</li>
+<li><p><a href="https://hyperbeam.com/app/room/8qFBAzNyQMWeWXmtT15QpQ">https://hyperbeam.com/app/room/8qFBAzNyQMWeWXmtT15QpQ</a>		- 推荐 在线chrome浏览器免梯子</p>
+</li>
+<li><p><a href="http://theinternetpics.com/freeweb/">http://theinternetpics.com/freeweb/</a>        - 速度不错</p>
+</li>
+<li><p><a href="https://go.zerousd.com/a-proxy-website">https://go.zerousd.com/a-proxy-website</a>    - 教程和WEB代理记录</p>
+</li>
+<li><p><a href="http://free-proxy.cz/zh/proxylist/country/all/socks5/ping/all">http://free-proxy.cz/zh/proxylist/country/all/socks5/ping/all</a></p>
+</li>
+</ul>
+<hr>
+<span id="more"></span>
+
+<h2 id="web分享节点"><a href="#web分享节点" class="headerlink" title="web分享节点"></a><strong>web分享节点</strong></h2><ul>
+<li><a href="http://isx.yt/">http://isx.yt/</a>    – No proxy Web</li>
+</ul>
+<p>挂代理</p>
+<ul>
+<li><a href="https://lncn.org/">https://lncn.org/</a>        - good</li>
+<li><a href="https://www.youneed.win/">https://www.youneed.win/</a>    - good</li>
+<li><a href="https://free-ss.site/">https://free-ss.site</a></li>
+<li><a href="http://ss.pythonic.life/full">http://ss.pythonic.life/full</a></li>
+<li><a href="https://www.ssrtool.com/tool/free_ssr">https://www.ssrtool.com/tool/free_ssr</a></li>
+</ul>
+<hr>
+<h2 id="Proxy-pool-note"><a href="#Proxy-pool-note" class="headerlink" title="Proxy pool note"></a><strong>Proxy pool note</strong></h2><ul>
+<li><p><a href="https://i.sqeven.me/">https://i.sqeven.me/</a>                    —这哥们记录订阅池</p>
+</li>
+<li><p><a href="https://github.com/shoujiyanxishe/atu/">https://github.com/shoujiyanxishe/atu/</a>            —记录订阅池</p>
+</li>
+<li><p><a href="https://github.com/du5/free">https://github.com/du5/free</a>                —sub.list</p>
+</li>
+<li><p><a href="https://github.com/icefishsss/freevpn/">https://github.com/icefishsss/freevpn/</a>            —记录节点池</p>
+</li>
+<li><p><a href="https://github.com/Leon406/SubCrawler">https://github.com/Leon406/SubCrawler</a>            —sub.list</p>
+</li>
+<li><p><a href="https://github.com/anaer/Sub">https://github.com/anaer/Sub</a>                —有订阅池，有订阅   </p>
+</li>
+<li><p><a href="https://github.com/Leon406/SubCrawler/tree/main/sub/pool">https://github.com/Leon406/SubCrawler/tree/main/sub/pool</a>   —节点池</p>
+</li>
+<li><p><a href="https://github.com/GreenFishStudio/GreenFish/blob/master/File/source.yaml">https://github.com/GreenFishStudio/GreenFish/blob/master/File/source.yaml</a>		- 节点源</p>
+</li>
+<li><p><a href="https://github.com/alanbobs999/TopFreeProxies/blob/master/sub/sub_list.json">https://github.com/alanbobs999/TopFreeProxies/blob/master/sub/sub_list.json</a>    - 节点池</p>
+</li>
+<li><p><a href="https://github.com/yu-steven/openit">https://github.com/yu-steven/openit</a>		- 节点库</p>
+</li>
+<li><p><a href="https://github.com/changfengoss/pub">https://github.com/changfengoss/pub</a>		- 节点库</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://ednovas.xyz/">https://ednovas.xyz/</a></li>
+<li><a href="https://www.freebaipiao.tk/">https://www.freebaipiao.tk/</a></li>
+<li><a href="https://github.com/freefq/free">https://github.com/freefq/free</a>                —需要挂代理</li>
+<li><a href="https://www.winxray.com/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/">https://www.winxray.com/免费节点/</a>            -Winxray提供的VS,SS,SSR</li>
+<li><a href="https://node.umelabs.dev/">https://node.umelabs.dev</a></li>
+<li><a href="https://gitea.com/proxypools/sub/src/branch/main">https://gitea.com/proxypools/sub/src/branch/main</a>    —proxypools的更新慢了</li>
+</ul>
+<hr>
+<h2 id="优秀的节点更新者"><a href="#优秀的节点更新者" class="headerlink" title="优秀的节点更新者"></a><strong>优秀的节点更新者</strong></h2><p><code>https://github.com/adiwzx/freenode        - 更新挺快</code><br><code>https://github.com/pojiezhiyuanjun/freev2    - 更新挺快</code><br><code>https://github.com/colatiger/v2ray-nodes    - 更新挺快</code><br><code>https://github.com/huaxinCLUB/NodeSpider/    - 更新挺快 -文件名字变动</code><br><code>https://github.com/skywolf627/VmessActions/tree/main/subscribe    -更新挺快</code><br><code>https://github.com/ssrsub/ssr/tree/master    - SSRSUB</code><br><code>https://github.com/git-yusteven/openit        - 更新挺快</code><br><code>https://github.com/ThekingMX1998/free-v2ray-code/        - 更新挺快</code><br><code>https://github.com/changfengoss/pub        - 更新挺快 -文件名字变动</code><br><code>https://github.com/ronghuaxueleng/get_v2/tree/main/pub    - 更新挺快 - 高手抓取其他网站</code><br><code>https://github.com/bhqz/bhqz            - 更新挺快 -文件名字变动</code><br><code>https://github.com/shoujiyanxishe</code></p>
+<hr>
+<p><code>https://github.com/ccnndwa</code><br><code>https://github.com/lion12776</code><br><code>https://github.com/a910303</code><br><code>https://github.com/AzadNetCH/Clash</code><br><code>https://github.com/Harrison-kang/Nodes</code><br><code>https://github.com/HaiLianna/Node-subscription</code><br><code>https://github.com/zyzmzyz/free-nodes</code><br><code>https://github.com/lanfxx/clashtest</code><br><code>https://github.com/freebaipiao/freebaipiao</code><br><code>https://github.com/chfchf0306/4.18clash/blob/main/Class</code><br><code>https://github.com/JieErJingFu/FreeNodesTrojanVmessSSRSS</code><br><code>https://github.com/UmeLabs/node.umelabs.dev</code><br><code>https://github.com/UmeLabs/node.umelabs.dev/tree/master/Subscribe</code></p>
+<hr>
+<p><code>https://gitee.com/Mirror/clash/</code><br><code>https://gitee.com/shoujiyanxishe/atu</code><br><code>https://gitee.com/bujilangren/warehouse/</code><br><code>https://gitee.com/xihuancaoni/dotpclink/</code><br><code>https://hub.fastgit.org/freefq</code></p>
+<hr>
+<p>美帝亡我之心不死系列 —— 由某敌对势力提供的ss，有需要自取<br><code>https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7</code></p>
+<hr>
+<h2 id="地址连接转换"><a href="#地址连接转换" class="headerlink" title="地址连接转换"></a><strong>地址连接转换</strong></h2><ul>
+<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
+<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a>    </li>
+<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
+<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
+<li><a href="https://id9.cc/">https://id9.cc/</a></li>
+<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
+<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
+<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a>      - 多个API</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>GFW</category>
+      </categories>
+      <tags>
+        <tag>GFW</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GFW - Github连接访问的几种方法</title>
     <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
@@ -306,100 +400,6 @@
         <tag>GFW</tag>
         <tag>sms</tag>
         <tag>接码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GFW-3-Web Proxy 和 记录代理池的大佬们</title>
-    <url>/2022/03/29/2022-03-29-GFW-3-proxySearch/</url>
-    <content><![CDATA[<p>[F 搜 free proxies](<a href="https://fsoufsou.com/search?q=free">https://fsoufsou.com/search?q=free</a> proxies)</p>
-<p>搜索下面代码<br><code>api/v1/client/subscribe?token=</code></p>
-<hr>
-<h2 id="GOOD-WEB-Proxy"><a href="#GOOD-WEB-Proxy" class="headerlink" title="GOOD WEB Proxy"></a><strong>GOOD WEB Proxy</strong></h2><ul>
-<li><p><a href="https://oracleusa.ml/">https://oracleusa.ml/</a>		用全球顶级VPS提供商之一的甲骨文做的反向直连项目，开发者未知，简单来说就是免梯子访问外网</p>
-</li>
-<li><p><a href="https://hyperbeam.com/app/room/8qFBAzNyQMWeWXmtT15QpQ">https://hyperbeam.com/app/room/8qFBAzNyQMWeWXmtT15QpQ</a>		- 推荐 在线chrome浏览器免梯子</p>
-</li>
-<li><p><a href="http://theinternetpics.com/freeweb/">http://theinternetpics.com/freeweb/</a>        - 速度不错</p>
-</li>
-<li><p><a href="https://go.zerousd.com/a-proxy-website">https://go.zerousd.com/a-proxy-website</a>    - 教程和WEB代理记录</p>
-</li>
-<li><p><a href="http://free-proxy.cz/zh/proxylist/country/all/socks5/ping/all">http://free-proxy.cz/zh/proxylist/country/all/socks5/ping/all</a></p>
-</li>
-</ul>
-<hr>
-<span id="more"></span>
-
-<h2 id="web分享节点"><a href="#web分享节点" class="headerlink" title="web分享节点"></a><strong>web分享节点</strong></h2><ul>
-<li><a href="http://isx.yt/">http://isx.yt/</a>    – No proxy Web</li>
-</ul>
-<p>挂代理</p>
-<ul>
-<li><a href="https://lncn.org/">https://lncn.org/</a>        - good</li>
-<li><a href="https://www.youneed.win/">https://www.youneed.win/</a>    - good</li>
-<li><a href="https://free-ss.site/">https://free-ss.site</a></li>
-<li><a href="http://ss.pythonic.life/full">http://ss.pythonic.life/full</a></li>
-<li><a href="https://www.ssrtool.com/tool/free_ssr">https://www.ssrtool.com/tool/free_ssr</a></li>
-</ul>
-<hr>
-<h2 id="Proxy-pool-note"><a href="#Proxy-pool-note" class="headerlink" title="Proxy pool note"></a><strong>Proxy pool note</strong></h2><ul>
-<li><p><a href="https://i.sqeven.me/">https://i.sqeven.me/</a>                    —这哥们记录订阅池</p>
-</li>
-<li><p><a href="https://github.com/shoujiyanxishe/atu/">https://github.com/shoujiyanxishe/atu/</a>            —记录订阅池</p>
-</li>
-<li><p><a href="https://github.com/du5/free">https://github.com/du5/free</a>                —sub.list</p>
-</li>
-<li><p><a href="https://github.com/icefishsss/freevpn/">https://github.com/icefishsss/freevpn/</a>            —记录节点池</p>
-</li>
-<li><p><a href="https://github.com/Leon406/SubCrawler">https://github.com/Leon406/SubCrawler</a>            —sub.list</p>
-</li>
-<li><p><a href="https://github.com/anaer/Sub">https://github.com/anaer/Sub</a>                —有订阅池，有订阅   </p>
-</li>
-<li><p><a href="https://github.com/Leon406/SubCrawler/tree/main/sub/pool">https://github.com/Leon406/SubCrawler/tree/main/sub/pool</a>   —节点池</p>
-</li>
-<li><p><a href="https://github.com/GreenFishStudio/GreenFish/blob/master/File/source.yaml">https://github.com/GreenFishStudio/GreenFish/blob/master/File/source.yaml</a>		- 节点源</p>
-</li>
-<li><p><a href="https://github.com/alanbobs999/TopFreeProxies/blob/master/sub/sub_list.json">https://github.com/alanbobs999/TopFreeProxies/blob/master/sub/sub_list.json</a>    - 节点池</p>
-</li>
-<li><p><a href="https://github.com/yu-steven/openit">https://github.com/yu-steven/openit</a>		- 节点库</p>
-</li>
-<li><p><a href="https://github.com/changfengoss/pub">https://github.com/changfengoss/pub</a>		- 节点库</p>
-</li>
-</ul>
-<hr>
-<ul>
-<li><a href="https://ednovas.xyz/">https://ednovas.xyz/</a></li>
-<li><a href="https://www.freebaipiao.tk/">https://www.freebaipiao.tk/</a></li>
-<li><a href="https://github.com/freefq/free">https://github.com/freefq/free</a>                —需要挂代理</li>
-<li><a href="https://www.winxray.com/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/">https://www.winxray.com/免费节点/</a>            -Winxray提供的VS,SS,SSR</li>
-<li><a href="https://node.umelabs.dev/">https://node.umelabs.dev</a></li>
-<li><a href="https://gitea.com/proxypools/sub/src/branch/main">https://gitea.com/proxypools/sub/src/branch/main</a>    —proxypools的更新慢了</li>
-</ul>
-<hr>
-<h2 id="优秀的节点更新者"><a href="#优秀的节点更新者" class="headerlink" title="优秀的节点更新者"></a><strong>优秀的节点更新者</strong></h2><p><code>https://github.com/adiwzx/freenode        - 更新挺快</code><br><code>https://github.com/pojiezhiyuanjun/freev2    - 更新挺快</code><br><code>https://github.com/colatiger/v2ray-nodes    - 更新挺快</code><br><code>https://github.com/huaxinCLUB/NodeSpider/    - 更新挺快 -文件名字变动</code><br><code>https://github.com/skywolf627/VmessActions/tree/main/subscribe    -更新挺快</code><br><code>https://github.com/ssrsub/ssr/tree/master    - SSRSUB</code><br><code>https://github.com/git-yusteven/openit        - 更新挺快</code><br><code>https://github.com/ThekingMX1998/free-v2ray-code/        - 更新挺快</code><br><code>https://github.com/changfengoss/pub        - 更新挺快 -文件名字变动</code><br><code>https://github.com/ronghuaxueleng/get_v2/tree/main/pub    - 更新挺快 - 高手抓取其他网站</code><br><code>https://github.com/bhqz/bhqz            - 更新挺快 -文件名字变动</code><br><code>https://github.com/shoujiyanxishe</code></p>
-<hr>
-<p><code>https://github.com/ccnndwa</code><br><code>https://github.com/lion12776</code><br><code>https://github.com/a910303</code><br><code>https://github.com/AzadNetCH/Clash</code><br><code>https://github.com/Harrison-kang/Nodes</code><br><code>https://github.com/HaiLianna/Node-subscription</code><br><code>https://github.com/zyzmzyz/free-nodes</code><br><code>https://github.com/lanfxx/clashtest</code><br><code>https://github.com/freebaipiao/freebaipiao</code><br><code>https://github.com/chfchf0306/4.18clash/blob/main/Class</code><br><code>https://github.com/JieErJingFu/FreeNodesTrojanVmessSSRSS</code><br><code>https://github.com/UmeLabs/node.umelabs.dev</code><br><code>https://github.com/UmeLabs/node.umelabs.dev/tree/master/Subscribe</code></p>
-<hr>
-<p><code>https://gitee.com/Mirror/clash/</code><br><code>https://gitee.com/shoujiyanxishe/atu</code><br><code>https://gitee.com/bujilangren/warehouse/</code><br><code>https://gitee.com/xihuancaoni/dotpclink/</code><br><code>https://hub.fastgit.org/freefq</code></p>
-<hr>
-<p>美帝亡我之心不死系列 —— 由某敌对势力提供的ss，有需要自取<br><code>https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7</code></p>
-<hr>
-<h2 id="地址连接转换"><a href="#地址连接转换" class="headerlink" title="地址连接转换"></a><strong>地址连接转换</strong></h2><ul>
-<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
-<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a>    </li>
-<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
-<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
-<li><a href="https://id9.cc/">https://id9.cc/</a></li>
-<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
-<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
-<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a>      - 多个API</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
       </tags>
   </entry>
   <entry>
@@ -576,6 +576,51 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 2.jekyll博客的若干手记</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
+<span id="more"></span>
+
+<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
+<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
+<ul>
+<li>layout 模板文件，需要放在_layouts目录下</li>
+<li>title:标题</li>
+<li>date: 日期</li>
+<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
+<li>categories 分类，也可以是category</li>
+<li>img:  图片链接</li>
+<li>published true or false，发表与否</li>
+<li>permalink 固定链接</li>
+</ul>
+<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
+<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
+<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
+<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
+<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 3.Jekyll的archives免插件使用</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-3-Jekyll%E7%9A%84archives%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<p>Jekyll的archives免插件使用</p>
@@ -706,51 +751,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 2.jekyll博客的若干手记</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
-<span id="more"></span>
-
-<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
-<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
-<ul>
-<li>layout 模板文件，需要放在_layouts目录下</li>
-<li>title:标题</li>
-<li>date: 日期</li>
-<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
-<li>categories 分类，也可以是category</li>
-<li>img:  图片链接</li>
-<li>published true or false，发表与否</li>
-<li>permalink 固定链接</li>
-</ul>
-<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
-<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
-<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
-<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
-
-<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
-<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-win-Chrome浏览器下载和自用插件</title>
     <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>更新于2022-05-09</p>
@@ -812,7 +812,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>ce88dc8671ffebefd8c599ade0533e37bookmark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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#x70;&#x6d;&#x2e;&#109;&#101;">&#115;&#x77;&#x65;&#x65;&#116;&#114;&#x78;&#x40;&#x70;&#x6d;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#x65;&#116;&#x72;&#x78;&#x40;&#x70;&#x6d;&#46;&#x6d;&#x65;">&#x73;&#119;&#101;&#x65;&#116;&#x72;&#x78;&#x40;&#x70;&#x6d;&#46;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -821,6 +821,88 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>chrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-插件-广告屏蔽插件和广告规则</title>
+    <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<p>广告屏蔽App和广告规则</p>
+<h2 id="1-广告屏蔽App"><a href="#1-广告屏蔽App" class="headerlink" title="1.广告屏蔽App"></a>1.广告屏蔽App</h2><ul>
+<li><p>1.<a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin  Chrome插件  - ☆现用</a></p>
+</li>
+<li><p>2.<a href="https://www.crxsoso.com/webstore/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard 广告拦截器</a></p>
+</li>
+<li><p>3.<a href="https://www.crxsoso.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">Adblock Plus - 免费的广告拦截器</a></p>
+</li>
+</ul>
+<h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
+<p>自己现在使用的uBlock Origin<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a></p>
+<hr>
+<span id="more"></span>
+
+<p>规则记录网站  </p>
+<p><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a>        - github 半生<br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a>        - CJX国外<br><a href="https://github.com/xinggsf/Adblock-Plus-Rule">https://github.com/xinggsf/Adblock-Plus-Rule</a>    - 乘风<br><a href="https://github.com/TG-Twilight/AWAvenue-Ads-Rule/">https://github.com/TG-Twilight/AWAvenue-Ads-Rule/</a>   - 秋风广告规则<br><a href="https://github.com/z44499783/NoADList">https://github.com/z44499783/NoADList</a><br><a href="https://easylist.to/">https://easylist.to/</a>    英文网站</p>
+<hr>
+<hr>
+<p>HalfLife：规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则（几乎每天更新)</p>
+<p>ad-pc.txt：[推荐桌面端]合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance，以及补充的一些规则；<br>ad-mo.txt：合并自Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance；<br>ad.txt：[推荐移动端]合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance，以及补充的一些规则；<br>ad2.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance；<br>ad3.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance、EasyPrivacy；<br>ad-edentw.txt：合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters。<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt</a></p>
+<hr>
+<p>广告过滤规则Adblock plus（ABP）<br>大陆IP的默认列表是EasyList China+EasyList，<br>但因拦截视频广告在国内变得明显不合法，<br>ABP默认列表会被替换成EasyList China+EasyList (compliance)不过滤视频广告版本。<br>如需过滤国内视频广告，请删除默认列表，分开订阅EasyList China与EasyList</p>
+<hr>
+<p>EasyList    - 去除国际网页中大多数广告，包括不需要的框架、图像和对象<br><a href="https://easylist-downloads.adblockplus.org/easylist.txt">https://easylist-downloads.adblockplus.org/easylist.txt</a></p>
+<hr>
+<p>Easylist China：- ABP官方维护的的适合国内使用的规则，更新频繁<br><a href="https://easylist-downloads.adblockplus.org/easylistchina.txt">https://easylist-downloads.adblockplus.org/easylistchina.txt</a></p>
+<hr>
+<p>EasyPrivacy    -是隐私保护，不被跟踪。– 从网络上上完全删除所有形式的跟踪，包括Web错误、跟踪脚本和信息收集，从而保护您的个人数据<br><a href="https://easylist-downloads.adblockplus.org/easyprivacy.txt">https://easylist-downloads.adblockplus.org/easyprivacy.txt</a></p>
+<hr>
+<p>CJX’s Annoyance List：- EasyList China+EasyList &amp; EasyPrivacy的补充过滤烦人的自我推广,并补充EasyPrivacy隐私规则<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt</a></p>
+<hr>
+<p>uBlocklist<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt</a></p>
+<hr>
+<p>乘风广告过滤规则 + 视频过滤规则，乘风规则更新详情<br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt</a><br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt</a></p>
+<hr>
+<p>adt-chinalist-easylist：广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist.txt">http://sub.adtchrome.com/adt-chinalist-easylist.txt</a><br>广告终结者自带规则<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist360.txt">http://sub.adtchrome.com/adt-chinalist-easylist360.txt</a></p>
+<hr>
+<p>Anti-AD<br>目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护<br>屏蔽广告域名、电视盒子广告、APP内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传<br><a href="https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt">https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt</a></p>
+<hr>
+<p>I don’t care about cookies : 我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告。<br><a href="https://www.i-dont-care-about-cookies.eu/abp/">https://www.i-dont-care-about-cookies.eu/abp/</a></p>
+<hr>
+<p>EasyList Cookie List<br>阻止Cookie标语，GDPR覆盖窗口和其他与隐私相关的通知<br><a href="https://easylist-downloads.adblockplus.org/easylist-cookie.txt">https://easylist-downloads.adblockplus.org/easylist-cookie.txt</a></p>
+<hr>
+<p>Adbyby<br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a></p>
+<hr>
+<p>ChinaList2.0（广告净化器内置规则备份）<br><a href="https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt">https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt</a></p>
+<hr>
+<p>其他广告拦截资源汇总 -海外<br>easylist -包括EasyList, EasyPrivacy, EasyList Cookie, Fanboy’s Social&#x2F;Annoyances&#x2F;Notifications Blocking List等<br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
+<hr>
+<p>fanboy国外规则<br><a href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
+<hr>
+<p>uBlockOrigin 相关资源汇总<br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
+<hr>
+<p>Adgurad 拦截规则资源分类汇总<br><a href="https://kb.adguard.com/en/general/adguard-ad-filters">https://kb.adguard.com/en/general/adguard-ad-filters</a></p>
+<hr>
+<hr>
+<p>ADgk - Andriod<br>一个专门为安卓版adguard写的规则,适合在手机浏览器中使用的拦截规则。<br>适用于 AdGuard for Android 的去广告规则（不保证在其他软件使用的效果）</p>
+<ul>
+<li>去除大部分软件的开屏广告</li>
+<li>拦截大部分广告联盟的广告<br>主规则订阅地址 </li>
+<li><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a><br>百度搜索结果内屏蔽百家号<br><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt</a></li>
+</ul>
+<hr>
+<h2 id="Hosts过滤器"><a href="#Hosts过滤器" class="headerlink" title="Hosts过滤器"></a>Hosts过滤器</h2><p>大圣净化 - 大圣净化开发者维护的 Hosts，主要针对国内视频网站<br><a href="https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts">https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts</a><br>1024_hosts - 1024网站及澳门皇家赌场及恶意广告主机列表,你懂得<br><a href="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts">https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts</a><br>yhosts -国内维护。-相当老牌的去广告的Hosts -yhosts是国内比较知名的host维护列表，原作者目前已经停止维护,目前由VeleSila接手更新。<br><a href="https://raw.githubusercontent.com/vokins/yhosts/master/hosts">https://raw.githubusercontent.com/vokins/yhosts/master/hosts</a><br><a href="https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt">https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt</a><br>neoHosts - 国内屏蔽挖矿统计JS&amp;360&amp;百度&amp;、、、国内屏蔽挖矿统计JS&#x2F;常见下载劫持&#x2F;百度全家桶的全天候定位记录等等<br><a href="https://hosts.nfz.moe/full/hosts">https://hosts.nfz.moe/full/hosts</a><br>Hblock -综合多种源集合体屏蔽广告跟踪和恶意软件<br>Hblock是一个脚本程序，他会自动提取来自很多规则源的恶意广告主机列表，比如 EasyList,AdGuard,uBlock ,disconnect.me 等数十个规则源，下面的链接是由该脚本生成的主机列表。<br><a href="https://hblock.molinero.dev/hosts">https://hblock.molinero.dev/hosts</a><br>Google hosts - 提高网站访问速度<br><a href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a><br>Mvps - 屏蔽美欧地区英文网站相关的广告<br><a href="http://winhelp2002.mvps.org/hosts.txt">http://winhelp2002.mvps.org/hosts.txt</a><br>StevenBlack - 屏蔽国外网站广告-国外维护<br>国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件. github上获得15k+ Start 可以通过脚本生成你自己的hosts文件。<br><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</a><br>YousList - 屏蔽韩国网站广告<br><a href="https://raw.githubusercontent.com/yous/YousList/master/hosts.txt">https://raw.githubusercontent.com/yous/YousList/master/hosts.txt</a><br>有海外维护针对移动网站的广告主机列表<br><a href="https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt">https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt</a><br>hmirror来自海外西班牙用户整理的各种主机拦截资源汇总，包括来adguard,easylist,ublock的主机资源. 下面是主机资源汇总页面<br><a href="https://github.com/hectorm/hmirror/">https://github.com/hectorm/hmirror/</a></p>
+<hr>
+<p>路由端屏蔽规则<br>Koolproxy<br><a href="https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt">https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt</a><br>Adbyby（xwhyc-rules）<br>[lazy] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br>[lazy] <a href="https://opt.cn2qq.com/opt-file/lazy.txt">https://opt.cn2qq.com/opt-file/lazy.txt</a><br>[video] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a><br>[video] <a href="https://opt.cn2qq.com/opt-file/video.txt">https://opt.cn2qq.com/opt-file/video.txt</a></p>
+<hr>
+<p>去广告效果检测网站<br><a href="https://checkadblock.ru/">https://checkadblock.ru/</a><br><a href="https://blockads.fivefilters.org/">https://blockads.fivefilters.org/</a><br><a href="https://canyoublockit.com/extreme-test/">https://canyoublockit.com/extreme-test/</a><br><a href="https://ads-blocker.com/testing/">https://ads-blocker.com/testing/</a><br><a href="https://www.detectadblock.com/">https://www.detectadblock.com/</a><br><a href="http://simple-adblock.com/faq/testing-your-adblocker/">http://simple-adblock.com/faq/testing-your-adblocker/</a></p>
+<hr>
+<p>参考资料<br><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a><br><a href="https://github.com/otobtc/ADhosts">https://github.com/otobtc/ADhosts</a><br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a><br><a href="https://github.com/hectorm/hblock">https://github.com/hectorm/hblock</a><br><a href="https://github.com/vokins/yhosts">https://github.com/vokins/yhosts</a><br><a href="https://github.com/StevenBlack/hosts">https://github.com/StevenBlack/hosts</a><br><a href="https://ublock.org/">https://ublock.org/</a><br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a><br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a><br><a href="https://github.com/privacy-protection-tools/anti-AD">https://github.com/privacy-protection-tools/anti-AD</a><br><a href="https://easylist.to/">https://easylist.to/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
+        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -997,35 +1079,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 直播合集</title>
-    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
-<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
-<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
-<span id="more"></span>
-
-<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
-<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
-<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
-<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
-<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
-<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
-<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
-<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
-<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
-<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
-<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-apk-阅读3.0</title>
     <url>/2022/05/11/2022-05-11-%E8%BD%AF%E4%BB%B6-apk-%E9%98%85%E8%AF%BB3.0/</url>
     <content><![CDATA[<h1 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h1><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://github.com/gedoor/legado/releases/latest">Release · gedoor&#x2F;legado · GitHub</a></p>
@@ -1085,104 +1138,24 @@
       </tags>
   </entry>
   <entry>
-    <title>软件-插件-广告屏蔽插件和广告规则</title>
-    <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
-    <content><![CDATA[<p>广告屏蔽App和广告规则</p>
-<h2 id="1-广告屏蔽App"><a href="#1-广告屏蔽App" class="headerlink" title="1.广告屏蔽App"></a>1.广告屏蔽App</h2><ul>
-<li><p>1.<a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin  Chrome插件  - ☆现用</a></p>
-</li>
-<li><p>2.<a href="https://www.crxsoso.com/webstore/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard 广告拦截器</a></p>
-</li>
-<li><p>3.<a href="https://www.crxsoso.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">Adblock Plus - 免费的广告拦截器</a></p>
-</li>
-</ul>
-<h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
-<p>自己现在使用的uBlock Origin<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a></p>
-<hr>
+    <title>软件 - apk - 直播合集</title>
+    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
+<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
+<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
 <span id="more"></span>
 
-<p>规则记录网站  </p>
-<p><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a>        - github 半生<br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a>        - CJX国外<br><a href="https://github.com/xinggsf/Adblock-Plus-Rule">https://github.com/xinggsf/Adblock-Plus-Rule</a>    - 乘风<br><a href="https://github.com/TG-Twilight/AWAvenue-Ads-Rule/">https://github.com/TG-Twilight/AWAvenue-Ads-Rule/</a>   - 秋风广告规则<br><a href="https://github.com/z44499783/NoADList">https://github.com/z44499783/NoADList</a><br><a href="https://easylist.to/">https://easylist.to/</a>    英文网站</p>
-<hr>
-<hr>
-<p>HalfLife：规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则（几乎每天更新)</p>
-<p>ad-pc.txt：[推荐桌面端]合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance，以及补充的一些规则；<br>ad-mo.txt：合并自Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance；<br>ad.txt：[推荐移动端]合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance，以及补充的一些规则；<br>ad2.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance；<br>ad3.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance、EasyPrivacy；<br>ad-edentw.txt：合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters。<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt</a></p>
-<hr>
-<p>广告过滤规则Adblock plus（ABP）<br>大陆IP的默认列表是EasyList China+EasyList，<br>但因拦截视频广告在国内变得明显不合法，<br>ABP默认列表会被替换成EasyList China+EasyList (compliance)不过滤视频广告版本。<br>如需过滤国内视频广告，请删除默认列表，分开订阅EasyList China与EasyList</p>
-<hr>
-<p>EasyList    - 去除国际网页中大多数广告，包括不需要的框架、图像和对象<br><a href="https://easylist-downloads.adblockplus.org/easylist.txt">https://easylist-downloads.adblockplus.org/easylist.txt</a></p>
-<hr>
-<p>Easylist China：- ABP官方维护的的适合国内使用的规则，更新频繁<br><a href="https://easylist-downloads.adblockplus.org/easylistchina.txt">https://easylist-downloads.adblockplus.org/easylistchina.txt</a></p>
-<hr>
-<p>EasyPrivacy    -是隐私保护，不被跟踪。– 从网络上上完全删除所有形式的跟踪，包括Web错误、跟踪脚本和信息收集，从而保护您的个人数据<br><a href="https://easylist-downloads.adblockplus.org/easyprivacy.txt">https://easylist-downloads.adblockplus.org/easyprivacy.txt</a></p>
-<hr>
-<p>CJX’s Annoyance List：- EasyList China+EasyList &amp; EasyPrivacy的补充过滤烦人的自我推广,并补充EasyPrivacy隐私规则<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt</a></p>
-<hr>
-<p>uBlocklist<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt</a></p>
-<hr>
-<p>乘风广告过滤规则 + 视频过滤规则，乘风规则更新详情<br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt</a><br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt</a></p>
-<hr>
-<p>adt-chinalist-easylist：广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist.txt">http://sub.adtchrome.com/adt-chinalist-easylist.txt</a><br>广告终结者自带规则<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist360.txt">http://sub.adtchrome.com/adt-chinalist-easylist360.txt</a></p>
-<hr>
-<p>Anti-AD<br>目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护<br>屏蔽广告域名、电视盒子广告、APP内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传<br><a href="https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt">https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt</a></p>
-<hr>
-<p>I don’t care about cookies : 我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告。<br><a href="https://www.i-dont-care-about-cookies.eu/abp/">https://www.i-dont-care-about-cookies.eu/abp/</a></p>
-<hr>
-<p>EasyList Cookie List<br>阻止Cookie标语，GDPR覆盖窗口和其他与隐私相关的通知<br><a href="https://easylist-downloads.adblockplus.org/easylist-cookie.txt">https://easylist-downloads.adblockplus.org/easylist-cookie.txt</a></p>
-<hr>
-<p>Adbyby<br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a></p>
-<hr>
-<p>ChinaList2.0（广告净化器内置规则备份）<br><a href="https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt">https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt</a></p>
-<hr>
-<p>其他广告拦截资源汇总 -海外<br>easylist -包括EasyList, EasyPrivacy, EasyList Cookie, Fanboy’s Social&#x2F;Annoyances&#x2F;Notifications Blocking List等<br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
-<hr>
-<p>fanboy国外规则<br><a href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
-<hr>
-<p>uBlockOrigin 相关资源汇总<br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
-<hr>
-<p>Adgurad 拦截规则资源分类汇总<br><a href="https://kb.adguard.com/en/general/adguard-ad-filters">https://kb.adguard.com/en/general/adguard-ad-filters</a></p>
-<hr>
-<hr>
-<p>ADgk - Andriod<br>一个专门为安卓版adguard写的规则,适合在手机浏览器中使用的拦截规则。<br>适用于 AdGuard for Android 的去广告规则（不保证在其他软件使用的效果）</p>
-<ul>
-<li>去除大部分软件的开屏广告</li>
-<li>拦截大部分广告联盟的广告<br>主规则订阅地址 </li>
-<li><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a><br>百度搜索结果内屏蔽百家号<br><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt</a></li>
-</ul>
-<hr>
-<h2 id="Hosts过滤器"><a href="#Hosts过滤器" class="headerlink" title="Hosts过滤器"></a>Hosts过滤器</h2><p>大圣净化 - 大圣净化开发者维护的 Hosts，主要针对国内视频网站<br><a href="https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts">https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts</a><br>1024_hosts - 1024网站及澳门皇家赌场及恶意广告主机列表,你懂得<br><a href="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts">https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts</a><br>yhosts -国内维护。-相当老牌的去广告的Hosts -yhosts是国内比较知名的host维护列表，原作者目前已经停止维护,目前由VeleSila接手更新。<br><a href="https://raw.githubusercontent.com/vokins/yhosts/master/hosts">https://raw.githubusercontent.com/vokins/yhosts/master/hosts</a><br><a href="https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt">https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt</a><br>neoHosts - 国内屏蔽挖矿统计JS&amp;360&amp;百度&amp;、、、国内屏蔽挖矿统计JS&#x2F;常见下载劫持&#x2F;百度全家桶的全天候定位记录等等<br><a href="https://hosts.nfz.moe/full/hosts">https://hosts.nfz.moe/full/hosts</a><br>Hblock -综合多种源集合体屏蔽广告跟踪和恶意软件<br>Hblock是一个脚本程序，他会自动提取来自很多规则源的恶意广告主机列表，比如 EasyList,AdGuard,uBlock ,disconnect.me 等数十个规则源，下面的链接是由该脚本生成的主机列表。<br><a href="https://hblock.molinero.dev/hosts">https://hblock.molinero.dev/hosts</a><br>Google hosts - 提高网站访问速度<br><a href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a><br>Mvps - 屏蔽美欧地区英文网站相关的广告<br><a href="http://winhelp2002.mvps.org/hosts.txt">http://winhelp2002.mvps.org/hosts.txt</a><br>StevenBlack - 屏蔽国外网站广告-国外维护<br>国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件. github上获得15k+ Start 可以通过脚本生成你自己的hosts文件。<br><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</a><br>YousList - 屏蔽韩国网站广告<br><a href="https://raw.githubusercontent.com/yous/YousList/master/hosts.txt">https://raw.githubusercontent.com/yous/YousList/master/hosts.txt</a><br>有海外维护针对移动网站的广告主机列表<br><a href="https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt">https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt</a><br>hmirror来自海外西班牙用户整理的各种主机拦截资源汇总，包括来adguard,easylist,ublock的主机资源. 下面是主机资源汇总页面<br><a href="https://github.com/hectorm/hmirror/">https://github.com/hectorm/hmirror/</a></p>
-<hr>
-<p>路由端屏蔽规则<br>Koolproxy<br><a href="https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt">https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt</a><br>Adbyby（xwhyc-rules）<br>[lazy] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br>[lazy] <a href="https://opt.cn2qq.com/opt-file/lazy.txt">https://opt.cn2qq.com/opt-file/lazy.txt</a><br>[video] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a><br>[video] <a href="https://opt.cn2qq.com/opt-file/video.txt">https://opt.cn2qq.com/opt-file/video.txt</a></p>
-<hr>
-<p>去广告效果检测网站<br><a href="https://checkadblock.ru/">https://checkadblock.ru/</a><br><a href="https://blockads.fivefilters.org/">https://blockads.fivefilters.org/</a><br><a href="https://canyoublockit.com/extreme-test/">https://canyoublockit.com/extreme-test/</a><br><a href="https://ads-blocker.com/testing/">https://ads-blocker.com/testing/</a><br><a href="https://www.detectadblock.com/">https://www.detectadblock.com/</a><br><a href="http://simple-adblock.com/faq/testing-your-adblocker/">http://simple-adblock.com/faq/testing-your-adblocker/</a></p>
-<hr>
-<p>参考资料<br><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a><br><a href="https://github.com/otobtc/ADhosts">https://github.com/otobtc/ADhosts</a><br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a><br><a href="https://github.com/hectorm/hblock">https://github.com/hectorm/hblock</a><br><a href="https://github.com/vokins/yhosts">https://github.com/vokins/yhosts</a><br><a href="https://github.com/StevenBlack/hosts">https://github.com/StevenBlack/hosts</a><br><a href="https://ublock.org/">https://ublock.org/</a><br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a><br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a><br><a href="https://github.com/privacy-protection-tools/anti-AD">https://github.com/privacy-protection-tools/anti-AD</a><br><a href="https://easylist.to/">https://easylist.to/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>chrome</tag>
-        <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 扫描全能王</title>
-    <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-apk-%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B/</url>
-    <content><![CDATA[<p>几款好用的扫描软件apk</p>
-<p>扫描全能王,扫描君(扫描王全能宝)</p>
-<span id="more"></span>
-
-<h1 id="1-扫描全能王"><a href="#1-扫描全能王" class="headerlink" title="1.扫描全能王"></a>1.扫描全能王</h1><p>大神分享：</p>
-<p><a href="https://apphot.cc/9186.html">https://apphot.cc/9186.html</a></p>
-<p><a href="https://www.423down.com/8129.html">https://www.423down.com/8129.html</a></p>
-<p><a href="https://www.ghxi.com/camscanner.html">https://www.ghxi.com/camscanner.html</a></p>
-<p>下载地址：</p>
-<p>yoyodadada蓝凑云 - 推荐：<a href="https://yoyodadada.lanzouw.com/b07pt10h">https://yoyodadada.lanzouw.com/b07pt10h</a></p>
-<p>烈火百度盘: <a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
-<h1 id="2-扫描君-扫描王全能宝"><a href="#2-扫描君-扫描王全能宝" class="headerlink" title="2.扫描君(扫描王全能宝)"></a>2.扫描君(扫描王全能宝)</h1><p><a href="https://423down.lanzouo.com/b0f1aq5sb">https://423down.lanzouo.com/b0f1aq5sb</a></p>
-<p><a href="https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F">https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F</a></p>
-<p>烈火分享 - 资源目录里面的同类APP下：<br><a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
+<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
+<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
+<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
+<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
+<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
+<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
+<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
+<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
+<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
+<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
+<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1190,6 +1163,7 @@
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -1239,6 +1213,32 @@
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 扫描全能王</title>
+    <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-apk-%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B/</url>
+    <content><![CDATA[<p>几款好用的扫描软件apk</p>
+<p>扫描全能王,扫描君(扫描王全能宝)</p>
+<span id="more"></span>
+
+<h1 id="1-扫描全能王"><a href="#1-扫描全能王" class="headerlink" title="1.扫描全能王"></a>1.扫描全能王</h1><p>大神分享：</p>
+<p><a href="https://apphot.cc/9186.html">https://apphot.cc/9186.html</a></p>
+<p><a href="https://www.423down.com/8129.html">https://www.423down.com/8129.html</a></p>
+<p><a href="https://www.ghxi.com/camscanner.html">https://www.ghxi.com/camscanner.html</a></p>
+<p>下载地址：</p>
+<p>yoyodadada蓝凑云 - 推荐：<a href="https://yoyodadada.lanzouw.com/b07pt10h">https://yoyodadada.lanzouw.com/b07pt10h</a></p>
+<p>烈火百度盘: <a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
+<h1 id="2-扫描君-扫描王全能宝"><a href="#2-扫描君-扫描王全能宝" class="headerlink" title="2.扫描君(扫描王全能宝)"></a>2.扫描君(扫描王全能宝)</h1><p><a href="https://423down.lanzouo.com/b0f1aq5sb">https://423down.lanzouo.com/b0f1aq5sb</a></p>
+<p><a href="https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F">https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F</a></p>
+<p>烈火分享 - 资源目录里面的同类APP下：<br><a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
       </tags>
   </entry>
   <entry>
@@ -1336,24 +1336,6 @@
 <h5 id="2-抠图换背景"><a href="#2-抠图换背景" class="headerlink" title="2.抠图换背景"></a>2.抠图换背景</h5><p>| 软件功能<br>1、智能抠图：运用最新的AI技术，精确的识别功能，帮你轻松实现抠图，生成透明背景图换背景<br>2、证件照：多种尺寸选择，随时随地都可以进行拍摄证件照，让你足不出户就拿到美美的证件照<br>3、老照片修复：珍贵的老照片却由于时间久远变得模糊不清，使用照片修复功能，就可以自动修复照片使其清晰度提高，完美还原其本来面貌<br>4、图片编辑：支持对图片进行裁剪、压缩、修改尺寸和格式转换。使用编辑功能，简单的几步操作，轻松满足你的照片编辑需求</p>
 <p>| 软件特色<br>1、万能抠图消除神器&amp;趣味特效功能<br>2、视频换脸一张照片变身视频主角<br>3、智能抠图，发丝级精准抠图，一键换背景<br>4、高级消除笔，快速擦除各类照片水印<br>5、趣味特效，卡通头像、年龄性别变化、动漫化<br>6、新增抠图，自定义添加各类贴纸</p>
 <h5 id="3-PhotoRoom"><a href="#3-PhotoRoom" class="headerlink" title="3.PhotoRoom"></a>3.PhotoRoom</h5><h5 id="4-Background-Eraser-Remove-BG-v2-102-26-Pro-图像背景擦除工具"><a href="#4-Background-Eraser-Remove-BG-v2-102-26-Pro-图像背景擦除工具" class="headerlink" title="4.Background Eraser - Remove BG v2.102.26 Pro(图像背景擦除工具)"></a>4.Background Eraser - Remove BG v2.102.26 Pro(图像背景擦除工具)</h5><h5 id="5-PickU-Photo-Editor-Background-Changer-amp-Collage-v3-6-1-b224-Premium-一键抠图"><a href="#5-PickU-Photo-Editor-Background-Changer-amp-Collage-v3-6-1-b224-Premium-一键抠图" class="headerlink" title="5. PickU - Photo Editor Background Changer &amp; Collage v3.6.1 b224 Premium - 一键抠图"></a>5. PickU - Photo Editor Background Changer &amp; Collage v3.6.1 b224 Premium - 一键抠图</h5>]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
-    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
-<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
-<span id="more"></span>
-
-<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
       <categories>
         <category>软件</category>
       </categories>
@@ -1481,56 +1463,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - PDF - 编辑、修改、转换</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-PDF/</url>
-    <content><![CDATA[<h1 id="1-PDF-Windows"><a href="#1-PDF-Windows" class="headerlink" title="1.PDF - Windows"></a>1.PDF - Windows</h1><p>福昕高级PDF编辑器专业版</p>
-<p>是一款可以直接对PDF文档进行编辑、修改、转换</p>
-<span id="more"></span>
-
-<p><a href="https://www.423down.com/12482.html">https://www.423down.com/12482.html</a></p>
-<p><a href="https://www.423down.com/12486.html">https://www.423down.com/12486.html</a></p>
-<p><a href="https://apphot.cc/?s=%E7%A6%8F%E6%98%95">https://apphot.cc/?s=福昕</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouh.com/iX5Jx04lamwf">https://423down.lanzouh.com/iX5Jx04lamwf</a></p>
-<p><a href="https://423down.lanzouo.com/b0f1hcmpi">https://423down.lanzouo.com/b0f1hcmpi</a></p>
-<h1 id="2-PDF-Android"><a href="#2-PDF-Android" class="headerlink" title="2.PDF - Android"></a>2.PDF - Android</h1><p>个人使用的WPS国际版，有会员，功能全</p>
-<p><a href="https://apphot.cc/30309.html">https://apphot.cc/30309.html</a> - pdf软件合集</p>
-<p>下载地址：</p>
-<p><a href="https://wwa.lanzoui.com/b04azn4he">https://wwa.lanzoui.com/b04azn4he</a> 提取码：35rk</p>
-<p><a href="https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge">https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge</a> 密码：24ge</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - WinRAR and 7-Zip</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
-    <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
-<span id="more"></span>
-
-<p>WinRAR 简体中文汉化版</p>
-<p>网盘下载</p>
-<p><a href="https://lanzoui.com/b04ako9dg">https://lanzoui.com/b04ako9dg</a> 提取码：3zq8</p>
-<p><a href="https://423down.lanzouo.com/b105455">https://423down.lanzouo.com/b105455</a></p>
-<p><a href="https://ghpym.lanzoui.com/b010ja45a">https://ghpym.lanzoui.com/b010ja45a</a>   密码:fd15</p>
-<p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
-<h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
-<p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - OCR合集 - 图片识别、截图识别、剪切图片识别</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-OCR%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<p>OCR合集 - 图片识别、截图识别、剪切图片识别</p>
@@ -1559,6 +1491,47 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
+    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
+<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
+<span id="more"></span>
+
+<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - WinRAR and 7-Zip</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
+    <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
+<span id="more"></span>
+
+<p>WinRAR 简体中文汉化版</p>
+<p>网盘下载</p>
+<p><a href="https://lanzoui.com/b04ako9dg">https://lanzoui.com/b04ako9dg</a> 提取码：3zq8</p>
+<p><a href="https://423down.lanzouo.com/b105455">https://423down.lanzouo.com/b105455</a></p>
+<p><a href="https://ghpym.lanzoui.com/b010ja45a">https://ghpym.lanzoui.com/b010ja45a</a>   密码:fd15</p>
+<p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
+<h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
+<p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 卸载工具</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>软件卸载工具</p>
@@ -1569,6 +1542,53 @@
 <p>下载地址：</p>
 <p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
 <p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - PDF - 编辑、修改、转换</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-PDF/</url>
+    <content><![CDATA[<h1 id="1-PDF-Windows"><a href="#1-PDF-Windows" class="headerlink" title="1.PDF - Windows"></a>1.PDF - Windows</h1><p>福昕高级PDF编辑器专业版</p>
+<p>是一款可以直接对PDF文档进行编辑、修改、转换</p>
+<span id="more"></span>
+
+<p><a href="https://www.423down.com/12482.html">https://www.423down.com/12482.html</a></p>
+<p><a href="https://www.423down.com/12486.html">https://www.423down.com/12486.html</a></p>
+<p><a href="https://apphot.cc/?s=%E7%A6%8F%E6%98%95">https://apphot.cc/?s=福昕</a></p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouh.com/iX5Jx04lamwf">https://423down.lanzouh.com/iX5Jx04lamwf</a></p>
+<p><a href="https://423down.lanzouo.com/b0f1hcmpi">https://423down.lanzouo.com/b0f1hcmpi</a></p>
+<h1 id="2-PDF-Android"><a href="#2-PDF-Android" class="headerlink" title="2.PDF - Android"></a>2.PDF - Android</h1><p>个人使用的WPS国际版，有会员，功能全</p>
+<p><a href="https://apphot.cc/30309.html">https://apphot.cc/30309.html</a> - pdf软件合集</p>
+<p>下载地址：</p>
+<p><a href="https://wwa.lanzoui.com/b04azn4he">https://wwa.lanzoui.com/b04azn4he</a> 提取码：35rk</p>
+<p><a href="https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge">https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge</a> 密码：24ge</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 截图 - FastStone Capture</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
+    <content><![CDATA[<p>自己使用的截图工具</p>
+<span id="more"></span>
+
+<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
+<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
+<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1711,26 +1731,6 @@
 <p>yoyodadada-PC版 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07pv5xg">https://yoyodadada.lanzouw.com/b07pv5xg</a></p>
 <p><a href="https://pan.lanzouj.com/b01dj5eud">https://pan.lanzouj.com/b01dj5eud</a></p>
 <p><a href="https://lanzoui.com/b04al7aeh">https://lanzoui.com/b04al7aeh</a> 提取码：9h39</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 截图 - FastStone Capture</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
-    <content><![CDATA[<p>自己使用的截图工具</p>
-<span id="more"></span>
-
-<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
-<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
-<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2507,6 +2507,19 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 获取github文件夹里文件API的方法</title>
+    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 查看端口被占用、杀进程</title>
     <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<h3 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h3><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
@@ -2518,19 +2531,6 @@ OK,大功告成！
 <p>2.详细信息-找到PID -右键-转到服务-停止</p>
 <h3 id="根据进程的名称杀掉进程"><a href="#根据进程的名称杀掉进程" class="headerlink" title="根据进程的名称杀掉进程"></a>根据进程的名称杀掉进程</h3><p>taskkill &#x2F;f &#x2F;t &#x2F;im “进程id或者进程名称”</p>
 <h3 id="系统当前所有的端口使用情况"><a href="#系统当前所有的端口使用情况" class="headerlink" title="系统当前所有的端口使用情况"></a>系统当前所有的端口使用情况</h3><p>输入netstat -ano然后回车，就可以看到系统当前所有的端口使用情况</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 获取github文件夹里文件API的方法</title>
-    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>经验技术</category>
