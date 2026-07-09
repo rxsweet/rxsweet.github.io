@@ -454,6 +454,51 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 2.jekyll博客的若干手记</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
+<span id="more"></span>
+
+<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
+<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
+<ul>
+<li>layout 模板文件，需要放在_layouts目录下</li>
+<li>title:标题</li>
+<li>date: 日期</li>
+<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
+<li>categories 分类，也可以是category</li>
+<li>img:  图片链接</li>
+<li>published true or false，发表与否</li>
+<li>permalink 固定链接</li>
+</ul>
+<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
+<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
+<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
+<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
+<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 搭建个人博客</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
@@ -501,51 +546,6 @@
 </ol>
 <hr>
 <p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 2.jekyll博客的若干手记</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
-<span id="more"></span>
-
-<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
-<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
-<ul>
-<li>layout 模板文件，需要放在_layouts目录下</li>
-<li>title:标题</li>
-<li>date: 日期</li>
-<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
-<li>categories 分类，也可以是category</li>
-<li>img:  图片链接</li>
-<li>published true or false，发表与否</li>
-<li>permalink 固定链接</li>
-</ul>
-<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
-<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
-<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
-<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
-
-<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
-<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -746,7 +746,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>4c00e28ee72936dee2453e38dd13021ebookmark.json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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#101;&#x74;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#x65;">&#115;&#x77;&#x65;&#101;&#x74;&#114;&#x78;&#64;&#x70;&#x6d;&#x2e;&#109;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#x65;&#116;&#114;&#120;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#x65;">&#x73;&#119;&#x65;&#x65;&#116;&#114;&#120;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1013,35 +1013,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 直播合集</title>
-    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
-<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
-<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
-<span id="more"></span>
-
-<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
-<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
-<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
-<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
-<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
-<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
-<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
-<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
-<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
-<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
-<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-apk-阅读3.0</title>
     <url>/2022/05/11/2022-05-11-%E8%BD%AF%E4%BB%B6-apk-%E9%98%85%E8%AF%BB3.0/</url>
     <content><![CDATA[<h1 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h1><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://github.com/gedoor/legado/releases/latest">Release · gedoor&#x2F;legado · GitHub</a></p>
@@ -1098,6 +1069,35 @@
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 直播合集</title>
+    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
+<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
+<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
+<span id="more"></span>
+
+<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
+<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
+<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
+<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
+<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
+<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
+<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
+<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
+<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
+<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
+<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -1304,12 +1304,12 @@
 <p>若需要一个仅启用开屏广告规则的订阅，可以将默认订阅删除后, 导入此订阅, 订阅链接如下：</p>
 <p>**注意：删除后面的部分可用查看最近更新时间<br><code>https://registry.npmmirror.com/@Lin-arm/GKD_subscription/</code></p>
 <ul>
-<li><a href="https://github.com/Lin-arm/GKD_subscription/tree/main/dist">https://github.com/Lin-arm/GKD_subscription/tree/main/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://ghraw.eu.org/Lin-arm/GKD_subscription/main/dist/gkd.json5</span><br></pre></td></tr></table></figure></li>
-<li><a href="https://github.com/jshir700/GKD_subscription/tree/main/dist">https://github.com/jshir700/GKD_subscription/tree/main/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://ghraw.eu.org/jshir700/GKD_subscription/refs/heads/main/dist/AIsouler_gkd.json5</span><br></pre></td></tr></table></figure></li>
-<li><a href="https://github.com/aoguai/subscription/tree/custom">https://github.com/aoguai/subscription/tree/custom</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://registry.npmmirror.com/@aoguai/subscription/latest/files/dist/aoguai_gkd.json5</span><br><span class="line">https://ghraw.eu.org/aoguai/subscription/custom/dist/aoguai_gkd.json5</span><br></pre></td></tr></table></figure></li>
-<li><a href="https://github.com/ganlinte/GKD-subscription/">https://github.com/ganlinte/GKD-subscription/</a>  -现用他的规则，可去高德广告，需要在应用里面再设置一下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5</span><br><span class="line">https://ghraw.eu.org/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5</span><br></pre></td></tr></table></figure></li>
-<li><a href="https://github.com/mrlctate/gkd-mrlc/tree/main/dist">https://github.com/mrlctate/gkd-mrlc/tree/main/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://ghraw.eu.org/mrlctate/gkd-mrlc/refs/heads/main/dist/gkd.json5</span><br></pre></td></tr></table></figure></li>
-<li><a href="https://github.com/AliusCode/GKD_subscription/tree/sync-fork/dist">https://github.com/AliusCode/GKD_subscription/tree/sync-fork/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://ghraw.eu.org/AliusCode/GKD_subscription/refs/heads/sync-fork/dist/gkd.json5</span><br></pre></td></tr></table></figure></li>
+<li><a href="https://github.com/Lin-arm/GKD_subscription/tree/main/dist">https://github.com/Lin-arm/GKD_subscription/tree/main/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://raw.rxsub.eu.org/https://raw.githubusercontent.com/Lin-arm/GKD_subscription/main/dist/gkd.json5</span><br></pre></td></tr></table></figure></li>
+<li><a href="https://github.com/jshir700/GKD_subscription/tree/main/dist">https://github.com/jshir700/GKD_subscription/tree/main/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://raw.rxsub.eu.org/https://raw.githubusercontent.com/jshir700/GKD_subscription/refs/heads/main/dist/AIsouler_gkd.json5</span><br></pre></td></tr></table></figure></li>
+<li><a href="https://github.com/aoguai/subscription/tree/custom">https://github.com/aoguai/subscription/tree/custom</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://registry.npmmirror.com/@aoguai/subscription/latest/files/dist/aoguai_gkd.json5</span><br><span class="line">https://raw.rxsub.eu.org/https://raw.githubusercontent.com/aoguai/subscription/custom/dist/aoguai_gkd.json5</span><br></pre></td></tr></table></figure></li>
+<li><a href="https://github.com/ganlinte/GKD-subscription/">https://github.com/ganlinte/GKD-subscription/</a>  -现用他的规则，可去高德广告，需要在应用里面再设置一下<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files/dist/ganlin_gkd.json5</span><br><span class="line">https://raw.rxsub.eu.org/https://raw.githubusercontent.com/ganlinte/GKD-subscription/main/dist/ganlin_gkd.json5</span><br></pre></td></tr></table></figure></li>
+<li><a href="https://github.com/mrlctate/gkd-mrlc/tree/main/dist">https://github.com/mrlctate/gkd-mrlc/tree/main/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://raw.rxsub.eu.org/https://raw.githubusercontent.com/mrlctate/gkd-mrlc/refs/heads/main/dist/gkd.json5</span><br></pre></td></tr></table></figure></li>
+<li><a href="https://github.com/AliusCode/GKD_subscription/tree/sync-fork/dist">https://github.com/AliusCode/GKD_subscription/tree/sync-fork/dist</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">订阅链接：</span><br><span class="line">https://raw.rxsub.eu.org/https://raw.githubusercontent.com/AliusCode/GKD_subscription/refs/heads/sync-fork/dist/gkd.json5</span><br></pre></td></tr></table></figure></li>
 </ul>
 <p><strong>注意：抖音和头条总是跳转到“心跳过快”问题，在规则里面点‘在此应用的禁用’</strong><br>软件下载：</p>
 <ul>
@@ -1443,29 +1443,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - WinRAR and 7-Zip</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
-    <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
-<span id="more"></span>
-
-<p>WinRAR 简体中文汉化版</p>
-<p>网盘下载</p>
-<p><a href="https://lanzoui.com/b04ako9dg">https://lanzoui.com/b04ako9dg</a> 提取码：3zq8</p>
-<p><a href="https://423down.lanzouo.com/b105455">https://423down.lanzouo.com/b105455</a></p>
-<p><a href="https://ghpym.lanzoui.com/b010ja45a">https://ghpym.lanzoui.com/b010ja45a</a>   密码:fd15</p>
-<p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
-<h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
-<p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - PDF - 编辑、修改、转换</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-PDF/</url>
     <content><![CDATA[<h1 id="1-PDF-Windows"><a href="#1-PDF-Windows" class="headerlink" title="1.PDF - Windows"></a>1.PDF - Windows</h1><p>福昕高级PDF编辑器专业版</p>
@@ -1493,6 +1470,29 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - WinRAR and 7-Zip</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
+    <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
+<span id="more"></span>
+
+<p>WinRAR 简体中文汉化版</p>
+<p>网盘下载</p>
+<p><a href="https://lanzoui.com/b04ako9dg">https://lanzoui.com/b04ako9dg</a> 提取码：3zq8</p>
+<p><a href="https://423down.lanzouo.com/b105455">https://423down.lanzouo.com/b105455</a></p>
+<p><a href="https://ghpym.lanzoui.com/b010ja45a">https://ghpym.lanzoui.com/b010ja45a</a>   密码:fd15</p>
+<p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
+<h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
+<p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 卸载工具</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>软件卸载工具</p>
@@ -1503,6 +1503,55 @@
 <p>下载地址：</p>
 <p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
 <p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 截图 - FastStone Capture</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
+    <content><![CDATA[<p>自己使用的截图工具</p>
+<span id="more"></span>
+
+<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
+<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
+<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 电脑优化清理</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
+    <content><![CDATA[<p>电脑优化清理工具</p>
+<span id="more"></span>
+
+<h3 id="系统优化工具-CCleaner"><a href="#系统优化工具-CCleaner" class="headerlink" title="系统优化工具 CCleaner"></a>系统优化工具 CCleaner</h3><p>CCleaner的体积小，运行速度极快，可以对临时文件夹、历史记录、回收站等进行垃圾清理，并可对注册表进行垃圾项扫描、清理。附带软件卸载功能。</p>
+<p>分享页：<br><a href="https://apphot.cc/27326.html">https://apphot.cc/27326.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://www.lanzoui.com/b04alyn5i">https://www.lanzoui.com/b04alyn5i</a> 提取码：cw1v</p>
+<h3 id="Windows清理利器-Dism"><a href="#Windows清理利器-Dism" class="headerlink" title="Windows清理利器 Dism++"></a>Windows清理利器 Dism++</h3><p>Dism++可以说是一个Dism的GUI版，但是并不依赖Dism，直接基于更底层的CBS(Component Based Servicing Reference)。</p>
+<p>分享页：</p>
+<p><a href="https://apphot.cc/25971.html">https://apphot.cc/25971.html</a></p>
+<p>下载地址：</p>
+<p><a href="http://ct.ghpym.com/d/7369060-44762596-31de85">http://ct.ghpym.com/d/7369060-44762596-31de85</a></p>
+<p><a href="https://pan.baidu.com/s/1Dciyi2G4yXqa-7JrvcQqsA">https://pan.baidu.com/s/1Dciyi2G4yXqa-7JrvcQqsA</a> 密码：ahe9</p>
+<h3 id="Process-Lasso-Pro"><a href="#Process-Lasso-Pro" class="headerlink" title="Process Lasso Pro"></a>Process Lasso Pro</h3><p>Process Lasso是一款独特的调试进程级别的系统优化工具</p>
+<p>分享页：<br><a href="https://www.ghxi.com/processlasso.html">https://www.ghxi.com/processlasso.html</a></p>
+<p>下载地址：</p>
+<p>已高速(如有密码：3519)<a href="http://ct.ghpym.com/d/7369060-41220817-7cf748">http://ct.ghpym.com/d/7369060-41220817-7cf748</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1548,26 +1597,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 截图 - FastStone Capture</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
-    <content><![CDATA[<p>自己使用的截图工具</p>
-<span id="more"></span>
-
-<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
-<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
-<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
@@ -1582,35 +1611,6 @@
 <p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
 <p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
 <hr>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 电脑优化清理</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
-    <content><![CDATA[<p>电脑优化清理工具</p>
-<span id="more"></span>
-
-<h3 id="系统优化工具-CCleaner"><a href="#系统优化工具-CCleaner" class="headerlink" title="系统优化工具 CCleaner"></a>系统优化工具 CCleaner</h3><p>CCleaner的体积小，运行速度极快，可以对临时文件夹、历史记录、回收站等进行垃圾清理，并可对注册表进行垃圾项扫描、清理。附带软件卸载功能。</p>
-<p>分享页：<br><a href="https://apphot.cc/27326.html">https://apphot.cc/27326.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://www.lanzoui.com/b04alyn5i">https://www.lanzoui.com/b04alyn5i</a> 提取码：cw1v</p>
-<h3 id="Windows清理利器-Dism"><a href="#Windows清理利器-Dism" class="headerlink" title="Windows清理利器 Dism++"></a>Windows清理利器 Dism++</h3><p>Dism++可以说是一个Dism的GUI版，但是并不依赖Dism，直接基于更底层的CBS(Component Based Servicing Reference)。</p>
-<p>分享页：</p>
-<p><a href="https://apphot.cc/25971.html">https://apphot.cc/25971.html</a></p>
-<p>下载地址：</p>
-<p><a href="http://ct.ghpym.com/d/7369060-44762596-31de85">http://ct.ghpym.com/d/7369060-44762596-31de85</a></p>
-<p><a href="https://pan.baidu.com/s/1Dciyi2G4yXqa-7JrvcQqsA">https://pan.baidu.com/s/1Dciyi2G4yXqa-7JrvcQqsA</a> 密码：ahe9</p>
-<h3 id="Process-Lasso-Pro"><a href="#Process-Lasso-Pro" class="headerlink" title="Process Lasso Pro"></a>Process Lasso Pro</h3><p>Process Lasso是一款独特的调试进程级别的系统优化工具</p>
-<p>分享页：<br><a href="https://www.ghxi.com/processlasso.html">https://www.ghxi.com/processlasso.html</a></p>
-<p>下载地址：</p>
-<p>已高速(如有密码：3519)<a href="http://ct.ghpym.com/d/7369060-41220817-7cf748">http://ct.ghpym.com/d/7369060-41220817-7cf748</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1740,6 +1740,83 @@
       </categories>
       <tags>
         <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 空调选择</title>
+    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
+<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
+<span id="more"></span>
+
+<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
+<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
+<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
+<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
+<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
+<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
+<p>1、冷凝器（热交换器）</p>
+<p>铜管数量：关注格力机型单双排铜管。</p>
+<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
+<p>一般来说，</p>
+<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
+<p>所以，咱们要具体问题具体分析。</p>
+<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
+<p>格力C型换热器<br>2、外机重量和尺寸</p>
+<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
+<p>就看外机净重！</p>
+<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
+<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
+<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
+<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
+<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
+<p>3、压缩机</p>
+<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
+<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
+<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
+<p>4、节流装置</p>
+<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
+<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
+<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
+<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
+<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
+<p>5、是否是冷酷外机</p>
+<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
+<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
+</code></pre>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<span id="more"></span>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
+
+OK,大功告成！
+</code></pre>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -1905,56 +1982,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 空调选择</title>
-    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
-<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
-<span id="more"></span>
-
-<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
-<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
-<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
-<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
-<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
-<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
-<p>1、冷凝器（热交换器）</p>
-<p>铜管数量：关注格力机型单双排铜管。</p>
-<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
-<p>一般来说，</p>
-<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
-<p>所以，咱们要具体问题具体分析。</p>
-<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
-<p>格力C型换热器<br>2、外机重量和尺寸</p>
-<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
-<p>就看外机净重！</p>
-<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
-<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
-<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
-<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
-<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
-<p>3、压缩机</p>
-<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
-<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
-<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
-<p>4、节流装置</p>
-<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
-<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
-<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
-<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
-<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
-<p>5、是否是冷酷外机</p>
-<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
-<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 博客从Jekyll更换到Hexo</title>
     <url>/2022/08/09/2022-08-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E4%BB%8EJekyll%E6%9B%B4%E6%8D%A2%E5%88%B0Hexo/</url>
     <content><![CDATA[<h1 id="博客从Jekyll更换到Hexo"><a href="#博客从Jekyll更换到Hexo" class="headerlink" title="博客从Jekyll更换到Hexo"></a>博客从Jekyll更换到Hexo</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>更换原因：1.电脑系统升级了，Win10x64<br>          2.Vercel对Jekyll不友好，不支持<code>Liquid</code>模板语言来处理模板<br>          3.Hexo主题的好多问题search可以解决</p>
@@ -1974,33 +2001,6 @@
 
 <h3 id="NexT主题设置"><a href="#NexT主题设置" class="headerlink" title="NexT主题设置"></a>NexT主题设置</h3><p>在<code>themes\next\</code>里面找到<code>_config.yml主题配置文件</code>,<br>    1.修改<code>Schemes</code>,自己使用的是<code>scheme: Gemini</code><br>    2.在<code>menu:</code>下面根据自己需要修改<br>    3.在<code>avatar:</code>下面修改博主图片<br>    4.在<code>favicon:</code>下面修改站点图标<br>    5.更多修改在<code>主题配置文件</code>自己探索</p>
 <h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><p>后面根据Github Actions + Vercel 实现自动部署 + 双线网站；</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
-    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
-<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
-</code></pre>
-<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
-</code></pre>
-<span id="more"></span>
-<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
-选择单个repository权限,
-完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
-在下一步`Deploy`,
-完成，部署成功。
-</code></pre>
-<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
-
-OK,大功告成！
-</code></pre>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2097,6 +2097,33 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - Alist 网盘整合加载</title>
+    <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
+<p><a href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
+<h2 id="downloads"><a href="#downloads" class="headerlink" title="downloads"></a>downloads</h2><p>自己测试哪个线路快</p>
+<p><a href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
+<span id="more"></span>
+
+<h2 id="open-alist-windows-4-0-amd64-exe"><a href="#open-alist-windows-4-0-amd64-exe" class="headerlink" title="open alist-windows-4.0-amd64.exe"></a>open <code>alist-windows-4.0-amd64.exe</code></h2><p><code>Initial password: 后面是密码</code></p>
+<p><code>start server @ 0.0.0.0:5244</code>加载成功</p>
+<h2 id="登录alist"><a href="#登录alist" class="headerlink" title="登录alist"></a>登录alist</h2><p>打开<code>127.0.0.1:5244</code>,输入密码登录(登录进来后，在设置 - 后端 - 密码，可以修改密码)</p>
+<p>dea8 zf5x 03ya uusn</p>
+<h2 id="配置网盘"><a href="#配置网盘" class="headerlink" title="配置网盘"></a>配置网盘</h2><p>在管理界面点<code>账号</code>，添加，根据需求添加即可.</p>
+<h2 id="个人使用的WebDev-Koofr-eu"><a href="#个人使用的WebDev-Koofr-eu" class="headerlink" title="个人使用的WebDev - Koofr.eu"></a>个人使用的WebDev - Koofr.eu</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webdav root url ：https://app.koofr.net/dav/</span><br><span class="line">用户名: sweetrx@pm</span><br><span class="line">密码： </span><br></pre></td></tr></table></figure>
+
+<h1 id="Windows电脑中挂载为虚拟磁盘"><a href="#Windows电脑中挂载为虚拟磁盘" class="headerlink" title="Windows电脑中挂载为虚拟磁盘"></a>Windows电脑中挂载为虚拟磁盘</h1><p>打开 Windows 资源管理器（例如，通过右键单击”开始”按钮） ，或者直接双击<code>计算机</code><br>左上角导航窗格中的<code>计算机 - 映射网络驱动器</code><br>在”驱动器”下拉列表下选择一个空闲驱动器号<br>在”文件夹”字段中输入文件夹的 WebDAV URL<br>选中使用其他凭据连接复选框<br>输入您的登录名和密码登录</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>网盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
     <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
@@ -2180,33 +2207,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - Alist 网盘整合加载</title>
-    <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
-    <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
-<p><a href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
-<h2 id="downloads"><a href="#downloads" class="headerlink" title="downloads"></a>downloads</h2><p>自己测试哪个线路快</p>
-<p><a href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
-<span id="more"></span>
-
-<h2 id="open-alist-windows-4-0-amd64-exe"><a href="#open-alist-windows-4-0-amd64-exe" class="headerlink" title="open alist-windows-4.0-amd64.exe"></a>open <code>alist-windows-4.0-amd64.exe</code></h2><p><code>Initial password: 后面是密码</code></p>
-<p><code>start server @ 0.0.0.0:5244</code>加载成功</p>
-<h2 id="登录alist"><a href="#登录alist" class="headerlink" title="登录alist"></a>登录alist</h2><p>打开<code>127.0.0.1:5244</code>,输入密码登录(登录进来后，在设置 - 后端 - 密码，可以修改密码)</p>
-<p>dea8 zf5x 03ya uusn</p>
-<h2 id="配置网盘"><a href="#配置网盘" class="headerlink" title="配置网盘"></a>配置网盘</h2><p>在管理界面点<code>账号</code>，添加，根据需求添加即可.</p>
-<h2 id="个人使用的WebDev-Koofr-eu"><a href="#个人使用的WebDev-Koofr-eu" class="headerlink" title="个人使用的WebDev - Koofr.eu"></a>个人使用的WebDev - Koofr.eu</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webdav root url ：https://app.koofr.net/dav/</span><br><span class="line">用户名: sweetrx@pm</span><br><span class="line">密码： </span><br></pre></td></tr></table></figure>
-
-<h1 id="Windows电脑中挂载为虚拟磁盘"><a href="#Windows电脑中挂载为虚拟磁盘" class="headerlink" title="Windows电脑中挂载为虚拟磁盘"></a>Windows电脑中挂载为虚拟磁盘</h1><p>打开 Windows 资源管理器（例如，通过右键单击”开始”按钮） ，或者直接双击<code>计算机</code><br>左上角导航窗格中的<code>计算机 - 映射网络驱动器</code><br>在”驱动器”下拉列表下选择一个空闲驱动器号<br>在”文件夹”字段中输入文件夹的 WebDAV URL<br>选中使用其他凭据连接复选框<br>输入您的登录名和密码登录</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>网盘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win快速启动软件lily和lucy</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2245,36 +2245,6 @@ OK,大功告成！
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 域名注册并绑定vercel博客</title>
-    <url>/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="域名注册并绑定vercel博客"><a href="#域名注册并绑定vercel博客" class="headerlink" title="域名注册并绑定vercel博客"></a>域名注册并绑定vercel博客</h1><h2 id="先注册域名"><a href="#先注册域名" class="headerlink" title="先注册域名"></a>先注册域名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitelutions多种可解析免费二级域名注册，</span><br><span class="line">至少已经运行十几年了，现在依然可用。</span><br><span class="line">里面可以注册二十几种后缀的免费二级域名，</span><br><span class="line">其中有几个提供既短又好记的二级域名</span><br></pre></td></tr></table></figure>
-<p>注册网址：<a href="https://www.sitelutions.com/">https://www.sitelutions.com/</a></p>
-<p>注册教程：<a href="https://www.freeaday.com/2023/01/sitelutions/">https://www.freeaday.com/2023/01/sitelutions/</a></p>
-<p>步骤：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击右上角的红色 free sign up 来注册。注册只需邮箱即可，但是过程有些麻烦。</span><br><span class="line">2.登录成功之后，依次选择account &gt; url and dns &gt; add subdomain，然后选择一个自己想要的二级域名，点击add host。</span><br><span class="line">3.选择二级域名后面的[Advanced Config &amp; DDNS]字样，来添加记录，</span><br><span class="line">**发现无法添加任何记录，提示已经在2014年10月停止了免费的解析功能**</span><br><span class="line">4.往下拉，找到 ns records，点击click here，原来可以使用第三方ns(nameservers)</span><br><span class="line">5.vercel可以直接添加&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;，最后在vercel里添加注册的域名。</span><br><span class="line">6.vercel绑定到此已完成。</span><br><span class="line">7.其它网站也可以添加使用第三方ns(nameservers)：&#x27;he.net&#x27;的地址（注意：每一条都要以一个点结尾）</span><br><span class="line">8.等待生效之后便可使用，即使添加、修改记录也不用每次登录sitelutions了,直接在he.net操作。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<h2 id="绑定vercel过程"><a href="#绑定vercel过程" class="headerlink" title="绑定vercel过程"></a>绑定vercel过程</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.在sitelutions注册的域名里面的NS records设置里面将&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;添加进去，vercel验证好像要用</span><br><span class="line">2.先进入cercel-domain-填入域名`sweetrx.rr.nu`,就可以直接访问了</span><br></pre></td></tr></table></figure>
-<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**访问过的话，好像需要清理浏览器缓存，或者隔天才可用访问。</p>
-<p>账号pm.me密码Pp5300</p>
-<h2 id="第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务"><a href="#第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务" class="headerlink" title="第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务"></a>第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务</h2><h3 id="注册he-net"><a href="#注册he-net" class="headerlink" title="注册he.net"></a>注册he.net</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hurricane Electric 老牌免费的域名解析服务已经运行了许多年，一直很好用，国内也可以正常使用。</span><br><span class="line">支持A、AAAA、ALIAS、CNAME、CAA、MX、NS、TXT、SRV、SSHFP、SPF、RP、NAPTR、HINFO、LOC 和 PTR 等类型的记录。</span><br></pre></td></tr></table></figure>
-<p>注册教程：<a href="https://www.freeaday.com/2022/09/he-net/">he.net 美国老牌免费dns域名解析服务</a></p>
-<p>注册网址：<a href="https://dns.he.net/">https://dns.he.net/</a></p>
-<p>步骤：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击蓝色的register按钮注册。无需验证手机号，红色星号项目必填，注册会收到激活邮件。仅需验证邮箱，不用其它隐私信息。</span><br><span class="line">2.登录支持点击左侧的 Add a new domain 添加域名。每个账号可以添加50个域名，一级域名、二级域名均可。</span><br></pre></td></tr></table></figure>
-<p>记得去注册商把域名ns设置成：<br>ns1.he.net<br>ns2.he.net<br>ns3.he.net<br>ns4.he.net<br>ns5.he.net</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">3.he.net添加记录值,点击域名左侧的编辑按钮，再点击上面的一行按钮来添加相应的记录值。可以支持ipv4和ipv6</span><br></pre></td></tr></table></figure>
-<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**如果首次使用按钮上方出现红字，那就是域名ns还没生效，一般要等不超过24小时。可以点击Check Delegation按钮检查生效缓存。</p>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>thanks，<a href="https://www.freeaday.com/">https://www.freeaday.com/</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -2321,6 +2291,65 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk - 音乐剪辑</title>
+    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
+    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
+<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 域名注册并绑定vercel博客</title>
+    <url>/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="域名注册并绑定vercel博客"><a href="#域名注册并绑定vercel博客" class="headerlink" title="域名注册并绑定vercel博客"></a>域名注册并绑定vercel博客</h1><h2 id="先注册域名"><a href="#先注册域名" class="headerlink" title="先注册域名"></a>先注册域名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitelutions多种可解析免费二级域名注册，</span><br><span class="line">至少已经运行十几年了，现在依然可用。</span><br><span class="line">里面可以注册二十几种后缀的免费二级域名，</span><br><span class="line">其中有几个提供既短又好记的二级域名</span><br></pre></td></tr></table></figure>
+<p>注册网址：<a href="https://www.sitelutions.com/">https://www.sitelutions.com/</a></p>
+<p>注册教程：<a href="https://www.freeaday.com/2023/01/sitelutions/">https://www.freeaday.com/2023/01/sitelutions/</a></p>
+<p>步骤：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击右上角的红色 free sign up 来注册。注册只需邮箱即可，但是过程有些麻烦。</span><br><span class="line">2.登录成功之后，依次选择account &gt; url and dns &gt; add subdomain，然后选择一个自己想要的二级域名，点击add host。</span><br><span class="line">3.选择二级域名后面的[Advanced Config &amp; DDNS]字样，来添加记录，</span><br><span class="line">**发现无法添加任何记录，提示已经在2014年10月停止了免费的解析功能**</span><br><span class="line">4.往下拉，找到 ns records，点击click here，原来可以使用第三方ns(nameservers)</span><br><span class="line">5.vercel可以直接添加&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;，最后在vercel里添加注册的域名。</span><br><span class="line">6.vercel绑定到此已完成。</span><br><span class="line">7.其它网站也可以添加使用第三方ns(nameservers)：&#x27;he.net&#x27;的地址（注意：每一条都要以一个点结尾）</span><br><span class="line">8.等待生效之后便可使用，即使添加、修改记录也不用每次登录sitelutions了,直接在he.net操作。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<h2 id="绑定vercel过程"><a href="#绑定vercel过程" class="headerlink" title="绑定vercel过程"></a>绑定vercel过程</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.在sitelutions注册的域名里面的NS records设置里面将&#x27;ns1.vercel-dns.com.&#x27;,&#x27;ns2.vercel-dns.com.&#x27;添加进去，vercel验证好像要用</span><br><span class="line">2.先进入cercel-domain-填入域名`sweetrx.rr.nu`,就可以直接访问了</span><br></pre></td></tr></table></figure>
+<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**访问过的话，好像需要清理浏览器缓存，或者隔天才可用访问。</p>
+<p>账号pm.me密码Pp5300</p>
+<h2 id="第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务"><a href="#第三方ns-nameservers-：he-net美国老牌免费dns域名解析服务" class="headerlink" title="第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务"></a>第三方ns(nameservers)：he.net美国老牌免费dns域名解析服务</h2><h3 id="注册he-net"><a href="#注册he-net" class="headerlink" title="注册he.net"></a>注册he.net</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hurricane Electric 老牌免费的域名解析服务已经运行了许多年，一直很好用，国内也可以正常使用。</span><br><span class="line">支持A、AAAA、ALIAS、CNAME、CAA、MX、NS、TXT、SRV、SSHFP、SPF、RP、NAPTR、HINFO、LOC 和 PTR 等类型的记录。</span><br></pre></td></tr></table></figure>
+<p>注册教程：<a href="https://www.freeaday.com/2022/09/he-net/">he.net 美国老牌免费dns域名解析服务</a></p>
+<p>注册网址：<a href="https://dns.he.net/">https://dns.he.net/</a></p>
+<p>步骤：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1.打开首页点击蓝色的register按钮注册。无需验证手机号，红色星号项目必填，注册会收到激活邮件。仅需验证邮箱，不用其它隐私信息。</span><br><span class="line">2.登录支持点击左侧的 Add a new domain 添加域名。每个账号可以添加50个域名，一级域名、二级域名均可。</span><br></pre></td></tr></table></figure>
+<p>记得去注册商把域名ns设置成：<br>ns1.he.net<br>ns2.he.net<br>ns3.he.net<br>ns4.he.net<br>ns5.he.net</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">3.he.net添加记录值,点击域名左侧的编辑按钮，再点击上面的一行按钮来添加相应的记录值。可以支持ipv4和ipv6</span><br></pre></td></tr></table></figure>
+<p>**只要今天添加的域名今天自己还没有访问过，生效几乎就是瞬间的。<br>**如果首次使用按钮上方出现红字，那就是域名ns还没生效，一般要等不超过24小时。可以点击Check Delegation按钮检查生效缓存。</p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>thanks，<a href="https://www.freeaday.com/">https://www.freeaday.com/</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk- wifi万能钥匙</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
+    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
+<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - apk- gif助手</title>
     <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-gif%E5%8A%A9%E6%89%8B/</url>
     <content><![CDATA[<h1 id="gif助手"><a href="#gif助手" class="headerlink" title="gif助手"></a>gif助手</h1><p>一款非常好用的GIF工具，常用来在手机上制作GIF动图。</p>
@@ -2340,25 +2369,13 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 音乐剪辑</title>
-    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
-    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
-<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk- wifi万能钥匙</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
-    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
-<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
+    <title>软件 - apk- 抖音</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
+    <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
+<p>超过100MB文件下载地址：<a href="https://www.bytepan.com/Wmp0ozhw1zN">https://www.bytepan.com/Wmp0ozhw1zN</a> ； <a href="https://www.123pan.com/s/JceA-f6fi">https://www.123pan.com/s/JceA-f6fi</a></p>
+<h1 id="抖音短视频-老版，精简版"><a href="#抖音短视频-老版，精简版" class="headerlink" title="抖音短视频  - 老版，精简版"></a>抖音短视频  - 老版，精简版</h1><p>抖音短视频 v9.6.0 - 可搜索</p>
+<p><a href="https://678cnn.lanzoue.com/ia70W22kextg">https://678cnn.lanzoue.com/ia70W22kextg</a></p>
+<p><a href="https://4901.kstore.space/app/douyin9.6.0.apk">https://4901.kstore.space/app/douyin9.6.0.apk</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2382,23 +2399,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- 抖音</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
-    <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
-<p>超过100MB文件下载地址：<a href="https://www.bytepan.com/Wmp0ozhw1zN">https://www.bytepan.com/Wmp0ozhw1zN</a> ； <a href="https://www.123pan.com/s/JceA-f6fi">https://www.123pan.com/s/JceA-f6fi</a></p>
-<h1 id="抖音短视频-老版，精简版"><a href="#抖音短视频-老版，精简版" class="headerlink" title="抖音短视频  - 老版，精简版"></a>抖音短视频  - 老版，精简版</h1><p>抖音短视频 v9.6.0 - 可搜索</p>
-<p><a href="https://678cnn.lanzoue.com/ia70W22kextg">https://678cnn.lanzoue.com/ia70W22kextg</a></p>
-<p><a href="https://4901.kstore.space/app/douyin9.6.0.apk">https://4901.kstore.space/app/douyin9.6.0.apk</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 查看端口被占用、杀进程</title>
     <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<h3 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h3><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
@@ -2410,6 +2410,19 @@ OK,大功告成！
 <p>2.详细信息-找到PID -右键-转到服务-停止</p>
 <h3 id="根据进程的名称杀掉进程"><a href="#根据进程的名称杀掉进程" class="headerlink" title="根据进程的名称杀掉进程"></a>根据进程的名称杀掉进程</h3><p>taskkill &#x2F;f &#x2F;t &#x2F;im “进程id或者进程名称”</p>
 <h3 id="系统当前所有的端口使用情况"><a href="#系统当前所有的端口使用情况" class="headerlink" title="系统当前所有的端口使用情况"></a>系统当前所有的端口使用情况</h3><p>输入netstat -ano然后回车，就可以看到系统当前所有的端口使用情况</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 获取github文件夹里文件API的方法</title>
+    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2484,19 +2497,6 @@ OK,大功告成！
         <tag>软件</tag>
         <tag>apk</tag>
         <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 获取github文件夹里文件API的方法</title>
-    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
