@@ -171,82 +171,6 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW - Github连接访问的几种方法</title>
-    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
-<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
-<span id="more"></span>
-
-<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
-<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
-</li>
-<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
-</li>
-<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
-</li>
-</ol>
-<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
-<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
-<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
-<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
-<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
-<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
-<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
-</ol>
-<hr>
-<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
-<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
-</li>
-<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
-</li>
-<li></li>
-</ul>
-<ol>
-<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
-<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
-<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
-<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
-<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
-</ol>
-<hr>
-<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
-<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
-</ul>
-<ol>
-<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
-</li>
-<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
-</li>
-<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
-</li>
-</ol>
-<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
-<hr>
-<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
-<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
-</ul>
-<hr>
-<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
-<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
-<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
-<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
-<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
-<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
-<hr>
-<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GFW - 短信接码平台</title>
     <url>/2022/03/29/2022-03-29-GFW-%E7%9F%AD%E4%BF%A1%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0/</url>
     <content><![CDATA[<h1 id="短信接码平台"><a href="#短信接码平台" class="headerlink" title="短信接码平台"></a>短信接码平台</h1><p><a href="https://sms24.me/">https://sms24.me/</a> </p>
@@ -454,51 +378,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 2.jekyll博客的若干手记</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
-<span id="more"></span>
-
-<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
-<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
-<ul>
-<li>layout 模板文件，需要放在_layouts目录下</li>
-<li>title:标题</li>
-<li>date: 日期</li>
-<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
-<li>categories 分类，也可以是category</li>
-<li>img:  图片链接</li>
-<li>published true or false，发表与否</li>
-<li>permalink 固定链接</li>
-</ul>
-<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
-<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
-<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
-<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
-
-<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
-<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 搭建个人博客</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
@@ -546,6 +425,51 @@
 </ol>
 <hr>
 <p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 2.jekyll博客的若干手记</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
+<span id="more"></span>
+
+<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
+<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
+<ul>
+<li>layout 模板文件，需要放在_layouts目录下</li>
+<li>title:标题</li>
+<li>date: 日期</li>
+<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
+<li>categories 分类，也可以是category</li>
+<li>img:  图片链接</li>
+<li>published true or false，发表与否</li>
+<li>permalink 固定链接</li>
+</ul>
+<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
+<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
+<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
+<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
+<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -628,63 +552,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
-<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
-<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
-<span id="more"></span>
-
-<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
-<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
-<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个文件的作用，就是建立起站点的tags list.</p>
-<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
-<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
-<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
-<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
-<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
-<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
-<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>语法可以随意按照你希望的样子进行调整。</p>
-<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
-<p>:bowtie:</p>
-<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-win-Chrome浏览器下载和自用插件</title>
     <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>更新于2022-05-09</p>
@@ -746,7 +613,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>4c00e28ee72936dee2453e38dd13021ebookmark.json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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#x65;&#x65;&#116;&#114;&#120;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#x65;">&#x73;&#119;&#x65;&#x65;&#116;&#114;&#120;&#64;&#x70;&#x6d;&#x2e;&#x6d;&#x65;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#x6d;&#101;">&#115;&#x77;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -755,6 +622,63 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>chrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
+<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
+<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
+<span id="more"></span>
+
+<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
+<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
+<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个文件的作用，就是建立起站点的tags list.</p>
+<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
+<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
+<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
+<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
+<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
+<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
+<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>语法可以随意按照你希望的样子进行调整。</p>
+<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
+<p>:bowtie:</p>
+<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -1513,6 +1437,41 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 图片去水印工具</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%9B%BE%E7%89%87%E5%8E%BB%E6%B0%B4%E5%8D%B0%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>图片去水印工具: windows版 和 android版 ，还有在线工具</p>
+<span id="more"></span>
+
+<h1 id="windows版"><a href="#windows版" class="headerlink" title="windows版"></a>windows版</h1><ul>
+<li>最好图片去水印工具 Teorex Inpaint</li>
+</ul>
+<p>下载地址：</p>
+<p><a href="https://wwx.lanzoux.com/b04b7sjoj">https://wwx.lanzoux.com/b04b7sjoj</a> 提取码：cxwt</p>
+<ul>
+<li>图像去水印软件SoftOrbits Photo Stamp Remover</li>
+</ul>
+<p>注：一款非常不错的图片去水印软件，和Teorex Inpaint 同样强大，永乐汉化。图片去水印算法比较不错，功能非常强大，推荐使用。</p>
+<p>下载地址：</p>
+<p><a href="https://pan.baidu.com/s/1o7Hev5C#hsvh">https://pan.baidu.com/s/1o7Hev5C#hsvh</a> 密码：hsvh</p>
+<h1 id="android版"><a href="#android版" class="headerlink" title="android版"></a>android版</h1><p>全能去水印 会员解锁版</p>
+<p>橙子去水印</p>
+<p>分享页：<br><a href="https://apphot.cc/62992.html">https://apphot.cc/62992.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://wwi.lanzouo.com/b04c9t91a">https://wwi.lanzouo.com/b04c9t91a</a> 提取码：ebnm</p>
+<h1 id="在线网站去水印"><a href="#在线网站去水印" class="headerlink" title="在线网站去水印"></a>在线网站去水印</h1><p><a href="https://www.magiceraser.io/">https://www.magiceraser.io/</a></p>
+<p><a href="https://www.versa-ai.com/makaron/">https://www.versa-ai.com/makaron/</a></p>
+<p><a href="https://box.misiai.com/mobile">https://box.misiai.com/mobile</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 截图 - FastStone Capture</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
     <content><![CDATA[<p>自己使用的截图工具</p>
@@ -1559,41 +1518,6 @@
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 图片去水印工具</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%9B%BE%E7%89%87%E5%8E%BB%E6%B0%B4%E5%8D%B0%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>图片去水印工具: windows版 和 android版 ，还有在线工具</p>
-<span id="more"></span>
-
-<h1 id="windows版"><a href="#windows版" class="headerlink" title="windows版"></a>windows版</h1><ul>
-<li>最好图片去水印工具 Teorex Inpaint</li>
-</ul>
-<p>下载地址：</p>
-<p><a href="https://wwx.lanzoux.com/b04b7sjoj">https://wwx.lanzoux.com/b04b7sjoj</a> 提取码：cxwt</p>
-<ul>
-<li>图像去水印软件SoftOrbits Photo Stamp Remover</li>
-</ul>
-<p>注：一款非常不错的图片去水印软件，和Teorex Inpaint 同样强大，永乐汉化。图片去水印算法比较不错，功能非常强大，推荐使用。</p>
-<p>下载地址：</p>
-<p><a href="https://pan.baidu.com/s/1o7Hev5C#hsvh">https://pan.baidu.com/s/1o7Hev5C#hsvh</a> 密码：hsvh</p>
-<h1 id="android版"><a href="#android版" class="headerlink" title="android版"></a>android版</h1><p>全能去水印 会员解锁版</p>
-<p>橙子去水印</p>
-<p>分享页：<br><a href="https://apphot.cc/62992.html">https://apphot.cc/62992.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://wwi.lanzouo.com/b04c9t91a">https://wwi.lanzouo.com/b04c9t91a</a> 提取码：ebnm</p>
-<h1 id="在线网站去水印"><a href="#在线网站去水印" class="headerlink" title="在线网站去水印"></a>在线网站去水印</h1><p><a href="https://www.magiceraser.io/">https://www.magiceraser.io/</a></p>
-<p><a href="https://www.versa-ai.com/makaron/">https://www.versa-ai.com/makaron/</a></p>
-<p><a href="https://box.misiai.com/mobile">https://box.misiai.com/mobile</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>apk</tag>
       </tags>
   </entry>
   <entry>
@@ -1740,83 +1664,6 @@
       </categories>
       <tags>
         <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 空调选择</title>
-    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
-    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
-<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
-<span id="more"></span>
-
-<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
-<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
-<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
-<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
-<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
-<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
-<p>1、冷凝器（热交换器）</p>
-<p>铜管数量：关注格力机型单双排铜管。</p>
-<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
-<p>一般来说，</p>
-<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
-<p>所以，咱们要具体问题具体分析。</p>
-<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
-<p>格力C型换热器<br>2、外机重量和尺寸</p>
-<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
-<p>就看外机净重！</p>
-<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
-<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
-<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
-<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
-<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
-<p>3、压缩机</p>
-<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
-<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
-<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
-<p>4、节流装置</p>
-<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
-<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
-<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
-<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
-<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
-<p>5、是否是冷酷外机</p>
-<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
-<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
-    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
-<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
-</code></pre>
-<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
-</code></pre>
-<span id="more"></span>
-<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
-选择单个repository权限,
-完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
-在下一步`Deploy`,
-完成，部署成功。
-</code></pre>
-<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
-
-OK,大功告成！
-</code></pre>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -1982,6 +1829,56 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 空调选择</title>
+    <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
+    <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
+<p>外机包括压缩机，冷凝器，节流元件等，减配主要在外机，所以我们重点就是看外机用料情况来判断是否性价比更高。</p>
+<span id="more"></span>
+
+<h2 id="选择顺序"><a href="#选择顺序" class="headerlink" title="选择顺序"></a>选择顺序</h2><p>一般空调的选购顺序是:双排冷凝器＞1.6排＞单排</p>
+<p>外机情况一般都是靠拆机才能知道，同档次的机型减配主要在冷凝器单排或者双排，节流元件用没用电子膨胀阀。<br>冷凝器由铜管和散热铝翅片组成，技术含量低但是铜管成本高。<br>所以减配的机型大多是单排冷凝器，双排冷凝器散热面积更大，冷媒填装量更多，也就意味着同样的耗电量，搬运的热量更多，反应的就是制冷制热效果更好。</p>
+<p>华凌空调N8HE1是现在全网最火爆，性价比最高的机型。很多二三线品牌只是在用料减配的情况下，才价格低，性价比一般，所以一直也没有太火爆的机型。</p>
+<p>华凌空调之所以全网火爆，就是用料没有减配的情况下，价格又非常实惠！用的美的自家的压缩机美芝双转子压缩机，双排冷凝器，节流元件用的是电子膨胀阀。</p>
+<p>看外机<br>纵观空调的重要部件，譬如冷凝器（也就是热交换器）、压缩机、节流装置等都在外机上。看格力空调的型号哪个好，就要看外机。</p>
+<p>换句话说，外机的好坏直接体现了空调的性能强弱！！！</p>
+<p>1、冷凝器（热交换器）</p>
+<p>铜管数量：关注格力机型单双排铜管。</p>
+<p>铜管长度越长≈堆料越族≈空调换热能力强≈性能越强</p>
+<p>一般来说，</p>
+<p>1.5P新一级的空调，没缩水的空调都是双排铜管。<br>1P空调可能用单排铜管的可能性更大。前面也说了1p多是1.5p的缩水版。<br>1.5P三级能效的空调也大有可能在铜管排数上做减配。<br>当然，一概而论是不严谨的。单排铜管可能在管径上比双排铜管做的更粗，或者每根铜管长度更长，换算下来铜管长度也会更长。</p>
+<p>所以，咱们要具体问题具体分析。</p>
+<p>再来说说格力换热器的创新点，部分机型将普通L型改为C型，电控板散热变得更好，换热效率更高！</p>
+<p>格力C型换热器<br>2、外机重量和尺寸</p>
+<p>如果上面的铜管排数你不知道，不能判断咋办？没关系，我教你个快速的相对靠谱的判断方法。</p>
+<p>就看外机净重！</p>
+<p>首先你要知道，外机部件里的热交换器的铜管重量，占比整个外机都站到了三四成。意味着啥？</p>
+<p>如果外机的重量重，尺寸大，说明大概率是铜管多，堆料足，那么机子缩水的可能性就降低了。</p>
+<p>当然还是拒绝一概而言，不是绝对。这是个讨巧的方法。</p>
+<p>因为在格力新出的几个系列的机型的新外机，比如格力柜机云逸Ⅱ 新一级尺寸变得更小也更轻了。里面的电控板竖着设计，当然也是为了适应新外机的变小变轻的新要求，当然这就要求散热片尺寸做的更大了，否则电控板散热不畅也会有问题。</p>
+<p>这是未来所有空调品牌的趋势。主要还是因为现在的城市小区建设，对于外机的可容忍体积越来越小，再加之今年家电原料成本也在上升。</p>
+<p>3、压缩机</p>
+<p>压缩机是空调的核心。双转子压缩机＞单转子压缩机。</p>
+<p>当然格力各型号之间的比较，还需要看压缩机排量的。排量就相当于汽车发动机，排量越大，空调的性能越强。以cc为单位。</p>
+<p>格力大部分机型多采用自家产的凌达压缩机，运用了“国际首创”的自研三缸双级变容压缩机技术。双转子用在格力中高端机型中。比如柜机云锦Ⅱ，排量达到行业顶配的25cc双转子，令人咋舌。</p>
+<p>4、节流装置</p>
+<p>变频空调的节流器件主要使用电子膨胀阀和毛细管。先来看他们到对有啥区别。</p>
+<p>毛细管：早期的空调多使用毛细管。比如定频空调，压缩机转速恒定，压力恒定，无需调节，所以定频用毛细管没毛病。</p>
+<p>电子膨胀阀：是根据温度及压力自动调节制冷剂的流量，靠控制器来控制和调节阀口流通面积，从而控制流量。变频空调为了大限度节能，使用电子膨胀阀使得流量调节精度更高，空调运行状态更好。</p>
+<p>所以，电子膨胀阀＞毛细管，从成本也能看的出来，电子膨胀阀100块左右，毛细管10-20元上下。</p>
+<p>挑选变频+一级能效的格力空调，请优先选择节流阀是电子膨胀阀的机型哈！</p>
+<p>5、是否是冷酷外机</p>
+<p>这个前面part 2的格力核心技术也提到了，如果外机所处的环境是监狱机位，建议选择带冷酷外机的格力机型哈~</p>
+<p><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a><a href="https://zhuanlan.zhihu.com/p/28154319">https://zhuanlan.zhihu.com/p/28154319 - 2022年空调选购终极指南</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/28038235">https://zhuanlan.zhihu.com/p/28038235 - 2022年洗衣机选购终极指南</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 博客从Jekyll更换到Hexo</title>
     <url>/2022/08/09/2022-08-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E4%BB%8EJekyll%E6%9B%B4%E6%8D%A2%E5%88%B0Hexo/</url>
     <content><![CDATA[<h1 id="博客从Jekyll更换到Hexo"><a href="#博客从Jekyll更换到Hexo" class="headerlink" title="博客从Jekyll更换到Hexo"></a>博客从Jekyll更换到Hexo</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>更换原因：1.电脑系统升级了，Win10x64<br>          2.Vercel对Jekyll不友好，不支持<code>Liquid</code>模板语言来处理模板<br>          3.Hexo主题的好多问题search可以解决</p>
@@ -2001,6 +1898,33 @@ OK,大功告成！
 
 <h3 id="NexT主题设置"><a href="#NexT主题设置" class="headerlink" title="NexT主题设置"></a>NexT主题设置</h3><p>在<code>themes\next\</code>里面找到<code>_config.yml主题配置文件</code>,<br>    1.修改<code>Schemes</code>,自己使用的是<code>scheme: Gemini</code><br>    2.在<code>menu:</code>下面根据自己需要修改<br>    3.在<code>avatar:</code>下面修改博主图片<br>    4.在<code>favicon:</code>下面修改站点图标<br>    5.更多修改在<code>主题配置文件</code>自己探索</p>
 <h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><p>后面根据Github Actions + Vercel 实现自动部署 + 双线网站；</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
+</code></pre>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<span id="more"></span>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
+
+OK,大功告成！
+</code></pre>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2097,6 +2021,29 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
+<span id="more"></span>
+
+<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
+<p>然后还需要对对应对文章进行设置，有两种方法</p>
+<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
+<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - Alist 网盘整合加载</title>
     <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
     <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
@@ -2121,29 +2068,6 @@ OK,大功告成！
         <tag>软件</tag>
         <tag>win</tag>
         <tag>网盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
-    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
-<span id="more"></span>
-
-<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
-<p>然后还需要对对应对文章进行设置，有两种方法</p>
-<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
-<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -2276,36 +2200,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 免费企业查询app</title>
-    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
-    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
-<span id="more"></span>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 音乐剪辑</title>
-    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
-    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
-<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 域名注册并绑定vercel博客</title>
     <url>/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="域名注册并绑定vercel博客"><a href="#域名注册并绑定vercel博客" class="headerlink" title="域名注册并绑定vercel博客"></a>域名注册并绑定vercel博客</h1><h2 id="先注册域名"><a href="#先注册域名" class="headerlink" title="先注册域名"></a>先注册域名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitelutions多种可解析免费二级域名注册，</span><br><span class="line">至少已经运行十几年了，现在依然可用。</span><br><span class="line">里面可以注册二十几种后缀的免费二级域名，</span><br><span class="line">其中有几个提供既短又好记的二级域名</span><br></pre></td></tr></table></figure>
@@ -2336,10 +2230,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- wifi万能钥匙</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
-    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
-<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
+    <title>软件 - apk - 免费企业查询app</title>
+    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
+    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
+<span id="more"></span>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2347,6 +2241,22 @@ OK,大功告成！
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
+        <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 音乐剪辑</title>
+    <url>/2023/02/25/2023-02-25-apk-%E9%9F%B3%E4%B9%90%E5%89%AA%E8%BE%91/</url>
+    <content><![CDATA[<h1 id="音乐剪辑"><a href="#音乐剪辑" class="headerlink" title="音乐剪辑"></a>音乐剪辑</h1><p>大佬收集的软件较多，现用的下面2款：<br>Music Cutter v1.01.47.0118 Mp3Cut Pro<br>Ringtone Maker v6.9</p>
+<p>网盘下载（Mod版本）<br><a href="https://wwi.lanzoup.com/b04cponnc">https://wwi.lanzoup.com/b04cponnc</a> 提取码：1s0m<br><a href="https://pan.baidu.com/s/1ggA4XrX#px90">https://pan.baidu.com/s/1ggA4XrX#px90</a> 密码：px90</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -2359,6 +2269,20 @@ OK,大功告成！
 <p>此版本已解锁高级版，纯净无广告。</p>
 <p>下载地址：<a href="https://wwd.lanzout.com/b02plrrcf">https://wwd.lanzout.com/b02plrrcf</a></p>
 <p>原文地址：<a href="https://www.iapps.me/archives/5736">https://www.iapps.me/archives/5736</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk- wifi万能钥匙</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
+    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
+<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
