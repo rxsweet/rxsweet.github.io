@@ -552,6 +552,63 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
+<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
+<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
+<span id="more"></span>
+
+<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
+<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
+<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个文件的作用，就是建立起站点的tags list.</p>
+<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
+<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
+<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
+<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
+<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
+<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
+<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>语法可以随意按照你希望的样子进行调整。</p>
+<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
+<p>:bowtie:</p>
+<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件-win-Chrome浏览器下载和自用插件</title>
     <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<p>更新于2022-05-09</p>
@@ -613,7 +670,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>4c00e28ee72936dee2453e38dd13021ebookmark.json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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#x6d;&#101;">&#115;&#x77;&#x65;&#x65;&#x74;&#114;&#120;&#x40;&#x70;&#x6d;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#x65;&#x74;&#114;&#x78;&#x40;&#x70;&#109;&#46;&#109;&#101;">&#x73;&#119;&#101;&#x65;&#x74;&#114;&#x78;&#x40;&#x70;&#109;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -622,63 +679,6 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>chrome</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 5.Jekyll的tags免插件使用</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-5-Jekyll%E7%9A%84tags%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<p>Jekyll的tags免插件使用</p>
-<p>关于Jekyll上tags（或者categories）的实现，有很多方式。譬如最常用的<strong>Plugins</strong>法，通过Gem Plugin如<strong>jekyll-tagging</strong>配置实现。但是，jekyll-tagging并非Github的官方插件。这意味着你需要run on your own risk。</p>
-<p>亦有不使用plugin的方法，以本站为例简单说说。</p>
-<span id="more"></span>
-
-<h1 id="Jekyll-tags-on-Github"><a href="#Jekyll-tags-on-Github" class="headerlink" title="Jekyll tags on Github"></a>Jekyll tags on Github</h1><p>我们设置tags的目的，就是为了给站点博客的内容进行分类、标签。这里说的实现方法适应于Markdown或textile。</p>
-<h2 id="1-给文章加标签"><a href="#1-给文章加标签" class="headerlink" title="1. 给文章加标签"></a>1. 给文章加标签</h2><p>前面的文章简单介绍过YAML头信息，<a href="https://soyee.me/2018/03/16/Writing-with-jekyll/">点击这里</a>进行温故。因此，实现tags的第一步，是在YAML头信息<strong>给文章加标签</strong>，在你文章的开头处：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: 基于Jekyll的tags免插件使用指南</span><br><span class="line">excerpt: 爱简介啥就简介啥</span><br><span class="line">tags: Jekyll IT</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>如上述代码所示，<code>tags</code>就是给该文章<strong>标签</strong>起来，以便全局搜寻到。在本例里，tags标签之间，使用<strong>空格</strong>进行分隔，如果你的标签是两个字以上的，务必用连接号如<code>-</code>或<code>_</code>连接起来。</p>
-<h2 id="2-搜集所有文章的标签"><a href="#2-搜集所有文章的标签" class="headerlink" title="2. 搜集所有文章的标签"></a>2. 搜集所有文章的标签</h2><p>这一步是用<a href="https://jekyllrb.com/docs/templates/">Liquid Templating</a>实现的。在你站点的根目录，建一个<code>_includes</code>的文件夹，在里面建一个<code>collecttags.html</code>的文件，当然你也可以建其它名字，内容如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line"> &lt;!-- CollectTags 这个文件的作用:就是建立起站点的tags list --&gt; </span><br><span class="line">   &#123;% assign rawtags = &quot;&quot; %&#125;</span><br><span class="line">   &#123;% for post in site.posts %&#125;</span><br><span class="line">     &#123;% assign ttags = post.tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | append:ttags %&#125;</span><br><span class="line">       &#123;% endfor %&#125;</span><br><span class="line">       &#123;% assign rawtags = rawtags | split:&#x27;|&#x27; | sort %&#125;</span><br><span class="line"></span><br><span class="line">       &#123;% assign site.tags = &quot;&quot; %&#125;</span><br><span class="line">       &#123;% for tag in rawtags %&#125;</span><br><span class="line">         &#123;% if tag != &quot;&quot; %&#125;</span><br><span class="line">             &#123;% if tags == &quot;&quot; %&#125;</span><br><span class="line">                   &#123;% assign tags = tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                       &#123;% endif %&#125;</span><br><span class="line">                           &#123;% unless tags contains tag %&#125;</span><br><span class="line">                                 &#123;% assign tags = tags | join:&#x27;|&#x27; | append:&#x27;|&#x27; | append:tag | split:&#x27;|&#x27; %&#125;</span><br><span class="line">                                     &#123;% endunless %&#125;</span><br><span class="line">                                       &#123;% endif %&#125;</span><br><span class="line">                                       &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个文件的作用，就是建立起站点的tags list.</p>
-<h2 id="3-执行搜集行为"><a href="#3-执行搜集行为" class="headerlink" title="3. 执行搜集行为"></a>3. 执行搜集行为</h2><p>通常地，我们把标签放在文首，或者文末。这里以放在文首为例。在刚刚的文件夹<code>_includes</code>里再建一个<code>head.html</code>的文件，里面放入以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% if site.tags != &quot;&quot; %&#125;</span><br><span class="line">  &#123;% include collecttags.html %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<p>放入位置在<code>&lt;head&gt;代码段&lt;/head&gt;</code>中间就行<br>如此一来，我们就定义了Jekyll博客的文首，而它会指引执行上述<code>collecttags.html</code>的文件代码，而且只执行一次。</p>
-<h2 id="4-显示标签"><a href="#4-显示标签" class="headerlink" title="4. 显示标签"></a>4. 显示标签</h2><p>我们每篇文章都有一个模板，放在<code>_layouts</code>目录下。我们希望每篇文章都显示标签，则需要在<code>post.html</code>模板里加入以下语法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;span&gt;[</span><br><span class="line">  &#123;% for tag in page.tags %&#125;</span><br><span class="line">      &#123;% capture tag_name %&#125;&#123;&#123; tag &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">          &lt;a href=&quot;/tag/&#123;&#123; tag_name &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tag_name &#125;&#125;&lt;/nobr&gt;&lt;/code&gt; &lt;/a&gt;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">            ]&lt;/span&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>个人放入位置在<br><code>&lt;h1 class=&quot;page-title&quot;&gt;&#123;&#123;page.title&#125;&#125;&lt;/h1&gt;</code><br>代码位置<br><code>&lt;div class=&quot;page-date&quot;&gt;&lt;span&gt;&#123;&#123;page.date | date: '%Y, %b %d'&#125;&#125;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;</code></p>
-<p>需要注意的是，以上的语法需要在站点根目录下有一个<code>tag</code>的文件夹，而每一个使用的标签，都要建立一个对应的<code>标签名称.md</code>的文件。</p>
-<p>这个<code>标签名称.md</code>的文件，里面只需要有一个YAML头信息被读取到即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">  layout: tagpage</span><br><span class="line">  title: &quot;Tag: 标签名称&quot;</span><br><span class="line">  tag: 标签名称</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-定义标签页面模板"><a href="#5-定义标签页面模板" class="headerlink" title="5. 定义标签页面模板"></a>5. 定义标签页面模板</h2><p>在<code>_layouts</code>文件夹里新增<code>tagpage.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: default</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;post&quot;&gt;</span><br><span class="line">&lt;h1&gt;Tag: &#123;&#123; page.tag &#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for post in site.tags[page.tag] %&#125;</span><br><span class="line">  &lt;li&gt;&lt;a href=&quot;&#123;&#123; post.url &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; (&#123;&#123; post.date | date_to_string &#125;&#125;)&lt;br&gt;</span><br><span class="line">      &#123;&#123; post.description &#125;&#125;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>需要注意的是，如果你要新增一个标签，你需要在<code>tag</code>目录下新建一个<code>标签名称.md</code>的文件，这个需要再强调一下。</p>
-<h2 id="6-简单的标签云"><a href="#6-简单的标签云" class="headerlink" title="6. 简单的标签云"></a>6. 简单的标签云</h2><p>我们不一定想在页面把标签罗列出来，而是：</p>
-<p>读者点击某标签时，跳转标签页，在该标签页顺便显示<code>标签云</code>。</p>
-<p>在<code>_includes</code>目录下新建一个<code>archive.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;h2&gt;Archive&lt;/h2&gt;</span><br><span class="line">&#123;% capture temptags %&#125;</span><br><span class="line">  &#123;% for tag in site.tags %&#125;</span><br><span class="line">      &#123;&#123; tag[1].size | plus: 1000 &#125;&#125;#&#123;&#123; tag[0] &#125;&#125;#&#123;&#123; tag[1].size &#125;&#125;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">        &#123;% endcapture %&#125;</span><br><span class="line">        &#123;% assign sortedtemptags = temptags | split:&#x27; &#x27; | sort | reverse %&#125;</span><br><span class="line">        &#123;% for temptag in sortedtemptags %&#125;</span><br><span class="line">          &#123;% assign tagitems = temptag | split: &#x27;#&#x27; %&#125;</span><br><span class="line">            &#123;% capture tagname %&#125;&#123;&#123; tagitems[1] &#125;&#125;&#123;% endcapture %&#125;</span><br><span class="line">              &lt;a href=&quot;/tag/&#123;&#123; tagname &#125;&#125;&quot;&gt;&lt;code class=&quot;highligher-rouge&quot;&gt;&lt;nobr&gt;&#123;&#123; tagname &#125;&#125;&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span><br><span class="line">              &#123;% endfor %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>语法可以随意按照你希望的样子进行调整。</p>
-<p>然后，为了实现上面说的方式，我们把如下语句放在<code>_layouts/tagpage.html</code>里：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include archive.html %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-标签栏-单独标签页"><a href="#7-标签栏-单独标签页" class="headerlink" title="7. 标签栏 - 单独标签页"></a>7. 标签栏 - 单独标签页</h2><p>根目录下新建一个<code>tags.html</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">---</span><br><span class="line">layout: page</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;%- capture site_tags -%&#125;</span><br><span class="line">    &#123;%- for tag in site.tags -%&#125;</span><br><span class="line">        &#123;&#123;- tag | first -&#125;&#125;&#123;%- unless forloop.last -%&#125;,&#123;%- endunless -%&#125;</span><br><span class="line">    &#123;%- endfor -%&#125;</span><br><span class="line">&#123;%- endcapture -%&#125;</span><br><span class="line">&#123;%- assign tags_list = site_tags | split:&#x27;,&#x27; | sort -%&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;a href=&quot;#&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;btn btn-primary tag-btn&quot;&gt;&lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)&lt;/a&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;full-tags-list&quot;&gt;</span><br><span class="line">&#123;%- for tag in tags_list -%&#125;</span><br><span class="line">    &lt;h2 id=&quot;&#123;&#123;- tag -&#125;&#125;&quot; class=&quot;linked-section&quot;&gt;</span><br><span class="line">        &lt;i class=&quot;fa fa-tag&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &amp;nbsp;&#123;&#123;- tag -&#125;&#125;&amp;nbsp;(&#123;&#123;site.tags[tag].size&#125;&#125;)</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div class=&quot;post-list&quot;&gt;</span><br><span class="line">        &#123;%- for post in site.tags[tag] -%&#125;</span><br><span class="line">            &lt;div class=&quot;tag-entry&quot;&gt;</span><br><span class="line">                &lt;a href=&quot;&#123;&#123; post.url | relative_url &#125;&#125;&quot;&gt;&#123;&#123;- post.title -&#125;&#125;&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;entry-date&quot;&gt;</span><br><span class="line">                    &lt;time datetime=&quot;&#123;&#123;- post.date | date_to_xmlschema -&#125;&#125;&quot;&gt;&#123;&#123;- post.date | date: &quot;%B %d, %Y&quot; -&#125;&#125;&lt;/time&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &#123;%- endfor -%&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&#123;%- endfor -%&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>上传到你的仓库，收工！如果你希望自动生成<code>标签名称.md</code>，可以写一段JS代码实现。</p>
-<p>:bowtie:</p>
-<p>P.S. 以上部分<code>Liquid</code>代码，为了不被jekyll执行，需要用<code>`and`</code>包起Markdown语法。</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
       </tags>
   </entry>
   <entry>
@@ -2356,6 +2356,55 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - 音乐app合集</title>
+    <url>/2024/01/10/2024-01-10-%E8%BD%AF%E4%BB%B6-%E9%9F%B3%E4%B9%90app%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h1><p>自己现用：musicfree + 落雪音乐 + 音源</p>
+<p>apphot 音乐APP<br><a href="https://wwa.lanzoui.com/b04bw7l2d">https://wwa.lanzoui.com/b04bw7l2d</a> 提取码：eaoe</p>
+<h2 id="一、Android版"><a href="#一、Android版" class="headerlink" title="一、Android版"></a>一、Android版</h2><h3 id="1-MusicFree"><a href="#1-MusicFree" class="headerlink" title="1.MusicFree"></a>1.MusicFree</h3><p>一个插件化、定制化、无广告的开源音乐播放器</p>
+<p><a href="https://musicfree.catcat.work/">MusicFree官网</a><br><a href="https://github.com/maotoumao/MusicFree">MusicFree官方Github</a></p>
+<p><a href="https://musicfree.catcat.work/">MusicFree官网下载1：</a><br><a href="https://gh.sixyin.com/https://github.com/maotoumao/MusicFree/releases/download/v0.6.2/app-universal-release.apk">MusicFree下载地址2：</a></p>
+<p>[自用 plugins 接口：]</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[音乐] : https://rxsub.eu.org/music/musicFree/my/rx.json</span><br></pre></td></tr></table></figure>
+<p>备份：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">大神音源</span><br><span class="line">https://raw.rxsub.eu.org/https://raw.githubusercontent.com/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://raw.rxsub.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">&lt;音乐&gt;: https://rxsub.eu.org/music/musicFree/Huibq/rx.json</span><br><span class="line">2音乐2: https://rxsub.eu.org/music/musicFree/yuanli/rx.json</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-LX-Music-落雪音乐助手"><a href="#2-LX-Music-落雪音乐助手" class="headerlink" title="2.LX Music - 落雪音乐助手"></a>2.LX Music - 落雪音乐助手</h3><span id="more"></span>
+<p>一个免费&amp;开源的音乐查找工具</p>
+<p>「Github 开源」<br><a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
+<p>官网: <a href="https://lxmusic.toside.cn/">https://lxmusic.toside.cn/</a></p>
+<p>下载地址:</p>
+<ul>
+<li><a href="https://xiaodao.lanzout.com/b0dqxf28d">https://xiaodao.lanzout.com/b0dqxf28d</a></li>
+<li><a href="https://www.123pan.cn/s/HQeA-KD1Sh">https://www.123pan.cn/s/HQeA-KD1Sh</a></li>
+<li><a href="https://yxzhi.lanzoub.com/b03qtgw9g">https://yxzhi.lanzoub.com/b03qtgw9g</a></li>
+<li><a href="https://www.sixyin.com/7645.html">https://www.sixyin.com/7645.html</a></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">音源：</span><br><span class="line">https://rxsub.eu.org/music/lx/rx.js</span><br><span class="line">https://rxsub.eu.org/music/lx/Huibq.js</span><br></pre></td></tr></table></figure>
+
+<p>使用方法: 需要点击设置–音乐来源–导入’在线导入’，最后在导入后的音乐来源前面打对钩，就可以使用了</p>
+<h2 id="二、windows版"><a href="#二、windows版" class="headerlink" title="二、windows版"></a>二、windows版</h2><h3 id="1-洛雪音乐助手-开源"><a href="#1-洛雪音乐助手-开源" class="headerlink" title="1.洛雪音乐助手 -开源"></a>1.洛雪音乐助手 -开源</h3><p>作者开源 <a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
+<p><a href="https://www.6yit.com/114.html">https://www.6yit.com/114.html</a></p>
+<p><a href="https://www.lanzoui.com/b00nbz6of">https://www.lanzoui.com/b00nbz6of</a>   密码：30up</p>
+<h3 id="2-MusicTools-付费无损音乐下载神器"><a href="#2-MusicTools-付费无损音乐下载神器" class="headerlink" title="2.MusicTools_付费无损音乐下载神器"></a>2.MusicTools_付费无损音乐下载神器</h3><p>官网：<a href="https://www.whg6.com/html/musictools/">https://www.whg6.com/html/musictools/</a></p>
+<p><a href="https://www.423down.com/9003.html">https://www.423down.com/9003.html</a></p>
+<p><a href="https://423down.lanzouh.com/iVz3h05k2ena">https://423down.lanzouh.com/iVz3h05k2ena</a></p>
+<h3 id="3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用"><a href="#3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用" class="headerlink" title="3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用"></a>3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用</h3><p>聚合搜索主流的音乐平台: 网易云音乐、QQ音乐、酷狗、酷我音乐</p>
+<p>「Github 开源」<br><a href="https://github.com/listen1">https://github.com/listen1</a></p>
+<p>下载地址:</p>
+<p>官网: <a href="https://listen1.github.io/listen1/">https://listen1.github.io/listen1/</a></p>
+<p>蓝奏云(Win、安卓): <a href="https://pan.lanzouj.com/b01dly9cb">https://pan.lanzouj.com/b01dly9cb</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件-apk-影视app合集</title>
     <url>/2024/01/10/2024-01-10-%E8%BD%AF%E4%BB%B6-apk-%E5%BD%B1%E8%A7%86app%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<ul>
@@ -2419,55 +2468,6 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - 音乐app合集</title>
-    <url>/2024/01/10/2024-01-10-%E8%BD%AF%E4%BB%B6-%E9%9F%B3%E4%B9%90app%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h1><p>自己现用：musicfree + 落雪音乐 + 音源</p>
-<p>apphot 音乐APP<br><a href="https://wwa.lanzoui.com/b04bw7l2d">https://wwa.lanzoui.com/b04bw7l2d</a> 提取码：eaoe</p>
-<h2 id="一、Android版"><a href="#一、Android版" class="headerlink" title="一、Android版"></a>一、Android版</h2><h3 id="1-MusicFree"><a href="#1-MusicFree" class="headerlink" title="1.MusicFree"></a>1.MusicFree</h3><p>一个插件化、定制化、无广告的开源音乐播放器</p>
-<p><a href="https://musicfree.catcat.work/">MusicFree官网</a><br><a href="https://github.com/maotoumao/MusicFree">MusicFree官方Github</a></p>
-<p><a href="https://musicfree.catcat.work/">MusicFree官网下载1：</a><br><a href="https://gh.sixyin.com/https://github.com/maotoumao/MusicFree/releases/download/v0.6.2/app-universal-release.apk">MusicFree下载地址2：</a></p>
-<p>[自用 plugins 接口：]</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[音乐] : https://rxsub.eu.org/music/musicFree/my/rx.json</span><br></pre></td></tr></table></figure>
-<p>备份：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">大神音源</span><br><span class="line">https://ghraw.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://raw.rxsub.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">&lt;音乐&gt;: https://rxsub.eu.org/music/musicFree/Huibq/rx.json</span><br><span class="line">2音乐2: https://rxsub.eu.org/music/musicFree/yuanli/rx.json</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-LX-Music-落雪音乐助手"><a href="#2-LX-Music-落雪音乐助手" class="headerlink" title="2.LX Music - 落雪音乐助手"></a>2.LX Music - 落雪音乐助手</h3><span id="more"></span>
-<p>一个免费&amp;开源的音乐查找工具</p>
-<p>「Github 开源」<br><a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
-<p>官网: <a href="https://lxmusic.toside.cn/">https://lxmusic.toside.cn/</a></p>
-<p>下载地址:</p>
-<ul>
-<li><a href="https://xiaodao.lanzout.com/b0dqxf28d">https://xiaodao.lanzout.com/b0dqxf28d</a></li>
-<li><a href="https://www.123pan.cn/s/HQeA-KD1Sh">https://www.123pan.cn/s/HQeA-KD1Sh</a></li>
-<li><a href="https://yxzhi.lanzoub.com/b03qtgw9g">https://yxzhi.lanzoub.com/b03qtgw9g</a></li>
-<li><a href="https://www.sixyin.com/7645.html">https://www.sixyin.com/7645.html</a></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">音源：</span><br><span class="line">https://rxsub.eu.org/music/lx/rx.js</span><br><span class="line">https://rxsub.eu.org/music/lx/Huibq.js</span><br></pre></td></tr></table></figure>
-
-<p>使用方法: 需要点击设置–音乐来源–导入’在线导入’，最后在导入后的音乐来源前面打对钩，就可以使用了</p>
-<h2 id="二、windows版"><a href="#二、windows版" class="headerlink" title="二、windows版"></a>二、windows版</h2><h3 id="1-洛雪音乐助手-开源"><a href="#1-洛雪音乐助手-开源" class="headerlink" title="1.洛雪音乐助手 -开源"></a>1.洛雪音乐助手 -开源</h3><p>作者开源 <a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
-<p><a href="https://www.6yit.com/114.html">https://www.6yit.com/114.html</a></p>
-<p><a href="https://www.lanzoui.com/b00nbz6of">https://www.lanzoui.com/b00nbz6of</a>   密码：30up</p>
-<h3 id="2-MusicTools-付费无损音乐下载神器"><a href="#2-MusicTools-付费无损音乐下载神器" class="headerlink" title="2.MusicTools_付费无损音乐下载神器"></a>2.MusicTools_付费无损音乐下载神器</h3><p>官网：<a href="https://www.whg6.com/html/musictools/">https://www.whg6.com/html/musictools/</a></p>
-<p><a href="https://www.423down.com/9003.html">https://www.423down.com/9003.html</a></p>
-<p><a href="https://423down.lanzouh.com/iVz3h05k2ena">https://423down.lanzouh.com/iVz3h05k2ena</a></p>
-<h3 id="3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用"><a href="#3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用" class="headerlink" title="3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用"></a>3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用</h3><p>聚合搜索主流的音乐平台: 网易云音乐、QQ音乐、酷狗、酷我音乐</p>
-<p>「Github 开源」<br><a href="https://github.com/listen1">https://github.com/listen1</a></p>
-<p>下载地址:</p>
-<p>官网: <a href="https://listen1.github.io/listen1/">https://listen1.github.io/listen1/</a></p>
-<p>蓝奏云(Win、安卓): <a href="https://pan.lanzouj.com/b01dly9cb">https://pan.lanzouj.com/b01dly9cb</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
         <tag>apk</tag>
         <tag>合集</tag>
       </tags>
