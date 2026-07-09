@@ -77,63 +77,73 @@
       </tags>
   </entry>
   <entry>
-    <title>GFW-2-Sub</title>
-    <url>/2022/03/29/2022-03-29-GFW-2-Sub/</url>
-    <content><![CDATA[<h1 id="Proxy-pool-Subscribe"><a href="#Proxy-pool-Subscribe" class="headerlink" title="Proxy pool Subscribe"></a>Proxy pool Subscribe</h1><hr>
-<p>GitHub鏡像站</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://hub.nuaa.cf/sweetrx</span><br><span class="line">https://hub.yzuu.cf/sweetrx</span><br><span class="line">https://gh.sweetrx.eu.org/sweetrx</span><br><span class="line">https://hub.sweetrx.eu.org/sweetrx</span><br></pre></td></tr></table></figure>
-<p>加速下载站</p>
-<p>自己使用<br><code>https://raw.rxsub.onflashdrive.app/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://ghraw.eu.org/rxsweet/proxies/main/sub/free.yaml</code><br><code>https://p.sweetrx.eu.org</code></p>
-<p>韩国: <code>https://ghproxy.com/</code> + 完整地址</p>
-<p>香港: <code>https://raw.iqiq.io/rxsweet/proxies/main/sub/rx.yaml</code></p>
-<p>新加坡: <code>https://raw.kgithub.com/rxsweet/proxies/main/sub/rx.yaml</code></p>
+    <title>GFW - Github连接访问的几种方法</title>
+    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
+<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
 <span id="more"></span>
-<h3 id="Android-Clash"><a href="#Android-Clash" class="headerlink" title="- Android Clash"></a>- Android Clash</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining.yaml</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>备用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://rxsub.3d.tc/sub/free.yaml</span><br><span class="line">https://rxsub.app.tc/sub/free.yaml</span><br><span class="line">https://rxsub.coms.hk/sub/free.yaml</span><br><span class="line">https://sub.rxsub.rr.nu/sub/free.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h3 id="WinXray-sub-base64"><a href="#WinXray-sub-base64" class="headerlink" title="- WinXray sub(base64)"></a>- WinXray sub(base64)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">优秀 - 优先使用</span><br><span class="line"></span><br><span class="line">#fetchProxy</span><br><span class="line">https://rxsub.onflashdrive.app/sub/rx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/srx64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/mining64.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/free64.txt</span><br><span class="line">#good list</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/sublist_mining.txt</span><br><span class="line">https://rxsub.onflashdrive.app/sub/sources/subList_dynamic.txt</span><br></pre></td></tr></table></figure>
-
-<h3 id="proxy-POOL"><a href="#proxy-POOL" class="headerlink" title="- proxy POOL"></a>- proxy POOL</h3><p>  –  clash订阅地址加上”&#x2F;clash&#x2F;config” &amp;”&#x2F;clash&#x2F;proxies”  clash都可用<br>  –  WinXray支持的后缀：需带”&#x2F;proxies?c&#x3D;US,HK,TW,KR,JP,SG”</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pool使用方法</span><br><span class="line">/clash/proxies?c=CN,HK,TW,JP,US,SG,&amp;type=ss</span><br><span class="line">/clash/proxies?c=HK,TW,JP,US</span><br></pre></td></tr></table></figure>
-<ul>
-<li>proxypool<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://101.132.255.205:1234/clash/proxies</span><br><span class="line">https://pc.adlionvm.tk/clash/proxies</span><br><span class="line">https://proxy.yugogo.xyz/clash/proxies</span><br><span class="line">https://proxypool.laowang.me/clash/proxies</span><br><span class="line">https://klausvpn.posyao.com/clash/proxies</span><br></pre></td></tr></table></figure></li>
+<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
+<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
+</li>
+<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
+</li>
+<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
+</li>
+<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
+</li>
+</ol>
+<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
+<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
+<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
+<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
+<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
+<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
+<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
+</ol>
+<hr>
+<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
+<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
+</li>
+<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
+</li>
+<li></li>
 </ul>
-<h3 id="连接转换"><a href="#连接转换" class="headerlink" title="- 连接转换"></a>- 连接转换</h3><ul>
-<li><a href="https://sub.v1.mk/">https://sub.v1.mk/</a></li>
-<li><a href="https://bianyuan.xyz/">https://bianyuan.xyz/</a></li>
-<li><a href="https://sub.tsutsu.cc/">https://sub.tsutsu.cc/</a></li>
-<li><a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></li>
-<li><a href="https://zh.xxcr.cc/">https://zh.xxcr.cc/</a></li>
-<li><a href="https://sub.bihai.ml/">https://sub.bihai.ml/</a></li>
-<li><a href="https://id9.cc/">https://id9.cc/</a></li>
-<li><a href="https://sublink.dev/">https://sublink.dev/</a></li>
-<li><a href="https://www.con8.tk/">https://www.con8.tk/</a></li>
-<li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a></li>
-<li><a href="https://sub.90.ms/">https://sub.90.ms/</a> </li>
-<li><a href="https://sub-web.netlify.app/">https://sub-web.netlify.app/</a> </li>
-<li><a href="https://subcon.dlj.tf/">https://subcon.dlj.tf/</a></li>
+<ol>
+<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
+<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
+<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
+<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
+<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
+</ol>
+<hr>
+<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
+<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
 </ul>
-<h1 id="测速软件"><a href="#测速软件" class="headerlink" title="测速软件"></a>测速软件</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.rxsub.onflashdrive.app/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.rr.nu/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.rxsub.coms.hk/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://ghproxy.com/https://raw.githubusercontent.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.githubusercontents.com/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br><span class="line">https://raw.fastgit.org/rxsweet/all/main/githubTools/nodesCatch2022-12-24.rar</span><br></pre></td></tr></table></figure>
-<h1 id="测速地址"><a href="#测速地址" class="headerlink" title="测速地址"></a>测速地址</h1><p>谷歌搜索：vps looking glass</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">其他测速地址</span><br><span class="line">DE - Frankfurt</span><br><span class="line">https://lim-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">UK - London</span><br><span class="line">https://lon-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">NL - Amsterdam</span><br><span class="line">https://ams-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">FR - Strasbourg</span><br><span class="line">https://sbg-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">IT - Palermo</span><br><span class="line">https://pmo-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">US - Ashburn</span><br><span class="line">https://ash-speedtest.lg.bluevps.com/10MB.bin</span><br><span class="line">BG - Sofia</span><br><span class="line">https://sof-speedtest.lg.bluevps.com/10MB.bin</span><br></pre></td></tr></table></figure>
-
-<h1 id="ip匿名检测"><a href="#ip匿名检测" class="headerlink" title="ip匿名检测"></a>ip匿名检测</h1><ul>
-<li><a href="https://ip.voidsec.com/">https://ip.voidsec.com/</a></li>
-<li><a href="https://ipinfo.io/">https://ipinfo.io/</a></li>
-<li><a href="https://ipleak.com/">https://ipleak.com/</a></li>
-<li><a href="https://ipleak.net/">https://ipleak.net/</a></li>
-<li><a href="https://ipleak.org/">https://ipleak.org/</a></li>
-<li><a href="https://ipx.ac/run">https://ipx.ac/run</a></li>
-<li><a href="https://nstool.netease.com/">https://nstool.netease.com/</a></li>
-<li><a href="https://test-ipv6.com/">https://test-ipv6.com/</a></li>
-<li><a href="https://www.deviceinfo.me/">https://www.deviceinfo.me/</a></li>
-<li><a href="https://www.dnsleaktest.com/">https://www.dnsleaktest.com/</a></li>
-<li><a href="https://ip.skk.moe/">https://ip.skk.moe</a></li>
-<li><a href="https://www.whatismyip.com.tw/">https://www.whatismyip.com.tw</a></li>
-<li><a href="https://myip.ms/">https://myip.ms</a></li>
-<li><a href="https://ifconfig.me/">https://ifconfig.me</a></li>
+<ol>
+<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
+</li>
+<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
+</li>
+<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
+</li>
+</ol>
+<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
+<hr>
+<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
+<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
 </ul>
+<hr>
+<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
+<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
+<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
+<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
+<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
+<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
+<hr>
+<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
 ]]></content>
       <categories>
         <category>GFW</category>
@@ -228,82 +238,6 @@
 <li><a href="https://acl4ssr.netlify.app/">https://acl4ssr.netlify.app/</a>      - 多个API</li>
 </ul>
 <hr>
-]]></content>
-      <categories>
-        <category>GFW</category>
-      </categories>
-      <tags>
-        <tag>GFW</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GFW - Github连接访问的几种方法</title>
-    <url>/2022/03/29/2022-03-29-GFW-Github%E8%AE%BF%E9%97%AE%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="1-镜像站点"><a href="#1-镜像站点" class="headerlink" title="1.镜像站点"></a>1.镜像站点</h1><p>*这几个网站是整站访问的替代品，你可以浏览项目，也支持下载检出。</p>
-<p>*但是不建议登陆自己的账号，毕竟不是直接访问到原站.</p>
-<span id="more"></span>
-
-<h2 id="hub"><a href="#hub" class="headerlink" title="- hub -"></a>- hub -</h2><ol>
-<li><p><a href="https://hub.nuaa.cf/">https://hub.nuaa.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.yzuu.cf/">https://hub.yzuu.cf/+ 用户库</a></p>
-</li>
-<li><p><a href="https://hub.verge.tk/">https://hub.verge.tk</a></p>
-</li>
-<li><p><a href="https://www.progo.cc/#/">ProGo.cc  - GitHub链接 - 加速访问</a></p>
-</li>
-<li><p><a href="http://toolwa.com/github/">GitHub 加速下载 - toolwa.com</a></p>
-</li>
-</ol>
-<p>6.<a href="https://gh.sweetrx.ir/">https://gh.sweetrx.ir</a> </p>
-<p>7.<a href="https://hub.sweetrx.ir/">https://hub.sweetrx.ir</a></p>
-<h2 id="raw"><a href="#raw" class="headerlink" title="- raw -"></a>- raw -</h2><ol>
-<li><a href="https://raw.gitfast.tk/">https://raw.gitfast.tk</a></li>
-<li><a href="https://raw.verge.tk/">https://raw.verge.tk</a></li>
-<li><a href="https://raw.sweetrx.ir/">https://raw.sweetrx.ir</a></li>
-<li><a href="https://ghraw.eu.org/">https://ghraw.eu.org</a></li>
-</ol>
-<hr>
-<h1 id="2-文件中转加速下载"><a href="#2-文件中转加速下载" class="headerlink" title="2.文件中转加速下载"></a>2.文件中转加速下载</h1><ul>
-<li><p>该方案利用Cloudflare Workers对 release以及项目文件进行加速，部署无需服务器。</p>
-</li>
-<li><p>如果对自建感兴趣，可以访问gh-proxy。</p>
-</li>
-<li></li>
-</ul>
-<ol>
-<li><a href="https://ghproxy.com/">https://ghproxy.com</a> + raw.github</li>
-<li><a href="https://git.886.be/">https://git.886.be/</a> + raw.github</li>
-<li><a href="https://ghps.cc/">https://ghps.cc/</a> + raw.github</li>
-<li><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a> + raw.github</li>
-<li><a href="http://toolwa.com/github/">http://toolwa.com/github/</a> - 进入网站输入raw地址</li>
-</ol>
-<hr>
-<h1 id="3-Raw加速"><a href="#3-Raw加速" class="headerlink" title="3.Raw加速"></a>3.Raw加速</h1><ul>
-<li>jsDelivr不支持exe文件下载，使用方法参考例子</li>
-</ul>
-<ol>
-<li><p><a href="https://raw.sevencdn.com/">https://raw.sevencdn.com/</a> 替换掉 <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a></p>
-</li>
-<li><p><a href="https://raw.githubusercontents.com/">https://raw.githubusercontents.com/</a>在网址后面加个”s”  - <a href="https://raw.githubusercontent"s".com/">https://raw.githubusercontent"s".com/</a></p>
-</li>
-<li><p><a href="https://cdn.jsdelivr.net/gh/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BD%A0%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8D@%E5%8F%91%E5%B8%83%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7/%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</a></p>
-</li>
-</ol>
-<p>eg. <a href="https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray">https://cdn.jsdelivr.net/gh/lion12776/kejilion@main/v2ray</a></p>
-<hr>
-<h1 id="4-油猴脚本-☆☆☆"><a href="#4-油猴脚本-☆☆☆" class="headerlink" title="4.油猴脚本 - ☆☆☆"></a>4.油猴脚本 - ☆☆☆</h1><ul>
-<li><a href="https://greasyfork.org/zh-CN/scripts/412245">Github 增强【脚本】 - github&#x2F;XIU2&#x2F;</a> - 脚本页里有好多镜像站</li>
-</ul>
-<hr>
-<h1 id="5-Hosts"><a href="#5-Hosts" class="headerlink" title="5.Hosts"></a>5.Hosts</h1><p>简单粗暴的使用方法<br>手动添加hosts</p>
-<p>访问 <a href="https://hosts.gitcdn.top/hosts.txt">https://hosts.gitcdn.top/hosts.txt</a> ， 将其全部内容粘贴到你的hosts文件中，即可。</p>
-<p>Linux &#x2F; MacOS hosts路径：&#x2F;etc&#x2F;hosts<br>Windows hosts路径：C:\Windows\System32\drivers\etc\hosts</p>
-<p>fetch-github-hosts是主要为解决访问Github过慢或其他问题而提供的免费的Github hosts同步服务，项目开源</p>
-<p>Fetch Github Hosts：<a href="http://hosts.gitcdn.top/">http://hosts.gitcdn.top/</a></p>
-<p>开源仓库：<a href="https://github.com/Licoy/fetch-github-hosts">https://github.com/Licoy/fetch-github-hosts</a></p>
-<hr>
-<p><a href="https://www.7ed.net/gra/">Github RAW 加速服务 - 7ED Service</a> - 大佬访问github的方法<a href="https://www.7ed.net/gra/">https://www.7ed.net/gra/</a></p>
 ]]></content>
       <categories>
         <category>GFW</category>
@@ -812,7 +746,7 @@
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
 <p>4c00e28ee72936dee2453e38dd13021ebookmark.json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</p>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#119;&#x65;&#101;&#116;&#114;&#x78;&#x40;&#112;&#x6d;&#x2e;&#x6d;&#101;">&#115;&#119;&#x65;&#101;&#116;&#114;&#x78;&#x40;&#112;&#x6d;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#x65;&#x65;&#116;&#114;&#120;&#x40;&#x70;&#x6d;&#46;&#109;&#101;">&#115;&#x77;&#x65;&#x65;&#116;&#114;&#120;&#x40;&#x70;&#x6d;&#46;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1322,6 +1256,24 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
+    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
+<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
+<span id="more"></span>
+
+<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - apk - 背景去除器 - 抠图</title>
     <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%A0%E5%9B%BE/</url>
     <content><![CDATA[<h1 id="背景去除器-抠图"><a href="#背景去除器-抠图" class="headerlink" title="背景去除器 - 抠图"></a>背景去除器 - 抠图</h1><p><a href="https://apphot.cc/33162.html">https://apphot.cc/33162.html</a></p>
@@ -1345,21 +1297,26 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
-    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
+    <title>软件 - win - 驱动</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
+<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
+<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
+<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
+<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
 <p>下载地址：</p>
-<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
-<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
-<span id="more"></span>
-
-<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
+<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
+<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
+<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
+]]></content>
       <categories>
         <category>软件</category>
       </categories>
       <tags>
         <tag>软件</tag>
-        <tag>apk</tag>
+        <tag>win</tag>
+        <tag>驱动</tag>
       </tags>
   </entry>
   <entry>
@@ -1428,29 +1385,6 @@
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 驱动</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
-<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
-<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
-<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
-<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
-<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
-<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>驱动</tag>
       </tags>
   </entry>
   <entry>
@@ -1614,6 +1548,26 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 截图 - FastStone Capture</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
+    <content><![CDATA[<p>自己使用的截图工具</p>
+<span id="more"></span>
+
+<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
+<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
+<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 电脑优化清理</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>电脑优化清理工具</p>
@@ -1633,26 +1587,6 @@
 <p>分享页：<br><a href="https://www.ghxi.com/processlasso.html">https://www.ghxi.com/processlasso.html</a></p>
 <p>下载地址：</p>
 <p>已高速(如有密码：3519)<a href="http://ct.ghpym.com/d/7369060-41220817-7cf748">http://ct.ghpym.com/d/7369060-41220817-7cf748</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 截图 - FastStone Capture</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
-    <content><![CDATA[<p>自己使用的截图工具</p>
-<span id="more"></span>
-
-<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
-<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
-<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2021,33 +1955,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
-    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
-<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
-</code></pre>
-<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
-</code></pre>
-<span id="more"></span>
-<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
-选择单个repository权限,
-完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
-在下一步`Deploy`,
-完成，部署成功。
-</code></pre>
-<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
-
-OK,大功告成！
-</code></pre>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 博客从Jekyll更换到Hexo</title>
     <url>/2022/08/09/2022-08-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E4%BB%8EJekyll%E6%9B%B4%E6%8D%A2%E5%88%B0Hexo/</url>
     <content><![CDATA[<h1 id="博客从Jekyll更换到Hexo"><a href="#博客从Jekyll更换到Hexo" class="headerlink" title="博客从Jekyll更换到Hexo"></a>博客从Jekyll更换到Hexo</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>更换原因：1.电脑系统升级了，Win10x64<br>          2.Vercel对Jekyll不友好，不支持<code>Liquid</code>模板语言来处理模板<br>          3.Hexo主题的好多问题search可以解决</p>
@@ -2127,6 +2034,33 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
+</code></pre>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<span id="more"></span>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
+
+OK,大功告成！
+</code></pre>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - Hexo添加分类,标签,搜索（在Next主题下）</title>
     <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E6%B7%BB%E5%8A%A0-%E5%88%86%E7%B1%BB-%E6%A0%87%E7%AD%BE-%E6%90%9C%E7%B4%A2/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自建的博客怎么能没有分类，标签，搜索呢，所以我就去查了一下怎么去配置分类和标签,搜索</p>
@@ -2183,33 +2117,6 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - Alist 网盘整合加载</title>
-    <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
-    <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
-<p><a href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
-<h2 id="downloads"><a href="#downloads" class="headerlink" title="downloads"></a>downloads</h2><p>自己测试哪个线路快</p>
-<p><a href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
-<span id="more"></span>
-
-<h2 id="open-alist-windows-4-0-amd64-exe"><a href="#open-alist-windows-4-0-amd64-exe" class="headerlink" title="open alist-windows-4.0-amd64.exe"></a>open <code>alist-windows-4.0-amd64.exe</code></h2><p><code>Initial password: 后面是密码</code></p>
-<p><code>start server @ 0.0.0.0:5244</code>加载成功</p>
-<h2 id="登录alist"><a href="#登录alist" class="headerlink" title="登录alist"></a>登录alist</h2><p>打开<code>127.0.0.1:5244</code>,输入密码登录(登录进来后，在设置 - 后端 - 密码，可以修改密码)</p>
-<p>dea8 zf5x 03ya uusn</p>
-<h2 id="配置网盘"><a href="#配置网盘" class="headerlink" title="配置网盘"></a>配置网盘</h2><p>在管理界面点<code>账号</code>，添加，根据需求添加即可.</p>
-<h2 id="个人使用的WebDev-Koofr-eu"><a href="#个人使用的WebDev-Koofr-eu" class="headerlink" title="个人使用的WebDev - Koofr.eu"></a>个人使用的WebDev - Koofr.eu</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webdav root url ：https://app.koofr.net/dav/</span><br><span class="line">用户名: sweetrx@pm</span><br><span class="line">密码： </span><br></pre></td></tr></table></figure>
-
-<h1 id="Windows电脑中挂载为虚拟磁盘"><a href="#Windows电脑中挂载为虚拟磁盘" class="headerlink" title="Windows电脑中挂载为虚拟磁盘"></a>Windows电脑中挂载为虚拟磁盘</h1><p>打开 Windows 资源管理器（例如，通过右键单击”开始”按钮） ，或者直接双击<code>计算机</code><br>左上角导航窗格中的<code>计算机 - 映射网络驱动器</code><br>在”驱动器”下拉列表下选择一个空闲驱动器号<br>在”文件夹”字段中输入文件夹的 WebDAV URL<br>选中使用其他凭据连接复选框<br>输入您的登录名和密码登录</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>网盘</tag>
       </tags>
   </entry>
   <entry>
@@ -2273,6 +2180,61 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - Alist 网盘整合加载</title>
+    <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
+<p><a href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
+<h2 id="downloads"><a href="#downloads" class="headerlink" title="downloads"></a>downloads</h2><p>自己测试哪个线路快</p>
+<p><a href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
+<span id="more"></span>
+
+<h2 id="open-alist-windows-4-0-amd64-exe"><a href="#open-alist-windows-4-0-amd64-exe" class="headerlink" title="open alist-windows-4.0-amd64.exe"></a>open <code>alist-windows-4.0-amd64.exe</code></h2><p><code>Initial password: 后面是密码</code></p>
+<p><code>start server @ 0.0.0.0:5244</code>加载成功</p>
+<h2 id="登录alist"><a href="#登录alist" class="headerlink" title="登录alist"></a>登录alist</h2><p>打开<code>127.0.0.1:5244</code>,输入密码登录(登录进来后，在设置 - 后端 - 密码，可以修改密码)</p>
+<p>dea8 zf5x 03ya uusn</p>
+<h2 id="配置网盘"><a href="#配置网盘" class="headerlink" title="配置网盘"></a>配置网盘</h2><p>在管理界面点<code>账号</code>，添加，根据需求添加即可.</p>
+<h2 id="个人使用的WebDev-Koofr-eu"><a href="#个人使用的WebDev-Koofr-eu" class="headerlink" title="个人使用的WebDev - Koofr.eu"></a>个人使用的WebDev - Koofr.eu</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webdav root url ：https://app.koofr.net/dav/</span><br><span class="line">用户名: sweetrx@pm</span><br><span class="line">密码： </span><br></pre></td></tr></table></figure>
+
+<h1 id="Windows电脑中挂载为虚拟磁盘"><a href="#Windows电脑中挂载为虚拟磁盘" class="headerlink" title="Windows电脑中挂载为虚拟磁盘"></a>Windows电脑中挂载为虚拟磁盘</h1><p>打开 Windows 资源管理器（例如，通过右键单击”开始”按钮） ，或者直接双击<code>计算机</code><br>左上角导航窗格中的<code>计算机 - 映射网络驱动器</code><br>在”驱动器”下拉列表下选择一个空闲驱动器号<br>在”文件夹”字段中输入文件夹的 WebDAV URL<br>选中使用其他凭据连接复选框<br>输入您的登录名和密码登录</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>网盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 笔记软件mybase</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
+<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
+<p>现用的mybase好用，支持md</p>
+</blockquote>
+<span id="more"></span>
+<p>下载地址：</p>
+<p>产品介绍：</p>
+<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
+<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
+<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
+<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
+<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
+<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
+<p>科学安装步骤：</p>
+<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win快速启动软件lily和lucy</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2314,49 +2276,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 笔记软件mybase</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
-<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
-<p>现用的mybase好用，支持md</p>
-</blockquote>
-<span id="more"></span>
-<p>下载地址：</p>
-<p>产品介绍：</p>
-<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
-<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
-<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
-<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
-<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
-<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
-<p>科学安装步骤：</p>
-<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 免费企业查询app</title>
-    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
-    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
-<span id="more"></span>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 域名注册并绑定vercel博客</title>
     <url>/2023/01/30/2023-01-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%BB%91%E5%AE%9Avercel%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="域名注册并绑定vercel博客"><a href="#域名注册并绑定vercel博客" class="headerlink" title="域名注册并绑定vercel博客"></a>域名注册并绑定vercel博客</h1><h2 id="先注册域名"><a href="#先注册域名" class="headerlink" title="先注册域名"></a>先注册域名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sitelutions多种可解析免费二级域名注册，</span><br><span class="line">至少已经运行十几年了，现在依然可用。</span><br><span class="line">里面可以注册二十几种后缀的免费二级域名，</span><br><span class="line">其中有几个提供既短又好记的二级域名</span><br></pre></td></tr></table></figure>
@@ -2384,6 +2303,21 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 免费企业查询app</title>
+    <url>/2023/02/25/2023-02-25-apk-%E5%85%8D%E8%B4%B9%E4%BC%81%E4%B8%9A%E6%9F%A5%E8%AF%A2app/</url>
+    <content><![CDATA[<h1 id="免费企业查询app：爱企查-天眼查"><a href="#免费企业查询app：爱企查-天眼查" class="headerlink" title="免费企业查询app：爱企查 + 天眼查"></a>免费企业查询app：爱企查 + 天眼查</h1><p>网盘下载<br><a href="https://wwx.lanzoui.com/b04b8k8fc">https://wwx.lanzoui.com/b04b8k8fc</a> 提取码：h1pg<br><a href="https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA">https://pan.baidu.com/s/1SfhP2bw3bi2DEXDT8uHzUA</a> 提取码：hhhh</p>
+<span id="more"></span>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -2540,55 +2474,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - 音乐app合集</title>
-    <url>/2024/01/10/2024-01-10-%E8%BD%AF%E4%BB%B6-%E9%9F%B3%E4%B9%90app%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h1><p>自己现用：musicfree + 落雪音乐 + 音源</p>
-<p>apphot 音乐APP<br><a href="https://wwa.lanzoui.com/b04bw7l2d">https://wwa.lanzoui.com/b04bw7l2d</a> 提取码：eaoe</p>
-<h2 id="一、Android版"><a href="#一、Android版" class="headerlink" title="一、Android版"></a>一、Android版</h2><h3 id="1-MusicFree"><a href="#1-MusicFree" class="headerlink" title="1.MusicFree"></a>1.MusicFree</h3><p>一个插件化、定制化、无广告的开源音乐播放器</p>
-<p><a href="https://musicfree.catcat.work/">MusicFree官网</a><br><a href="https://github.com/maotoumao/MusicFree">MusicFree官方Github</a></p>
-<p><a href="https://musicfree.catcat.work/">MusicFree官网下载1：</a><br><a href="https://gh.sixyin.com/https://github.com/maotoumao/MusicFree/releases/download/v0.6.2/app-universal-release.apk">MusicFree下载地址2：</a></p>
-<p>[自用 plugins 接口：]</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[音乐] : https://rxsub.eu.org/music/musicFree/my/rx.json</span><br></pre></td></tr></table></figure>
-<p>备份：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">大神音源</span><br><span class="line">https://ghraw.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://raw.rxsub.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">&lt;音乐&gt;: https://rxsub.eu.org/music/musicFree/Huibq/rx.json</span><br><span class="line">2音乐2: https://rxsub.eu.org/music/musicFree/yuanli/rx.json</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-LX-Music-落雪音乐助手"><a href="#2-LX-Music-落雪音乐助手" class="headerlink" title="2.LX Music - 落雪音乐助手"></a>2.LX Music - 落雪音乐助手</h3><span id="more"></span>
-<p>一个免费&amp;开源的音乐查找工具</p>
-<p>「Github 开源」<br><a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
-<p>官网: <a href="https://lxmusic.toside.cn/">https://lxmusic.toside.cn/</a></p>
-<p>下载地址:</p>
-<ul>
-<li><a href="https://xiaodao.lanzout.com/b0dqxf28d">https://xiaodao.lanzout.com/b0dqxf28d</a></li>
-<li><a href="https://www.123pan.cn/s/HQeA-KD1Sh">https://www.123pan.cn/s/HQeA-KD1Sh</a></li>
-<li><a href="https://yxzhi.lanzoub.com/b03qtgw9g">https://yxzhi.lanzoub.com/b03qtgw9g</a></li>
-<li><a href="https://www.sixyin.com/7645.html">https://www.sixyin.com/7645.html</a></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">音源：</span><br><span class="line">https://rxsub.eu.org/music/lx/rx.js</span><br><span class="line">https://rxsub.eu.org/music/lx/Huibq.js</span><br></pre></td></tr></table></figure>
-
-<p>使用方法: 需要点击设置–音乐来源–导入’在线导入’，最后在导入后的音乐来源前面打对钩，就可以使用了</p>
-<h2 id="二、windows版"><a href="#二、windows版" class="headerlink" title="二、windows版"></a>二、windows版</h2><h3 id="1-洛雪音乐助手-开源"><a href="#1-洛雪音乐助手-开源" class="headerlink" title="1.洛雪音乐助手 -开源"></a>1.洛雪音乐助手 -开源</h3><p>作者开源 <a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
-<p><a href="https://www.6yit.com/114.html">https://www.6yit.com/114.html</a></p>
-<p><a href="https://www.lanzoui.com/b00nbz6of">https://www.lanzoui.com/b00nbz6of</a>   密码：30up</p>
-<h3 id="2-MusicTools-付费无损音乐下载神器"><a href="#2-MusicTools-付费无损音乐下载神器" class="headerlink" title="2.MusicTools_付费无损音乐下载神器"></a>2.MusicTools_付费无损音乐下载神器</h3><p>官网：<a href="https://www.whg6.com/html/musictools/">https://www.whg6.com/html/musictools/</a></p>
-<p><a href="https://www.423down.com/9003.html">https://www.423down.com/9003.html</a></p>
-<p><a href="https://423down.lanzouh.com/iVz3h05k2ena">https://423down.lanzouh.com/iVz3h05k2ena</a></p>
-<h3 id="3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用"><a href="#3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用" class="headerlink" title="3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用"></a>3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用</h3><p>聚合搜索主流的音乐平台: 网易云音乐、QQ音乐、酷狗、酷我音乐</p>
-<p>「Github 开源」<br><a href="https://github.com/listen1">https://github.com/listen1</a></p>
-<p>下载地址:</p>
-<p>官网: <a href="https://listen1.github.io/listen1/">https://listen1.github.io/listen1/</a></p>
-<p>蓝奏云(Win、安卓): <a href="https://pan.lanzouj.com/b01dly9cb">https://pan.lanzouj.com/b01dly9cb</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-apk-影视app合集</title>
     <url>/2024/01/10/2024-01-10-%E8%BD%AF%E4%BB%B6-apk-%E5%BD%B1%E8%A7%86app%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<ul>
@@ -2652,6 +2537,55 @@ OK,大功告成！
       </categories>
       <tags>
         <tag>软件</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - 音乐app合集</title>
+    <url>/2024/01/10/2024-01-10-%E8%BD%AF%E4%BB%B6-%E9%9F%B3%E4%B9%90app%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h1><p>自己现用：musicfree + 落雪音乐 + 音源</p>
+<p>apphot 音乐APP<br><a href="https://wwa.lanzoui.com/b04bw7l2d">https://wwa.lanzoui.com/b04bw7l2d</a> 提取码：eaoe</p>
+<h2 id="一、Android版"><a href="#一、Android版" class="headerlink" title="一、Android版"></a>一、Android版</h2><h3 id="1-MusicFree"><a href="#1-MusicFree" class="headerlink" title="1.MusicFree"></a>1.MusicFree</h3><p>一个插件化、定制化、无广告的开源音乐播放器</p>
+<p><a href="https://musicfree.catcat.work/">MusicFree官网</a><br><a href="https://github.com/maotoumao/MusicFree">MusicFree官方Github</a></p>
+<p><a href="https://musicfree.catcat.work/">MusicFree官网下载1：</a><br><a href="https://gh.sixyin.com/https://github.com/maotoumao/MusicFree/releases/download/v0.6.2/app-universal-release.apk">MusicFree下载地址2：</a></p>
+<p>[自用 plugins 接口：]</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[音乐] : https://rxsub.eu.org/music/musicFree/my/rx.json</span><br></pre></td></tr></table></figure>
+<p>备份：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">大神音源</span><br><span class="line">https://ghraw.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">https://raw.rxsub.eu.org/Huibq/keep-alive/master/Music_Free/myPlugins.json</span><br><span class="line">&lt;音乐&gt;: https://rxsub.eu.org/music/musicFree/Huibq/rx.json</span><br><span class="line">2音乐2: https://rxsub.eu.org/music/musicFree/yuanli/rx.json</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-LX-Music-落雪音乐助手"><a href="#2-LX-Music-落雪音乐助手" class="headerlink" title="2.LX Music - 落雪音乐助手"></a>2.LX Music - 落雪音乐助手</h3><span id="more"></span>
+<p>一个免费&amp;开源的音乐查找工具</p>
+<p>「Github 开源」<br><a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
+<p>官网: <a href="https://lxmusic.toside.cn/">https://lxmusic.toside.cn/</a></p>
+<p>下载地址:</p>
+<ul>
+<li><a href="https://xiaodao.lanzout.com/b0dqxf28d">https://xiaodao.lanzout.com/b0dqxf28d</a></li>
+<li><a href="https://www.123pan.cn/s/HQeA-KD1Sh">https://www.123pan.cn/s/HQeA-KD1Sh</a></li>
+<li><a href="https://yxzhi.lanzoub.com/b03qtgw9g">https://yxzhi.lanzoub.com/b03qtgw9g</a></li>
+<li><a href="https://www.sixyin.com/7645.html">https://www.sixyin.com/7645.html</a></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">音源：</span><br><span class="line">https://rxsub.eu.org/music/lx/rx.js</span><br><span class="line">https://rxsub.eu.org/music/lx/Huibq.js</span><br></pre></td></tr></table></figure>
+
+<p>使用方法: 需要点击设置–音乐来源–导入’在线导入’，最后在导入后的音乐来源前面打对钩，就可以使用了</p>
+<h2 id="二、windows版"><a href="#二、windows版" class="headerlink" title="二、windows版"></a>二、windows版</h2><h3 id="1-洛雪音乐助手-开源"><a href="#1-洛雪音乐助手-开源" class="headerlink" title="1.洛雪音乐助手 -开源"></a>1.洛雪音乐助手 -开源</h3><p>作者开源 <a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
+<p><a href="https://www.6yit.com/114.html">https://www.6yit.com/114.html</a></p>
+<p><a href="https://www.lanzoui.com/b00nbz6of">https://www.lanzoui.com/b00nbz6of</a>   密码：30up</p>
+<h3 id="2-MusicTools-付费无损音乐下载神器"><a href="#2-MusicTools-付费无损音乐下载神器" class="headerlink" title="2.MusicTools_付费无损音乐下载神器"></a>2.MusicTools_付费无损音乐下载神器</h3><p>官网：<a href="https://www.whg6.com/html/musictools/">https://www.whg6.com/html/musictools/</a></p>
+<p><a href="https://www.423down.com/9003.html">https://www.423down.com/9003.html</a></p>
+<p><a href="https://423down.lanzouh.com/iVz3h05k2ena">https://423down.lanzouh.com/iVz3h05k2ena</a></p>
+<h3 id="3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用"><a href="#3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用" class="headerlink" title="3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用"></a>3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用</h3><p>聚合搜索主流的音乐平台: 网易云音乐、QQ音乐、酷狗、酷我音乐</p>
+<p>「Github 开源」<br><a href="https://github.com/listen1">https://github.com/listen1</a></p>
+<p>下载地址:</p>
+<p>官网: <a href="https://listen1.github.io/listen1/">https://listen1.github.io/listen1/</a></p>
+<p>蓝奏云(Win、安卓): <a href="https://pan.lanzouj.com/b01dly9cb">https://pan.lanzouj.com/b01dly9cb</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
         <tag>apk</tag>
         <tag>合集</tag>
       </tags>
