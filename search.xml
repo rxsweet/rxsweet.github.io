@@ -669,7 +669,7 @@
 <p><a href="https://huajiakeji.com/">https://huajiakeji.com/    </a>            - 要验证码</p>
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#101;&#x74;&#x72;&#120;&#64;&#112;&#109;&#x2e;&#109;&#101;">&#115;&#x77;&#101;&#101;&#x74;&#x72;&#120;&#64;&#112;&#109;&#x2e;&#109;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#109;&#x2e;&#x6d;&#101;">&#115;&#x77;&#101;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#109;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -678,6 +678,88 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>chrome</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-插件-广告屏蔽插件和广告规则</title>
+    <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
+    <content><![CDATA[<p>广告屏蔽App和广告规则</p>
+<h2 id="1-广告屏蔽App"><a href="#1-广告屏蔽App" class="headerlink" title="1.广告屏蔽App"></a>1.广告屏蔽App</h2><ul>
+<li><p>1.<a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin  Chrome插件  - ☆现用</a></p>
+</li>
+<li><p>2.<a href="https://www.crxsoso.com/webstore/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard 广告拦截器</a></p>
+</li>
+<li><p>3.<a href="https://www.crxsoso.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">Adblock Plus - 免费的广告拦截器</a></p>
+</li>
+</ul>
+<h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
+<p>自己现在使用的uBlock Origin<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a></p>
+<hr>
+<span id="more"></span>
+
+<p>规则记录网站  </p>
+<p><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a>        - github 半生<br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a>        - CJX国外<br><a href="https://github.com/xinggsf/Adblock-Plus-Rule">https://github.com/xinggsf/Adblock-Plus-Rule</a>    - 乘风<br><a href="https://github.com/TG-Twilight/AWAvenue-Ads-Rule/">https://github.com/TG-Twilight/AWAvenue-Ads-Rule/</a>   - 秋风广告规则<br><a href="https://github.com/z44499783/NoADList">https://github.com/z44499783/NoADList</a><br><a href="https://easylist.to/">https://easylist.to/</a>    英文网站</p>
+<hr>
+<hr>
+<p>HalfLife：规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则（几乎每天更新)</p>
+<p>ad-pc.txt：[推荐桌面端]合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance，以及补充的一些规则；<br>ad-mo.txt：合并自Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance；<br>ad.txt：[推荐移动端]合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance，以及补充的一些规则；<br>ad2.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance；<br>ad3.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance、EasyPrivacy；<br>ad-edentw.txt：合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters。<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt</a></p>
+<hr>
+<p>广告过滤规则Adblock plus（ABP）<br>大陆IP的默认列表是EasyList China+EasyList，<br>但因拦截视频广告在国内变得明显不合法，<br>ABP默认列表会被替换成EasyList China+EasyList (compliance)不过滤视频广告版本。<br>如需过滤国内视频广告，请删除默认列表，分开订阅EasyList China与EasyList</p>
+<hr>
+<p>EasyList    - 去除国际网页中大多数广告，包括不需要的框架、图像和对象<br><a href="https://easylist-downloads.adblockplus.org/easylist.txt">https://easylist-downloads.adblockplus.org/easylist.txt</a></p>
+<hr>
+<p>Easylist China：- ABP官方维护的的适合国内使用的规则，更新频繁<br><a href="https://easylist-downloads.adblockplus.org/easylistchina.txt">https://easylist-downloads.adblockplus.org/easylistchina.txt</a></p>
+<hr>
+<p>EasyPrivacy    -是隐私保护，不被跟踪。– 从网络上上完全删除所有形式的跟踪，包括Web错误、跟踪脚本和信息收集，从而保护您的个人数据<br><a href="https://easylist-downloads.adblockplus.org/easyprivacy.txt">https://easylist-downloads.adblockplus.org/easyprivacy.txt</a></p>
+<hr>
+<p>CJX’s Annoyance List：- EasyList China+EasyList &amp; EasyPrivacy的补充过滤烦人的自我推广,并补充EasyPrivacy隐私规则<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt</a></p>
+<hr>
+<p>uBlocklist<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt</a></p>
+<hr>
+<p>乘风广告过滤规则 + 视频过滤规则，乘风规则更新详情<br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt</a><br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt</a></p>
+<hr>
+<p>adt-chinalist-easylist：广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist.txt">http://sub.adtchrome.com/adt-chinalist-easylist.txt</a><br>广告终结者自带规则<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist360.txt">http://sub.adtchrome.com/adt-chinalist-easylist360.txt</a></p>
+<hr>
+<p>Anti-AD<br>目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护<br>屏蔽广告域名、电视盒子广告、APP内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传<br><a href="https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt">https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt</a></p>
+<hr>
+<p>I don’t care about cookies : 我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告。<br><a href="https://www.i-dont-care-about-cookies.eu/abp/">https://www.i-dont-care-about-cookies.eu/abp/</a></p>
+<hr>
+<p>EasyList Cookie List<br>阻止Cookie标语，GDPR覆盖窗口和其他与隐私相关的通知<br><a href="https://easylist-downloads.adblockplus.org/easylist-cookie.txt">https://easylist-downloads.adblockplus.org/easylist-cookie.txt</a></p>
+<hr>
+<p>Adbyby<br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a></p>
+<hr>
+<p>ChinaList2.0（广告净化器内置规则备份）<br><a href="https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt">https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt</a></p>
+<hr>
+<p>其他广告拦截资源汇总 -海外<br>easylist -包括EasyList, EasyPrivacy, EasyList Cookie, Fanboy’s Social&#x2F;Annoyances&#x2F;Notifications Blocking List等<br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
+<hr>
+<p>fanboy国外规则<br><a href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
+<hr>
+<p>uBlockOrigin 相关资源汇总<br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
+<hr>
+<p>Adgurad 拦截规则资源分类汇总<br><a href="https://kb.adguard.com/en/general/adguard-ad-filters">https://kb.adguard.com/en/general/adguard-ad-filters</a></p>
+<hr>
+<hr>
+<p>ADgk - Andriod<br>一个专门为安卓版adguard写的规则,适合在手机浏览器中使用的拦截规则。<br>适用于 AdGuard for Android 的去广告规则（不保证在其他软件使用的效果）</p>
+<ul>
+<li>去除大部分软件的开屏广告</li>
+<li>拦截大部分广告联盟的广告<br>主规则订阅地址 </li>
+<li><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a><br>百度搜索结果内屏蔽百家号<br><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt</a></li>
+</ul>
+<hr>
+<h2 id="Hosts过滤器"><a href="#Hosts过滤器" class="headerlink" title="Hosts过滤器"></a>Hosts过滤器</h2><p>大圣净化 - 大圣净化开发者维护的 Hosts，主要针对国内视频网站<br><a href="https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts">https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts</a><br>1024_hosts - 1024网站及澳门皇家赌场及恶意广告主机列表,你懂得<br><a href="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts">https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts</a><br>yhosts -国内维护。-相当老牌的去广告的Hosts -yhosts是国内比较知名的host维护列表，原作者目前已经停止维护,目前由VeleSila接手更新。<br><a href="https://raw.githubusercontent.com/vokins/yhosts/master/hosts">https://raw.githubusercontent.com/vokins/yhosts/master/hosts</a><br><a href="https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt">https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt</a><br>neoHosts - 国内屏蔽挖矿统计JS&amp;360&amp;百度&amp;、、、国内屏蔽挖矿统计JS&#x2F;常见下载劫持&#x2F;百度全家桶的全天候定位记录等等<br><a href="https://hosts.nfz.moe/full/hosts">https://hosts.nfz.moe/full/hosts</a><br>Hblock -综合多种源集合体屏蔽广告跟踪和恶意软件<br>Hblock是一个脚本程序，他会自动提取来自很多规则源的恶意广告主机列表，比如 EasyList,AdGuard,uBlock ,disconnect.me 等数十个规则源，下面的链接是由该脚本生成的主机列表。<br><a href="https://hblock.molinero.dev/hosts">https://hblock.molinero.dev/hosts</a><br>Google hosts - 提高网站访问速度<br><a href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a><br>Mvps - 屏蔽美欧地区英文网站相关的广告<br><a href="http://winhelp2002.mvps.org/hosts.txt">http://winhelp2002.mvps.org/hosts.txt</a><br>StevenBlack - 屏蔽国外网站广告-国外维护<br>国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件. github上获得15k+ Start 可以通过脚本生成你自己的hosts文件。<br><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</a><br>YousList - 屏蔽韩国网站广告<br><a href="https://raw.githubusercontent.com/yous/YousList/master/hosts.txt">https://raw.githubusercontent.com/yous/YousList/master/hosts.txt</a><br>有海外维护针对移动网站的广告主机列表<br><a href="https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt">https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt</a><br>hmirror来自海外西班牙用户整理的各种主机拦截资源汇总，包括来adguard,easylist,ublock的主机资源. 下面是主机资源汇总页面<br><a href="https://github.com/hectorm/hmirror/">https://github.com/hectorm/hmirror/</a></p>
+<hr>
+<p>路由端屏蔽规则<br>Koolproxy<br><a href="https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt">https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt</a><br>Adbyby（xwhyc-rules）<br>[lazy] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br>[lazy] <a href="https://opt.cn2qq.com/opt-file/lazy.txt">https://opt.cn2qq.com/opt-file/lazy.txt</a><br>[video] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a><br>[video] <a href="https://opt.cn2qq.com/opt-file/video.txt">https://opt.cn2qq.com/opt-file/video.txt</a></p>
+<hr>
+<p>去广告效果检测网站<br><a href="https://checkadblock.ru/">https://checkadblock.ru/</a><br><a href="https://blockads.fivefilters.org/">https://blockads.fivefilters.org/</a><br><a href="https://canyoublockit.com/extreme-test/">https://canyoublockit.com/extreme-test/</a><br><a href="https://ads-blocker.com/testing/">https://ads-blocker.com/testing/</a><br><a href="https://www.detectadblock.com/">https://www.detectadblock.com/</a><br><a href="http://simple-adblock.com/faq/testing-your-adblocker/">http://simple-adblock.com/faq/testing-your-adblocker/</a></p>
+<hr>
+<p>参考资料<br><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a><br><a href="https://github.com/otobtc/ADhosts">https://github.com/otobtc/ADhosts</a><br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a><br><a href="https://github.com/hectorm/hblock">https://github.com/hectorm/hblock</a><br><a href="https://github.com/vokins/yhosts">https://github.com/vokins/yhosts</a><br><a href="https://github.com/StevenBlack/hosts">https://github.com/StevenBlack/hosts</a><br><a href="https://ublock.org/">https://ublock.org/</a><br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a><br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a><br><a href="https://github.com/privacy-protection-tools/anti-AD">https://github.com/privacy-protection-tools/anti-AD</a><br><a href="https://easylist.to/">https://easylist.to/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
+        <tag>插件</tag>
       </tags>
   </entry>
   <entry>
@@ -854,88 +936,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件-插件-广告屏蔽插件和广告规则</title>
-    <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
-    <content><![CDATA[<p>广告屏蔽App和广告规则</p>
-<h2 id="1-广告屏蔽App"><a href="#1-广告屏蔽App" class="headerlink" title="1.广告屏蔽App"></a>1.广告屏蔽App</h2><ul>
-<li><p>1.<a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin  Chrome插件  - ☆现用</a></p>
-</li>
-<li><p>2.<a href="https://www.crxsoso.com/webstore/detail/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard 广告拦截器</a></p>
-</li>
-<li><p>3.<a href="https://www.crxsoso.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb">Adblock Plus - 免费的广告拦截器</a></p>
-</li>
-</ul>
-<h2 id="2-广告规则"><a href="#2-广告规则" class="headerlink" title="2. 广告规则"></a>2. 广告规则</h2><hr>
-<p>自己现在使用的uBlock Origin<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a></p>
-<hr>
-<span id="more"></span>
-
-<p>规则记录网站  </p>
-<p><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a>        - github 半生<br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a>        - CJX国外<br><a href="https://github.com/xinggsf/Adblock-Plus-Rule">https://github.com/xinggsf/Adblock-Plus-Rule</a>    - 乘风<br><a href="https://github.com/TG-Twilight/AWAvenue-Ads-Rule/">https://github.com/TG-Twilight/AWAvenue-Ads-Rule/</a>   - 秋风广告规则<br><a href="https://github.com/z44499783/NoADList">https://github.com/z44499783/NoADList</a><br><a href="https://easylist.to/">https://easylist.to/</a>    英文网站</p>
-<hr>
-<hr>
-<p>HalfLife：规则合并自 EasylistChina、EasylistLite、CJX’sAnnoyance 合并规则（几乎每天更新)</p>
-<p>ad-pc.txt：[推荐桌面端]合并自乘风视频广告过滤规则、Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance，以及补充的一些规则；<br>ad-mo.txt：合并自Easylist、EasylistChina、EasyPrivacy、CJX’sAnnoyance；<br>ad.txt：[推荐移动端]合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance，以及补充的一些规则；<br>ad2.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance；<br>ad3.txt：合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX’sAnnoyance、EasyPrivacy；<br>ad-edentw.txt：合并自Adblock Warning Removal List、ABP filters、anti-adblock-killer-filters。<br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-pc.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-mo.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad2.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad3.txt</a><br><a href="https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt">https://ghraw.eu.org/sbwml/halflife-list/refs/heads/master/ad-edentw.txt</a></p>
-<hr>
-<p>广告过滤规则Adblock plus（ABP）<br>大陆IP的默认列表是EasyList China+EasyList，<br>但因拦截视频广告在国内变得明显不合法，<br>ABP默认列表会被替换成EasyList China+EasyList (compliance)不过滤视频广告版本。<br>如需过滤国内视频广告，请删除默认列表，分开订阅EasyList China与EasyList</p>
-<hr>
-<p>EasyList    - 去除国际网页中大多数广告，包括不需要的框架、图像和对象<br><a href="https://easylist-downloads.adblockplus.org/easylist.txt">https://easylist-downloads.adblockplus.org/easylist.txt</a></p>
-<hr>
-<p>Easylist China：- ABP官方维护的的适合国内使用的规则，更新频繁<br><a href="https://easylist-downloads.adblockplus.org/easylistchina.txt">https://easylist-downloads.adblockplus.org/easylistchina.txt</a></p>
-<hr>
-<p>EasyPrivacy    -是隐私保护，不被跟踪。– 从网络上上完全删除所有形式的跟踪，包括Web错误、跟踪脚本和信息收集，从而保护您的个人数据<br><a href="https://easylist-downloads.adblockplus.org/easyprivacy.txt">https://easylist-downloads.adblockplus.org/easyprivacy.txt</a></p>
-<hr>
-<p>CJX’s Annoyance List：- EasyList China+EasyList &amp; EasyPrivacy的补充过滤烦人的自我推广,并补充EasyPrivacy隐私规则<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-annoyance.txt</a></p>
-<hr>
-<p>uBlocklist<br><a href="https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt">https://ghraw.eu.org/cjx82630/cjxlist/master/cjx-ublock.txt</a></p>
-<hr>
-<p>乘风广告过滤规则 + 视频过滤规则，乘风规则更新详情<br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/rule.txt</a><br><a href="https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt">https://ghraw.eu.org/xinggsf/Adblock-Plus-Rule/master/mv.txt</a></p>
-<hr>
-<p>adt-chinalist-easylist：广告终结者使用的拦截规则，基于ChinaList+EasyList修正维护<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist.txt">http://sub.adtchrome.com/adt-chinalist-easylist.txt</a><br>广告终结者自带规则<br><a href="http://sub.adtchrome.com/adt-chinalist-easylist360.txt">http://sub.adtchrome.com/adt-chinalist-easylist360.txt</a></p>
-<hr>
-<p>Anti-AD<br>目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护<br>屏蔽广告域名、电视盒子广告、APP内置广告，同时屏蔽了一些日志收集、大数据统计等涉及个人隐私信息的站点，能够保护个人隐私不被偷偷上传<br><a href="https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt">https://ghraw.eu.org/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt</a></p>
-<hr>
-<p>I don’t care about cookies : 我不关心 Cookie 的问题，屏蔽网站的 cookies 相关的警告。<br><a href="https://www.i-dont-care-about-cookies.eu/abp/">https://www.i-dont-care-about-cookies.eu/abp/</a></p>
-<hr>
-<p>EasyList Cookie List<br>阻止Cookie标语，GDPR覆盖窗口和其他与隐私相关的通知<br><a href="https://easylist-downloads.adblockplus.org/easylist-cookie.txt">https://easylist-downloads.adblockplus.org/easylist-cookie.txt</a></p>
-<hr>
-<p>Adbyby<br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br><a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a></p>
-<hr>
-<p>ChinaList2.0（广告净化器内置规则备份）<br><a href="https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt">https://raw.githubusercontent.com/Zsy-2014/ChinaList2.0/master/ChinaList2.0.txt</a></p>
-<hr>
-<p>其他广告拦截资源汇总 -海外<br>easylist -包括EasyList, EasyPrivacy, EasyList Cookie, Fanboy’s Social&#x2F;Annoyances&#x2F;Notifications Blocking List等<br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a></p>
-<hr>
-<p>fanboy国外规则<br><a href="https://easylist.to/easylist/fanboy-social.txt">https://easylist.to/easylist/fanboy-social.txt</a></p>
-<hr>
-<p>uBlockOrigin 相关资源汇总<br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a></p>
-<hr>
-<p>Adgurad 拦截规则资源分类汇总<br><a href="https://kb.adguard.com/en/general/adguard-ad-filters">https://kb.adguard.com/en/general/adguard-ad-filters</a></p>
-<hr>
-<hr>
-<p>ADgk - Andriod<br>一个专门为安卓版adguard写的规则,适合在手机浏览器中使用的拦截规则。<br>适用于 AdGuard for Android 的去广告规则（不保证在其他软件使用的效果）</p>
-<ul>
-<li>去除大部分软件的开屏广告</li>
-<li>拦截大部分广告联盟的广告<br>主规则订阅地址 </li>
-<li><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt</a><br>百度搜索结果内屏蔽百家号<br><a href="https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt">https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt</a></li>
-</ul>
-<hr>
-<h2 id="Hosts过滤器"><a href="#Hosts过滤器" class="headerlink" title="Hosts过滤器"></a>Hosts过滤器</h2><p>大圣净化 - 大圣净化开发者维护的 Hosts，主要针对国内视频网站<br><a href="https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts">https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts</a><br>1024_hosts - 1024网站及澳门皇家赌场及恶意广告主机列表,你懂得<br><a href="https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts">https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts</a><br>yhosts -国内维护。-相当老牌的去广告的Hosts -yhosts是国内比较知名的host维护列表，原作者目前已经停止维护,目前由VeleSila接手更新。<br><a href="https://raw.githubusercontent.com/vokins/yhosts/master/hosts">https://raw.githubusercontent.com/vokins/yhosts/master/hosts</a><br><a href="https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt">https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt</a><br>neoHosts - 国内屏蔽挖矿统计JS&amp;360&amp;百度&amp;、、、国内屏蔽挖矿统计JS&#x2F;常见下载劫持&#x2F;百度全家桶的全天候定位记录等等<br><a href="https://hosts.nfz.moe/full/hosts">https://hosts.nfz.moe/full/hosts</a><br>Hblock -综合多种源集合体屏蔽广告跟踪和恶意软件<br>Hblock是一个脚本程序，他会自动提取来自很多规则源的恶意广告主机列表，比如 EasyList,AdGuard,uBlock ,disconnect.me 等数十个规则源，下面的链接是由该脚本生成的主机列表。<br><a href="https://hblock.molinero.dev/hosts">https://hblock.molinero.dev/hosts</a><br>Google hosts - 提高网站访问速度<br><a href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a><br>Mvps - 屏蔽美欧地区英文网站相关的广告<br><a href="http://winhelp2002.mvps.org/hosts.txt">http://winhelp2002.mvps.org/hosts.txt</a><br>StevenBlack - 屏蔽国外网站广告-国外维护<br>国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件. github上获得15k+ Start 可以通过脚本生成你自己的hosts文件。<br><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</a><br>YousList - 屏蔽韩国网站广告<br><a href="https://raw.githubusercontent.com/yous/YousList/master/hosts.txt">https://raw.githubusercontent.com/yous/YousList/master/hosts.txt</a><br>有海外维护针对移动网站的广告主机列表<br><a href="https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt">https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt</a><br>hmirror来自海外西班牙用户整理的各种主机拦截资源汇总，包括来adguard,easylist,ublock的主机资源. 下面是主机资源汇总页面<br><a href="https://github.com/hectorm/hmirror/">https://github.com/hectorm/hmirror/</a></p>
-<hr>
-<p>路由端屏蔽规则<br>Koolproxy<br><a href="https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt">https://houzi-.coding.net/p/my_dream/d/my_dream/git/raw/master/koolproxy.txt</a><br>Adbyby（xwhyc-rules）<br>[lazy] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt</a><br>[lazy] <a href="https://opt.cn2qq.com/opt-file/lazy.txt">https://opt.cn2qq.com/opt-file/lazy.txt</a><br>[video] <a href="https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt">https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt</a><br>[video] <a href="https://opt.cn2qq.com/opt-file/video.txt">https://opt.cn2qq.com/opt-file/video.txt</a></p>
-<hr>
-<p>去广告效果检测网站<br><a href="https://checkadblock.ru/">https://checkadblock.ru/</a><br><a href="https://blockads.fivefilters.org/">https://blockads.fivefilters.org/</a><br><a href="https://canyoublockit.com/extreme-test/">https://canyoublockit.com/extreme-test/</a><br><a href="https://ads-blocker.com/testing/">https://ads-blocker.com/testing/</a><br><a href="https://www.detectadblock.com/">https://www.detectadblock.com/</a><br><a href="http://simple-adblock.com/faq/testing-your-adblocker/">http://simple-adblock.com/faq/testing-your-adblocker/</a></p>
-<hr>
-<p>参考资料<br><a href="https://github.com/sbwml/halflife-list">https://github.com/sbwml/halflife-list</a><br><a href="https://github.com/otobtc/ADhosts">https://github.com/otobtc/ADhosts</a><br><a href="https://github.com/cjx82630/cjxlist">https://github.com/cjx82630/cjxlist</a><br><a href="https://github.com/hectorm/hblock">https://github.com/hectorm/hblock</a><br><a href="https://github.com/vokins/yhosts">https://github.com/vokins/yhosts</a><br><a href="https://github.com/StevenBlack/hosts">https://github.com/StevenBlack/hosts</a><br><a href="https://ublock.org/">https://ublock.org/</a><br><a href="https://github.com/uBlockOrigin/uAssets">https://github.com/uBlockOrigin/uAssets</a><br><a href="https://github.com/easylist/easylist/">https://github.com/easylist/easylist/</a><br><a href="https://github.com/privacy-protection-tools/anti-AD">https://github.com/privacy-protection-tools/anti-AD</a><br><a href="https://easylist.to/">https://easylist.to/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>chrome</tag>
-        <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-apk-阅读3.0</title>
     <url>/2022/05/11/2022-05-11-%E8%BD%AF%E4%BB%B6-apk-%E9%98%85%E8%AF%BB3.0/</url>
     <content><![CDATA[<h1 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h1><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://github.com/gedoor/legado/releases/latest">Release · gedoor&#x2F;legado · GitHub</a></p>
@@ -1024,32 +1024,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 扫描全能王</title>
-    <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-apk-%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B/</url>
-    <content><![CDATA[<p>几款好用的扫描软件apk</p>
-<p>扫描全能王,扫描君(扫描王全能宝)</p>
-<span id="more"></span>
-
-<h1 id="1-扫描全能王"><a href="#1-扫描全能王" class="headerlink" title="1.扫描全能王"></a>1.扫描全能王</h1><p>大神分享：</p>
-<p><a href="https://apphot.cc/9186.html">https://apphot.cc/9186.html</a></p>
-<p><a href="https://www.423down.com/8129.html">https://www.423down.com/8129.html</a></p>
-<p><a href="https://www.ghxi.com/camscanner.html">https://www.ghxi.com/camscanner.html</a></p>
-<p>下载地址：</p>
-<p>yoyodadada蓝凑云 - 推荐：<a href="https://yoyodadada.lanzouw.com/b07pt10h">https://yoyodadada.lanzouw.com/b07pt10h</a></p>
-<p>烈火百度盘: <a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
-<h1 id="2-扫描君-扫描王全能宝"><a href="#2-扫描君-扫描王全能宝" class="headerlink" title="2.扫描君(扫描王全能宝)"></a>2.扫描君(扫描王全能宝)</h1><p><a href="https://423down.lanzouo.com/b0f1aq5sb">https://423down.lanzouo.com/b0f1aq5sb</a></p>
-<p><a href="https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F">https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F</a></p>
-<p>烈火分享 - 资源目录里面的同类APP下：<br><a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-win-Aria2 Tools安装使用说明</title>
     <url>/2022/05/31/2022-05-31-%E8%BD%AF%E4%BB%B6-win-%E5%85%A8%E8%83%BD%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6-Aria2/</url>
     <content><![CDATA[<h1 id="Aria2-Tools安装使用说明"><a href="#Aria2-Tools安装使用说明" class="headerlink" title="Aria2 Tools安装使用说明"></a>Aria2 Tools安装使用说明</h1><p>Aria2 Tools下载地址：自用版</p>
@@ -1096,6 +1070,32 @@
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 扫描全能王</title>
+    <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-apk-%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B/</url>
+    <content><![CDATA[<p>几款好用的扫描软件apk</p>
+<p>扫描全能王,扫描君(扫描王全能宝)</p>
+<span id="more"></span>
+
+<h1 id="1-扫描全能王"><a href="#1-扫描全能王" class="headerlink" title="1.扫描全能王"></a>1.扫描全能王</h1><p>大神分享：</p>
+<p><a href="https://apphot.cc/9186.html">https://apphot.cc/9186.html</a></p>
+<p><a href="https://www.423down.com/8129.html">https://www.423down.com/8129.html</a></p>
+<p><a href="https://www.ghxi.com/camscanner.html">https://www.ghxi.com/camscanner.html</a></p>
+<p>下载地址：</p>
+<p>yoyodadada蓝凑云 - 推荐：<a href="https://yoyodadada.lanzouw.com/b07pt10h">https://yoyodadada.lanzouw.com/b07pt10h</a></p>
+<p>烈火百度盘: <a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
+<h1 id="2-扫描君-扫描王全能宝"><a href="#2-扫描君-扫描王全能宝" class="headerlink" title="2.扫描君(扫描王全能宝)"></a>2.扫描君(扫描王全能宝)</h1><p><a href="https://423down.lanzouo.com/b0f1aq5sb">https://423down.lanzouo.com/b0f1aq5sb</a></p>
+<p><a href="https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F">https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F</a></p>
+<p>烈火分享 - 资源目录里面的同类APP下：<br><a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
       </tags>
   </entry>
   <entry>
@@ -1288,29 +1288,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 驱动</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
-<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
-<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
-<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
-<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
-<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
-<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>驱动</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk - 手机优化清理 - 雪豹速清、清浊</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-apk-%E6%89%8B%E6%9C%BA%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>手机优化清理 - 雪豹速清、清浊</p>
@@ -1335,6 +1312,29 @@
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 驱动</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
+<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
+<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
+<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
+<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
+<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
+<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>驱动</tag>
       </tags>
   </entry>
   <entry>
@@ -1878,33 +1878,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
-    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
-<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
-</code></pre>
-<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
-</code></pre>
-<span id="more"></span>
-<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
-选择单个repository权限,
-完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
-在下一步`Deploy`,
-完成，部署成功。
-</code></pre>
-<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
-
-OK,大功告成！
-</code></pre>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 博客从Jekyll更换到Hexo</title>
     <url>/2022/08/09/2022-08-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E4%BB%8EJekyll%E6%9B%B4%E6%8D%A2%E5%88%B0Hexo/</url>
     <content><![CDATA[<h1 id="博客从Jekyll更换到Hexo"><a href="#博客从Jekyll更换到Hexo" class="headerlink" title="博客从Jekyll更换到Hexo"></a>博客从Jekyll更换到Hexo</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>更换原因：1.电脑系统升级了，Win10x64<br>          2.Vercel对Jekyll不友好，不支持<code>Liquid</code>模板语言来处理模板<br>          3.Hexo主题的好多问题search可以解决</p>
@@ -1975,6 +1948,33 @@ OK,大功告成！
 <h3 id="缺少package-lock-json"><a href="#缺少package-lock-json" class="headerlink" title="缺少package-lock.json"></a>缺少<code>package-lock.json</code></h3><p>package-lock.json作用：</p>
 <p><em>主要解决问题场景：</em><br><em>前景：</em><br>比如你的packgae.json的依赖是”react”: “^17.0.2”，因为有标识符^，所以如果react模块有在17大版本下更新的小版本17.0.3，npm install时候会自动安装17下的最新版本17.0.3<br><em>现象：</em><br>在前景情况下，你本地是”react”: “^17.0.2”，如果这时候react更新”react”: “^17.0.3”，别人npm install的时候，安装就是”react”: “^17.0.3”。这样导致你们版本不一致，可能引起一些相关错误。<br><em>解决：</em><br>package-lock.json：简单来说就是锁定安装模块的版本号。<br>就是在npm install的时候，记录各个模块的版本信息和下载路径，这样别人拉项目npm install时候， 就会依据packgae-lock.json去安装”react”: “^17.0.2”，保证大家依赖一致并且安装模块速度也能提高。<br><em>注意点:</em><br>1.npm安装，没有package-lock.json文件，如果npm版本是5+，会自动生成package-lock.json。有的话会默认依据该文件进行安装而不是package.json。cnpm不支持（忽略）依据package-lock.json文件安装模块，默认依赖package.json进行安装。<br>2.需要更新版本，得去更新package.json里的模块版本，然后npm install，才能同步更新到package-lock.json<br>3.该功能基于npm5+</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了heson大佬的文章和方法<a href="https://www.heson10.com/posts/61031.html">黑石博客 - 利用Github Action实现hexo博客的自动部署</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
+</code></pre>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<span id="more"></span>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
+
+OK,大功告成！
+</code></pre>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2130,34 +2130,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 笔记软件mybase</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
-<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
-<p>现用的mybase好用，支持md</p>
-</blockquote>
-<span id="more"></span>
-<p>下载地址：</p>
-<p>产品介绍：</p>
-<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
-<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
-<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
-<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
-<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
-<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
-<p>科学安装步骤：</p>
-<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win快速启动软件lily和lucy</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2189,6 +2161,34 @@ OK,大功告成！
 <li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
 <li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
 </ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 笔记软件mybase</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
+<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
+<p>现用的mybase好用，支持md</p>
+</blockquote>
+<span id="more"></span>
+<p>下载地址：</p>
+<p>产品介绍：</p>
+<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
+<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
+<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
+<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
+<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
+<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
+<p>科学安装步骤：</p>
+<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
 ]]></content>
       <categories>
         <category>软件</category>
