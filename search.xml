@@ -378,6 +378,51 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 2.jekyll博客的若干手记</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
+<span id="more"></span>
+
+<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
+<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
+<ul>
+<li>layout 模板文件，需要放在_layouts目录下</li>
+<li>title:标题</li>
+<li>date: 日期</li>
+<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
+<li>categories 分类，也可以是category</li>
+<li>img:  图片链接</li>
+<li>published true or false，发表与否</li>
+<li>permalink 固定链接</li>
+</ul>
+<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
+<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
+<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
+<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
+<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 搭建个人博客</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
@@ -425,51 +470,6 @@
 </ol>
 <hr>
 <p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 2.jekyll博客的若干手记</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
-<span id="more"></span>
-
-<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
-<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
-<ul>
-<li>layout 模板文件，需要放在_layouts目录下</li>
-<li>title:标题</li>
-<li>date: 日期</li>
-<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
-<li>categories 分类，也可以是category</li>
-<li>img:  图片链接</li>
-<li>published true or false，发表与否</li>
-<li>permalink 固定链接</li>
-</ul>
-<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
-<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
-<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
-<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
-
-<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
-<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -669,7 +669,7 @@
 <p><a href="https://huajiakeji.com/">https://huajiakeji.com/    </a>            - 要验证码</p>
 <p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
 <hr>
-<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#115;&#x77;&#101;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#109;&#x2e;&#x6d;&#101;">&#115;&#x77;&#101;&#x65;&#x74;&#114;&#x78;&#64;&#112;&#109;&#x2e;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
+<p>Violentmonkey<br><a href="https://app.koofr.net/dav/Koofr/all/">https://app.koofr.net/dav/Koofr/all/</a><br><a href="mailto:&#x73;&#119;&#101;&#x65;&#x74;&#114;&#x78;&#x40;&#112;&#109;&#46;&#x6d;&#101;">&#x73;&#119;&#101;&#x65;&#x74;&#114;&#x78;&#x40;&#112;&#109;&#46;&#x6d;&#101;</a><br>u7ao qpaa 3m75 jdvg</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -760,6 +760,65 @@
       <tags>
         <tag>chrome</tag>
         <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-apk-阅读3.0</title>
+    <url>/2022/05/11/2022-05-11-%E8%BD%AF%E4%BB%B6-apk-%E9%98%85%E8%AF%BB3.0/</url>
+    <content><![CDATA[<h1 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h1><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://github.com/gedoor/legado/releases/latest">Release · gedoor&#x2F;legado · GitHub</a></p>
+<p><a href="https://miaogongzi.lanzout.com/b01rgkhhe">miaogongzi - 蓝奏 - 更新快</a></p>
+<p><a href="https://yxzhi.lanzoub.com/b03qejqyd">鸭先知 - 蓝奏 - 更新快</a></p>
+<h3 id="订阅源"><a href="#订阅源" class="headerlink" title="订阅源"></a>订阅源</h3><ul>
+<li><a href="http://yuedu.miaogongzi.net/gx.html">miaogongzi.net书源分享</a></li>
+<li><a href="http://www.yckceo.com/">源仓库 - 书源网站</a></li>
+<li><a href="https://shuyuan.yiove.com/">Yiove 书源仓库</a></li>
+<li><a href="https://www.gitlink.org.cn/yi-c/yd">一程&#x2F;阅读｜书源分享 - gitlink</a><span id="more"></span>
+<strong>注意：可以直接从上面几个书源分享网站找最新的也可以</strong></li>
+</ul>
+<p>现用书源地址：</p>
+<p>XIU2<br><code>https://yuedu.xiu2.xyz/shuyuan</code></p>
+<p><code>https://ghp.ci/https://raw.githubusercontent.com/XIU2/Yuedu/master/shuyuan</code></p>
+<p>大灰狼<br><code>https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json</code></p>
+<p>一程<br><code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/sy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
+<p>订阅:<br>一程<br> <code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/dy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
+<hr>
+<h1 id="关于TTS引擎"><a href="#关于TTS引擎" class="headerlink" title="关于TTS引擎"></a>关于TTS引擎</h1><p>使用方法</p>
+<p>1.看书界面点开【朗读】</p>
+<p>2.右下角打开【设置】</p>
+<p>3.我这里做了个标记，安装的本地TTS会以下面这种形式展示出来，想用哪个选哪个即可</p>
+<h3 id="1-本地TTS"><a href="#1-本地TTS" class="headerlink" title="1.本地TTS"></a>1.本地TTS</h3><p><a href="https://mp.weixin.qq.com/s/A82ky5hWm9yMKTgqmPj2ew">https://mp.weixin.qq.com/s/A82ky5hWm9yMKTgqmPj2ew</a></p>
+<p>先说一下使用吧，阅读目前是可以使用在线TTS和本地TTS两类不同引擎的，这里面的区别也很简单，就是费不费流量以及效果好不好。</p>
+<p>实际上不少听书爱好者更多的选择是<strong>本地TTS，也就是离线引擎</strong>。</p>
+<p>这里面就有非常多的选择了，比如很多人都在用的讯飞，这个应该说是目前离线引擎里做的最好的之一了。</p>
+<p><strong>使用方法也很简单，只需要去应用商店下载一个【讯飞语记】APP，系统就会默认给你安装上讯飞语记的TTS，这个TTS最好用的地方在于你是可以选择很多发音人的</strong></p>
+<p>除此之外，小米手机自带的小爱，谷歌，苹果的其实都挺不错。这里给大家分享一下来自酷安@墨迹染流年大佬收集的众多本地TTS引擎安装文件：</p>
+<p>下载链接：</p>
+<p><a href="https://www.aliyundrive.com/s/ktpBz1gvpYR">https://www.aliyundrive.com/s/ktpBz1gvpYR</a></p>
+<h3 id="2-TTS在线引擎合集​"><a href="#2-TTS在线引擎合集​" class="headerlink" title="2.TTS在线引擎合集​"></a><a href="https://www.legado.top/blog#tts%E5%9C%A8%E7%BA%BF%E5%BC%95%E6%93%8E%E5%90%88%E9%9B%86">2.TTS在线引擎合集​</a></h3><p>在线TTS我之前主要推荐的是三种：</p>
+<p>第一个是百度TTS，原本一直是内置的，但是因为用的人多的时候百度就会封，所以索性不内置了，大家自己导入。</p>
+<p>第二个是微软的TTS，这个得益于@Ag2s20150909大佬把微软edge的大声朗读API抓下来封装成了app——TTS。个人非常喜欢这个，只要流量够网速快，并且看了我的教程，其实使用起来很舒服。</p>
+<p>最后一个是只有三个月限免，之后需要付费但却最稳定的在线TTS——阿里云TTS。</p>
+<p><strong>以上三类都有一个最大的问题，就是效果需要依赖网速，对于流量的消耗非常大，正常使用一两个小时可能就是几个G的流量没了。对于不少长期听书的人来说挺心疼的，再加上可能会因为网速导致效果不好，卡顿等等，都是问题。</strong></p>
+<p>最后给大家分享一下来自酷安**@千仞云**大佬制作整理的TTS在线引擎合集，里面总共包含了148个非常优质的在线朗读引擎，对于大家来说绝对算是非常棒的福利。</p>
+<p>非常感谢大佬的贡献！</p>
+<p>给大家提供两个链接，一个是网络导入的，直接复制粘贴导入就行：</p>
+<p><strong><a href="legado://import/httpTTS?src=https://shuyuan.mgz6.cc/shuyuan/7e4cc2b69c122b7f4d63fb4ad9b5f866.json">点击此处导入</a></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://shuyuan.mgz6.cc/shuyuan/7e4cc2b69c122b7f4d63fb4ad9b5f866.json</span><br></pre></td></tr></table></figure>
+
+<p>不过估计人一多就彻底崩溃导入不了了。</p>
+<p>需要注意的是这种在线引擎效果很好但是很费流量，使用前务必考虑清楚。</p>
+<h4 id="​微软晓晓TTS"><a href="#​微软晓晓TTS" class="headerlink" title="​微软晓晓TTS"></a><a href="https://www.legado.top/blog#%E5%BE%AE%E8%BD%AF%E6%99%93%E6%99%93tts">​微软晓晓TTS</a></h4><p>神器TTS又更新了，大家有需要的可以下载更新一下：</p>
+<p><a href="https://xs11.lanzoul.com/iwJmH04k4uuj">TTS_release_v0.2_202205091515.apk - 蓝奏云</a></p>
+<p>如果是新人的话点击这里查看**<a href="https://www.legado.top/docs/tutorial-basics/tts-Ag2s20150909">初级教程</a><strong>，<br>然后就是</strong><a href="https://mp.weixin.qq.com/s/0yVhK6XUqFXH3ez84rnFzA">进阶教程</a>**看这里。</p>
+<p>这里再强调一句，在线朗读是一个非常难以琢磨的过程，它不但受网速、TTS引擎影响，同时也会因为小说的段落展示方式、标点符号、甚至是手机设置等等因素影响，所以遇到问题只能自己多摸索，问我真的没啥用…</p>
+<p>另外还有一篇关于本地引擎听书的教程，我也一并放一下，**<a href="https://mp.weixin.qq.com/s/A82ky5hWm9yMKTgqmPj2ew">点击这里查看</a>**。</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
       </tags>
   </entry>
   <entry>
@@ -933,65 +992,6 @@
         <tag>软件</tag>
         <tag>win</tag>
         <tag>BT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-apk-阅读3.0</title>
-    <url>/2022/05/11/2022-05-11-%E8%BD%AF%E4%BB%B6-apk-%E9%98%85%E8%AF%BB3.0/</url>
-    <content><![CDATA[<h1 id="阅读3-0"><a href="#阅读3-0" class="headerlink" title="阅读3.0"></a>阅读3.0</h1><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p><a href="https://github.com/gedoor/legado/releases/latest">Release · gedoor&#x2F;legado · GitHub</a></p>
-<p><a href="https://miaogongzi.lanzout.com/b01rgkhhe">miaogongzi - 蓝奏 - 更新快</a></p>
-<p><a href="https://yxzhi.lanzoub.com/b03qejqyd">鸭先知 - 蓝奏 - 更新快</a></p>
-<h3 id="订阅源"><a href="#订阅源" class="headerlink" title="订阅源"></a>订阅源</h3><ul>
-<li><a href="http://yuedu.miaogongzi.net/gx.html">miaogongzi.net书源分享</a></li>
-<li><a href="http://www.yckceo.com/">源仓库 - 书源网站</a></li>
-<li><a href="https://shuyuan.yiove.com/">Yiove 书源仓库</a></li>
-<li><a href="https://www.gitlink.org.cn/yi-c/yd">一程&#x2F;阅读｜书源分享 - gitlink</a><span id="more"></span>
-<strong>注意：可以直接从上面几个书源分享网站找最新的也可以</strong></li>
-</ul>
-<p>现用书源地址：</p>
-<p>XIU2<br><code>https://yuedu.xiu2.xyz/shuyuan</code></p>
-<p><code>https://ghp.ci/https://raw.githubusercontent.com/XIU2/Yuedu/master/shuyuan</code></p>
-<p>大灰狼<br><code>https://ghp.ci/https://raw.githubusercontent.com/shidahuilang/shuyuan/shuyuan/good.json</code></p>
-<p>一程<br><code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/sy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
-<p>订阅:<br>一程<br> <code>https://cdn05042023.gitlink.org.cn/api/v1/repos/yi-c/yd/raw/dy.json?ref=master&amp;access_token=92edf695d430562349cbfac4009fda6ad36817dd</code></p>
-<hr>
-<h1 id="关于TTS引擎"><a href="#关于TTS引擎" class="headerlink" title="关于TTS引擎"></a>关于TTS引擎</h1><p>使用方法</p>
-<p>1.看书界面点开【朗读】</p>
-<p>2.右下角打开【设置】</p>
-<p>3.我这里做了个标记，安装的本地TTS会以下面这种形式展示出来，想用哪个选哪个即可</p>
-<h3 id="1-本地TTS"><a href="#1-本地TTS" class="headerlink" title="1.本地TTS"></a>1.本地TTS</h3><p><a href="https://mp.weixin.qq.com/s/A82ky5hWm9yMKTgqmPj2ew">https://mp.weixin.qq.com/s/A82ky5hWm9yMKTgqmPj2ew</a></p>
-<p>先说一下使用吧，阅读目前是可以使用在线TTS和本地TTS两类不同引擎的，这里面的区别也很简单，就是费不费流量以及效果好不好。</p>
-<p>实际上不少听书爱好者更多的选择是<strong>本地TTS，也就是离线引擎</strong>。</p>
-<p>这里面就有非常多的选择了，比如很多人都在用的讯飞，这个应该说是目前离线引擎里做的最好的之一了。</p>
-<p><strong>使用方法也很简单，只需要去应用商店下载一个【讯飞语记】APP，系统就会默认给你安装上讯飞语记的TTS，这个TTS最好用的地方在于你是可以选择很多发音人的</strong></p>
-<p>除此之外，小米手机自带的小爱，谷歌，苹果的其实都挺不错。这里给大家分享一下来自酷安@墨迹染流年大佬收集的众多本地TTS引擎安装文件：</p>
-<p>下载链接：</p>
-<p><a href="https://www.aliyundrive.com/s/ktpBz1gvpYR">https://www.aliyundrive.com/s/ktpBz1gvpYR</a></p>
-<h3 id="2-TTS在线引擎合集​"><a href="#2-TTS在线引擎合集​" class="headerlink" title="2.TTS在线引擎合集​"></a><a href="https://www.legado.top/blog#tts%E5%9C%A8%E7%BA%BF%E5%BC%95%E6%93%8E%E5%90%88%E9%9B%86">2.TTS在线引擎合集​</a></h3><p>在线TTS我之前主要推荐的是三种：</p>
-<p>第一个是百度TTS，原本一直是内置的，但是因为用的人多的时候百度就会封，所以索性不内置了，大家自己导入。</p>
-<p>第二个是微软的TTS，这个得益于@Ag2s20150909大佬把微软edge的大声朗读API抓下来封装成了app——TTS。个人非常喜欢这个，只要流量够网速快，并且看了我的教程，其实使用起来很舒服。</p>
-<p>最后一个是只有三个月限免，之后需要付费但却最稳定的在线TTS——阿里云TTS。</p>
-<p><strong>以上三类都有一个最大的问题，就是效果需要依赖网速，对于流量的消耗非常大，正常使用一两个小时可能就是几个G的流量没了。对于不少长期听书的人来说挺心疼的，再加上可能会因为网速导致效果不好，卡顿等等，都是问题。</strong></p>
-<p>最后给大家分享一下来自酷安**@千仞云**大佬制作整理的TTS在线引擎合集，里面总共包含了148个非常优质的在线朗读引擎，对于大家来说绝对算是非常棒的福利。</p>
-<p>非常感谢大佬的贡献！</p>
-<p>给大家提供两个链接，一个是网络导入的，直接复制粘贴导入就行：</p>
-<p><strong><a href="legado://import/httpTTS?src=https://shuyuan.mgz6.cc/shuyuan/7e4cc2b69c122b7f4d63fb4ad9b5f866.json">点击此处导入</a></strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://shuyuan.mgz6.cc/shuyuan/7e4cc2b69c122b7f4d63fb4ad9b5f866.json</span><br></pre></td></tr></table></figure>
-
-<p>不过估计人一多就彻底崩溃导入不了了。</p>
-<p>需要注意的是这种在线引擎效果很好但是很费流量，使用前务必考虑清楚。</p>
-<h4 id="​微软晓晓TTS"><a href="#​微软晓晓TTS" class="headerlink" title="​微软晓晓TTS"></a><a href="https://www.legado.top/blog#%E5%BE%AE%E8%BD%AF%E6%99%93%E6%99%93tts">​微软晓晓TTS</a></h4><p>神器TTS又更新了，大家有需要的可以下载更新一下：</p>
-<p><a href="https://xs11.lanzoul.com/iwJmH04k4uuj">TTS_release_v0.2_202205091515.apk - 蓝奏云</a></p>
-<p>如果是新人的话点击这里查看**<a href="https://www.legado.top/docs/tutorial-basics/tts-Ag2s20150909">初级教程</a><strong>，<br>然后就是</strong><a href="https://mp.weixin.qq.com/s/0yVhK6XUqFXH3ez84rnFzA">进阶教程</a>**看这里。</p>
-<p>这里再强调一句，在线朗读是一个非常难以琢磨的过程，它不但受网速、TTS引擎影响，同时也会因为小说的段落展示方式、标点符号、甚至是手机设置等等因素影响，所以遇到问题只能自己多摸索，问我真的没啥用…</p>
-<p>另外还有一篇关于本地引擎听书的教程，我也一并放一下，**<a href="https://mp.weixin.qq.com/s/A82ky5hWm9yMKTgqmPj2ew">点击这里查看</a>**。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
       </tags>
   </entry>
   <entry>
@@ -1288,6 +1288,29 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 驱动</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
+<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
+<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
+<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
+<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
+<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
+<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>驱动</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - apk - 手机优化清理 - 雪豹速清、清浊</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-apk-%E6%89%8B%E6%9C%BA%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>手机优化清理 - 雪豹速清、清浊</p>
@@ -1315,18 +1338,23 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 驱动</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-win-%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<h3 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h3><p>360驱动大师／驱动精灵／驱动人生</p>
-<p><a href="https://www.423down.com/5768.html">https://www.423down.com/5768.html</a> - 驱动精灵 - 个人使用</p>
-<p><a href="https://www.423down.com/7516.html">https://www.423down.com/7516.html</a> - 驱动人生</p>
-<p><a href="https://www.423down.com/9157.html">https://www.423down.com/9157.html</a> - 360驱动大师</p>
-<p><a href="https://www.423down.com/581.html">https://www.423down.com/581.html</a> - Driver Talent（驱动人生海外版）</p>
+    <title>软件 - win - PDF - 编辑、修改、转换</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-PDF/</url>
+    <content><![CDATA[<h1 id="1-PDF-Windows"><a href="#1-PDF-Windows" class="headerlink" title="1.PDF - Windows"></a>1.PDF - Windows</h1><p>福昕高级PDF编辑器专业版</p>
+<p>是一款可以直接对PDF文档进行编辑、修改、转换</p>
+<span id="more"></span>
+
+<p><a href="https://www.423down.com/12482.html">https://www.423down.com/12482.html</a></p>
+<p><a href="https://www.423down.com/12486.html">https://www.423down.com/12486.html</a></p>
+<p><a href="https://apphot.cc/?s=%E7%A6%8F%E6%98%95">https://apphot.cc/?s=福昕</a></p>
 <p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f1akq0d">https://423down.lanzouo.com/b0f1akq0d</a></p>
-<p><a href="https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg">https://pan.baidu.com/s/1BWKGQspp0ZRF747JKLzLKg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zlep0b">https://ghpym.lanzoui.com/b00zlep0b</a></p>
-<p><a href="https://yoyodadada.lanzouw.com/b01bwkyqf">https://yoyodadada.lanzouw.com/b01bwkyqf</a></p>
+<p><a href="https://423down.lanzouh.com/iX5Jx04lamwf">https://423down.lanzouh.com/iX5Jx04lamwf</a></p>
+<p><a href="https://423down.lanzouo.com/b0f1hcmpi">https://423down.lanzouo.com/b0f1hcmpi</a></p>
+<h1 id="2-PDF-Android"><a href="#2-PDF-Android" class="headerlink" title="2.PDF - Android"></a>2.PDF - Android</h1><p>个人使用的WPS国际版，有会员，功能全</p>
+<p><a href="https://apphot.cc/30309.html">https://apphot.cc/30309.html</a> - pdf软件合集</p>
+<p>下载地址：</p>
+<p><a href="https://wwa.lanzoui.com/b04azn4he">https://wwa.lanzoui.com/b04azn4he</a> 提取码：35rk</p>
+<p><a href="https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge">https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge</a> 密码：24ge</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1334,7 +1362,6 @@
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
-        <tag>驱动</tag>
       </tags>
   </entry>
   <entry>
@@ -1363,33 +1390,6 @@
         <tag>win</tag>
         <tag>apk</tag>
         <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - PDF - 编辑、修改、转换</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-PDF/</url>
-    <content><![CDATA[<h1 id="1-PDF-Windows"><a href="#1-PDF-Windows" class="headerlink" title="1.PDF - Windows"></a>1.PDF - Windows</h1><p>福昕高级PDF编辑器专业版</p>
-<p>是一款可以直接对PDF文档进行编辑、修改、转换</p>
-<span id="more"></span>
-
-<p><a href="https://www.423down.com/12482.html">https://www.423down.com/12482.html</a></p>
-<p><a href="https://www.423down.com/12486.html">https://www.423down.com/12486.html</a></p>
-<p><a href="https://apphot.cc/?s=%E7%A6%8F%E6%98%95">https://apphot.cc/?s=福昕</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouh.com/iX5Jx04lamwf">https://423down.lanzouh.com/iX5Jx04lamwf</a></p>
-<p><a href="https://423down.lanzouo.com/b0f1hcmpi">https://423down.lanzouo.com/b0f1hcmpi</a></p>
-<h1 id="2-PDF-Android"><a href="#2-PDF-Android" class="headerlink" title="2.PDF - Android"></a>2.PDF - Android</h1><p>个人使用的WPS国际版，有会员，功能全</p>
-<p><a href="https://apphot.cc/30309.html">https://apphot.cc/30309.html</a> - pdf软件合集</p>
-<p>下载地址：</p>
-<p><a href="https://wwa.lanzoui.com/b04azn4he">https://wwa.lanzoui.com/b04azn4he</a> 提取码：35rk</p>
-<p><a href="https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge">https://pan.baidu.com/s/1w-qVfGQNDANuVfEbRfG9oQ#24ge</a> 密码：24ge</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
       </tags>
   </entry>
   <entry>
@@ -1436,6 +1436,26 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 截图 - FastStone Capture</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
+    <content><![CDATA[<p>自己使用的截图工具</p>
+<span id="more"></span>
+
+<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
+<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
+<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 图片去水印工具</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%9B%BE%E7%89%87%E5%8E%BB%E6%B0%B4%E5%8D%B0%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<p>图片去水印工具: windows版 和 android版 ，还有在线工具</p>
@@ -1471,26 +1491,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 截图 - FastStone Capture</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E6%88%AA%E5%9B%BE/</url>
-    <content><![CDATA[<p>自己使用的截图工具</p>
-<span id="more"></span>
-
-<h3 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h3><p>FastStone Capture 是一款体积小巧、功能强大、简单易用的屏幕捕捉工具</p>
-<p>分享页：<br><a href="https://www.423down.com/660.html">https://www.423down.com/660.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/iUlyutv61vi">https://423down.lanzouo.com/iUlyutv61vi</a></p>
-<p><a href="https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA">https://pan.baidu.com/s/1poesMDJ6VQc1fqAGaMyEvA</a> 提取码：hhhh</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 电脑优化清理</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>电脑优化清理工具</p>
@@ -1510,30 +1510,6 @@
 <p>分享页：<br><a href="https://www.ghxi.com/processlasso.html">https://www.ghxi.com/processlasso.html</a></p>
 <p>下载地址：</p>
 <p>已高速(如有密码：3519)<a href="http://ct.ghpym.com/d/7369060-41220817-7cf748">http://ct.ghpym.com/d/7369060-41220817-7cf748</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
-<span id="more"></span>
-
-<p>分享地址</p>
-<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
-<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
-<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
-<p>下载地址</p>
-<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
-<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
-<hr>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1588,6 +1564,30 @@
 <p>yoyodadada-PC版 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07pv5xg">https://yoyodadada.lanzouw.com/b07pv5xg</a></p>
 <p><a href="https://pan.lanzouj.com/b01dj5eud">https://pan.lanzouj.com/b01dj5eud</a></p>
 <p><a href="https://lanzoui.com/b04al7aeh">https://lanzoui.com/b04al7aeh</a> 提取码：9h39</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
+<span id="more"></span>
+
+<p>分享地址</p>
+<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
+<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
+<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
+<p>下载地址</p>
+<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
+<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
+<hr>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1828,6 +1828,34 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 博客从Jekyll更换到Hexo</title>
+    <url>/2022/08/09/2022-08-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E4%BB%8EJekyll%E6%9B%B4%E6%8D%A2%E5%88%B0Hexo/</url>
+    <content><![CDATA[<h1 id="博客从Jekyll更换到Hexo"><a href="#博客从Jekyll更换到Hexo" class="headerlink" title="博客从Jekyll更换到Hexo"></a>博客从Jekyll更换到Hexo</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>更换原因：1.电脑系统升级了，Win10x64<br>          2.Vercel对Jekyll不友好，不支持<code>Liquid</code>模板语言来处理模板<br>          3.Hexo主题的好多问题search可以解决</p>
+<span id="more"></span>
+
+<h1 id="Hexo-安装"><a href="#Hexo-安装" class="headerlink" title="Hexo 安装"></a>Hexo 安装</h1><p>到官网自己搜索安装 <a href="https://hexo.io/">https://hexo.io/</a></p>
+<h1 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h1><p>在静态博客框架中，Hexo 向来是最受青睐的选择，没有之一。</p>
+<p>Jekyll 作为 GitHub 官方支持的框架，可以直接托管源码而无需手动生成静态网页，<br>Hugo 借助 Go 语言的性能优势，号称全世界最快的框架，<br>然而这两者都有一点远落后于 Hexo，那就是最为关键的主题生态<br>Hexo 使用 Node.js 开发，从语言层面上就吸引了大批优秀的前端工程师，精美主题可以说是层出不穷。</p>
+<p>Hexo推荐2款主题 ：<a href="https://butterfly.js.org/"> Butterfly </a> <a href="https://theme-next.js.org/">NexT</a></p>
+<h2 id="Hexo主体设置修改"><a href="#Hexo主体设置修改" class="headerlink" title="Hexo主体设置修改"></a>Hexo主体设置修改</h2><p>在 Hexo 中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。<br>其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；<br>另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
+<p>为了描述方便，在以下说明中，将前者称为 <code>站点配置文件</code>， 后者称为 <code>主题配置文件</code></p>
+<h3 id="启用NexT主题"><a href="#启用NexT主题" class="headerlink" title="启用NexT主题"></a>启用NexT主题</h3><pre><code>1.下载最新NexT主题后，放到站点目录的`themes`文件夹下面
+2.打开 `_config.yml站点配置文件`，修改为`theme: next`
+3.在`# Site`下面设置站点信息,下面是自己目前设置
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Sweet RX&#x27;s blog</span><br><span class="line">subtitle: 人生在勤 不索何获</span><br><span class="line">description: This is my internet world!</span><br><span class="line">keywords:</span><br><span class="line">author: Sweet RX</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
+
+<h3 id="NexT主题设置"><a href="#NexT主题设置" class="headerlink" title="NexT主题设置"></a>NexT主题设置</h3><p>在<code>themes\next\</code>里面找到<code>_config.yml主题配置文件</code>,<br>    1.修改<code>Schemes</code>,自己使用的是<code>scheme: Gemini</code><br>    2.在<code>menu:</code>下面根据自己需要修改<br>    3.在<code>avatar:</code>下面修改博主图片<br>    4.在<code>favicon:</code>下面修改站点图标<br>    5.更多修改在<code>主题配置文件</code>自己探索</p>
+<h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><p>后面根据Github Actions + Vercel 实现自动部署 + 双线网站；</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 空调选择</title>
     <url>/2022/07/02/2022-07-02-%E7%94%9F%E6%B4%BB-%E7%A9%BA%E8%B0%83%E9%80%89%E6%8B%A9/</url>
     <content><![CDATA[<h1 id="空调选择"><a href="#空调选择" class="headerlink" title="空调选择"></a>空调选择</h1><p>华凌</p>
@@ -1878,25 +1906,24 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 博客从Jekyll更换到Hexo</title>
-    <url>/2022/08/09/2022-08-09-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E5%8D%9A%E5%AE%A2%E4%BB%8EJekyll%E6%9B%B4%E6%8D%A2%E5%88%B0Hexo/</url>
-    <content><![CDATA[<h1 id="博客从Jekyll更换到Hexo"><a href="#博客从Jekyll更换到Hexo" class="headerlink" title="博客从Jekyll更换到Hexo"></a>博客从Jekyll更换到Hexo</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>更换原因：1.电脑系统升级了，Win10x64<br>          2.Vercel对Jekyll不友好，不支持<code>Liquid</code>模板语言来处理模板<br>          3.Hexo主题的好多问题search可以解决</p>
-<span id="more"></span>
-
-<h1 id="Hexo-安装"><a href="#Hexo-安装" class="headerlink" title="Hexo 安装"></a>Hexo 安装</h1><p>到官网自己搜索安装 <a href="https://hexo.io/">https://hexo.io/</a></p>
-<h1 id="Hexo-主题"><a href="#Hexo-主题" class="headerlink" title="Hexo 主题"></a>Hexo 主题</h1><p>在静态博客框架中，Hexo 向来是最受青睐的选择，没有之一。</p>
-<p>Jekyll 作为 GitHub 官方支持的框架，可以直接托管源码而无需手动生成静态网页，<br>Hugo 借助 Go 语言的性能优势，号称全世界最快的框架，<br>然而这两者都有一点远落后于 Hexo，那就是最为关键的主题生态<br>Hexo 使用 Node.js 开发，从语言层面上就吸引了大批优秀的前端工程师，精美主题可以说是层出不穷。</p>
-<p>Hexo推荐2款主题 ：<a href="https://butterfly.js.org/"> Butterfly </a> <a href="https://theme-next.js.org/">NexT</a></p>
-<h2 id="Hexo主体设置修改"><a href="#Hexo主体设置修改" class="headerlink" title="Hexo主体设置修改"></a>Hexo主体设置修改</h2><p>在 Hexo 中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。<br>其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；<br>另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
-<p>为了描述方便，在以下说明中，将前者称为 <code>站点配置文件</code>， 后者称为 <code>主题配置文件</code></p>
-<h3 id="启用NexT主题"><a href="#启用NexT主题" class="headerlink" title="启用NexT主题"></a>启用NexT主题</h3><pre><code>1.下载最新NexT主题后，放到站点目录的`themes`文件夹下面
-2.打开 `_config.yml站点配置文件`，修改为`theme: next`
-3.在`# Site`下面设置站点信息,下面是自己目前设置
+    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
+    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
+<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
 </code></pre>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Sweet RX&#x27;s blog</span><br><span class="line">subtitle: 人生在勤 不索何获</span><br><span class="line">description: This is my internet world!</span><br><span class="line">keywords:</span><br><span class="line">author: Sweet RX</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
+<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
+</code></pre>
+<span id="more"></span>
+<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
+选择单个repository权限,
+完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
+在下一步`Deploy`,
+完成，部署成功。
+</code></pre>
+<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
 
-<h3 id="NexT主题设置"><a href="#NexT主题设置" class="headerlink" title="NexT主题设置"></a>NexT主题设置</h3><p>在<code>themes\next\</code>里面找到<code>_config.yml主题配置文件</code>,<br>    1.修改<code>Schemes</code>,自己使用的是<code>scheme: Gemini</code><br>    2.在<code>menu:</code>下面根据自己需要修改<br>    3.在<code>avatar:</code>下面修改博主图片<br>    4.在<code>favicon:</code>下面修改站点图标<br>    5.更多修改在<code>主题配置文件</code>自己探索</p>
-<h1 id="后语"><a href="#后语" class="headerlink" title="后语"></a>后语</h1><p>后面根据Github Actions + Vercel 实现自动部署 + 双线网站；</p>
+OK,大功告成！
+</code></pre>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -1948,33 +1975,6 @@
 <h3 id="缺少package-lock-json"><a href="#缺少package-lock-json" class="headerlink" title="缺少package-lock.json"></a>缺少<code>package-lock.json</code></h3><p>package-lock.json作用：</p>
 <p><em>主要解决问题场景：</em><br><em>前景：</em><br>比如你的packgae.json的依赖是”react”: “^17.0.2”，因为有标识符^，所以如果react模块有在17大版本下更新的小版本17.0.3，npm install时候会自动安装17下的最新版本17.0.3<br><em>现象：</em><br>在前景情况下，你本地是”react”: “^17.0.2”，如果这时候react更新”react”: “^17.0.3”，别人npm install的时候，安装就是”react”: “^17.0.3”。这样导致你们版本不一致，可能引起一些相关错误。<br><em>解决：</em><br>package-lock.json：简单来说就是锁定安装模块的版本号。<br>就是在npm install的时候，记录各个模块的版本信息和下载路径，这样别人拉项目npm install时候， 就会依据packgae-lock.json去安装”react”: “^17.0.2”，保证大家依赖一致并且安装模块速度也能提高。<br><em>注意点:</em><br>1.npm安装，没有package-lock.json文件，如果npm版本是5+，会自动生成package-lock.json。有的话会默认依据该文件进行安装而不是package.json。cnpm不支持（忽略）依据package-lock.json文件安装模块，默认依赖package.json进行安装。<br>2.需要更新版本，得去更新package.json里的模块版本，然后npm install，才能同步更新到package-lock.json<br>3.该功能基于npm5+</p>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了heson大佬的文章和方法<a href="https://www.heson10.com/posts/61031.html">黑石博客 - 利用Github Action实现hexo博客的自动部署</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo部署Vercel实现双线部署</title>
-    <url>/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%83%A8%E7%BD%B2Vercel%E5%AE%9E%E7%8E%B0%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<h1 id="Hexo部署Vercel实现双线部署"><a href="#Hexo部署Vercel实现双线部署" class="headerlink" title="Hexo部署Vercel实现双线部署"></a>Hexo部署Vercel实现双线部署</h1><p>在文章<a href="/2022/08/10/2022-08-10-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8GithubAction%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">“hexo博客使用Github Action自动部署”</a>中实现了网站部署到<code>GitHub</code>,现在接着部署到Vercel.com</p>
-<h2 id="1-打开Vercel"><a href="#1-打开Vercel" class="headerlink" title="1.打开Vercel"></a>1.打开Vercel</h2><pre><code>[https://vercel.com/](https://vercel.com/) 
-</code></pre>
-<h2 id="2-使用github账号登录"><a href="#2-使用github账号登录" class="headerlink" title="2.使用github账号登录"></a>2.使用github账号登录</h2><pre><code>使用github账号验证登录
-</code></pre>
-<span id="more"></span>
-<h2 id="3-New-Project"><a href="#3-New-Project" class="headerlink" title="3.New Project"></a>3.New Project</h2><pre><code>在`New Project`下面，`Import Git Repository -- 找到 github里的 xxx.github.io,`
-选择单个repository权限,
-完成后稍等，刷新，在`import Git Repository`下面出现了`xxx.github.io`,点击后面的`import`,
-在下一步`Deploy`,
-完成，部署成功。
-</code></pre>
-<h2 id="4-在部署完成后修改Domains"><a href="#4-在部署完成后修改Domains" class="headerlink" title="4.在部署完成后修改Domains"></a>4.在部署完成后修改Domains</h2><pre><code>在部署完成后,`setting -- Domains -- Edit`,编辑自己想要的`xxx.vercel.app`域名
-
-OK,大功告成！
-</code></pre>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2130,6 +2130,34 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 笔记软件mybase</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
+<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
+<p>现用的mybase好用，支持md</p>
+</blockquote>
+<span id="more"></span>
+<p>下载地址：</p>
+<p>产品介绍：</p>
+<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
+<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
+<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
+<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
+<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
+<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
+<p>科学安装步骤：</p>
+<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win快速启动软件lily和lucy</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2161,34 +2189,6 @@ OK,大功告成！
 <li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
 <li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 笔记软件mybase</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
-<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
-<p>现用的mybase好用，支持md</p>
-</blockquote>
-<span id="more"></span>
-<p>下载地址：</p>
-<p>产品介绍：</p>
-<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
-<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
-<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
-<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
-<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
-<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
-<p>科学安装步骤：</p>
-<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2278,10 +2278,13 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- wifi万能钥匙</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
-    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
-<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
+    <title>软件 - apk- 抖音</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
+    <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
+<p>超过100MB文件下载地址：<a href="https://www.bytepan.com/Wmp0ozhw1zN">https://www.bytepan.com/Wmp0ozhw1zN</a> ； <a href="https://www.123pan.com/s/JceA-f6fi">https://www.123pan.com/s/JceA-f6fi</a></p>
+<h1 id="抖音短视频-老版，精简版"><a href="#抖音短视频-老版，精简版" class="headerlink" title="抖音短视频  - 老版，精简版"></a>抖音短视频  - 老版，精简版</h1><p>抖音短视频 v9.6.0 - 可搜索</p>
+<p><a href="https://678cnn.lanzoue.com/ia70W22kextg">https://678cnn.lanzoue.com/ia70W22kextg</a></p>
+<p><a href="https://4901.kstore.space/app/douyin9.6.0.apk">https://4901.kstore.space/app/douyin9.6.0.apk</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2292,13 +2295,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- 抖音</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
-    <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
-<p>超过100MB文件下载地址：<a href="https://www.bytepan.com/Wmp0ozhw1zN">https://www.bytepan.com/Wmp0ozhw1zN</a> ； <a href="https://www.123pan.com/s/JceA-f6fi">https://www.123pan.com/s/JceA-f6fi</a></p>
-<h1 id="抖音短视频-老版，精简版"><a href="#抖音短视频-老版，精简版" class="headerlink" title="抖音短视频  - 老版，精简版"></a>抖音短视频  - 老版，精简版</h1><p>抖音短视频 v9.6.0 - 可搜索</p>
-<p><a href="https://678cnn.lanzoue.com/ia70W22kextg">https://678cnn.lanzoue.com/ia70W22kextg</a></p>
-<p><a href="https://4901.kstore.space/app/douyin9.6.0.apk">https://4901.kstore.space/app/douyin9.6.0.apk</a></p>
+    <title>软件 - apk- wifi万能钥匙</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
+    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
+<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2430,6 +2430,7 @@ OK,大功告成！
 <h2 id="一、Android版"><a href="#一、Android版" class="headerlink" title="一、Android版"></a>一、Android版</h2><h3 id="1-MusicFree"><a href="#1-MusicFree" class="headerlink" title="1.MusicFree"></a>1.MusicFree</h3><p>一个插件化、定制化、无广告的开源音乐播放器</p>
 <p><a href="https://musicfree.catcat.work/">MusicFree官网</a><br><a href="https://github.com/maotoumao/MusicFree">MusicFree官方Github</a></p>
 <p><a href="https://musicfree.catcat.work/">MusicFree官网下载1：</a><br><a href="https://gh.sixyin.com/https://github.com/maotoumao/MusicFree/releases/download/v0.6.2/app-universal-release.apk">MusicFree下载地址2：</a></p>
+<p><a href="https://raw.1985.cc.cd/https://github.com/Toskysun/MusicFree/releases/download/v0.7.70/MusicFree-v0.7.70-universal-release.apk">Toskysun-MF修改版下载地址:</a></p>
 <p>[自用 plugins 接口：]</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[音乐] : https://rxsub.eu.org/music/musicFree/my/rx.json</span><br></pre></td></tr></table></figure>
 <p>备份：</p>
