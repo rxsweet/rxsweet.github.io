@@ -378,51 +378,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 2.jekyll博客的若干手记</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
-<span id="more"></span>
-
-<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
-<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
-<ul>
-<li>layout 模板文件，需要放在_layouts目录下</li>
-<li>title:标题</li>
-<li>date: 日期</li>
-<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
-<li>categories 分类，也可以是category</li>
-<li>img:  图片链接</li>
-<li>published true or false，发表与否</li>
-<li>permalink 固定链接</li>
-</ul>
-<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
-<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
-<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
-<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
-
-<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
-<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
-<hr>
-<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 搭建个人博客</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
@@ -470,6 +425,51 @@
 </ol>
 <hr>
 <p>原作者：<br><a href="https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/">https://soyee.me/2018/03/12/Use-Github-Pages-and-Jekyll-Build-Bolg/</a></p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 2.jekyll博客的若干手记</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-2-jekyll%E5%86%99%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="基于jekyll写作的若干手记"><a href="#基于jekyll写作的若干手记" class="headerlink" title="基于jekyll写作的若干手记"></a>基于jekyll写作的若干手记</h2><p>Github Pages搭建的BLOG是基于jekyll，在jekyll上书写有一些特别的地方。</p>
+<span id="more"></span>
+
+<h3 id="头信息"><a href="#头信息" class="headerlink" title="头信息"></a>头信息</h3><p>头信息是jekyll跟其他同类，如WordPress区别开来，而且让jekyll显得特别炫酷的地方。<strong>任何只要包含YAML头信息的文件，在jekyll中都能被当作一个特殊文件来处理。</strong></p>
+<p>意思就是说，只要在开头处指定，这个文件就能特殊处理。例如本文开头：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">tags: jekyll YAML github</span><br><span class="line">title: Jekyll Writing Skills</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>可以指定文章的<strong>标签</strong>、<strong>题目</strong>。而YAML的变量通常有：</p>
+<ul>
+<li>layout 模板文件，需要放在_layouts目录下</li>
+<li>title:标题</li>
+<li>date: 日期</li>
+<li>tags 标签。e.g.: [软件,win,apk,合集]</li>
+<li>categories 分类，也可以是category</li>
+<li>img:  图片链接</li>
+<li>published true or false，发表与否</li>
+<li>permalink 固定链接</li>
+</ul>
+<h3 id="更新博客"><a href="#更新博客" class="headerlink" title="更新博客"></a>更新博客</h3><p><strong>发表文章</strong></p>
+<p><strong>在“&#x2F;_posts&#x2F;”目录下，以“2014-3-3-Hello-World.md”格式创建，文章开头需要输出下面固定格式</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">layout: post</span><br><span class="line">title: Chrome浏览器</span><br><span class="line">date:   2022-05-06 </span><br><span class="line">tags: [GFW,经验技术,合集,软件,apk,win,插件,网站]</span><br><span class="line">updated: 2023-02-13 15:31:09categories: </span><br><span class="line">img: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="引用图片和其它资源"><a href="#引用图片和其它资源" class="headerlink" title="引用图片和其它资源"></a>引用图片和其它资源</h3><p>经常地，我们在文章中需要引用图片、下载资料等等。jekyll支持的Markdown和Textile语言在链接这类内容时，用法是不同的。但是，我们只需要关系这类内容究竟放在我们站点的什么位置。</p>
+<p>以Markdown为例，我们如果在文章中引用一个图片，通常是这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![截图](/路径/assets/图片.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>如此一来，我们在站点的assets目录下，存放的<code>图片.jpg</code>即可被链接显示。</p>
+<p>或者，我们链接一个读者们能够下载的PDF文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[下载](http://princeliebe.github.io//assets/mydoc.pdf)</span><br></pre></td></tr></table></figure>
+
+<p>其中<code>http://princeliebe.github.io/</code>可定义变量。如果你的站点只在域名的根URL下展示，你可以不使用该变量，而直接使用<code>/path/file</code>。</p>
+<h2 id="P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"><a href="#P-S-文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。" class="headerlink" title="P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用包起Markdown语法。"></a>P.S. 文章中部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</h2><h3 id="摘录"><a href="#摘录" class="headerlink" title="摘录"></a>摘录</h3><p>1.首先在<code>_config.yml</code>设置<code>excerpt_separator: &quot;&lt;!--more--&gt;&quot;</code><br>2.在文章中摘录后面添加<code>&lt;!--more--&gt;</code><br>3.完成，首页显示的摘录就是文章<code>&lt;!--more--&gt;</code>前面的内容</p>
+<hr>
+<p>原文作者地址：<br><a href="https://soyee.me/2018/03/20/jekyll-tags/">https://soyee.me/2018/03/20/jekyll-tags/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -609,77 +609,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件-win-Chrome浏览器下载和自用插件</title>
-    <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p>更新于2022-05-09</p>
-<p>自己正在用的chrome浏览器和插件下载</p>
-<span id="more"></span>
-
-<h1 id="一、chrome下载"><a href="#一、chrome下载" class="headerlink" title="一、chrome下载"></a>一、chrome下载</h1><h3 id="1-☆推荐下载：MyChrome"><a href="#1-☆推荐下载：MyChrome" class="headerlink" title="1.☆推荐下载：MyChrome"></a>1.☆推荐下载：MyChrome</h3><ul>
-<li><p>作者github：<a href="https://github.com/Jason4774/MyChrome">https://github.com/Jason4774/MyChrome</a></p>
-</li>
-<li><p>备用地址1：<a href="https://hub.nuaa.cf/Jason4774/MyChrome">https://hub.nuaa.cf/Jason4774/MyChrome</a></p>
-</li>
-<li><p>备用地址2：<a href="https://hub.yzuu.cf/Jason4774/MyChrome">https://hub.yzuu.cf/Jason4774/MyChrome</a></p>
-</li>
-<li><p>下载地址1 - 32位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址1 - 64位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-<li><p>下载地址2 - 32位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址2 - 64位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-<li><p>下载地址3 - 32位：<a href="https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z">https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址3 - 64位：<a href="https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z">https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-<li><p>下载地址4 - 32位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址4 - 64位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-</ul>
-<hr>
-<h3 id="2-网站下载最新版"><a href="#2-网站下载最新版" class="headerlink" title="2.网站下载最新版"></a>2.网站下载最新版</h3><p><a href="https://www.iplaysoft.com/tools/chrome/">https://www.iplaysoft.com/tools/chrome/</a> -最新版下载</p>
-<p><a href="https://www.chromedownloads.net/">https://www.chromedownloads.net</a> -chrome浏览器,chrome插件,谈笑有鸿儒</p>
-<hr>
-<h1 id="二、chrome插件"><a href="#二、chrome插件" class="headerlink" title="二、chrome插件"></a>二、chrome插件</h1><h3 id="个人使用插件："><a href="#个人使用插件：" class="headerlink" title="个人使用插件："></a>个人使用插件：</h3><ol>
-<li><a href="https://www.crxsoso.com/webstore/detail/fohimdklhhcpcnpmmichieidclgfdmol">BookmarkHub - 【书签同步】 - Crx搜搜</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm">Proxy SwitchySharp</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag">Violentmonkey暴力猴 【脚本管理】- Crx搜搜</a></li>
-<li><a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey油猴 【脚本管理】- 极简插件</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin【广告屏蔽】</a></li>
-<li><a href="https://www.crx4.com/30262.html">Chrono【下载管理器】</a></li>
-<li><a href="https://github.com/KurtBestor/Hitomi-Downloader">Hitomi-Downloader【视频嗅探下载】</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/nnnkddnnlpamobajfibfdgfnbcnkgngh">Infinity Pro 【标签管理】</a>    - c.sml    W*53推荐</li>
-<li><a href="https://itab.link/?from=itab">iTab【标签管理】  - itab.link</a> - c.sml Itab53推荐</li>
-<li><a href="https://ruffle.rs/#what-is-ruffle">ruffle - Rus语言编写的 Flash Player模拟器</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/nngceckbapebfimnlniiiahkandclblb">Bitwarden - 免费密码管理器 - Crx搜搜</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/cnojnbdhbhnkbcieeekonklommdnndci">Search by Image 以图搜图 - Crx搜搜</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus 鼠标指针悬停预览 - Crx搜搜</a>](<a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo</a>)</li>
-<li><a href="https://raw.githubusercontent.com/cszszs/all/main/bookmarks/bookmarks">MyBookmark</a></li>
-</ol>
-<h3 id="插件下载网站"><a href="#插件下载网站" class="headerlink" title="插件下载网站"></a>插件下载网站</h3><p><a href="https://www.crxsoso.com/">https://www.crxsoso.com/</a>        - Crx搜搜_现用</p>
-<p><a href="https://chrome.zzzmh.cn/#/index">https://chrome.zzzmh.cn/#/index</a>    - 极简插件</p>
-<p><a href="https://crxdl.com/">https://crxdl.com/</a>                - CrxDL.COM</p>
-<p><a href="https://www.crx4.com/">https://www.crx4.com/</a>            - crx4.com</p>
-<p><a href="https://www.crx4chrome.com/">https://www.crx4chrome.com/</a>        - 英文站</p>
-<p><a href="https://www.chromedownloads.net/extensions/">https://www.chromedownloads.net/extensions/</a>    - </p>
-<p><a href="https://www.cnplugins.com/top/">https://www.cnplugins.com/top/</a>        - 要验证码</p>
-<p><a href="https://huajiakeji.com/">https://huajiakeji.com/    </a>            - 要验证码</p>
-<p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
-<hr>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>chrome</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-插件-广告屏蔽插件和广告规则</title>
     <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
     <content><![CDATA[<p>广告屏蔽App和广告规则</p>
@@ -759,6 +688,77 @@
       <tags>
         <tag>chrome</tag>
         <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件-win-Chrome浏览器下载和自用插件</title>
+    <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p>更新于2022-05-09</p>
+<p>自己正在用的chrome浏览器和插件下载</p>
+<span id="more"></span>
+
+<h1 id="一、chrome下载"><a href="#一、chrome下载" class="headerlink" title="一、chrome下载"></a>一、chrome下载</h1><h3 id="1-☆推荐下载：MyChrome"><a href="#1-☆推荐下载：MyChrome" class="headerlink" title="1.☆推荐下载：MyChrome"></a>1.☆推荐下载：MyChrome</h3><ul>
+<li><p>作者github：<a href="https://github.com/Jason4774/MyChrome">https://github.com/Jason4774/MyChrome</a></p>
+</li>
+<li><p>备用地址1：<a href="https://hub.nuaa.cf/Jason4774/MyChrome">https://hub.nuaa.cf/Jason4774/MyChrome</a></p>
+</li>
+<li><p>备用地址2：<a href="https://hub.yzuu.cf/Jason4774/MyChrome">https://hub.yzuu.cf/Jason4774/MyChrome</a></p>
+</li>
+<li><p>下载地址1 - 32位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址1 - 64位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+<li><p>下载地址2 - 32位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址2 - 64位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+<li><p>下载地址3 - 32位：<a href="https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z">https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址3 - 64位：<a href="https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z">https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+<li><p>下载地址4 - 32位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址4 - 64位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="2-网站下载最新版"><a href="#2-网站下载最新版" class="headerlink" title="2.网站下载最新版"></a>2.网站下载最新版</h3><p><a href="https://www.iplaysoft.com/tools/chrome/">https://www.iplaysoft.com/tools/chrome/</a> -最新版下载</p>
+<p><a href="https://www.chromedownloads.net/">https://www.chromedownloads.net</a> -chrome浏览器,chrome插件,谈笑有鸿儒</p>
+<hr>
+<h1 id="二、chrome插件"><a href="#二、chrome插件" class="headerlink" title="二、chrome插件"></a>二、chrome插件</h1><h3 id="个人使用插件："><a href="#个人使用插件：" class="headerlink" title="个人使用插件："></a>个人使用插件：</h3><ol>
+<li><a href="https://www.crxsoso.com/webstore/detail/fohimdklhhcpcnpmmichieidclgfdmol">BookmarkHub - 【书签同步】 - Crx搜搜</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm">Proxy SwitchySharp</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag">Violentmonkey暴力猴 【脚本管理】- Crx搜搜</a></li>
+<li><a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey油猴 【脚本管理】- 极简插件</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin【广告屏蔽】</a></li>
+<li><a href="https://www.crx4.com/30262.html">Chrono【下载管理器】</a></li>
+<li><a href="https://github.com/KurtBestor/Hitomi-Downloader">Hitomi-Downloader【视频嗅探下载】</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/nnnkddnnlpamobajfibfdgfnbcnkgngh">Infinity Pro 【标签管理】</a>    - c.sml    W*53推荐</li>
+<li><a href="https://itab.link/?from=itab">iTab【标签管理】  - itab.link</a> - c.sml Itab53推荐</li>
+<li><a href="https://ruffle.rs/#what-is-ruffle">ruffle - Rus语言编写的 Flash Player模拟器</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/nngceckbapebfimnlniiiahkandclblb">Bitwarden - 免费密码管理器 - Crx搜搜</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/cnojnbdhbhnkbcieeekonklommdnndci">Search by Image 以图搜图 - Crx搜搜</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus 鼠标指针悬停预览 - Crx搜搜</a>](<a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo</a>)</li>
+<li><a href="https://raw.githubusercontent.com/cszszs/all/main/bookmarks/bookmarks">MyBookmark</a></li>
+</ol>
+<h3 id="插件下载网站"><a href="#插件下载网站" class="headerlink" title="插件下载网站"></a>插件下载网站</h3><p><a href="https://www.crxsoso.com/">https://www.crxsoso.com/</a>        - Crx搜搜_现用</p>
+<p><a href="https://chrome.zzzmh.cn/#/index">https://chrome.zzzmh.cn/#/index</a>    - 极简插件</p>
+<p><a href="https://crxdl.com/">https://crxdl.com/</a>                - CrxDL.COM</p>
+<p><a href="https://www.crx4.com/">https://www.crx4.com/</a>            - crx4.com</p>
+<p><a href="https://www.crx4chrome.com/">https://www.crx4chrome.com/</a>        - 英文站</p>
+<p><a href="https://www.chromedownloads.net/extensions/">https://www.chromedownloads.net/extensions/</a>    - </p>
+<p><a href="https://www.cnplugins.com/top/">https://www.cnplugins.com/top/</a>        - 要验证码</p>
+<p><a href="https://huajiakeji.com/">https://huajiakeji.com/    </a>            - 要验证码</p>
+<p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
+<hr>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
+        <tag>软件</tag>
+        <tag>win</tag>
       </tags>
   </entry>
   <entry>
@@ -994,35 +994,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk - 直播合集</title>
-    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
-<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
-<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
-<span id="more"></span>
-
-<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
-<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
-<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
-<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
-<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
-<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
-<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
-<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
-<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
-<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
-<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件-win-Aria2 Tools安装使用说明</title>
     <url>/2022/05/31/2022-05-31-%E8%BD%AF%E4%BB%B6-win-%E5%85%A8%E8%83%BD%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6-Aria2/</url>
     <content><![CDATA[<h1 id="Aria2-Tools安装使用说明"><a href="#Aria2-Tools安装使用说明" class="headerlink" title="Aria2 Tools安装使用说明"></a>Aria2 Tools安装使用说明</h1><p>Aria2 Tools下载地址：自用版</p>
@@ -1072,6 +1043,35 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk - 直播合集</title>
+    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
+<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
+<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
+<span id="more"></span>
+
+<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
+<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
+<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
+<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
+<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
+<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
+<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
+<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
+<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
+<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
+<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - apk - 扫描全能王</title>
     <url>/2022/06/04/2022-06-04-%E8%BD%AF%E4%BB%B6-apk-%E6%89%AB%E6%8F%8F%E5%85%A8%E8%83%BD%E7%8E%8B/</url>
     <content><![CDATA[<p>几款好用的扫描软件apk</p>
@@ -1088,44 +1088,6 @@
 <h1 id="2-扫描君-扫描王全能宝"><a href="#2-扫描君-扫描王全能宝" class="headerlink" title="2.扫描君(扫描王全能宝)"></a>2.扫描君(扫描王全能宝)</h1><p><a href="https://423down.lanzouo.com/b0f1aq5sb">https://423down.lanzouo.com/b0f1aq5sb</a></p>
 <p><a href="https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F">https://pan.baidu.com/s/1Qobj1HhaQg6XPj5J0eh1JA#list/path=%2F</a></p>
 <p>烈火分享 - 资源目录里面的同类APP下：<br><a href="https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ">https://pan.baidu.com/s/1pysVUNk0yTxHhQhbzfR9uQ</a> 提取码：0k7k</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 太极 - 无需ROOT用Xposed框架</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E5%A4%AA%E6%9E%81/</url>
-    <content><![CDATA[<h1 id="太极-Taichi-v承影-无需ROOT用Xposed框架"><a href="#太极-Taichi-v承影-无需ROOT用Xposed框架" class="headerlink" title="太极 Taichi v承影 - 无需ROOT用Xposed框架"></a>太极 Taichi v承影 - 无需ROOT用Xposed框架</h1><p>选择：如果没有 ROOT 想使用 Xposed 模块，可以使用太极 或者 虚拟机vmos pro，已ROOT权限用LSPosed等开源软件</p>
-<span id="more"></span>
-
-<p>介绍：</p>
-<p>太极阴——无需root、不用解锁bootloader，也不需要刷机就能使用xposed模块的app。</p>
-<p>使用方法<br>1.首先添加应用到太极中（俗称渡劫应用）。<br>2.下载xposed模块然后安装到你的手机上。<br>3.在“法宝”中启用需要的xposed模块。<br>4.强制停止对应的应用，xposed模块即可生效。</p>
-<p>温馨提示<br>应用渡劫过程中必须首先卸载，然后才能正常安装;<br>应用渡劫后，需要使用太极，请删除全部系统分身应用。<br>太极剥离了xposed框架修改应用本身部分的功能<br>某些xposed模块可能支持不好，后续会逐渐改进；在某些手机上甚至无法使用（频繁闪退）<br>另外，太极无法修改系统相关的功能.</p>
-<p>太极APP官方下载页面</p>
-<p><a href="https://taichi.cool/zh/download.html">https://taichi.cool/zh/download.html</a></p>
-<p>太极Xposed模块下载中心（收集的各种模块，大部分已不兼容）</p>
-<p><a href="https://taichi.cool/zh/module/">https://taichi.cool/zh/module/</a></p>
-<p>注意：如果需要激活Magisk模式，手机需要解锁+已ROOT权限<br>然后刷太极阳Magisk卡包 (magisk-taichi-v7.x)配合太极APP用</p>
-<p>下载地址</p>
-<p><a href="https://423down.lanzouo.com/b0f1fns7a">https://423down.lanzouo.com/b0f1fns7a</a></p>
-<p><a href="https://pan.baidu.com/s/1i7QVTulIySRFKL3ITG0byQ">https://pan.baidu.com/s/1i7QVTulIySRFKL3ITG0byQ</a></p>
-<p><a href="http://ct.ghpym.com/d/7369060-42210124-976581">http://ct.ghpym.com/d/7369060-42210124-976581</a> - 已高速(如有密码：3519)</p>
-<p><a href="https://apphot.cc/36809.html">https://apphot.cc/36809.html</a>  - 烈火分享页，下面是烈火分享地址</p>
-<p><a href="https://www.lanzoui.com/b04andt5a">https://www.lanzoui.com/b04andt5a</a> 提取码：7zuv</p>
-<p><a href="https://pan.baidu.com/s/1Ja5R1WJtNsdDrf9qIpTBRQ#txg5">https://pan.baidu.com/s/1Ja5R1WJtNsdDrf9qIpTBRQ#txg5</a> 提取码：txg5</p>
-<hr>
-<p>特殊功能：</p>
-<p>通过太极，实现钉钉任意位置、任意WIFI打卡，防检测！<br>1、下载太极和钉钉助手模块，在太极里添加钉钉助手，在太极的模块管理中勾选上钉钉助手模块；<br>2、打开钉钉助手模块，打开模拟定位，选择你要模拟的位置，选项还可以设置模拟定位启用时间；<br>3、打开钉钉app，进入考勤打卡，极速打卡。（如果要WIFI打卡，可下载个WIFI模拟器设置下）</p>
-<hr>
-<h1 id="虚拟大师专业版-VMOS-Pro"><a href="#虚拟大师专业版-VMOS-Pro" class="headerlink" title="虚拟大师专业版 VMOS Pro"></a>虚拟大师专业版 VMOS Pro</h1><p><a href="https://apphot.cc/57177.html">https://apphot.cc/57177.html</a></p>
-<p><a href="https://wwa.lanzoui.com/b04bmyqpi">https://wwa.lanzoui.com/b04bmyqpi</a> 提取码：f21a</p>
-<p><a href="https://pan.baidu.com/s/1wSMJgbm5bc_TLrmWeqfsZA">https://pan.baidu.com/s/1wSMJgbm5bc_TLrmWeqfsZA</a> 提取码：hhhh</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1174,6 +1136,44 @@
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - apk - 太极 - 无需ROOT用Xposed框架</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E5%A4%AA%E6%9E%81/</url>
+    <content><![CDATA[<h1 id="太极-Taichi-v承影-无需ROOT用Xposed框架"><a href="#太极-Taichi-v承影-无需ROOT用Xposed框架" class="headerlink" title="太极 Taichi v承影 - 无需ROOT用Xposed框架"></a>太极 Taichi v承影 - 无需ROOT用Xposed框架</h1><p>选择：如果没有 ROOT 想使用 Xposed 模块，可以使用太极 或者 虚拟机vmos pro，已ROOT权限用LSPosed等开源软件</p>
+<span id="more"></span>
+
+<p>介绍：</p>
+<p>太极阴——无需root、不用解锁bootloader，也不需要刷机就能使用xposed模块的app。</p>
+<p>使用方法<br>1.首先添加应用到太极中（俗称渡劫应用）。<br>2.下载xposed模块然后安装到你的手机上。<br>3.在“法宝”中启用需要的xposed模块。<br>4.强制停止对应的应用，xposed模块即可生效。</p>
+<p>温馨提示<br>应用渡劫过程中必须首先卸载，然后才能正常安装;<br>应用渡劫后，需要使用太极，请删除全部系统分身应用。<br>太极剥离了xposed框架修改应用本身部分的功能<br>某些xposed模块可能支持不好，后续会逐渐改进；在某些手机上甚至无法使用（频繁闪退）<br>另外，太极无法修改系统相关的功能.</p>
+<p>太极APP官方下载页面</p>
+<p><a href="https://taichi.cool/zh/download.html">https://taichi.cool/zh/download.html</a></p>
+<p>太极Xposed模块下载中心（收集的各种模块，大部分已不兼容）</p>
+<p><a href="https://taichi.cool/zh/module/">https://taichi.cool/zh/module/</a></p>
+<p>注意：如果需要激活Magisk模式，手机需要解锁+已ROOT权限<br>然后刷太极阳Magisk卡包 (magisk-taichi-v7.x)配合太极APP用</p>
+<p>下载地址</p>
+<p><a href="https://423down.lanzouo.com/b0f1fns7a">https://423down.lanzouo.com/b0f1fns7a</a></p>
+<p><a href="https://pan.baidu.com/s/1i7QVTulIySRFKL3ITG0byQ">https://pan.baidu.com/s/1i7QVTulIySRFKL3ITG0byQ</a></p>
+<p><a href="http://ct.ghpym.com/d/7369060-42210124-976581">http://ct.ghpym.com/d/7369060-42210124-976581</a> - 已高速(如有密码：3519)</p>
+<p><a href="https://apphot.cc/36809.html">https://apphot.cc/36809.html</a>  - 烈火分享页，下面是烈火分享地址</p>
+<p><a href="https://www.lanzoui.com/b04andt5a">https://www.lanzoui.com/b04andt5a</a> 提取码：7zuv</p>
+<p><a href="https://pan.baidu.com/s/1Ja5R1WJtNsdDrf9qIpTBRQ#txg5">https://pan.baidu.com/s/1Ja5R1WJtNsdDrf9qIpTBRQ#txg5</a> 提取码：txg5</p>
+<hr>
+<p>特殊功能：</p>
+<p>通过太极，实现钉钉任意位置、任意WIFI打卡，防检测！<br>1、下载太极和钉钉助手模块，在太极里添加钉钉助手，在太极的模块管理中勾选上钉钉助手模块；<br>2、打开钉钉助手模块，打开模拟定位，选择你要模拟的位置，选项还可以设置模拟定位启用时间；<br>3、打开钉钉app，进入考勤打卡，极速打卡。（如果要WIFI打卡，可下载个WIFI模拟器设置下）</p>
+<hr>
+<h1 id="虚拟大师专业版-VMOS-Pro"><a href="#虚拟大师专业版-VMOS-Pro" class="headerlink" title="虚拟大师专业版 VMOS Pro"></a>虚拟大师专业版 VMOS Pro</h1><p><a href="https://apphot.cc/57177.html">https://apphot.cc/57177.html</a></p>
+<p><a href="https://wwa.lanzoui.com/b04bmyqpi">https://wwa.lanzoui.com/b04bmyqpi</a> 提取码：f21a</p>
+<p><a href="https://pan.baidu.com/s/1wSMJgbm5bc_TLrmWeqfsZA">https://pan.baidu.com/s/1wSMJgbm5bc_TLrmWeqfsZA</a> 提取码：hhhh</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
         <tag>apk</tag>
       </tags>
   </entry>
@@ -1490,6 +1490,30 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
+<span id="more"></span>
+
+<p>分享地址</p>
+<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
+<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
+<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
+<p>下载地址</p>
+<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
+<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
+<hr>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - 电脑优化清理</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>电脑优化清理工具</p>
@@ -1519,20 +1543,18 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
+    <title>软件 - win - 视频播放器</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/</url>
+    <content><![CDATA[<p>几款好用的视频播放器</p>
 <span id="more"></span>
 
-<p>分享地址</p>
-<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
-<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
-<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
-<p>下载地址</p>
-<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
-<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
-<hr>
+<h2 id="影音播放器-GOM-Player-Plus"><a href="#影音播放器-GOM-Player-Plus" class="headerlink" title="影音播放器 GOM Player Plus"></a>影音播放器 GOM Player Plus</h2><p>GOM Player是全球最受欢迎的影音播放器之一</p>
+<p><a href="https://wwi.lanzoup.com/b04cpom6j">https://wwi.lanzoup.com/b04cpom6j</a> 提取码：8csi</p>
+<h2 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h2><p>PotPlayer播放器是KMPlayer的制作者姜龙喜先生进入Daum公司后的新一代作品，目前主窗口在全力开发中。<br>PotPlayer的优势在于强大的内置解码器；而KMPlayer 的优势在于强大的定制能力和个性化功能。</p>
+<p><a href="https://lanzoui.com/b0i38vsd">https://lanzoui.com/b0i38vsd</a></p>
+<p><a href="https://wwa.lanzoui.com/b04ayt73i">https://wwa.lanzoui.com/b04ayt73i</a> 提取码：5wv7</p>
+<h2 id="MPC-BE（Media-Player-Classic-Black-Edition）-现用"><a href="#MPC-BE（Media-Player-Classic-Black-Edition）-现用" class="headerlink" title="MPC-BE（Media Player Classic Black Edition） - 现用"></a>MPC-BE（Media Player Classic Black Edition） - 现用</h2><p>MPC-BE，免费经典全能影音播放器。这是款经典本地播放器，<br>更新也非常勤快，软件纯净无广告，<br>启动速度非常快，支持解码播放各种视频格式，播放流畅不卡顿，<br>低配电脑播放超清视频流畅无压力</p>
+<p><a href="https://423down.lanzouo.com/b0f2moqte">https://423down.lanzouo.com/b0f2moqte</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1565,28 +1587,6 @@
 <p>yoyodadada-PC版 蓝凑云：<a href="https://yoyodadada.lanzouw.com/b07pv5xg">https://yoyodadada.lanzouw.com/b07pv5xg</a></p>
 <p><a href="https://pan.lanzouj.com/b01dj5eud">https://pan.lanzouj.com/b01dj5eud</a></p>
 <p><a href="https://lanzoui.com/b04al7aeh">https://lanzoui.com/b04al7aeh</a> 提取码：9h39</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 视频播放器</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<p>几款好用的视频播放器</p>
-<span id="more"></span>
-
-<h2 id="影音播放器-GOM-Player-Plus"><a href="#影音播放器-GOM-Player-Plus" class="headerlink" title="影音播放器 GOM Player Plus"></a>影音播放器 GOM Player Plus</h2><p>GOM Player是全球最受欢迎的影音播放器之一</p>
-<p><a href="https://wwi.lanzoup.com/b04cpom6j">https://wwi.lanzoup.com/b04cpom6j</a> 提取码：8csi</p>
-<h2 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h2><p>PotPlayer播放器是KMPlayer的制作者姜龙喜先生进入Daum公司后的新一代作品，目前主窗口在全力开发中。<br>PotPlayer的优势在于强大的内置解码器；而KMPlayer 的优势在于强大的定制能力和个性化功能。</p>
-<p><a href="https://lanzoui.com/b0i38vsd">https://lanzoui.com/b0i38vsd</a></p>
-<p><a href="https://wwa.lanzoui.com/b04ayt73i">https://wwa.lanzoui.com/b04ayt73i</a> 提取码：5wv7</p>
-<h2 id="MPC-BE（Media-Player-Classic-Black-Edition）-现用"><a href="#MPC-BE（Media-Player-Classic-Black-Edition）-现用" class="headerlink" title="MPC-BE（Media Player Classic Black Edition） - 现用"></a>MPC-BE（Media Player Classic Black Edition） - 现用</h2><p>MPC-BE，免费经典全能影音播放器。这是款经典本地播放器，<br>更新也非常勤快，软件纯净无广告，<br>启动速度非常快，支持解码播放各种视频格式，播放流畅不卡顿，<br>低配电脑播放超清视频流畅无压力</p>
-<p><a href="https://423down.lanzouo.com/b0f2moqte">https://423down.lanzouo.com/b0f2moqte</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2258,20 +2258,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- wifi万能钥匙</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
-    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
-<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk- gif助手</title>
     <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-gif%E5%8A%A9%E6%89%8B/</url>
     <content><![CDATA[<h1 id="gif助手"><a href="#gif助手" class="headerlink" title="gif助手"></a>gif助手</h1><p>一款非常好用的GIF工具，常用来在手机上制作GIF动图。</p>
@@ -2291,13 +2277,10 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - apk- 抖音</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
-    <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
-<p>超过100MB文件下载地址：<a href="https://www.bytepan.com/Wmp0ozhw1zN">https://www.bytepan.com/Wmp0ozhw1zN</a> ； <a href="https://www.123pan.com/s/JceA-f6fi">https://www.123pan.com/s/JceA-f6fi</a></p>
-<h1 id="抖音短视频-老版，精简版"><a href="#抖音短视频-老版，精简版" class="headerlink" title="抖音短视频  - 老版，精简版"></a>抖音短视频  - 老版，精简版</h1><p>抖音短视频 v9.6.0 - 可搜索</p>
-<p><a href="https://678cnn.lanzoue.com/ia70W22kextg">https://678cnn.lanzoue.com/ia70W22kextg</a></p>
-<p><a href="https://4901.kstore.space/app/douyin9.6.0.apk">https://4901.kstore.space/app/douyin9.6.0.apk</a></p>
+    <title>软件 - apk- wifi万能钥匙</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-wifi%E4%B8%87%E8%83%BD%E9%92%A5%E5%8C%99/</url>
+    <content><![CDATA[<h1 id="wifi万能钥匙"><a href="#wifi万能钥匙" class="headerlink" title="wifi万能钥匙"></a>wifi万能钥匙</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b07pspej">https://yoyodadada.lanzouw.com/b07pspej</a><br>（包含全部版本，超过100MB的以txt形式分享下载链接，源文件下载链接在下端。）</p>
+<p>v4.6.62下载地址：<a href="https://zijieyunpan.com/2vM55dN5eHC">https://zijieyunpan.com/2vM55dN5eHC</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2321,6 +2304,23 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk- 抖音</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
+    <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
+<p>超过100MB文件下载地址：<a href="https://www.bytepan.com/Wmp0ozhw1zN">https://www.bytepan.com/Wmp0ozhw1zN</a> ； <a href="https://www.123pan.com/s/JceA-f6fi">https://www.123pan.com/s/JceA-f6fi</a></p>
+<h1 id="抖音短视频-老版，精简版"><a href="#抖音短视频-老版，精简版" class="headerlink" title="抖音短视频  - 老版，精简版"></a>抖音短视频  - 老版，精简版</h1><p>抖音短视频 v9.6.0 - 可搜索</p>
+<p><a href="https://678cnn.lanzoue.com/ia70W22kextg">https://678cnn.lanzoue.com/ia70W22kextg</a></p>
+<p><a href="https://4901.kstore.space/app/douyin9.6.0.apk">https://4901.kstore.space/app/douyin9.6.0.apk</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 查看端口被占用、杀进程</title>
     <url>/2023/03/07/2023-03-07-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<h3 id="windows系统如何查看端口被占用、杀进程"><a href="#windows系统如何查看端口被占用、杀进程" class="headerlink" title="windows系统如何查看端口被占用、杀进程"></a>windows系统如何查看端口被占用、杀进程</h3><p>首先是启动windows的命令窗口，按键盘上的windows+R，然后在输入框中输入cmd，既可以启动命令窗口</p>
@@ -2332,6 +2332,19 @@ OK,大功告成！
 <p>2.详细信息-找到PID -右键-转到服务-停止</p>
 <h3 id="根据进程的名称杀掉进程"><a href="#根据进程的名称杀掉进程" class="headerlink" title="根据进程的名称杀掉进程"></a>根据进程的名称杀掉进程</h3><p>taskkill &#x2F;f &#x2F;t &#x2F;im “进程id或者进程名称”</p>
 <h3 id="系统当前所有的端口使用情况"><a href="#系统当前所有的端口使用情况" class="headerlink" title="系统当前所有的端口使用情况"></a>系统当前所有的端口使用情况</h3><p>输入netstat -ano然后回车，就可以看到系统当前所有的端口使用情况</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验技术 - 获取github文件夹里文件API的方法</title>
+    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2409,23 +2422,9 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 获取github文件夹里文件API的方法</title>
-    <url>/2024/01/01/2024-01-01-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-%E8%8E%B7%E5%8F%96github%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%96%87%E4%BB%B6API%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="获取github文件夹里文件API的方法"><a href="#获取github文件夹里文件API的方法" class="headerlink" title="获取github文件夹里文件API的方法"></a>获取github文件夹里文件API的方法</h1><p><a href="https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master">https://api.github.com/repos/n3rddd/N3RD/contents/JN/dr_py/libs/?ref=master</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">获取方法：</span><br><span class="line">https://api.github.com/repos/</span><br><span class="line">+作者n3rddd</span><br><span class="line">+仓库名N3RD</span><br><span class="line">+/contents/</span><br><span class="line">+/JN/dr_py/libs/(后面要有/)</span><br><span class="line">+ ?ref=master或者?ref=main</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - 音乐app合集</title>
     <url>/2024/01/10/2024-01-10-%E8%BD%AF%E4%BB%B6-%E9%9F%B3%E4%B9%90app%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<h1 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h1><p>自己现用：musicfree + 落雪音乐 + 音源</p>
-<p>apphot 音乐APP<br><a href="https://wwa.lanzoui.com/b04bw7l2d">https://wwa.lanzoui.com/b04bw7l2d</a> 提取码：eaoe</p>
 <h2 id="一、Android版"><a href="#一、Android版" class="headerlink" title="一、Android版"></a>一、Android版</h2><h3 id="1-MusicFree"><a href="#1-MusicFree" class="headerlink" title="1.MusicFree"></a>1.MusicFree</h3><p>一个插件化、定制化、无广告的开源音乐播放器</p>
 <p><a href="https://musicfree.catcat.work/">MusicFree官网</a><br><a href="https://github.com/maotoumao/MusicFree">MusicFree官方Github</a></p>
 <p><a href="https://r0rvr854dd1.feishu.cn/drive/folder/KLqKfWOA3lx8MKdo8xNcYpR8n7t">MusicFree官网下载1：</a><br><a href="https://raw.rxsub.eu.org/https://github.com/maotoumao/MusicFree/releases/download/v0.6.2/app-universal-release.apk">MusicFree下载地址2：</a></p>
@@ -2454,14 +2453,7 @@ OK,大功告成！
 <h2 id="二、windows版"><a href="#二、windows版" class="headerlink" title="二、windows版"></a>二、windows版</h2><h3 id="1-洛雪音乐助手-开源"><a href="#1-洛雪音乐助手-开源" class="headerlink" title="1.洛雪音乐助手 -开源"></a>1.洛雪音乐助手 -开源</h3><p>作者开源 <a href="https://github.com/lyswhut/lx-music-mobile">https://github.com/lyswhut/lx-music-mobile</a></p>
 <p><a href="https://www.6yit.com/114.html">https://www.6yit.com/114.html</a></p>
 <p><a href="https://www.lanzoui.com/b00nbz6of">https://www.lanzoui.com/b00nbz6of</a>   密码：30up</p>
-<h3 id="2-MusicTools-付费无损音乐下载神器"><a href="#2-MusicTools-付费无损音乐下载神器" class="headerlink" title="2.MusicTools_付费无损音乐下载神器"></a>2.MusicTools_付费无损音乐下载神器</h3><p>官网：<a href="https://www.whg6.com/html/musictools/">https://www.whg6.com/html/musictools/</a></p>
-<p><a href="https://www.423down.com/9003.html">https://www.423down.com/9003.html</a></p>
-<p><a href="https://423down.lanzouh.com/iVz3h05k2ena">https://423down.lanzouh.com/iVz3h05k2ena</a></p>
-<h3 id="3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用"><a href="#3-Listen-1-免费开源的音乐聚合搜索播放工具-多平台通用" class="headerlink" title="3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用"></a>3.Listen 1 - 免费开源的音乐聚合搜索播放工具|多平台通用</h3><p>聚合搜索主流的音乐平台: 网易云音乐、QQ音乐、酷狗、酷我音乐</p>
-<p>「Github 开源」<br><a href="https://github.com/listen1">https://github.com/listen1</a></p>
-<p>下载地址:</p>
-<p>官网: <a href="https://listen1.github.io/listen1/">https://listen1.github.io/listen1/</a></p>
-<p>蓝奏云(Win、安卓): <a href="https://pan.lanzouj.com/b01dly9cb">https://pan.lanzouj.com/b01dly9cb</a></p>
+<h2 id="三、音乐APP"><a href="#三、音乐APP" class="headerlink" title="三、音乐APP"></a>三、音乐APP</h2><p>apphot 音乐APP<br><a href="https://wwa.lanzoui.com/b04bw7l2d">https://wwa.lanzoui.com/b04bw7l2d</a> 提取码：eaoe</p>
 ]]></content>
       <categories>
         <category>软件</category>
