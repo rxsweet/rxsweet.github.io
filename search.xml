@@ -261,123 +261,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经验技术 - 0.自用更新博客 - Mardown语法和软件</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-0-Mardown%E8%AF%AD%E6%B3%95%E5%92%8C%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h1 id="1-软件"><a href="#1-软件" class="headerlink" title="1.软件"></a>1.软件</h1><p><a href="https://github.com/marktext/marktext">1. MarkText - 个人使用</a></p>
-<p><a href="https://apphot.cc/?s=notepad">2.Notepad++ - 备用</a></p>
-<h1 id="2-Markdown排版，语法"><a href="#2-Markdown排版，语法" class="headerlink" title="2..Markdown排版，语法"></a>2..Markdown排版，语法</h1><p><a href="https://editor.mdnice.com/">个人推荐这个大佬的介绍 —– 左边代码，右边效果</a>)</p>
-<h2 id="简单语法帮助"><a href="#简单语法帮助" class="headerlink" title="简单语法帮助"></a>简单语法帮助</h2><span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Quick Markdown    ---------    快速Markdown</span><br><span class="line"></span><br><span class="line"># Header1        ---------    标题1</span><br><span class="line">## Header2        ---------    标题2</span><br><span class="line"></span><br><span class="line">**Bold**        ---------    加粗</span><br><span class="line">*Emphasize*        ---------    斜线</span><br><span class="line">++Underline++        ---------    下划线</span><br><span class="line">~~Strikethrough~~    ---------    删除线</span><br><span class="line">==Highlight==        ---------    高亮</span><br><span class="line">^Superscript^        ---------    上标</span><br><span class="line">-Subscript-        ---------    下标</span><br><span class="line"></span><br><span class="line">![alt text](url)    ---------    替代文字，网址    </span><br><span class="line">[link text](url)    ---------    连接文本，网址</span><br><span class="line">@[alt text](url)    ---------    @替代文字，网址</span><br><span class="line"></span><br><span class="line">- Unordered list    ---------    无序列表</span><br><span class="line">1. Order list        ---------    数字列表</span><br><span class="line">-[] Task list        ---------    任务列表</span><br><span class="line"></span><br><span class="line">[^id]            ---------</span><br><span class="line">[^id]:text        ---------    </span><br><span class="line">`code`            ---------    代码</span><br><span class="line">```block code```    ---------    块代码</span><br><span class="line">$$$inline math$$$    ---------    内联匹配</span><br><span class="line">$$block match$$        ---------    块匹配</span><br><span class="line">|--|table        ---------    表</span><br><span class="line">* * *page break        ---------    分页符</span><br><span class="line">- - -section break    ---------    分节符</span><br><span class="line">_ _ _sentence break    ---------    句子中断</span><br><span class="line"></span><br><span class="line">[TOC]            ---------    返回标题</span><br></pre></td></tr></table></figure>
-
-<h3 id="Markdown-折叠"><a href="#Markdown-折叠" class="headerlink" title="Markdown 折叠"></a>Markdown 折叠</h3><p>其实这也是通过<code>html</code>语法实现的功能，你可以测试一下（拒绝IE，它不支持）：</p>
-<details>
-  <summary>我有些话想跟你说</summary>
-    <p> 等等，让我想想是什么话。</p>
-      <p> 哎呀，忘记了。</p>
-</details>
-
-
-
-<p>实现上述折叠效果的代码如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details&gt;</span><br><span class="line">  &lt;summary&gt;我有些话想跟你说&lt;/summary&gt;</span><br><span class="line">    &lt;p&gt; 等等，让我想想是什么话。&lt;/p&gt;</span><br><span class="line">      &lt;p&gt; 哎呀，忘记了。&lt;/p&gt;</span><br><span class="line">&lt;/details&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Markdown插入表格"><a href="#Markdown插入表格" class="headerlink" title="Markdown插入表格"></a>Markdown插入表格</h3><p>终于是一个Markdown本身就支持的功能了。<strong>表格</strong>、<strong>制表</strong>是我们在写作当中常用的一个功能。我们先看一个例子，看看在Markdown里用几行代码插入表格的效果是怎么样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 一个普通标题 | 一个普通标题 | 一个普通标题 |</span><br><span class="line">| ------| ------ | ------ |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
-
-<p>效果如下：</p>
-<table>
-<thead>
-<tr>
-<th>一个普通标题</th>
-<th>一个普通标题</th>
-<th>一个普通标题</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>短文本</td>
-<td>中等文本</td>
-<td>稍微长一点的文本</td>
-</tr>
-<tr>
-<td>稍微长一点的文本</td>
-<td>短文本</td>
-<td>中等文本</td>
-</tr>
-</tbody></table>
-<p>稍微再加一点要求，例如：<strong>对齐</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐标题 | 右对齐标题 | 居中对齐标题 |</span><br><span class="line">| :------| ------: | :------: |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
-
-<p>出来的表格样式则是这样：</p>
-<table>
-<thead>
-<tr>
-<th>左对齐标题</th>
-<th>右对齐标题</th>
-<th>居中对齐标题</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>短文本</td>
-<td>中等文本</td>
-<td>稍微长一点的文本</td>
-</tr>
-<tr>
-<td>稍微长一点的文本</td>
-<td>短文本</td>
-<td>中等文本</td>
-</tr>
-</tbody></table>
-<p>从上面的例子我们可以看到：</p>
-<ul>
-<li>默认情况下，<strong>标题栏居中对齐</strong>，<strong>内容居左对齐</strong>；</li>
-<li><code>|</code>、<code>-</code>、<code>:</code>这些符号之间，多余的空格会被忽略，布局由Markdown部署；</li>
-<li><code>-:</code>表示内容和标题栏居右对齐；</li>
-<li><code>:-</code>表示内容和标题栏居左对齐；</li>
-<li><code>:-:</code>我们都猜到了，居中；</li>
-<li><code>|</code>分隔<strong>单元格</strong>，<code>-</code>分隔表头和内容。</li>
-</ul>
-<p>表格内支持插入其他Markdown<strong>行内标记</strong>，例如<strong>加粗</strong>、<strong>斜体</strong>、<strong>链接</strong>等等。</p>
-<h3 id="Markdown插入视听文件"><a href="#Markdown插入视听文件" class="headerlink" title="Markdown插入视听文件"></a>Markdown插入视听文件</h3><p>事实上Markdown并不支持插入音频、视频，但是，Markdown支持<strong>html</strong>语法，我们可以通过html语句插入视听文件。用到的html标签是<code>iframe</code>，代码解释如下：</p>
-<ul>
-<li>div用于控制格式，若无则默认为居左；</li>
-<li>frameborder用于规定是否显示框架周围的边框，1为是，0为否；</li>
-<li>marginwidth及marginheight表示距离边缘的像素大小；</li>
-<li>width及height表示播放条的长度和宽度；</li>
-<li>src为播放链接，可以在如网易云音乐的生成外链播放器获取该链接，同时也获得以下代码，并可以自行更改；</li>
-<li>也可将音频链接改为视频链接，从而播放视频。</li>
-</ul>
-<p><strong>注意1：</strong></p>
-<p>音频和视频在默认情况下是会自动循环播放的，可以修改链接的值进行修改；</p>
-<p>在src域中，auto值表示是否自动播放，当值为1时为自动播放，0则不是；</p>
-<p>在src域中，有些链接会附有height或width值，其表示表示播放框的基本宽高，可以更换其值以获得想要的播放框大小，此时可以不用填写外部的width及height。</p>
-<p><strong>注意2：</strong></p>
-<p>有的Markdown解析不支持直接在markdown中直接贴<code>iframe</code>语句。我们的解决办法是，在<code>_includes</code>里建一个单独的<code>html</code>文件。</p>
-<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p>我们用一个例子来说明一下：</p>
-<ol>
-<li>先在_includes文件夹中新建文件rxsweetTube。html，里面放入rxsweetTube给的<code>embed</code>语句。ID部分用&#96;&#96;代替；</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.rxsweetTube.com/embed/&#123;&#123; include.id &#125;&#125;&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>在你撰写的markdown文件，需要插入视频的地方，插入语句：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include rxsweetTube.html id=&quot;IlkBLwl4aBM&quot; %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果是这样的：</p>
-<p>如果贴的是音频，道理一样，获取外链，同样操作即可。以网易云为例：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=&#123;&#123; include.id &#125;&#125;&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上述是网易云生成的外链，不过要把<code>width</code>和<code>height</code>的值，用引号包起来，才能被kramdown解析。</p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验技术 - 搭建个人博客</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
@@ -513,6 +396,123 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 0.自用更新博客 - Mardown语法和软件</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-0-Mardown%E8%AF%AD%E6%B3%95%E5%92%8C%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="1-软件"><a href="#1-软件" class="headerlink" title="1.软件"></a>1.软件</h1><p><a href="https://github.com/marktext/marktext">1. MarkText - 个人使用</a></p>
+<p><a href="https://apphot.cc/?s=notepad">2.Notepad++ - 备用</a></p>
+<h1 id="2-Markdown排版，语法"><a href="#2-Markdown排版，语法" class="headerlink" title="2..Markdown排版，语法"></a>2..Markdown排版，语法</h1><p><a href="https://editor.mdnice.com/">个人推荐这个大佬的介绍 —– 左边代码，右边效果</a>)</p>
+<h2 id="简单语法帮助"><a href="#简单语法帮助" class="headerlink" title="简单语法帮助"></a>简单语法帮助</h2><span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Quick Markdown    ---------    快速Markdown</span><br><span class="line"></span><br><span class="line"># Header1        ---------    标题1</span><br><span class="line">## Header2        ---------    标题2</span><br><span class="line"></span><br><span class="line">**Bold**        ---------    加粗</span><br><span class="line">*Emphasize*        ---------    斜线</span><br><span class="line">++Underline++        ---------    下划线</span><br><span class="line">~~Strikethrough~~    ---------    删除线</span><br><span class="line">==Highlight==        ---------    高亮</span><br><span class="line">^Superscript^        ---------    上标</span><br><span class="line">-Subscript-        ---------    下标</span><br><span class="line"></span><br><span class="line">![alt text](url)    ---------    替代文字，网址    </span><br><span class="line">[link text](url)    ---------    连接文本，网址</span><br><span class="line">@[alt text](url)    ---------    @替代文字，网址</span><br><span class="line"></span><br><span class="line">- Unordered list    ---------    无序列表</span><br><span class="line">1. Order list        ---------    数字列表</span><br><span class="line">-[] Task list        ---------    任务列表</span><br><span class="line"></span><br><span class="line">[^id]            ---------</span><br><span class="line">[^id]:text        ---------    </span><br><span class="line">`code`            ---------    代码</span><br><span class="line">```block code```    ---------    块代码</span><br><span class="line">$$$inline math$$$    ---------    内联匹配</span><br><span class="line">$$block match$$        ---------    块匹配</span><br><span class="line">|--|table        ---------    表</span><br><span class="line">* * *page break        ---------    分页符</span><br><span class="line">- - -section break    ---------    分节符</span><br><span class="line">_ _ _sentence break    ---------    句子中断</span><br><span class="line"></span><br><span class="line">[TOC]            ---------    返回标题</span><br></pre></td></tr></table></figure>
+
+<h3 id="Markdown-折叠"><a href="#Markdown-折叠" class="headerlink" title="Markdown 折叠"></a>Markdown 折叠</h3><p>其实这也是通过<code>html</code>语法实现的功能，你可以测试一下（拒绝IE，它不支持）：</p>
+<details>
+  <summary>我有些话想跟你说</summary>
+    <p> 等等，让我想想是什么话。</p>
+      <p> 哎呀，忘记了。</p>
+</details>
+
+
+
+<p>实现上述折叠效果的代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details&gt;</span><br><span class="line">  &lt;summary&gt;我有些话想跟你说&lt;/summary&gt;</span><br><span class="line">    &lt;p&gt; 等等，让我想想是什么话。&lt;/p&gt;</span><br><span class="line">      &lt;p&gt; 哎呀，忘记了。&lt;/p&gt;</span><br><span class="line">&lt;/details&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Markdown插入表格"><a href="#Markdown插入表格" class="headerlink" title="Markdown插入表格"></a>Markdown插入表格</h3><p>终于是一个Markdown本身就支持的功能了。<strong>表格</strong>、<strong>制表</strong>是我们在写作当中常用的一个功能。我们先看一个例子，看看在Markdown里用几行代码插入表格的效果是怎么样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 一个普通标题 | 一个普通标题 | 一个普通标题 |</span><br><span class="line">| ------| ------ | ------ |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>短文本</td>
+<td>中等文本</td>
+<td>稍微长一点的文本</td>
+</tr>
+<tr>
+<td>稍微长一点的文本</td>
+<td>短文本</td>
+<td>中等文本</td>
+</tr>
+</tbody></table>
+<p>稍微再加一点要求，例如：<strong>对齐</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐标题 | 右对齐标题 | 居中对齐标题 |</span><br><span class="line">| :------| ------: | :------: |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
+
+<p>出来的表格样式则是这样：</p>
+<table>
+<thead>
+<tr>
+<th>左对齐标题</th>
+<th>右对齐标题</th>
+<th>居中对齐标题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>短文本</td>
+<td>中等文本</td>
+<td>稍微长一点的文本</td>
+</tr>
+<tr>
+<td>稍微长一点的文本</td>
+<td>短文本</td>
+<td>中等文本</td>
+</tr>
+</tbody></table>
+<p>从上面的例子我们可以看到：</p>
+<ul>
+<li>默认情况下，<strong>标题栏居中对齐</strong>，<strong>内容居左对齐</strong>；</li>
+<li><code>|</code>、<code>-</code>、<code>:</code>这些符号之间，多余的空格会被忽略，布局由Markdown部署；</li>
+<li><code>-:</code>表示内容和标题栏居右对齐；</li>
+<li><code>:-</code>表示内容和标题栏居左对齐；</li>
+<li><code>:-:</code>我们都猜到了，居中；</li>
+<li><code>|</code>分隔<strong>单元格</strong>，<code>-</code>分隔表头和内容。</li>
+</ul>
+<p>表格内支持插入其他Markdown<strong>行内标记</strong>，例如<strong>加粗</strong>、<strong>斜体</strong>、<strong>链接</strong>等等。</p>
+<h3 id="Markdown插入视听文件"><a href="#Markdown插入视听文件" class="headerlink" title="Markdown插入视听文件"></a>Markdown插入视听文件</h3><p>事实上Markdown并不支持插入音频、视频，但是，Markdown支持<strong>html</strong>语法，我们可以通过html语句插入视听文件。用到的html标签是<code>iframe</code>，代码解释如下：</p>
+<ul>
+<li>div用于控制格式，若无则默认为居左；</li>
+<li>frameborder用于规定是否显示框架周围的边框，1为是，0为否；</li>
+<li>marginwidth及marginheight表示距离边缘的像素大小；</li>
+<li>width及height表示播放条的长度和宽度；</li>
+<li>src为播放链接，可以在如网易云音乐的生成外链播放器获取该链接，同时也获得以下代码，并可以自行更改；</li>
+<li>也可将音频链接改为视频链接，从而播放视频。</li>
+</ul>
+<p><strong>注意1：</strong></p>
+<p>音频和视频在默认情况下是会自动循环播放的，可以修改链接的值进行修改；</p>
+<p>在src域中，auto值表示是否自动播放，当值为1时为自动播放，0则不是；</p>
+<p>在src域中，有些链接会附有height或width值，其表示表示播放框的基本宽高，可以更换其值以获得想要的播放框大小，此时可以不用填写外部的width及height。</p>
+<p><strong>注意2：</strong></p>
+<p>有的Markdown解析不支持直接在markdown中直接贴<code>iframe</code>语句。我们的解决办法是，在<code>_includes</code>里建一个单独的<code>html</code>文件。</p>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p>我们用一个例子来说明一下：</p>
+<ol>
+<li>先在_includes文件夹中新建文件rxsweetTube。html，里面放入rxsweetTube给的<code>embed</code>语句。ID部分用&#96;&#96;代替；</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.rxsweetTube.com/embed/&#123;&#123; include.id &#125;&#125;&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>在你撰写的markdown文件，需要插入视频的地方，插入语句：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include rxsweetTube.html id=&quot;IlkBLwl4aBM&quot; %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果是这样的：</p>
+<p>如果贴的是音频，道理一样，获取外链，同样操作即可。以网易云为例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=&#123;&#123; include.id &#125;&#125;&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上述是网易云生成的外链，不过要把<code>width</code>和<code>height</code>的值，用引号包起来，才能被kramdown解析。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 4.Jekyll的search免插件使用</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-4-Jekyll%E7%9A%84search%E5%85%8D%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="Jekyll个人博客实现搜索功能"><a href="#Jekyll个人博客实现搜索功能" class="headerlink" title="Jekyll个人博客实现搜索功能"></a>Jekyll个人博客实现搜索功能</h2><p>本来这个博客是没有搜索功能的，随着博客文档数越来越多，那么如果我想搜索某个博客重新回顾学习一下，那可是很糟糕的体验呀，所以个人博客有搜索功能是必不可少的。</p>
@@ -609,6 +609,77 @@
       </tags>
   </entry>
   <entry>
+    <title>软件-win-Chrome浏览器下载和自用插件</title>
+    <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<p>更新于2022-05-09</p>
+<p>自己正在用的chrome浏览器和插件下载</p>
+<span id="more"></span>
+
+<h1 id="一、chrome下载"><a href="#一、chrome下载" class="headerlink" title="一、chrome下载"></a>一、chrome下载</h1><h3 id="1-☆推荐下载：MyChrome"><a href="#1-☆推荐下载：MyChrome" class="headerlink" title="1.☆推荐下载：MyChrome"></a>1.☆推荐下载：MyChrome</h3><ul>
+<li><p>作者github：<a href="https://github.com/Jason4774/MyChrome">https://github.com/Jason4774/MyChrome</a></p>
+</li>
+<li><p>备用地址1：<a href="https://hub.nuaa.cf/Jason4774/MyChrome">https://hub.nuaa.cf/Jason4774/MyChrome</a></p>
+</li>
+<li><p>备用地址2：<a href="https://hub.yzuu.cf/Jason4774/MyChrome">https://hub.yzuu.cf/Jason4774/MyChrome</a></p>
+</li>
+<li><p>下载地址1 - 32位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址1 - 64位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+<li><p>下载地址2 - 32位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址2 - 64位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+<li><p>下载地址3 - 32位：<a href="https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z">https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址3 - 64位：<a href="https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z">https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+<li><p>下载地址4 - 32位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
+</li>
+<li><p>下载地址4 - 64位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="2-网站下载最新版"><a href="#2-网站下载最新版" class="headerlink" title="2.网站下载最新版"></a>2.网站下载最新版</h3><p><a href="https://www.iplaysoft.com/tools/chrome/">https://www.iplaysoft.com/tools/chrome/</a> -最新版下载</p>
+<p><a href="https://www.chromedownloads.net/">https://www.chromedownloads.net</a> -chrome浏览器,chrome插件,谈笑有鸿儒</p>
+<hr>
+<h1 id="二、chrome插件"><a href="#二、chrome插件" class="headerlink" title="二、chrome插件"></a>二、chrome插件</h1><h3 id="个人使用插件："><a href="#个人使用插件：" class="headerlink" title="个人使用插件："></a>个人使用插件：</h3><ol>
+<li><a href="https://www.crxsoso.com/webstore/detail/fohimdklhhcpcnpmmichieidclgfdmol">BookmarkHub - 【书签同步】 - Crx搜搜</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm">Proxy SwitchySharp</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag">Violentmonkey暴力猴 【脚本管理】- Crx搜搜</a></li>
+<li><a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey油猴 【脚本管理】- 极简插件</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin【广告屏蔽】</a></li>
+<li><a href="https://www.crx4.com/30262.html">Chrono【下载管理器】</a></li>
+<li><a href="https://github.com/KurtBestor/Hitomi-Downloader">Hitomi-Downloader【视频嗅探下载】</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/nnnkddnnlpamobajfibfdgfnbcnkgngh">Infinity Pro 【标签管理】</a>    - c.sml    W*53推荐</li>
+<li><a href="https://itab.link/?from=itab">iTab【标签管理】  - itab.link</a> - c.sml Itab53推荐</li>
+<li><a href="https://ruffle.rs/#what-is-ruffle">ruffle - Rus语言编写的 Flash Player模拟器</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/nngceckbapebfimnlniiiahkandclblb">Bitwarden - 免费密码管理器 - Crx搜搜</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/cnojnbdhbhnkbcieeekonklommdnndci">Search by Image 以图搜图 - Crx搜搜</a></li>
+<li><a href="https://www.crxsoso.com/webstore/detail/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus 鼠标指针悬停预览 - Crx搜搜</a>](<a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo</a>)</li>
+<li><a href="https://raw.githubusercontent.com/cszszs/all/main/bookmarks/bookmarks">MyBookmark</a></li>
+</ol>
+<h3 id="插件下载网站"><a href="#插件下载网站" class="headerlink" title="插件下载网站"></a>插件下载网站</h3><p><a href="https://www.crxsoso.com/">https://www.crxsoso.com/</a>        - Crx搜搜_现用</p>
+<p><a href="https://chrome.zzzmh.cn/#/index">https://chrome.zzzmh.cn/#/index</a>    - 极简插件</p>
+<p><a href="https://crxdl.com/">https://crxdl.com/</a>                - CrxDL.COM</p>
+<p><a href="https://www.crx4.com/">https://www.crx4.com/</a>            - crx4.com</p>
+<p><a href="https://www.crx4chrome.com/">https://www.crx4chrome.com/</a>        - 英文站</p>
+<p><a href="https://www.chromedownloads.net/extensions/">https://www.chromedownloads.net/extensions/</a>    - </p>
+<p><a href="https://www.cnplugins.com/top/">https://www.cnplugins.com/top/</a>        - 要验证码</p>
+<p><a href="https://huajiakeji.com/">https://huajiakeji.com/    </a>            - 要验证码</p>
+<p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
+<hr>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>chrome</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件-插件-广告屏蔽插件和广告规则</title>
     <url>/2022/05/09/2022-05-09-%E8%BD%AF%E4%BB%B6-%E6%8F%92%E4%BB%B6-%E5%B9%BF%E5%91%8A%E5%B1%8F%E8%94%BD%E6%8F%92%E4%BB%B6%E5%92%8C%E5%B9%BF%E5%91%8A%E8%A7%84%E5%88%99/</url>
     <content><![CDATA[<p>广告屏蔽App和广告规则</p>
@@ -688,77 +759,6 @@
       <tags>
         <tag>chrome</tag>
         <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件-win-Chrome浏览器下载和自用插件</title>
-    <url>/2022/05/06/2022-05-06-%E8%BD%AF%E4%BB%B6-Win-Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%92%8C%E8%87%AA%E7%94%A8%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<p>更新于2022-05-09</p>
-<p>自己正在用的chrome浏览器和插件下载</p>
-<span id="more"></span>
-
-<h1 id="一、chrome下载"><a href="#一、chrome下载" class="headerlink" title="一、chrome下载"></a>一、chrome下载</h1><h3 id="1-☆推荐下载：MyChrome"><a href="#1-☆推荐下载：MyChrome" class="headerlink" title="1.☆推荐下载：MyChrome"></a>1.☆推荐下载：MyChrome</h3><ul>
-<li><p>作者github：<a href="https://github.com/Jason4774/MyChrome">https://github.com/Jason4774/MyChrome</a></p>
-</li>
-<li><p>备用地址1：<a href="https://hub.nuaa.cf/Jason4774/MyChrome">https://hub.nuaa.cf/Jason4774/MyChrome</a></p>
-</li>
-<li><p>备用地址2：<a href="https://hub.yzuu.cf/Jason4774/MyChrome">https://hub.yzuu.cf/Jason4774/MyChrome</a></p>
-</li>
-<li><p>下载地址1 - 32位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址1 - 64位：<a href="https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.yzuu.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-<li><p>下载地址2 - 32位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址2 - 64位：<a href="https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.nuaa.cf/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-<li><p>下载地址3 - 32位：<a href="https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z">https://raw.githubusercontents.com/Jason4774/MyChrome/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址3 - 64位：<a href="https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z">https://cdn.jsdelivr.net/gh/Jason4774/MyChrome@master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-<li><p>下载地址4 - 32位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40.7z</a></p>
-</li>
-<li><p>下载地址4 - 64位：<a href="https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z">https://hub.gitmirror.com/https://github.com/Jason4774/MyChrome/raw/master/MyChrome_v3.8.40_x64.7z</a></p>
-</li>
-</ul>
-<hr>
-<h3 id="2-网站下载最新版"><a href="#2-网站下载最新版" class="headerlink" title="2.网站下载最新版"></a>2.网站下载最新版</h3><p><a href="https://www.iplaysoft.com/tools/chrome/">https://www.iplaysoft.com/tools/chrome/</a> -最新版下载</p>
-<p><a href="https://www.chromedownloads.net/">https://www.chromedownloads.net</a> -chrome浏览器,chrome插件,谈笑有鸿儒</p>
-<hr>
-<h1 id="二、chrome插件"><a href="#二、chrome插件" class="headerlink" title="二、chrome插件"></a>二、chrome插件</h1><h3 id="个人使用插件："><a href="#个人使用插件：" class="headerlink" title="个人使用插件："></a>个人使用插件：</h3><ol>
-<li><a href="https://www.crxsoso.com/webstore/detail/fohimdklhhcpcnpmmichieidclgfdmol">BookmarkHub - 【书签同步】 - Crx搜搜</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm">Proxy SwitchySharp</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag">Violentmonkey暴力猴 【脚本管理】- Crx搜搜</a></li>
-<li><a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey油猴 【脚本管理】- 极简插件</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin【广告屏蔽】</a></li>
-<li><a href="https://www.crx4.com/30262.html">Chrono【下载管理器】</a></li>
-<li><a href="https://github.com/KurtBestor/Hitomi-Downloader">Hitomi-Downloader【视频嗅探下载】</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/nnnkddnnlpamobajfibfdgfnbcnkgngh">Infinity Pro 【标签管理】</a>    - c.sml    W*53推荐</li>
-<li><a href="https://itab.link/?from=itab">iTab【标签管理】  - itab.link</a> - c.sml Itab53推荐</li>
-<li><a href="https://ruffle.rs/#what-is-ruffle">ruffle - Rus语言编写的 Flash Player模拟器</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/nngceckbapebfimnlniiiahkandclblb">Bitwarden - 免费密码管理器 - Crx搜搜</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/cnojnbdhbhnkbcieeekonklommdnndci">Search by Image 以图搜图 - Crx搜搜</a></li>
-<li><a href="https://www.crxsoso.com/webstore/detail/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus 鼠标指针悬停预览 - Crx搜搜</a>](<a href="https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo">https://chrome.zzzmh.cn/info?token=dhdgffkkebhmkfjojejmpbldmpobfkfo</a>)</li>
-<li><a href="https://raw.githubusercontent.com/cszszs/all/main/bookmarks/bookmarks">MyBookmark</a></li>
-</ol>
-<h3 id="插件下载网站"><a href="#插件下载网站" class="headerlink" title="插件下载网站"></a>插件下载网站</h3><p><a href="https://www.crxsoso.com/">https://www.crxsoso.com/</a>        - Crx搜搜_现用</p>
-<p><a href="https://chrome.zzzmh.cn/#/index">https://chrome.zzzmh.cn/#/index</a>    - 极简插件</p>
-<p><a href="https://crxdl.com/">https://crxdl.com/</a>                - CrxDL.COM</p>
-<p><a href="https://www.crx4.com/">https://www.crx4.com/</a>            - crx4.com</p>
-<p><a href="https://www.crx4chrome.com/">https://www.crx4chrome.com/</a>        - 英文站</p>
-<p><a href="https://www.chromedownloads.net/extensions/">https://www.chromedownloads.net/extensions/</a>    - </p>
-<p><a href="https://www.cnplugins.com/top/">https://www.cnplugins.com/top/</a>        - 要验证码</p>
-<p><a href="https://huajiakeji.com/">https://huajiakeji.com/    </a>            - 要验证码</p>
-<p><a href="https://www.gugeapps.net/">https://www.gugeapps.net/</a>            - 要验证码</p>
-<hr>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>chrome</tag>
-        <tag>软件</tag>
-        <tag>win</tag>
       </tags>
   </entry>
   <entry>
@@ -994,6 +994,35 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk - 直播合集</title>
+    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
+<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
+<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
+<span id="more"></span>
+
+<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
+<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
+<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
+<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
+<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
+<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
+<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
+<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
+<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
+<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
+<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+        <tag>合集</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件-win-Aria2 Tools安装使用说明</title>
     <url>/2022/05/31/2022-05-31-%E8%BD%AF%E4%BB%B6-win-%E5%85%A8%E8%83%BD%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6-Aria2/</url>
     <content><![CDATA[<h1 id="Aria2-Tools安装使用说明"><a href="#Aria2-Tools安装使用说明" class="headerlink" title="Aria2 Tools安装使用说明"></a>Aria2 Tools安装使用说明</h1><p>Aria2 Tools下载地址：自用版</p>
@@ -1040,35 +1069,6 @@
       <tags>
         <tag>软件</tag>
         <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 直播合集</title>
-    <url>/2022/05/18/2022-05-18-%E8%BD%AF%E4%BB%B6-apk-%E7%9B%B4%E6%92%AD%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="simple-live-简简单单的看直播"><a href="#simple-live-简简单单的看直播" class="headerlink" title="simple live - 简简单单的看直播"></a>simple live - 简简单单的看直播</h1><p>Github开源(原作者xiaoyaocz,zhao编译了app):<a href="https://github.com/zhaoxiaozhao07/personal_dart_simple_live">https://github.com/zhaoxiaozhao07/personal_dart_simple_live</a></p>
-<p>自己使用的是arm64-v8a版：<a href="https://kkgithub.com/zhaoxiaozhao07/personal_dart_simple_live/releases/download/v1.8.9/app-arm64-v8a-release.apk">kkgithub地址下载</a></p>
-<p>支持直播平台：虎牙直播,斗鱼直播,哔哩哔哩直播,抖音直播</p>
-<span id="more"></span>
-
-<h1 id="JustLive-一个整合国内多个直播平台内容的App"><a href="#JustLive-一个整合国内多个直播平台内容的App" class="headerlink" title="JustLive - 一个整合国内多个直播平台内容的App"></a>JustLive - 一个整合国内多个直播平台内容的App</h1><p>Github开源:<a href="https://github.com/guyijie1211/JustLive-Android">https://github.com/guyijie1211/JustLive-Android</a></p>
-<p>果核分享下载地址：<a href="https://www.123pan.com/s/HQeA-jc1Sh">https://www.123pan.com/s/HQeA-jc1Sh</a></p>
-<h2 id="JustLive介绍"><a href="#JustLive介绍" class="headerlink" title="JustLive介绍"></a>JustLive介绍</h2><p>目前是没有任何广告和付费项目，界面简洁(简陋？)，细节再优化一下就好了。</p>
-<p>支持的平台：虎牙、斗鱼、BILIBILI直播、网易cc（cc暂无清晰度切换）、企鹅电竞。</p>
-<p>基本功能都有了，如：多平台直播信息获取、关注直播间、弹幕获取、直播间搜索，因为是新应用，功能还在一步步更新，等一波定时关闭就完美了！</p>
-<p>注意：<br>   APP很不错，但是可能是因为虎牙官方限制的原因，有个别频道只能看几秒就会中断，如：周星星等，JustLive存在这个问题，等待以后有更好的方法修复吧！</p>
-<h1 id="Pure-Live"><a href="#Pure-Live" class="headerlink" title="Pure Live"></a>Pure Live</h1><p>Github：<a href="https://kgithub.com/Jackiu1997/pure_live">https://kgithub.com/Jackiu1997/pure_live</a></p>
-<p>下载地址：<a href="https://hub.nuaa.cf/Jackiu1997/pure_live">地址1:hub.nuaa.cf</a> <a href="https://hub.yzuu.cf/Jackiu1997/pure_live">地址2:hub.yzuu.cf</a></p>
-<p><a href="https://jackiu-notes.notion.site/jackiu-notes/50bc0d3d377445eea029c6e3d4195671?v=663125e639b047cea5e69d8264926b8b">开发进度看板link</a></p>
-<h2 id="Pure-Live介绍"><a href="#Pure-Live介绍" class="headerlink" title="Pure Live介绍"></a>Pure Live介绍</h2><p>Pure Live是一款款平台基于Flutter的直播转码软件，轻松看直播。所有数据均由本地机器获取，不存储在云端，直播数据、视频版权归原平台所有。</p>
-<p>目前支持设备：Android，Windows。<br>目前支持平台：bilibili，douyu，huya。</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -1392,6 +1392,26 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 卸载工具</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>软件卸载工具</p>
+<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
+<p>卸载利器 IObit Uninstaller Pro </p>
+<p>卸载删除 Total Uninstall - 软件是64位</p>
+<p>Geek Uninstaller 卸载工具</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
+<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win - WinRAR and 7-Zip</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
     <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
@@ -1405,26 +1425,6 @@
 <p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
 <h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
 <p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 卸载工具</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>软件卸载工具</p>
-<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
-<p>卸载利器 IObit Uninstaller Pro </p>
-<p>卸载删除 Total Uninstall - 软件是64位</p>
-<p>Geek Uninstaller 卸载工具</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
-<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1490,30 +1490,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
-<span id="more"></span>
-
-<p>分享地址</p>
-<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
-<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
-<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
-<p>下载地址</p>
-<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
-<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
-<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
-<hr>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - 电脑优化清理</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E7%94%B5%E8%84%91%E4%BC%98%E5%8C%96%E6%B8%85%E7%90%86/</url>
     <content><![CDATA[<p>电脑优化清理工具</p>
@@ -1533,6 +1509,30 @@
 <p>分享页：<br><a href="https://www.ghxi.com/processlasso.html">https://www.ghxi.com/processlasso.html</a></p>
 <p>下载地址：</p>
 <p>已高速(如有密码：3519)<a href="http://ct.ghpym.com/d/7369060-41220817-7cf748">http://ct.ghpym.com/d/7369060-41220817-7cf748</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 视频处理 - 转换、合并、剪切</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<h3 id="视频处理-转换、合并、剪切"><a href="#视频处理-转换、合并、剪切" class="headerlink" title="视频处理 - 转换、合并、剪切"></a>视频处理 - 转换、合并、剪切</h3><p>HD Video Converter Factory，<br>国外堪称转换速度最快的高清视频转换软件，<br>支持300多种视频格式转换，<br>有视频转换器、视频马赛克、视频下载、屏幕录像、GIF制作、图片转视频、铃声工具等功能。</p>
+<span id="more"></span>
+
+<p>分享地址</p>
+<p><a href="https://www.ghxi.com/hdvideoconverterfactory.html">https://www.ghxi.com/hdvideoconverterfactory.html</a></p>
+<p><a href="https://www.qilebb.com/5058.html">https://www.qilebb.com/5058.html</a></p>
+<p><a href="https://apphot.cc/27515.html">https://apphot.cc/27515.html</a></p>
+<p>下载地址</p>
+<p><a href="https://pan.lanzouj.com/b01dm71bg">https://pan.lanzouj.com/b01dm71bg</a></p>
+<p><a href="https://ghpym.lanzoui.com/b00zp7k5i">https://ghpym.lanzoui.com/b00zp7k5i</a></p>
+<p><a href="https://wwa.lanzoui.com/b04byxlwb">https://wwa.lanzoui.com/b04byxlwb</a>   提取码：1ib4</p>
+<hr>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -1983,6 +1983,29 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
+    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
+<span id="more"></span>
+
+<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
+<p>然后还需要对对应对文章进行设置，有两种方法</p>
+<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
+<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - Hexo添加分类,标签,搜索（在Next主题下）</title>
     <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E6%B7%BB%E5%8A%A0-%E5%88%86%E7%B1%BB-%E6%A0%87%E7%AD%BE-%E6%90%9C%E7%B4%A2/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>自建的博客怎么能没有分类，标签，搜索呢，所以我就去查了一下怎么去配置分类和标签,搜索</p>
@@ -2010,29 +2033,6 @@ OK,大功告成！
 <h1 id="四-结语"><a href="#四-结语" class="headerlink" title="四.结语"></a>四.结语</h1><p>这样我们就完成了分类和标签的配置，可以看出分类和标签的配置流程基本一样。</p>
 <p>关于Next的更多配置请查看官方文档 <a href="https://theme-next.iissnan.com/theme-settings.html">https://theme-next.iissnan.com/theme-settings.html</a></p>
 <h1 id="五-延伸"><a href="#五-延伸" class="headerlink" title="五.延伸"></a>五.延伸</h1><p>在上面我们配置对文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域，名称为 <code>Front-matter</code></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - Hexo Next主题首页配置为只显示部分摘要（不显示全文）</title>
-    <url>/2022/08/11/2022-08-11-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-Hexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用Next主题时，首页会默认显示全文，这样就会很不方便，所以需要设置让首页只显示一部分摘要，而不是全文。</p>
-<span id="more"></span>
-
-<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><p>首先打开主题的配置文件<code>_config.yml</code>，该文件在博客文件夹的<code>themes\next\_config.yml</code>路径下，打开后找到<code>excerpt_description</code>这个配置并设置为<code>true</code>,如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Automatically excerpt description in homepage as preamble text.</span><br><span class="line">excerpt_description: true</span><br></pre></td></tr></table></figure>
-<p>然后还需要对对应对文章进行设置，有两种方法</p>
-<h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在对应文章对 <code>front-matter</code>（文章文件最上方以 <code>---</code>分割对区域，是用来指定个别文件的配置变量区域）中添加<code>description</code>变量，其中<code>description</code>变量设置的内容就会被显示在首页上门，其余的文案一律不显示。配置如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo添加分类及标签（在Next主题下）</span><br><span class="line">updated: 2023-02-13 15:31:09categories:  Hexo</span><br><span class="line">tags:</span><br><span class="line">- Hexo</span><br><span class="line">description: 自建的博客怎么能没有分类和标签呢，所以我就去查了一下怎么去配置分类和标签。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>这一种方法是需要自己写概述，所以比较费事，于是就有了第二种方法。</p>
-<h2 id="方法二：文章截断显示"><a href="#方法二：文章截断显示" class="headerlink" title="方法二：文章截断显示"></a>方法二：文章截断显示</h2><p>这种方法只需要在对应的文章里，想要展示的文章后添加以下标签就可以了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>然后首页就会显示在这个标签以上的所有内容，隐藏文章下面的所有内容。</p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -2129,6 +2129,34 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
+    <title>软件 - win - 笔记软件mybase</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
+<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
+<p>现用的mybase好用，支持md</p>
+</blockquote>
+<span id="more"></span>
+<p>下载地址：</p>
+<p>产品介绍：</p>
+<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
+<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
+<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
+<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
+<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
+<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
+<p>科学安装步骤：</p>
+<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - win快速启动软件lily和lucy</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2160,34 +2188,6 @@ OK,大功告成！
 <li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
 <li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - win - 笔记软件mybase</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
-<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
-<p>现用的mybase好用，支持md</p>
-</blockquote>
-<span id="more"></span>
-<p>下载地址：</p>
-<p>产品介绍：</p>
-<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
-<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
-<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
-<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
-<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
-<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
-<p>科学安装步骤：</p>
-<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2291,19 +2291,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 百度文库工具</title>
-    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-win-%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<h1 id="百度文库工具"><a href="#百度文库工具" class="headerlink" title="百度文库工具"></a>百度文库工具</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01dlv3rc#1a5z">yoyodadada蓝凑云 密码：1a5z</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - apk- 抖音</title>
     <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%96%E9%9F%B3/</url>
     <content><![CDATA[<h1 id="抖音"><a href="#抖音" class="headerlink" title="抖音"></a>抖音</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01doycpa#c8gz">yoyodadada蓝凑云 密码：c8gz</a></p>
@@ -2318,6 +2305,19 @@ OK,大功告成！
       <tags>
         <tag>软件</tag>
         <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 百度文库工具</title>
+    <url>/2023/02/27/2023-02-27-%E8%BD%AF%E4%BB%B6-win-%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<h1 id="百度文库工具"><a href="#百度文库工具" class="headerlink" title="百度文库工具"></a>百度文库工具</h1><p>下载地址：<a href="https://yoyodadada.lanzouw.com/b01dlv3rc#1a5z">yoyodadada蓝凑云 密码：1a5z</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
       </tags>
   </entry>
   <entry>
