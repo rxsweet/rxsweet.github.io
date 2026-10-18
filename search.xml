@@ -261,6 +261,123 @@
       </tags>
   </entry>
   <entry>
+    <title>经验技术 - 0.自用更新博客 - Mardown语法和软件</title>
+    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-0-Mardown%E8%AF%AD%E6%B3%95%E5%92%8C%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="1-软件"><a href="#1-软件" class="headerlink" title="1.软件"></a>1.软件</h1><p><a href="https://github.com/marktext/marktext">1. MarkText - 个人使用</a></p>
+<p><a href="https://apphot.cc/?s=notepad">2.Notepad++ - 备用</a></p>
+<h1 id="2-Markdown排版，语法"><a href="#2-Markdown排版，语法" class="headerlink" title="2..Markdown排版，语法"></a>2..Markdown排版，语法</h1><p><a href="https://editor.mdnice.com/">个人推荐这个大佬的介绍 —– 左边代码，右边效果</a>)</p>
+<h2 id="简单语法帮助"><a href="#简单语法帮助" class="headerlink" title="简单语法帮助"></a>简单语法帮助</h2><span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Quick Markdown    ---------    快速Markdown</span><br><span class="line"></span><br><span class="line"># Header1        ---------    标题1</span><br><span class="line">## Header2        ---------    标题2</span><br><span class="line"></span><br><span class="line">**Bold**        ---------    加粗</span><br><span class="line">*Emphasize*        ---------    斜线</span><br><span class="line">++Underline++        ---------    下划线</span><br><span class="line">~~Strikethrough~~    ---------    删除线</span><br><span class="line">==Highlight==        ---------    高亮</span><br><span class="line">^Superscript^        ---------    上标</span><br><span class="line">-Subscript-        ---------    下标</span><br><span class="line"></span><br><span class="line">![alt text](url)    ---------    替代文字，网址    </span><br><span class="line">[link text](url)    ---------    连接文本，网址</span><br><span class="line">@[alt text](url)    ---------    @替代文字，网址</span><br><span class="line"></span><br><span class="line">- Unordered list    ---------    无序列表</span><br><span class="line">1. Order list        ---------    数字列表</span><br><span class="line">-[] Task list        ---------    任务列表</span><br><span class="line"></span><br><span class="line">[^id]            ---------</span><br><span class="line">[^id]:text        ---------    </span><br><span class="line">`code`            ---------    代码</span><br><span class="line">```block code```    ---------    块代码</span><br><span class="line">$$$inline math$$$    ---------    内联匹配</span><br><span class="line">$$block match$$        ---------    块匹配</span><br><span class="line">|--|table        ---------    表</span><br><span class="line">* * *page break        ---------    分页符</span><br><span class="line">- - -section break    ---------    分节符</span><br><span class="line">_ _ _sentence break    ---------    句子中断</span><br><span class="line"></span><br><span class="line">[TOC]            ---------    返回标题</span><br></pre></td></tr></table></figure>
+
+<h3 id="Markdown-折叠"><a href="#Markdown-折叠" class="headerlink" title="Markdown 折叠"></a>Markdown 折叠</h3><p>其实这也是通过<code>html</code>语法实现的功能，你可以测试一下（拒绝IE，它不支持）：</p>
+<details>
+  <summary>我有些话想跟你说</summary>
+    <p> 等等，让我想想是什么话。</p>
+      <p> 哎呀，忘记了。</p>
+</details>
+
+
+
+<p>实现上述折叠效果的代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details&gt;</span><br><span class="line">  &lt;summary&gt;我有些话想跟你说&lt;/summary&gt;</span><br><span class="line">    &lt;p&gt; 等等，让我想想是什么话。&lt;/p&gt;</span><br><span class="line">      &lt;p&gt; 哎呀，忘记了。&lt;/p&gt;</span><br><span class="line">&lt;/details&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Markdown插入表格"><a href="#Markdown插入表格" class="headerlink" title="Markdown插入表格"></a>Markdown插入表格</h3><p>终于是一个Markdown本身就支持的功能了。<strong>表格</strong>、<strong>制表</strong>是我们在写作当中常用的一个功能。我们先看一个例子，看看在Markdown里用几行代码插入表格的效果是怎么样的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 一个普通标题 | 一个普通标题 | 一个普通标题 |</span><br><span class="line">| ------| ------ | ------ |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+<th>一个普通标题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>短文本</td>
+<td>中等文本</td>
+<td>稍微长一点的文本</td>
+</tr>
+<tr>
+<td>稍微长一点的文本</td>
+<td>短文本</td>
+<td>中等文本</td>
+</tr>
+</tbody></table>
+<p>稍微再加一点要求，例如：<strong>对齐</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐标题 | 右对齐标题 | 居中对齐标题 |</span><br><span class="line">| :------| ------: | :------: |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
+
+<p>出来的表格样式则是这样：</p>
+<table>
+<thead>
+<tr>
+<th>左对齐标题</th>
+<th>右对齐标题</th>
+<th>居中对齐标题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>短文本</td>
+<td>中等文本</td>
+<td>稍微长一点的文本</td>
+</tr>
+<tr>
+<td>稍微长一点的文本</td>
+<td>短文本</td>
+<td>中等文本</td>
+</tr>
+</tbody></table>
+<p>从上面的例子我们可以看到：</p>
+<ul>
+<li>默认情况下，<strong>标题栏居中对齐</strong>，<strong>内容居左对齐</strong>；</li>
+<li><code>|</code>、<code>-</code>、<code>:</code>这些符号之间，多余的空格会被忽略，布局由Markdown部署；</li>
+<li><code>-:</code>表示内容和标题栏居右对齐；</li>
+<li><code>:-</code>表示内容和标题栏居左对齐；</li>
+<li><code>:-:</code>我们都猜到了，居中；</li>
+<li><code>|</code>分隔<strong>单元格</strong>，<code>-</code>分隔表头和内容。</li>
+</ul>
+<p>表格内支持插入其他Markdown<strong>行内标记</strong>，例如<strong>加粗</strong>、<strong>斜体</strong>、<strong>链接</strong>等等。</p>
+<h3 id="Markdown插入视听文件"><a href="#Markdown插入视听文件" class="headerlink" title="Markdown插入视听文件"></a>Markdown插入视听文件</h3><p>事实上Markdown并不支持插入音频、视频，但是，Markdown支持<strong>html</strong>语法，我们可以通过html语句插入视听文件。用到的html标签是<code>iframe</code>，代码解释如下：</p>
+<ul>
+<li>div用于控制格式，若无则默认为居左；</li>
+<li>frameborder用于规定是否显示框架周围的边框，1为是，0为否；</li>
+<li>marginwidth及marginheight表示距离边缘的像素大小；</li>
+<li>width及height表示播放条的长度和宽度；</li>
+<li>src为播放链接，可以在如网易云音乐的生成外链播放器获取该链接，同时也获得以下代码，并可以自行更改；</li>
+<li>也可将音频链接改为视频链接，从而播放视频。</li>
+</ul>
+<p><strong>注意1：</strong></p>
+<p>音频和视频在默认情况下是会自动循环播放的，可以修改链接的值进行修改；</p>
+<p>在src域中，auto值表示是否自动播放，当值为1时为自动播放，0则不是；</p>
+<p>在src域中，有些链接会附有height或width值，其表示表示播放框的基本宽高，可以更换其值以获得想要的播放框大小，此时可以不用填写外部的width及height。</p>
+<p><strong>注意2：</strong></p>
+<p>有的Markdown解析不支持直接在markdown中直接贴<code>iframe</code>语句。我们的解决办法是，在<code>_includes</code>里建一个单独的<code>html</code>文件。</p>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p>我们用一个例子来说明一下：</p>
+<ol>
+<li>先在_includes文件夹中新建文件rxsweetTube。html，里面放入rxsweetTube给的<code>embed</code>语句。ID部分用&#96;&#96;代替；</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.rxsweetTube.com/embed/&#123;&#123; include.id &#125;&#125;&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>在你撰写的markdown文件，需要插入视频的地方，插入语句：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include rxsweetTube.html id=&quot;IlkBLwl4aBM&quot; %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>效果是这样的：</p>
+<p>如果贴的是音频，道理一样，获取外链，同样操作即可。以网易云为例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=&#123;&#123; include.id &#125;&#125;&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上述是网易云生成的外链，不过要把<code>width</code>和<code>height</code>的值，用引号包起来，才能被kramdown解析。</p>
+]]></content>
+      <categories>
+        <category>经验技术</category>
+      </categories>
+      <tags>
+        <tag>经验技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>经验技术 - 搭建个人博客</title>
     <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-1-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll"><a href="#Build-Your-Own-Blog-Base-on-Github-Pages-Jekyll" class="headerlink" title="Build Your Own Blog Base on Github Pages+Jekyll"></a>Build Your Own Blog Base on Github Pages+Jekyll</h2><h3 id="Git-amp-Github"><a href="#Git-amp-Github" class="headerlink" title="Git &amp; Github"></a>Git &amp; Github</h3><p>Git是一种分布式版本控制系统，由Linux操作系统创建人Linus 编写，当时是用来管理Linux内核的源码。</p>
@@ -387,123 +504,6 @@
 <p>P.S. 以上部分Liquid代码，为了不被jekyll执行，需要用and包起Markdown语法。</p>
 <hr>
 <p>原文作者地址：<br><a href="https://soyee.me/2018/03/22/website-note/">https://soyee.me/2018/03/22/website-note/</a><br><a href="https://github.com/princeliebe/princeliebe.github.io">https://github.com/princeliebe/princeliebe.github.io</a></p>
-]]></content>
-      <categories>
-        <category>经验技术</category>
-      </categories>
-      <tags>
-        <tag>经验技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验技术 - 0.自用更新博客 - Mardown语法和软件</title>
-    <url>/2022/03/30/2022-03-30-%E7%BB%8F%E9%AA%8C%E6%8A%80%E6%9C%AF-0-Mardown%E8%AF%AD%E6%B3%95%E5%92%8C%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<h1 id="1-软件"><a href="#1-软件" class="headerlink" title="1.软件"></a>1.软件</h1><p><a href="https://github.com/marktext/marktext">1. MarkText - 个人使用</a></p>
-<p><a href="https://apphot.cc/?s=notepad">2.Notepad++ - 备用</a></p>
-<h1 id="2-Markdown排版，语法"><a href="#2-Markdown排版，语法" class="headerlink" title="2..Markdown排版，语法"></a>2..Markdown排版，语法</h1><p><a href="https://editor.mdnice.com/">个人推荐这个大佬的介绍 —– 左边代码，右边效果</a>)</p>
-<h2 id="简单语法帮助"><a href="#简单语法帮助" class="headerlink" title="简单语法帮助"></a>简单语法帮助</h2><span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Quick Markdown    ---------    快速Markdown</span><br><span class="line"></span><br><span class="line"># Header1        ---------    标题1</span><br><span class="line">## Header2        ---------    标题2</span><br><span class="line"></span><br><span class="line">**Bold**        ---------    加粗</span><br><span class="line">*Emphasize*        ---------    斜线</span><br><span class="line">++Underline++        ---------    下划线</span><br><span class="line">~~Strikethrough~~    ---------    删除线</span><br><span class="line">==Highlight==        ---------    高亮</span><br><span class="line">^Superscript^        ---------    上标</span><br><span class="line">-Subscript-        ---------    下标</span><br><span class="line"></span><br><span class="line">![alt text](url)    ---------    替代文字，网址    </span><br><span class="line">[link text](url)    ---------    连接文本，网址</span><br><span class="line">@[alt text](url)    ---------    @替代文字，网址</span><br><span class="line"></span><br><span class="line">- Unordered list    ---------    无序列表</span><br><span class="line">1. Order list        ---------    数字列表</span><br><span class="line">-[] Task list        ---------    任务列表</span><br><span class="line"></span><br><span class="line">[^id]            ---------</span><br><span class="line">[^id]:text        ---------    </span><br><span class="line">`code`            ---------    代码</span><br><span class="line">```block code```    ---------    块代码</span><br><span class="line">$$$inline math$$$    ---------    内联匹配</span><br><span class="line">$$block match$$        ---------    块匹配</span><br><span class="line">|--|table        ---------    表</span><br><span class="line">* * *page break        ---------    分页符</span><br><span class="line">- - -section break    ---------    分节符</span><br><span class="line">_ _ _sentence break    ---------    句子中断</span><br><span class="line"></span><br><span class="line">[TOC]            ---------    返回标题</span><br></pre></td></tr></table></figure>
-
-<h3 id="Markdown-折叠"><a href="#Markdown-折叠" class="headerlink" title="Markdown 折叠"></a>Markdown 折叠</h3><p>其实这也是通过<code>html</code>语法实现的功能，你可以测试一下（拒绝IE，它不支持）：</p>
-<details>
-  <summary>我有些话想跟你说</summary>
-    <p> 等等，让我想想是什么话。</p>
-      <p> 哎呀，忘记了。</p>
-</details>
-
-
-
-<p>实现上述折叠效果的代码如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;details&gt;</span><br><span class="line">  &lt;summary&gt;我有些话想跟你说&lt;/summary&gt;</span><br><span class="line">    &lt;p&gt; 等等，让我想想是什么话。&lt;/p&gt;</span><br><span class="line">      &lt;p&gt; 哎呀，忘记了。&lt;/p&gt;</span><br><span class="line">&lt;/details&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Markdown插入表格"><a href="#Markdown插入表格" class="headerlink" title="Markdown插入表格"></a>Markdown插入表格</h3><p>终于是一个Markdown本身就支持的功能了。<strong>表格</strong>、<strong>制表</strong>是我们在写作当中常用的一个功能。我们先看一个例子，看看在Markdown里用几行代码插入表格的效果是怎么样的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 一个普通标题 | 一个普通标题 | 一个普通标题 |</span><br><span class="line">| ------| ------ | ------ |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
-
-<p>效果如下：</p>
-<table>
-<thead>
-<tr>
-<th>一个普通标题</th>
-<th>一个普通标题</th>
-<th>一个普通标题</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>短文本</td>
-<td>中等文本</td>
-<td>稍微长一点的文本</td>
-</tr>
-<tr>
-<td>稍微长一点的文本</td>
-<td>短文本</td>
-<td>中等文本</td>
-</tr>
-</tbody></table>
-<p>稍微再加一点要求，例如：<strong>对齐</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 左对齐标题 | 右对齐标题 | 居中对齐标题 |</span><br><span class="line">| :------| ------: | :------: |</span><br><span class="line">| 短文本 | 中等文本 | 稍微长一点的文本 |</span><br><span class="line">| 稍微长一点的文本 | 短文本 | 中等文本 |</span><br></pre></td></tr></table></figure>
-
-<p>出来的表格样式则是这样：</p>
-<table>
-<thead>
-<tr>
-<th>左对齐标题</th>
-<th>右对齐标题</th>
-<th>居中对齐标题</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>短文本</td>
-<td>中等文本</td>
-<td>稍微长一点的文本</td>
-</tr>
-<tr>
-<td>稍微长一点的文本</td>
-<td>短文本</td>
-<td>中等文本</td>
-</tr>
-</tbody></table>
-<p>从上面的例子我们可以看到：</p>
-<ul>
-<li>默认情况下，<strong>标题栏居中对齐</strong>，<strong>内容居左对齐</strong>；</li>
-<li><code>|</code>、<code>-</code>、<code>:</code>这些符号之间，多余的空格会被忽略，布局由Markdown部署；</li>
-<li><code>-:</code>表示内容和标题栏居右对齐；</li>
-<li><code>:-</code>表示内容和标题栏居左对齐；</li>
-<li><code>:-:</code>我们都猜到了，居中；</li>
-<li><code>|</code>分隔<strong>单元格</strong>，<code>-</code>分隔表头和内容。</li>
-</ul>
-<p>表格内支持插入其他Markdown<strong>行内标记</strong>，例如<strong>加粗</strong>、<strong>斜体</strong>、<strong>链接</strong>等等。</p>
-<h3 id="Markdown插入视听文件"><a href="#Markdown插入视听文件" class="headerlink" title="Markdown插入视听文件"></a>Markdown插入视听文件</h3><p>事实上Markdown并不支持插入音频、视频，但是，Markdown支持<strong>html</strong>语法，我们可以通过html语句插入视听文件。用到的html标签是<code>iframe</code>，代码解释如下：</p>
-<ul>
-<li>div用于控制格式，若无则默认为居左；</li>
-<li>frameborder用于规定是否显示框架周围的边框，1为是，0为否；</li>
-<li>marginwidth及marginheight表示距离边缘的像素大小；</li>
-<li>width及height表示播放条的长度和宽度；</li>
-<li>src为播放链接，可以在如网易云音乐的生成外链播放器获取该链接，同时也获得以下代码，并可以自行更改；</li>
-<li>也可将音频链接改为视频链接，从而播放视频。</li>
-</ul>
-<p><strong>注意1：</strong></p>
-<p>音频和视频在默认情况下是会自动循环播放的，可以修改链接的值进行修改；</p>
-<p>在src域中，auto值表示是否自动播放，当值为1时为自动播放，0则不是；</p>
-<p>在src域中，有些链接会附有height或width值，其表示表示播放框的基本宽高，可以更换其值以获得想要的播放框大小，此时可以不用填写外部的width及height。</p>
-<p><strong>注意2：</strong></p>
-<p>有的Markdown解析不支持直接在markdown中直接贴<code>iframe</code>语句。我们的解决办法是，在<code>_includes</code>里建一个单独的<code>html</code>文件。</p>
-<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p>我们用一个例子来说明一下：</p>
-<ol>
-<li>先在_includes文件夹中新建文件rxsweetTube。html，里面放入rxsweetTube给的<code>embed</code>语句。ID部分用&#96;&#96;代替；</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.rxsweetTube.com/embed/&#123;&#123; include.id &#125;&#125;&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>在你撰写的markdown文件，需要插入视频的地方，插入语句：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&#123;% include rxsweetTube.html id=&quot;IlkBLwl4aBM&quot; %&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>效果是这样的：</p>
-<p>如果贴的是音频，道理一样，获取外链，同样操作即可。以网易云为例：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=&#123;&#123; include.id &#125;&#125;&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上述是网易云生成的外链，不过要把<code>width</code>和<code>height</code>的值，用引号包起来，才能被kramdown解析。</p>
 ]]></content>
       <categories>
         <category>经验技术</category>
@@ -1178,6 +1178,24 @@
       </tags>
   </entry>
   <entry>
+    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
+    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
+    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
+<p>下载地址：</p>
+<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
+<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
+<span id="more"></span>
+
+<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>apk</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件 - apk - 背景去除器 - 抠图</title>
     <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8A%A0%E5%9B%BE/</url>
     <content><![CDATA[<h1 id="背景去除器-抠图"><a href="#背景去除器-抠图" class="headerlink" title="背景去除器 - 抠图"></a>背景去除器 - 抠图</h1><p><a href="https://apphot.cc/33162.html">https://apphot.cc/33162.html</a></p>
@@ -1192,24 +1210,6 @@
 <h5 id="2-抠图换背景"><a href="#2-抠图换背景" class="headerlink" title="2.抠图换背景"></a>2.抠图换背景</h5><p>| 软件功能<br>1、智能抠图：运用最新的AI技术，精确的识别功能，帮你轻松实现抠图，生成透明背景图换背景<br>2、证件照：多种尺寸选择，随时随地都可以进行拍摄证件照，让你足不出户就拿到美美的证件照<br>3、老照片修复：珍贵的老照片却由于时间久远变得模糊不清，使用照片修复功能，就可以自动修复照片使其清晰度提高，完美还原其本来面貌<br>4、图片编辑：支持对图片进行裁剪、压缩、修改尺寸和格式转换。使用编辑功能，简单的几步操作，轻松满足你的照片编辑需求</p>
 <p>| 软件特色<br>1、万能抠图消除神器&amp;趣味特效功能<br>2、视频换脸一张照片变身视频主角<br>3、智能抠图，发丝级精准抠图，一键换背景<br>4、高级消除笔，快速擦除各类照片水印<br>5、趣味特效，卡通头像、年龄性别变化、动漫化<br>6、新增抠图，自定义添加各类贴纸</p>
 <h5 id="3-PhotoRoom"><a href="#3-PhotoRoom" class="headerlink" title="3.PhotoRoom"></a>3.PhotoRoom</h5><h5 id="4-Background-Eraser-Remove-BG-v2-102-26-Pro-图像背景擦除工具"><a href="#4-Background-Eraser-Remove-BG-v2-102-26-Pro-图像背景擦除工具" class="headerlink" title="4.Background Eraser - Remove BG v2.102.26 Pro(图像背景擦除工具)"></a>4.Background Eraser - Remove BG v2.102.26 Pro(图像背景擦除工具)</h5><h5 id="5-PickU-Photo-Editor-Background-Changer-amp-Collage-v3-6-1-b224-Premium-一键抠图"><a href="#5-PickU-Photo-Editor-Background-Changer-amp-Collage-v3-6-1-b224-Premium-一键抠图" class="headerlink" title="5. PickU - Photo Editor Background Changer &amp; Collage v3.6.1 b224 Premium - 一键抠图"></a>5. PickU - Photo Editor Background Changer &amp; Collage v3.6.1 b224 Premium - 一键抠图</h5>]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>apk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件 - apk - 拍图识物 - 万能拍照识别</title>
-    <url>/2022/06/06/2022-06-06-%E8%BD%AF%E4%BB%B6-apk-%E6%8B%8D%E5%9B%BE%E8%AF%86%E7%89%A9/</url>
-    <content><![CDATA[<h1 id="拍图识物-万能拍照识别"><a href="#拍图识物-万能拍照识别" class="headerlink" title="拍图识物 - 万能拍照识别"></a>拍图识物 - 万能拍照识别</h1><p>大佬分享地址：<br><a href="https://apphot.cc/30912.html">https://apphot.cc/30912.html</a></p>
-<p>下载地址：</p>
-<p><a href="https://wwa.lanzoui.com/b04b4xvnc">https://wwa.lanzoui.com/b04b4xvnc</a> 提取码：9ura</p>
-<p><a href="https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327">https://pan.baidu.com/s/1-zeuqkIbf8eRNhWGwOl57g#2327</a> 密码：2327</p>
-<span id="more"></span>
-
-<h3 id="1-万能拍照识别"><a href="#1-万能拍照识别" class="headerlink" title="1.万能拍照识别"></a>1.万能拍照识别</h3><h3 id="2-万能拍照识物"><a href="#2-万能拍照识物" class="headerlink" title="2.万能拍照识物"></a>2.万能拍照识物</h3><h3 id="3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别"><a href="#3-PictureThis-Flower-and-Plant-Identification-GOLD-v3-24-Mod-AOSP-No-Google-apk-植物识别" class="headerlink" title="3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别"></a>3.PictureThis_Flower_and_Plant_Identification_GOLD_v3.24_Mod_AOSP_No_Google.apk - 植物识别</h3><h3 id="4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别"><a href="#4-Picture-Insect-amp-Spider-ID-v2-7-13-Premium-昆虫识别" class="headerlink" title="4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别"></a>4.Picture Insect &amp; Spider ID v2.7.13 [Premium] - 昆虫识别</h3>]]></content>
       <categories>
         <category>软件</category>
       </categories>
@@ -1392,26 +1392,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 卸载工具</title>
-    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<p>软件卸载工具</p>
-<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
-<p>卸载利器 IObit Uninstaller Pro </p>
-<p>卸载删除 Total Uninstall - 软件是64位</p>
-<p>Geek Uninstaller 卸载工具</p>
-<p>下载地址：</p>
-<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
-<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win - WinRAR and 7-Zip</title>
     <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-WinRAR/</url>
     <content><![CDATA[<p>压缩软件：WinRAR,7-Zip</p>
@@ -1425,6 +1405,26 @@
 <p><a href="https://yoyodadada.lanzouw.com/b01cdgqih#252n">https://yoyodadada.lanzouw.com/b01cdgqih密码：252n</a></p>
 <h1 id="7-Zip"><a href="#7-Zip" class="headerlink" title="7-Zip"></a>7-Zip</h1><p>纯净免费高效的7-Zip</p>
 <p><a href="https://sparanoid.com/lab/7z/">https://sparanoid.com/lab/7z/</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 卸载工具</title>
+    <url>/2022/06/08/2022-06-08-%E8%BD%AF%E4%BB%B6-win-%E5%8D%B8%E8%BD%BD%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<p>软件卸载工具</p>
+<p>个人使用 - HiBit Uninstaller 中文绿色单文件版</p>
+<p>卸载利器 IObit Uninstaller Pro </p>
+<p>卸载删除 Total Uninstall - 软件是64位</p>
+<p>Geek Uninstaller 卸载工具</p>
+<p>下载地址：</p>
+<p><a href="https://423down.lanzouo.com/b0f19v03a">https://423down.lanzouo.com/b0f19v03a</a></p>
+<p><a href="http://hibitsoft.ir/">http://hibitsoft.ir/</a></p>
 ]]></content>
       <categories>
         <category>软件</category>
@@ -2042,33 +2042,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - Alist 网盘整合加载</title>
-    <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
-    <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
-<p><a href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
-<h2 id="downloads"><a href="#downloads" class="headerlink" title="downloads"></a>downloads</h2><p>自己测试哪个线路快</p>
-<p><a href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
-<span id="more"></span>
-
-<h2 id="open-alist-windows-4-0-amd64-exe"><a href="#open-alist-windows-4-0-amd64-exe" class="headerlink" title="open alist-windows-4.0-amd64.exe"></a>open <code>alist-windows-4.0-amd64.exe</code></h2><p><code>Initial password: 后面是密码</code></p>
-<p><code>start server @ 0.0.0.0:5244</code>加载成功</p>
-<h2 id="登录alist"><a href="#登录alist" class="headerlink" title="登录alist"></a>登录alist</h2><p>打开<code>127.0.0.1:5244</code>,输入密码登录(登录进来后，在设置 - 后端 - 密码，可以修改密码)</p>
-<p>dea8 zf5x 03ya uusn</p>
-<h2 id="配置网盘"><a href="#配置网盘" class="headerlink" title="配置网盘"></a>配置网盘</h2><p>在管理界面点<code>账号</code>，添加，根据需求添加即可.</p>
-<h2 id="个人使用的WebDev-Koofr-eu"><a href="#个人使用的WebDev-Koofr-eu" class="headerlink" title="个人使用的WebDev - Koofr.eu"></a>个人使用的WebDev - Koofr.eu</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webdav root url ：https://app.koofr.net/dav/</span><br><span class="line">用户名: sweetrx@pm</span><br><span class="line">密码： </span><br></pre></td></tr></table></figure>
-
-<h1 id="Windows电脑中挂载为虚拟磁盘"><a href="#Windows电脑中挂载为虚拟磁盘" class="headerlink" title="Windows电脑中挂载为虚拟磁盘"></a>Windows电脑中挂载为虚拟磁盘</h1><p>打开 Windows 资源管理器（例如，通过右键单击”开始”按钮） ，或者直接双击<code>计算机</code><br>左上角导航窗格中的<code>计算机 - 映射网络驱动器</code><br>在”驱动器”下拉列表下选择一个空闲驱动器号<br>在”文件夹”字段中输入文件夹的 WebDAV URL<br>选中使用其他凭据连接复选框<br>输入您的登录名和密码登录</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-        <tag>网盘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习笔记 - python功能命令收集</title>
     <url>/2022/09/26/2022-09-26-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-python%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/</url>
     <content><![CDATA[<h1 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python功能命令收集</span><br><span class="line">├── 系统相关操作</span><br><span class="line">│   ├── 时间</span><br><span class="line">│   ├── 检查使用的系统</span><br><span class="line">│   ├── 获取文件相对路径、绝对路径</span><br><span class="line">│   └── 获取当前路径地址</span><br><span class="line">├── 文件操作</span><br><span class="line">│   ├── 创建文件夹</span><br><span class="line">│   ├── 删除文件夹</span><br><span class="line">│   ├── 打开文件，读取方式</span><br><span class="line">│   ├── 写入文件</span><br><span class="line">│   ├── 下载文件</span><br><span class="line">│   └── 获取文件内容行数</span><br><span class="line">├── 数据处理</span><br><span class="line">│   └── 列表</span><br><span class="line">│       ├── 列表增加 </span><br><span class="line">│       ├── 将文件每行内容读取成列表</span><br><span class="line">│       ├── 将列表内容，以行写入字符串</span><br><span class="line">│       ├── findall查找内容写入列表</span><br><span class="line">│       ├── 列表循环读取</span><br><span class="line">│       ├── 列表去重  </span><br><span class="line">│       └── 列表进度条  </span><br><span class="line">├── 检测网站是否可用</span><br><span class="line">├── 多线程</span><br><span class="line">├── 进度条</span><br><span class="line">├── Linux系统</span><br><span class="line">│   └── .sh 操作</span><br><span class="line">└── github Actions workflows</span><br><span class="line">    ├── 触发条件</span><br><span class="line">    ├── 基本系统配置</span><br><span class="line">    ├── 安装依赖</span><br><span class="line">    ├── 安装工具</span><br><span class="line">    └── 提交</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -2129,34 +2102,6 @@ OK,大功告成！
       </tags>
   </entry>
   <entry>
-    <title>软件 - win - 笔记软件mybase</title>
-    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
-<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
-<p>现用的mybase好用，支持md</p>
-</blockquote>
-<span id="more"></span>
-<p>下载地址：</p>
-<p>产品介绍：</p>
-<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
-<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
-<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
-<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
-<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
-<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
-<p>科学安装步骤：</p>
-<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>win</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件 - win快速启动软件lily和lucy</title>
     <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -2188,6 +2133,61 @@ OK,大功告成！
 <li><a href="https://share.weiyun.com/Wkthi1WD">https://share.weiyun.com/Wkthi1WD</a></li>
 <li><a href="https://www.123pan.com/s/HQeA-Ee1Sh">https://www.123pan.com/s/HQeA-Ee1Sh</a></li>
 </ul>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - Alist 网盘整合加载</title>
+    <url>/2022/08/17/2022-08-17-%E8%BD%AF%E4%BB%B6-win-Alist%E7%BD%91%E7%9B%98%E6%95%B4%E5%90%88%E5%8A%A0%E8%BD%BD/</url>
+    <content><![CDATA[<h1 id="Alist"><a href="#Alist" class="headerlink" title="Alist"></a>Alist</h1><p><a href="https://github.com/alist-org/alist">Alist官网</a></p>
+<p><a href="https://alist-doc.nn.ci/docs/intro">官网使用说明</a></p>
+<h2 id="downloads"><a href="#downloads" class="headerlink" title="downloads"></a>downloads</h2><p>自己测试哪个线路快</p>
+<p><a href="https://ghproxy.com/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址1 </a><br><a href="https://download.fastgit.org/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址2 </a><br><a href="https://ghps.cc/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址3 </a><br><a href="https://proxy.zyun.vip/https://github.com/alist-org/alist/releases/download/v2.6.4/alist-windows-4.0-amd64.zip"> 下载地址4 </a></p>
+<span id="more"></span>
+
+<h2 id="open-alist-windows-4-0-amd64-exe"><a href="#open-alist-windows-4-0-amd64-exe" class="headerlink" title="open alist-windows-4.0-amd64.exe"></a>open <code>alist-windows-4.0-amd64.exe</code></h2><p><code>Initial password: 后面是密码</code></p>
+<p><code>start server @ 0.0.0.0:5244</code>加载成功</p>
+<h2 id="登录alist"><a href="#登录alist" class="headerlink" title="登录alist"></a>登录alist</h2><p>打开<code>127.0.0.1:5244</code>,输入密码登录(登录进来后，在设置 - 后端 - 密码，可以修改密码)</p>
+<p>dea8 zf5x 03ya uusn</p>
+<h2 id="配置网盘"><a href="#配置网盘" class="headerlink" title="配置网盘"></a>配置网盘</h2><p>在管理界面点<code>账号</code>，添加，根据需求添加即可.</p>
+<h2 id="个人使用的WebDev-Koofr-eu"><a href="#个人使用的WebDev-Koofr-eu" class="headerlink" title="个人使用的WebDev - Koofr.eu"></a>个人使用的WebDev - Koofr.eu</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">webdav root url ：https://app.koofr.net/dav/</span><br><span class="line">用户名: sweetrx@pm</span><br><span class="line">密码： </span><br></pre></td></tr></table></figure>
+
+<h1 id="Windows电脑中挂载为虚拟磁盘"><a href="#Windows电脑中挂载为虚拟磁盘" class="headerlink" title="Windows电脑中挂载为虚拟磁盘"></a>Windows电脑中挂载为虚拟磁盘</h1><p>打开 Windows 资源管理器（例如，通过右键单击”开始”按钮） ，或者直接双击<code>计算机</code><br>左上角导航窗格中的<code>计算机 - 映射网络驱动器</code><br>在”驱动器”下拉列表下选择一个空闲驱动器号<br>在”文件夹”字段中输入文件夹的 WebDAV URL<br>选中使用其他凭据连接复选框<br>输入您的登录名和密码登录</p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>win</tag>
+        <tag>网盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件 - win - 笔记软件mybase</title>
+    <url>/2022/09/28/2022-09-28-%E8%BD%AF%E4%BB%B6-win-%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6mybase/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p>自己使用的 ‘mybase’ 和 ‘资料收藏大师v3.78’</p>
+<p>资料收藏大师v3.78 非常优秀，但是新系统使用时有点卡</p>
+<p>现用的mybase好用，支持md</p>
+</blockquote>
+<span id="more"></span>
+<p>下载地址：</p>
+<p>产品介绍：</p>
+<p>mybase软件可以将电脑上的文档、知识、笔记、日记、图片和网页进行分类存储和管理，最终创建出一个专属于自己的个人知识库。</p>
+<p>Mybase 是一个功能强大且可随心所欲自定义格式及层次关系的通用资料压缩管理器，<br>可用于管理各种各样的信息，如：各类文档、磁盘文件、资料、名片、事件、下载的精华、收集的资料等等，<br>即使毫无规律的资料，也一样可以管理得有条不紊。<br>若您善于管理资料，Mybase 将会成为您得心应手的工具，<br>若您不善于管理资料，Mybase 将会有助于您提高资料管理能力。</p>
+<p>下载地址：<br> -<a href="https://www.lanzouj.com/iadgc4f">https://www.lanzouj.com/iadgc4f</a></p>
+<p> -<a href="https://www.lanzoui.com/ial56vi">https://www.lanzoui.com/ial56vi</a></p>
+<p> -<a href="http://ct.ghpym.com/d/7369060-28597496-5be18f">http://ct.ghpym.com/d/7369060-28597496-5be18f</a></p>
+<p> -<a href="https://www.123pan.com/s/HQeA-BH4Sh">https://www.123pan.com/s/HQeA-BH4Sh</a></p>
+<p>科学安装步骤：</p>
+<p>安装7.3.5版本<br>在关闭Mybase的情况下，将破解包中的exe取出替换安装目录下的同名程序.<br>启动mybase，点击帮助-&gt;产品注册中使用任意字符即可注册</p>
 ]]></content>
       <categories>
         <category>软件</category>
